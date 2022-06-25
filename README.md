@@ -71,3 +71,5 @@ multipass shell mageni
 ```
 curl -sL https://www.mageni.net/installation | sudo bash
 ```
+### Professional and Enterprise Editions
+Mageni also provides a professional an enterprise product with more features like Schedules, Notifications, Migrations and more. 
