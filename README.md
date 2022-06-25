@@ -47,7 +47,7 @@ curl -sL https://www.mageni.net/installation | sudo bash
 
 ### Windows
 
-1. Download the installer for Windows
+1. Download the  <a href="https://multipass.run/download/windows" target="_blank">Multipass</a> installer for Windows
 ```
 Note: You need Windows 10 Pro/Enterprise/Education v 1803 or later, or any Windows 10 with VirtualBox
 ```
