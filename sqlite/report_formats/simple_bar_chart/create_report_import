@@ -1,0 +1,62 @@
+NAME="Threat Count Bar Chart"
+UUID=`uuid`
+EXTENSION=png
+CONTENT_TYPE="image/png"
+SUMMARY="Summary threat counts as bar chart PNG image."
+DESCRIPTION="Simple example for a summary of threat counts as bar chart PNG image."
+# Names must be in alphabetical order.
+FNAME1=generate
+FILE1=`base64 -w 0 generate`
+FNAME2=plot-plt.xsl
+FILE2=`base64 -w 0 plot-plt.xsl`
+FNAME3=plot.xsl
+FILE3=`base64 -w 0 plot.xsl`
+#
+# PARAMS
+#
+PARAM1_NAME="Title"
+PARAM1_VALUE="Threat counts"
+PARAM1_TYPE=string
+PARAM1_TYPE_MIN=0
+PARAM1_TYPE_MAX=60
+#
+PARAM2_NAME="Key"
+PARAM2_VALUE="0"
+PARAM2_TYPE=boolean
+#
+PARAM3_NAME="Fill Style"
+PARAM3_VALUE="pattern"
+PARAM3_TYPE=selection
+PARAM3_OPTION1="pattern"
+PARAM3_OPTION2="solid"
+PARAM3_OPTION3="empty"
+PARAM3_DEFAULT="solid"
+#
+PARAM4_NAME="Width"
+PARAM4_VALUE="640"
+PARAM4_TYPE=integer
+PARAM4_TYPE_MIN=200
+PARAM4_TYPE_MAX=800
+#
+PARAM5_NAME="Height"
+PARAM5_VALUE="480"
+PARAM5_TYPE=integer
+PARAM5_TYPE_MAX=600
+#
+PARAM6_NAME="Blurb"
+PARAM6_VALUE=""
+PARAM6_TYPE=text
+# Minimum min.
+#PARAM6_TYPE_MIN=-9223372036854775807
+PARAM6_TYPE_MIN=0
+# Maximum max.
+#PARAM6_TYPE_MAX=9223372036854775806
+PARAM6_TYPE_MAX=50
+
+echo ${UUID}${EXTENSION}${CONTENT_TYPE}0${FNAME1}${FILE1}${FNAME2}${FILE2}${FNAME3}${FILE3}${PARAM1_NAME}${PARAM1_TYPE}${PARAM1_TYPE_MIN}${PARAM1_TYPE_MAX}${PARAM1_VALUE}${PARAM2_NAME}${PARAM2_TYPE}${PARAM2_VALUE}${PARAM3_NAME}${PARAM3_TYPE}${PARAM3_DEFAULT}${PARAM3_OPTION1}${PARAM3_OPTION2}${PARAM3_OPTION3}${PARAM4_NAME}${PARAM4_TYPE}${PARAM4_TYPE_MIN}${PARAM4_TYPE_MAX}${PARAM4_VALUE}${PARAM5_NAME}${PARAM5_TYPE}${PARAM5_TYPE_MAX}${PARAM5_VALUE}${PARAM6_NAME}${PARAM6_TYPE}${PARAM6_TYPE_MIN}${PARAM6_TYPE_MAX}${PARAM6_VALUE} > ${UUID}
+gpg --detach-sign --armor ${UUID}
+rm ${UUID}
+
+echo -n '<get_report_formats_response status="200" status_text="OK"><report_format id="'$UUID'"><name>'$NAME'</name><extension>'$EXTENSION'</extension><content_type>'$CONTENT_TYPE'</content_type><summary>'$SUMMARY'</summary><description>'$DESCRIPTION'</description><global>0</global><file name="'$FNAME1'">'$FILE1'</file><file name="'$FNAME2'">'$FILE2'</file><file name="'$FNAME3'">'$FILE3'</file><signature>' > simple_bar_chart.xml
+cat ${UUID}.asc >> simple_bar_chart.xml
+echo '</signature><param><name>'$PARAM1_NAME'</name><value>'$PARAM1_VALUE'</value><type>'$PARAM1_TYPE'<min>'$PARAM1_TYPE_MIN'</min><max>'$PARAM1_TYPE_MAX'</max></type><default>'$PARAM1_VALUE'</default></param><param><name>'$PARAM2_NAME'</name><value>'$PARAM2_VALUE'</value><type>'$PARAM2_TYPE'</type><default>'$PARAM2_VALUE'</default></param><param><name>'$PARAM3_NAME'</name><value>'$PARAM3_VALUE'</value><type>'$PARAM3_TYPE'</type><options><option>'$PARAM3_OPTION1'</option><option>'$PARAM3_OPTION2'</option><option>'$PARAM3_OPTION3'</option></options><default>'$PARAM3_DEFAULT'</default></param><param><name>'$PARAM4_NAME'</name><value>'$PARAM4_VALUE'</value><type>'$PARAM4_TYPE'<min>'$PARAM4_TYPE_MIN'</min><max>'$PARAM4_TYPE_MAX'</max></type><default>'$PARAM4_VALUE'</default></param><param><name>'$PARAM5_NAME'</name><value>'$PARAM5_VALUE'</value><type>'$PARAM5_TYPE'<max>'$PARAM5_TYPE_MAX'</max></type><default>'$PARAM5_VALUE'</default></param><param><name>'$PARAM6_NAME'</name><value>'$PARAM6_VALUE'</value><type>'$PARAM6_TYPE'<min>'$PARAM6_TYPE_MIN'</min><max>'$PARAM6_TYPE_MAX'</max></type><default>'$PARAM6_VALUE'</default></param></report_format></get_report_formats_response>' >> simple_bar_chart.xml

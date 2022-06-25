@@ -1,0 +1,141 @@
+<!--
+Copyright (C) 2013-2018 Greenbone Networks GmbH
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<!--
+  This wizard gets the details of tasks and all associated resources.
+
+  Optional parameters:
+  task_id : The ID of the task to get.
+  name :    The name of the task to get, used if no task_id is given.
+  filter :  A filter term to select the tasks with, used if no task_id or name
+             is given.
+  include_report_formats : Whether to also get a list of all report formats.
+  include_configs : Whether to also get a list of all scan configs.
+
+  To run this wizard, use the GMP command RUN_WIZARD.
+  Please see the GMP documentation for details.
+ -->
+
+<wizard>
+  <read_only/>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <xsl:choose>
+            <xsl:when test="/wizard/params/param[name='task_id']/id != ''">
+              <get_tasks task_id="{/wizard/params/param[name='task_id']/value}"/>
+            </xsl:when>
+            <xsl:when test="/wizard/params/param[name='name']/value != ''">
+              <get_tasks filter="name={/wizard/params/param[name='name']/value}"/>
+            </xsl:when>
+            <xsl:when test="/wizard/params/param[name='filter']/value != ''">
+              <get_tasks filter="{/wizard/params/param[name='filter']/value}"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <get_tasks />
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <commands>
+            <xsl:for-each select="/wizard/previous/response/get_tasks_response/task">
+              <commands>
+                <get_tasks task_id="{@id}" details="1"/>
+                <get_targets target_id="{target/@id}"/>
+              </commands>
+            </xsl:for-each>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <xsl:variable name="response" select="/wizard/previous/response/commands_response"/>
+          <commands>
+            <xsl:if test="/wizard/params/param[name='include_report_formats']/value">
+              <get_report_formats/>
+            </xsl:if>
+            <xsl:if test="/wizard/params/param[name='include_configs']/value">
+              <get_configs/>
+            </xsl:if>
+            <xsl:if test="/wizard/params/param[name='include_scanners']/value">
+              <get_scanners/>
+            </xsl:if>
+            <xsl:for-each select="$response/commands_response">
+              <commands>
+                <get_tasks task_id="{get_tasks_response/task/@id}" details="1"/>
+
+                <get_targets target_id="{get_targets_response/target/@id}" details="1"/>
+                <xsl:if test="get_targets_response/target/ssh_lsc_credential/@id != ''">
+                  <get_credentials credential_id="{get_targets_response/target/ssh_lsc_credential/@id}"/>
+                </xsl:if>
+                <xsl:if test="get_targets_response/target/smb_lsc_credential/@id != ''">
+                  <get_credentials credential_id="{get_targets_response/target/smb_lsc_credential/@id}"/>
+                </xsl:if>
+
+                <xsl:if test="get_tasks_response/slave/@id != ''">
+                  <get_slaves slave_id="{get_tasks_response/slave/@id}"/>
+                </xsl:if>
+
+                <xsl:if test="get_tasks_response/schedule/@id != ''">
+                  <get_schedule lsc_credential_id="{get_tasks_response/schedule/@id}"/>
+                </xsl:if>
+
+                <xsl:if test="get_tasks_response/schedule/@id != ''">
+                  <get_schedule lsc_credential_id="{get_tasks_response/schedule/@id}"/>
+                </xsl:if>
+
+                <xsl:for-each select="get_tasks_response/task/reports/report">
+                  <get_reports report_id="{@id}" details="1" levels="hmlgf" />
+                </xsl:for-each>
+              </commands>
+            </xsl:for-each>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+</wizard>

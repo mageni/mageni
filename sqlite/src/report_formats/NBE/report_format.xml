@@ -1,0 +1,9 @@
+<report_format id="9ca6fe72-1f62-11e1-9e7c-406186ea4fc5">
+  <name>NBE</name>
+  <summary>Legacy OpenVAS report.</summary>
+  <description>
+    The traditional OpenVAS Scanner text based format.
+  </description>
+  <extension>nbe</extension>
+  <content_type>text/plain</content_type>
+</report_format>

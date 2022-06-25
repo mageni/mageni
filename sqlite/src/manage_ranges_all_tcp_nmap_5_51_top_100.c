@@ -1,0 +1,118 @@
+/* Copyright (C) 2009-2018 Greenbone Networks GmbH
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/**
+ * @file  manage_ranges_all_tcp_nmap_5_51_top_100.c
+ * @brief GVM management layer: Predefined port range
+ *
+ * This file defines the ranges for a predefined port list.
+ */
+
+#include "manage_sql.h"
+
+#undef G_LOG_DOMAIN
+/**
+ * @brief GLib log domain.
+ */
+#define G_LOG_DOMAIN "md   main"
+
+/**
+ * @brief Insert a port range.
+ */
+#define RANGE(type, start, end) insert_port_range (list, type, start, end)
+
+/**
+ * @brief Make port ranges for IANA TCP 2012.
+ *
+ * Caller must lock the db.
+ *
+ * @param[in]  list  Port list.
+ */
+void
+make_port_ranges_all_tcp_nmap_5_51_top_100 (port_list_t list)
+{
+  RANGE (PORT_PROTOCOL_TCP, 1, 65535);
+
+  RANGE (PORT_PROTOCOL_UDP, 7, 7);
+  RANGE (PORT_PROTOCOL_UDP, 9, 9);
+  RANGE (PORT_PROTOCOL_UDP, 17, 17);
+  RANGE (PORT_PROTOCOL_UDP, 19, 19);
+  RANGE (PORT_PROTOCOL_UDP, 49, 49);
+  RANGE (PORT_PROTOCOL_UDP, 53, 53);
+  RANGE (PORT_PROTOCOL_UDP, 67, 69);
+  RANGE (PORT_PROTOCOL_UDP, 80, 80);
+  RANGE (PORT_PROTOCOL_UDP, 88, 88);
+  RANGE (PORT_PROTOCOL_UDP, 111, 111);
+  RANGE (PORT_PROTOCOL_UDP, 120, 120);
+  RANGE (PORT_PROTOCOL_UDP, 123, 123);
+  RANGE (PORT_PROTOCOL_UDP, 135, 139);
+  RANGE (PORT_PROTOCOL_UDP, 158, 158);
+  RANGE (PORT_PROTOCOL_UDP, 161, 162);
+  RANGE (PORT_PROTOCOL_UDP, 177, 177);
+  RANGE (PORT_PROTOCOL_UDP, 427, 427);
+  RANGE (PORT_PROTOCOL_UDP, 443, 443);
+  RANGE (PORT_PROTOCOL_UDP, 445, 445);
+  RANGE (PORT_PROTOCOL_UDP, 497, 497);
+  RANGE (PORT_PROTOCOL_UDP, 500, 500);
+  RANGE (PORT_PROTOCOL_UDP, 514, 515);
+  RANGE (PORT_PROTOCOL_UDP, 518, 518);
+  RANGE (PORT_PROTOCOL_UDP, 520, 520);
+  RANGE (PORT_PROTOCOL_UDP, 593, 593);
+  RANGE (PORT_PROTOCOL_UDP, 623, 623);
+  RANGE (PORT_PROTOCOL_UDP, 626, 626);
+  RANGE (PORT_PROTOCOL_UDP, 631, 631);
+  RANGE (PORT_PROTOCOL_UDP, 996, 999);
+  RANGE (PORT_PROTOCOL_UDP, 1022, 1023);
+  RANGE (PORT_PROTOCOL_UDP, 1025, 1030);
+  RANGE (PORT_PROTOCOL_UDP, 1433, 1434);
+  RANGE (PORT_PROTOCOL_UDP, 1645, 1646);
+  RANGE (PORT_PROTOCOL_UDP, 1701, 1701);
+  RANGE (PORT_PROTOCOL_UDP, 1718, 1719);
+  RANGE (PORT_PROTOCOL_UDP, 1812, 1813);
+  RANGE (PORT_PROTOCOL_UDP, 1900, 1900);
+  RANGE (PORT_PROTOCOL_UDP, 2000, 2000);
+  RANGE (PORT_PROTOCOL_UDP, 2048, 2049);
+  RANGE (PORT_PROTOCOL_UDP, 2222, 2223);
+  RANGE (PORT_PROTOCOL_UDP, 3283, 3283);
+  RANGE (PORT_PROTOCOL_UDP, 3456, 3456);
+  RANGE (PORT_PROTOCOL_UDP, 3703, 3703);
+  RANGE (PORT_PROTOCOL_UDP, 4444, 4444);
+  RANGE (PORT_PROTOCOL_UDP, 4500, 4500);
+  RANGE (PORT_PROTOCOL_UDP, 5000, 5000);
+  RANGE (PORT_PROTOCOL_UDP, 5060, 5060);
+  RANGE (PORT_PROTOCOL_UDP, 5353, 5353);
+  RANGE (PORT_PROTOCOL_UDP, 5632, 5632);
+  RANGE (PORT_PROTOCOL_UDP, 9200, 9200);
+  RANGE (PORT_PROTOCOL_UDP, 10000, 10000);
+  RANGE (PORT_PROTOCOL_UDP, 17185, 17185);
+  RANGE (PORT_PROTOCOL_UDP, 20031, 20031);
+  RANGE (PORT_PROTOCOL_UDP, 30718, 30718);
+  RANGE (PORT_PROTOCOL_UDP, 31337, 31337);
+  RANGE (PORT_PROTOCOL_UDP, 32768, 32769);
+  RANGE (PORT_PROTOCOL_UDP, 32771, 32771);
+  RANGE (PORT_PROTOCOL_UDP, 32815, 32815);
+  RANGE (PORT_PROTOCOL_UDP, 33281, 33281);
+  RANGE (PORT_PROTOCOL_UDP, 49152, 49154);
+  RANGE (PORT_PROTOCOL_UDP, 49156, 49156);
+  RANGE (PORT_PROTOCOL_UDP, 49181, 49182);
+  RANGE (PORT_PROTOCOL_UDP, 49185, 49186);
+  RANGE (PORT_PROTOCOL_UDP, 49188, 49188);
+  RANGE (PORT_PROTOCOL_UDP, 49190, 49194);
+  RANGE (PORT_PROTOCOL_UDP, 49200, 49201);
+}

@@ -1,0 +1,9 @@
+<report_format id="910200ca-dc05-11e1-954f-406186ea4fc5">
+  <name>ARF</name>
+  <summary>Asset Reporting Format v1.0.0.</summary>
+  <description>
+    NIST Asset Reporting Format 1.1 compliant document.
+  </description>
+  <extension>xml</extension>
+  <content_type>text/xml</content_type>
+</report_format>

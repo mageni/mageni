@@ -1,0 +1,34 @@
+NAME="Simple Topology"
+UUID=`uuid`
+EXTENSION=svg
+CONTENT_TYPE="image/svg+xml"
+SUMMARY="Network topology SVG image."
+DESCRIPTION="Scan results in topologic structure as scalable vector graphics."
+# Names must be in alphabetical order.
+FNAME1=generate
+FILE1=`base64 -w 0 generate`
+FNAME2=hostvisdot-summary.xsl
+FILE2=`base64 -w 0 hostvisdot-summary.xsl`
+#
+# PARAMS
+#
+PARAM1_NAME="Graph Type"
+PARAM1_TYPE=selection
+PARAM1_OPTION1="circo"
+PARAM1_OPTION2="dot"
+PARAM1_OPTION3="twopi"
+PARAM1_VALUE=$PARAM1_OPTION3
+#
+PARAM2_NAME="Node Distance"
+PARAM2_VALUE="8"
+PARAM2_TYPE=integer
+PARAM2_TYPE_MIN=1
+PARAM2_TYPE_MAX=20
+
+echo ${UUID}${EXTENSION}${CONTENT_TYPE}0${FNAME1}${FILE1}${FNAME2}${FILE2}${PARAM1_NAME}${PARAM1_TYPE}${PARAM1_VALUE}${PARAM1_OPTION1}${PARAM1_OPTION2}${PARAM1_OPTION3}${PARAM2_NAME}${PARAM2_TYPE}${PARAM2_TYPE_MIN}${PARAM2_TYPE_MAX}${PARAM2_VALUE} > ${UUID}
+gpg --detach-sign --armor ${UUID}
+rm ${UUID}
+
+echo -n '<get_report_formats_response status="200" status_text="OK"><report_format id="'$UUID'"><name>'$NAME'</name><extension>'$EXTENSION'</extension><content_type>'$CONTENT_TYPE'</content_type><summary>'$SUMMARY'</summary><description>'$DESCRIPTION'</description><global>0</global><file name="'$FNAME1'">'$FILE1'</file><file name="'$FNAME2'">'$FILE2'</file><signature>' > simple_topology.xml
+cat ${UUID}.asc >> simple_topology.xml
+echo '</signature><param><name>'$PARAM1_NAME'</name><value>'$PARAM1_VALUE'</value><type>'$PARAM1_TYPE'</type><options><option>'$PARAM1_OPTION1'</option><option>'$PARAM1_OPTION2'</option><option>'$PARAM1_OPTION3'</option></options><default>'$PARAM1_VALUE'</default></param><param><name>'$PARAM2_NAME'</name><value>'$PARAM2_VALUE'</value><type>'$PARAM2_TYPE'<min>'$PARAM2_TYPE_MIN'</min><max>'$PARAM2_TYPE_MAX'</max></type><default>'$PARAM2_VALUE'</default></param></report_format></get_report_formats_response>' >> simple_topology.xml

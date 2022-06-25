@@ -1,0 +1,69 @@
+# Greenbone Vulnerability Manager logging configuration
+#
+# WARNING: Setting the level of any group (besides event*) to include debug
+#          may reveal passwords in the logs.
+
+[md   main]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[md   comm]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[md   file]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[md manage]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[md    gmp]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[md    otp]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127
+
+[event syslog]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=syslog
+syslog_facility=daemon
+level=128
+
+[event snmp]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=syslog
+syslog_facility=local0
+level=128
+
+[*]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-sqlite.log
+level=127

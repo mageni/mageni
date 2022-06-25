@@ -1,0 +1,17 @@
+NAME="Sourcefire"
+UUID=`uuid`
+EXTENSION=csv
+CONTENT_TYPE="text/csv"
+SUMMARY="Sourcefire Host Input Import."
+DESCRIPTION="Scan results in Host Input Import format for Sourcefire DC."
+# Names must be in alphabetical order.
+FNAME1=generate
+FILE1=`base64 -w 0 generate`
+FNAME2=sourcefire.xsl
+FILE2=`base64 -w 0 sourcefire.xsl`
+
+echo ${UUID}${EXTENSION}${CONTENT_TYPE}0${FNAME1}${FILE1}${FNAME2}${FILE2}> ${UUID}
+gpg --detach-sign --armor ${UUID}
+rm ${UUID}
+
+echo '<get_report_formats_response status="200" status_text="OK"><report_format id="'$UUID'"><name>'$NAME'</name><extension>'$EXTENSION'</extension><content_type>'$CONTENT_TYPE'</content_type><summary>'$SUMMARY'</summary><description>'$DESCRIPTION'</description><global>0</global><file name="'$FNAME1'">'$FILE1'</file><file name="'$FNAME2'">'$FILE2'</file></report_format></get_report_formats_response>' > sourcefire.xml

@@ -1,0 +1,16 @@
+[Unit]
+Description=The Mageni Database Server
+After=mageni-vscand.service
+
+[Service]
+Type=forking
+ExecStart=@SBINDIR@/mageni-sqlite-start
+ExecStop=/bin/kill -s TERM $MAINPID
+PIDFile=@LOCALSTATEDIR@/run/mageni-sqlite.pid
+TimeoutStopSec=0
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

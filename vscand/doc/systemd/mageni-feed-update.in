@@ -1,0 +1,641 @@
+#!/usr/bin/env bash
+
+# Author: Mageni Security, LLC
+# Ver: 1.02
+# Website: https://www.mageni.net
+
+website="mageni.net"
+frontend_path="/var/www/html/"
+feedlog="/var/www/html/storage/logs/laravel.log"
+api_endpoint="https://www.mageni.net"
+sqlite_database="/var/www/html/database/mageni.sqlite"
+plugin_path="/usr/local/var/lib/mageni/plugins/"
+extract_plugin_path="/usr/local/var/lib/mageni/"
+mageni_tmp_folder="/usr/local/var/lib/mageni/tmp"
+frontend_log_file="/var/www/html/storage/logs/laravel.log"
+backend_path_tmp="/usr/local/var/lib/mageni/tmp/backend"
+frontend_path_tmp="/usr/local/var/lib/mageni/tmp/frontend"
+api_key=$(sqlite3 $sqlite_database "select api_key from version;")
+software_version=$(curl -s -X GET "$api_endpoint/api/v1/software/version" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" | jq -r '.version')
+backend_apt="mageni-vmplatform_${software_version}_amd64.deb"
+
+function set_prompt()
+{
+  if [ -x /usr/bin/tput ] && tput setaf 1 &> /dev/null; then
+    bold=$(tput bold)
+    italic=$(tput sitm)
+    reset=$(tput sgr0)
+    red=$(tput setaf 1)
+    blue=$(tput setaf 4)
+    green=$(tput setaf 2)
+    yellow=$(tput setaf 3)
+    magenta=$(tput setaf 5)
+    clearscreen=$(tput clear)
+  else
+    bold="\e[1m"
+    italic="\e[3m"
+    reset="\e[0m"
+    black="\e[1;30m"
+    blue="\e[1;34m"
+    cyan="\e[1;36m"
+    green="\e[1;32m"
+    orange="\e[1;33m"
+    purple="\e[1;35m"
+    red="\e[1;31m"
+    white="\e[1;37m"
+    yellow="\e[1;33m"
+  fi
+}
+
+function msg_normal()
+{
+  echo -e "         $1"
+}
+
+function msg_normal_nl()
+{
+  echo -en "         $1"
+}
+
+
+function msg_bold()
+{
+  echo -e "${bold}         $1${reset}"
+}
+
+function msg_success()
+{
+  echo -e "${green}[  OK  ]${reset} $1"
+  echo -e "$(date '+%m/%d/%Y Time %H:%M:%S') [SUCCESS]: $1" >> $feedlog
+  sleep 1
+}
+
+function msg_err()
+{
+  echo -e "${red}         $1${reset}"
+  echo -e "$(date '+%m/%d/%Y Time %H:%M:%S') [FAILURE]: $1" >> $feedlog
+  exit 1
+}
+
+function msg_process()
+{
+  echo -e "${magenta}         $1${reset}"
+  echo -e "$(date '+%m/%d/%Y Time %H:%M:%S') [FAILURE]: $1" >> $feedlog
+  exit 1
+}
+
+function check_perms()
+{
+    if ! [ "$(id -u)" = 0 ]; then
+      msg_err "Script requires sudo"
+    fi
+}
+
+function msg_welcome()
+{
+  # shellcheck disable=SC2291
+  echo -e     "${clearscreen}"
+  msg_bold    "Mageni Update"
+  # shellcheck disable=SC2291
+  echo -e     "${reset}"
+}
+
+function feed_update()
+{
+    msg_normal "Downloading Knowledge Base"
+    if cd $mageni_tmp_folder; then
+     if curl -s -X GET "$api_endpoint/api/v1/download/feed" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" -o plugins.tar.gz >/dev/null 2>/dev/null; then
+         msg_success "Knowledge Base downloaded"
+       else
+         msg_err "Error downloading knowledge base"
+       fi
+     else
+       msg_err "Error cd $mageni_tmp_folder"
+    fi
+
+    if [ -d $plugin_path ]; then 
+      rm -rf $plugin_path >/dev/null 2>/dev/null      
+    fi
+
+    msg_normal "Extracting Knowledge Base"
+    if tar -xzpf plugins.tar.gz -C $extract_plugin_path; then 
+      msg_success "Knowledge Base Extracted"
+      if ! rm -rf plugins.tar.gz; then
+        msg_err "Error cleaning plugins.tar.gz"
+      fi
+    else
+      msg_err "Error Extracting Knowledge Base"
+    fi
+}
+
+function update_os()
+{
+  msg_normal "Ubuntu Update"
+  if DEBIAN_FRONTEND=noninteractive apt update -yqq >/dev/null 2>/dev/null; then
+    msg_success "Update success"
+  else
+    msg_err "Update failed"
+  fi
+}
+
+function verify_composer()
+{
+  if ! [ -f /usr/local/bin/composer ]; then
+    cd $mageni_tmp_folder || return
+    msg_normal "Downloading composer"
+    if curl -sS https://getcomposer.org/installer -o composer-setup.php; then
+      msg_success "Composer download success"
+    else
+      msg_err "Error while downloading composer"
+    fi
+
+    msg_normal "Verifying composer hash"
+    HASH=$(curl -sS https://composer.github.io/installer.sig)
+    if php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"; then
+      msg_success "Composer hash is valid"
+      msg_normal "Installing Composer"
+      if php composer-setup.php --install-dir=/usr/local/bin --filename=composer; then
+        msg_success "Composer installed"
+      else
+        msg_err "Error while installing composer"
+      fi
+    fi
+  fi
+}
+
+function discover_os()
+{
+  if [ -f /.dockerenv ]; then
+    msg_err "Docker environment detected"
+    exit 1
+  fi
+
+  if [ -f /etc/os-release ]; then
+    distro_id=$(awk -F'=' '/^ID=/ {print $2}' /etc/os-release | tr -d '"')
+    distro_pretty_name=$(awk -F'=' '/^PRETTY_NAME=/ {print $2}' /etc/os-release | tr -d '"')
+    distro_version_id=$(awk -F'=' '/^VERSION_ID=/ {print $2}' /etc/os-release | tr -d '"')
+  else
+    msg_err "Installer must be run on Ubuntu"
+  fi
+
+  msg_normal "Review processor architecture"
+  ARCH=$(uname -m)
+  if [ "$(uname -m)" != "x86_64" ]; then
+    msg_err "Installer must be run on a 64 bit version of Linux"
+  else
+    msg_success "Processor architecture $ARCH"
+  fi
+
+  msg_normal "Review version support"
+  if [ "$distro_id" == "ubuntu" ]; then
+    if [ "$distro_version_id" == "20.04" ] || [ "$distro_version_id" == "22.04" ]; then
+      msg_success "$distro_pretty_name is supported"
+    else
+      msg_err "$distro_pretty_name is not supported. Supported version are 20.04 and 22.04"
+    fi
+  fi
+}
+
+function maintenance_on()
+{
+  if cd $frontend_path || return; then 
+    if php artisan down --refresh=15 >/dev/null 2>/dev/null; then
+      msg_success "Maintenance mode on"
+    else
+      msg_err "Failed to enter into maintenance mode"
+    fi
+  fi
+}
+
+function maintenance_off()
+{
+  if cd $frontend_path || return; then
+    if php artisan up >/dev/null 2>/dev/null; then
+      msg_success "Maintenance mode off"
+    else
+      msg_err "Failed to leave maintenance mode"
+    fi
+  fi
+}
+
+function cd_dir()
+{
+  if ! [ -d "$1" ] ; then 
+    if mkdir -p "$1" ; then 
+       if ! cd "$1" ; then
+        msg_err "Error cd1@cd_dir into \"$1\""
+       fi
+    else 
+      msg_err "Error mkdir@cd_into"
+    fi
+  else
+    if ! cd "$1" ; then
+      msg_err "Error cd2@cd_dir info \"$1\""
+    fi
+  fi
+}
+
+function frontend_update()
+{
+  maintenance_on
+
+  msg_normal "Downloading frontend"
+  if cd_dir $frontend_path_tmp; then 
+
+    if curl -s -X GET "$api_endpoint/api/v1/download/frontend" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" -o frontend.tar.gz; then
+
+      msg_success "Frontend downloaded"
+
+      msg_normal "Extracting Frontend"
+      if tar -xzpf frontend.tar.gz -C $frontend_path; then 
+        msg_success "Frontend Extracted"
+        if ! rm -rf frontend.tar.gz; then
+          msg_err "Error removing frontend files"
+        fi
+        else
+          msg_err "Error extracting Frontend"
+      fi
+
+      msg_normal "Configuring frontend permissions"
+      if cd $frontend_path || return; then 
+        if chown www-data:www-data -R ./* >/dev/null 2>/dev/null; then
+          msg_success "Permissions set"
+        else
+          msg_err "Permissions Failed"
+        fi
+      fi
+
+      msg_normal "Verifying PHP"
+      if [ -x /usr/bin/php8.0 ]; then
+        msg_success "PHP Exists"
+      else
+        if DEBIAN_FRONTEND=noninteractive apt install php8.0-fpm php8.0-common php8.0-opcache php8.0-readline php8.0-mbstring php8.0-xml php8.0-bcmath php8.0-cli php8.0-sqlite3 php8.0-curl -yq --no-install-recommends >/dev/null 2>/dev/null; then
+          msg_success "PHP Installed"
+        else 
+          msg_err "Error installing PHP"
+        fi
+      fi
+
+      msg_normal "Setting Environment"
+      if export HTTP_PROXY_REQUEST_FULLURI=0 && export HTTPS_PROXY_REQUEST_FULLURI=0; then
+        if env | grep HTTP_PROXY_REQUEST_FULLURI >/dev/null 2>/dev/null; then 
+          if env | grep HTTPS_PROXY_REQUEST_FULLURI >/dev/null 2>/dev/null; then 
+            msg_success "Environment set"
+          fi
+        fi
+      else 
+        msg_err "Error setting the enviroment"
+      fi
+
+      msg_normal "Updating composer"
+      if cd $frontend_path || return; then 
+        export COMPOSER_ALLOW_SUPERUSER=1;
+        if composer update --no-interaction --prefer-dist --optimize-autoloader >/dev/null 2>/dev/null; then
+          msg_success "Composer update success"
+        else
+          msg_err "Composer update failed"
+        fi
+      fi
+
+      msg_normal "Reloading PHP-FPM"
+      if [ -f /etc/init.d/php8.0-fpm ]; then
+        ACTIVE=$(/etc/init.d/php8.0-fpm status | grep Active: | awk '{print $2}')
+        if [[ $ACTIVE == 'active' ]]; then
+          if echo "" | sudo -S service php8.0-fpm reload >/dev/null 2>/dev/null; then
+            msg_success "PHP-FPM Reloaded"
+          else
+            msg_err "Error while reloading PHP-FPM"
+          fi
+        else
+          if [[ $ACTIVE == 'inactive' ]]; then
+            msg_normal "Starting PHP-FPM"
+            if echo "" | sudo -S service php8.0-fpm start >/dev/null 2>/dev/null; then
+              msg_success "PHP-FPM Started"
+            else
+              msg_err "Error while starting PHP-FPM"
+            fi
+          fi
+        fi
+      fi
+
+      msg_normal "Running Database Migrations"
+      if cd $frontend_path || return; then
+        if /usr/bin/php8.0 artisan migrate --force >/dev/null 2>/dev/null; then
+          msg_success "Migration Success"
+        else
+          msg_err "Migration Failed"
+        fi
+      fi 
+
+      if sqlite3 $sqlite_database "select * from roles;" | grep root >/dev/null 2>/dev/null; then 
+        msg_success "Permissions already seeded"
+      else 
+        if [ -f /var/www/html/database/seeders/PermissionsSeeder.php ]; then
+          if cd $frontend_path || return; then
+            if grep -q production /var/www/html/.env >/dev/null 2>/dev/null; then
+              if ! sudo sed -i -e "s/APP_ENV=production/APP_ENV=local/g" /var/www/html/.env; then
+                msg_err "Error configuring the environment"
+              else
+                if /usr/bin/php8.0 artisan db:seed --class=PermissionsSeeder >/dev/null 2>/dev/null; then
+                  if sudo sed -i -e "s/APP_ENV=local/APP_ENV=production/g" /var/www/html/.env; then
+                    msg_success "Permissions Seeder Success"
+                  fi
+                else
+                  msg_err "Permissions Seeder Failed"
+                fi
+              fi 
+            fi
+          fi
+        fi          
+      fi
+
+      msg_normal "Optimizing application"
+      if cd $frontend_path || return; then
+        if /usr/bin/php8.0 artisan optimize:clear >/dev/null 2>/dev/null; then
+          msg_success "Optimization success"
+        else
+          msg_err "Optimization failed"
+        fi
+      fi
+
+      if rm $frontend_log_file >/dev/null 2>/dev/null; then
+        if touch $frontend_log_file >/dev/null 2>/dev/null; then
+          if chown www-data:www-data $frontend_log_file >/dev/null 2>/dev/null; then
+            msg_success "Cleaned logs"
+          fi
+        fi
+      fi
+
+      msg_normal "Setting frontend files permissions"
+      if cd $frontend_path || return; then
+        if find . -type f -exec chmod 644 {} \; ; then
+          msg_success "Frontend file permissions set"
+        else
+          msg_err "Frontend file permissions failed"
+        fi
+      fi
+
+      msg_normal "Setting frontend directory permissions"
+      if cd $frontend_path || return; then
+        if find . -type d -exec chmod 755 {} \; ; then
+          msg_success "Frontend directory permissions set"
+        else
+          msg_err "Frontend directory permissions failed"
+        fi
+      fi
+
+      msg_normal "Configuring frontend permissions"
+      if cd $frontend_path || return; then 
+        if chown www-data:www-data -R ./* >/dev/null 2>/dev/null; then
+          msg_success "Permissions set"
+        else
+          msg_err "Permissions Failed"
+        fi
+      fi
+      
+    fi
+
+  fi
+
+  maintenance_off
+}
+
+function stop_backend_services()
+{
+  msg_normal  "Stopping the services"
+
+  ps aux | grep -E "(mageni-sqlite|mageni-vscand|redis-server)" | awk '{print $2}' | xargs -i kill -9 '{}' >/dev/null 2>/dev/null
+
+  if systemctl stop mageni-vscand >/dev/null 2>/dev/null; then
+    msg_success "Scanner stopped successfully"
+  else
+    msg_err "Error stopping scanner"
+  fi
+
+  if systemctl stop mageni-sqlite >/dev/null 2>/dev/null; then
+    msg_success "Database stopped successfully"
+  else
+    msg_err "Error stopping Database"
+  fi
+}
+
+function restart_backend_services()
+{
+  msg_normal "Starting the services"
+
+  if systemctl start mageni-vscand >/dev/null 2>/dev/null; then
+    msg_success "Scanner started"
+  else
+    msg_err "Error starting scanner"
+  fi
+
+  if systemctl start mageni-sqlite >/dev/null 2>/dev/null; then
+    msg_success "Database started"
+  else
+    msg_err "Error starting Database"
+  fi
+
+  msg_normal "Configuring Database"
+
+  if chown www-data:www-data /usr/local/var/lib/mageni/sqlite/sqlite.d* >/dev/null 2>/dev/null ; then 
+    msg_success "Database group set"
+  else
+    msg_err "Error setting database group"
+  fi
+  
+  if chown www-data:www-data /usr/local/var/run/mageni-sqlite.sock >/dev/null 2>/dev/null; then 
+    msg_success "Unix Domain Socket Permission Set"
+  else
+    msg_err "Error setting Unix Domain Socket permissions"
+  fi
+
+  msg_success "Database configured"
+}
+
+function success_backend_update()
+{
+  if systemctl daemon-reload >/dev/null 2>/dev/null; then
+    msg_success "systemctl daemon-reload success"
+  else
+    msg_err "systemctl daemon-reload error"
+  fi
+
+  restart_backend_services
+}
+
+function review_process()
+{
+  SCAN=$(systemctl status mageni-sqlite | grep "Handling scan" | awk '{print $3, $4}')
+  VULN=$(systemctl status mageni-sqlite | grep "Reloading vulnerabilities" | awk '{print $3, $4}')
+  RELO=$(systemctl status mageni-vscand | grep "Reloaded" | awk '{print $3}')
+
+  if [[ $SCAN != "" ]] ; then
+    msg_process "Scans running. Please stop them or wait until they are complete."
+  fi
+  
+  if [[ $VULN != "" ]] ; then
+    sleep 1
+    {
+        percentage="0"
+        while (true)
+        do
+            proc=$(ps aux | grep -E "(mageni-sqlite)" | grep "Reloading")
+            if [[ "$proc" == "" ]] && [[ "$percentage" -eq "0" ]];
+            then
+                break;
+            elif [[ "$proc" == "" ]] && [[ "$percentage" -gt "0" ]];
+            then
+                sleep 2
+                echo 98
+                sleep 1
+                echo 99
+                sleep 1
+                echo 100
+                sleep 1
+                break;
+            elif [[ "99" -eq "$percentage" ]]
+            then
+                percentage="90"
+            fi
+            sleep 1
+            echo $percentage
+            percentage=$(expr $percentage + 1)
+        done
+    } | whiptail --title "Database Process" --gauge "Refreshing Knowledge Base" 6 50 0
+  fi
+  
+  if [[ $RELO != "" ]] ; then
+    sleep 1
+    {
+        percentage="0"
+        while (true)
+        do
+            proc=$(ps aux | grep -E "(mageni-vscand)" | grep "Reloaded")
+            if [[ "$proc" == "" ]] && [[ "$percentage" -eq "0" ]];
+            then
+                break;
+            elif [[ "$proc" == "" ]] && [[ "$percentage" -gt "0" ]];
+            then
+                sleep 2
+                echo 98
+                sleep 1
+                echo 99
+                sleep 1
+                echo 100
+                sleep 1
+                break;
+            elif [[ "99" -eq "$percentage" ]]
+            then
+                percentage="90"
+            fi
+            sleep 1
+            echo $percentage
+            percentage=$(expr $percentage + 1)
+        done
+    } | whiptail --title "Scanner Process" --gauge "Refreshing Knowledge Base" 6 50 0
+  fi
+}
+
+function install_backend()
+{
+  msg_normal "Running backend update"
+
+  if cd_dir $backend_path_tmp; then 
+    if curl -s -L "$api_endpoint/api/v1/download/backend/${distro_id}/${distro_version_id}" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" -o "$backend_apt" >/dev/null 2>/dev/null; then
+      if dpkg -i "$backend_apt" >/dev/null 2>/dev/null; then
+        rm "$backend_apt" >/dev/null 2>/dev/null
+      fi
+    fi
+  fi
+
+  msg_success "Backend updated"
+}
+
+function backend_update()
+{
+  msg_success "Starting backend update"
+  stop_backend_services
+  install_backend
+  success_backend_update
+  msg_success "Update success"
+}
+
+function test_internet()
+{
+  msg_normal "Verifiying Internet"
+  if
+    nc -zw1 $website 443 && echo |openssl s_client -connect $website:443 2>&1 | awk '
+    handshake && $1 == "Verification" { if ($2=="OK") exit; exit 1 }
+    $1 $2 == "SSLhandshake" { handshake = 1 }'
+  then
+    msg_success "Internet is working"
+  else
+    msg_err "Please fix your connectivity with $website"
+  fi
+}
+
+function run()
+{
+  token_status=$(curl -s -X GET "$api_endpoint/api/v1/token/status" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" | jq -r '.status')
+  if [ "$token_status" == "verified" ]; then
+
+    review_process
+    test_internet
+    discover_os
+    update_os
+
+    remote_feed_version=$(curl -s -X GET "$api_endpoint/api/v1/feed/version" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" | jq -r '.feed')
+    local_feed_version=$(sqlite3 $sqlite_database "select feed from version;")
+    [ "$remote_feed_version" -gt "$local_feed_version" ]
+    if [ $? -eq 1 ]; then
+      msg_success "Feed is up to date"
+    else
+      if feed_update; then
+        if sqlite3 $sqlite_database "update version set feed = '$remote_feed_version' where id = 1;"; then
+          msg_success "Feed updated"
+        fi
+      else
+        msg_err "Error updating feed"
+      fi
+    fi
+
+    remote_frontend_version=$(curl -s -X GET "$api_endpoint/api/v1/frontend/version" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" | jq -r '.frontend')
+    local_frontend_version=$(sqlite3 $sqlite_database "select frontend from version;")
+    [ "$remote_frontend_version" -gt "$local_frontend_version" ]
+    if [ $? -eq 1 ]; then
+      msg_success "Frontend is up to date"
+    else
+      if frontend_update; then
+        if sqlite3 $sqlite_database "update version set frontend = '$remote_frontend_version' where id = 1;"; then
+          msg_success "Frontend updated"
+        fi
+      else
+        msg_err "Error updating frontend"
+      fi
+    fi
+
+    remote_backend_version=$(curl -s -X GET "$api_endpoint/api/v1/backend/version" -H 'Content-Type: application/json' -H "Authorization: Bearer $api_key" | jq -r '.backend')
+    local_backend_version=$(sqlite3 $sqlite_database "select backend from version;")
+    [ "$remote_backend_version" -gt "$local_backend_version" ]
+    if [ $? -eq 1 ]; then
+      msg_success "Backend is up to date"
+    else
+      review_process
+      if backend_update; then
+        if sqlite3 $sqlite_database "update version set backend = '$remote_backend_version' where id = 1;"; then 
+          msg_success "Backend updated"
+        fi
+      else
+        msg_err "Error updating backend"
+      fi
+    fi
+
+  else
+    msg_err "Error verifiying the api key. Please contact support@mageni.net"
+  fi
+}
+
+set_prompt
+msg_welcome
+check_perms
+run

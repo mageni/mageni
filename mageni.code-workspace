@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"errno.h": "c",
+			"fcntl.h": "c",
+			"utils.h": "c",
+			"in.h": "c",
+			"strings.h": "c",
+			"glib.h": "c",
+			"gmp_get.h": "c",
+			"otp.h": "c",
+			"manage.h": "c",
+			"attack.h": "c",
+			"gmp_base.h": "c",
+			"stdlib.h": "c",
+			"plugutils.h": "c"
+		},
+		"window.zoomLevel": 1,
+		"git.ignoreLimitWarning": true
+	}
+}

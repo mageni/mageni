@@ -1,0 +1,9 @@
+<report_format id="50c9950a-f326-11e4-800c-28d24461215b">
+  <name>Verinice ITG</name>
+  <summary>Greenbone Verinice ITG Report, v1.0.1.</summary>
+  <description>
+    IT-Grundschutz Report for Verinice import, version 1.0.1.
+  </description>
+  <extension>vna</extension>
+  <content_type>application/zip</content_type>
+</report_format>

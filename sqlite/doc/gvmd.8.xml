@@ -1,0 +1,248 @@
+<?xml version="1.0" standalone='no'?>
+<!DOCTYPE manpage SYSTEM "/usr/share/xmltoman/xmltoman.dtd">
+<?xml-stylesheet type="text/xsl" href="/usr/share/xmltoman/xmltoman.xsl" ?>
+
+<!--
+Copyright (C) 2009-2018 Greenbone Networks GmbH
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<!-- gvmd manpage -->
+
+<manpage name="gvmd" section="8" desc="Greenbone Vulnerability Manager daemon">
+
+  <synopsis>
+    <cmd>gvmd OPTIONS</cmd>
+  </synopsis>
+
+  <description>
+    <p>
+      The Greenbone Vulnerability Manager is the central management service between security scanners
+      and the user clients.
+    </p>
+
+    <p>
+      It manages the storage of any vulnerability management configurations and of the
+      scan results. Access to data, control commands and workflows is offered via the
+      XML-based Greenbone Management Protocol (GMP). The primary scanner 'OpenVAS Scanner'
+      is controlled directly via protocol OTP while any other remote scanner is coupled
+      with the Open Scanner Protocol (OSP).
+    </p>
+
+  </description>
+
+  <options>
+    <option>
+      <p><opt>-a, --listen=<arg>ADDRESS</arg></opt></p>
+      <optdesc><p>Listen on ADDRESS.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--create-user=<arg>USERNAME</arg></opt></p>
+      <optdesc><p>Create admin user USERNAME and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--role=<arg>ROLE</arg></opt></p>
+      <optdesc><p>Role for --create-user option.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--delete-user=<arg>USERNAME</arg></opt></p>
+      <optdesc><p>Delete user USERNAME and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--get-users</opt></p>
+      <optdesc><p>List users and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--create-scanner=<arg>NAME</arg></opt></p>
+      <optdesc><p>Create scanner NAME and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-host=<arg>HOST</arg></opt></p>
+      <optdesc>
+        <p>Scanner host for --create-scanner, --rebuild and --update. Default is 127.0.0.1.</p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-port=<arg>PORT</arg></opt></p>
+      <optdesc>
+        <p>Scanner port for --create-scanner, --rebuild and --update. Default is 9391.</p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-type=<arg>TYPE</arg></opt></p>
+      <optdesc><p>Type for --create-scanner option.
+                  Could be "OpenVAS Scanner" or "OSP Ovaldi".</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-ca-pub=<arg>CAPUB</arg></opt></p>
+      <optdesc><p>Scanner CA public key path for --create-scanner.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-key-pub=<arg>KEYPUB</arg></opt></p>
+      <optdesc><p>Scanner public key path for --create-scanner.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--scanner-key-priv=<arg>KEYPRIV</arg></opt></p>
+      <optdesc><p>Scanner private key path for --create-scanner.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--delete-scanner=<arg>UUID</arg></opt></p>
+      <optdesc><p>Delete scanner with UUID and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--get-scanners</opt></p>
+      <optdesc><p>List scanners and exit.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--gnutls-priorities=<arg>PRIORITY</arg></opt></p>
+      <optdesc><p>Set the GnuTLS priority string to PRIORITY.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--dh-params=<arg>FILE</arg></opt></p>
+      <optdesc><p>Path to file containing Diffie-Hellman parameters which
+                  are needed for DHE-RSA. This file could be generated using
+                  openssl or certtool.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>--max-email-attachment-size=<arg>SIZE</arg></opt></p>
+      <optdesc>
+        <p>
+          Maximum number of bytes permitted in alert email attachments.
+        </p>
+        <p>
+          0 to use the default, negative to allow any size.
+        </p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>--max-email-include-size=<arg>SIZE</arg></opt></p>
+      <optdesc>
+        <p>
+          Maximum number of bytes permitted in reports inlined in alert email
+          attachments.
+        </p>
+        <p>
+          0 to use the default, negative to allow any size.
+        </p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>--max-ips-per-target=<arg>SIZE</arg></opt></p>
+      <optdesc>
+        <p>
+          Maximum number of IPs per target.
+        </p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>-u, --update</opt></p>
+      <optdesc>
+        <p>Updates the database with information from a running
+           scanner (openvassd) and exits.</p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>-p, --port=<arg>NUMBER</arg></opt></p>
+      <optdesc>
+        <p>Listen on port number <arg>NUMBER</arg>.</p>
+      </optdesc>
+    </option>
+
+        <option>
+      <p><opt>--rebuild</opt></p>
+      <optdesc>
+        <p>Rebuild the database with information from a running
+           scanner (openvassd) and exits.</p>
+      </optdesc>
+    </option>
+
+    <option>
+      <p><opt>--version</opt></p>
+      <optdesc><p>Print version.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>-v, --verbose</opt></p>
+      <optdesc><p>Print progress messages.</p></optdesc>
+    </option>
+
+    <option>
+      <p><opt>-?, --help</opt></p>
+      <optdesc><p>Show help.</p></optdesc>
+    </option>
+  </options>
+
+  <section name="SIGNALS">
+    <p>SIGHUP causes gvmd to rebuild the database with information from
+       the Scanner (openvassd).</p>
+  </section>
+
+  <section name="EXAMPLES">
+    <p>gvmd --port 1241</p>
+    <p>Serve GMP clients on port 1241 and connect to a OTP server on 7772.</p>
+  </section>
+
+  <section name="SEE ALSO">
+    <p>
+      <manref name="openvassd" section="8"/>,
+      <manref name="gsad" section="8"/>,
+      <manref name="gvm-cli" section="8"/>,
+    </p>
+  </section>
+
+  <section name="MORE INFORMATION ABOUT THE OpenVAS PROJECT">
+    <p>
+      The canonical places where you will find more information
+      about the OpenVAS project are:
+
+      <url href="http://www.openvas.org/"/>
+        (Official site)
+
+      <url href="http://wald.intevation.org/projects/openvas/"/>
+        (Development Platform)
+    </p>
+  </section>
+
+  <section name="COPYRIGHT">
+    <p>
+      The Greenbone Vulnerability Manager is released under the GNU GPL, version 2,
+      or, at your option, any later version.
+    </p>
+  </section>
+
+</manpage>

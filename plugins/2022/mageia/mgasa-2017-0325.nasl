@@ -1,0 +1,152 @@
+# Copyright (C) 2022 Greenbone Networks GmbH
+# Some text descriptions might be excerpted from (a) referenced
+# source(s), and are Copyright (C) by the respective right holder(s).
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+if(description)
+{
+  script_oid("1.3.6.1.4.1.25623.1.1.10.2017.0325");
+  script_cve_id("CVE-2012-4733", "CVE-2013-3368", "CVE-2013-3369", "CVE-2013-3370", "CVE-2013-3371", "CVE-2013-3372", "CVE-2013-3373", "CVE-2013-3374", "CVE-2014-9472", "CVE-2015-1165", "CVE-2015-1464", "CVE-2015-5475", "CVE-2016-6127", "CVE-2017-5361", "CVE-2017-5943", "CVE-2017-5944");
+  script_tag(name:"creation_date", value:"2022-01-28 10:58:44 +0000 (Fri, 28 Jan 2022)");
+  script_version("2022-01-28T10:58:44+0000");
+  script_tag(name:"last_modification", value:"2022-01-28 10:58:44 +0000 (Fri, 28 Jan 2022)");
+  script_tag(name:"cvss_base", value:"7.1");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:C");
+  script_tag(name:"severity_vector", value:"CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H");
+  script_tag(name:"severity_origin", value:"NVD");
+  script_tag(name:"severity_date", value:"2017-07-07 16:40:00 +0000 (Fri, 07 Jul 2017)");
+
+  script_name("Mageia: Security Advisory (MGASA-2017-0325)");
+  script_category(ACT_GATHER_INFO);
+  script_copyright("Copyright (C) 2022 Greenbone Networks GmbH");
+  script_family("Mageia Linux Local Security Checks");
+  script_dependencies("gather-package-list.nasl");
+  script_mandatory_keys("ssh/login/mageia_linux", "ssh/login/release", re:"ssh/login/release=MAGEIA5");
+
+  script_xref(name:"Advisory-ID", value:"MGASA-2017-0325");
+  script_xref(name:"URL", value:"https://advisories.mageia.org/MGASA-2017-0325.html");
+  script_xref(name:"URL", value:"https://bugs.mageia.org/show_bug.cgi?id=16665");
+  script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2013-May/000226.html");
+  script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2015-February/000273.html");
+  script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2015-August/000279.html");
+  script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2017-June/000297.html");
+
+  script_tag(name:"summary", value:"The remote host is missing an update for the 'perl-Encode, rt' package(s) announced via the MGASA-2017-0325 advisory.");
+
+  script_tag(name:"vuldetect", value:"Checks if a vulnerable package version is present on the target host.");
+
+  script_tag(name:"insight", value:"RT 4.0.0 and above are vulnerable to a limited privilege escalation leading to
+unauthorized modification of ticket data. The DeleteTicket right and any
+custom lifecycle transition rights may be bypassed by any user with
+ModifyTicket (CVE-2012-4733).
+
+RT 3.8.0 and above include a version of bin/rt that uses semi-predictable
+names when creating tempfiles. This could possibly be exploited by a
+malicious user to overwrite files with permissions of the user running bin/rt
+(CVE-2013-3368).
+
+RT 3.8.0 and above allow calling of arbitrary Mason components (without
+control of arguments) for users who can see administration pages. This could
+be used by a malicious user to run private components which may have negative
+side-effects (CVE-2013-3369).
+
+RT 3.8.0 and above allow direct requests to private callback components.
+Though no callback components ship with RT, this could be used to exploit an
+extension or local callback which uses the arguments passed to it insecurely
+(CVE-2013-3370).
+
+RT 3.8.3 and above are vulnerable to cross-site scripting (XSS) via attachment
+filenames. The vector is difficult to exploit due to parsing requirements.
+Additionally, RT 4.0.0 and above are vulnerable to XSS via maliciously-crafted
+'URLs' in ticket content when RT's 'MakeClicky' feature is configured
+(CVE-2013-3371).
+
+RT 3.8.0 and above are vulnerable to an HTTP header injection limited to the
+value of the Content-Disposition header. Injection of other arbitrary
+response headers is not possible. Some (especially older) browsers may allow
+multiple Content-Disposition values which could lead to XSS. Newer browsers
+contain security measures to prevent this (CVE-2013-3372).
+
+RT 3.8.0 and above are vulnerable to a MIME header injection in outgoing email
+generated by RT (CVE-2013-3373).
+
+RT 3.8.0 and above are vulnerable to limited session re-use when using the
+file-based session store, Apache::Session::File. RT's default session
+configuration only uses Apache::Session::File for Oracle (CVE-2013-3374).
+
+RT 3.0.0 and above, if running on Perl 5.14.0 or higher, are vulnerable to a
+remote denial-of-service via the email gateway, any installation which accepts
+mail from untrusted sources is vulnerable, regardless of the permissions
+configuration inside RT. This denial-of-service may encompass both CPU and
+disk usage, depending on RT's logging configuration (CVE-2014-9472).
+
+RT 3.8.8 and above are vulnerable to an information disclosure attack which
+may reveal RSS feeds URLs, and thus ticket data (CVE-2015-1165).
+
+RSS feed URLs can also be leveraged to perform session hijacking, allowing a
+user with the URL to log in as the user that created the feed (CVE-2015-1464).
+
+RT 4.0.0 and above are vulnerable to a cross-site scripting (XSS) attack via
+the user and group rights management pages (CVE-2015-5475).
+
+RT 4.2.0 and above are vulnerable to a cross-site scripting (XSS) attack
+via the cryptography interface. ... [Please see the references for more information on the vulnerabilities]");
+
+  script_tag(name:"affected", value:"'perl-Encode, rt' package(s) on Mageia 5.");
+
+  script_tag(name:"solution", value:"Please install the updated package(s).");
+
+  script_tag(name:"solution_type", value:"VendorFix");
+  script_tag(name:"qod_type", value:"package");
+
+  exit(0);
+}
+
+include("revisions-lib.inc");
+include("pkg-lib-rpm.inc");
+
+release = rpm_get_ssh_release();
+if(!release)
+  exit(0);
+
+res = "";
+report = "";
+
+if(release == "MAGEIA5") {
+
+  if(!isnull(res = isrpmvuln(pkg:"perl-Encode", rpm:"perl-Encode~2.640.0~1.mga5", rls:"MAGEIA5"))) {
+    report += res;
+  }
+
+  if(!isnull(res = isrpmvuln(pkg:"rt", rpm:"rt~4.0.25~1.mga5", rls:"MAGEIA5"))) {
+    report += res;
+  }
+
+  if(!isnull(res = isrpmvuln(pkg:"rt-mailgate", rpm:"rt-mailgate~4.0.25~1.mga5", rls:"MAGEIA5"))) {
+    report += res;
+  }
+
+  if(report != "") {
+    security_message(data:report);
+  } else if(__pkg_match) {
+    exit(99);
+  }
+  exit(0);
+}
+
+exit(0);

@@ -1,0 +1,45 @@
+<report_format id="c15ad349-bd8d-457a-880a-c7056532ee15">
+  <name>Verinice ISM</name>
+  <summary>Greenbone Verinice ISM Report, v3.0.0.</summary>
+  <description>
+    Information Security Management Report for Verinice import, version 3.0.0.
+  </description>
+  <extension>vna</extension>
+  <content_type>application/zip</content_type>
+  <param>
+    <name>Attached report formats</name>
+    <value>
+      <report_format id="6c248850-1f62-11e1-b082-406186ea4fc5"/>
+    </value>
+    <type>report_format_list</type>
+    <default>twopi</default>
+  </param>
+  <param>
+    <name>ISM Control Description</name>
+    <value>Dear IS Coordinator,
+
+A new scan has been carried out and the results are now available in Verinice.
+If responsible persons are linked to the asset groups, the tasks are already created.
+
+Please check the results in a timely manner.
+
+Best regards
+CIS
+    </value>
+    <type>
+      text
+      <min>0</min>
+      <max>100000</max>
+    </type>
+    <default>Dear IS Coordinator,
+
+A new scan has been carried out and the results are now available in Verinice.
+If responsible persons are linked to the asset groups, the tasks are already created.
+
+Please check the results in a timely manner.
+
+Best regards
+CIS
+    </default>
+  </param>
+</report_format>

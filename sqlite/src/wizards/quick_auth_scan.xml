@@ -1,0 +1,199 @@
+<!--
+Copyright (C) 2013-2018 Greenbone Networks GmbH
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<!--
+  This wizard sets up a new task and target to run a scan on a
+  host (or range of hosts) specified by the parameter "hosts" using the
+  "Full and Fast" scan config and default port range.
+  If given a username and password, the wizard will set up credentials to
+  attempt an authenticated scan as well.
+  Additionally, the names of the created resources can be chosen as well.
+
+  Optional parameters:
+  hosts : The hosts to scan. Syntax is the same as for the hosts
+           parameter of the GMP command CREATE_TARGET.
+           Will default to "localhost".
+  config_id : UUID of the scan config to use. Leave blank for "full and fast".
+  username : The username to use for creating credential. If missing, no
+              credentials will be used.
+  password : The password to use for creating credential.
+  task_name : The name to use for the task. Defaults to
+              "LSC Credential for immediate scan of [hosts]"
+  target_name : The name to use for the target. Defaults to
+                 "Target for immediate scan of [hosts]"
+  credential_name : The name to use for the LSC credential. Defaults to
+                     "LSC Credential for immediate scan of [hosts]"
+  scanner_id : The UUID of the scanner to use, defaults to the built-in
+                OpenVAS-Scanner.
+
+  To run this wizard, use the GMP command RUN_WIZARD.
+  Please see the GMP documentation for details.
+ -->
+
+<wizard>
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <commands>
+            <xsl:if test="/wizard/params/param[name='username']/value != ''">
+              <create_credential>
+                <xsl:choose>
+                  <xsl:when test="/wizard/params/param[name='credential_name']/value">
+                    <name><xsl:value-of select="/wizard/params/param[name='credential_name']/value"/></name>
+                  </xsl:when>
+                  <xsl:when test="/wizard/params/param[name='hosts']/value != ''">
+                    <name>LSC Credential for immediate scan of <xsl:value-of select="/wizard/params/param[name='hosts']/value"/></name>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <name>LSC Credential for immediate scan of localhost</name>
+                  </xsl:otherwise>
+                </xsl:choose>
+                <comment><xsl:value-of select="/wizard/params/param[name='comment']/value"/></comment>
+                <login><xsl:value-of select="/wizard/params/param[name='username']/value"/></login>
+                <password><xsl:value-of select="/wizard/params/param[name='password']/value"/></password>
+              </create_credential>
+            </xsl:if>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+  <step>
+    <command>
+        <xsl:stylesheet 
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xmlns:date="http://exslt.org/dates-and-times"
+          extension-element-prefixes="date">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <xsl:variable
+            name="timestamp"
+            select="concat (substring (date:date(), 1, 10), ' ', substring (date:time(), 1, 8))"/>
+          <create_target>
+            <xsl:choose>
+              <xsl:when test="/wizard/params/param[name='target_name']/value">
+                <name><xsl:value-of select="/wizard/params/param[name='target_name']/value"/></name>
+              </xsl:when>
+              <xsl:when test="/wizard/params/param[name='hosts']/value != ''">
+                <name>
+                  <xsl:text>Target for immediate scan of </xsl:text>
+                  <xsl:value-of select="/wizard/params/param[name='hosts']/value"/>
+                  <xsl:text> - </xsl:text>
+                  <xsl:value-of select="$timestamp"/>
+                </name>
+              </xsl:when>
+              <xsl:otherwise>
+                <name>
+                  <xsl:text>Target for immediate scan of </xsl:text>
+                  <xsl:value-of select="/wizard/params/param[name='hosts']/value"/>
+                  <xsl:text> - localhost</xsl:text>
+                </name>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="/wizard/previous/response/commands_response/create_credential_response/@id != ''">
+              <ssh_lsc_credential id="{/wizard/previous/response/commands_response/create_credential_response/@id}"><port>22</port></ssh_lsc_credential>
+              <smb_lsc_credential id="{/wizard/previous/response/commands_response/create_credential_response/@id}"></smb_lsc_credential>
+            </xsl:if>
+            <xsl:choose>
+              <xsl:when test="/wizard/params/param[name='hosts']/value != ''">
+                <hosts><xsl:value-of select="/wizard/params/param[name='hosts']/value"/></hosts>
+              </xsl:when>
+              <xsl:otherwise>
+                <hosts>localhost</hosts>
+              </xsl:otherwise>
+            </xsl:choose>
+            <comment><xsl:value-of select="/wizard/params/param[name='comment']/value"/></comment>
+          </create_target>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <create_task>
+            <xsl:choose>
+              <xsl:when test="/wizard/params/param[name='task_name']/value">
+                <name><xsl:value-of select="/wizard/params/param[name='task_name']/value"/></name>
+              </xsl:when>
+              <xsl:when test="/wizard/params/param[name='hosts']/value != ''">
+                <name>Immediate scan of <xsl:value-of select="/wizard/params/param[name='hosts']/value"/></name>
+              </xsl:when>
+              <xsl:otherwise>
+                <name>Immediate scan of localhost</name>
+              </xsl:otherwise>
+            </xsl:choose>
+            <target id="{/wizard/previous/response/create_target_response/@id}"/>
+            <xsl:choose>
+              <xsl:when test="/wizard/params/param[name='config_id']/value">
+                <config id="{/wizard/params/param[name='config_id']/value}"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <config id="daba56c8-73ec-11df-a475-002264764cea"/>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:choose>
+              <xsl:when test="/wizard/params/param[name='scanner_id']/value != ''">
+                <scanner id="{/wizard/params/param[name='scanner_id']/value}"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <scanner id="08b69003-5fc2-4037-a479-93b440211c73"/>
+              </xsl:otherwise>
+            </xsl:choose>
+            <comment><xsl:value-of select="/wizard/params/param[name='comment']/value"/></comment>
+          </create_task>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <start_task task_id="{/wizard/previous/response/create_task_response/@id}"/>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+</wizard>

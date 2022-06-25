@@ -1,0 +1,7 @@
+<report_format id="9087b18c-626c-11e3-8892-406186ea4fc5">
+  <name>CSV Hosts</name>
+  <summary>CSV host summary.</summary>
+  <description>Base host information and result counts as comma separated values. Text fields starting with &quot;=&quot;, &quot;@&quot;, &quot;+&quot;, &quot;-&quot; will have a single quote &quot;&apos;&quot; added so spreadsheet software does not interpret them as formulas.</description>
+  <extension>csv</extension>
+  <content_type>text/csv</content_type>
+</report_format>

@@ -1,0 +1,32 @@
+<report_format id="9e5e5deb-879e-4ecc-8be6-a71cd0875cdd">
+  <name>Topology SVG</name>
+  <summary>Network topology SVG image.</summary>
+  <description>
+    Scan results in topologic structure as scalable vector graphics.
+  </description>
+  <extension>svg</extension>
+  <content_type>image/svg+xml</content_type>
+  <param>
+    <name>Graph Type</name>
+    <value>twopi</value>
+    <type>
+      selection
+      <options>
+        <option>circo</option>
+        <option>dot</option>
+        <option>twopi</option>
+      </options>
+    </type>
+    <default>twopi</default>
+  </param>
+  <param>
+    <name>Node Distance</name>
+    <value>8</value>
+    <type>
+      integer
+      <min>1</min>
+      <max>20</max>
+    </type>
+    <default>8</default>
+  </param>
+</report_format>
