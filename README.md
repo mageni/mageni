@@ -75,4 +75,4 @@ curl -sL https://www.mageni.net/installation | sudo bash
 Mageni also provides a professional an enterprise product with more features like Schedules, Notifications, Migrations and more. 
 
 ## Open Source Software
-For a list of all open source software that Mageni uses and their copyrights, please visit this <a href="https://www.mageni.net/opensource" target="_blank"></a>website</a>
+For a list of all open source software that Mageni uses and their copyrights, please visit this <a href="https://www.mageni.net/opensource" target="_blank">website</a>
