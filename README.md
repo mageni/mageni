@@ -13,6 +13,15 @@
 ## About
 Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches.
 
+## Audience
+- PenTester
+- Cybersecurity Professionals 
+- SOC Analyst
+- Chief Information Security Officer
+- Security Researchers
+- Auditors
+- Red Team
+
 ## Installation 
 
 ### Linux
