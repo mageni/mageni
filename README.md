@@ -11,7 +11,7 @@
 </p>
 
 ## About
-Mageni saves you money, time, and resources by automating for you the vulnerability scanning, assessment, and management process.
+Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of fines, financial losses, and security breaches.
 
 ## Installation 
 
