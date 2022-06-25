@@ -1,0 +1,15 @@
+# Project exclude paths
+build/
+cmake-build-debug/
+scap/
+.vscode/
+cert/
+scripts/
+installer/
+vscand/build/
+vscand/cmake-build-debug/
+libraries/build/
+libraries/cmake-build-debug/
+scripts/excluded_files.txt
+scripts/feed.sh
+frontend/database/seeders/Version.php

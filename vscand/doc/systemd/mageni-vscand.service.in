@@ -1,0 +1,16 @@
+[Unit]
+Description=The Mageni Vulnerability Scanner Service
+
+[Service]
+Type=forking
+ExecStart=/bin/bash @SBINDIR@/mageni-scanner-start
+ExecStop=/bin/kill -s TERM $MAINPID
+PIDFile=@LOCALSTATEDIR@/run/mageni-vscand.pid
+TimeoutStopSec=0
+Restart=always
+User=root
+Group=root
+TimeOutSec=60
+
+[Install]
+WantedBy=multi-user.target

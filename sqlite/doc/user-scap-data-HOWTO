@@ -1,0 +1,46 @@
+GVM USER SCAP DATA HOWTO
+========================
+
+The SCAP data sync script ("greenbone-scapdata-sync") do download SCAP data for
+the respective feed service. Additionalle they support the import of
+user-defined SCAP data.  Currently only OVAL definitions are supported.
+However, a few things must be kept in mind for this to work correctly:
+
+The "private" subdirectory
+--------------------------
+User defined data has to be placed into a special subdirectory of the SCAP
+data directory of your GVM installation, which will be called the private
+directory from now on.
+By default this subdirectory is named "private".
+
+Placing your files there also ensures that they are not deleted during the sync
+when they are recognized not to be part of the feed content.
+
+Updating the database
+---------------------
+The SCAP database will be updated when a SCAP data sync script is run.
+If you just want to update your user-defined data without syncing with the feed,
+you can run the scripts with the option --refresh-private.
+
+User OVAL data
+--------------
+To import OVAL definitions into the SCAP database, move the XML files containing
+the definitions into the subdirectory "oval" of the private directory or a
+subdirectory of this and run the SCAP sync script as described above.
+
+Before any data is added from a file, it must pass a few tests:
+- The filename must match the pattern "*.xml" or match "*.asc" while another
+  file with the same name excluding the ".asc" suffix exists in the same
+  directory.
+- The file must be valid XML and contain a valid OVAL generator timestamp.
+- The file must not include definitions for any identifiers that are also
+  defined in a file that is part of the feed. This is done to ensure
+  consistency of the data provided by the feed.
+- The file must be newer than the date of the last database update.
+
+The sync script will insert all definitions with a newer timestamp than
+the latest one from that file already in the database or all definitions if
+the file is newly added.
+
+If a file is removed, all definitions from that file are also removed from the
+database at the end of the sync.

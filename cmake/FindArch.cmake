@@ -1,0 +1,5 @@
+if (CMAKE_SIZEOF_VOID_P EQUAL 8)
+    message(STATUS "64-bit is supported.")
+else ()
+    message( FATAL_ERROR "Only 64-bit is supported." )
+endif ()

@@ -1,0 +1,21 @@
+server {
+
+listen 443 ssl;
+listen [::]:443 ssl;
+include snippets/self-signed.conf;
+include snippets/ssl-params.conf;
+root /var/www/html/public;
+index index.php index.html index.htm;
+
+location / {
+    try_files $uri $uri/ /index.php$is_args$args;
+}
+
+location ~ \.php$ {
+    try_files $uri /index.php =404;
+    fastcgi_pass unix:/var/run/php/php8.0-fpm.sock;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+    }
+}

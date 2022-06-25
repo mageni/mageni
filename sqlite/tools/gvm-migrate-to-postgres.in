@@ -1,0 +1,2539 @@
+#!/bin/sh
+# Copyright (C) 2014-2018 Greenbone Networks GmbH
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# This script migrates a GVM installation from SQLite to Postgres.
+
+VERSION=20140904
+
+# SETTINGS
+# ========
+
+# SCRIPT_NAME is the name the script will use to identify itself and to mark
+# log messages.
+SCRIPT_NAME="gvm-migrate-to-postgres"
+
+# LOG_CMD defines the command to use for logging. To have logger log to stderr
+# as well as syslog, add "-s" here.
+LOG_CMD="logger -s -t $SCRIPT_NAME"
+
+SQLITE3="sqlite3 -noheader -bail"
+PSQL="psql -v ON_ERROR_STOP=1 -q --pset pager=off -d gvmd -t"
+
+# Maximum number of retries if database is locked
+if [ -z "$MAX_SQL_RETRIES" ]; then
+  MAX_SQL_RETRIES="1" # 0 : try only once
+fi
+
+# Delay between retries
+if [ -z "$SQL_RETRY_DELAY" ]; then
+  SQL_RETRY_DELAY="10m" # allowed unit suffixes: see sleep command
+fi
+
+[ -r @GVM_SYSCONF_DIR@/migrate-to-postgres.conf ] && . @GVM_SYSCONF_DIR@/migrate-to-postgres.conf
+
+if [ -z "$SQLITE_DB_DIR" ]; then
+  SQLITE_DB_DIR="@GVMD_STATE_DIR@"
+fi
+
+if [ -z "$SQLITE_DB_FILE" ]; then
+  SQLITE_DB_FILE="gvmd.db"
+fi
+
+if [ -z "$SQLITE_DB" ]; then
+  SQLITE_DB="$SQLITE_DB_DIR/$SQLITE_DB_FILE"
+fi
+
+SQLITE=`command -v sqlite3`
+
+log_debug () {
+  $LOG_CMD -p daemon.debug $1
+}
+
+log_info () {
+  $LOG_CMD -p daemon.info $1
+}
+
+log_notice () {
+  $LOG_CMD -p daemon.notice $1
+}
+
+log_warning () {
+  $LOG_CMD -p daemon.warning $1
+}
+
+log_err () {
+  $LOG_CMD -p daemon.err $1
+}
+
+reset_sql_tries () {
+  try_sql=1
+  sql_retries=0
+}
+
+test_sql_exit () {
+  exit_code=$?
+  try_sql=0
+  if [ 0 -ne "$exit_code" ]
+  then
+    log_err "$1: sql command exited with code $exit_code."
+    exit 1
+  fi
+}
+
+sqlite () {
+  log_debug "SQLite: $1"
+  $SQLITE3 $SQLITE_DB "$1"
+}
+
+pg () {
+  log_debug "    PG: $1"
+  $PSQL -c "$1"
+  exit_code=$?
+  if [ 0 -ne "$exit_code" ]
+  then
+    log_err "$1: psql exited with code $exit_code for sql: $1."
+    exit 1
+  fi
+}
+
+does_pg_db_exist () {
+  PG_DB_EXISTS=`pg "SELECT EXISTS (SELECT table_name
+                    FROM information_schema.tables
+                    WHERE table_catalog = 'gvmd'
+                    AND table_schema = 'public'
+                    AND table_name = 'meta')
+                    ::integer;"`
+  return $PG_DB_EXISTS
+}
+
+is_db_broken () {
+  log_info "Checking SQLite3 database."
+  DB_BROKEN=0
+  if [ ! -e $SQLITE_DB ]
+  then
+    return
+  fi
+
+  # Index report_hosts_by_host may have been created with COLLATE collate_ip.
+  # collate_ip has been removed.  So just recreate the index.
+  reset_sql_tries
+  until [ "$try_sql" -eq 0 ]
+  do
+    sqlite "DROP INDEX report_hosts_by_host;"
+    test_sql_exit "Could not drop index report_hosts_by_host"
+  done
+  reset_sql_tries
+  until [ "$try_sql" -eq 0 ]
+  do
+    sqlite "CREATE INDEX report_hosts_by_host ON report_hosts (host);"
+    test_sql_exit "Could not create index report_hosts_by_host"
+  done
+
+  reset_sql_tries
+  until [ "$try_sql" -eq 0 ]
+  do
+    DB_INTEGRITY=`sqlite "PRAGMA integrity_check;"`
+    test_sql_exit "Could not check CERT database integrity"
+  done
+  if [ "$DB_INTEGRITY" != "ok" ]
+  then
+    DB_BROKEN=1
+    log_warning "Database integrity check failed."
+  fi
+}
+
+do_help () {
+  echo "$0: Migrate Manager database from SQLite3 to Postgres"
+  echo " --help     display this help"
+  echo " --selftest perform self-test"
+  echo " --version  display version"
+  echo ""
+  exit 0
+}
+
+create_tables_133 () {
+  log_info "Creating tables."
+
+  pg "CREATE TABLE IF NOT EXISTS current_credentials
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL);";
+
+  pg "CREATE TABLE IF NOT EXISTS meta
+       (id SERIAL PRIMARY KEY,
+        name text UNIQUE NOT NULL,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS users
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        password text,
+        timezone text,
+        hosts text,
+        hosts_allow integer,
+        ifaces text,
+        ifaces_allow integer,
+        method text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS agents
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        installer bytea,
+        installer_64 text,
+        installer_filename text,
+        installer_signature_64 text,
+        installer_trust integer,
+        installer_trust_time integer,
+        howto_install text,
+        howto_use text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS agents_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        installer bytea,
+        installer_64 text,
+        installer_filename text,
+        installer_signature_64 text,
+        installer_trust integer,
+        installer_trust_time integer,
+        howto_install text,
+        howto_use text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS alerts
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        event integer,
+        condition integer,
+        method integer,
+        filter integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS alerts_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        event integer,
+        condition integer,
+        method integer,
+        filter integer,
+        filter_location integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_condition_data
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_condition_data_trash
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts_trash (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_event_data
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_event_data_trash
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts_trash (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_method_data
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS alert_method_data_trash
+       (id SERIAL PRIMARY KEY,
+        alert integer REFERENCES alerts_trash (id) ON DELETE RESTRICT,
+        name text,
+        data text);";
+
+  pg "CREATE TABLE IF NOT EXISTS filters
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        type text,
+        term text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS filters_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        type text,
+        term text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS groups
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS groups_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS group_users
+       (id SERIAL PRIMARY KEY,
+        \"group\" integer REFERENCES groups (id) ON DELETE RESTRICT,
+        \"user\" integer REFERENCES users (id) ON DELETE RESTRICT);";
+
+  pg "CREATE TABLE IF NOT EXISTS group_users_trash
+       (id SERIAL PRIMARY KEY,
+        \"group\" integer REFERENCES groups_trash (id) ON DELETE RESTRICT,
+        \"user\" integer REFERENCES users (id) ON DELETE RESTRICT);";
+
+  pg "CREATE TABLE IF NOT EXISTS roles
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS roles_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS role_users
+       (id SERIAL PRIMARY KEY,
+        role integer REFERENCES roles (id) ON DELETE RESTRICT,
+        \"user\" integer REFERENCES users (id) ON DELETE RESTRICT);";
+
+  pg "CREATE TABLE IF NOT EXISTS role_users_trash
+       (id SERIAL PRIMARY KEY,
+        role integer REFERENCES roles_trash (id) ON DELETE RESTRICT,
+        \"user\" integer REFERENCES users (id) ON DELETE RESTRICT);";
+
+  pg "CREATE TABLE IF NOT EXISTS nvt_selectors
+       (id SERIAL PRIMARY KEY,
+        name text,
+        exclude integer,
+        type integer,
+        family_or_nvt text,
+        family text);";
+
+  pg "CREATE TABLE IF NOT EXISTS port_lists
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS port_lists_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS port_ranges
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        port_list integer REFERENCES port_lists (id) ON DELETE RESTRICT,
+        type integer,
+        start integer,
+        \"end\" integer,
+        comment text,
+        exclude integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS port_ranges_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        port_list integer REFERENCES port_lists_trash (id) ON DELETE RESTRICT,
+        type integer,
+        start integer,
+        \"end\" integer,
+        comment text,
+        exclude integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS port_names
+       (id SERIAL PRIMARY KEY,
+        number integer,
+        protocol text,
+        name text,
+        UNIQUE (number, protocol));";
+
+  pg "CREATE TABLE IF NOT EXISTS lsc_credentials
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        login text,
+        password text,
+        comment text,
+        private_key text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS lsc_credentials_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        login text,
+        password text,
+        comment text,
+        private_key text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS targets
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        hosts text,
+        exclude_hosts text,
+        reverse_lookup_only integer,
+        reverse_lookup_unify integer,
+        comment text,
+        lsc_credential integer,
+        ssh_port text,
+        smb_lsc_credential integer,
+        port_range integer REFERENCES port_lists (id) ON DELETE RESTRICT,
+        alive_test integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS targets_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        hosts text,
+        exclude_hosts text,
+        reverse_lookup_only integer,
+        reverse_lookup_unify integer,
+        comment text,
+        lsc_credential integer,
+        ssh_port text,
+        smb_lsc_credential integer,
+        port_range integer,
+        ssh_location integer,
+        smb_location integer,
+        port_list_location integer,
+        alive_test integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS configs
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        nvt_selector text,
+        comment text,
+        family_count integer,
+        nvt_count integer,
+        families_growing integer,
+        nvts_growing integer,
+        type integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS configs_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        nvt_selector text,
+        comment text,
+        family_count integer,
+        nvt_count integer,
+        families_growing integer,
+        nvts_growing integer,
+        type integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS config_preferences
+       (id SERIAL PRIMARY KEY,
+        config integer REFERENCES configs (id) ON DELETE RESTRICT,
+        type text,
+        name text,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS config_preferences_trash
+       (id SERIAL PRIMARY KEY,
+        config integer REFERENCES configs_trash (id) ON DELETE RESTRICT,
+        type text,
+        name text,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS schedules
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        first_time integer,
+        period integer,
+        period_months integer,
+        duration integer,
+        timezone text,
+        initial_offset integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS schedules_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        first_time integer,
+        period integer,
+        period_months integer,
+        duration integer,
+        timezone text,
+        initial_offset integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS slaves
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        host text,
+        port text,
+        login text,
+        password text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS slaves_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        host text,
+        port text,
+        login text,
+        password text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS scanners
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text,
+        comment text,
+        host text,
+        port integer,
+        type integer,
+        ca_pub text,
+        key_pub text,
+        key_priv text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS scanners_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text,
+        comment text,
+        host text,
+        port integer,
+        type integer,
+        ca_pub text,
+        key_pub text,
+        key_priv text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS tasks
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text,
+        hidden integer,
+        comment text,
+        run_status integer,
+        start_time integer,
+        end_time integer,
+        config integer,
+        target integer,
+        schedule integer,
+        schedule_next_time integer,
+        slave integer,
+        scanner integer,
+        config_location integer,
+        target_location integer,
+        schedule_location integer,
+        slave_location integer,
+        upload_result_count integer,
+        hosts_ordering text,
+        alterable integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS task_files
+       (id SERIAL PRIMARY KEY,
+        task integer REFERENCES tasks (id) ON DELETE RESTRICT,
+        name text,
+        content text);";
+
+  pg "CREATE TABLE IF NOT EXISTS task_alerts
+       (id SERIAL PRIMARY KEY,
+        task integer REFERENCES tasks (id) ON DELETE RESTRICT,
+        alert integer,
+        alert_location integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS task_preferences
+       (id SERIAL PRIMARY KEY,
+        task integer REFERENCES tasks (id) ON DELETE RESTRICT,
+        name text,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS reports
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        hidden integer,
+        task integer REFERENCES tasks (id) ON DELETE RESTRICT,
+        date integer,
+        start_time integer,
+        end_time integer,
+        nbefile text,
+        comment text,
+        scan_run_status integer,
+        slave_progress integer,
+        slave_task_uuid text,
+        slave_uuid text,
+        slave_name text,
+        slave_host text,
+        slave_port integer,
+        source_iface text);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_counts
+       (id SERIAL PRIMARY KEY,
+        report integer REFERENCES reports (id) ON DELETE RESTRICT,
+        \"user\" integer REFERENCES users (id) ON DELETE RESTRICT,
+        severity decimal,
+        count integer,
+        override integer,
+        end_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS results
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        task integer REFERENCES tasks (id) ON DELETE RESTRICT,
+        host text,
+        port text,
+        nvt text,
+        type text,
+        description text,
+        report integer REFERENCES reports (id) ON DELETE RESTRICT,
+        nvt_version text,
+        severity real,
+        qod integer,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        date integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_formats
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        extension text,
+        content_type text,
+        summary text,
+        description text,
+        signature text,
+        trust integer,
+        trust_time integer,
+        flags integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_formats_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        extension text,
+        content_type text,
+        summary text,
+        description text,
+        signature text,
+        trust integer,
+        trust_time integer,
+        flags integer,
+        original_uuid text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_format_params
+       (id SERIAL PRIMARY KEY,
+        report_format integer REFERENCES report_formats (id) ON DELETE RESTRICT,
+        name text,
+        type integer,
+        value text,
+        type_min bigint,
+        type_max bigint,
+        type_regex text,
+        fallback text);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_format_params_trash
+       (id SERIAL PRIMARY KEY,
+        report_format integer REFERENCES report_formats_trash (id) ON DELETE RESTRICT,
+        name text,
+        type integer,
+        value text,
+        type_min bigint,
+        type_max bigint,
+        type_regex text,
+        fallback text);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_format_param_options
+       (id SERIAL PRIMARY KEY,
+        report_format_param integer REFERENCES report_format_params (id) ON DELETE RESTRICT,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_format_param_options_trash
+       (id SERIAL PRIMARY KEY,
+        report_format_param integer REFERENCES report_format_params_trash (id) ON DELETE RESTRICT,
+        value text);";
+
+  # attack_state has not been created by Manager since 2014-11-20 (and it is
+  # never migrated away by Manager), but create it here in case the SQLite
+  # database is older than the one of 2014-11-20.
+  pg "CREATE TABLE IF NOT EXISTS report_hosts
+       (id SERIAL PRIMARY KEY,
+        report integer REFERENCES reports (id) ON DELETE RESTRICT,
+        host text,
+        start_time integer,
+        end_time integer,
+        attack_state text,
+        current_port integer,
+        max_port integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_host_details
+       (id SERIAL PRIMARY KEY,
+        report_host integer REFERENCES report_hosts (id) ON DELETE RESTRICT,
+        source_type text,
+        source_name text,
+        source_description text,
+        name text,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS report_results
+       (id SERIAL PRIMARY KEY,
+        report integer REFERENCES reports (id) ON DELETE RESTRICT,
+        result integer REFERENCES results (id) ON DELETE RESTRICT);";
+
+  pg "CREATE TABLE IF NOT EXISTS nvt_preferences
+       (id SERIAL PRIMARY KEY,
+        name text UNIQUE NOT NULL,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS nvts
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        oid text UNIQUE NOT NULL,
+        version text,
+        name text,
+        comment text,
+        summary text,
+        copyright text,
+        cve text,
+        bid text,
+        xref text,
+        tag text,
+        category text,
+        family text,
+        cvss_base text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS nvt_cves
+       (id SERIAL PRIMARY KEY,
+        nvt integer REFERENCES nvts (id) ON DELETE RESTRICT,
+        oid text,
+        cve_name text);";
+
+  pg "CREATE TABLE IF NOT EXISTS notes
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        nvt text NOT NULL,
+        creation_time integer,
+        modification_time integer,
+        text text,
+        hosts text,
+        port text,
+        severity double precision,
+        task integer,
+        result integer,
+        end_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS notes_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        nvt text NOT NULL,
+        creation_time integer,
+        modification_time integer,
+        text text,
+        hosts text,
+        port text,
+        severity double precision,
+        task integer,
+        result integer,
+        end_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS overrides
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        nvt text NOT NULL,
+        creation_time integer,
+        modification_time integer,
+        text text,
+        hosts text,
+        new_severity double precision,
+        port text,
+        severity double precision,
+        task integer,
+        result integer,
+        end_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS overrides_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        nvt text NOT NULL,
+        creation_time integer,
+        modification_time integer,
+        text text,
+        hosts text,
+        new_severity double precision,
+        port text,
+        severity double precision,
+        task integer,
+        result integer,
+        end_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS permissions
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        resource_type text,
+        resource integer,
+        resource_uuid text,
+        resource_location integer,
+        subject_type text,
+        subject integer,
+        subject_location integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS permissions_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        resource_type text,
+        resource integer,
+        resource_uuid text,
+        resource_location integer,
+        subject_type text,
+        subject integer,
+        subject_location integer,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS settings
+       (id SERIAL PRIMARY KEY,
+        uuid text NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        value text);";
+
+  pg "CREATE TABLE IF NOT EXISTS tags
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        resource_type text,
+        resource integer,
+        resource_uuid text,
+        resource_location integer,
+        active integer,
+        value text,
+        creation_time integer,
+        modification_time integer);";
+
+  pg "CREATE TABLE IF NOT EXISTS tags_trash
+       (id SERIAL PRIMARY KEY,
+        uuid text UNIQUE NOT NULL,
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,
+        name text NOT NULL,
+        comment text,
+        resource_type text,
+        resource integer,
+        resource_uuid text,
+        resource_location integer,
+        active integer,
+        value text,
+        creation_time integer,
+        modification_time integer);";
+}
+
+cleanup_sqlite_db () {
+  # Remove stray port_ranges.
+  sqlite "DELETE FROM port_ranges WHERE port_list NOT IN (SELECT id FROM port_lists);"
+  test_sql_exit "Failed to clean up port_lists"
+
+  # Remove stray port_ranges_trash.
+  sqlite "DELETE FROM port_ranges_trash WHERE port_list NOT IN (SELECT id FROM port_lists_trash);"
+  test_sql_exit "Failed to clean up port_lists_trash"
+
+  # Remove stray role_users_trash.
+  sqlite "DELETE FROM role_users_trash WHERE role NOT IN (SELECT id FROM roles_trash);"
+  test_sql_exit "Failed to clean up role_users_trash"
+
+  # Remove stray task_alerts.
+  sqlite "DELETE FROM task_alerts WHERE alert_location = 0 AND alert NOT IN (SELECT id FROM alerts);"
+  test_sql_exit "Failed to clean up task_alerts"
+  sqlite "DELETE FROM task_alerts WHERE alert_location = 1 AND alert NOT IN (SELECT id FROM alerts_trash);"
+  test_sql_exit "Failed to clean up task_alerts (trash alerts)"
+
+  # Remove stray task_preferences.
+  sqlite "DELETE FROM task_preferences WHERE task NOT IN (SELECT id FROM tasks);"
+  test_sql_exit "Failed to clean up task_preferences"
+
+  # Remove stray report_format_params_trash.
+  sqlite "DELETE FROM report_format_params_trash WHERE report_format NOT IN (SELECT id FROM report_formats_trash);"
+  test_sql_exit "Failed to clean up report_format_params_trash"
+
+  # Remove stray report_format_param_options_trash.
+  sqlite "DELETE FROM report_format_param_options_trash WHERE report_format_param NOT IN (SELECT id FROM report_format_params_trash);"
+  test_sql_exit "Failed to clean up report_format_param_options_trash"
+
+  # Remove stray report_hosts.  Not sure where these came from.
+  sqlite "DELETE FROM report_hosts WHERE report NOT IN (SELECT id FROM reports);"
+  test_sql_exit "Failed to clean up report_hosts"
+
+  # Remove stray report_host_details.  Not sure where these came from.
+  sqlite "DELETE FROM report_host_details WHERE report_host NOT IN (SELECT id FROM report_hosts);"
+  test_sql_exit "Failed to clean up report_host_details"
+
+  # Make end_time in tasks consistent.
+  #
+  # Manager --migrate only does this in migrate_135_to_136, but Postgres needs
+  # the end_times to be a single type for import.
+  sqlite "UPDATE tasks SET end_time = (SELECT reports.end_time FROM reports WHERE task = tasks.id ORDER BY id DESC LIMIT 1) WHERE EXISTS (SELECT id FROM reports WHERE task = tasks.id);"
+  test_sql_exit "Failed to make end_time in tasks consistent"
+
+  # Make end_time in report_hosts consistent.
+
+  # 2011-11-03T12:41:34+02:00, 2011-11-08T19:57:06Z
+  sqlite "UPDATE report_hosts SET end_time = strftime ('%s', end_time) WHERE end_time GLOB '*-*-*T*:*:*[+-]*:*' OR end_time GLOB '*-*-*T*:*:*Z';"
+  test_sql_exit "Failed to make end_time in report_hosts consistent"
+
+  # Fri Sep  3 05:12:34 2010
+  #
+  # Assume that this time matches the current timezone, may change the
+  # time, but it seems these are only from very old reports anyway.
+  echo "BEGIN EXCLUSIVE;
+        CREATE TEMPORARY TABLE months (number, name);
+        INSERT INTO months (number, name) VALUES ('01', 'Jan');
+        INSERT INTO months (number, name) VALUES ('02', 'Feb');
+        INSERT INTO months (number, name) VALUES ('03', 'Mar');
+        INSERT INTO months (number, name) VALUES ('04', 'Apr');
+        INSERT INTO months (number, name) VALUES ('05', 'May');
+        INSERT INTO months (number, name) VALUES ('06', 'Jun');
+        INSERT INTO months (number, name) VALUES ('07', 'Jul');
+        INSERT INTO months (number, name) VALUES ('08', 'Aug');
+        INSERT INTO months (number, name) VALUES ('09', 'Sep');
+        INSERT INTO months (number, name) VALUES ('10', 'Oct');
+        INSERT INTO months (number, name) VALUES ('11', 'Nov');
+        INSERT INTO months (number, name) VALUES ('12', 'Dec');
+        UPDATE report_hosts SET end_time = strftime ('%s', substr (end_time, 21) || '-' || (select number from months where name = substr (end_time, 5, 3)) || '-' || replace (substr (end_time, 9, 2), ' ', '0') || 'T' || substr (end_time, 12, 9)) WHERE end_time GLOB '??? ??? ?? ??:??:?? ????';
+        COMMIT;" | $SQLITE3 -batch $SQLITE_DB
+  test_sql_exit "Failed to make end_time in report_hosts consistent"
+
+  # There was an error in the C code migrate_56_to_57 which left this
+  # table lying around.
+  sqlite "DROP TABLE IF EXISTS escalator_condition_data_trash;"
+  test_sql_exit "Failed to remove escalator_condition_data_trash"
+}
+
+# Replace the value of a column if the cast does not work
+clean_column () {
+  table="$1"
+  column="$2"
+  type="$3"
+  replace="$4"
+  if [ -z "$type" ]
+  then
+    type="numeric"
+  fi
+  if [ -z "$replace" ]
+  then
+    replace="null"
+  fi
+
+  x=$(sqlite "SELECT \`$column\` FROM $table LIMIT 1")
+  if [ "$?" -eq 0 ]
+  then
+    sqlite "UPDATE $table SET \`$column\` = $replace WHERE (CAST (\`$column\` AS $type) IS NOT \`$column\`);"
+  fi
+}
+
+# Set all columns that do not fit the type expected by postgres to null
+clean_columns () {
+  log_info "Cleaning columns."
+
+  psql gvmd -Atc "SELECT DISTINCT table_name, column_name, data_type
+                  FROM information_schema.columns
+                  WHERE table_schema='public'
+                  AND data_type != 'text'
+                  AND data_type != 'bytea'" | while read -r line
+  do
+    table=`echo "$line" | cut -d '|' -f1`
+    column=`echo "$line" | cut -d '|' -f2`
+    type=`echo "$line" | cut -d '|' -f3`
+
+    if [ "$column" != "id" ]
+    then
+      clean_column "$table" "$column" "$type"
+    fi
+  done
+}
+
+clean_fkey_columns () {
+  log_info "Cleaning foreign key columns."
+
+  psql gvmd -Atc "SELECT tc.table_name, kcu.column_name,
+                         ccu.table_name, ccu.column_name
+                  FROM information_schema.table_constraints AS tc
+                       JOIN information_schema.key_column_usage AS kcu
+                       ON tc.constraint_name = kcu.constraint_name
+                       JOIN information_schema.constraint_column_usage AS ccu
+                       ON ccu.constraint_name = tc.constraint_name
+                  WHERE constraint_type = 'FOREIGN KEY'
+                  AND tc.constraint_schema = 'public'" | while read -r line
+  do
+    table=`echo "$line" | cut -d '|' -f1`
+    column=`echo "$line" | cut -d '|' -f2`
+    ftable=`echo "$line" | cut -d '|' -f3`
+    fcolumn=`echo "$line" | cut -d '|' -f4`
+
+    sqlite "UPDATE $table SET \`$column\` = null WHERE \`$column\` NOT IN (SELECT \`$fcolumn\` FROM $ftable);"
+  done
+}
+
+copy_data () {
+
+  if [ $# -ne 1 ]
+  then
+    log_notice "Internal Error: copy_data must have an arg"
+    exit 1
+  fi
+
+  log_info "Copying SQLite3 data:"
+  TEMP_DIR=`mktemp -d`
+  log_debug "TEMP_DIR: $TEMP_DIR"
+
+  # Tables must be ordered to respect foreign keys.
+  #
+  # These tables are left out: report_counts nvts nvt_cves
+
+  log_info "Copying SQLite3 data: checking that tables match"
+
+  TABLES=$1
+  log_debug "TABLES: $TABLES"
+
+  SQLITE_TABLES=`sqlite "SELECT tbl_name FROM sqlite_master WHERE type='table' and tbl_name not like 'sqlite_%';"`
+  test_sql_exit "Failed get table list"
+  log_debug "SQLITE_TABLES: $SQLITE_TABLES"
+
+  echo $SQLITE_TABLES | tr -s ' ' '\n' | sort - | grep --invert-match "^\(nvt_cves\|nvts\|report_counts\|auth_cache\)" > $TEMP_DIR/sqlite_tables_sorted
+  echo $TABLES | tr -s ' ' '\n' | sort - | diff - $TEMP_DIR/sqlite_tables_sorted
+  if [ $? -ne 0 ]
+  then
+    log_notice "Internal Error: tables being copied do not match tables in SQLite db"
+    exit 1
+  fi
+
+  log_info "Copying SQLite3 data: copying tables"
+
+  for TABLE in $TABLES; do
+    # Get the Postgres columns because the import CSV must be in that order.
+    #
+    # This also works around extra columns that were hanging around in old
+    # database.
+    #
+    log_info "Copying SQLite3 data: copying table $TABLE"
+    COLS=`pg "SELECT string_agg ('\"' || column_name || '\"', ',') from (select column_name from information_schema.columns where table_schema = 'public' and table_name = '$TABLE' order by ordinal_position) as sub;"`
+    log_debug "COLS: $COLS"
+    # Pipe SQLite CSV output into Postgres COPY FROM.
+    $SQLITE3 -csv $SQLITE_DB "SELECT $COLS FROM $TABLE;" | pg "COPY $TABLE ($COLS) FROM STDIN DELIMITER ',' CSV";
+    test_sql_exit "Could not generate CSV for $TABLE"
+  done
+
+  # Force a rebuild of Manager's NVT data.
+  pg "DELETE FROM meta WHERE name = 'nvts_feed_version';"
+  pg "UPDATE configs SET family_count = 0, nvt_count = 0, families_growing = 0, nvts_growing = 0;"
+
+  log_info "Copying SQLite3 data: resetting Postgres sequences"
+  # Reset ID sequences, because the COPY specified the ID values explicitly.
+  pg "SELECT 'SELECT 1'
+             || ' WHERE'
+             || ' SETVAL'
+             || '  (' || quote_literal (quote_ident (PGT.schemaname)
+             ||          '.' || quote_ident (S.relname)) || ','
+             ||     ' COALESCE'
+             ||     '  ((SELECT MAX (' || quote_ident (C.attname) || ')'
+             ||     '    FROM ' || quote_ident (PGT.schemaname)
+             ||                    '.' || quote_ident (T.relname) || '),'
+             ||     '   1))'
+             || ' < 0;'
+      FROM pg_class AS S,
+           pg_depend AS D,
+           pg_class AS T,
+           pg_attribute AS C,
+           pg_tables AS PGT
+      WHERE S.relkind = 'S'
+      AND S.oid = D.objid
+      AND D.refobjid = T.oid
+      AND D.refobjid = C.attrelid
+      AND D.refobjsubid = C.attnum
+      AND T.relname = PGT.tablename
+      ORDER BY S.relname;" > $TEMP_DIR/reset.sql;
+  test_sql_exit "Could not generate reset SQL"
+  $PSQL -f $TEMP_DIR/reset.sql | sed '/^\s*$/d'
+  test_sql_exit "Could not run reset SQL"
+
+  rm -rf $TEMP_DIR
+}
+
+#### Schema Migrators
+##
+## NB These only need to migrate the schema.
+##
+
+TABLES_133="users agents agents_trash configs config_preferences meta nvt_preferences nvt_selectors lsc_credentials lsc_credentials_trash port_lists port_ranges targets schedules slaves tasks reports report_hosts report_formats report_format_params report_format_param_options results report_results task_files configs_trash config_preferences_trash report_formats_trash report_format_params_trash report_format_param_options_trash schedules_trash slaves_trash targets_trash report_host_details task_preferences port_lists_trash port_ranges_trash alerts_trash alert_event_data_trash alert_method_data_trash alerts alert_condition_data alert_event_data alert_method_data task_alerts alert_condition_data_trash groups group_users filters filters_trash port_names settings roles role_users overrides overrides_trash notes notes_trash groups_trash roles_trash tags_trash group_users_trash role_users_trash scanners scanners_trash permissions_trash permissions tags"
+
+migrate_133_to_134 () {
+  pg "ALTER TABLE targets ADD COLUMN esxi_lsc_credential integer;"
+  pg "ALTER TABLE targets_trash ADD COLUMN esxi_lsc_credential integer;"
+  pg "ALTER TABLE targets_trash ADD COLUMN esxi_location integer;"
+}
+
+TABLES_134=$TABLES_133
+
+migrate_134_to_135 () {
+  pg "DROP TABLE report_results;"
+}
+
+TABLES_135=`echo $TABLES_134 | sed -e "s/ report_results//g"`
+
+migrate_135_to_136 () {
+  : # Schema stayed the same.
+}
+
+TABLES_136=$TABLES_135
+
+migrate_136_to_137 () {
+  : # Schema stayed the same.
+}
+
+TABLES_137=$TABLES_136
+
+migrate_137_to_138 () {
+  : # Schema stayed the same.
+}
+
+TABLES_138=$TABLES_137
+
+migrate_138_to_139 () {
+  pg "ALTER TABLE nvts ADD COLUMN solution_type text;"
+}
+
+TABLES_139=$TABLES_138
+
+migrate_139_to_140 () {
+  : # Schema stayed the same.
+}
+
+TABLES_140=$TABLES_139
+
+migrate_140_to_141 () {
+  pg "ALTER TABLE config_preferences ADD COLUMN default_value text;"
+  pg "ALTER TABLE config_preferences_trash ADD COLUMN default_value text;"
+}
+
+TABLES_141=$TABLES_140
+
+migrate_141_to_142 () {
+  : # Schema stayed the same.
+}
+
+TABLES_142=$TABLES_141
+
+migrate_142_to_143 () {
+  : # Schema stayed the same.
+}
+
+TABLES_143=$TABLES_142
+
+migrate_143_to_144 () {
+  pg "ALTER TABLE nvts ADD COLUMN qod INTEGER;"
+  pg "ALTER TABLE nvts ADD COLUMN qod_type TEXT;"
+  pg "ALTER TABLE results ADD COLUMN qod_type TEXT;"
+}
+
+TABLES_144=$TABLES_143
+
+migrate_144_to_145 () {
+  pg "ALTER TABLE tasks ADD COLUMN schedule_periods INTEGER;"
+}
+
+TABLES_145=$TABLES_144
+
+migrate_145_to_146 () {
+  pg "DROP VIEW IF EXISTS result_new_severities;"
+  pg "DROP VIEW IF EXISTS result_overrides;"
+}
+
+TABLES_146=$TABLES_145
+
+migrate_146_to_147 () {
+  pg "ALTER TABLE report_counts ADD COLUMN min_qod INTEGER;"
+}
+
+TABLES_147=$TABLES_146
+
+migrate_147_to_148 () {
+  : # Schema stayed the same.
+}
+
+TABLES_148=$TABLES_147
+
+migrate_148_to_149 () {
+  pg "ALTER TABLE tasks ADD COLUMN scanner_location INTEGER;"
+}
+
+TABLES_149=$TABLES_148
+
+migrate_149_to_150 () {
+  pg "DROP VIEW IF EXISTS result_new_severities;"
+}
+
+TABLES_150=$TABLES_149
+
+migrate_150_to_151 () {
+  # Create new tables.
+
+  pg "CREATE TABLE IF NOT EXISTS hosts                                         \
+       (id SERIAL PRIMARY KEY,                                                 \
+        uuid text UNIQUE NOT NULL,                                             \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,                \
+        name text NOT NULL,                                                    \
+        comment text,                                                          \
+        creation_time integer,                                                 \
+        modification_time integer);"
+
+  pg "CREATE TABLE IF NOT EXISTS host_identifiers                              \
+       (id SERIAL PRIMARY KEY,                                                 \
+        uuid text UNIQUE NOT NULL,                                             \
+        host integer REFERENCES hosts (id) ON DELETE RESTRICT,                 \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,                \
+        name text NOT NULL,                                                    \
+        comment text,                                                          \
+        value text NOT NULL,                                                   \
+        source_type text NOT NULL,                                             \
+        source_id text NOT NULL,                                               \
+        source_data text NOT NULL,                                             \
+        creation_time integer,                                                 \
+        modification_time integer);"
+
+  pg "CREATE TABLE IF NOT EXISTS oss                                           \
+       (id SERIAL PRIMARY KEY,                                                 \
+        uuid text UNIQUE NOT NULL,                                             \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,                \
+        name text NOT NULL,                                                    \
+        comment text,                                                          \
+        creation_time integer,                                                 \
+        modification_time integer);"
+
+  pg "CREATE TABLE IF NOT EXISTS host_oss                                      \
+       (id SERIAL PRIMARY KEY,                                                 \
+        uuid text UNIQUE NOT NULL,                                             \
+        host integer REFERENCES hosts (id) ON DELETE RESTRICT,                 \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,                \
+        name text NOT NULL,                                                    \
+        comment text,                                                          \
+        os integer REFERENCES oss (id) ON DELETE RESTRICT,                     \
+        source_type text NOT NULL,                                             \
+        source_id text NOT NULL,                                               \
+        source_data text NOT NULL,                                             \
+        creation_time integer,                                                 \
+        modification_time integer);"
+
+  pg "CREATE TABLE IF NOT EXISTS host_max_severities                           \
+       (id SERIAL PRIMARY KEY,                                                 \
+        host integer REFERENCES hosts (id) ON DELETE RESTRICT,                 \
+        severity real,                                                         \
+        source_type text NOT NULL,                                             \
+        source_id text NOT NULL,                                               \
+        creation_time integer);"
+
+  pg "CREATE TABLE IF NOT EXISTS host_details                                  \
+       (id SERIAL PRIMARY KEY,                                                 \
+        host integer REFERENCES hosts (id) ON DELETE RESTRICT,                 \
+        source_type text NOT NULL,                                             \
+        source_id text NOT NULL,                                               \
+        detail_source_type text,                                               \
+        detail_source_name text,                                               \
+        detail_source_description text,                                        \
+        name text,                                                             \
+        value text);"
+}
+
+# FIX host_details added between 150 and 151  (at 151 they have to be there, at 150 coping will fail if they're not there (if missing from sqlite then ignore))
+TABLES_151="$TABLES_150 hosts host_identifiers oss host_oss host_max_severities host_details"
+
+migrate_151_to_152 () {
+  : # Schema stayed the same.
+}
+
+TABLES_152=$TABLES_151
+
+migrate_152_to_153 () {
+  : # Schema stayed the same.
+}
+
+TABLES_153=$TABLES_152
+
+migrate_153_to_154 () {
+  pg "DROP TABLE lsc_credentials;"
+  pg "DROP TABLE lsc_credentials_trash;"
+
+  # Create new tables.
+
+  pg "CREATE TABLE credentials                                         \
+       (id SERIAL PRIMARY KEY,                                         \
+        uuid text UNIQUE NOT NULL,                                     \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,        \
+        name text NOT NULL,                                            \
+        comment text,                                                  \
+        creation_time integer,                                         \
+        modification_time integer,                                     \
+        type text);"
+
+  pg "CREATE TABLE credentials_trash                                   \
+       (id SERIAL PRIMARY KEY,                                         \
+        uuid text UNIQUE NOT NULL,                                     \
+        owner integer REFERENCES users (id) ON DELETE RESTRICT,        \
+        name text NOT NULL,                                            \
+        comment text,                                                  \
+        creation_time integer,                                         \
+        modification_time integer,                                     \
+        type text);"
+
+  pg "CREATE TABLE credentials_data                                        \
+       (id SERIAL PRIMARY KEY,                                             \
+        credential INTEGER REFERENCES credentials (id) ON DELETE RESTRICT, \
+        type TEXT,                                                         \
+        value TEXT);"
+
+  pg "CREATE TABLE credentials_trash_data                                        \
+       (id SERIAL PRIMARY KEY,                                                   \
+        credential INTEGER REFERENCES credentials_trash (id) ON DELETE RESTRICT, \
+        type TEXT,                                                               \
+        value TEXT);"
+}
+
+TABLES_153_NO_USERS=`echo $TABLES_153 | sed -e "s/^users //g"`
+TABLES_154=`echo "users credentials credentials_trash credentials_data credentials_trash_data $TABLES_153_NO_USERS" | sed -e "s/\( lsc_credentials\| lsc_credentials_trash\)//g"`
+
+migrate_154_to_155 () {
+  pg "ALTER TABLE reports ADD COLUMN flags INTEGER;"
+}
+
+TABLES_155=$TABLES_154
+
+migrate_155_to_156 () {
+  pg "ALTER TABLE targets DROP COLUMN lsc_credential;"
+  pg "ALTER TABLE targets DROP COLUMN ssh_port;"
+  pg "ALTER TABLE targets DROP COLUMN smb_lsc_credential;"
+  pg "ALTER TABLE targets DROP COLUMN esxi_lsc_credential;"
+  pg "ALTER TABLE targets RENAME COLUMN port_range TO port_list;"
+
+  pg "ALTER TABLE targets_trash DROP COLUMN lsc_credential;"
+  pg "ALTER TABLE targets_trash DROP COLUMN ssh_location;"
+  pg "ALTER TABLE targets_trash DROP COLUMN ssh_port;"
+  pg "ALTER TABLE targets_trash DROP COLUMN smb_lsc_credential;"
+  pg "ALTER TABLE targets_trash DROP COLUMN smb_location;"
+  pg "ALTER TABLE targets_trash DROP COLUMN esxi_lsc_credential;"
+  pg "ALTER TABLE targets_trash DROP COLUMN esxi_location;"
+  pg "ALTER TABLE targets_trash RENAME COLUMN port_range TO port_list;"
+
+  # Create new tables.
+
+  pg "CREATE TABLE IF NOT EXISTS targets_login_data        \
+       (id SERIAL PRIMARY KEY,                             \
+        target INTEGER REFERENCES targets (id),            \
+        type TEXT,                                         \
+        credential INTEGER REFERENCES credentials (id),    \
+        port INTEGER);"
+
+  pg "CREATE TABLE IF NOT EXISTS targets_trash_login_data  \
+       (id SERIAL PRIMARY KEY,                             \
+        target INTEGER REFERENCES targets_trash (id),      \
+        type TEXT,                                         \
+        credential INTEGER,                                \
+        port INTEGER,                                      \
+        credential_location INTEGER);"
+}
+
+TABLES_156="$TABLES_155 targets_login_data targets_trash_login_data"
+
+migrate_156_to_157 () {
+  pg "ALTER TABLE slaves ADD COLUMN credential INTEGER REFERENCES credentials (id) ON DELETE RESTRICT;"
+  pg "ALTER TABLE slaves_trash ADD COLUMN credential INTEGER;"
+  pg "ALTER TABLE slaves_trash ADD COLUMN credential_location INTEGER;"
+
+  pg "ALTER TABLE slaves DROP COLUMN login;"
+  pg "ALTER TABLE slaves DROP COLUMN password;"
+  pg "ALTER TABLE slaves_trash DROP COLUMN login;"
+  pg "ALTER TABLE slaves_trash DROP COLUMN password;"
+}
+
+TABLES_157=$TABLES_156
+
+migrate_157_to_158 () {
+  pg "ALTER TABLE configs ADD COLUMN scanner INTEGER"
+     " REFERENCES scanners (id) ON DELETE RESTRICT;"
+  pg "ALTER TABLE configs_trash ADD COLUMN scanner INTEGER"
+     " REFERENCES scanners (id) ON DELETE RESTRICT;"
+}
+
+TABLES_158=$TABLES_157
+
+migrate_158_to_159 () {
+  pg "ALTER TABLE scanners ADD COLUMN credential INTEGER REFERENCES credentials (id) ON DELETE RESTRICT;"
+  pg "ALTER TABLE scanners_trash ADD COLUMN credential INTEGER;"
+  pg "ALTER TABLE scanners_trash ADD COLUMN credential_location INTEGER;"
+
+  pg "ALTER TABLE scanners DROP COLUMN key_pub;"
+  pg "ALTER TABLE scanners DROP COLUMN key_priv;"
+  pg "ALTER TABLE scanners_trash DROP COLUMN key_pub;"
+  pg "ALTER TABLE scanners_trash DROP COLUMN key_priv;"
+}
+
+TABLES_159=$TABLES_158
+
+migrate_159_to_160 () {
+  : # Schema stayed the same.
+}
+
+TABLES_160=$TABLES_159
+
+migrate_160_to_161 () {
+  : # Schema stayed the same.
+}
+
+TABLES_161=$TABLES_160
+
+migrate_161_to_162 () {
+  pg "ALTER TABLE credentials ADD COLUMN allow_insecure INTEGER;"
+  pg "ALTER TABLE credentials_trash ADD COLUMN allow_insecure INTEGER;"
+}
+
+TABLES_162=$TABLES_161
+
+migrate_162_to_163 () {
+  : # Schema stayed the same.
+}
+
+TABLES_163=$TABLES_162
+
+migrate_163_to_164 () {
+  : # Schema stayed the same.
+}
+
+TABLES_164=$TABLES_163
+
+migrate_164_to_165 () {
+  pg "ALTER TABLE config_preferences ADD COLUMN hr_name TEXT;"
+  pg "ALTER TABLE config_preferences_trash ADD COLUMN hr_name TEXT;"
+}
+
+TABLES_165=$TABLES_164
+
+migrate_165_to_166 () {
+  : # Schema stayed the same.
+}
+
+TABLES_166=$TABLES_165
+
+migrate_166_to_167 () {
+  # Create new table.
+
+  pg "CREATE TABLE IF NOT EXISTS resources_predefined                   \
+       (id SERIAL PRIMARY KEY, resource_type text, resource INTEGER);"
+}
+
+TABLES_167="$TABLES_166 resources_predefined"
+
+migrate_167_to_168 () {
+  : # Schema stayed the same.
+}
+
+TABLES_168=$TABLES_167
+
+migrate_168_to_169 () {
+  : # Schema stayed the same.
+}
+
+TABLES_169=$TABLES_168
+
+migrate_169_to_170 () {
+  : # Schema stayed the same.
+}
+
+TABLES_170=$TABLES_169
+
+migrate_170_to_171 () {
+  : # Schema stayed the same.
+}
+
+TABLES_171=$TABLES_170
+
+migrate_171_to_172 () {
+  : # Schema stayed the same.
+}
+
+TABLES_172=$TABLES_171
+
+migrate_172_to_173 () {
+  pg "ALTER TABLE nvts DROP COLUMN summary;"
+}
+
+TABLES_173=$TABLES_172
+
+migrate_173_to_174 () {
+  : # Schema stayed the same.
+}
+
+TABLES_174=$TABLES_173
+
+migrate_174_to_175 () {
+  : # Schema stayed the same.
+}
+
+TABLES_175=$TABLES_174
+
+migrate_175_to_176 () {
+  : # Schema stayed the same.
+}
+
+TABLES_176=$TABLES_175
+
+migrate_176_to_177 () {
+  : # Schema stayed the same.
+}
+
+TABLES_177=$TABLES_176
+
+migrate_177_to_178 () {
+  : # Schema stayed the same.
+}
+
+TABLES_178=$TABLES_177
+
+migrate_178_to_179 () {
+  pg "ALTER TABLE reports ADD COLUMN slave_username TEXT;"
+  pg "ALTER TABLE reports ADD COLUMN slave_password TEXT;"
+}
+
+TABLES_179=$TABLES_178
+
+migrate_179_to_180 () {
+  pg "DROP TABLE slaves;"
+  pg "DROP TABLE slaves_trash;"
+}
+
+TABLES_180=`echo $TABLES_178 | sed -e "s/ slaves_trash//g" | sed -e "s/ slaves//g"`
+
+migrate_180_to_181 () {
+  pg "ALTER TABLE tasks DROP COLUMN slave;"
+  pg "ALTER TABLE tasks DROP COLUMN slave_location;"
+}
+
+TABLES_181=$TABLES_180
+
+migrate_181_to_182 () {
+  : # Schema stayed the same.
+}
+
+TABLES_182=$TABLES_181
+
+migrate_182_to_183 () {
+  pg "ALTER TABLE reports DROP COLUMN slave_username;"
+  pg "ALTER TABLE reports DROP COLUMN slave_password;"
+}
+
+TABLES_183=$TABLES_182
+
+migrate_183_to_184 () {
+  : # Schema stayed the same.
+}
+
+TABLES_184=$TABLES_183
+
+migrate_184_to_185 () {
+  pg "ALTER TABLE configs_trash ADD COLUMN scanner_location INTEGER;"
+
+  pg "CREATE TABLE IF NOT EXISTS permissions_get_tasks
+       (\"user\" integer REFERENCES users ON DELETE CASCADE,
+        task integer REFERENCES tasks ON DELETE CASCADE,
+        has_permission boolean,
+        UNIQUE (\"user\", task));"
+}
+
+TABLES_185="$TABLES_184 permissions_get_tasks"
+
+migrate_185_to_186 () {
+  : # Schema stayed the same.
+}
+
+TABLES_186=$TABLES_185
+
+migrate_186_to_187 () {
+  pg "ALTER TABLE alerts ADD COLUMN active INTEGER;"
+   pg "ALTER TABLE alerts_trash ADD COLUMN active INTEGER;"
+}
+
+TABLES_187=$TABLES_186
+
+migrate_187_to_188 () {
+  pg "ALTER TABLE schedules ADD COLUMN byday INTEGER;"
+  pg "ALTER TABLE schedules_trash ADD COLUMN byday INTEGER;"
+}
+
+TABLES_188=$TABLES_187
+
+
+## Migrate the schema of the Postgres database from version $1 to $2.
+##
+migrate () {
+
+  if [ $# -ne 2 ]
+  then
+    log_notice "Internal Error: migrate must have two args"
+    exit 1
+  fi
+
+  TO=$2
+
+  log_info "Migrating schema from $1 to $TO."
+
+  if [ $1 -eq $TO ]
+  then
+      return
+  fi
+
+  case $1 in
+    133)
+      migrate_133_to_134
+      if [ $TO -eq 134 ]
+      then
+          return
+      fi
+      migrate 134 $TO;;
+
+    134)
+      migrate_134_to_135
+      if [ $TO -eq 135 ]
+      then
+          return
+      fi
+      migrate 135 $TO;;
+
+    135)
+      migrate_135_to_136
+      if [ $TO -eq 136 ]
+      then
+          return
+      fi
+      migrate 136 $TO;;
+
+    136)
+      migrate_136_to_137
+      if [ $TO -eq 137 ]
+      then
+          return
+      fi
+      migrate 137 $TO;;
+
+    137)
+      migrate_137_to_138
+      if [ $TO -eq 138 ]
+      then
+          return
+      fi
+      migrate 138 $TO;;
+
+    138)
+      migrate_138_to_139
+      if [ $TO -eq 139 ]
+      then
+          return
+      fi
+      migrate 140 $TO;;
+
+    140)
+      migrate_140_to_141
+      if [ $TO -eq 141 ]
+      then
+          return
+      fi
+      migrate 141 $TO;;
+
+    141)
+      migrate_141_to_142
+      if [ $TO -eq 142 ]
+      then
+          return
+      fi
+      migrate 142 $TO;;
+
+    142)
+      migrate_142_to_143
+      if [ $TO -eq 143 ]
+      then
+          return
+      fi
+      migrate 143 $TO;;
+
+    143)
+      migrate_143_to_144
+      if [ $TO -eq 144 ]
+      then
+          return
+      fi
+      migrate 144 $TO;;
+
+    144)
+      migrate_144_to_145
+      if [ $TO -eq 145 ]
+      then
+          return
+      fi
+      migrate 145 $TO;;
+
+    145)
+      migrate_145_to_146
+      if [ $TO -eq 146 ]
+      then
+          return
+      fi
+      migrate 146 $TO;;
+
+    146)
+      migrate_146_to_147
+      if [ $TO -eq 147 ]
+      then
+          return
+      fi
+      migrate 147 $TO;;
+
+    147)
+      migrate_147_to_148
+      if [ $TO -eq 148 ]
+      then
+          return
+      fi
+      migrate 148 $TO;;
+
+    148)
+      migrate_148_to_149
+      if [ $TO -eq 149 ]
+      then
+          return
+      fi
+      migrate 149 $TO;;
+
+    149)
+      migrate_149_to_150
+      if [ $TO -eq 150 ]
+      then
+          return
+      fi
+      migrate 150 $TO;;
+
+    150)
+      migrate_150_to_151
+      if [ $TO -eq 151 ]
+      then
+          return
+      fi
+      migrate 151 $TO;;
+
+    151)
+      migrate_151_to_152
+      if [ $TO -eq 152 ]
+      then
+          return
+      fi
+      migrate 152 $TO;;
+
+    152)
+      migrate_152_to_153
+      if [ $TO -eq 153 ]
+      then
+          return
+      fi
+      migrate 153 $TO;;
+
+    153)
+      migrate_153_to_154
+      if [ $TO -eq 154 ]
+      then
+          return
+      fi
+      migrate 154 $TO;;
+
+    154)
+      migrate_154_to_155
+      if [ $TO -eq 155 ]
+      then
+          return
+      fi
+      migrate 155 $TO;;
+
+    155)
+      migrate_155_to_156
+      if [ $TO -eq 156 ]
+      then
+          return
+      fi
+      migrate 156 $TO;;
+
+    156)
+      migrate_156_to_157
+      if [ $TO -eq 157 ]
+      then
+          return
+      fi
+      migrate 157 $TO;;
+
+    157)
+      migrate_157_to_158
+      if [ $TO -eq 158 ]
+      then
+          return
+      fi
+      migrate 158 $TO;;
+
+    158)
+      migrate_158_to_159
+      if [ $TO -eq 159 ]
+      then
+          return
+      fi
+      migrate 159 $TO;;
+
+    159)
+      migrate_159_to_160
+      if [ $TO -eq 160 ]
+      then
+          return
+      fi
+      migrate 160 $TO;;
+
+    160)
+      migrate_160_to_161
+      if [ $TO -eq 161 ]
+      then
+          return
+      fi
+      migrate 161 $TO;;
+
+    161)
+      migrate_161_to_162
+      if [ $TO -eq 162 ]
+      then
+          return
+      fi
+      migrate 162 $TO;;
+
+    162)
+      migrate_162_to_163
+      if [ $TO -eq 163 ]
+      then
+          return
+      fi
+      migrate 163 $TO;;
+
+    163)
+      migrate_163_to_164
+      if [ $TO -eq 164 ]
+      then
+          return
+      fi
+      migrate 164 $TO;;
+
+    164)
+      migrate_164_to_165
+      if [ $TO -eq 165 ]
+      then
+          return
+      fi
+      migrate 165 $TO;;
+
+    165)
+      migrate_165_to_166
+      if [ $TO -eq 166 ]
+      then
+          return
+      fi
+      migrate 166 $TO;;
+
+    166)
+      migrate_166_to_167
+      if [ $TO -eq 167 ]
+      then
+          return
+      fi
+      migrate 167 $TO;;
+
+    167)
+      migrate_167_to_168
+      if [ $TO -eq 168 ]
+      then
+          return
+      fi
+      migrate 168 $TO;;
+
+    168)
+      migrate_168_to_169
+      if [ $TO -eq 169 ]
+      then
+          return
+      fi
+      migrate 169 $TO;;
+
+    169)
+      migrate_169_to_170
+      if [ $TO -eq 170 ]
+      then
+          return
+      fi
+      migrate 170 $TO;;
+
+    170)
+      migrate_170_to_171
+      if [ $TO -eq 171 ]
+      then
+          return
+      fi
+      migrate 171 $TO;;
+
+    171)
+      migrate_171_to_172
+      if [ $TO -eq 172 ]
+      then
+          return
+      fi
+      migrate 172 $TO;;
+
+    172)
+      migrate_172_to_173
+      if [ $TO -eq 173 ]
+      then
+          return
+      fi
+      migrate 173 $TO;;
+
+    173)
+      migrate_173_to_174
+      if [ $TO -eq 174 ]
+      then
+          return
+      fi
+      migrate 174 $TO;;
+
+    174)
+      migrate_174_to_175
+      if [ $TO -eq 175 ]
+      then
+          return
+      fi
+      migrate 175 $TO;;
+
+    175)
+      migrate_175_to_176
+      if [ $TO -eq 176 ]
+      then
+          return
+      fi
+      migrate 176 $TO;;
+
+    176)
+      migrate_176_to_177
+      if [ $TO -eq 177 ]
+      then
+          return
+      fi
+      migrate 177 $TO;;
+
+    177)
+      migrate_177_to_178
+      if [ $TO -eq 178 ]
+      then
+          return
+      fi
+      migrate 178 $TO;;
+
+    178)
+      migrate_178_to_179
+      if [ $TO -eq 179 ]
+      then
+          return
+      fi
+      migrate 179 $TO;;
+
+    179)
+      migrate_179_to_180
+      if [ $TO -eq 180 ]
+      then
+          return
+      fi
+      migrate 180 $TO;;
+
+    180)
+      migrate_180_to_181
+      if [ $TO -eq 181 ]
+      then
+          return
+      fi
+      migrate 181 $TO;;
+
+    181)
+      migrate_181_to_182
+      if [ $TO -eq 182 ]
+      then
+          return
+      fi
+      migrate 182 $TO;;
+
+    182)
+      migrate_182_to_183
+      if [ $TO -eq 183 ]
+      then
+          return
+      fi
+      migrate 183 $TO;;
+
+    183)
+      migrate_183_to_184
+      if [ $TO -eq 184 ]
+      then
+          return
+      fi
+      migrate 184 $TO;;
+
+    184)
+      migrate_184_to_185
+      if [ $TO -eq 185 ]
+      then
+          return
+      fi
+      migrate 185 $TO;;
+
+    185)
+      migrate_185_to_186
+      if [ $TO -eq 186 ]
+      then
+          return
+      fi
+      migrate 186 $TO;;
+
+    186)
+      migrate_186_to_187
+      if [ $TO -eq 187 ]
+      then
+          return
+      fi
+      migrate 187 $TO;;
+
+    187)
+      migrate_187_to_188
+      if [ $TO -eq 188 ]
+      then
+          return
+      fi
+      migrate 188 $TO;;
+
+    *)
+      log_notice "Version in Postgres database out of sync."
+      exit 1
+  esac
+}
+
+## Create PG 133, migrate it to version $1, then clean SQLite db.
+#
+create_migrate_clean () {
+  log_info "Creating Postgres database (version $1)."
+  create_tables_133
+  cleanup_sqlite_db
+  migrate 133 $1
+  clean_columns
+  clean_fkey_columns
+}
+
+## Create a Postgres database based on the SQLite one.
+#
+# Migrate the Postgres schema from the 133 base version; then clean the SQLite
+# data; then copy the SQLite data to Postgres.
+#
+# There's no need to get the Postgres database to the latest version.  Postgres
+# Manager will do that.  Just get from the SQLite database to the same version,
+# but under Postgres.
+#
+create () {
+  DB_VERSION=`sqlite "select value from meta where name = 'database_version';" 2>/dev/null | tr -d '\n\r' || echo 0`
+  case "$DB_VERSION" in
+    133)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_133"
+      ;;
+
+    134)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_134"
+      ;;
+
+    135)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_135"
+      ;;
+
+    136)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_136"
+      ;;
+
+    137)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_137"
+      ;;
+
+    138)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_138"
+      ;;
+
+    139)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_139"
+      ;;
+
+    140)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_140"
+      ;;
+
+    141)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_141"
+      ;;
+
+    142)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_142"
+      ;;
+
+    143)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_143"
+      ;;
+
+    144)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_144"
+      ;;
+
+    145)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_145"
+      ;;
+
+    146)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_146"
+      ;;
+
+    147)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_147"
+      ;;
+
+    148)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_148"
+      ;;
+
+    149)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_149"
+      ;;
+
+    150)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_150"
+      ;;
+
+    151)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_151"
+      ;;
+
+    152)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_152"
+      ;;
+
+    153)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_153"
+      ;;
+
+    154)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_154"
+      ;;
+
+    155)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_155"
+      ;;
+
+    156)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_156"
+      ;;
+
+    157)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_157"
+      ;;
+
+    158)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_158"
+      ;;
+
+    159)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_159"
+      ;;
+
+    160)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_160"
+      ;;
+
+    161)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_161"
+      ;;
+
+    162)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_162"
+      ;;
+
+    163)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_163"
+      ;;
+
+    164)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_164"
+      ;;
+
+    165)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_165"
+      ;;
+
+    166)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_166"
+      ;;
+
+    167)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_167"
+      ;;
+
+    168)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_168"
+      ;;
+
+    169)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_169"
+      ;;
+
+    170)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_170"
+      ;;
+
+    171)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_171"
+      ;;
+
+    172)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_172"
+      ;;
+
+    173)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_173"
+      ;;
+
+    174)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_174"
+      ;;
+
+    175)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_175"
+      ;;
+
+    176)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_176"
+      ;;
+
+    177)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_177"
+      ;;
+
+    178)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_178"
+      ;;
+
+    179)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_179"
+      ;;
+
+    180)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_180"
+      ;;
+
+    181)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_181"
+      ;;
+
+    182)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_182"
+      ;;
+
+    183)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_183"
+      ;;
+
+    184)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_184"
+      ;;
+
+    185)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_185"
+      ;;
+
+    186)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_186"
+      ;;
+
+    187)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_187"
+      ;;
+
+    188)
+      create_migrate_clean $DB_VERSION
+      copy_data "$TABLES_188"
+      ;;
+
+    *)
+      log_notice "Database version not supported: " $DB_VERSION
+      exit 1
+  esac
+}
+
+do_self_test () {
+  if [ -z "$SELFTEST_STDERR" ]
+  then
+    SELFTEST_STDERR=0
+  fi
+
+  if [ -z "$SQLITE" ]; then
+    if [ 0 -ne $SELFTEST_STDERR ]
+    then
+      echo "sqlite3 not found (required)." 1>&2
+    fi
+    log_err "sqlite3 not found (required)."
+    SELFTEST_FAIL=1
+  fi
+
+  if [ ! -f $SQLITE_DB ]
+  then
+    if [ 0 -ne $SELFTEST_STDERR ]
+    then
+      echo "SQLITE_DB ($SQLITE_DB) not found." 1>&2
+    fi
+    log_err "SQLITE_DB ($SQLITE_DB) not found."
+    SELFTEST_FAIL=1
+  fi
+}
+
+while test $# -gt 0; do
+ case "$1" in
+        --version)
+          echo $VERSION
+          exit 0
+           ;;
+        --help)
+          do_help
+          exit 0
+          ;;
+        --selftest)
+          SELFTEST_FAIL=0
+          SELFTEST_STDERR=1
+          do_self_test
+          exit $SELFTEST_FAIL
+          ;;
+      esac
+      shift
+done
+
+SELFTEST_FAIL=0
+do_self_test
+if [ $SELFTEST_FAIL -ne 0 ]
+then
+  exit 1
+fi
+
+is_db_broken
+if [ $DB_BROKEN -eq 1 ]
+then
+  log_notice "Corrupt database, skipping migration."
+  exit 1
+else
+  does_pg_db_exist
+  if [ $PG_DB_EXISTS -eq 1 ]
+  then
+    log_notice "Postgres database exists already, skipping migration."
+    exit 0
+  fi
+fi
+create
+log_info "Done."
+
+exit 0

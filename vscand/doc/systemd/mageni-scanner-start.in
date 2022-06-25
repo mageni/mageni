@@ -1,0 +1,67 @@
+#!/bin/bash
+# Author: Mageni Security, LLC
+# The author disclaims copyright to this source code. "Freely you have received; freely give." - Sumanai Abbi Moshia Yeshua Hoshia Yoshia
+
+#Transparent Huge Pages (THP) is a Linux memory management system that reduces
+#the overhead of Translation Lookaside Buffer (TLB) lookups on machines with
+#large amounts of memory by using larger memory pages. However, database workloads
+#often perform poorly with THP enabled, because they tend to have sparse rather
+#than contiguous memory access patterns. When running Mageni on Linux, THP
+#should be disabled for best performance.
+
+function disable_thp()
+{
+    if [ -d /sys/kernel/mm/transparent_hugepage ]; then
+      thp_path=/sys/kernel/mm/transparent_hugepage
+    elif [ -d /sys/kernel/mm/redhat_transparent_hugepage ]; then
+      thp_path=/sys/kernel/mm/redhat_transparent_hugepage
+    else
+      return 0
+    fi
+
+    echo 'never' | tee ${thp_path}/enabled > /dev/null
+    sleep 1
+}
+
+#overcommit_memory to 1. Background save may fail under low memory condition.
+
+function fix_redis()
+{
+    sysctl -w net.core.somaxconn=65535
+    sysctl vm.overcommit_memory=1
+    sleep 1
+}
+
+function find_redis()
+{
+    if ! which redis-server > /dev/null 2>&1 ; then
+        sudo apt install redis-server >/dev/null 2>/dev/null
+    else
+        REDISPATH=$(which redis-server)
+    fi
+}
+
+function find_config()
+{
+    # shellcheck disable=SC2155
+    local version=`redis-server --version | awk '{ print $3 }' | tr -cd "[:digit:]" | cut -c -1`
+
+    if [ "$version" -ge 4 ]; then
+            REDISCONFIG="@DATADIR@/doc/mageni-scanner/redis_config/redis_4.conf"
+    else
+        if [ "$version" = 3 ]; then
+            REDISCONFIG="@DATADIR@/doc/mageni-scanner/redis_config/redis_3.conf"
+        else
+            REDISCONFIG="@DATADIR@/doc/mageni-scanner/redis_config/redis_0.conf"
+        fi
+    fi
+}
+
+disable_thp
+fix_redis
+find_redis
+find_config
+
+$REDISPATH $REDISCONFIG
+sleep 1
+@SBINDIR@/mageni-vscand

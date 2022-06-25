@@ -1,0 +1,23 @@
+graph targets
+{
+  "Targets" [shape=none,
+             margin=0,
+             label=
+  <<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+    <TR>
+      <TD COLSPAN="2">Non-georeferenced IPs</TD>
+    </TR>
+    <TR>
+      <TD BGCOLOR="red">High</TD>
+      <TD>target_count_high</TD>
+    </TR>
+    <TR>
+      <TD BGCOLOR="orange">Medium</TD>
+      <TD>target_count_med</TD>
+    </TR>
+    <TR>
+      <TD BGCOLOR="dodgerblue">Low</TD>
+      <TD>target_count_low</TD>
+    </TR>
+  </TABLE>>];
+}

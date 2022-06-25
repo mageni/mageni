@@ -1,0 +1,3 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/lib
+0 */2 * * * mageni  sudo /usr/local/sbin/mageni-feed-update

@@ -1,0 +1,9 @@
+<report_format id="c402cc3e-b531-11e1-9163-406186ea4fc5">
+  <name>PDF</name>
+  <summary>Portable Document Format report.</summary>
+  <description>
+    Scan results in Portable Document Format (PDF).
+  </description>
+  <extension>pdf</extension>
+  <content_type>application/pdf</content_type>
+</report_format>

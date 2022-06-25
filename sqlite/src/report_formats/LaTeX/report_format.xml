@@ -1,0 +1,9 @@
+<report_format id="a684c02c-b531-11e1-bdc2-406186ea4fc5">
+  <name>LaTeX</name>
+  <summary>LaTeX source file.</summary>
+  <description>
+    Report as LaTeX source file for further processing.
+  </description>
+  <extension>tex</extension>
+  <content_type>text/plain</content_type>
+</report_format>

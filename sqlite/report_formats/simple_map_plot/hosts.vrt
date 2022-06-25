@@ -1,0 +1,12 @@
+<OGRVRTDataSource>
+  <!--Layer definition and name-->
+  <OGRVRTLayer name="ip_layer">
+    <!--Source/target settings-->
+    <SrcDataSource relativeToVRT="1">.</SrcDataSource>
+    <SrcLayer>host_locations</SrcLayer>
+    <GeometryType>wkbPoint</GeometryType>
+    <LayerSRS>WGS84</LayerSRS>
+    <GeometryField encoding="PointFromColumns" x="lon" y="lat"/>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
+

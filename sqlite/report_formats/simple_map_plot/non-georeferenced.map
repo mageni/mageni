@@ -1,0 +1,19 @@
+LAYER # non-georeferenced IPs
+  NAME "non-georeferenced"
+  STATUS       DEFAULT
+  TYPE         POINT
+  PROJECTION
+    "init=epsg:4326"
+  END
+  FEATURE
+    POINTS -130 -50 END
+  END
+
+  CLASS
+    NAME "non-georeferenced"
+    MINSIZE 150
+    MAXSIZE 150
+    SYMBOL "non-georeferenced.png"
+  END
+END
+

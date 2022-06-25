@@ -1,0 +1,18 @@
+<report_format id="5ceff8ba-1f62-11e1-ab9f-406186ea4fc5">
+  <name>CPE</name>
+  <summary>Common Product Enumeration CSV table.</summary>
+  <description>
+CPE stands for Common Product Enumeration.  It is a structured naming scheme for
+information technology systems, platforms, and packages.  In other words: CPE
+provides a unique identifier for virtually any software product that is known for
+a vulnerability.
+
+The CPE dictionary is maintained by MITRE and NIST.  MITRE also maintains CVE
+(Common Vulnerability Enumeration) and other relevant security standards.
+
+The report selects all CPE tables from the results and forms a single table
+as a comma separated values file.
+  </description>
+  <extension>csv</extension>
+  <content_type>text/csv</content_type>
+</report_format>

@@ -1,0 +1,474 @@
+<!--
+Copyright (C) 2014-2018 Greenbone Networks GmbH
+
+SPDX-License-Identifier: GPL-2.0-or-later
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+-->
+
+<!--
+  This wizard sets up a new task and its required target.
+  Optionally it can also create a schedule to run it once and
+  an email alert.
+ -->
+
+<wizard>
+  <params>
+    <!-- ID of the config to use -->
+    <param>
+      <optional>0</optional>
+      <name>config_id</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+
+    <!-- Email address for alert -->
+    <param>
+      <optional>1</optional>
+      <name>alert_email</name>
+      <regex>^[^@ ]{1,150}@[^@ ]{1,150}$</regex>
+    </param>
+
+    <!-- ID of the Scanner for the task (optional) -->
+    <param>
+      <optional>1</optional>
+      <name>scanner_id</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+
+    <!-- ID of the slave to use (optional) -->
+    <param>
+      <optional>1</optional>
+      <name>slave_id</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+
+    <!-- Auto start mode (optional).
+         0: Do not start automatically
+         1: Create a schedule to run once
+         2: Start immediately
+    -->
+    <param>
+      <optional>1</optional>
+      <name>auto_start</name>
+      <regex>^[0-2]$</regex>
+    </param>
+
+    <!-- Start time (optional) -->
+    <param>
+      <optional>1</optional>
+      <name>start_year</name>
+      <regex>^([\d]{4})$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>start_month</name>
+      <regex>^0?[1-9]|1[012]$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>start_day</name>
+      <regex>^0?[1-9]|[12][0-9]|3[01]$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>start_hour</name>
+      <regex>^[01]?[0-9]|2[0-3]$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>start_minute</name>
+      <regex>^[0-5]?[0-9]$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>start_timezone</name>
+      <regex>^.{0,1000}$</regex>
+    </param>
+
+    <!-- Login credentials -->
+    <param>
+      <optional>1</optional>
+      <name>smb_credential</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>ssh_credential</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>ssh_port</name>
+      <regex>^0*(6553[0-5]|655[0-2]\d|65[0-4]\d\d|6[0-4]\d\d\d|[1-5]\d\d\d\d|\d{1,4})$</regex>
+    </param>
+    <param>
+      <optional>1</optional>
+      <name>esxi_credential</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+
+    <!-- The name of the task -->
+    <param>
+      <optional>0</optional>
+      <name>task_name</name>
+      <regex>^[-_[:alnum:], \\./]{1,80}$</regex>
+    </param>
+
+    <!-- The target hosts to scan -->
+    <param>
+      <optional>0</optional>
+      <name>target_hosts</name>
+      <regex>^[-[:alnum:],: \\./]{1,2000}$</regex>
+    </param>
+
+    <!-- ID of the Port List for the Target (optional) -->
+    <param>
+      <optional>1</optional>
+      <name>port_list_id</name>
+      <regex>^[a-z0-9\\-]+$</regex>
+    </param>
+  </params>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+          xmlns:date="http://exslt.org/dates-and-times"
+          extension-element-prefixes="date">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <xsl:variable name="now" select="date:date-time ()"/>
+          <xsl:variable
+            name="timestamp"
+            select="concat (substring (date:date(), 1, 10), ' ', substring (date:time(), 1, 8))"/>
+          <commands>
+            <xsl:if test="/wizard/params/param[name='alert_email']/value != ''">
+              <create_alert>
+                <name>
+                  <xsl:text>Email Alert for </xsl:text>
+                  <xsl:value-of select="/wizard/params/param[name='task_name']/value"/>
+                  <xsl:text> </xsl:text>
+                  <xsl:value-of select="translate(substring (date:date-time (), 1, 19), '-:T', '')"/>
+                </name>
+                <comment>Automatically generated by wizard</comment>
+                <condition>Always</condition>
+                <event>
+                  <xsl:text>Task run status changed</xsl:text>
+                  <data>
+                    <xsl:text>Done</xsl:text>
+                    <name>status</name>
+                  </data>
+                </event>
+                <method>
+                  <xsl:text>Email</xsl:text>
+                  <data>
+                    <xsl:value-of select="/wizard/params/param[name='alert_email']/value"/>
+                    <name>to_address</name>
+                  </data>
+                  <data>
+                    <xsl:value-of select="/wizard/params/param[name='alert_email']/value"/>
+                    <name>from_address</name>
+                  </data>
+                  <data>
+                    <xsl:text>a3810a62-1f62-11e1-9219-406186ea4fc5</xsl:text>
+                    <name>notice_report_format</name>
+                  </data>
+                  <data>
+                    <xsl:text>0</xsl:text>
+                    <name>notice</name>
+                  </data>
+                </method>
+              </create_alert>
+            </xsl:if>
+
+            <xsl:if test="(/wizard/params/param[name='auto_start']/value = 1) and (/wizard/params/param[name='start_year']/value != '') and (/wizard/params/param[name='start_month']/value != '') and (/wizard/params/param[name='start_day']/value != '') and (/wizard/params/param[name='start_hour']/value != '') and (/wizard/params/param[name='start_minute']/value != '')">
+              <create_schedule>
+                <name>
+                  <xsl:text>Schedule for </xsl:text>
+                  <xsl:value-of select="/wizard/params/param[name='task_name']/value"/>
+                  <xsl:text> </xsl:text>
+                  <xsl:value-of select="translate(substring (date:date-time (), 1, 19), '-:T', '')"/>
+                </name>
+                <comment>Automatically generated by wizard</comment>
+                <first_time>
+                  <year><xsl:value-of select="/wizard/params/param[name='start_year']/value"/></year>
+                  <month><xsl:value-of select="/wizard/params/param[name='start_month']/value"/></month>
+                  <day_of_month><xsl:value-of select="/wizard/params/param[name='start_day']/value"/></day_of_month>
+                  <hour><xsl:value-of select="/wizard/params/param[name='start_hour']/value"/></hour>
+                  <minute><xsl:value-of select="/wizard/params/param[name='start_minute']/value"/></minute>
+                </first_time>
+                <xsl:if test="(/wizard/params/param[name='start_timezone']/value != '')">
+                  <timezone><xsl:value-of select="/wizard/params/param[name='start_timezone']/value"/></timezone>
+                </xsl:if>
+              </create_schedule>
+            </xsl:if>
+
+            <create_target>
+              <name>
+                <xsl:text>Target for </xsl:text>
+                <xsl:value-of select="/wizard/params/param[name='task_name']/value"/>
+                <xsl:text> - </xsl:text>
+                <xsl:value-of select="$timestamp"/>
+              </name>
+              <comment>Automatically generated by wizard</comment>
+              <hosts><xsl:value-of select="/wizard/params/param[name='target_hosts']/value"/></hosts>
+
+              <xsl:if test="/wizard/params/param[name='port_list_id']/value != ''">
+                <port_list id="{/wizard/params/param[name='port_list_id']/value}"/>
+              </xsl:if>
+
+              <xsl:if test="/wizard/params/param[name='ssh_credential']/value != ''">
+                <ssh_lsc_credential id="{/wizard/params/param[name='ssh_credential']/value}">
+                  <port>
+                    <xsl:choose>
+                      <xsl:when test="/wizard/params/param[name='ssh_port']/value != ''">
+                        <xsl:value-of select="/wizard/params/param[name='ssh_port']/value"/>
+                      </xsl:when>
+                      <xsl:otherwise>22</xsl:otherwise>
+                    </xsl:choose>
+                  </port>
+                </ssh_lsc_credential>
+              </xsl:if>
+              <xsl:if test="/wizard/params/param[name='smb_credential']/value != ''">
+                <smb_lsc_credential id="{/wizard/params/param[name='smb_credential']/value}"/>
+              </xsl:if>
+              <xsl:if test="/wizard/params/param[name='esxi_credential']/value != ''">
+                <esxi_lsc_credential id="{/wizard/params/param[name='esxi_credential']/value}"/>
+              </xsl:if>
+            </create_target>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+    <extra_data>
+      <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          omit-xml-declaration="yes"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <target id="{/wizard/current/response/commands_response/create_target_response/@id}"/>
+          <alert id="{/wizard/current/response/commands_response/create_alert_response/@id}"/>
+          <schedule id="{/wizard/current/response/commands_response/create_schedule_response/@id}"/>
+          <xsl:choose>
+            <xsl:when test="/wizard/current/response/commands_response/create_target_response/@status != '201'">
+              <status_text>Failed to create target: <xsl:value-of select="/wizard/current/response/commands_response/create_target_response/@status_text"/></status_text>
+              <status><xsl:value-of select="/wizard/current/response/commands_response/create_target_response/@status"/></status>
+            </xsl:when>
+            <xsl:when test="/wizard/current/response/commands_response/create_alert_response/@status != '201'">
+              <status_text>Failed to create alert: <xsl:value-of select="/wizard/current/response/commands_response/create_alert_response/@status_text"/></status_text>
+              <status><xsl:value-of select="/wizard/current/response/commands_response/create_alert_response/@status"/></status>
+            </xsl:when>
+            <xsl:when test="/wizard/current/response/commands_response/create_schedule_response/@status != '201'">
+              <status_text>Failed to create schedule: <xsl:value-of select="/wizard/current/response/commands_response/create_schedule_response/@status_text"/></status_text>
+              <status><xsl:value-of select="/wizard/current/response/commands_response/create_schedule_response/@status"/></status>
+            </xsl:when>
+            <xsl:otherwise>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+      </xsl:stylesheet>
+    </extra_data>
+  </step>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+          version="1.0"
+          xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <commands>
+            <create_task>
+              <name><xsl:value-of select="/wizard/params/param[name='task_name']/value"/></name>
+              <comment>Automatically generated by  wizard</comment>
+
+              <config id="{/wizard/params/param[name='config_id']/value}"/>
+              <target id="{/wizard/previous/response/commands_response/create_target_response/@id}"/>
+
+              <xsl:if test="/wizard/previous/response/commands_response/create_alert_response/@id != ''">
+                <alert id="{/wizard/previous/response/commands_response/create_alert_response/@id}"/>
+              </xsl:if>
+
+              <xsl:if test="/wizard/previous/response/commands_response/create_schedule_response/@id != ''">
+                <schedule id="{/wizard/previous/response/commands_response/create_schedule_response/@id}"/>
+              </xsl:if>
+
+              <xsl:if test="/wizard/params/param[name='scanner_id']/value != ''">
+                <scanner id="{/wizard/params/param[name='scanner_id']/value}"/>
+              </xsl:if>
+
+              <xsl:if test="/wizard/params/param[name='slave_id']/value != ''">
+                <slave id="{/wizard/params/param[name='slave_id']/value}"/>
+              </xsl:if>
+            </create_task>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+    <extra_data>
+      <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          omit-xml-declaration="yes"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <task id="{/wizard/current/response/commands_response/create_task_response/@id}"/>
+          <xsl:copy-of select="/wizard/previous/extra_data/*"/>
+          <xsl:choose>
+            <xsl:when test="/wizard/current/response/commands_response/create_task_response/@status != '201'">
+              <status_text>Failed to create task: <xsl:value-of select="/wizard/current/response/commands_response/create_task_response/@status_text"/></status_text>
+              <status><xsl:value-of select="/wizard/current/response/commands_response/create_task_response/@status"/></status>
+            </xsl:when>
+            <xsl:otherwise>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+      </xsl:stylesheet>
+    </extra_data>
+  </step>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <commands>
+            <xsl:if test="/wizard/params/param[name='auto_start']/value = 2">
+              <start_task task_id="{/wizard/previous/response/commands_response/create_task_response/@id}"/>
+            </xsl:if>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+    <extra_data>
+      <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          omit-xml-declaration="yes"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <xsl:copy-of select="/wizard/previous/extra_data/*"/>
+          <xsl:choose>
+            <xsl:when test="/wizard/current/response/commands_response/start_task_response/@status = '200'">
+              <status_text>Task created and started successfully</status_text>
+              <status>201</status>
+            </xsl:when>
+            <xsl:when test="/wizard/current/response/commands_response/start_task_response/@status">
+              <status_text>Failed to start task: <xsl:value-of select="/wizard/current/response/commands_response/start_task_response/@status_text"/></status_text>
+              <status><xsl:value-of select="/wizard/current/response/commands_response/start_task_response/@status"/></status>
+            </xsl:when>
+            <xsl:otherwise>
+              <status_text>Task created successfully</status_text>
+              <status>201</status>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:template>
+      </xsl:stylesheet>
+    </extra_data>
+  </step>
+
+  <step>
+    <command>
+      <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:output
+          method="xml"
+          encoding="UTF-8"/>
+        <xsl:template match="/">
+          <commands>
+            <xsl:choose>
+              <xsl:when test="starts-with (/wizard/previous/extra_data/status, '2')">
+                <get_tasks task_id="{/wizard/previous/response/create_task_response/@id}"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <commands>
+                  <xsl:if test="/wizard/previous/extra_data/task/@id != ''">
+                    <delete_task task_id="{/wizard/previous/extra_data/task/@id}" ultimate="1"/>
+                  </xsl:if>
+                  <xsl:if test="/wizard/previous/extra_data/schedule/@id != ''">
+                    <delete_schedule schedule_id="{/wizard/previous/extra_data/schedule/@id}" ultimate="1"/>
+                  </xsl:if>
+                  <xsl:if test="/wizard/previous/extra_data/target/@id != ''">
+                    <delete_target target_id="{/wizard/previous/extra_data/target/@id}" ultimate="1"/>
+                  </xsl:if>
+                  <xsl:if test="/wizard/previous/extra_data/alert/@id != ''">
+                    <delete_alert alert_id="{/wizard/previous/extra_data/alert/@id}" ultimate="1"/>
+                  </xsl:if>
+                </commands>
+              </xsl:otherwise>
+            </xsl:choose>
+          </commands>
+        </xsl:template>
+      </xsl:stylesheet>
+    </command>
+  </step>
+
+  <mode>
+    <name>init</name>
+    <read_only>1</read_only>
+    <step>
+      <command>
+        <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output
+            method="xml"
+            encoding="UTF-8"/>
+          <xsl:template match="/">
+            <help format="xml" type="brief"/>
+          </xsl:template>
+        </xsl:stylesheet>
+      </command>
+    </step>
+    <step>
+      <command>
+        <xsl:stylesheet
+            version="1.0"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+          <xsl:output
+            method="xml"
+            encoding="UTF-8"/>
+          <xsl:template match="/">
+            <commands>
+              <get_configs details="0"/>
+              <xsl:if test="count(/wizard/previous/response/help_response/schema/command[name = 'GET_SLAVES'])">
+                <get_slaves details="0"/>
+              </xsl:if>
+              <get_credentials details="0"/>
+              <get_settings/>
+            </commands>
+          </xsl:template>
+        </xsl:stylesheet>
+      </command>
+    </step>
+  </mode>
+</wizard>

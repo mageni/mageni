@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author: Mageni Security LLC
+# The author disclaims copyright to this source code. "Freely you have received; freely give." - Sumanai Abbi Moshia Yeshua Hoshia Yoshia
+
+@SBINDIR@/mageni-sqlite --unix-socket=/usr/local/var/run/mageni-sqlite.sock
+
+  echo "Configuring Database Permissions"
+  chown www-data:www-data /usr/local/var/lib/mageni/sqlite/sqlite.d*
+  if [ $? -eq 0 ]; then
+    echo "Success"
+  else
+    echo "Failed"
+  fi
+
+  echo "Configuring Socket Permissions"
+  chown www-data:www-data /usr/local/var/run/mageni-sqlite.sock
+  if [ $? -eq 0 ]; then
+    echo "Success"
+  else
+    echo "Failed"
+  fi

@@ -1,0 +1,84 @@
+#!/bin/sh
+# Copyright (C) 2011-2018 Greenbone Networks GmbH
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# Report generator script: ISM Verinice interface.
+
+TMP=`mktemp -d` || exit 1
+STARTDIR=`pwd`
+XMLFILE=`readlink -f $1`
+DATE=`xmlstarlet sel -t -v /report/scan_start "$XMLFILE" | cut -c 1-10`
+
+SCAN_NAME=`xmlstarlet sel -t -v /report/task/name "$XMLFILE"`
+
+# File size above which the attachments should be compressed
+COMPRESS_SIZE=10485760
+
+mkdir -p  $TMP/files
+FILENAME=${SCAN_NAME}_${DATE}.xml
+FILELOC=$TMP/files/${FILENAME}
+
+FILES=`echo "$2" | xmlstarlet sel -t -v "/files/file"`
+FILES_PARAM=""
+MIMETYPES_PARAM=""
+
+for OLD_FILELOC in $FILES;
+do
+  FORMAT_MIMETYPE=`echo "$2" | xmlstarlet sel -t -v "/files/file[text()='$OLD_FILELOC']/@content_type"`
+  FORMAT_NAME=`echo "$2" | xmlstarlet sel -t -v "/files/file[text()='$OLD_FILELOC']/@report_format_name"`
+  FILE_EXT="${OLD_FILELOC##*.}"
+
+  FILENAME=`echo "${SCAN_NAME}-${DATE}-${FORMAT_NAME}.${FILE_EXT}" | sed 's/ /_/g'`
+  MIMETYPE=${FORMAT_MIMETYPE##*/}
+  NEW_FILELOC="${TMP}/files/${FILENAME}"
+
+  mv "$OLD_FILELOC" "$NEW_FILELOC"
+
+  if [ `wc -c < "$NEW_FILELOC"` -ge $COMPRESS_SIZE ]
+  then
+    MIMETYPE="zip"
+    FILENAME=$(echo "${SCAN_NAME}_${DATE}_${FORMAT_NAME}.zip" | sed 's/ /_/g')
+    ZIP_FILELOC="${TMP}/files/${FILENAME}"
+    zip -j -q "$ZIP_FILELOC" "$NEW_FILELOC"
+    rm -f "$NEW_FILELOC"
+    NEW_FILELOC="$ZIP_FILELOC"
+  fi
+
+  if [ -z "$FILES_PARAM" ]
+  then
+    FILES_PARAM="$FILENAME"
+  else
+    FILES_PARAM="$FILES_PARAM|$FILENAME"
+  fi
+
+  if [ -z "$MIMETYPES_PARAM" ]
+  then
+    MIMETYPES_PARAM="$MIMETYPE"
+  else
+    MIMETYPES_PARAM="$MIMETYPES_PARAM|$MIMETYPE"
+  fi
+done
+
+xsltproc --stringparam filenames_str "$FILES_PARAM" \
+         --stringparam mimetypes_str "$MIMETYPES_PARAM" \
+         --stringparam filedate `stat -c %Z $XMLFILE` ./Verinice_ISM.xsl $1 | \
+        sed -e "s/\ xmlns=\"\"//g" | \
+        xmlstarlet fo >  $TMP/verinice.xml && \
+cd $TMP && zip -r - *
+cd $STARTDIR
+rm -r $TMP

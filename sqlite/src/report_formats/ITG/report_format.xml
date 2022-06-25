@@ -1,0 +1,10 @@
+<report_format id="77bd6c4a-1f62-11e1-abf0-406186ea4fc5">
+  <name>ITG</name>
+  <summary>German "IT-Grundschutz-Kataloge" report.</summary>
+  <description>
+Tabular report on the German "IT-Grundschutz-Kataloge",
+as published and maintained by the German Federal Agency for IT-Security.
+  </description>
+  <extension>csv</extension>
+  <content_type>text/csv</content_type>
+</report_format>

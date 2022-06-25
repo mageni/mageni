@@ -1,0 +1,59 @@
+start =
+
+## Root container for vFire alert data
+element alert_data {
+
+  ## The base URL of the vFire server to connect to
+  element base_url { text },
+
+  ## The username used for authentication
+  element username { text },
+
+  ## The password used for authentication
+  element password { text },
+
+  ## The Alemba API client ID used for authentication
+  element client_id { text },
+
+  ## The parameters used for creating the new ticket
+  element call_input {
+
+    ## The description text to use for the ticket
+    element description { text },
+
+    ## Optional name of the partition to create the new ticket in
+    element partition_name { text }?,
+
+    ## Optional name of the call template to use
+    element template_name { text }?,
+
+    ## Optional name of the call type to use
+    element type_name { text }?,
+
+    ## Optional name of the impact to use
+    element impact_name { text }?,
+
+    ## Optional name of the urgency to use
+    element urgency_name { text }?
+  },
+
+  ## Info about the reports to attach
+  element attach_reports {
+
+    ## Info about one report attachment
+    element report {
+
+      ## Path to the report file on the local filesystem
+      element src_path { text },
+
+      ## Filename to use in vFire
+      element dest_filename { text },
+
+      ## MIME content type of the file
+      element content_type { text },
+
+      ## Name of the report format used
+      element report_format { text }
+    }*
+  }
+}

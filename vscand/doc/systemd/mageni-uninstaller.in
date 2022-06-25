@@ -1,0 +1,169 @@
+#!/bin/bash
+
+# Author: Mageni Security, LLC
+# The author disclaims copyright to this source code. "Freely you have received; freely give." - Sumanai Abbi Moshia Yeshua Hoshia Yoshia
+
+function remove_packages()
+{
+    dpkg --purge mageni-libssh >/dev/null 2>/dev/null;
+    if [ $? -eq 0 ]; then
+        echo "mageni-libssh uninstalled"
+    else
+        echo "Error removing mageni-libssh"
+        exit 1
+    fi
+    
+    dpkg --purge mageni-vmplatform >/dev/null 2>/dev/null;
+    if [ $? -eq 0 ]; then
+        echo "mageni-vmplatform uninstalled"
+    else
+        echo "Error removing mageni-vmplatform"
+        exit 1
+    fi
+}
+
+function remove_home_dir()
+{
+    dirhome="/etc/mageni"
+
+    rm -rf $dirhome >/dev/null 2>/dev/null
+    if [ $? -eq 0 ]; then
+        echo "Removal completed"
+    else
+        echo "Error removing $dirhome"
+        exit 1
+    fi
+}
+
+function stop_services()
+{
+    echo  "Stopping the services"
+
+    ps aux | egrep "(mageni-sqlite|mageni-vscand|redis-server)" | awk '{print $2}' | xargs -i kill -9 '{}' >/dev/null 2>/dev/null;
+
+    systemctl stop mageni-vscand >/dev/null 2>/dev/null
+    if [ $? -eq 0 ]; then
+      echo "Scanner stopped successfully"
+    else
+      echo "Error while stopping scanner"
+      exit 1
+    fi
+
+    systemctl stop mageni-sqlite >/dev/null 2>/dev/null
+    if [ $? -eq 0 ]; then
+      echo "SQLite stopped successfully"
+    else
+      echo "Error while stopping SQLite"
+      exit 1
+    fi
+}
+
+function remove_folders()
+{
+    rm -rf /usr/local/var/lib/mageni/plugins >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp/cert >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp/scap >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp/plugins >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp/backend >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni/tmp/frontend >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/lib/mageni >/dev/null 2>/dev/null
+    rm -rf /usr/local/var/log/mageni >/dev/null 2>/dev/null
+    rm -rf /usr/local/include/mageni >/dev/null 2>/dev/null
+    rm -rf /var/www/* >/dev/null 2>/dev/null
+    rm -rf /etc/mageni/* >/dev/null 2>/dev/null
+    rm -rf /etc/nginx/snippets/self-signed.conf >/dev/null 2>/dev/null
+    rm -rf /etc/nginx/snippets/ssl-params.conf >/dev/null 2>/dev/null
+    rm -rf /etc/nginx/sites-enabled/mageni >/dev/null 2>/dev/null
+    rm -rf /etc/ssl/private/nginx-selfsigned.key >/dev/null 2>/dev/null
+    rm -rf /etc/ssl/certs/nginx-selfsigned.crt >/dev/null 2>/dev/null
+    rm -rf /etc/nginx/dhparam.pem >/dev/null 2>/dev/null
+    rm -rf /lib/systemd/system/mageni-sqlite.service 2>/dev/null
+    rm -rf /lib/systemd/system/mageni-vscand.service 2>/dev/null
+    rm -rf /lib/systemd/system/mageni-websvr.service 2>/dev/null
+}
+
+function remove_run_files()
+{
+    cd /usr/local/var/run >/dev/null 2>/dev/null || exit
+    rm mageni* >/dev/null 2>/dev/null
+}
+
+function remove_libraries()
+{
+    cd /usr/local/lib >/dev/null 2>/dev/null || exit
+    rm libmageni_* >/dev/null 2>/dev/null
+}
+
+function remove_tmp_files()
+{
+    cd /tmp >/dev/null 2>/dev/null || exit
+    rm mageni-sync-* >/dev/null 2>/dev/null
+}
+
+function remove_cron()
+{
+    rm -rf /etc/cron.d/mageni-service-update >/dev/null 2>/dev/null
+    if [ $? -eq 0 ]; then
+        echo "cronjob removal completed"
+    else
+        echo "Error removing cronjob"
+        exit 1
+    fi
+}
+
+function remove_user()
+{
+    deluser mageni >/dev/null 2>/dev/null
+    if [ $? -eq 0 ]; then
+        echo "User deleted"
+        echo "Uninstallation completed"
+    else
+        echo "Error removing user"
+        exit 1
+    fi
+}
+
+function remove_ldconfig()
+{
+    rm /etc/ld.so.conf.d/mageni-libraries.conf
+    if [ $? -eq 0 ]; then
+      echo "ldconfig deleted"
+    else
+      echo "Error removing ldconfig"
+      exit 1
+    fi
+}
+
+function check_perms()
+{
+    if ! [ "$(id -u)" = 0 ]; then
+        echo "This script requires sudo."
+        exit 1
+    fi
+}
+
+function run()
+{
+    read -p "Do you want to uninstall Mageni Security Platform? (yes/no) " RESP
+    if [ "$RESP" = "yes" ]; then
+        stop_services
+        remove_home_dir
+        remove_packages
+        remove_folders
+        remove_run_files
+        remove_tmp_files
+        remove_libraries
+        remove_ldconfig
+        remove_cron
+        remove_user
+    else
+        echo "Exiting"
+        exit 1
+    fi
+}
+
+check_perms
+run
+
+

@@ -1,0 +1,18 @@
+# OpenVAS Scanner logging configuration
+#
+# WARNING: Setting the level of any group (besides event*) to include debug
+#          may reveal passwords in the logs.
+
+[mageni-vscand   scanner]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-vscand.log
+level=127
+
+[*]
+prepend=%t %s %p
+separator=:
+prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
+file=${GVM_LOG_DIR}/mageni-vscand.log
+level=127

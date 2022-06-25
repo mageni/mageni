@@ -1,0 +1,124 @@
+#!/bin/sh
+# Copyright (C) 2018 Greenbone Networks GmbH
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# Escalator method script: TippingPoint SMS upload.
+
+SMS_ADDRESS=$1
+CERT_PATH=$2
+CERT_WORKAROUND=$3
+CONVERT_SCRIPT=$4
+AUTH_PATH=$5
+REPORT_PATH=$6
+
+# Function to encode for URL
+urlencode () {
+  RET=$(python -c "import urllib, sys; print urllib.quote(sys.argv[1])" "$1")
+  echo "$RET"
+}
+
+# Create temp file for converted report
+REPORT_DATE=$(xmlstarlet sel -t -v "report/timestamp" < $REPORT_PATH)
+EXIT_CODE=$?
+if [ 0 -ne $EXIT_CODE ]
+then
+  exit $EXIT_CODE
+fi
+
+REPORT_DATE=$(date -d "$REPORT_DATE" +%Y%m%d%H%M%S)
+
+CONVERTED_PATH=$(mktemp "$(dirname ${REPORT_PATH})/report-${REPORT_DATE}-XXXXXX.csv")
+EXIT_CODE=$?
+if [ 0 -ne $EXIT_CODE ]
+then
+  exit $EXIT_CODE
+fi
+
+# Convert the report
+$CONVERT_SCRIPT "$REPORT_PATH" "$CONVERTED_PATH"
+
+EXIT_CODE=$?
+if [ 0 -ne $EXIT_CODE ]
+then
+  exit $EXIT_CODE
+fi
+
+# Get and reformat scan run times
+START_TIME=$(xmlstarlet sel -t -v "report/scan_start" < $REPORT_PATH)
+EXIT_CODE=$?
+if [ 0 -ne $EXIT_CODE ]
+then
+  exit $EXIT_CODE
+fi
+START_TIME=$(TZ=UTC date -d "$START_TIME" +%Y-%m-%dT%H:%M:%S.000Z)
+
+END_TIME=$(xmlstarlet sel -t -v "report/scan_end" < $REPORT_PATH)
+EXIT_CODE=$?
+if [ 0 -ne $EXIT_CODE ]
+then
+  exit $EXIT_CODE
+fi
+END_TIME=$(TZ=UTC date -d "$END_TIME" +%Y-%m-%dT%H:%M:%S.000Z)
+RUNTIME="$START_TIME/$END_TIME"
+
+# Upload the report
+VENDOR=$(urlencode "Greenbone")
+PRODUCT=$(urlencode "Greenbone Vulnerability Manager")
+FORMAT_VERSION=$(urlencode "1.0.0")
+CN_REPLACEMENT="Tippingpoint"
+
+if [ "1" = $CERT_WORKAROUND ]
+then
+  HTTP_CODE=$(curl -s -w ' - Status code %{http_code}' -F "file=@$CONVERTED_PATH" --netrc-file "$AUTH_PATH" "https://$CN_REPLACEMENT/vulnscanner/import?vendor=$VENDOR&product=$PRODUCT&version=$FORMAT_VERSION&runtime=$RUNTIME" --cacert "$CERT_PATH" --resolve "$CN_REPLACEMENT:443:$SMS_ADDRESS")
+  CURL_EXIT="$?"
+else
+  HTTP_CODE=$(curl -s -w ' - Status code %{http_code}' -F "file=@$CONVERTED_PATH" --netrc-file "$AUTH_PATH" "https://$SMS_ADDRESS/vulnscanner/import?vendor=$VENDOR&product=$PRODUCT&version=$FORMAT_VERSION&runtime=$RUNTIME" --cacert "$CERT_PATH")
+  CURL_EXIT="$?"
+fi
+
+if [ " - Status code 200" = "$HTTP_CODE" ]
+then
+  echo "Upload successful"
+elif [ " - Status code 302" = "$HTTP_CODE" ]
+then
+  echo "Host returned: $HTTP_CODE - credentials may be incorrect" >&2
+  exit 1
+elif [ -n "$HTTP_CODE" ] && [ "- Status code 000" != "$HTTP_CODE" ]
+then
+  echo "Host returned: $HTTP_CODE" >&2
+  exit 1
+elif [ "6" = "$CURL_EXIT" ]
+then
+  echo "curl failed: Couldn't resolve host (code $CURL_EXIT)" >&2
+  exit 1
+elif [ "7" = "$CURL_EXIT" ]
+then
+  echo "curl failed: Failed to connect to host (code $CURL_EXIT)" >&2
+  exit 1
+elif [ "51" = "$CURL_EXIT" ]
+then
+  echo "curl failed: The peer's SSL certificate or SSH MD5 fingerprint was not OK (code $CURL_EXIT)" >&2
+  exit 1
+elif [ "77" = "$CURL_EXIT" ]
+then
+  echo "curl failed: Problem with reading the SSL CA cert. (code $CURL_EXIT)" >&2
+  exit 1
+else
+  echo "curl failed with exit code $CURL_EXIT" >&2
+  exit 1
+fi

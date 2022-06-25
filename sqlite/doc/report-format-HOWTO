@@ -1,0 +1,100 @@
+GREENBONE-VULNERABILITY-MANAGER REPORT FORMAT HOWTO
+===================================================
+
+The Greenbone Vulnerability Manager comes with a flexible report framework.
+There are numerous predefined report formats.  Report formats can also be
+loaded at run time via the client protocol (GMP).
+
+Global report formats are visible to all users.
+
+
+Adding a report format to an existing Greenbone Vulnerability Manager installation
+----------------------------------------------------------------------------------
+
+Use the CREATE_REPORT_FORMAT GMP command to install the report format.  The
+GSA provides an upload option for this on the "Report Formats" page.
+
+
+Developing a new report format for upload into Greenbone Vulnerability Manager
+------------------------------------------------------------------------------
+
+To create a new report format
+
+  - Copy the source directory for one of the example reports included with
+    the Manager source.  They are located in gvm/report_formats.
+
+  - There is a "create_report_import" script in the directory.  It contains the
+    data that describes the new format, like the name and file extension.
+    Modify the data to suit the new format.
+
+  - There is also a script called "generate".  This is what the Manager will run
+    to generate a report in this format.  The Manager will pass the script a
+    single argument, the location of a file containing the GMP report (in XML,
+    as returned by GET_REPORTS).  The output of the "generate" script will be
+    the resulting report.
+
+    Modify this script to suit the new format.  Typically the script will call
+    xsltproc to transform the XML in some way.
+
+  - Add any files required by the "generate" script to the directory.  Typically
+    this is a single XSLT file that is passed to xsltproc.
+
+  - Update the "create_report_import" script to include the files added to the
+    directory in the last step.  These must be in alphabetical order for the
+    signature to be reproducible.
+
+  - Test the generate script
+
+      - Get a GMP report (download the report with the GSA or do a GET_REPORTS
+        request with some other client like the gvm-cli command, and extract the
+        innermost REPORT element).
+
+        A command like
+
+            gvm-cli socket --xml '<get_reports id="8cc0fbab-2227-456b-8fad-665daa22c7da"/>' | \
+              xmlstarlet sel -t -m /get_reports_response/report -c report
+            
+        will do the trick.
+
+      - Run the command
+
+            . generate report.xml
+
+        in the report format directory, where report.xml is the name of a file
+        containing the report from the previous step.  The output should be the
+        required report.
+
+  - Create the report format by running
+
+        . create_report_import
+
+    in the report format directory.  This can be added to an existing
+    installation as in the previous section.
+
+
+Creating a new predefined report format
+---------------------------------------
+
+To add a new predefined global report format to Greenbone Vulnerability
+Manager (typically in SVN):
+
+  - Add a new directory in src/report_formats for the format.  The directory
+    must have the same name as the report.
+
+  - Add a file called "generate" in this new directory.  This is the generator
+    shell script.  The Manager passes this to bin/sh to create the report.
+    The generator is passed a single argument: the location of a file containing
+    the report as XML.
+
+  - Add any files that the generator needs to the directory.  Typically this is
+    a single XSLT file.
+
+  - In init_manage in src/manage_sql.c add code to initialise the format in
+    the database.
+
+  - Update src/CMakeLists.txt to install the new files in src/report_formats.
+
+  - To create a feed signature for the report format change into
+    src/report_formats and run the command
+
+        ./create_signatures PREFIX/var/lib/gvm/gvmd/gvmd.db
