@@ -4,6 +4,11 @@
     </a>
 </p>
 
+<p align="center">
+<a href="https://bestpractices.coreinfrastructure.org/projects/6196"><img src="https://bestpractices.coreinfrastructure.org/projects/6196/badge">
+</a>
+</p>
+
 ## Introduction
 Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches.
 
