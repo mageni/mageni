@@ -22,7 +22,7 @@
                             target="_blank"
                             class="font-medium underline text-yellow-700 hover:text-yellow-600"
                         > 
-                            Upgrade your account to remove this message, unlock more features like notifications, schedules, manage users, and have access to support
+                            Subscribe to unlock more features like notifications, schedules, migrations, manage users, and support
                         </a>
                     </p>
                 </div>
@@ -57,7 +57,7 @@
                             @else
                                 <x-jet-button
                                     x-data
-                                    x-tooltip="Please upgrade to a Paid plan to create users"
+                                    x-tooltip="Subscribe to create users"
                                     class="hover:shadow cursor-not-allowed">
                                     New User
                                 </x-jet-button>

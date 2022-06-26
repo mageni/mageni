@@ -43,7 +43,7 @@
                             target="_blank"
                             class="font-medium underline text-yellow-700 hover:text-yellow-600"
                         > 
-                            Upgrade your account to remove this message, unlock more features like notifications, schedules, manage users, and have access to support
+                            Subscribe to unlock more features like notifications, schedules, migrations, manage users, and support
                         </a>
                     </p>
                 </div>
@@ -1604,7 +1604,7 @@
                                         target="_blank"
                                         class="font-medium underline text-yellow-700 hover:text-yellow-600"
                                     > 
-                                        Upgrade your account to unlock schedules.
+                                        Subscribe to unlock schedules.
                                     </a>
                                 </p>
                             </div>
@@ -1773,7 +1773,7 @@
                                         target="_blank"
                                         class="font-medium underline text-yellow-700 hover:text-yellow-600"
                                     > 
-                                        Upgrade your account to unlock email notifications.
+                                        Subscribe to unlock email notifications.
                                     </a>
                                 </p>
                             </div>
@@ -3171,7 +3171,7 @@
                                                 target="_blank"
                                                 class="font-medium underline text-yellow-700 hover:text-yellow-600"
                                             > 
-                                                Upgrade your account to unlock schedules.
+                                                Subscribe to unlock schedules.
                                             </a>
                                         </p>
                                     </div>
@@ -3355,7 +3355,7 @@
                                                 target="_blank"
                                                 class="font-medium underline text-yellow-700 hover:text-yellow-600"
                                             > 
-                                                Upgrade your account to unlock schedules.
+                                                Subscribe to unlock schedules.
                                             </a>
                                         </p>
                                     </div>
