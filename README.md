@@ -60,7 +60,7 @@ Here you can see the Vulnerability Management Life Cycle according to Gartner:
     <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
 </p>
 
-Mageni takes the pain out of the vulnerability management cycle by easing these those tasks.
+Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
 
 ## Mission
 Mageni is designed to make you love cybersecurity and vulnerability management.
