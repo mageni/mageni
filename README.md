@@ -18,7 +18,7 @@
 <h1 align="center">The Vulnerability Scanning Platform</h1>
 
 ## Introduction
-Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches. This is what it currently looks like:
+Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you comply with regulations and security standards while mitigating the risk of financial losses and security breaches. This is what it currently looks like:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
@@ -36,7 +36,7 @@ Mageni automates for you the vulnerability scanning, assessment, and management 
 
 ## What is the Vulnerability Management Life Cycle?
 
-The Vulnerability Management Life Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the vulnerability management lifecycle saving you time, money, and resources**
+The Vulnerability Management Life Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Life Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
 
 Here you can see the Vulnerability Management Life Cycle according to Gartner:
 
