@@ -5,12 +5,20 @@
 </p>
 
 <p align="center">
-<a href="https://bestpractices.coreinfrastructure.org/projects/6196"><img src="https://bestpractices.coreinfrastructure.org/projects/6196/badge">
+<a href="https://bestpractices.coreinfrastructure.org/projects/6196">
+    <img src="https://bestpractices.coreinfrastructure.org/projects/6196/badge">
+</a>
+<a href="https://www.codacy.com/gh/mageni/mageni/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mageni/mageni&amp;utm_campaign=Badge_Grade">
+    <img src="https://app.codacy.com/project/badge/Grade/558c9a5a09074cc293aef32ed6cee6b2"/>
 </a>
 </p>
 
+<br />
+
+<h1 align="center">The Vulnerability Scanning Platform</h1>
+
 ## Introduction
-Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches.
+Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches. This is what it currently looks like:
 
 <p align="center">
     <a href="https://www.mageni.net" target="_blank">
