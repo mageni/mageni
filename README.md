@@ -4,14 +4,14 @@
     </a>
 </p>
 
+## Introduction
+Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches.
+
 <p align="center">
     <a href="https://www.mageni.net" target="_blank">
-        <img src="https://www.mageni.net/assets/img/screenshot.png" width="600" height="300">
+        <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
     </a>
 </p>
-
-## About
-Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches.
 
 ## Audience
 - PenTester

@@ -1,1 +1,1 @@
-If you discover a security vulnerability within Mageni, please send an email to Jonathan Jaquez at jejaquez@mageni.net. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Mageni, please send an email to Jonathan Jaquez at jejaquez@mageni.net instead of using the issue tracker or discussions. All security vulnerabilities will be promptly addressed.
