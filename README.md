@@ -32,7 +32,7 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
 - Security Audits
 - And more ...
 
-Mageni is accessible, powerful, and will save you time, money, and resources. Mageni also helps you comply with regulations and security standards while mitigating the risk of financial losses and security breaches. This is what it currently looks like:
+Mageni is accessible, powerful, and will save you time, money, and resources. Mageni also helps you comply with regulations and security standards while mitigating the risk of financial losses, fines, jail, sanctions and security breaches. This is what it currently looks like:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
