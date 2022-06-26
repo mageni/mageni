@@ -8,7 +8,7 @@ Remember, bug reports are created in the hope that others with the same problem 
 
 # Support Questions
 
-Mageni's GitHub issue trackers are not intended to provide Mageni help or support. Instead, support Mageni with a support subscription.
+Mageni's GitHub issue trackers are not intended to provide Mageni help or support. Instead, Mageni provides a support subscription which help us cover the expenses for open source development.
 
 # Core Development Discussion
 
