@@ -15,8 +15,6 @@
 
 <br />
 
-<h1 align="center">The Vulnerability Scanning Platform</h1>
-
 ## Introduction
 Mageni eases for you the vulnerability management cycle. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni takes the discomfort and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
 
