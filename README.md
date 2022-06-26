@@ -32,6 +32,17 @@ Mageni automates for you the vulnerability scanning, assessment, and management 
 - Security Researchers
 - Auditors
 - Red Team
+- More
+
+## What is the Vulnerability Management Life Cycle?
+
+The Vulnerability Management Life Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the vulnerability management lifecycle saving you time, money, and resources**
+
+Here you can see the Vulnerability Management Life Cycle according to Gartner:
+
+<p align="center">
+    <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
+</p>
 
 ## Installation 
 
