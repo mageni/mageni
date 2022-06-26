@@ -16,7 +16,7 @@ You may propose new features or improvements of existing Mageni behavior in the 
 
 ## Attribution
 
-This Contributing Guided is adapted from the [Laravel][homepage], version 1.4,
+This Contributing Guided is adapted from the [Laravel][homepage]
 available at https://laravel.com/docs/9.x/contributions
 
 [homepage]: https://laravel.com/docs/9.x/contributions
