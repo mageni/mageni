@@ -125,6 +125,7 @@ multipass shell mageni
 6. Install Mageni
 ```
 curl -sL https://www.mageni.net/installation | sudo bash
+```
 
 ## Contributing
 Thank you for considering contributing to Mageni! If you want to contribute, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
