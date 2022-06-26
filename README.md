@@ -89,4 +89,4 @@ Thank you for considering contributing to Mageni! The contribution guide can be 
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. For the SBOM and the list of all open source software that Mageni uses and their copyrights, please visit this <a href="https://www.mageni.net/opensource" target="_blank">website</a>
 
-Please note that we don't sell the free and open source software vulnerability scanner. The vulnerability scanner is and always will be free. We only sell computers services related to training, consulting, instruction, servicing, maintaining, repairing, programming, installing, troubleshooting, and bug/defect triage of the free and open-source vulnerability scanner. For this reason the computer services are not provided in conjuction with the sale of a prewritten or custom software.
+Please note that we don't sell the free and open source software vulnerability scanner. The vulnerability scanner is and always will be free.
