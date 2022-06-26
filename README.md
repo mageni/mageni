@@ -61,7 +61,7 @@ Here you can see the Vulnerability Management Life Cycle according to Gartner:
 Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
 
 ## Mission
-Mageni is designed to make you love cybersecurity and vulnerability management.
+Mageni's mission is to make your life more enjoyable and peaceful by providing you a wonderful vulnerability management platform.
 
 ## Vision
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
