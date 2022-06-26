@@ -38,6 +38,12 @@ Mageni is accessible, powerful, and will save you time, money, and resources. **
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </p>
 
+## Mission
+Mageni's mission is to make your life more enjoyable and peaceful by providing you a wonderful vulnerability management platform.
+
+## Vision
+We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
+
 ## Audience
 - PenTester
 - Cybersecurity Professionals 
@@ -59,12 +65,6 @@ Here you can see the Vulnerability Management Life Cycle according to Gartner:
 </p>
 
 Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
-
-## Mission
-Mageni's mission is to make your life more enjoyable and peaceful by providing you a wonderful vulnerability management platform.
-
-## Vision
-We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
 
 ## Installation 
 
