@@ -1,7 +1,5 @@
 <p align="center">
-    <a href="https://www.mageni.net" target="_blank">
-        <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
-    </a>
+    <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
 </p>
 
 <p align="center">
