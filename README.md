@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://www.mageni.net" target="_blank">
-        <img src="https://pbs.twimg.com/profile_images/1168687855520141312/wrdNG6ne_400x400.png" width="100">
+        <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
     </a>
 </p>
 
@@ -23,9 +23,7 @@
 Mageni automates for you the vulnerability scanning, assessment, and management process. This saves you time, money, and resources, and helps you achieve compliance with regulations and security standards while mitigating the risk of financial losses and security breaches. This is what it currently looks like:
 
 <p align="center">
-    <a href="https://www.mageni.net" target="_blank">
-        <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
-    </a>
+    <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </p>
 
 ## Audience
