@@ -180,6 +180,10 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Priority support to fix bugs
 - Your feature request will be a top priority
 - You have an active role in preserving the software that you use
+- Access to CompTIA PenTest+ Professionals to help you achieve your goals.
+
+## CompTIA PenTest+ Certification
+Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. So you can rest assured that the software that you are using is being developed by professionals. 
 
 ## Mageni helps to reduce climate change
 Mageni is a member of the <a href="https://climate.stripe.com/nJ22UV" target="_blank">Stripe Climate</a> and contributes 10% of your sponsorship to reduce climate change.
