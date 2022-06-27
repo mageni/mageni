@@ -11,6 +11,7 @@
 </a>
 <a href="https://codeclimate.com/github/mageni/mageni/maintainability"><img src="https://api.codeclimate.com/v1/badges/6f48e5542ead5e70f9fe/maintainability" /></a>
 <a href="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml"><img src="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 </p>
 
 <br />
@@ -18,21 +19,55 @@
 ## Introduction
 Mageni eases for you the vulnerability management cycle. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni takes the discomfort and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
 
-- Asset Discovery
-- Prioritize Assets
-- Vulnerability Scanning
-- Vulnerability Assessment
-- Reporting
-- Remediation
-- Vulnerability Prioritization
-- Vulnerability Validation
-- System Hardening
-- Compliance Testing
-- Penetration Testing
+- Asset
+    - Discovery
+    - Prioritization
+- Vulnerability 
+    - Scanning
+    - Assessment
+    - Reporting
+    - Remediation
+    - Prioritization
+    - Validation
+    - Exception 
+    - Intelligence
+    - Correlation
+    - Deduplication
+- Testing
+    - Hardening
+    - Compliance
+        - PCI DSS
+        - NIST CSF
+        - HIPAA
+        - ISO27000
+- Intelligence
+    - VirusTotal 
+    - CISA Known Exploited Vulnerabilities Catalog
+    - MITRE ATT&CK
 - Security Audits
-- And more ...
+    - Network
+    - Servers
+    - Desktops
+    - Applications
+    - Services
+    - Ports
+- Notifications 
+    - Email with zero-configuration
+    - Microsoft Teams *Coming soon*
+    - SMS *Coming soon*
+    - Twitter *Coming soon*
+    - Webhooks *Coming soon*
+- Scoring
+    - CVSSv2
+    - CVSSv3.1
+- Integrations
+    - Syslog *Coming soon*
+    - SysAid *Coming soon*
+    - ServiceNow *Coming soon*
+    - SIEM *Coming soon*
+- And more features are coming...
 
-**Mageni is accessible, powerful, and will save you time, money, and resources while mitigating the risk of non compliance, financial losses, fines, jail, sanctions, and security breaches.** This is what it currently looks like:
+Mageni is accessible, powerful, and will **save you time, money, and resources** while reducing the risk of non compliance, financial losses, fines, jail, sanctions, and security breaches. This is what it currently looks like:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
@@ -52,6 +87,7 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 - Security Researchers
 - Auditors
 - Red Team
+- Malware Analyst
 - And more ...
 
 ## What is the Vulnerability Management Cycle?
@@ -129,6 +165,9 @@ curl -sL https://www.mageni.net/installation | sudo bash
 Thank you for considering contributing to Mageni! If you want to contribute, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
 
 ## Thank you, open source
-Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. For the SBOM and the list of all open source software that Mageni uses and their copyrights, please visit this <a href="https://www.mageni.net/opensource" target="_blank">website</a>
+Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to legal@mageni.net and ASAP we will fix it.
 
-Please note that we don't sell the free and open source software vulnerability scanner. The vulnerability scanner is and always will be free.
+**Please note that Mageni does not sells the open source software. The software is, and always will be,fre free.**
+
+## Legal
+This open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
