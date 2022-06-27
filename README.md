@@ -174,6 +174,17 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Has Mageni helped your organization (more than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/28ocNa1kwfnk0KYbIQ">Organization</a> gives you the chance to give back. 
 - Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
+## Benefits of Sponsorship
+- Access to a private issues repository
+- Access to the developers 
+- Priority support to fix bugs
+- Your feature request will be a top priority
+
+## Mageni helps to reduce climate change
+Mageni is a member of the <a href="https://climate.stripe.com/nJ22UV" target="_blank">Stripe Climate</a> and contributes 10% of your sponsorship to reduce climate change.
+
+With your sponsorship you will make a significant impact improving for present and future generations.
+
 ## Contributing
 You can also contribute with:
 
