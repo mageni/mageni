@@ -1,0 +1,3602 @@
+{
+  "adduser": {
+    "State": "b'ii",
+    "Version": "3.118ubuntu2",
+    "Architecture": "all",
+    "Description": "add and remove users and groups"
+  },
+  "apt": {
+    "State": "ii",
+    "Version": "2.0.8",
+    "Architecture": "amd64",
+    "Description": "commandline package manager"
+  },
+  "apt-transport-https": {
+    "State": "ii",
+    "Version": "2.0.8",
+    "Architecture": "all",
+    "Description": "transitional package for https support"
+  },
+  "awscli": {
+    "State": "ii",
+    "Version": "1.18.69-1ubuntu0.20.04.1",
+    "Architecture": "all",
+    "Description": "Universal Command Line Environment for AWS"
+  },
+  "base-files": {
+    "State": "ii",
+    "Version": "11ubuntu5.5",
+    "Architecture": "amd64",
+    "Description": "Debian base system miscellaneous files"
+  },
+  "base-passwd": {
+    "State": "ii",
+    "Version": "3.5.47",
+    "Architecture": "amd64",
+    "Description": "Debian base system master password and group files"
+  },
+  "bash": {
+    "State": "ii",
+    "Version": "5.0-6ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "GNU Bourne Again SHell"
+  },
+  "bc": {
+    "State": "ii",
+    "Version": "1.07.1-2build1",
+    "Architecture": "amd64",
+    "Description": "GNU bc arbitrary precision calculator language"
+  },
+  "binutils": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "GNU assembler, linker and binary utilities"
+  },
+  "binutils-common:amd64": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "Common files for the GNU assembler, linker and binary utilities"
+  },
+  "binutils-x86-64-linux-gnu": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "GNU binary utilities, for x86-64-linux-gnu target"
+  },
+  "bison": {
+    "State": "ii",
+    "Version": "2:3.5.1+dfsg-1",
+    "Architecture": "amd64",
+    "Description": "YACC-compatible parser generator"
+  },
+  "bsdutils": {
+    "State": "ii",
+    "Version": "1:2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "basic utilities from 4.4BSD-Lite"
+  },
+  "build-essential": {
+    "State": "ii",
+    "Version": "12.8ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "Informational list of build-essential packages"
+  },
+  "bzip2": {
+    "State": "ii",
+    "Version": "1.0.8-2",
+    "Architecture": "amd64",
+    "Description": "high-quality block-sorting file compressor - utilities"
+  },
+  "ca-certificates": {
+    "State": "ii",
+    "Version": "20210119~20.04.2",
+    "Architecture": "all",
+    "Description": "Common CA certificates"
+  },
+  "clang": {
+    "State": "ii",
+    "Version": "1:10.0-50~exp1",
+    "Architecture": "amd64",
+    "Description": "C, C++ and Objective-C compiler (LLVM based)"
+  },
+  "clang-10": {
+    "State": "ii",
+    "Version": "1:10.0.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "C, C++ and Objective-C compiler"
+  },
+  "cmake": {
+    "State": "ii",
+    "Version": "3.16.3-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "cross-platform, open-source make system"
+  },
+  "cmake-data": {
+    "State": "ii",
+    "Version": "3.16.3-1ubuntu1",
+    "Architecture": "all",
+    "Description": "CMake data files (modules, templates and documentation)"
+  },
+  "cmdtest": {
+    "State": "ii",
+    "Version": "0.32.14.gcdfe14e-1",
+    "Architecture": "all",
+    "Description": "blackbox testing of Unix command line programs"
+  },
+  "cmocka-doc": {
+    "State": "ii",
+    "Version": "1.1.5-2",
+    "Architecture": "all",
+    "Description": "documentation for the CMocka unit testing framework"
+  },
+  "coreutils": {
+    "State": "ii",
+    "Version": "8.30-3ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GNU core utilities"
+  },
+  "cpp": {
+    "State": "ii",
+    "Version": "4:9.3.0-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GNU C preprocessor (cpp)"
+  },
+  "cpp-9": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GNU C preprocessor"
+  },
+  "cron": {
+    "State": "ii",
+    "Version": "3.0pl1-136ubuntu1",
+    "Architecture": "amd64",
+    "Description": "process scheduling daemon"
+  },
+  "curl": {
+    "State": "ii",
+    "Version": "7.68.0-1ubuntu2.11",
+    "Architecture": "amd64",
+    "Description": "command line tool for transferring data with URL syntax"
+  },
+  "dash": {
+    "State": "ii",
+    "Version": "0.5.10.2-6",
+    "Architecture": "amd64",
+    "Description": "POSIX-compliant shell"
+  },
+  "dbus": {
+    "State": "ii",
+    "Version": "1.12.16-2ubuntu2.2",
+    "Architecture": "amd64",
+    "Description": "simple interprocess messaging system (daemon and utilities)"
+  },
+  "dbus-user-session": {
+    "State": "ii",
+    "Version": "1.12.16-2ubuntu2.2",
+    "Architecture": "amd64",
+    "Description": "simple interprocess messaging system (systemd --user integration)"
+  },
+  "dconf-gsettings-backend:amd64": {
+    "State": "ii",
+    "Version": "0.36.0-1",
+    "Architecture": "amd64",
+    "Description": "simple configuration storage system - GSettings back-end"
+  },
+  "dconf-service": {
+    "State": "ii",
+    "Version": "0.36.0-1",
+    "Architecture": "amd64",
+    "Description": "simple configuration storage system - D-Bus service"
+  },
+  "debconf": {
+    "State": "ii",
+    "Version": "1.5.73",
+    "Architecture": "all",
+    "Description": "Debian configuration management system"
+  },
+  "debianutils": {
+    "State": "ii",
+    "Version": "4.9.1",
+    "Architecture": "amd64",
+    "Description": "Miscellaneous utilities specific to Debian"
+  },
+  "diffutils": {
+    "State": "ii",
+    "Version": "1:3.7-3",
+    "Architecture": "amd64",
+    "Description": "File comparison utilities"
+  },
+  "dirmngr": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - network certificate management service"
+  },
+  "distro-info-data": {
+    "State": "ii",
+    "Version": "0.43ubuntu1.10",
+    "Architecture": "all",
+    "Description": "information about the distributions\\' releases (data files)"
+  },
+  "dmsetup": {
+    "State": "ii",
+    "Version": "2:1.02.167-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Linux Kernel Device Mapper userspace library"
+  },
+  "docutils-common": {
+    "State": "ii",
+    "Version": "0.16+dfsg-2",
+    "Architecture": "all",
+    "Description": "text processing system for reStructuredText - common data"
+  },
+  "dpkg": {
+    "State": "ii",
+    "Version": "1.19.7ubuntu3",
+    "Architecture": "amd64",
+    "Description": "Debian package management system"
+  },
+  "dpkg-dev": {
+    "State": "ii",
+    "Version": "1.19.7ubuntu3",
+    "Architecture": "all",
+    "Description": "Debian package development tools"
+  },
+  "e2fsprogs": {
+    "State": "ii",
+    "Version": "1.45.5-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "ext2/ext3/ext4 file system utilities"
+  },
+  "fdisk": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "collection of partitioning utilities"
+  },
+  "file": {
+    "State": "ii",
+    "Version": "1:5.38-4",
+    "Architecture": "amd64",
+    "Description": "Recognize the type of data in a file using \"magic\" numbers"
+  },
+  "findutils": {
+    "State": "ii",
+    "Version": "4.7.0-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "utilities for finding files--find, xargs"
+  },
+  "flex": {
+    "State": "ii",
+    "Version": "2.6.4-6.2",
+    "Architecture": "amd64",
+    "Description": "fast lexical analyzer generator"
+  },
+  "fontconfig": {
+    "State": "ii",
+    "Version": "2.13.1-2ubuntu3",
+    "Architecture": "amd64",
+    "Description": "generic font configuration library - support binaries"
+  },
+  "fontconfig-config": {
+    "State": "ii",
+    "Version": "2.13.1-2ubuntu3",
+    "Architecture": "all",
+    "Description": "generic font configuration library - configuration"
+  },
+  "fonts-dejavu-core": {
+    "State": "ii",
+    "Version": "2.37-1",
+    "Architecture": "all",
+    "Description": "Vera font family derivate with additional characters"
+  },
+  "fonts-droid-fallback": {
+    "State": "ii",
+    "Version": "1:6.0.1r16-1.1",
+    "Architecture": "all",
+    "Description": "handheld device font with extensive style and language support (fallback)"
+  },
+  "fonts-noto-mono": {
+    "State": "ii",
+    "Version": "20200323-1build1~ubuntu20.04.1",
+    "Architecture": "all",
+    "Description": "\"No Tofu\" monospaced font family with large Unicode coverage"
+  },
+  "fonts-urw-base35": {
+    "State": "ii",
+    "Version": "20170801.1-3",
+    "Architecture": "all",
+    "Description": "font set metric-compatible with the 35 PostScript Level 2 Base Fonts"
+  },
+  "g++": {
+    "State": "ii",
+    "Version": "4:9.3.0-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GNU C++ compiler"
+  },
+  "g++-9": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GNU C++ compiler"
+  },
+  "gcc": {
+    "State": "ii",
+    "Version": "4:9.3.0-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GNU C compiler"
+  },
+  "gcc-10-base:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC, the GNU Compiler Collection (base package)"
+  },
+  "gcc-9": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GNU C compiler"
+  },
+  "gcc-9-base:amd64": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GCC, the GNU Compiler Collection (base package)"
+  },
+  "gdb": {
+    "State": "ii",
+    "Version": "9.2-0ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GNU Debugger"
+  },
+  "ghostscript": {
+    "State": "ii",
+    "Version": "9.50~dfsg-5ubuntu4.5",
+    "Architecture": "amd64",
+    "Description": "interpreter for the PostScript language and for PDF"
+  },
+  "gir1.2-glib-2.0:amd64": {
+    "State": "ii",
+    "Version": "1.64.1-1~ubuntu20.04.1",
+    "Architecture": "amd64",
+    "Description": "Introspection data for GLib, GObject, Gio and GModule"
+  },
+  "gir1.2-ical-3.0:amd64": {
+    "State": "ii",
+    "Version": "3.0.8-1",
+    "Architecture": "amd64",
+    "Description": "iCalendar library implementation in C (GObject Introspection)"
+  },
+  "gir1.2-packagekitglib-1.0": {
+    "State": "ii",
+    "Version": "1.1.13-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "GObject introspection data for the PackageKit GLib library"
+  },
+  "git": {
+    "State": "ii",
+    "Version": "1:2.25.1-1ubuntu3.4",
+    "Architecture": "amd64",
+    "Description": "fast, scalable, distributed revision control system"
+  },
+  "git-man": {
+    "State": "ii",
+    "Version": "1:2.25.1-1ubuntu3.4",
+    "Architecture": "all",
+    "Description": "fast, scalable, distributed revision control system (manual pages)"
+  },
+  "glib-networking:amd64": {
+    "State": "ii",
+    "Version": "2.64.2-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "network-related giomodules for GLib"
+  },
+  "glib-networking-common": {
+    "State": "ii",
+    "Version": "2.64.2-1ubuntu0.1",
+    "Architecture": "all",
+    "Description": "network-related giomodules for GLib - data files"
+  },
+  "glib-networking-services": {
+    "State": "ii",
+    "Version": "2.64.2-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "network-related giomodules for GLib - D-Bus services"
+  },
+  "gnupg": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "all",
+    "Description": "GNU privacy guard - a free PGP replacement"
+  },
+  "gnupg-l10n": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "all",
+    "Description": "GNU privacy guard - localization files"
+  },
+  "gnupg-utils": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - utility programs"
+  },
+  "gnutls-bin": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - commandline utilities"
+  },
+  "gpg": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU Privacy Guard -- minimalist public key operations"
+  },
+  "gpg-agent": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - cryptographic agent"
+  },
+  "gpg-wks-client": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - Web Key Service client"
+  },
+  "gpg-wks-server": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - Web Key Service server"
+  },
+  "gpgconf": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - core configuration utilities"
+  },
+  "gpgsm": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - S/MIME version"
+  },
+  "gpgv": {
+    "State": "ii",
+    "Version": "2.2.19-3ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "GNU privacy guard - signature verification tool"
+  },
+  "grep": {
+    "State": "ii",
+    "Version": "3.4-1",
+    "Architecture": "amd64",
+    "Description": "GNU grep, egrep and fgrep"
+  },
+  "groff": {
+    "State": "ii",
+    "Version": "1.22.4-4build1",
+    "Architecture": "amd64",
+    "Description": "GNU troff text-formatting system"
+  },
+  "groff-base": {
+    "State": "ii",
+    "Version": "1.22.4-4build1",
+    "Architecture": "amd64",
+    "Description": "GNU troff text-formatting system (base system components)"
+  },
+  "gsettings-desktop-schemas": {
+    "State": "ii",
+    "Version": "3.36.0-1ubuntu1",
+    "Architecture": "all",
+    "Description": "GSettings desktop-wide schemas"
+  },
+  "gsfonts": {
+    "State": "ii",
+    "Version": "1:8.11+urwcyr1.0.7~pre44-4.4",
+    "Architecture": "all",
+    "Description": "Fonts for the Ghostscript interpreter(s)"
+  },
+  "guile-2.2-libs:amd64": {
+    "State": "ii",
+    "Version": "2.2.7+1-4",
+    "Architecture": "amd64",
+    "Description": "Core Guile libraries"
+  },
+  "gzip": {
+    "State": "ii",
+    "Version": "1.10-0ubuntu4.1",
+    "Architecture": "amd64",
+    "Description": "GNU compression utilities"
+  },
+  "hicolor-icon-theme": {
+    "State": "ii",
+    "Version": "0.17-2",
+    "Architecture": "all",
+    "Description": "default fallback theme for FreeDesktop.org icon themes"
+  },
+  "hostname": {
+    "State": "ii",
+    "Version": "3.23",
+    "Architecture": "amd64",
+    "Description": "utility to set/show the host name or domain name"
+  },
+  "icu-devtools": {
+    "State": "ii",
+    "Version": "66.1-2ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "Development utilities for International Components for Unicode"
+  },
+  "imagemagick": {
+    "State": "ii",
+    "Version": "8:6.9.10.23+dfsg-2.1ubuntu11.4",
+    "Architecture": "amd64",
+    "Description": "image manipulation programs -- binaries"
+  },
+  "imagemagick-6-common": {
+    "State": "ii",
+    "Version": "8:6.9.10.23+dfsg-2.1ubuntu11.4",
+    "Architecture": "all",
+    "Description": "image manipulation programs -- infrastructure"
+  },
+  "imagemagick-6.q16": {
+    "State": "ii",
+    "Version": "8:6.9.10.23+dfsg-2.1ubuntu11.4",
+    "Architecture": "amd64",
+    "Description": "image manipulation programs -- quantum depth Q16"
+  },
+  "init-system-helpers": {
+    "State": "ii",
+    "Version": "1.57",
+    "Architecture": "all",
+    "Description": "helper tools for all init systems"
+  },
+  "iproute2": {
+    "State": "ii",
+    "Version": "5.5.0-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "networking and traffic control tools"
+  },
+  "iputils-ping": {
+    "State": "ii",
+    "Version": "3:20190709-3",
+    "Architecture": "amd64",
+    "Description": "Tools to test the reachability of network hosts"
+  },
+  "iso-codes": {
+    "State": "ii",
+    "Version": "4.4-1",
+    "Architecture": "all",
+    "Description": "ISO language, territory, currency, script codes and their translations"
+  },
+  "javascript-common": {
+    "State": "ii",
+    "Version": "11",
+    "Architecture": "all",
+    "Description": "Base support for JavaScript library packages"
+  },
+  "jq": {
+    "State": "ii",
+    "Version": "1.6-1ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "lightweight and flexible command-line JSON processor"
+  },
+  "krb5-locales": {
+    "State": "ii",
+    "Version": "1.17-6ubuntu4.1",
+    "Architecture": "all",
+    "Description": "internationalization support for MIT Kerberos"
+  },
+  "less": {
+    "State": "ii",
+    "Version": "551-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "pager program similar to more"
+  },
+  "lib32gcc-s1": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC support library (32 bit Version)"
+  },
+  "lib32stdc++6": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GNU Standard C++ Library v3 (32 bit Version)"
+  },
+  "libacl1:amd64": {
+    "State": "ii",
+    "Version": "2.2.53-6",
+    "Architecture": "amd64",
+    "Description": "access control list - shared library"
+  },
+  "libapparmor1:amd64": {
+    "State": "ii",
+    "Version": "2.13.3-7ubuntu5.1",
+    "Architecture": "amd64",
+    "Description": "changehat AppArmor library"
+  },
+  "libappstream4:amd64": {
+    "State": "ii",
+    "Version": "0.12.10-2",
+    "Architecture": "amd64",
+    "Description": "Library to access AppStream services"
+  },
+  "libapt-pkg6.0:amd64": {
+    "State": "ii",
+    "Version": "2.0.8",
+    "Architecture": "amd64",
+    "Description": "package management runtime library"
+  },
+  "libarchive13:amd64": {
+    "State": "ii",
+    "Version": "3.4.0-2ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "Multi-format archive and compression library (shared library)"
+  },
+  "libasan5:amd64": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "AddressSanitizer -- a fast memory error detector"
+  },
+  "libasn1-8-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - ASN.1 library"
+  },
+  "libassuan-dev": {
+    "State": "ii",
+    "Version": "2.5.3-7ubuntu2",
+    "Architecture": "amd64",
+    "Description": "IPC library for the GnuPG components -- header files"
+  },
+  "libassuan0:amd64": {
+    "State": "ii",
+    "Version": "2.5.3-7ubuntu2",
+    "Architecture": "amd64",
+    "Description": "IPC library for the GnuPG components"
+  },
+  "libatomic1:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "support library providing __atomic built-in functions"
+  },
+  "libattr1:amd64": {
+    "State": "ii",
+    "Version": "1:2.4.48-5",
+    "Architecture": "amd64",
+    "Description": "extended attribute handling - shared library"
+  },
+  "libaudit-common": {
+    "State": "ii",
+    "Version": "1:2.8.5-2ubuntu6",
+    "Architecture": "all",
+    "Description": "Dynamic library for security auditing - common files"
+  },
+  "libaudit1:amd64": {
+    "State": "ii",
+    "Version": "1:2.8.5-2ubuntu6",
+    "Architecture": "amd64",
+    "Description": "Dynamic library for security auditing"
+  },
+  "libavahi-client3:amd64": {
+    "State": "ii",
+    "Version": "0.7-4ubuntu7.1",
+    "Architecture": "amd64",
+    "Description": "Avahi client library"
+  },
+  "libavahi-common-data:amd64": {
+    "State": "ii",
+    "Version": "0.7-4ubuntu7.1",
+    "Architecture": "amd64",
+    "Description": "Avahi common data files"
+  },
+  "libavahi-common3:amd64": {
+    "State": "ii",
+    "Version": "0.7-4ubuntu7.1",
+    "Architecture": "amd64",
+    "Description": "Avahi common library"
+  },
+  "libbabeltrace1:amd64": {
+    "State": "ii",
+    "Version": "1.5.8-1build1",
+    "Architecture": "amd64",
+    "Description": "Babeltrace conversion libraries"
+  },
+  "libbinutils:amd64": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "GNU binary utilities (private shared library)"
+  },
+  "libblas3:amd64": {
+    "State": "ii",
+    "Version": "3.9.0-1build1",
+    "Architecture": "amd64",
+    "Description": "Basic Linear Algebra Reference implementations, shared library"
+  },
+  "libblkid-dev:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "block device ID library - headers and static libraries"
+  },
+  "libblkid1:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "block device ID library"
+  },
+  "libbrotli1:amd64": {
+    "State": "ii",
+    "Version": "1.0.7-6ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "library implementing brotli encoder and decoder (shared libraries)"
+  },
+  "libbsd0:amd64": {
+    "State": "ii",
+    "Version": "0.10.0-1",
+    "Architecture": "amd64",
+    "Description": "utility functions from BSD systems - shared library"
+  },
+  "libbz2-1.0:amd64": {
+    "State": "ii",
+    "Version": "1.0.8-2",
+    "Architecture": "amd64",
+    "Description": "high-quality block-sorting file compressor library - runtime"
+  },
+  "libc-bin": {
+    "State": "ii",
+    "Version": "2.31-0ubuntu9.9",
+    "Architecture": "amd64",
+    "Description": "GNU C Library: Binaries"
+  },
+  "libc-dev-bin": {
+    "State": "ii",
+    "Version": "2.31-0ubuntu9.9",
+    "Architecture": "amd64",
+    "Description": "GNU C Library: Development binaries"
+  },
+  "libc6:amd64": {
+    "State": "ii",
+    "Version": "2.31-0ubuntu9.9",
+    "Architecture": "amd64",
+    "Description": "GNU C Library: Shared libraries"
+  },
+  "libc6-dev:amd64": {
+    "State": "ii",
+    "Version": "2.31-0ubuntu9.9",
+    "Architecture": "amd64",
+    "Description": "GNU C Library: Development Libraries and Header Files"
+  },
+  "libc6-i386": {
+    "State": "ii",
+    "Version": "2.31-0ubuntu9.9",
+    "Architecture": "amd64",
+    "Description": "GNU C Library: 32-bit shared libraries for AMD64"
+  },
+  "libcairo2:amd64": {
+    "State": "ii",
+    "Version": "1.16.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Cairo 2D vector graphics library"
+  },
+  "libcap-ng0:amd64": {
+    "State": "ii",
+    "Version": "0.7.9-2.1build1",
+    "Architecture": "amd64",
+    "Description": "An alternate POSIX capabilities library"
+  },
+  "libcap2:amd64": {
+    "State": "ii",
+    "Version": "1:2.32-1",
+    "Architecture": "amd64",
+    "Description": "POSIX 1003.1e capabilities (library)"
+  },
+  "libcap2-bin": {
+    "State": "ii",
+    "Version": "1:2.32-1",
+    "Architecture": "amd64",
+    "Description": "POSIX 1003.1e capabilities (utilities)"
+  },
+  "libcbor0.6:amd64": {
+    "State": "ii",
+    "Version": "0.6.0-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "library for parsing and generating CBOR (RFC 7049)"
+  },
+  "libcc1-0:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC cc1 plugin for GDB"
+  },
+  "libclang-common-10-dev": {
+    "State": "ii",
+    "Version": "1:10.0.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Clang library - Common development package"
+  },
+  "libclang-cpp10": {
+    "State": "ii",
+    "Version": "1:10.0.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "C++ interface to the Clang library"
+  },
+  "libclang1-10": {
+    "State": "ii",
+    "Version": "1:10.0.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "C interface to the Clang library"
+  },
+  "libcmocka-dev:amd64": {
+    "State": "ii",
+    "Version": "1.1.5-2",
+    "Architecture": "amd64",
+    "Description": "development files for the CMocka unit testing framework"
+  },
+  "libcmocka0:amd64": {
+    "State": "ii",
+    "Version": "1.1.5-2",
+    "Architecture": "amd64",
+    "Description": "library for the CMocka unit testing framework"
+  },
+  "libcom-err2:amd64": {
+    "State": "ii",
+    "Version": "1.45.5-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "common error description library"
+  },
+  "libcrypt-dev:amd64": {
+    "State": "ii",
+    "Version": "1:4.4.10-10ubuntu4",
+    "Architecture": "amd64",
+    "Description": "libcrypt development files"
+  },
+  "libcrypt1:amd64": {
+    "State": "ii",
+    "Version": "1:4.4.10-10ubuntu4",
+    "Architecture": "amd64",
+    "Description": "libcrypt shared library"
+  },
+  "libcryptsetup12:amd64": {
+    "State": "ii",
+    "Version": "2:2.2.2-3ubuntu2.4",
+    "Architecture": "amd64",
+    "Description": "disk encryption support - shared library"
+  },
+  "libctf-nobfd0:amd64": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "Compact C Type Format library (runtime, no BFD dependency)"
+  },
+  "libctf0:amd64": {
+    "State": "ii",
+    "Version": "2.34-6ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "Compact C Type Format library (runtime, BFD dependency)"
+  },
+  "libcups2:amd64": {
+    "State": "ii",
+    "Version": "2.3.1-9ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "Common UNIX Printing System(tm) - Core library"
+  },
+  "libcurl3-gnutls:amd64": {
+    "State": "ii",
+    "Version": "7.68.0-1ubuntu2.11",
+    "Architecture": "amd64",
+    "Description": "easy-to-use client-side URL transfer library (GnuTLS flavour)"
+  },
+  "libcurl4:amd64": {
+    "State": "ii",
+    "Version": "7.68.0-1ubuntu2.11",
+    "Architecture": "amd64",
+    "Description": "easy-to-use client-side URL transfer library (OpenSSL flavour)"
+  },
+  "libdatrie1:amd64": {
+    "State": "ii",
+    "Version": "0.2.12-3",
+    "Architecture": "amd64",
+    "Description": "Double-array trie library"
+  },
+  "libdb-dev:amd64": {
+    "State": "ii",
+    "Version": "1:5.3.21~exp1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "Berkeley Database Libraries [development]"
+  },
+  "libdb5.3:amd64": {
+    "State": "ii",
+    "Version": "5.3.28+dfsg1-0.6ubuntu2",
+    "Architecture": "amd64",
+    "Description": "Berkeley v5.3 Database Libraries [runtime]"
+  },
+  "libdb5.3-dev": {
+    "State": "ii",
+    "Version": "5.3.28+dfsg1-0.6ubuntu2",
+    "Architecture": "amd64",
+    "Description": "Berkeley v5.3 Database Libraries [development]"
+  },
+  "libdbus-1-3:amd64": {
+    "State": "ii",
+    "Version": "1.12.16-2ubuntu2.2",
+    "Architecture": "amd64",
+    "Description": "simple interprocess messaging system (library)"
+  },
+  "libdconf1:amd64": {
+    "State": "ii",
+    "Version": "0.36.0-1",
+    "Architecture": "amd64",
+    "Description": "simple configuration storage system - runtime library"
+  },
+  "libdebconfclient0:amd64": {
+    "State": "ii",
+    "Version": "0.251ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Debian Configuration Management System (C-implementation library)"
+  },
+  "libdevmapper1.02.1:amd64": {
+    "State": "ii",
+    "Version": "2:1.02.167-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Linux Kernel Device Mapper userspace library"
+  },
+  "libdjvulibre-text": {
+    "State": "ii",
+    "Version": "3.5.27.1-14ubuntu0.1",
+    "Architecture": "all",
+    "Description": "Linguistic support files for libdjvulibre"
+  },
+  "libdjvulibre21:amd64": {
+    "State": "ii",
+    "Version": "3.5.27.1-14ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Runtime support for the DjVu image format"
+  },
+  "libdpkg-perl": {
+    "State": "ii",
+    "Version": "1.19.7ubuntu3",
+    "Architecture": "all",
+    "Description": "Dpkg perl modules"
+  },
+  "libdw1:amd64": {
+    "State": "ii",
+    "Version": "0.176-1.1build1",
+    "Architecture": "amd64",
+    "Description": "library that provides access to the DWARF debug information"
+  },
+  "libedit2:amd64": {
+    "State": "ii",
+    "Version": "3.1-20191231-1",
+    "Architecture": "amd64",
+    "Description": "BSD editline and history libraries"
+  },
+  "libelf1:amd64": {
+    "State": "ii",
+    "Version": "0.176-1.1build1",
+    "Architecture": "amd64",
+    "Description": "library to read and write ELF files"
+  },
+  "liberror-perl": {
+    "State": "ii",
+    "Version": "0.17029-1",
+    "Architecture": "all",
+    "Description": "Perl module for error/exception handling in an OO-ish way"
+  },
+  "libevent-2.1-7:amd64": {
+    "State": "ii",
+    "Version": "2.1.11-stable-1",
+    "Architecture": "amd64",
+    "Description": "Asynchronous event notification library"
+  },
+  "libexpat1:amd64": {
+    "State": "ii",
+    "Version": "2.2.9-1ubuntu0.4",
+    "Architecture": "amd64",
+    "Description": "XML parsing C library - runtime library"
+  },
+  "libext2fs2:amd64": {
+    "State": "ii",
+    "Version": "1.45.5-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "ext2/ext3/ext4 file system libraries"
+  },
+  "libfdisk1:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "fdisk partitioning library"
+  },
+  "libffi-dev:amd64": {
+    "State": "ii",
+    "Version": "3.3-4",
+    "Architecture": "amd64",
+    "Description": "Foreign Function Interface library (development files)"
+  },
+  "libffi7:amd64": {
+    "State": "ii",
+    "Version": "3.3-4",
+    "Architecture": "amd64",
+    "Description": "Foreign Function Interface library runtime"
+  },
+  "libfftw3-double3:amd64": {
+    "State": "ii",
+    "Version": "3.3.8-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Library for computing Fast Fourier Transforms - Double precision"
+  },
+  "libfido2-1:amd64": {
+    "State": "ii",
+    "Version": "1.3.1-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "library for generating and verifying FIDO 2.0 objects"
+  },
+  "libfontconfig1:amd64": {
+    "State": "ii",
+    "Version": "2.13.1-2ubuntu3",
+    "Architecture": "amd64",
+    "Description": "generic font configuration library - runtime"
+  },
+  "libfreetype6:amd64": {
+    "State": "ii",
+    "Version": "2.10.1-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "FreeType 2 font engine, shared library files"
+  },
+  "libfribidi0:amd64": {
+    "State": "ii",
+    "Version": "1.0.8-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Free Implementation of the Unicode BiDi algorithm"
+  },
+  "libgc1c2:amd64": {
+    "State": "ii",
+    "Version": "1:7.6.4-0.4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "conservative garbage collector for C and C++"
+  },
+  "libgcc-9-dev:amd64": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GCC support library (development files)"
+  },
+  "libgcc-s1:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC support library"
+  },
+  "libgcrypt20:amd64": {
+    "State": "ii",
+    "Version": "1.8.5-5ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "LGPL Crypto library - runtime library"
+  },
+  "libgcrypt20-dev": {
+    "State": "ii",
+    "Version": "1.8.5-5ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "LGPL Crypto library - development files"
+  },
+  "libgd3:amd64": {
+    "State": "ii",
+    "Version": "2.3.0-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "GD Graphics Library"
+  },
+  "libgdbm-compat4:amd64": {
+    "State": "ii",
+    "Version": "1.18.1-5",
+    "Architecture": "amd64",
+    "Description": "GNU dbm database routines (legacy support runtime version) "
+  },
+  "libgdbm6:amd64": {
+    "State": "ii",
+    "Version": "1.18.1-5",
+    "Architecture": "amd64",
+    "Description": "GNU dbm database routines (runtime version) "
+  },
+  "libgirepository-1.0-1:amd64": {
+    "State": "ii",
+    "Version": "1.64.1-1~ubuntu20.04.1",
+    "Architecture": "amd64",
+    "Description": "Library for handling GObject introspection data (runtime library)"
+  },
+  "libglib2.0-0:amd64": {
+    "State": "ii",
+    "Version": "2.64.6-1~ubuntu20.04.4",
+    "Architecture": "amd64",
+    "Description": "GLib library of C routines"
+  },
+  "libglib2.0-bin": {
+    "State": "ii",
+    "Version": "2.64.6-1~ubuntu20.04.4",
+    "Architecture": "amd64",
+    "Description": "Programs for the GLib library"
+  },
+  "libglib2.0-data": {
+    "State": "ii",
+    "Version": "2.64.6-1~ubuntu20.04.4",
+    "Architecture": "all",
+    "Description": "Common files for GLib library"
+  },
+  "libglib2.0-dev:amd64": {
+    "State": "ii",
+    "Version": "2.64.6-1~ubuntu20.04.4",
+    "Architecture": "amd64",
+    "Description": "Development files for the GLib library"
+  },
+  "libglib2.0-dev-bin": {
+    "State": "ii",
+    "Version": "2.64.6-1~ubuntu20.04.4",
+    "Architecture": "amd64",
+    "Description": "Development utilities for the GLib library"
+  },
+  "libgmp-dev:amd64": {
+    "State": "ii",
+    "Version": "2:6.2.0+dfsg-4",
+    "Architecture": "amd64",
+    "Description": "Multiprecision arithmetic library developers tools"
+  },
+  "libgmp10:amd64": {
+    "State": "ii",
+    "Version": "2:6.2.0+dfsg-4",
+    "Architecture": "amd64",
+    "Description": "Multiprecision arithmetic library"
+  },
+  "libgmpxx4ldbl:amd64": {
+    "State": "ii",
+    "Version": "2:6.2.0+dfsg-4",
+    "Architecture": "amd64",
+    "Description": "Multiprecision arithmetic library (C++ bindings)"
+  },
+  "libgnutls-dane0:amd64": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - DANE security support"
+  },
+  "libgnutls-openssl27:amd64": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - OpenSSL wrapper"
+  },
+  "libgnutls28-dev:amd64": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - development files"
+  },
+  "libgnutls30:amd64": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - main runtime library"
+  },
+  "libgnutlsxx28:amd64": {
+    "State": "ii",
+    "Version": "3.6.13-2ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "GNU TLS library - C++ runtime library"
+  },
+  "libgomp1:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC OpenMP (GOMP) support library"
+  },
+  "libgpg-error-dev": {
+    "State": "ii",
+    "Version": "1.37-1",
+    "Architecture": "amd64",
+    "Description": "GnuPG development runtime library (developer tools)"
+  },
+  "libgpg-error0:amd64": {
+    "State": "ii",
+    "Version": "1.37-1",
+    "Architecture": "amd64",
+    "Description": "GnuPG development runtime library"
+  },
+  "libgpgme-dev": {
+    "State": "ii",
+    "Version": "1.13.1-7ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GPGME - GnuPG Made Easy (development files)"
+  },
+  "libgpgme11:amd64": {
+    "State": "ii",
+    "Version": "1.13.1-7ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GPGME - GnuPG Made Easy (library)"
+  },
+  "libgraphite2-3:amd64": {
+    "State": "ii",
+    "Version": "1.3.13-11build1",
+    "Architecture": "amd64",
+    "Description": "Font rendering engine for Complex Scripts -- library"
+  },
+  "libgs9:amd64": {
+    "State": "ii",
+    "Version": "9.50~dfsg-5ubuntu4.5",
+    "Architecture": "amd64",
+    "Description": "interpreter for the PostScript language and for PDF - Library"
+  },
+  "libgs9-common": {
+    "State": "ii",
+    "Version": "9.50~dfsg-5ubuntu4.5",
+    "Architecture": "all",
+    "Description": "interpreter for the PostScript language and for PDF - common files"
+  },
+  "libgsasl7:amd64": {
+    "State": "ii",
+    "Version": "1.8.1-1",
+    "Architecture": "amd64",
+    "Description": "GNU SASL library"
+  },
+  "libgssapi-krb5-2:amd64": {
+    "State": "ii",
+    "Version": "1.17-6ubuntu4.1",
+    "Architecture": "amd64",
+    "Description": "MIT Kerberos runtime libraries - krb5 GSS-API Mechanism"
+  },
+  "libgssapi3-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - GSSAPI support library"
+  },
+  "libgstreamer1.0-0:amd64": {
+    "State": "ii",
+    "Version": "1.16.2-2",
+    "Architecture": "amd64",
+    "Description": "Core GStreamer libraries and elements"
+  },
+  "libharfbuzz0b:amd64": {
+    "State": "ii",
+    "Version": "2.6.4-1ubuntu4",
+    "Architecture": "amd64",
+    "Description": "OpenType text shaping engine (shared library)"
+  },
+  "libhcrypto4-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - crypto library"
+  },
+  "libheimbase1-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - Base library"
+  },
+  "libheimntlm0-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - NTLM support library"
+  },
+  "libhiredis-dev:amd64": {
+    "State": "ii",
+    "Version": "0.14.0-6",
+    "Architecture": "amd64",
+    "Description": "minimalistic C client library for Redis (development files)"
+  },
+  "libhiredis0.14:amd64": {
+    "State": "ii",
+    "Version": "0.14.0-6",
+    "Architecture": "amd64",
+    "Description": "minimalistic C client library for Redis"
+  },
+  "libhogweed5:amd64": {
+    "State": "ii",
+    "Version": "3.5.1+really3.5.1-2ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "low level cryptographic library (public-key cryptos)"
+  },
+  "libhx509-5-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - X509 support library"
+  },
+  "libical-dev:amd64": {
+    "State": "ii",
+    "Version": "3.0.8-1",
+    "Architecture": "amd64",
+    "Description": "iCalendar library implementation in C (development)"
+  },
+  "libical3:amd64": {
+    "State": "ii",
+    "Version": "3.0.8-1",
+    "Architecture": "amd64",
+    "Description": "iCalendar library implementation in C (runtime)"
+  },
+  "libice6:amd64": {
+    "State": "ii",
+    "Version": "2:1.0.10-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 Inter-Client Exchange library"
+  },
+  "libicu-dev:amd64": {
+    "State": "ii",
+    "Version": "66.1-2ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "Development files for International Components for Unicode"
+  },
+  "libicu66:amd64": {
+    "State": "ii",
+    "Version": "66.1-2ubuntu2.1",
+    "Architecture": "amd64",
+    "Description": "International Components for Unicode"
+  },
+  "libidn11:amd64": {
+    "State": "ii",
+    "Version": "1.33-2.2ubuntu2",
+    "Architecture": "amd64",
+    "Description": "GNU Libidn library, implementation of IETF IDN specifications"
+  },
+  "libidn2-0:amd64": {
+    "State": "ii",
+    "Version": "2.3.0-1+ubuntu20.04.1+deb.sury.org+2",
+    "Architecture": "amd64",
+    "Description": "Internationalized domain names (IDNA2008/TR46) library"
+  },
+  "libidn2-dev:amd64": {
+    "State": "ii",
+    "Version": "2.3.0-1+ubuntu20.04.1+deb.sury.org+2",
+    "Architecture": "amd64",
+    "Description": "Internationalized domain names (IDNA2008/TR46) development files"
+  },
+  "libijs-0.35:amd64": {
+    "State": "ii",
+    "Version": "0.35-15",
+    "Architecture": "amd64",
+    "Description": "IJS raster image transport protocol: shared library"
+  },
+  "libilmbase24:amd64": {
+    "State": "ii",
+    "Version": "2.3.0-6build1",
+    "Architecture": "amd64",
+    "Description": "several utility libraries from ILM used by OpenEXR"
+  },
+  "libimagequant0:amd64": {
+    "State": "ii",
+    "Version": "2.12.2-1.1",
+    "Architecture": "amd64",
+    "Description": "palette quantization library"
+  },
+  "libip4tc2:amd64": {
+    "State": "ii",
+    "Version": "1.8.4-3ubuntu2",
+    "Architecture": "amd64",
+    "Description": "netfilter libip4tc library"
+  },
+  "libisl22:amd64": {
+    "State": "ii",
+    "Version": "0.22.1-1",
+    "Architecture": "amd64",
+    "Description": "manipulating sets and relations of integer points bounded by linear constraints"
+  },
+  "libitm1:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GNU Transactional Memory Library"
+  },
+  "libjansson4:amd64": {
+    "State": "ii",
+    "Version": "2.12-1build1",
+    "Architecture": "amd64",
+    "Description": "C library for encoding, decoding and manipulating JSON data"
+  },
+  "libjbig0:amd64": {
+    "State": "ii",
+    "Version": "2.1-3.1build1",
+    "Architecture": "amd64",
+    "Description": "JBIGkit libraries"
+  },
+  "libjbig2dec0:amd64": {
+    "State": "ii",
+    "Version": "0.18-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "JBIG2 decoder library - shared libraries"
+  },
+  "libjemalloc2:amd64": {
+    "State": "ii",
+    "Version": "5.2.1-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "general-purpose scalable concurrent malloc(3) implementation"
+  },
+  "libjpeg-turbo8:amd64": {
+    "State": "ii",
+    "Version": "2.0.3-0ubuntu1.20.04.1",
+    "Architecture": "amd64",
+    "Description": "IJG JPEG compliant runtime library."
+  },
+  "libjpeg8:amd64": {
+    "State": "ii",
+    "Version": "8c-2ubuntu8",
+    "Architecture": "amd64",
+    "Description": "Independent JPEG Group\\'s JPEG runtime library (dependency package)"
+  },
+  "libjq1:amd64": {
+    "State": "ii",
+    "Version": "1.6-1ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "lightweight and flexible command-line JSON processor - shared library"
+  },
+  "libjs-jquery": {
+    "State": "ii",
+    "Version": "3.3.1~dfsg-3",
+    "Architecture": "all",
+    "Description": "JavaScript library for dynamic web applications"
+  },
+  "libjson-c4:amd64": {
+    "State": "ii",
+    "Version": "0.13.1+dfsg-7ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "JSON manipulation library - shared library"
+  },
+  "libjsoncpp1:amd64": {
+    "State": "ii",
+    "Version": "1.7.4-3.1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "library for reading and writing JSON for C++"
+  },
+  "libk5crypto3:amd64": {
+    "State": "ii",
+    "Version": "1.17-6ubuntu4.1",
+    "Architecture": "amd64",
+    "Description": "MIT Kerberos runtime libraries - Crypto Library"
+  },
+  "libkeyutils1:amd64": {
+    "State": "ii",
+    "Version": "1.6-6ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Linux Key Management Utilities (library)"
+  },
+  "libkmod2:amd64": {
+    "State": "ii",
+    "Version": "27-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "libkmod shared library"
+  },
+  "libkrb5-26-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - libraries"
+  },
+  "libkrb5-3:amd64": {
+    "State": "ii",
+    "Version": "1.17-6ubuntu4.1",
+    "Architecture": "amd64",
+    "Description": "MIT Kerberos runtime libraries"
+  },
+  "libkrb5support0:amd64": {
+    "State": "ii",
+    "Version": "1.17-6ubuntu4.1",
+    "Architecture": "amd64",
+    "Description": "MIT Kerberos runtime libraries - Support library"
+  },
+  "libksba-dev": {
+    "State": "ii",
+    "Version": "1.3.5-2",
+    "Architecture": "amd64",
+    "Description": "X.509 and CMS support library - development files"
+  },
+  "libksba8:amd64": {
+    "State": "ii",
+    "Version": "1.3.5-2",
+    "Architecture": "amd64",
+    "Description": "X.509 and CMS support library"
+  },
+  "libkyotocabinet16v5:amd64": {
+    "State": "ii",
+    "Version": "1.2.76-4.2build1",
+    "Architecture": "amd64",
+    "Description": "Straightforward implementation of DBM - shared library"
+  },
+  "liblcms2-2:amd64": {
+    "State": "ii",
+    "Version": "2.9-4",
+    "Architecture": "amd64",
+    "Description": "Little CMS 2 color management library"
+  },
+  "libldap-2.4-2:amd64": {
+    "State": "ii",
+    "Version": "2.4.49+dfsg-2ubuntu1.9",
+    "Architecture": "amd64",
+    "Description": "OpenLDAP libraries"
+  },
+  "libldap-common": {
+    "State": "ii",
+    "Version": "2.4.49+dfsg-2ubuntu1.9",
+    "Architecture": "all",
+    "Description": "OpenLDAP common files for libraries"
+  },
+  "libldap2-dev:amd64": {
+    "State": "ii",
+    "Version": "2.4.49+dfsg-2ubuntu1.9",
+    "Architecture": "amd64",
+    "Description": "OpenLDAP development libraries"
+  },
+  "libldb2:amd64": {
+    "State": "ii",
+    "Version": "2:2.2.3-0ubuntu0.20.04.2",
+    "Architecture": "amd64",
+    "Description": "LDAP-like embedded database - shared library"
+  },
+  "liblinear4:amd64": {
+    "State": "ii",
+    "Version": "2.3.0+dfsg-3build1",
+    "Architecture": "amd64",
+    "Description": "Library for Large Linear Classification"
+  },
+  "libllvm10:amd64": {
+    "State": "ii",
+    "Version": "1:10.0.0-4ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Modular compiler and toolchain technologies, runtime library"
+  },
+  "liblmdb0:amd64": {
+    "State": "ii",
+    "Version": "0.9.24-1",
+    "Architecture": "amd64",
+    "Description": "Lightning Memory-Mapped Database shared library"
+  },
+  "liblockfile-bin": {
+    "State": "ii",
+    "Version": "1.16-1.1",
+    "Architecture": "amd64",
+    "Description": "support binaries for and cli utilities based on liblockfile"
+  },
+  "liblockfile1:amd64": {
+    "State": "ii",
+    "Version": "1.16-1.1",
+    "Architecture": "amd64",
+    "Description": "NFS-safe locking library"
+  },
+  "liblqr-1-0:amd64": {
+    "State": "ii",
+    "Version": "0.4.2-2.1",
+    "Architecture": "amd64",
+    "Description": "converts plain array images into multi-size representation"
+  },
+  "liblsan0:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "LeakSanitizer -- a memory leak detector (runtime)"
+  },
+  "libltdl7:amd64": {
+    "State": "ii",
+    "Version": "2.4.6-14",
+    "Architecture": "amd64",
+    "Description": "System independent dlopen wrapper for GNU libtool"
+  },
+  "liblua5.1-0:amd64": {
+    "State": "ii",
+    "Version": "5.1.5-8.1build4",
+    "Architecture": "amd64",
+    "Description": "Shared library for the Lua interpreter version 5.1"
+  },
+  "liblua5.3-0:amd64": {
+    "State": "ii",
+    "Version": "5.3.3-1.1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "Shared library for the Lua interpreter version 5.3"
+  },
+  "liblz4-1:amd64": {
+    "State": "ii",
+    "Version": "1.9.2-2ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "Fast LZ compression algorithm library - runtime"
+  },
+  "liblzma5:amd64": {
+    "State": "ii",
+    "Version": "5.2.4-1ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "XZ-format compression library"
+  },
+  "liblzo2-2:amd64": {
+    "State": "ii",
+    "Version": "2.10-2",
+    "Architecture": "amd64",
+    "Description": "data compression library"
+  },
+  "libmagic-mgc": {
+    "State": "ii",
+    "Version": "1:5.38-4",
+    "Architecture": "amd64",
+    "Description": "File type determination library using \"magic\" numbers (compiled magic file)"
+  },
+  "libmagic1:amd64": {
+    "State": "ii",
+    "Version": "1:5.38-4",
+    "Architecture": "amd64",
+    "Description": "Recognize the type of data in a file using \"magic\" numbers - library"
+  },
+  "libmagickcore-6.q16-6:amd64": {
+    "State": "ii",
+    "Version": "8:6.9.10.23+dfsg-2.1ubuntu11.4",
+    "Architecture": "amd64",
+    "Description": "low-level image manipulation library -- quantum depth Q16"
+  },
+  "libmagickwand-6.q16-6:amd64": {
+    "State": "ii",
+    "Version": "8:6.9.10.23+dfsg-2.1ubuntu11.4",
+    "Architecture": "amd64",
+    "Description": "image manipulation library -- quantum depth Q16"
+  },
+  "libmailutils6:amd64": {
+    "State": "ii",
+    "Version": "1:3.7-2.1",
+    "Architecture": "amd64",
+    "Description": "GNU Mail abstraction library"
+  },
+  "libmicrohttpd-dev": {
+    "State": "ii",
+    "Version": "0.9.66-1",
+    "Architecture": "amd64",
+    "Description": "library embedding HTTP server functionality (development)"
+  },
+  "libmicrohttpd12": {
+    "State": "ii",
+    "Version": "0.9.66-1",
+    "Architecture": "amd64",
+    "Description": "library embedding HTTP server functionality"
+  },
+  "libmnl0:amd64": {
+    "State": "ii",
+    "Version": "1.0.4-2",
+    "Architecture": "amd64",
+    "Description": "minimalistic Netlink communication library"
+  },
+  "libmount-dev:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "device mounting library - headers and static libraries"
+  },
+  "libmount1:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "device mounting library"
+  },
+  "libmpc3:amd64": {
+    "State": "ii",
+    "Version": "1.1.0-1",
+    "Architecture": "amd64",
+    "Description": "multiple precision complex floating-point library"
+  },
+  "libmpdec2:amd64": {
+    "State": "ii",
+    "Version": "2.4.2-3",
+    "Architecture": "amd64",
+    "Description": "library for decimal floating point arithmetic (runtime library)"
+  },
+  "libmpfr6:amd64": {
+    "State": "ii",
+    "Version": "4.0.2-1",
+    "Architecture": "amd64",
+    "Description": "multiple precision floating-point computation"
+  },
+  "libmysqlclient21:amd64": {
+    "State": "ii",
+    "Version": "8.0.29-0ubuntu0.20.04.3",
+    "Architecture": "amd64",
+    "Description": "MySQL database client library"
+  },
+  "libnacl-dev": {
+    "State": "ii",
+    "Version": "20110221-6.1",
+    "Architecture": "amd64",
+    "Description": "High-speed software library for network communication"
+  },
+  "libncurses6:amd64": {
+    "State": "ii",
+    "Version": "6.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "shared libraries for terminal handling"
+  },
+  "libncursesw6:amd64": {
+    "State": "ii",
+    "Version": "6.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "shared libraries for terminal handling (wide character support)"
+  },
+  "libnetpbm10": {
+    "State": "ii",
+    "Version": "2:10.0-15.3build1",
+    "Architecture": "amd64",
+    "Description": "Graphics conversion tools shared libraries"
+  },
+  "libnettle7:amd64": {
+    "State": "ii",
+    "Version": "3.5.1+really3.5.1-2ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "low level cryptographic library (symmetric and one-way cryptos)"
+  },
+  "libnghttp2-14:amd64": {
+    "State": "ii",
+    "Version": "1.40.0-1build1",
+    "Architecture": "amd64",
+    "Description": "library implementing HTTP/2 protocol (shared library)"
+  },
+  "libnginx-mod-http-image-filter": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "HTTP image filter module for Nginx"
+  },
+  "libnginx-mod-http-xslt-filter": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "XSLT Transformation module for Nginx"
+  },
+  "libnginx-mod-mail": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "Mail module for Nginx"
+  },
+  "libnginx-mod-stream": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "Stream module for Nginx"
+  },
+  "libnpth0:amd64": {
+    "State": "ii",
+    "Version": "1.6-1",
+    "Architecture": "amd64",
+    "Description": "replacement for GNU Pth using system threads"
+  },
+  "libnss-systemd:amd64": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "nss module providing dynamic user and group name resolution"
+  },
+  "libntlm0:amd64": {
+    "State": "ii",
+    "Version": "1.5-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "NTLM authentication library"
+  },
+  "libobjc-9-dev:amd64": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "Runtime library for GNU Objective-C applications (development files)"
+  },
+  "libobjc4:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "Runtime library for GNU Objective-C applications"
+  },
+  "libonig5:amd64": {
+    "State": "ii",
+    "Version": "6.9.4-1",
+    "Architecture": "amd64",
+    "Description": "regular expressions library"
+  },
+  "libopenexr24:amd64": {
+    "State": "ii",
+    "Version": "2.3.0-6ubuntu0.5",
+    "Architecture": "amd64",
+    "Description": "runtime files for the OpenEXR image library"
+  },
+  "libopenjp2-7:amd64": {
+    "State": "ii",
+    "Version": "2.3.1-1ubuntu4.20.04.1",
+    "Architecture": "amd64",
+    "Description": "JPEG 2000 image compression/decompression library"
+  },
+  "libopts25:amd64": {
+    "State": "ii",
+    "Version": "1:5.18.16-3",
+    "Architecture": "amd64",
+    "Description": "automated option processing library based on autogen"
+  },
+  "libp11-kit-dev:amd64": {
+    "State": "ii",
+    "Version": "0.23.20-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "library for loading and coordinating access to PKCS#11 modules - development"
+  },
+  "libp11-kit0:amd64": {
+    "State": "ii",
+    "Version": "0.23.20-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "library for loading and coordinating access to PKCS#11 modules - runtime"
+  },
+  "libpackagekit-glib2-18:amd64": {
+    "State": "ii",
+    "Version": "1.1.13-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "Library for accessing PackageKit using GLib"
+  },
+  "libpam-cap:amd64": {
+    "State": "ii",
+    "Version": "1:2.32-1",
+    "Architecture": "amd64",
+    "Description": "POSIX 1003.1e capabilities (PAM module)"
+  },
+  "libpam-modules:amd64": {
+    "State": "ii",
+    "Version": "1.3.1-5ubuntu4.3",
+    "Architecture": "amd64",
+    "Description": "Pluggable Authentication Modules for PAM"
+  },
+  "libpam-modules-bin": {
+    "State": "ii",
+    "Version": "1.3.1-5ubuntu4.3",
+    "Architecture": "amd64",
+    "Description": "Pluggable Authentication Modules for PAM - helper binaries"
+  },
+  "libpam-runtime": {
+    "State": "ii",
+    "Version": "1.3.1-5ubuntu4.3",
+    "Architecture": "all",
+    "Description": "Runtime support for the PAM library"
+  },
+  "libpam-systemd:amd64": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "system and service manager - PAM module"
+  },
+  "libpam0g:amd64": {
+    "State": "ii",
+    "Version": "1.3.1-5ubuntu4.3",
+    "Architecture": "amd64",
+    "Description": "Pluggable Authentication Modules library"
+  },
+  "libpango-1.0-0:amd64": {
+    "State": "ii",
+    "Version": "1.44.7-2ubuntu4",
+    "Architecture": "amd64",
+    "Description": "Layout and rendering of internationalized text"
+  },
+  "libpangocairo-1.0-0:amd64": {
+    "State": "ii",
+    "Version": "1.44.7-2ubuntu4",
+    "Architecture": "amd64",
+    "Description": "Layout and rendering of internationalized text"
+  },
+  "libpangoft2-1.0-0:amd64": {
+    "State": "ii",
+    "Version": "1.44.7-2ubuntu4",
+    "Architecture": "amd64",
+    "Description": "Layout and rendering of internationalized text"
+  },
+  "libpaper-utils": {
+    "State": "ii",
+    "Version": "1.1.28",
+    "Architecture": "amd64",
+    "Description": "library for handling paper characteristics (utilities)"
+  },
+  "libpaper1:amd64": {
+    "State": "ii",
+    "Version": "1.1.28",
+    "Architecture": "amd64",
+    "Description": "library for handling paper characteristics"
+  },
+  "libpcap-dev:amd64": {
+    "State": "ii",
+    "Version": "1.9.1-3",
+    "Architecture": "amd64",
+    "Description": "development library for libpcap (transitional package)"
+  },
+  "libpcap0.8:amd64": {
+    "State": "ii",
+    "Version": "1.9.1-3",
+    "Architecture": "amd64",
+    "Description": "system interface for user-level packet capture"
+  },
+  "libpcap0.8-dev:amd64": {
+    "State": "ii",
+    "Version": "1.9.1-3",
+    "Architecture": "amd64",
+    "Description": "development library and header files for libpcap0.8"
+  },
+  "libpci-dev:amd64": {
+    "State": "ii",
+    "Version": "1:3.6.4-1ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "PCI utilities (development files)"
+  },
+  "libpci3:amd64": {
+    "State": "ii",
+    "Version": "1:3.6.4-1ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "PCI utilities (shared library)"
+  },
+  "libpcre16-3:amd64": {
+    "State": "ii",
+    "Version": "2:8.44-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Perl 5 Compatible Regular Expression Library - 16 bit runtime files"
+  },
+  "libpcre2-16-0:amd64": {
+    "State": "ii",
+    "Version": "10.39-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "New Perl Compatible Regular Expression Library - 16 bit runtime files"
+  },
+  "libpcre2-32-0:amd64": {
+    "State": "ii",
+    "Version": "10.39-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "New Perl Compatible Regular Expression Library - 32 bit runtime files"
+  },
+  "libpcre2-8-0:amd64": {
+    "State": "ii",
+    "Version": "10.39-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "New Perl Compatible Regular Expression Library- 8 bit runtime files"
+  },
+  "libpcre2-dev:amd64": {
+    "State": "ii",
+    "Version": "10.39-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "New Perl Compatible Regular Expression Library - development files"
+  },
+  "libpcre2-posix2:amd64": {
+    "State": "ii",
+    "Version": "10.39-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "New Perl Compatible Regular Expression Library - posix-compatible runtime files"
+  },
+  "libpcre3:amd64": {
+    "State": "ii",
+    "Version": "2:8.44-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Perl 5 Compatible Regular Expression Library - runtime files"
+  },
+  "libpcre3-dev:amd64": {
+    "State": "ii",
+    "Version": "2:8.44-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Perl 5 Compatible Regular Expression Library - development files"
+  },
+  "libpcre32-3:amd64": {
+    "State": "ii",
+    "Version": "2:8.44-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Perl 5 Compatible Regular Expression Library - 32 bit runtime files"
+  },
+  "libpcrecpp0v5:amd64": {
+    "State": "ii",
+    "Version": "2:8.44-2+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Perl 5 Compatible Regular Expression Library - C++ runtime files"
+  },
+  "libperl5.30:amd64": {
+    "State": "ii",
+    "Version": "5.30.0-9ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "shared Perl library"
+  },
+  "libpixman-1-0:amd64": {
+    "State": "ii",
+    "Version": "0.38.4-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "pixel-manipulation library for X and cairo"
+  },
+  "libpng16-16:amd64": {
+    "State": "ii",
+    "Version": "1.6.37-2",
+    "Architecture": "amd64",
+    "Description": "PNG library - runtime (version 1.6)"
+  },
+  "libpolkit-agent-1-0:amd64": {
+    "State": "ii",
+    "Version": "0.105-26ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "PolicyKit Authentication Agent API"
+  },
+  "libpolkit-gobject-1-0:amd64": {
+    "State": "ii",
+    "Version": "0.105-26ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "PolicyKit Authorization API"
+  },
+  "libpopt0:amd64": {
+    "State": "ii",
+    "Version": "1.16-14",
+    "Architecture": "amd64",
+    "Description": "lib for parsing cmdline parameters"
+  },
+  "libprocps8:amd64": {
+    "State": "ii",
+    "Version": "2:3.3.16-1ubuntu2.3",
+    "Architecture": "amd64",
+    "Description": "library for accessing process information from /proc"
+  },
+  "libproxy1v5:amd64": {
+    "State": "ii",
+    "Version": "0.4.15-10ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "automatic proxy configuration management library (shared)"
+  },
+  "libpsl5:amd64": {
+    "State": "ii",
+    "Version": "0.21.0-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Library for Public Suffix List (shared libraries)"
+  },
+  "libpython3-stdlib:amd64": {
+    "State": "ii",
+    "Version": "3.8.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "interactive high-level object-oriented language (default python3 version)"
+  },
+  "libpython3.8:amd64": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Architecture": "amd64",
+    "Description": "Shared Python runtime library (version 3.8)"
+  },
+  "libpython3.8-minimal:amd64": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Architecture": "amd64",
+    "Description": "Minimal subset of the Python language (version 3.8)"
+  },
+  "libpython3.8-stdlib:amd64": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Architecture": "amd64",
+    "Description": "Interactive high-level object-oriented language (standard library, version 3.8)"
+  },
+  "libquadmath0:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GCC Quad-Precision Math Library"
+  },
+  "libreadline8:amd64": {
+    "State": "ii",
+    "Version": "8.0-4",
+    "Architecture": "amd64",
+    "Description": "GNU readline and history libraries, run-time libraries"
+  },
+  "librhash0:amd64": {
+    "State": "ii",
+    "Version": "1.3.9-1",
+    "Architecture": "amd64",
+    "Description": "shared library for hash functions computing"
+  },
+  "libroken18-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - roken support library"
+  },
+  "librtmp1:amd64": {
+    "State": "ii",
+    "Version": "2.4+20151223.gitfa8646d.1-2build1",
+    "Architecture": "amd64",
+    "Description": "toolkit for RTMP streams (shared library)"
+  },
+  "libruby2.7:amd64": {
+    "State": "ii",
+    "Version": "2.7.0-5ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "Libraries necessary to run Ruby 2.7"
+  },
+  "libsasl2-2:amd64": {
+    "State": "ii",
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Cyrus SASL - authentication abstraction library"
+  },
+  "libsasl2-modules:amd64": {
+    "State": "ii",
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Cyrus SASL - pluggable authentication modules"
+  },
+  "libsasl2-modules-db:amd64": {
+    "State": "ii",
+    "Version": "2.1.27+dfsg-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Cyrus SASL - pluggable authentication modules (DB)"
+  },
+  "libseccomp2:amd64": {
+    "State": "ii",
+    "Version": "2.5.1-1ubuntu1~20.04.2",
+    "Architecture": "amd64",
+    "Description": "high level interface to Linux seccomp filter"
+  },
+  "libselinux1:amd64": {
+    "State": "ii",
+    "Version": "3.0-1build2",
+    "Architecture": "amd64",
+    "Description": "SELinux runtime shared libraries"
+  },
+  "libselinux1-dev:amd64": {
+    "State": "ii",
+    "Version": "3.0-1build2",
+    "Architecture": "amd64",
+    "Description": "SELinux development headers"
+  },
+  "libsemanage-common": {
+    "State": "ii",
+    "Version": "3.0-1build2",
+    "Architecture": "all",
+    "Description": "Common files for SELinux policy management libraries"
+  },
+  "libsemanage1:amd64": {
+    "State": "ii",
+    "Version": "3.0-1build2",
+    "Architecture": "amd64",
+    "Description": "SELinux policy management library"
+  },
+  "libsensors-config": {
+    "State": "ii",
+    "Version": "1:3.6.0-2ubuntu1.1",
+    "Architecture": "all",
+    "Description": "lm-sensors configuration files"
+  },
+  "libsensors4-dev:amd64": {
+    "State": "ii",
+    "Version": "1:3.6.0-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "lm-sensors development kit"
+  },
+  "libsensors5:amd64": {
+    "State": "ii",
+    "Version": "1:3.6.0-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "library to read temperature/voltage/fan sensors"
+  },
+  "libsepol1:amd64": {
+    "State": "ii",
+    "Version": "3.0-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "SELinux library for manipulating binary security policies"
+  },
+  "libsepol1-dev:amd64": {
+    "State": "ii",
+    "Version": "3.0-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "SELinux binary policy manipulation library and development files"
+  },
+  "libsigsegv2:amd64": {
+    "State": "ii",
+    "Version": "2.12-2",
+    "Architecture": "amd64",
+    "Description": "Library for handling page faults in a portable way"
+  },
+  "libsm6:amd64": {
+    "State": "ii",
+    "Version": "2:1.2.3-1",
+    "Architecture": "amd64",
+    "Description": "X11 Session Management library"
+  },
+  "libsmartcols1:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "smart column output alignment library"
+  },
+  "libsmbclient:amd64": {
+    "State": "ii",
+    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Architecture": "amd64",
+    "Description": "shared library for communication with SMB/CIFS servers"
+  },
+  "libsnmp-base": {
+    "State": "ii",
+    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Architecture": "all",
+    "Description": "SNMP configuration script, MIBs and documentation"
+  },
+  "libsnmp-dev": {
+    "State": "ii",
+    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Architecture": "amd64",
+    "Description": "SNMP (Simple Network Management Protocol) development files"
+  },
+  "libsnmp35:amd64": {
+    "State": "ii",
+    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Architecture": "amd64",
+    "Description": "SNMP (Simple Network Management Protocol) library"
+  },
+  "libsodium23:amd64": {
+    "State": "ii",
+    "Version": "1.0.18-1",
+    "Architecture": "amd64",
+    "Description": "Network communication, cryptography and signaturing library"
+  },
+  "libsoup2.4-1:amd64": {
+    "State": "ii",
+    "Version": "2.70.0-1",
+    "Architecture": "amd64",
+    "Description": "HTTP library implementation in C -- Shared library"
+  },
+  "libsqlite3-0:amd64": {
+    "State": "ii",
+    "Version": "3.31.1-4ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "SQLite 3 shared library"
+  },
+  "libsqlite3-dev:amd64": {
+    "State": "ii",
+    "Version": "3.31.1-4ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "SQLite 3 development files"
+  },
+  "libss2:amd64": {
+    "State": "ii",
+    "Version": "1.45.5-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "command-line interface parsing library"
+  },
+  "libssh-4:amd64": {
+    "State": "ii",
+    "Version": "0.9.3-2ubuntu2.2",
+    "Architecture": "amd64",
+    "Description": "tiny C SSH library (OpenSSL flavor)"
+  },
+  "libssl-dev:amd64": {
+    "State": "ii",
+    "Version": "1.1.1f-1ubuntu2.13",
+    "Architecture": "amd64",
+    "Description": "Secure Sockets Layer toolkit - development files"
+  },
+  "libssl1.1:amd64": {
+    "State": "ii",
+    "Version": "1.1.1f-1ubuntu2.13",
+    "Architecture": "amd64",
+    "Description": "Secure Sockets Layer toolkit - shared libraries"
+  },
+  "libstdc++-9-dev:amd64": {
+    "State": "ii",
+    "Version": "9.4.0-1ubuntu1~20.04.1",
+    "Architecture": "amd64",
+    "Description": "GNU Standard C++ Library v3 (development files)"
+  },
+  "libstdc++6:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "GNU Standard C++ Library v3"
+  },
+  "libstemmer0d:amd64": {
+    "State": "ii",
+    "Version": "0+svn585-2",
+    "Architecture": "amd64",
+    "Description": "Snowball stemming algorithms for use in Information Retrieval"
+  },
+  "libsystemd0:amd64": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "systemd utility library"
+  },
+  "libtalloc2:amd64": {
+    "State": "ii",
+    "Version": "2.3.1-0ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "hierarchical pool based memory allocator"
+  },
+  "libtasn1-6:amd64": {
+    "State": "ii",
+    "Version": "4.16.0-2",
+    "Architecture": "amd64",
+    "Description": "Manage ASN.1 structures (runtime)"
+  },
+  "libtasn1-6-dev:amd64": {
+    "State": "ii",
+    "Version": "4.16.0-2",
+    "Architecture": "amd64",
+    "Description": "Manage ASN.1 structures (development)"
+  },
+  "libtdb1:amd64": {
+    "State": "ii",
+    "Version": "1.4.3-0ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "Trivial Database - shared library"
+  },
+  "libtevent0:amd64": {
+    "State": "ii",
+    "Version": "0.10.2-0ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "talloc-based event loop library - shared library"
+  },
+  "libthai-data": {
+    "State": "ii",
+    "Version": "0.1.28-3",
+    "Architecture": "all",
+    "Description": "Data files for Thai language support library"
+  },
+  "libthai0:amd64": {
+    "State": "ii",
+    "Version": "0.1.28-3",
+    "Architecture": "amd64",
+    "Description": "Thai language support library"
+  },
+  "libtiff5:amd64": {
+    "State": "ii",
+    "Version": "4.1.0+git191117-2ubuntu0.20.04.3",
+    "Architecture": "amd64",
+    "Description": "Tag Image File Format (TIFF) library"
+  },
+  "libtinfo6:amd64": {
+    "State": "ii",
+    "Version": "6.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "shared low-level terminfo library for terminal handling"
+  },
+  "libtsan0:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "ThreadSanitizer -- a Valgrind-based detector of data races (runtime)"
+  },
+  "libubsan1:amd64": {
+    "State": "ii",
+    "Version": "10.3.0-1ubuntu1~20.04",
+    "Architecture": "amd64",
+    "Description": "UBSan -- undefined behaviour sanitizer (runtime)"
+  },
+  "libuchardet0:amd64": {
+    "State": "ii",
+    "Version": "0.0.6-3build1",
+    "Architecture": "amd64",
+    "Description": "universal charset detection library - shared library"
+  },
+  "libudev-dev:amd64": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "libudev development files"
+  },
+  "libudev1:amd64": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "libudev shared library"
+  },
+  "libunbound8:amd64": {
+    "State": "ii",
+    "Version": "1.9.4-2ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "library implementing DNS resolution and validation"
+  },
+  "libunistring2:amd64": {
+    "State": "ii",
+    "Version": "0.9.10-2",
+    "Architecture": "amd64",
+    "Description": "Unicode string library for C"
+  },
+  "libutempter0:amd64": {
+    "State": "ii",
+    "Version": "1.1.6-4",
+    "Architecture": "amd64",
+    "Description": "privileged helper for utmp/wtmp updates (runtime)"
+  },
+  "libuuid1:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "Universally Unique ID library"
+  },
+  "libuv1:amd64": {
+    "State": "ii",
+    "Version": "1.34.2-1ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "asynchronous event notification library - runtime library"
+  },
+  "libwbclient0:amd64": {
+    "State": "ii",
+    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Architecture": "amd64",
+    "Description": "Samba winbind client library"
+  },
+  "libwebp6:amd64": {
+    "State": "ii",
+    "Version": "0.6.1-2ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "Lossy compression of digital photographic images."
+  },
+  "libwebpdemux2:amd64": {
+    "State": "ii",
+    "Version": "0.6.1-2ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "Lossy compression of digital photographic images."
+  },
+  "libwebpmux3:amd64": {
+    "State": "ii",
+    "Version": "0.6.1-2ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "Lossy compression of digital photographic images."
+  },
+  "libwind0-heimdal:amd64": {
+    "State": "ii",
+    "Version": "7.7.0+dfsg-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Heimdal Kerberos - stringprep implementation"
+  },
+  "libwmf0.2-7:amd64": {
+    "State": "ii",
+    "Version": "0.2.8.4-17ubuntu1",
+    "Architecture": "amd64",
+    "Description": "Windows metafile conversion library"
+  },
+  "libwrap0:amd64": {
+    "State": "ii",
+    "Version": "7.6.q-30",
+    "Architecture": "amd64",
+    "Description": "Wietse Venema\\'s TCP wrappers library"
+  },
+  "libwrap0-dev:amd64": {
+    "State": "ii",
+    "Version": "7.6.q-30",
+    "Architecture": "amd64",
+    "Description": "Wietse Venema\\'s TCP wrappers library, development files"
+  },
+  "libx11-6:amd64": {
+    "State": "ii",
+    "Version": "2:1.6.9-2ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "X11 client-side library"
+  },
+  "libx11-data": {
+    "State": "ii",
+    "Version": "2:1.6.9-2ubuntu1.2",
+    "Architecture": "all",
+    "Description": "X11 client-side library"
+  },
+  "libxau6:amd64": {
+    "State": "ii",
+    "Version": "1:1.0.9-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 authorisation library"
+  },
+  "libxaw7:amd64": {
+    "State": "ii",
+    "Version": "2:1.0.13-1",
+    "Architecture": "amd64",
+    "Description": "X11 Athena Widget library"
+  },
+  "libxcb-render0:amd64": {
+    "State": "ii",
+    "Version": "1.14-2",
+    "Architecture": "amd64",
+    "Description": "X C Binding, render extension"
+  },
+  "libxcb-shm0:amd64": {
+    "State": "ii",
+    "Version": "1.14-2",
+    "Architecture": "amd64",
+    "Description": "X C Binding, shm extension"
+  },
+  "libxcb1:amd64": {
+    "State": "ii",
+    "Version": "1.14-2",
+    "Architecture": "amd64",
+    "Description": "X C Binding"
+  },
+  "libxdmcp6:amd64": {
+    "State": "ii",
+    "Version": "1:1.1.3-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 Display Manager Control Protocol library"
+  },
+  "libxext6:amd64": {
+    "State": "ii",
+    "Version": "2:1.3.4-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 miscellaneous extension library"
+  },
+  "libxml2:amd64": {
+    "State": "ii",
+    "Version": "2.9.13+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "GNOME XML library"
+  },
+  "libxml2-dev:amd64": {
+    "State": "ii",
+    "Version": "2.9.13+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Development files for the GNOME XML library"
+  },
+  "libxmu6:amd64": {
+    "State": "ii",
+    "Version": "2:1.1.3-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 miscellaneous utility library"
+  },
+  "libxmuu1:amd64": {
+    "State": "ii",
+    "Version": "2:1.1.3-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X11 miscellaneous micro-utility library"
+  },
+  "libxpm4:amd64": {
+    "State": "ii",
+    "Version": "1:3.5.12-1",
+    "Architecture": "amd64",
+    "Description": "X11 pixmap library"
+  },
+  "libxrender1:amd64": {
+    "State": "ii",
+    "Version": "1:0.9.10-1",
+    "Architecture": "amd64",
+    "Description": "X Rendering Extension client library"
+  },
+  "libxslt1-dev:amd64": {
+    "State": "ii",
+    "Version": "1.1.34-4",
+    "Architecture": "amd64",
+    "Description": "XSLT 1.0 processing library - development kit"
+  },
+  "libxslt1.1:amd64": {
+    "State": "ii",
+    "Version": "1.1.34-4",
+    "Architecture": "amd64",
+    "Description": "XSLT 1.0 processing library - runtime library"
+  },
+  "libxt6:amd64": {
+    "State": "ii",
+    "Version": "1:1.1.5-1",
+    "Architecture": "amd64",
+    "Description": "X11 toolkit intrinsics library"
+  },
+  "libxtables12:amd64": {
+    "State": "ii",
+    "Version": "1.8.4-3ubuntu2",
+    "Architecture": "amd64",
+    "Description": "netfilter xtables library"
+  },
+  "libyaml-0-2:amd64": {
+    "State": "ii",
+    "Version": "0.2.2-1",
+    "Architecture": "amd64",
+    "Description": "Fast YAML 1.1 parser and emitter library"
+  },
+  "libzstd1:amd64": {
+    "State": "ii",
+    "Version": "1.4.8+dfsg-2+ubuntu20.04.1+deb.sury.org+4",
+    "Architecture": "amd64",
+    "Description": "fast lossless compression algorithm"
+  },
+  "linux-libc-dev:amd64": {
+    "State": "ii",
+    "Version": "5.4.0-110.124",
+    "Architecture": "amd64",
+    "Description": "Linux Kernel Headers for development"
+  },
+  "lockfile-progs": {
+    "State": "ii",
+    "Version": "0.1.18",
+    "Architecture": "amd64",
+    "Description": "Programs for locking and unlocking files and mailboxes"
+  },
+  "login": {
+    "State": "ii",
+    "Version": "1:4.8.1-1ubuntu5.20.04.2",
+    "Architecture": "amd64",
+    "Description": "system login tools"
+  },
+  "logsave": {
+    "State": "ii",
+    "Version": "1.45.5-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "save the output of a command in a log file"
+  },
+  "lsb-base": {
+    "State": "ii",
+    "Version": "11.1.0ubuntu2",
+    "Architecture": "all",
+    "Description": "Linux Standard Base init script functionality"
+  },
+  "lsb-release": {
+    "State": "ii",
+    "Version": "11.1.0ubuntu2",
+    "Architecture": "all",
+    "Description": "Linux Standard Base version reporting utility"
+  },
+  "lua-bitop:amd64": {
+    "State": "ii",
+    "Version": "1.0.2-5",
+    "Architecture": "amd64",
+    "Description": "fast bit manipulation library for the Lua language"
+  },
+  "lua-cjson:amd64": {
+    "State": "ii",
+    "Version": "2.1.0+dfsg-2.1",
+    "Architecture": "amd64",
+    "Description": "JSON parser/encoder for Lua"
+  },
+  "lua-lpeg:amd64": {
+    "State": "ii",
+    "Version": "1.0.2-1",
+    "Architecture": "amd64",
+    "Description": "LPeg library for the Lua language"
+  },
+  "m4": {
+    "State": "ii",
+    "Version": "1.4.18-4",
+    "Architecture": "amd64",
+    "Description": "macro processing language"
+  },
+  "mageni-libssh": {
+    "State": "ii",
+    "Version": "1.1.0",
+    "Architecture": "amd64",
+    "Description": "LIBSSH compiled with LibNaCL support"
+  },
+  "mageni-vmplatform": {
+    "State": "ii",
+    "Version": "1.1.0",
+    "Architecture": "amd64",
+    "Description": "Mageni Security Platform"
+  },
+  "mailutils": {
+    "State": "ii",
+    "Version": "1:3.7-2.1",
+    "Architecture": "amd64",
+    "Description": "GNU mailutils utilities for handling mail"
+  },
+  "mailutils-common": {
+    "State": "ii",
+    "Version": "1:3.7-2.1",
+    "Architecture": "all",
+    "Description": "common files for GNU mailutils"
+  },
+  "make": {
+    "State": "ii",
+    "Version": "4.2.1-1.2",
+    "Architecture": "amd64",
+    "Description": "utility for directing compilation"
+  },
+  "mawk": {
+    "State": "ii",
+    "Version": "1.3.4.20200120-2",
+    "Architecture": "amd64",
+    "Description": "Pattern scanning and text processing language"
+  },
+  "mime-support": {
+    "State": "ii",
+    "Version": "3.64ubuntu1",
+    "Architecture": "all",
+    "Description": "MIME files \\'mime.types\\' & \\'mailcap\\', and support programs"
+  },
+  "mount": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "tools for mounting and manipulating filesystems"
+  },
+  "msmtp": {
+    "State": "ii",
+    "Version": "1.8.6-1",
+    "Architecture": "amd64",
+    "Description": "light SMTP client with support for server profiles"
+  },
+  "mysql-common": {
+    "State": "ii",
+    "Version": "5.8+1.0.5ubuntu2",
+    "Architecture": "all",
+    "Description": "MySQL database common files, e.g. /etc/mysql/my.cnf"
+  },
+  "nano": {
+    "State": "ii",
+    "Version": "4.8-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "small, friendly text editor inspired by Pico"
+  },
+  "ncurses-base": {
+    "State": "ii",
+    "Version": "6.2-0ubuntu2",
+    "Architecture": "all",
+    "Description": "basic terminal type definitions"
+  },
+  "ncurses-bin": {
+    "State": "ii",
+    "Version": "6.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "terminal-related programs and man pages"
+  },
+  "net-tools": {
+    "State": "ii",
+    "Version": "1.60+git20180626.aebd88e-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "NET-3 networking toolkit"
+  },
+  "netbase": {
+    "State": "ii",
+    "Version": "6.1",
+    "Architecture": "all",
+    "Description": "Basic TCP/IP networking system"
+  },
+  "netcat": {
+    "State": "ii",
+    "Version": "1.206-1ubuntu1",
+    "Architecture": "all",
+    "Description": "TCP/IP swiss army knife -- transitional package"
+  },
+  "netcat-openbsd": {
+    "State": "ii",
+    "Version": "1.206-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "TCP/IP swiss army knife"
+  },
+  "netpbm": {
+    "State": "ii",
+    "Version": "2:10.0-15.3build1",
+    "Architecture": "amd64",
+    "Description": "Graphics conversion tools between image formats"
+  },
+  "nettle-dev:amd64": {
+    "State": "ii",
+    "Version": "3.5.1+really3.5.1-2ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "low level cryptographic library (development files)"
+  },
+  "networkd-dispatcher": {
+    "State": "ii",
+    "Version": "2.1-2~ubuntu20.04.3",
+    "Architecture": "all",
+    "Description": "Dispatcher service for systemd-networkd connection status changes"
+  },
+  "nginx": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "all",
+    "Description": "small, powerful, scalable web/proxy server"
+  },
+  "nginx-common": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "all",
+    "Description": "small, powerful, scalable web/proxy server - common files"
+  },
+  "nginx-core": {
+    "State": "ii",
+    "Version": "1.18.0-0ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "nginx web/proxy server (standard version)"
+  },
+  "nmap": {
+    "State": "ii",
+    "Version": "7.80+dfsg1-2build1",
+    "Architecture": "amd64",
+    "Description": "The Network Mapper"
+  },
+  "nmap-common": {
+    "State": "ii",
+    "Version": "7.80+dfsg1-2build1",
+    "Architecture": "all",
+    "Description": "Architecture independent files for nmap"
+  },
+  "openssh-client": {
+    "State": "ii",
+    "Version": "1:8.2p1-4ubuntu0.5",
+    "Architecture": "amd64",
+    "Description": "secure shell (SSH) client, for secure access to remote machines"
+  },
+  "openssh-server": {
+    "State": "ii",
+    "Version": "1:8.2p1-4ubuntu0.5",
+    "Architecture": "amd64",
+    "Description": "secure shell (SSH) server, for secure access from remote machines"
+  },
+  "openssh-sftp-server": {
+    "State": "ii",
+    "Version": "1:8.2p1-4ubuntu0.5",
+    "Architecture": "amd64",
+    "Description": "secure shell (SSH) sftp server module, for SFTP access from remote machines"
+  },
+  "openssl": {
+    "State": "ii",
+    "Version": "1.1.1f-1ubuntu2.13",
+    "Architecture": "amd64",
+    "Description": "Secure Sockets Layer toolkit - cryptographic utility"
+  },
+  "p7zip": {
+    "State": "ii",
+    "Version": "16.02+dfsg-7build1",
+    "Architecture": "amd64",
+    "Description": "7zr file archiver with high compression ratio"
+  },
+  "p7zip-full": {
+    "State": "ii",
+    "Version": "16.02+dfsg-7build1",
+    "Architecture": "amd64",
+    "Description": "7z and 7za file archivers with high compression ratio"
+  },
+  "packagekit": {
+    "State": "ii",
+    "Version": "1.1.13-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "Provides a package management service"
+  },
+  "packagekit-tools": {
+    "State": "ii",
+    "Version": "1.1.13-2ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "Provides PackageKit command-line tools"
+  },
+  "passwd": {
+    "State": "ii",
+    "Version": "1:4.8.1-1ubuntu5.20.04.2",
+    "Architecture": "amd64",
+    "Description": "change and administer password and group data"
+  },
+  "patch": {
+    "State": "ii",
+    "Version": "2.7.6-6",
+    "Architecture": "amd64",
+    "Description": "Apply a diff file to an original"
+  },
+  "pci.ids": {
+    "State": "ii",
+    "Version": "0.0~2020.03.20-1",
+    "Architecture": "all",
+    "Description": "PCI ID Repository"
+  },
+  "perl": {
+    "State": "ii",
+    "Version": "5.30.0-9ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "Larry Wall\\'s Practical Extraction and Report Language"
+  },
+  "perl-base": {
+    "State": "ii",
+    "Version": "5.30.0-9ubuntu0.2",
+    "Architecture": "amd64",
+    "Description": "minimal Perl system"
+  },
+  "perl-modules-5.30": {
+    "State": "ii",
+    "Version": "5.30.0-9ubuntu0.2",
+    "Architecture": "all",
+    "Description": "Core Perl modules"
+  },
+  "php-common": {
+    "State": "ii",
+    "Version": "2:92+ubuntu20.04.1+deb.sury.org+2",
+    "Architecture": "all",
+    "Description": "Common files for PHP packages"
+  },
+  "php8.0-bcmath": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Bcmath module for PHP"
+  },
+  "php8.0-cli": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "command-line interpreter for the PHP scripting language"
+  },
+  "php8.0-common": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "documentation, examples and common module for PHP"
+  },
+  "php8.0-curl": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "CURL module for PHP"
+  },
+  "php8.0-fpm": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "server-side, HTML-embedded scripting language (FPM-CGI binary)"
+  },
+  "php8.0-mbstring": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "MBSTRING module for PHP"
+  },
+  "php8.0-mysql": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "MySQL module for PHP"
+  },
+  "php8.0-opcache": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "Zend OpCache module for PHP"
+  },
+  "php8.0-readline": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "readline module for PHP"
+  },
+  "php8.0-sqlite3": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "SQLite3 module for PHP"
+  },
+  "php8.0-xml": {
+    "State": "ii",
+    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Architecture": "amd64",
+    "Description": "DOM, SimpleXML, XML, and XSL module for PHP"
+  },
+  "pinentry-curses": {
+    "State": "ii",
+    "Version": "1.1.0-3build1",
+    "Architecture": "amd64",
+    "Description": "curses-based PIN or pass-phrase entry dialog for GnuPG"
+  },
+  "pkg-config": {
+    "State": "ii",
+    "Version": "0.29.1-0ubuntu4",
+    "Architecture": "amd64",
+    "Description": "manage compile and link flags for libraries"
+  },
+  "policykit-1": {
+    "State": "ii",
+    "Version": "0.105-26ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "framework for managing administrative policies and privileges"
+  },
+  "poppler-data": {
+    "State": "ii",
+    "Version": "0.4.9-2",
+    "Architecture": "all",
+    "Description": "encoding data for the poppler PDF rendering library"
+  },
+  "procmail": {
+    "State": "ii",
+    "Version": "3.22-26",
+    "Architecture": "amd64",
+    "Description": "Versatile e-mail processor"
+  },
+  "procps": {
+    "State": "ii",
+    "Version": "2:3.3.16-1ubuntu2.3",
+    "Architecture": "amd64",
+    "Description": "/proc file system utilities"
+  },
+  "psmisc": {
+    "State": "ii",
+    "Version": "23.3-1",
+    "Architecture": "amd64",
+    "Description": "utilities that use the proc file system"
+  },
+  "psutils": {
+    "State": "ii",
+    "Version": "1.17.dfsg-4",
+    "Architecture": "amd64",
+    "Description": "PostScript document handling utilities"
+  },
+  "publicsuffix": {
+    "State": "ii",
+    "Version": "20200303.0012-1",
+    "Architecture": "all",
+    "Description": "accurate, machine-readable list of domain name suffixes"
+  },
+  "python-apt-common": {
+    "State": "ii",
+    "Version": "2.0.0ubuntu0.20.04.7",
+    "Architecture": "all",
+    "Description": "Python interface to libapt-pkg (locales)"
+  },
+  "python-pip-whl": {
+    "State": "ii",
+    "Version": "20.0.2-5ubuntu1.6",
+    "Architecture": "all",
+    "Description": "Python package installer"
+  },
+  "python3": {
+    "State": "ii",
+    "Version": "3.8.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "interactive high-level object-oriented language (default python3 version)"
+  },
+  "python3-apt": {
+    "State": "ii",
+    "Version": "2.0.0ubuntu0.20.04.7",
+    "Architecture": "amd64",
+    "Description": "Python 3 interface to libapt-pkg"
+  },
+  "python3-botocore": {
+    "State": "ii",
+    "Version": "1.16.19+repack-1ubuntu0.20.04.1",
+    "Architecture": "all",
+    "Description": "Low-level, data-driven core of boto 3 (Python 3)"
+  },
+  "python3-certifi": {
+    "State": "ii",
+    "Version": "2019.11.28-1",
+    "Architecture": "all",
+    "Description": "root certificates for validating SSL certs and verifying TLS hosts (python3)"
+  },
+  "python3-chardet": {
+    "State": "ii",
+    "Version": "3.0.4-4build1",
+    "Architecture": "all",
+    "Description": "universal character encoding detector for Python3"
+  },
+  "python3-cliapp": {
+    "State": "ii",
+    "Version": "1.20180812.1-3build1",
+    "Architecture": "all",
+    "Description": "Python framework for Unix command line programs"
+  },
+  "python3-colorama": {
+    "State": "ii",
+    "Version": "0.4.3-1build1",
+    "Architecture": "all",
+    "Description": "Cross-platform colored terminal text in Python - Python 3.x"
+  },
+  "python3-dateutil": {
+    "State": "ii",
+    "Version": "2.7.3-3ubuntu1",
+    "Architecture": "all",
+    "Description": "powerful extensions to the standard Python 3 datetime module"
+  },
+  "python3-dbus": {
+    "State": "ii",
+    "Version": "1.2.16-1build1",
+    "Architecture": "amd64",
+    "Description": "simple interprocess messaging system (Python 3 interface)"
+  },
+  "python3-distro-info": {
+    "State": "ii",
+    "Version": "0.23ubuntu1",
+    "Architecture": "all",
+    "Description": "information about distributions\\' releases (Python 3 module)"
+  },
+  "python3-distutils": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04",
+    "Architecture": "all",
+    "Description": "distutils package for Python 3.x"
+  },
+  "python3-docutils": {
+    "State": "ii",
+    "Version": "0.16+dfsg-2",
+    "Architecture": "all",
+    "Description": "text processing system for reStructuredText (implemented in Python 3)"
+  },
+  "python3-gi": {
+    "State": "ii",
+    "Version": "3.36.0-1",
+    "Architecture": "amd64",
+    "Description": "Python 3 bindings for gobject-introspection libraries"
+  },
+  "python3-idna": {
+    "State": "ii",
+    "Version": "2.8-1",
+    "Architecture": "all",
+    "Description": "Python IDNA2008 (RFC 5891) handling (Python 3)"
+  },
+  "python3-jmespath": {
+    "State": "ii",
+    "Version": "0.9.4-2ubuntu1",
+    "Architecture": "all",
+    "Description": "JSON Matching Expressions (Python 3)"
+  },
+  "python3-ldb": {
+    "State": "ii",
+    "Version": "2:2.2.3-0ubuntu0.20.04.2",
+    "Architecture": "amd64",
+    "Description": "Python 3 bindings for LDB"
+  },
+  "python3-lib2to3": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04",
+    "Architecture": "all",
+    "Description": "Interactive high-level object-oriented language (lib2to3)"
+  },
+  "python3-markdown": {
+    "State": "ii",
+    "Version": "3.1.1-3",
+    "Architecture": "all",
+    "Description": "text-to-HTML conversion library/tool (Python 3 version)"
+  },
+  "python3-minimal": {
+    "State": "ii",
+    "Version": "3.8.2-0ubuntu2",
+    "Architecture": "amd64",
+    "Description": "minimal subset of the Python language (default python3 version)"
+  },
+  "python3-olefile": {
+    "State": "ii",
+    "Version": "0.46-2",
+    "Architecture": "all",
+    "Description": "Python module to read/write MS OLE2 files"
+  },
+  "python3-packaging": {
+    "State": "ii",
+    "Version": "20.3-1",
+    "Architecture": "all",
+    "Description": "core utilities for python3 packages"
+  },
+  "python3-pil:amd64": {
+    "State": "ii",
+    "Version": "7.0.0-4ubuntu0.5",
+    "Architecture": "amd64",
+    "Description": "Python Imaging Library (Python3)"
+  },
+  "python3-pip": {
+    "State": "ii",
+    "Version": "20.0.2-5ubuntu1.6",
+    "Architecture": "all",
+    "Description": "Python package installer"
+  },
+  "python3-pkg-resources": {
+    "State": "ii",
+    "Version": "45.2.0-1",
+    "Architecture": "all",
+    "Description": "Package Discovery and Resource Access using pkg_resources"
+  },
+  "python3-pyasn1": {
+    "State": "ii",
+    "Version": "0.4.2-3build1",
+    "Architecture": "all",
+    "Description": "ASN.1 library for Python (Python 3 module)"
+  },
+  "python3-pygments": {
+    "State": "ii",
+    "Version": "2.3.1+dfsg-1ubuntu2.2",
+    "Architecture": "all",
+    "Description": "syntax highlighting package written in Python 3"
+  },
+  "python3-pyparsing": {
+    "State": "ii",
+    "Version": "2.4.6-1",
+    "Architecture": "all",
+    "Description": "alternative to creating and executing simple grammars - Python 3.x"
+  },
+  "python3-requests": {
+    "State": "ii",
+    "Version": "2.22.0-2ubuntu1",
+    "Architecture": "all",
+    "Description": "elegant and simple HTTP library for Python3, built for human beings"
+  },
+  "python3-requests-unixsocket": {
+    "State": "ii",
+    "Version": "0.2.0-2",
+    "Architecture": "all",
+    "Description": "Use requests to talk HTTP via a UNIX domain socket - Python 3.x"
+  },
+  "python3-roman": {
+    "State": "ii",
+    "Version": "2.0.0-3build1",
+    "Architecture": "all",
+    "Description": "module for generating/analyzing Roman numerals for Python 3"
+  },
+  "python3-rsa": {
+    "State": "ii",
+    "Version": "4.0-3",
+    "Architecture": "all",
+    "Description": "Pure-Python RSA implementation (Python 3)"
+  },
+  "python3-s3transfer": {
+    "State": "ii",
+    "Version": "0.3.3-1",
+    "Architecture": "all",
+    "Description": "Amazon S3 Transfer Manager for Python3"
+  },
+  "python3-setuptools": {
+    "State": "ii",
+    "Version": "45.2.0-1",
+    "Architecture": "all",
+    "Description": "Python3 Distutils Enhancements"
+  },
+  "python3-six": {
+    "State": "ii",
+    "Version": "1.14.0-2",
+    "Architecture": "all",
+    "Description": "Python 2 and 3 compatibility library (Python 3 interface)"
+  },
+  "python3-software-properties": {
+    "State": "ii",
+    "Version": "0.99.9.8",
+    "Architecture": "all",
+    "Description": "manage the repositories that you install software from"
+  },
+  "python3-talloc:amd64": {
+    "State": "ii",
+    "Version": "2.3.1-0ubuntu0.20.04.1",
+    "Architecture": "amd64",
+    "Description": "hierarchical pool based memory allocator - Python3 bindings"
+  },
+  "python3-ttystatus": {
+    "State": "ii",
+    "Version": "0.38-4",
+    "Architecture": "all",
+    "Description": "terminal progress bar and status output for Python"
+  },
+  "python3-urllib3": {
+    "State": "ii",
+    "Version": "1.25.8-2ubuntu0.1",
+    "Architecture": "all",
+    "Description": "HTTP library with thread-safe connection pooling for Python3"
+  },
+  "python3-wheel": {
+    "State": "ii",
+    "Version": "0.34.2-1",
+    "Architecture": "all",
+    "Description": "built-package format for Python"
+  },
+  "python3-yaml": {
+    "State": "ii",
+    "Version": "5.3.1-1ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "YAML parser and emitter for Python3"
+  },
+  "python3.8": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Architecture": "amd64",
+    "Description": "Interactive high-level object-oriented language (version 3.8)"
+  },
+  "python3.8-minimal": {
+    "State": "ii",
+    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Architecture": "amd64",
+    "Description": "Minimal subset of the Python language (version 3.8)"
+  },
+  "rake": {
+    "State": "ii",
+    "Version": "13.0.1-4",
+    "Architecture": "all",
+    "Description": "ruby make-like utility"
+  },
+  "readline-common": {
+    "State": "ii",
+    "Version": "8.0-4",
+    "Architecture": "all",
+    "Description": "GNU readline and history libraries, common files"
+  },
+  "redis-server": {
+    "State": "ii",
+    "Version": "5:5.0.7-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Persistent key-value database with network interface"
+  },
+  "redis-tools": {
+    "State": "ii",
+    "Version": "5:5.0.7-2ubuntu0.1",
+    "Architecture": "amd64",
+    "Description": "Persistent key-value database with network interface (client)"
+  },
+  "rsync": {
+    "State": "ii",
+    "Version": "3.1.3-8ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "fast, versatile, remote (and local) file-copying tool"
+  },
+  "ruby": {
+    "State": "ii",
+    "Version": "1:2.7+1",
+    "Architecture": "amd64",
+    "Description": "Interpreter of object-oriented scripting language Ruby (default version)"
+  },
+  "ruby-dev:amd64": {
+    "State": "ii",
+    "Version": "1:2.7+1",
+    "Architecture": "amd64",
+    "Description": "Header files for compiling extension modules for Ruby (default version)"
+  },
+  "ruby-minitest": {
+    "State": "ii",
+    "Version": "5.13.0-1",
+    "Architecture": "all",
+    "Description": "Ruby test tools supporting TDD, BDD, mocking, and benchmarking"
+  },
+  "ruby-net-telnet": {
+    "State": "ii",
+    "Version": "0.1.1-2",
+    "Architecture": "all",
+    "Description": "telnet client library"
+  },
+  "ruby-power-assert": {
+    "State": "ii",
+    "Version": "1.1.7-1",
+    "Architecture": "all",
+    "Description": "library showing values of variables and method calls in an expression"
+  },
+  "ruby-test-unit": {
+    "State": "ii",
+    "Version": "3.3.5-1",
+    "Architecture": "all",
+    "Description": "unit testing framework for Ruby"
+  },
+  "ruby-xmlrpc": {
+    "State": "ii",
+    "Version": "0.3.0-2",
+    "Architecture": "all",
+    "Description": "XMLRPC library for Ruby"
+  },
+  "ruby2.7": {
+    "State": "ii",
+    "Version": "2.7.0-5ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "Interpreter of object-oriented scripting language Ruby"
+  },
+  "ruby2.7-dev:amd64": {
+    "State": "ii",
+    "Version": "2.7.0-5ubuntu1.6",
+    "Architecture": "amd64",
+    "Description": "Header files for compiling extension modules for the Ruby 2.7"
+  },
+  "rubygems-integration": {
+    "State": "ii",
+    "Version": "1.16",
+    "Architecture": "all",
+    "Description": "integration of Debian Ruby packages with Rubygems"
+  },
+  "samba-common": {
+    "State": "ii",
+    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Architecture": "all",
+    "Description": "common files used by both the Samba server and client"
+  },
+  "samba-libs:amd64": {
+    "State": "ii",
+    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Architecture": "amd64",
+    "Description": "Samba core libraries"
+  },
+  "sed": {
+    "State": "ii",
+    "Version": "4.7-1",
+    "Architecture": "amd64",
+    "Description": "GNU stream editor for filtering/transforming text"
+  },
+  "sendmail-base": {
+    "State": "ii",
+    "Version": "8.15.2-18",
+    "Architecture": "all",
+    "Description": "powerful, efficient, and scalable Mail Transport Agent (arch independent files)"
+  },
+  "sendmail-cf": {
+    "State": "ii",
+    "Version": "8.15.2-18",
+    "Architecture": "all",
+    "Description": "powerful, efficient, and scalable Mail Transport Agent (config macros)"
+  },
+  "sensible-mda": {
+    "State": "ii",
+    "Version": "8.15.2-18",
+    "Architecture": "amd64",
+    "Description": "Mail Delivery Agent wrapper"
+  },
+  "sensible-utils": {
+    "State": "ii",
+    "Version": "0.0.12+nmu1",
+    "Architecture": "all",
+    "Description": "Utilities for sensible alternative selection"
+  },
+  "sgml-base": {
+    "State": "ii",
+    "Version": "1.29.1",
+    "Architecture": "all",
+    "Description": "SGML infrastructure and SGML catalog file support"
+  },
+  "shared-mime-info": {
+    "State": "ii",
+    "Version": "1.15-1",
+    "Architecture": "amd64",
+    "Description": "FreeDesktop.org shared MIME database and spec"
+  },
+  "smbclient": {
+    "State": "ii",
+    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Architecture": "amd64",
+    "Description": "command-line SMB/CIFS clients for Unix"
+  },
+  "socat": {
+    "State": "ii",
+    "Version": "1.7.3.3-2",
+    "Architecture": "amd64",
+    "Description": "multipurpose relay for bidirectional data transfer"
+  },
+  "software-properties-common": {
+    "State": "ii",
+    "Version": "0.99.9.8",
+    "Architecture": "all",
+    "Description": "manage the repositories that you install software from (common)"
+  },
+  "sqlite3": {
+    "State": "ii",
+    "Version": "3.31.1-4ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "Command line interface for SQLite 3"
+  },
+  "ssh": {
+    "State": "ii",
+    "Version": "1:8.2p1-4ubuntu0.5",
+    "Architecture": "all",
+    "Description": "secure shell client and server (metapackage)"
+  },
+  "sshpass": {
+    "State": "ii",
+    "Version": "1.06-1",
+    "Architecture": "amd64",
+    "Description": "Non-interactive ssh password authentication"
+  },
+  "ssmtp": {
+    "State": "ii",
+    "Version": "2.64-8.1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "extremely simple MTA to get mail off the system to a mail hub"
+  },
+  "sudo": {
+    "State": "ii",
+    "Version": "1.8.31-1ubuntu1.2",
+    "Architecture": "amd64",
+    "Description": "Provide limited super user privileges to specific users"
+  },
+  "systemd": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "system and service manager"
+  },
+  "systemd-sysv": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "system and service manager - SysV links"
+  },
+  "systemd-timesyncd": {
+    "State": "ii",
+    "Version": "245.4-4ubuntu3.17",
+    "Architecture": "amd64",
+    "Description": "minimalistic service to synchronize local time with NTP servers"
+  },
+  "sysvinit-utils": {
+    "State": "ii",
+    "Version": "2.96-2.1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "System-V-like utilities"
+  },
+  "tar": {
+    "State": "ii",
+    "Version": "1.30+dfsg-7ubuntu0.20.04.2",
+    "Architecture": "amd64",
+    "Description": "GNU version of the tar archiving utility"
+  },
+  "tmux": {
+    "State": "ii",
+    "Version": "3.0a-2ubuntu0.3",
+    "Architecture": "amd64",
+    "Description": "terminal multiplexer"
+  },
+  "tzdata": {
+    "State": "ii",
+    "Version": "2022a-0ubuntu0.20.04",
+    "Architecture": "all",
+    "Description": "time zone and daylight-saving time data"
+  },
+  "ubuntu-keyring": {
+    "State": "ii",
+    "Version": "2020.02.11.4",
+    "Architecture": "all",
+    "Description": "GnuPG keys of the Ubuntu archive"
+  },
+  "ucf": {
+    "State": "ii",
+    "Version": "3.0038+nmu1",
+    "Architecture": "all",
+    "Description": "Update Configuration File(s): preserve user changes to config files"
+  },
+  "unattended-upgrades": {
+    "State": "ii",
+    "Version": "2.3ubuntu0.1",
+    "Architecture": "all",
+    "Description": "automatic installation of security upgrades"
+  },
+  "util-linux": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "miscellaneous system utilities"
+  },
+  "uuid-dev:amd64": {
+    "State": "ii",
+    "Version": "2.34-0.1ubuntu9.3",
+    "Architecture": "amd64",
+    "Description": "Universally Unique ID library - headers and static libraries"
+  },
+  "wget": {
+    "State": "ii",
+    "Version": "1.20.3-1ubuntu2",
+    "Architecture": "amd64",
+    "Description": "retrieves files from the web"
+  },
+  "x11-common": {
+    "State": "ii",
+    "Version": "1:7.7+19ubuntu14",
+    "Architecture": "all",
+    "Description": "X Window System (X.Org) infrastructure"
+  },
+  "xauth": {
+    "State": "ii",
+    "Version": "1:1.1-0ubuntu1",
+    "Architecture": "amd64",
+    "Description": "X authentication utility"
+  },
+  "xdg-user-dirs": {
+    "State": "ii",
+    "Version": "0.17-2ubuntu1",
+    "Architecture": "amd64",
+    "Description": "tool to manage well known user directories"
+  },
+  "xml-core": {
+    "State": "ii",
+    "Version": "0.18+nmu1",
+    "Architecture": "all",
+    "Description": "XML infrastructure and XML catalog file support"
+  },
+  "xmlstarlet": {
+    "State": "ii",
+    "Version": "1.6.1-2build1",
+    "Architecture": "amd64",
+    "Description": "command line XML toolkit"
+  },
+  "xsltproc": {
+    "State": "ii",
+    "Version": "1.1.34-4",
+    "Architecture": "amd64",
+    "Description": "XSLT 1.0 command line processor"
+  },
+  "xz-utils": {
+    "State": "ii",
+    "Version": "5.2.4-1ubuntu1.1",
+    "Architecture": "amd64",
+    "Description": "XZ-format compression utilities"
+  },
+  "zip": {
+    "State": "ii",
+    "Version": "3.0-11build1",
+    "Architecture": "amd64",
+    "Description": "Archiver for .zip files"
+  },
+  "zlib1g:amd64": {
+    "State": "ii",
+    "Version": "1:1.2.11.dfsg-2ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "compression library - runtime"
+  },
+  "zlib1g-dev:amd64": {
+    "State": "ii",
+    "Version": "1:1.2.11.dfsg-2ubuntu1.3",
+    "Architecture": "amd64",
+    "Description": "compression library - development"
+  }
+}
