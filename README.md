@@ -82,6 +82,10 @@ Mageni's mission is to make your life more enjoyable and peaceful by providing y
 ## Vision
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
 
+## What is the Vulnerability Management Cycle?
+
+The Vulnerability Management Cycle is intended to allow organizations and individuals to identify and assess their computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. Mageni eases for you the Vulnerability Management Cycle.
+
 ## Audience
 - PenTester
 - Cybersecurity Professionals 
@@ -91,19 +95,10 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 - Auditors
 - Red Team
 - Malware Analyst
-- And more ...
-
-## What is the Vulnerability Management Cycle?
-
-The Vulnerability Management Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. Mageni eases for you the Vulnerability Management Cycle.
-
-Here you can see the Vulnerability Management Cycle according to Gartner:
-
-<p align="center">
-    <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
-</p>
-
-Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
+- Business owners
+- System Administrators
+- Developers
+- And anyone concerned about cybersecurity and vulnerabilities
 
 ## Installation 
 
