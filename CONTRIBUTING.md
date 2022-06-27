@@ -12,7 +12,7 @@ Mageni's GitHub issue trackers are not intended to provide Mageni help or suppor
 
 # Core Development Discussion
 
-You may propose new features or improvements of existing Mageni behavior in the Mageni repository's GitHub discussion board. If you propose a new feature, please be willing to implement at least some of the code that would be needed to complete the feature.
+You may propose new features or improvements of existing Mageni behavior in the Mageni repository's GitHub discussion board. 
 
 ## Attribution
 

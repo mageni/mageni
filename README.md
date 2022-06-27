@@ -162,10 +162,17 @@ curl -sL https://www.mageni.net/installation | sudo bash
 ```
 
 ## Contributing
-Thank you for considering contributing to Mageni! If you want to contribute, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
+Thank you for considering contributing to Mageni! There are several ways that you can contribute:
+
+- Bug reports
+- Features request
+- Sponsorship
+    - Are you using Mageni for your personal projects and side projects and really enjoying it? <a href="https://buy.stripe.com/5kA7sQ2oA1wu9hu7sy">Please sponsor this project</a>
+
+For more information, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
 
 ## Thank you, open source
-Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to legal@mageni.net and ASAP we will fix it.
+Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to opensource@mageni.net and ASAP we will fix it.
 
 **Please note that Mageni does not sells the open source software. The software is, and always will be, free.**
 
