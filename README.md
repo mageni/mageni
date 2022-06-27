@@ -30,9 +30,6 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
     - Prioritization
     - Validation
     - Exception 
-    - Intelligence
-    - Correlation
-    - Deduplication
 - Testing
     - Hardening
     - Compliance
