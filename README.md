@@ -14,7 +14,7 @@
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 </p>
 <br />
-<p align="center">
+<p align="center" style="padding-top:-20px; margin-top:-20px;">
 <a href="https://github.com/mageni/mageni#comptia-pentest-certification"><img src="https://www.mageni.net/assets/img/stripeclimate.svg" width="120" height="120" style="padding-right:20px; margin-right:20px;"/></a>
 <a href="https://github.com/mageni/mageni#comptia-pentest-certification"><img src="https://www.mageni.net/assets/img/logopentestplus.svg" width="120" height="120" /></a>
 </p>
