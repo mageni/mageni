@@ -28,20 +28,14 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
     - Prioritization
     - Validation
     - Exception 
-- Testing
-    - Hardening
-    - Compliance
-        - PCI DSS
-        - NIST CSF
-        - HIPAA
-        - ISO
-        - NERC
-        - FISMA
-        - NIS Directive
-- Intelligence
-    - VirusTotal 
-    - CISA Known Exploited Vulnerabilities Catalog
-    - MITRE ATT&CK
+- Compliance
+    - PCI DSS
+    - NIST CSF
+    - HIPAA
+    - ISO
+    - NERC
+    - FISMA
+    - NIS Directive
 - Security Audits
     - Network
     - Servers
@@ -53,7 +47,6 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
     - Email with zero-configuration
     - Microsoft Teams *Coming soon*
     - SMS *Coming soon*
-    - Twitter *Coming soon*
     - Webhooks *Coming soon*
 - Scoring
     - CVSSv2
