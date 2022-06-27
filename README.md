@@ -54,9 +54,9 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 - Red Team
 - And more ...
 
-## What is the Vulnerability Management Life Cycle?
+## What is the Vulnerability Management Cycle?
 
-The Vulnerability Management Life Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Life Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
+The Vulnerability Management Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. Mageni eases for you the Vulnerability Management Cycle.
 
 Here you can see the Vulnerability Management Life Cycle according to Gartner:
 
