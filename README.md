@@ -160,14 +160,25 @@ multipass shell mageni
 ```
 curl -sL https://www.mageni.net/installation | sudo bash
 ```
+## Sponsorship
+
+We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can. However, if you choose to show your appreciation by sponsoring this project, know that we are deeply appreciative.
+
+10% of the proceeds go towards reducing climate change on earth and 90% go to funding full-time staff working on new features, bug fixes, and improvements.
+
+- Are you using Mageni for your personal projects and side projects and really enjoying it? The sponsorship tier <a href="https://buy.stripe.com/5kA7sQ2oA1wu9hu7sy">Enthusiast</a> gives you the chance to give back. 
+- Has Mageni reinvigorated your love for cybersecurity? The sponsorship tier <a href="https://buy.stripe.com/aEU9AY3sE5MK8dq14g">Lover</a> gives you the chance to give back. 
+- Has Mageni helped you in your career and made your cybersecurity experience more enjoyable? The sponsorship tier <a href="https://buy.stripe.com/00g4gE8MYdfc79mbIT">Professional</a> gives you the chance to give back. 
+- Has Mageni helped your small business (less than 100 employees)? The sponsorship tier <a href="https://buy.stripe.com/aEUbJ6fbm1wudxK28i">Small Business</a> gives you the chance to give back. 
+- Has Mageni helped your medium business (less than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/00gfZmaV6fnkbpC4gp">Medium Business</a> gives you the chance to give back. 
+- Has Mageni helped your organization (more than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/28ocNa1kwfnk0KYbIQ">Organization</a> gives you the chance to give back. 
+- Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
 ## Contributing
-Thank you for considering contributing to Mageni! There are several ways that you can contribute:
+You can also contribute with:
 
 - Bug reports
 - Features request
-- Sponsorship
-    - Are you using Mageni for your personal projects and side projects and really enjoying it? <a href="https://buy.stripe.com/5kA7sQ2oA1wu9hu7sy">Please sponsor this project</a>
 
 For more information, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
 
