@@ -36,7 +36,10 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
         - PCI DSS
         - NIST CSF
         - HIPAA
-        - ISO27000
+        - ISO
+        - NERC
+        - FISMA
+        - NIS Directive
 - Intelligence
     - VirusTotal 
     - CISA Known Exploited Vulnerabilities Catalog
@@ -164,7 +167,7 @@ Thank you for considering contributing to Mageni! If you want to contribute, <a 
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to legal@mageni.net and ASAP we will fix it.
 
-**Please note that Mageni does not sells the open source software. The software is, and always will be,fre free.**
+**Please note that Mageni does not sells the open source software. The software is, and always will be, free.**
 
 ## Legal
 This open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
