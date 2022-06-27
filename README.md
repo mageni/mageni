@@ -39,7 +39,7 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
 </p>
 
 ## Mission
-Mageni's mission is to make your life more enjoyable and peaceful by providing you a wonderful vulnerability management platform.
+Mageni's mission is to make your life more enjoyable and peaceful by providing you with a wonderful vulnerability management platform.
 
 ## Vision
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
