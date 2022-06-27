@@ -58,7 +58,7 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 
 The Vulnerability Management Cycle is intended to allow organizations to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. Mageni eases for you the Vulnerability Management Cycle.
 
-Here you can see the Vulnerability Management Life Cycle according to Gartner:
+Here you can see the Vulnerability Management Cycle according to Gartner:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
