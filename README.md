@@ -17,48 +17,20 @@
 ## Introduction
 Mageni eases for you the vulnerability management cycle. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni takes the discomfort and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
 
-- Asset
-    - Discovery
-    - Prioritization
-- Vulnerability 
-    - Scanning
-    - Assessment
-    - Reporting
-    - Remediation
-    - Prioritization
-    - Validation
-    - Exception 
-- Compliance
-    - PCI DSS
-    - NIST CSF
-    - HIPAA
-    - ISO
-    - NERC
-    - FISMA
-    - NIS Directive
+- Asset Discovery
+- Prioritize Assets
+- Vulnerability Scanning
+- Vulnerability Assessment
+- Reporting
+- Remediation
+- Vulnerability Prioritization
+- Vulnerability Validation
+- Compliance Testing (PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS)
+- Penetration Testing
 - Security Audits
-    - Network
-    - Servers
-    - Desktops
-    - Applications
-    - Services
-    - Ports
-- Notifications 
-    - Email with zero-configuration
-    - Microsoft Teams *Coming soon*
-    - SMS *Coming soon*
-    - Webhooks *Coming soon*
-- Scoring
-    - CVSSv2
-    - CVSSv3.1
-- Integrations
-    - Syslog *Coming soon*
-    - SysAid *Coming soon*
-    - ServiceNow *Coming soon*
-    - SIEM *Coming soon*
-- And more features are coming...
+- And more ...
 
-Mageni is accessible, powerful, and will **save you time, money, and resources** while reducing the risk of non compliance, financial losses, fines, jail, sanctions, and security breaches. This is what it currently looks like:
+ **Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non compliance, financial losses, fines, jail, sanctions, and security breaches.** This is what it currently looks like:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
@@ -72,7 +44,15 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 
 ## What is the Vulnerability Management Cycle?
 
-The Vulnerability Management Cycle is intended to allow organizations and individuals to identify and assess their computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. Mageni eases for you the Vulnerability Management Cycle.
+The Vulnerability Management Life Cycle is intended to allow organizations and individuals to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Life Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
+
+Here you can see the Vulnerability Management Life Cycle according to Gartner:
+
+<p align="center">
+    <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
+</p>
+
+Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
 
 ## Audience
 - PenTester
@@ -161,7 +141,6 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
 ## Benefits of Sponsorship
-- Access to a private issues repository
 - Access to the developers 
 - Priority support to fix bugs
 - Your feature request will be a top priority
@@ -188,6 +167,9 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to opensource@mageni.net and ASAP we will fix it.
 
 **Please note that Mageni does not sells the open source software. The software is, and always will be, free.**
+
+## License
+Mageni is released under the GPLv2 license.
 
 ## Legal
 This open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
