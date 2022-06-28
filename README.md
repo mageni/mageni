@@ -145,15 +145,13 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Has Mageni helped your organization (more than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/28ocNa1kwfnk0KYbIQ">Organization</a> gives you the chance to give back. 
 - Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
-## Benefits of Sponsorship
+### Benefits of Sponsorship
 - Access to the developers 
 - Priority support to fix bugs
 - Your feature request will be a top priority
 - You have an active role in preserving the software that you use
-- Access to CompTIA PenTest+ Professionals to help you achieve your goals.
-
-## Framework
-Mageni uses Laravel, the best existing PHP framework, as the foundation framework and Module package for the web interface.
+- Access to CompTIA PenTest+ Professionals to help you achieve your goals
+- 2 hours of consulting time per month by Certified CompTIA PenTest+ Professionals
 
 ## CompTIA PenTest+ Certification
 Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. 
@@ -172,9 +170,9 @@ You can also contribute with:
 For more information, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
 
 ## Thank you, open source
-Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their copyrights. If you believe that we are missing something, drop us an email to opensource@mageni.net and ASAP we will fix it.
+Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their respective copyrights. If you believe that we are missing something, drop us an email to opensource@mageni.net and ASAP we will fix it.
 
-**Please note that Mageni does not sells the open source software. The software is, and always will be, free.**
+**Please note that Mageni does not, will not, and can not, sell the open source software. The software is, and always will be, free.**
 
 ## License
 Mageni is released under the <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2 license</a>
