@@ -152,6 +152,9 @@ We love working on Mageni and give it to you without expecting anything in retur
 - You have an active role in preserving the software that you use
 - Access to CompTIA PenTest+ Professionals to help you achieve your goals.
 
+## Framework
+Mageni uses Laravel, the best existing PHP framework, as the foundation framework and Module package for the web interface.
+
 ## CompTIA PenTest+ Certification
 Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. 
 
