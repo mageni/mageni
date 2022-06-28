@@ -15,7 +15,7 @@
 </p>
 
 ## Introduction
-Mageni eases for you the vulnerability management cycle. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni takes the discomfort and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
+Mageni eases for you the vulnerability management cycle. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. **Mageni empowers you to identify, prioritize, and respond to vulnerabilities and misconfigurations before they are exploited by hackers.** Mageni takes the discomfort and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
 
 - Asset Discovery
 - Prioritize Assets
@@ -30,11 +30,16 @@ Mageni eases for you the vulnerability management cycle. We believe cybersecurit
 - Security Audits
 - And more ...
 
- **Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non compliance, financial losses, fines, jail, sanctions, and security breaches.** This is what it currently looks like:
+ **Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non compliance, financial losses, fines, and security breaches.** This is what it currently looks like:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </p>
+
+## Vulnerability Management Statistics
+- 60% of breach victims were breached due to an unpatched known vulnerability (Ponemom Institute)
+- 62% were unaware that they were vulnerable prior to the data breach (Ponemom Institute)
+- $4.24 million cost per data breach on average; highest in 17-year report history (IBM)
 
 ## Mission
 Mageni's mission is to make your life more enjoyable and peaceful by providing you with a wonderful vulnerability management platform.
@@ -44,9 +49,9 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 
 ## What is the Vulnerability Management Cycle?
 
-The Vulnerability Management Life Cycle is intended to allow organizations and individuals to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Life Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
+The Vulnerability Management Cycle is intended to allow organizations and individuals to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
 
-Here you can see the Vulnerability Management Life Cycle according to Gartner:
+Here you can see the Vulnerability Management Cycle according to Gartner:
 
 <p align="center">
     <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
