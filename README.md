@@ -158,7 +158,7 @@ Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest
 ## Mageni helps to reduce climate change
 Mageni is a member of the <a href="https://climate.stripe.com/nJ22UV" target="_blank">Stripe Climate</a> and contributes 10% of your sponsorship to reduce climate change.
 
-With your sponsorship you will make a significant impact improving for present and future generations.
+With your sponsorship you are making this world a better place for both present and future generations.
 
 ## Contributing
 You can also contribute with:
@@ -174,7 +174,7 @@ Mageni uses a lot of open source projects and we thank them with all our hearts.
 **Please note that Mageni does not sells the open source software. The software is, and always will be, free.**
 
 ## License
-Mageni is released under the GPLv2 license.
+Mageni is released under the <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2 license</a>
 
 ## Legal
 This open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
