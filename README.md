@@ -146,12 +146,11 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
 ### Benefits of Sponsorship
-- Access to the developers 
+- Access to the private issues repository
+- Access to the private discusion board
 - Priority support to fix bugs
 - Your feature request will be a top priority
 - You have an active role in preserving the software that you use
-- Access to CompTIA PenTest+ Professionals to help you achieve your goals
-- 2 hours of consulting time per month by Certified CompTIA PenTest+ Professionals
 
 ## CompTIA PenTest+ Certification
 Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. 
