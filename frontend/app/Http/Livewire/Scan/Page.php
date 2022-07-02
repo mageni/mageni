@@ -679,6 +679,8 @@ class Page extends Component
                 'timer'     => $this->alertTimer,
                 'iconColor' => 'green',
             ]);
+            sleep(1);
+            $this->emit('confetti');
         } elseif($scan->get_create_result == 1) {
             $this->emit('scan-created', [
                 'title'     => 'Scan Creation',

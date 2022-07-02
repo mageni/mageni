@@ -12,6 +12,7 @@
     "devDependencies": {
         "@tailwindcss/forms": "^0.3.1",
         "@tailwindcss/typography": "^0.4.0",
+        "@types/canvas-confetti": "^1.4.2",
         "alpinejs": "^3.0.6",
         "axios": "^0.21.4",
         "laravel-mix": "^6.0.43",
@@ -21,6 +22,7 @@
         "tailwindcss": "^2.2.2"
     },
     "dependencies": {
+        "canvas-confetti": "^1.5.1",
         "party-js": "^2.1.2",
         "sweetalert2": "^11.4.8"
     }
