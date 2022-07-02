@@ -135,7 +135,7 @@ curl -sL https://www.mageni.net/installation | sudo bash
 
 We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can. However, if you choose to show your appreciation by sponsoring this project, know that we are deeply appreciative.
 
-10% of the proceeds go towards reducing climate change on earth and 90% go to funding the infrastructure and full-time staff working on new features, bug fixes, and improvements.
+1% of the proceeds go towards reducing climate change on earth.
 
 - Are you using Mageni for your personal projects and side projects and really enjoying it? The sponsorship tier <a href="https://buy.stripe.com/5kA7sQ2oA1wu9hu7sy">Enthusiast</a> gives you the chance to give back. 
 - Has Mageni reinvigorated your love for cybersecurity? The sponsorship tier <a href="https://buy.stripe.com/aEU9AY3sE5MK8dq14g">Lover</a> gives you the chance to give back. 
@@ -156,7 +156,7 @@ We love working on Mageni and give it to you without expecting anything in retur
 Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. 
 
 ## Mageni helps to reduce climate change
-Mageni is a member of the <a href="https://climate.stripe.com/nJ22UV" target="_blank">Stripe Climate</a> and contributes 10% of your sponsorship to reduce climate change.
+Mageni is a member of the <a href="https://climate.stripe.com/nJ22UV" target="_blank">Stripe Climate</a> and contributes 1% of your sponsorship to reduce climate change.
 
 With your sponsorship you are making this world a better place for both present and future generations.
 
