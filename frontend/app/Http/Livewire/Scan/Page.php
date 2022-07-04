@@ -673,13 +673,7 @@ class Page extends Component
         $this->stopPolling = 'No';
 
         if($scan->get_create_result == 0) {
-            $this->emit('scan-created', [
-                'title'     => 'Scan Created',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
-            sleep(1);
+            $this->emit('scan-created');
             $this->emit('confetti');
         } elseif($scan->get_create_result == 1) {
             $this->emit('scan-created', [
@@ -700,12 +694,9 @@ class Page extends Component
         $scan->start($taskID);
 
         if($scan->get_start_result == 0) {
-            $this->emit('scan-start', [
-                'title'     => 'Scan Started',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            // $this->emit('scan-start');
+            // sleep(1);
+            $this->emit('confetti');
         } elseif ($scan->get_start_result == 2) {
             $this->emit('scan-start', [
                 'title'     => 'Knowledge Base is refreshing. Please wait a few minutes.',
