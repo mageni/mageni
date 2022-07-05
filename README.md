@@ -177,7 +177,7 @@ If you believe that, according to the DMCA, we are missing something, drop us an
 
 Before submitting or sending an email, please be aware and read the <a href="https://www.copyright.gov/legislation/pl105-304.pdf" target="_blank">DMCA</a>, <a href="https://uscode.house.gov/view.xhtml?path=/prelim@title18/part1/chapter79&edition=prelim" target="_blank">18 U.S. Code § 1621 - Perjury generally</a>, and <a href="https://www.copyright.gov/title17/title17.pdf" target="_blank">US Copyright Law</a>
 
-**The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued. The DMCA provides a remedy for bad-faith takedowns**, specifically:
+**The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued. The DMCA also provides a remedy for bad-faith takedowns**, specifically:
 
 Any person who knowingly materially misrepresents under this section
 
