@@ -171,6 +171,17 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
+## Thank you, open source
+Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
+
+## Legal
+Mageni publishes this open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
+
+## Fair Use
+Mageni publishes this open-source software as fair use of copyrighted work for purposes of education, teaching and research (See 17 U.S.C. § 107). *Mageni does not sells the open-source software. This software is, and always will be, free and open source.*
+
+*“fair use is not just excused by the law, it is wholly authorized by the law.”* Lenz v. Universal Music Corp., 815 F.3d 1145, 1151 (9th Cir. 2016).  Thus, even if someone is using a copyrighted work, if it is being used as authorized by 17 U.S.C. § 107, the use is not infringing.
+
 ### DMCA
 
 If you believe that, according to the DMCA, we are missing something, drop us an email to dmca@mageni.net
@@ -190,14 +201,5 @@ Any person who knowingly materially misrepresents under this section
 
 **Mageni does not sells the open source software. This software is, and always will be, free and open source.**
 
-## Legal
-Mageni publishes this open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
-
-## Fair Use
-Mageni publishes this open-source software as fair use of copyrighted work for purposes of teaching and research (See 17 U.S.C. § 107). *Mageni does not sells the open-source software. This software is, and always will be, free and open source.*
-
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
-
-## Legal
-This open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
