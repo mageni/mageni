@@ -175,11 +175,24 @@ Mageni uses a lot of open source projects and we thank them with all our hearts.
 
 If you believe that, according to the DMCA, we are missing something, drop us an email to dmca@mageni.net
 
-**Please note that the DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false information could also result in civil liability — that is, you could get sued for money damages. The DMCA itself provides for damages against any person who knowingly materially misrepresents that material or activity is infringing.**
+**Please note that the DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued for money damages. The DMCA itself provides for damages against <i>any</i> person who knowingly materially misrepresents that material or activity is infringing.**
+
+The DMCA provides a remedy for bad-faith takedowns, specifically:
+
+Any person who knowingly materially misrepresents under this section
+
+1. that material or activity is infringing, or
+2. that material or activity was removed or disabled by mistake or misidentification, shall be liable for any damages, including costs and attorneys’ fees, incurred by the alleged infringer, by any copyright owner or copyright owner’s authorized licensee, or by a service provider, who is injured by such misrepresentation, as the result of the service provider relying upon such misrepresentation in removing or disabling access to the material or activity claimed to be infringing, or in replacing the removed material or ceasing to disable access to it.
+
+<a href="https://www.govinfo.gov/content/pkg/USCODE-2011-title17/pdf/USCODE-2011-title17-chap5-sec512.pdf" target="_blank">17 U.S.C.A. § 512</a>
 
 ### Free, forever free.
 
-**Please note that Mageni does not sells the open source software. This software is, and always will be, free and open source.**
+**Mageni does not sells the open source software. This software is, and always will be, free and open source.**
+
+## Legal
+The open source software is provided solely for lawful purposes and use. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
+
 
 ## License
 Mageni is released under the <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2 license</a>
