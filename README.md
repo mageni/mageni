@@ -169,13 +169,13 @@ You can also contribute with:
 For more information, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
 
 ## Thank you, open source
-Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. In this repository you will find the Software Bill of Materials (SBOM). <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their respective copyrights. 
+Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. In this repository you will find the <a href="https://github.com/mageni/mageni/tree/master/sbom">Software Bill of Materials (SBOM)</a>. <a href="https://www.mageni.net/opensource" target="_blank">This website</a> has the list of all open source software that Mageni uses and their respective copyrights. 
 
 ### DMCA
 
 If you believe that, according to the DMCA, we are missing something, drop us an email to dmca@mageni.net
 
-Before submitting or sending an email, please be aware and read the <a href="https://www.copyright.gov/legislation/pl105-304.pdf">DMCA</a> and <a href="https://www.copyright.gov/title17/title17.pdf" target="_blank">US Copyright Law</a>
+Before submitting or sending an email, please be aware and read the <a href="https://www.copyright.gov/legislation/pl105-304.pdf" target="_blank">DMCA</a>, <a href="https://uscode.house.gov/view.xhtml?path=/prelim@title18/part1/chapter79&edition=prelim" target="_blank">18 U.S. Code § 1621 - Perjury generally</a>, and <a href="https://www.copyright.gov/title17/title17.pdf" target="_blank">US Copyright Law</a>
 
 **The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued. The DMCA provides a remedy for bad-faith takedowns**, specifically:
 
