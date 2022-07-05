@@ -191,7 +191,10 @@ Any person who knowingly materially misrepresents under this section
 **Mageni does not sells the open source software. This software is, and always will be, free and open source.**
 
 ## Legal
-Mageni publishes this open source software on Github solely for lawful purposes and use and for education and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes and other types of government authority.
+Mageni publishes this open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
+
+## Fair Use
+Mageni publishes this open-source software as fair use of copyrighted work for purposes of teaching and research (See 17 U.S.C. § 107). *Mageni does not sells the open-source software. This software is, and always will be, free and open source.*
 
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
