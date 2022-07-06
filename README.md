@@ -171,16 +171,35 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
-### Fair Use
-Mageni publishes this open-source software as fair use of copyrighted work for purposes of education, teaching and research (See 17 U.S.C. § 107).  *“fair use is not just excused by the law, it is wholly authorized by the law.”* Lenz v. Universal Music Corp., 815 F.3d 1145, 1151 (9th Cir. 2016). Mageni is using copyrighted work as authorized by 17 U.S.C. § 107
+### Fair Use Rights of a GPL-covered Program
+Mageni publishes the open-source software as fair use of copyrighted work for purposes of education, teaching and research (See 17 U.S.C. § 107). *“fair use is not just excused by the law, it is wholly authorized by the law.”* Lenz v. Universal Music Corp., 815 F.3d 1145, 1151 (9th Cir. 2016). *“[A]nyone who . . . makes a fair use of the work is not an infringer of the copyright with respect to such use.”* Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 433 (1984). 
 
-### DMCA
+When using the source code of GPL-covered program, the GPL also grants you "fair use" rights. 
 
-If you believe that, according to the DMCA, we are missing something, drop us an email to dmca@mageni.net
+> Do I have “fair use” rights in using the source code of a GPL-covered program?
+> Yes, you do. “Fair use” is use that is allowed without any special permission. **Since you don't need the developers' permission for such use, you can do 
+> it regardless of what the developers said about it—in the license or elsewhere, whether that license be the GNU GPL or any other free software license.**
+> Source: <a href="https://www.gnu.org/licenses/gpl-faq.en.html#GPLFairUse">https://www.gnu.org/licenses/gpl-faq.en.html#GPLFairUse</a>
 
-Before submitting or sending an email, please consult your lawyer, be aware and read the <a href="https://www.copyright.gov/legislation/pl105-304.pdf" target="_blank">DMCA</a>, <a href="https://uscode.house.gov/view.xhtml?path=/prelim@title18/part1/chapter79&edition=prelim" target="_blank">18 U.S. Code § 1621 - Perjury generally</a>, and <a href="https://www.copyright.gov/title17/title17.pdf" target="_blank">US Copyright Law</a>
+Mageni is using copyrighted source code as authorized by 17 U.S.C. § 107 and the source code is covered by the GPL granting you "fair use" rights. So please feel free to use the software.
 
-**The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both. The DMCA also provides a remedy for bad-faith takedowns**, specifically:
+### DMCA Policy
+
+#### Introduction
+
+This policy is intended to implement the procedures described in the Title II of the Digital Millennium Copyright Act, 17 U.S.C. Section 512 (DMCA) for the reporting of alleged copyright infringement. It is the policy of Mageni to respect the legitimate rights of copyrights owners, their agents and representatives. Mageni respects the legal protections provided by applicable copyright law. 
+
+#### Designated Agent
+
+Notification of alleged infringement should be sent to our designated agent. Upon receipt of notification of claimed infringement, we will follow the procedures to comply with the DMCA.
+
+Legal Department<br />
+Mageni Security LLC<br />
+44 South Broadway, STE 100<br />
+White Plains, NY 10601<br />
+Email: dmca@mageni.net
+
+Please send any notifications under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) **Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** *The DMCA also provides a remedy for bad-faith takedowns, specifically:*
 
 Any person who knowingly materially misrepresents under this section
 
