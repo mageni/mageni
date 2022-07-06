@@ -185,7 +185,7 @@ According to the GPL and the Supreme Court, you can exercise your fair use right
 
 > “[A]nyone who . . . makes a fair use of the work is not an infringer of the copyright with respect to such use.” Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 433 (1984).
 
-The 17 U.S.C. § 102 states that the copyright protection cannot be extended to “any idea, procedure, process, system, method of operation, concept, principle, or discovery ....” Mageni is exercising its fair use rights as authorized by 17 U.S.C. § 107 and the source code is covered by the GPL granting you "fair use" rights. So you are free to use the software.
+The 17 U.S.C. § 102 states that the copyright protection cannot be extended to “any idea, procedure, process, system, method of operation, concept, principle, or discovery ....” Mageni is exercising its fair use rights as authorized by 17 U.S.C. § 107 and the source code is covered by the GPL extending to you the GPL "fair use" rights. This means that, according to the laws and the free software licenses, you are free to use this software.
 
 ### DMCA Policy
 
