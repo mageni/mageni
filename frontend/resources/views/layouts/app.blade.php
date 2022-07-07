@@ -97,6 +97,13 @@
                                 Reports
                             </a>
 
+                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                  </svg>
+                                Asset Management
+                            </a>
+
                             <a href="{{ route('users') }}" class="@if(Request::is('users')) {{ 'bg-indigo-800' }} @endif flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600 group">
                                 <!-- Heroicon name: outline/users -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -196,6 +203,14 @@
                                 Reports
                             </a>
 
+
+                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                  </svg>
+                                Asset Management
+                            </a>
+
                             <a href="{{ route('users') }}" class="@if(Request::is('users')) {{ 'bg-indigo-800' }} @endif flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600 group">
                                 <!-- Heroicon name: outline/users -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -250,6 +265,17 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                                         </svg>
                                         Support
+                                    </a>
+
+                                    <a 
+                                    href="https://www.mageni.net/login" 
+                                    class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
+                                    target="_blank"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-4 text-indigo-300 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                          </svg>
+                                        About
                                     </a>
                                 </div>
                             </div>
