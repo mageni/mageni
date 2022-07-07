@@ -203,7 +203,16 @@ Mageni Security LLC<br />
 White Plains, NY 10601<br />
 Email: opensource@mageni.net
 
-Please send any notifications under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. **It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) so submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** The DMCA also provides a remedy for bad-faith takedowns, specifically:
+Before sending any notifications please be aware that, according to the law, "a copyright holder must consider the existence of fair use before sending a takedown notification under § 512(c)." Lenz v. Universal Music Corp., 815 F.3d 1145, 1151 (9th Cir. 2016).  Mageni is using GPL software which grants "fair use" rights to the users of a GPL-covered program.
+
+> Do I have “fair use” rights in using the source code of a GPL-covered program?
+> **Yes, you do. “Fair use” is use that is allowed without any special permission. Since you don't need the developers' permission for such use, you can do 
+> it regardless of what the developers said about it—in the license or elsewhere, whether that license be the GNU GPL or any other free software license.**
+> Source: <a href="https://www.gnu.org/licenses/gpl-faq.en.html#GPLFairUse">https://www.gnu.org/licenses/gpl-faq.en.html#GPLFairUse</a>
+
+> **if a copyright holder ignores or neglects our unequivocal holding that it must consider fair use before sending a takedown notification, it is liable for  damages under § 512(f).** A copyright holder who pays  lip service to the consideration of fair use by claiming it formed a good faith belief when there is evidence to the contrary is still subject to §  512(f) liability. Lenz v. Universal Music Corp., 815 F.3d 1145, 1151 (9th Cir. 2016).
+
+If in Mageni's repositories you find code that is not covered by a free software license, please send the notification under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. **It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) so submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** The DMCA also provides a remedy for bad-faith takedowns, specifically:
 
 Any person who knowingly materially misrepresents under this section
 
