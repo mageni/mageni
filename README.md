@@ -185,7 +185,7 @@ According to the GPL and the Supreme Court, you can exercise your fair use right
 
 > “[A]nyone who . . . makes a fair use of the work is not an infringer of the copyright with respect to such use.” Sony Corp. of Am. v. Universal City Studios, Inc., 464 U.S. 417, 433 (1984).
 
-The 17 U.S.C. § 102 states that the copyright protection cannot be extended to “any idea, procedure, process, system, method of operation, concept, principle, or discovery ....” Mageni is exercising its fair use rights as authorized by 17 U.S.C. § 107 and the source code is covered by the GPL extending to you the GPL "fair use" rights. This means that, according to the laws and the free software licenses, you are free to use this software.
+The 17 U.S.C. § 102 states that the copyright protection cannot be extended to “any idea, procedure, process, system, method of operation, concept, principle, or discovery ....” Mageni is exercising its fair use rights as authorized by 17 U.S.C. § 107 and the source code is covered by the GPL extending to you the GPL "fair use" rights. 
 
 ### DMCA Policy
 
@@ -203,7 +203,7 @@ Mageni Security LLC<br />
 White Plains, NY 10601<br />
 Email: dmca@mageni.net
 
-Please send any notifications under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) **Submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** *The DMCA also provides a remedy for bad-faith takedowns, specifically:*
+Please send any notifications under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. **It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) so submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** The DMCA also provides a remedy for bad-faith takedowns, specifically:
 
 Any person who knowingly materially misrepresents under this section
 
