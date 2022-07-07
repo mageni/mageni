@@ -214,14 +214,10 @@ See 17 U.S.C.A. § 512
 
 ### Free, forever free.
 
-**Mageni does not sells the open source software. This software is, and always will be, free and open source.**
+Mageni does not sells the open source software. This software is, and always will be, free and open source.
 
 ## Legal
 Mageni publishes this open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
-
-## Disclaimer
-
-Mageni did not obtain this code from reverse engineering. All source code is and was publicly available under <a href="https://opensource.org/licenses/alphabetical">open-source licenses</a>
 
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
