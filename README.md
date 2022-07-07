@@ -201,7 +201,7 @@ Legal Department<br />
 Mageni Security LLC<br />
 44 South Broadway, STE 100<br />
 White Plains, NY 10601<br />
-Email: dmca@mageni.net
+Email: opensource@mageni.net
 
 Please send any notifications under the DMCA of alleged infringement to the above address. The DMCA requires that notices of alleged infringement include specific information. Consult your lawyer before submitting or sending an email to the above address. The DMCA requires that you swear to the facts in your copyright complaint under penalty of perjury. **It is a federal crime to intentionally lie in a sworn declaration. (See U.S. Code, Title 18, Section 1621.) so submitting false, fraudulent, and bad faith information could also result in civil liability — that is, you could get sued and you could be fined or imprisoned not more than five years, or both.** The DMCA also provides a remedy for bad-faith takedowns, specifically:
 
