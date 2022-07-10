@@ -22,7 +22,7 @@ Mageni is passionate about solving the world's toughest and most complex problem
 
 - **Unpatched and exposed services** account for 82% of successful attack (Tetra Defense)
 - 60% of breach victims were breached due to an **unpatched known vulnerability** (Ponemom Institute)
-- 62% were **unaware that they were vulnerable*** prior to the data breach (Ponemom Institute)
+- 62% were **unaware that they were vulnerable** prior to the data breach (Ponemom Institute)
 - $4.24 million cost per **data breach** on average; highest in 17-year report history (IBM)
 
 ### About Mageni
