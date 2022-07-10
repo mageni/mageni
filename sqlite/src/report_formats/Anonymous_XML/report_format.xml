@@ -1,9 +1,0 @@
-<report_format id="5057e5cc-b825-11e4-9d0e-28d24461215b">
-  <name>Anonymous XML</name>
-  <summary>Anonymous version of the raw XML report</summary>
-  <description>
-    Complete scan report in OpenVAS Manager XML format.
-  </description>
-  <extension>xml</extension>
-  <content_type>text/xml</content_type>
-</report_format>

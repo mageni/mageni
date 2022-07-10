@@ -1,9 +1,0 @@
-<report_format id="a994b278-1f62-11e1-96ac-406186ea4fc5">
-  <name>XML</name>
-  <summary>Raw XML report.</summary>
-  <description>
-    Complete scan report in OpenVAS Manager XML format.
-  </description>
-  <extension>xml</extension>
-  <content_type>text/xml</content_type>
-</report_format>
