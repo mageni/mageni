@@ -16,16 +16,18 @@
 
 ## Introduction
 
-### The Problem
+Mageni is passionate about solving the world's toughest and most complex problems using open-source. 
 
-- Unpatched and exposed services account for 82% of successful attack (Tetra Defense)
-- 60% of breach victims were breached due to an unpatched known vulnerability (Ponemom Institute)
-- 62% were unaware that they were vulnerable prior to the data breach (Ponemom Institute)
-- $4.24 million cost per data breach on average; highest in 17-year report history (IBM)
+### What problem does Mageni help you to solve?
 
-### The Solution
+- **Unpatched and exposed services** account for 82% of successful attack (Tetra Defense)
+- 60% of breach victims were breached due to an **unpatched known vulnerability** (Ponemom Institute)
+- 62% were **unaware that they were vulnerable*** prior to the data breach (Ponemom Institute)
+- $4.24 million cost per **data breach** on average; highest in 17-year report history (IBM)
 
-Mageni is passionate about solving the world's toughest problems using open-source. That's why Mageni provides a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and security breaches
+### About Mageni
+
+Mageni provides a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches
 
 Mageni eases for you the vulnerability management cycle and takes the discomfort, angst and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
 
