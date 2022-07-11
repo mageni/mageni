@@ -1,5 +1,5 @@
 /* 
- * Most new code since 2022 by Mageni Security LLC
+ * Most new code since 2020 by Mageni Security LLC
  * Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
  * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
  * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
