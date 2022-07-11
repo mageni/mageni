@@ -55,33 +55,33 @@ endif (OPENVASSD_VERSION)
 
 add_definitions (-DPREFIX="${CMAKE_INSTALL_PREFIX}")
 
-if (OPENVAS_NVT_DIR)
-  add_definitions (-DOPENVAS_NVT_DIR="${OPENVAS_NVT_DIR}")
-endif (OPENVAS_NVT_DIR)
+if (MAGENI_NVT_DIR)
+  add_definitions (-DMAGENI_NVT_DIR="${MAGENI_NVT_DIR}")
+endif (MAGENI_NVT_DIR)
 
-if (OPENVASSD_CONF)
-  add_definitions (-DOPENVASSD_CONF="${OPENVASSD_CONF}")
-endif (OPENVASSD_CONF)
+if (MAGENI_CONF_DIR)
+  add_definitions (-DMAGENI_CONF_DIR="${MAGENI_CONF_DIR}")
+endif (MAGENI_CONF_DIR)
 
-if (OPENVAS_STATE_DIR)
-  add_definitions (-DOPENVAS_STATE_DIR="${OPENVAS_STATE_DIR}")
-endif (OPENVAS_STATE_DIR)
+if (MAGENI_STATE_DIR)
+  add_definitions (-DMAGENI_STATE_DIR="${MAGENI_STATE_DIR}")
+endif (MAGENI_STATE_DIR)
 
-if (OPENVAS_RUN_DIR)
-  add_definitions (-DOPENVAS_RUN_DIR="${OPENVAS_RUN_DIR}")
-endif (OPENVAS_RUN_DIR)
+if (MAGENI_PID_DIR)
+  add_definitions (-DMAGENI_PID_DIR="${MAGENI_PID_DIR}")
+endif (MAGENI_PID_DIR)
 
 if (SYSCONFDIR)
   add_definitions (-DSYSCONFDIR="${SYSCONFDIR}")
 endif (SYSCONFDIR)
 
-if (OPENVAS_SYSCONF_DIR)
-  add_definitions (-DOPENVAS_SYSCONF_DIR="${OPENVAS_SYSCONF_DIR}")
-endif (OPENVAS_SYSCONF_DIR)
+if (MAGENI_SYSCONF_DIR)
+  add_definitions (-DMAGENI_SYSCONF_DIR="${MAGENI_SYSCONF_DIR}")
+endif (MAGENI_SYSCONF_DIR)
 
-if (OPENVAS_DATA_DIR)
-  add_definitions (-DOPENVAS_DATA_DIR="${OPENVAS_DATA_DIR}")
-endif (OPENVAS_DATA_DIR)
+if (MAGENI_DATA_DIR)
+  add_definitions (-DMAGENI_DATA_DIR="${MAGENI_DATA_DIR}")
+endif (MAGENI_DATA_DIR)
 
 if (NVT_TIMEOUT)
   add_definitions (-DNVT_TIMEOUT=${NVT_TIMEOUT})
@@ -113,7 +113,7 @@ install (TARGETS ${BINARY_NAME}
          GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
 
 install (FILES ${CMAKE_SOURCE_DIR}/build/src/vscand_log.conf
-         DESTINATION ${OPENVAS_SYSCONF_DIR})
+         DESTINATION ${MAGENI_SYSCONF_DIR})
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/redis_config_examples/redis_0.conf
@@ -155,7 +155,7 @@ install (FILES
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/varinit/donotremove
-        DESTINATION ${OPENVAS_NVT_DIR})
+        DESTINATION ${MAGENI_NVT_DIR})
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/varinit/donotremove
@@ -175,11 +175,11 @@ install (FILES
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/varinit/donotremove
-        DESTINATION ${OPENVAS_RUN_DIR})
+        DESTINATION ${MAGENI_PID_DIR})
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/varinit/donotremove
-        DESTINATION ${GVM_LOG_DIR})
+        DESTINATION ${MAGENI_LOG_DIR})
 
 install (FILES
         ${CMAKE_SOURCE_DIR}/build/doc/sudoersd/mageni-service-init

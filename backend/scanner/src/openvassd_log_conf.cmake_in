@@ -7,12 +7,12 @@
 prepend=%t %s %p
 separator=:
 prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
-file=${GVM_LOG_DIR}/mageni-vscand.log
+file=${MAGENI_LOG_DIR}/mageni-vscand.log
 level=127
 
 [*]
 prepend=%t %s %p
 separator=:
 prepend_time_format=%Y-%m-%d %Hh%M.%S %Z
-file=${GVM_LOG_DIR}/mageni-vscand.log
+file=${MAGENI_LOG_DIR}/mageni-vscand.log
 level=127

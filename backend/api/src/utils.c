@@ -1,4 +1,6 @@
-/* Copyright (C) 2016-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2020 by Mageni Security LLC
+ * Copyright (C) 2016-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -388,7 +390,7 @@ lock_internal (lockfile_t *lockfile,
 
   /* Open the lock file. */
 
-  lockfile_name = g_build_filename (GVM_RUN_DIR, lockfile_basename, NULL);
+  lockfile_name = g_build_filename (MAGENI_RUN_DIR, lockfile_basename, NULL);
 
   fd = open (lockfile_name,
              O_RDWR | O_CREAT | O_APPEND,

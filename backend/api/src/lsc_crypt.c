@@ -1,4 +1,6 @@
-/* Copyright (C) 2013-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2013-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -259,7 +261,7 @@ again:
 
   if (err)
     {
-      char *path = g_build_filename (GVMD_STATE_DIR, "gnupg", NULL);
+      char *path = g_build_filename (MAGENI_STATE_DIR, "gnupg", NULL);
 
       /* We better reset the gpgme context after an error.  */
       gpgme_release (ctx->encctx);
@@ -484,7 +486,7 @@ do_decrypt (lsc_crypt_ctx_t ctx,
 lsc_crypt_ctx_t
 lsc_crypt_new ()
 {
-  char *path = g_build_filename (GVMD_STATE_DIR, "gnupg", NULL);
+  char *path = g_build_filename (MAGENI_STATE_DIR, "gnupg", NULL);
   lsc_crypt_ctx_t ctx;
 
   ctx = g_malloc0 (sizeof *ctx);

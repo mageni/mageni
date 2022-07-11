@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2019 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2009-2019 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -115,7 +117,7 @@ nasl_verify_signature (const char *filename, const char *fcontent, size_t flen)
   gchar *scontent = NULL;
   gchar *offset = NULL;
   gchar *endpos = NULL;
-  gchar *path = g_build_filename (OPENVAS_SYSCONF_DIR, "gnupg", NULL);
+  gchar *path = g_build_filename (MAGENI_SYSCONF_DIR, "gnupg", NULL);
   gboolean success;
   gpgme_error_t err;
   gpgme_ctx_t ctx = gvm_init_gpgme_ctx_from_dir (path);

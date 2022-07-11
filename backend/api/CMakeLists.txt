@@ -1,3 +1,4 @@
+# Most new code since 2020 by Mageni Security LLC
 # Copyright (C) 2009-2018 Greenbone Networks GmbH
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
@@ -30,13 +31,13 @@ set (C_FLAGS_DEBUG_GVMD         "-Wredundant-decls")
 
 add_subdirectory (src)
 
-install (DIRECTORY DESTINATION ${GVMD_STATE_DIR})
+install (DIRECTORY DESTINATION ${MAGENI_STATE_DIR})
 
 install (FILES ${CMAKE_SOURCE_DIR}/build/src/sqlite_log.conf
-         DESTINATION ${GVM_SYSCONF_DIR})
+         DESTINATION ${MAGENI_SYSCONF_DIR})
 
 install (FILES ${CMAKE_SOURCE_DIR}/build/src/pwpolicy.conf
-         DESTINATION ${GVM_SYSCONF_DIR})
+         DESTINATION ${MAGENI_SYSCONF_DIR})
 
 install (FILES ${CMAKE_SOURCE_DIR}/build/tools/mageni-manage-certs
          DESTINATION ${BINDIR}

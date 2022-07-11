@@ -1,4 +1,6 @@
-/* Copyright (C) 2014-2018 Greenbone Networks GmbH
+/*
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2014-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -56,7 +58,7 @@
 /**
  * @brief Location of SCAP db.
  */
-#define SCAP_DB_DIR GVMD_STATE_DIR "/scap/"
+#define SCAP_DB_DIR MAGENI_STATE_DIR "/scap/"
 
 /**
  * @brief Location of SCAP db.
@@ -66,7 +68,7 @@
 /**
  * @brief Location of CERT db.
  */
-#define CERT_DB_DIR GVMD_STATE_DIR "/cert/"
+#define CERT_DB_DIR MAGENI_STATE_DIR "/cert/"
 
 /**
  * @brief Location of CERT db.

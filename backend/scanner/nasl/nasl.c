@@ -342,7 +342,7 @@ main (int argc, char **argv)
       add_nasl_inc_dir (include_dir);
     }
 
-  prefs_config (config_file ?: OPENVASSD_CONF);
+  prefs_config (config_file ?: MAGENI_CONF_DIR);
   while ((host = gvm_hosts_next (hosts)))
     {
       struct in6_addr ip6;

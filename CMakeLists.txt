@@ -1,3 +1,22 @@
+* Most new code since 2020 by Mageni Security LLC
+# Based on work Copyright (C) 2011-2019 Greenbone Networks GmbH
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
 cmake_minimum_required (VERSION 3.10.2)
 
 set (PROJECT_VERSION_MAJOR "1")
@@ -192,170 +211,36 @@ else (NOT PCAP)
     endif (PCAP_CONFIG)
 endif (NOT PCAP)
 
-if (NOT SYSCONFDIR)
-    set (SYSCONFDIR "${CMAKE_INSTALL_PREFIX}/etc")
-endif (NOT SYSCONFDIR)
-
-if (NOT EXEC_PREFIX)
-    set (EXEC_PREFIX "${CMAKE_INSTALL_PREFIX}")
-endif (NOT EXEC_PREFIX)
-
-if (NOT BINDIR)
-    set (BINDIR "${EXEC_PREFIX}/bin")
-endif (NOT BINDIR)
-
-if (NOT SBINDIR)
-    set (SBINDIR "${EXEC_PREFIX}/sbin")
-endif (NOT SBINDIR)
-
-if (NOT LIBDIR)
-    set (LIBDIR "${EXEC_PREFIX}/lib")
-endif (NOT LIBDIR)
-
-if (NOT LOCALSTATEDIR)
-    set (LOCALSTATEDIR "${CMAKE_INSTALL_PREFIX}/var")
-endif (NOT LOCALSTATEDIR)
-
-if (NOT INCLUDEDIR)
-    set (INCLUDEDIR "${CMAKE_INSTALL_PREFIX}/include")
-endif (NOT INCLUDEDIR)
-
-if (NOT DATADIR)
-    set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-endif (NOT DATADIR)
-
-if (NOT GSAD_PID_DIR)
-    set (GSAD_PID_DIR "${LOCALSTATEDIR}/run")
-endif (NOT GSAD_PID_DIR)
-
-if (NOT GVM_STATE_DIR)
-    set (GVM_STATE_DIR "${LOCALSTATEDIR}/lib/mageni")
-else (NOT GVM_STATE_DIR)
-    set (GVM_STATE_DIR "${GVM_STATE_DIR}")
-endif (NOT GVM_STATE_DIR)
-
-if (NOT GVM_LOG_DIR)
-    set (GVM_LOG_DIR "${LOCALSTATEDIR}/log/mageni")
-else (NOT GVM_LOG_DIR)
-    set (GVM_LOG_DIR "${GVM_LOG_DIR}")
-endif (NOT GVM_LOG_DIR)
-
-set (GSAD_DATA_DIR "${DATADIR}/mageni/websvr")
-set (GSAD_LOCALE_SUBDIR "locale")
-set (GSAD_LOCALE_DIR "${GSAD_DATA_DIR}/${GSAD_LOCALE_SUBDIR}")
-set (GSAD_CHROOT_LOCALE_DIR "/${GSAD_LOCALE_SUBDIR}")
-
-if (NOT GVM_SERVER_CERTIFICATE)
-    set (GVM_SERVER_CERTIFICATE "${GVM_STATE_DIR}/CA/servercert.pem")
-else (NOT GVM_SERVER_CERTIFICATE)
-    set (GVM_SERVER_CERTIFICATE "${GVM_SERVER_CERTIFICATE}")
-endif (NOT GVM_SERVER_CERTIFICATE)
-
-if (NOT GVM_SERVER_KEY)
-    set (GVM_SERVER_KEY "${GVM_STATE_DIR}/private/CA/serverkey.pem")
-else (NOT GVM_SERVER_KEY)
-    set (GVM_SERVER_KEY "${GVM_SERVER_KEY}")
-endif (NOT GVM_SERVER_KEY)
-
-if (NOT GVM_CA_CERTIFICATE)
-    set (GVM_CA_CERTIFICATE "${GVM_STATE_DIR}/CA/cacert.pem")
-else (NOT GVM_CA_CERTIFICATE)
-    set (GVM_CA_CERTIFICATE "${GVM_CA_CERTIFICATE}")
-endif (NOT GVM_CA_CERTIFICATE)
-
-set (GSAD_CONFIG_DIR         "${SYSCONFDIR}/mageni/")
-
-if (NOT GVM_RUN_DIR)
-    set (GVM_RUN_DIR      "${LOCALSTATEDIR}/run")
-endif (NOT GVM_RUN_DIR)
-
-if (NOT GVM_SYSCONF_DIR)
-    set (GVM_SYSCONF_DIR "${SYSCONFDIR}/mageni")
-endif (NOT GVM_SYSCONF_DIR)
-
-if (NOT GVM_PID_DIR)
-    set (GVM_PID_DIR "${LOCALSTATEDIR}/run")
-endif (NOT GVM_PID_DIR)
-
-if (NOT OPENVAS_RUN_DIR)
-    set (OPENVAS_RUN_DIR "${LOCALSTATEDIR}/run")
-endif (NOT OPENVAS_RUN_DIR)
-
-set (OPENVAS_DATA_DIR    "${DATADIR}/mageni")
-set (OPENVAS_STATE_DIR   "${LOCALSTATEDIR}/lib/mageni")
-set (GVM_LOG_DIR         "${LOCALSTATEDIR}/log/mageni")
-set (OPENVAS_SYSCONF_DIR "${SYSCONFDIR}/mageni")
-set (GVM_SYSCONF_DIR     "${SYSCONFDIR}/mageni")
-set (GVM_SCANNER_CERTIFICATE "${GVM_STATE_DIR}/CA/servercert.pem")
-set (GVM_SCANNER_KEY         "${GVM_STATE_DIR}/private/CA/serverkey.pem")
-set (GVM_CLIENT_CERTIFICATE  "${GVM_STATE_DIR}/CA/clientcert.pem")
-set (GVM_CLIENT_KEY          "${GVM_STATE_DIR}/private/CA/clientkey.pem")
-set (GVM_CA_CERTIFICATE      "${GVM_STATE_DIR}/CA/cacert.pem")
-set (GVM_DATA_DIR     "${DATADIR}/mageni")
-set (GVM_SCAP_RES_DIR "${GVM_DATA_DIR}/scap")
-set (GVM_CERT_RES_DIR "${GVM_DATA_DIR}/cert")
-set (GVM_CA_DIR       "${GVMD_STATE_DIR}/trusted_certs")
-set (OPENVASSD_CONF     "${OPENVAS_SYSCONF_DIR}/vscand.conf")
-
-if (NOT OPENVAS_NVT_DIR)
-    set (OPENVAS_NVT_DIR     "/usr/local/var/lib/mageni/plugins")
-endif (NOT OPENVAS_NVT_DIR)
-
-if (NOT MAGENI_TMP_DIR)
-    set (MAGENI_TMP_DIR     "/usr/local/var/lib/mageni/tmp")
-endif (NOT MAGENI_TMP_DIR)
-
-if (NOT PLUGINS_TMP_DIR)
-    set (PLUGINS_TMP_DIR     "/usr/local/var/lib/mageni/tmp/plugins")
-endif (NOT PLUGINS_TMP_DIR)
-
-if (NOT FRONTEND_TMP_DIR)
-    set (FRONTEND_TMP_DIR     "/usr/local/var/lib/mageni/tmp/frontend")
-endif (NOT FRONTEND_TMP_DIR)
-
-if (NOT BACKEND_TMP_DIR)
-    set (BACKEND_TMP_DIR     "/usr/local/var/lib/mageni/tmp/backend")
-endif (NOT BACKEND_TMP_DIR)
-
-if (NOT ETC_CROND_DIR)
-    set (ETC_CROND_DIR     "/etc/cron.d/")
-endif (NOT ETC_CROND_DIR)
-
-if (NOT ETC_SUDOERS_DIR)
-    set (ETC_SUDOERS_DIR     "/etc/sudoers.d/")
-endif (NOT ETC_SUDOERS_DIR)
-
-if (NOT CERT_DIR)
-    set (CERT_DIR     "${OPENVAS_STATE_DIR}/cert-data")
-endif (NOT CERT_DIR)
-
-if (NOT SCAP_DIR)
-    set (SCAP_DIR     "${OPENVAS_STATE_DIR}/scap-data")
-endif (NOT SCAP_DIR)
-
-if (NOT GVM_ACCESS_KEY_DIR)
-    set (GVM_ACCESS_KEY_DIR "${GVM_SYSCONF_DIR}")
-endif (NOT GVM_ACCESS_KEY_DIR)
-
-if (NOT GVM_NVT_DIR)
-    set (GVM_NVT_DIR "${LOCALSTATEDIR}/lib/mageni/plugins/")
-endif (NOT GVM_NVT_DIR)
-
-if (NOT GVM_CERT_DATA_DIR)
-    set (GVM_CERT_DATA_DIR "${GVM_STATE_DIR}/cert-data")
-endif (NOT GVM_CERT_DATA_DIR)
-
-if (NOT GVM_SCAP_DATA_DIR)
-    set (GVM_SCAP_DATA_DIR "${GVM_STATE_DIR}/scap-data")
-endif (NOT GVM_SCAP_DATA_DIR)
-
-if (NOT GVMD_DATA_DIR)
-    set (GVMD_DATA_DIR  "${GVM_DATA_DIR}/sqlite")
-endif (NOT GVMD_DATA_DIR)
-
-if (NOT GVMD_STATE_DIR)
-    set (GVMD_STATE_DIR  "${GVM_STATE_DIR}/sqlite")
-endif (NOT GVMD_STATE_DIR)
+set (SYSCONFDIR                 "${CMAKE_INSTALL_PREFIX}/etc")
+set (EXEC_PREFIX                "${CMAKE_INSTALL_PREFIX}")
+set (BINDIR                     "${EXEC_PREFIX}/bin")
+set (SBINDIR                    "${EXEC_PREFIX}/sbin")
+set (LIBDIR                     "${EXEC_PREFIX}/lib")
+set (INCLUDEDIR                 "${CMAKE_INSTALL_PREFIX}/include")
+set (LOCALSTATEDIR              "${CMAKE_INSTALL_PREFIX}/var")
+set (DATADIR                    "${CMAKE_INSTALL_PREFIX}/share")
+set (MAGENI_DATA_DIR            "${DATADIR}/mageni")
+set (MAGENI_STATE_DIR           "${LOCALSTATEDIR}/lib/mageni")
+set (MAGENI_LOG_DIR             "${LOCALSTATEDIR}/log/mageni")
+set (MAGENI_RUN_DIR             "${LOCALSTATEDIR}/run")
+set (MAGENI_PID_DIR             "${LOCALSTATEDIR}/run")
+set (MAGENI_SYSCONF_DIR         "${SYSCONFDIR}/mageni")
+set (MAGENI_CONF_DIR            "${MAGENI_SYSCONF_DIR}/vscand.conf")
+set (MAGENI_SCANNER_CERTIFICATE "${MAGENI_STATE_DIR}/CA/servercert.pem")
+set (MAGENI_SCANNER_KEY         "${MAGENI_STATE_DIR}/private/CA/serverkey.pem")
+set (MAGENI_CLIENT_CERTIFICATE  "${MAGENI_STATE_DIR}/CA/clientcert.pem")
+set (MAGENI_CLIENT_KEY          "${MAGENI_STATE_DIR}/private/CA/clientkey.pem")
+set (MAGENI_CA_CERTIFICATE      "${MAGENI_STATE_DIR}/CA/cacert.pem")
+set (MAGENI_CA_DIR              "${MAGENI_STATE_DIR}/trusted_certs")
+set (MAGENI_SQLITE_DIR          "${MAGENI_STATE_DIR}/sqlite")
+set (MAGENI_NVT_DIR             "${MAGENI_STATE_DIR}/plugins")
+set (MAGENI_TMP_DIR             "${MAGENI_STATE_DIR}/tmp")
+set (PLUGINS_TMP_DIR            "${MAGENI_STATE_DIR}/tmp/plugins")
+set (FRONTEND_TMP_DIR           "${MAGENI_STATE_DIR}/tmp/frontend")
+set (BACKEND_TMP_DIR            "${MAGENI_STATE_DIR}/tmp/backend")
+set (MAGENI_ACCESS_KEY_DIR      "${MAGENI_SYSCONF_DIR}")
+set (ETC_CROND_DIR              "/etc/cron.d/")
+set (ETC_SUDOERS_DIR            "/etc/sudoers.d/")
 
 add_subdirectory (backend/libraries)
 add_subdirectory (backend/scanner)

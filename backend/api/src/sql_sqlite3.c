@@ -1,4 +1,6 @@
-/* Copyright (C) 2014-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2020 by Mageni Security LLC
+ * Copyright (C) 2014-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -62,6 +64,10 @@
  * @brief Busy timeout, in milliseconds.
  */
 #define BUSY_TIMEOUT 5000
+
+#ifndef MAGENI_SQLITE_DIR
+#define MAGENI_SQLITE_DIR "/usr/local/var/lib/mageni/sqlite"
+#endif
 
 /* Headers of sql.c symbols used only here. */
 
@@ -183,7 +189,7 @@ sql_is_open ()
 const char *
 sql_default_database ()
 {
-  return GVMD_STATE_DIR "/sqlite.db";
+  return MAGENI_SQLITE_DIR "/sqlite.db";
 }
 
 /**
@@ -211,12 +217,12 @@ sql_open (const char *database)
 
   /* Ensure the database directory exists. */
 
-  ret = g_mkdir_with_parents (GVMD_STATE_DIR, 0755 /* "rwxr-xr-x" */);
+  ret = g_mkdir_with_parents (MAGENI_SQLITE_DIR, 0755 /* "rwxr-xr-x" */);
   if (ret == -1)
     {
       g_warning ("%s: failed to create database directory %s: %s",
                  __FUNCTION__,
-                 GVMD_STATE_DIR,
+                 MAGENI_SQLITE_DIR,
                  strerror (errno));
       abort ();
     }
