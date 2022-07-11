@@ -1,4 +1,6 @@
-/* Copyright (C) 2014-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2014-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -792,7 +794,7 @@ valid_db_resource_type (const char *type)
  * @brief GVM product ID.
  */
 #define GVM_PRODID \
-  "-//Mageni.net//NONSGML Mageni Security " GVMD_VERSION "//EN"
+  "-//Mageni.net//NONSGML Mageni Security " APID_VERSION "//EN"
 
 /**
  * @brief Try to get a built-in libical timezone from a tzid or city name.

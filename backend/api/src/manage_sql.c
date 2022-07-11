@@ -30455,7 +30455,7 @@ print_report_xml_start (report_t report, report_t delta, task_t task,
   else
     PRINT (out, "<report type=\"%s\">", type);
 
-  PRINT (out, "<gmp><version>%s</version></gmp>", GMP_VERSION);
+  PRINT (out, "<gmp><version>%s</version></gmp>", API_VERSION);
 
   if (delta)
     {

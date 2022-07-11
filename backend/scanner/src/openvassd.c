@@ -667,12 +667,7 @@ check_kb_status ()
 static void
 main_loop ()
 {
-#ifdef OPENVASSD_GIT_REVISION
-  g_message ("mageni-vscand %s (GIT revision %s) started", OPENVASSD_VERSION,
-             OPENVASSD_GIT_REVISION);
-#else
-  g_message ("mageni-vscand %s started", OPENVASSD_VERSION);
-#endif
+  g_message ("mageni-vscand %s started", SCANNER_VERSION);
   proctitle_set (PROCTITLE_WAITING);
   for (;;)
     {
@@ -880,12 +875,7 @@ start_single_task_scan ()
     g_message ("Could not initialize openvas SSL!");
 #endif
 
-#ifdef OPENVASSD_GIT_REVISION
-  g_message ("mageni-vscand %s (GIT revision %s) started", OPENVASSD_VERSION,
-             OPENVASSD_GIT_REVISION);
-#else
-  g_message ("mageni-vscand %s started", OPENVASSD_VERSION);
-#endif
+  g_message ("mageni-vscand %s started", SCANNER_VERSION);
 
   pidfile_create ("mageni-vscand");
   openvas_signal (SIGHUP, SIG_IGN);
@@ -986,10 +976,7 @@ main (int argc, char *argv[])
 
   if (display_version)
     {
-      printf ("Mageni Vulnerability Scanner (VSCAN) %s\n", OPENVASSD_VERSION);
-#ifdef OPENVASSD_GIT_REVISION
-      printf ("GIT revision %s\n", OPENVASSD_GIT_REVISION);
-#endif
+      printf ("Mageni Vulnerability Scanner (VSCAN) %s\n", SCANNER_VERSION);
       printf ("Most new code since 2020 by Mageni Security LLC\n");
       printf ("======================================================================\n");
       printf ("VSCAN was forked from openvassd 6.0.0 in 2020. openvassd was forked\n");

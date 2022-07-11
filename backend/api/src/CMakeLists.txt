@@ -88,17 +88,17 @@ if (DEBUG_FUNCTION_NAMES)
     add_definitions (-DDEBUG_FUNCTION_NAMES)
 endif (DEBUG_FUNCTION_NAMES)
 
-if (GVMD_VERSION)
-    add_definitions (-DGVMD_VERSION="${GVMD_VERSION}")
-endif (GVMD_VERSION)
+if (APID_VERSION)
+    add_definitions (-DAPID_VERSION="${APID_VERSION}")
+endif (APID_VERSION)
 
 if (NOT CMAKE_BUILD_TYPE MATCHES "Release")
     target_compile_options (${BINARY_NAME} PUBLIC ${C_FLAGS_DEBUG_GVMD})
 endif (NOT CMAKE_BUILD_TYPE MATCHES "Release")
 
-if (GMP_VERSION)
-    add_definitions (-DGMP_VERSION="${GMP_VERSION}")
-endif (GMP_VERSION)
+if (API_VERSION)
+    add_definitions (-DAPI_VERSION="${API_VERSION}")
+endif (API_VERSION)
 
 add_definitions (-DGVMD_DATABASE_VERSION=${GVMD_DATABASE_VERSION})
 add_definitions (-DGVMD_SCAP_DATABASE_VERSION=${GVMD_SCAP_DATABASE_VERSION})
