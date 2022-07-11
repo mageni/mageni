@@ -175,7 +175,7 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
-If you have questions about the GPL license, copyrights, matter of copyright law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#licenses-fair-use-and-dmca">go to our legal section on GitHub.</a>
+If you have questions about the GPL license, copyrights, matter of copyright law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub.</a>
 
 ## Free, forever free.
 
