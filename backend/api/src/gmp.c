@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2020 by Mageni Security LLC
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -19404,7 +19406,7 @@ handle_get_version (gmp_parser_t *gmp_parser, GError **error)
   SEND_TO_CLIENT_OR_FAIL ("<get_version_response"
                           " status=\"" STATUS_OK "\""
                           " status_text=\"" STATUS_OK_TEXT "\">"
-                          "<version>" GMP_VERSION "</version>"
+                          "<version>" API_VERSION "</version>"
                           "</get_version_response>");
   if (client_state == CLIENT_GET_VERSION_AUTHENTIC)
     set_client_state (CLIENT_AUTHENTIC);

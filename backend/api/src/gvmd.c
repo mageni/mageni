@@ -122,8 +122,8 @@
 /**
  * @brief The version number of this program.
  */
-#ifndef GVMD_VERSION
-#define GVMD_VERSION "-1"
+#ifndef APID_VERSION
+#define APID_VERSION "-1"
 #endif
 
 /**
@@ -2125,7 +2125,7 @@ main (int argc, char **argv)
 
   if (print_version)
     {
-        printf ("Mageni Vulnerability Scanner SQLite Database %s\n", GVMD_VERSION);
+        printf ("Mageni Vulnerability Scanner SQLite Database %s\n", APID_VERSION);
         printf ("SQLite3 DB revision %i\n", manage_db_supported_version ());
         printf ("Most new code since 2020 by Mageni Security, LLC\n");
         printf ("======================================================================\n");
@@ -2233,7 +2233,7 @@ main (int argc, char **argv)
   }
 
   g_message ("Mageni SQLite Manager Version %s (DB revision %i)",
-             GVMD_VERSION,
+             APID_VERSION,
              manage_db_supported_version ());
 
   /* Get exclusivity on the startup locks.

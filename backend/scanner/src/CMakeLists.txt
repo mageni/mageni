@@ -49,9 +49,9 @@ include_directories (
 
 set (CMAKE_C_FLAGS_DEBUG        "${CMAKE_C_FLAGS_DEBUG} -Wno-error  -Wextra")
 
-if (OPENVASSD_VERSION)
-  add_definitions (-DOPENVASSD_VERSION="${OPENVASSD_VERSION}")
-endif (OPENVASSD_VERSION)
+if (SCANNER_VERSION)
+  add_definitions (-DSCANNER_VERSION="${SCANNER_VERSION}")
+endif (SCANNER_VERSION)
 
 add_definitions (-DPREFIX="${CMAKE_INSTALL_PREFIX}")
 
