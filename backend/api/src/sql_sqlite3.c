@@ -65,10 +65,6 @@
  */
 #define BUSY_TIMEOUT 5000
 
-#ifndef MAGENI_SQLITE_DIR
-#define MAGENI_SQLITE_DIR "/usr/local/var/lib/mageni/sqlite"
-#endif
-
 /* Headers of sql.c symbols used only here. */
 
 int

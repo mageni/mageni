@@ -1,4 +1,4 @@
-* Most new code since 2020 by Mageni Security LLC
+# Most new code since 2020 by Mageni Security LLC
 # Based on work Copyright (C) 2011-2019 Greenbone Networks GmbH
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
@@ -26,7 +26,7 @@ set (PROJECT_VERSION_TWEAK "0")
 set (MGNI_DATABASE_VERSION "206")
 set (GVMD_DATABASE_VERSION "206")
 
-project (MGN VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}.${PROJECT_VERSION_TWEAK})
+project (mageni VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}.${PROJECT_VERSION_TWEAK})
 
 if (CODE_ANALYSIS MATCHES Yes)
     set (CODE_ANALYSIS "-fanalyzer")
@@ -41,7 +41,7 @@ if (CMAKE_BUILD_TYPE MATCHES Debug)
 elseif (CMAKE_BUILD_TYPE MATCHES Release)
     message (STATUS "Release build")
     set (CMAKE_BUILD_TYPE Release)
-else (NOT CMAKE_BUILD_TYPE)
+elseif (NOT CMAKE_BUILD_TYPE)
     message (STATUS "Release build")
     set (CMAKE_BUILD_TYPE Release)
 endif ()
@@ -238,7 +238,6 @@ set (MAGENI_TMP_DIR             "${MAGENI_STATE_DIR}/tmp")
 set (PLUGINS_TMP_DIR            "${MAGENI_STATE_DIR}/tmp/plugins")
 set (FRONTEND_TMP_DIR           "${MAGENI_STATE_DIR}/tmp/frontend")
 set (BACKEND_TMP_DIR            "${MAGENI_STATE_DIR}/tmp/backend")
-set (MAGENI_ACCESS_KEY_DIR      "${MAGENI_SYSCONF_DIR}")
 set (ETC_CROND_DIR              "/etc/cron.d/")
 set (ETC_SUDOERS_DIR            "/etc/sudoers.d/")
 

@@ -166,13 +166,17 @@ if (MAGENI_DATA_DIR)
     add_definitions (-DMAGENI_DATA_DIR="${MAGENI_DATA_DIR}")
 endif (MAGENI_DATA_DIR)
 
-if (GVM_LIB_INSTALL_DIR)
-    add_definitions (-DGVM_LIB_INSTALL_DIR="${GVM_LIB_INSTALL_DIR}")
-endif (GVM_LIB_INSTALL_DIR)
+if (LIBDIR)
+    add_definitions (-DLIBDIR="${LIBDIR}")
+endif (LIBDIR)
 
 if (MAGENI_NVT_DIR)
     add_definitions (-DMAGENI_NVT_DIR="${MAGENI_NVT_DIR}")
 endif (MAGENI_NVT_DIR)
+
+if (MAGENI_SQLITE_DIR)
+    add_definitions (-DMAGENI_SQLITE_DIR="${MAGENI_SQLITE_DIR}")
+endif (MAGENI_SQLITE_DIR)
 
 if (SBINDIR)
     add_definitions (-DSBINDIR="${SBINDIR}")
