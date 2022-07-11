@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -134,41 +136,41 @@
 /**
  * @brief Scanner (openvassd) address.
  */
-#define OPENVASSD_ADDRESS GVM_RUN_DIR "/mageni-vscand.sock"
+#define OPENVASSD_ADDRESS MAGENI_RUN_DIR "/mageni-vscand.sock"
 
 /**
  * @brief Location of scanner certificate.
  */
-#ifndef SCANNERCERT
-#define SCANNERCERT "/var/lib/openvas/CA/servercert.pem"
+#ifndef MAGENI_SCANNER_CERTIFICATE
+#define MAGENI_SCANNER_CERTIFICATE "/var/lib/openvas/CA/servercert.pem"
 #endif
 
 /**
  * @brief Location of scanner certificate private key.
  */
-#ifndef SCANNERKEY
-#define SCANNERKEY "/var/lib/openvas/private/CA/serverkey.pem"
+#ifndef MAGENI_SCANNER_KEY
+#define MAGENI_SCANNER_KEY "/var/lib/openvas/private/CA/serverkey.pem"
 #endif
 
 /**
  * @brief Location of Certificate Authority certificate.
  */
-#ifndef CACERT
-#define CACERT "/var/lib/openvas/CA/cacert.pem"
+#ifndef MAGENI_CA_CERTIFICATE
+#define MAGENI_CA_CERTIFICATE "/usr/local/var/lib/mageni/private/CA/cacert.pem"
 #endif
 
 /**
  * @brief Location of client certificate.
  */
-#ifndef CLIENTCERT
-#define CLIENTCERT "/var/lib/openvas/CA/clientcert.pem"
+#ifndef MAGENI_CLIENT_CERTIFICATE
+#define MAGENI_CLIENT_CERTIFICATE "/usr/local/var/lib/mageni/private/CA/clientcert.pem"
 #endif
 
 /**
  * @brief Location of client certificate private key.
  */
-#ifndef CLIENTKEY
-#define CLIENTKEY "/var/lib/openvas/private/CA/clientkey.pem"
+#ifndef MAGENI_CLIENT_KEY
+#define MAGENI_CLIENT_KEY "/usr/local/var/lib/mageni/private/CA/clientkey.pem"
 #endif
 
 /**
@@ -810,9 +812,9 @@ fork_connection_internal (gvm_connection_t *client_connection,
       if (use_tls)
         {
           if (gvm_server_new (GNUTLS_CLIENT,
-                              CACERT,
-                              CLIENTCERT,
-                              CLIENTKEY,
+                              MAGENI_CA_CERTIFICATE,
+                              MAGENI_CLIENT_CERTIFICATE,
+                              MAGENI_CLIENT_KEY,
                               &client_connection->session,
                               &client_connection->credentials))
             exit (EXIT_FAILURE);
@@ -2168,7 +2170,7 @@ main (int argc, char **argv)
         {
           use_tls = 0;
           manager_address_string_unix =
-            g_build_filename (GVM_RUN_DIR, "mageni-sqlite.sock", NULL);
+            g_build_filename (MAGENI_RUN_DIR, "mageni-sqlite.sock", NULL);
         }
     }
   else
@@ -2215,7 +2217,7 @@ main (int argc, char **argv)
 
   /* Setup logging. */
 
-  rc_name = g_build_filename (GVM_SYSCONF_DIR, "sqlite_log.conf", NULL);
+  rc_name = g_build_filename (MAGENI_SYSCONF_DIR, "sqlite_log.conf", NULL);
   if (g_file_test (rc_name, G_FILE_TEST_EXISTS))
     log_config = load_log_configuration (rc_name);
   g_free (rc_name);
@@ -2390,7 +2392,7 @@ main (int argc, char **argv)
     {
       gchar *password_policy;
       password_policy =
-        g_build_filename (GVM_SYSCONF_DIR, "pwpolicy.conf", NULL);
+        g_build_filename (MAGENI_SYSCONF_DIR, "pwpolicy.conf", NULL);
       if (g_file_test (password_policy, G_FILE_TEST_EXISTS) == FALSE)
         g_warning (
           "%s: password policy missing: %s", __FUNCTION__, password_policy);
@@ -2431,11 +2433,11 @@ main (int argc, char **argv)
       if (!scanner_port)
         scanner_port = G_STRINGIFY (OPENVASSD_PORT);
       if (!scanner_ca_pub)
-        scanner_ca_pub = CACERT;
+        scanner_ca_pub = MAGENI_CA_CERTIFICATE;
       if (!scanner_key_pub)
-        scanner_key_pub = CLIENTCERT;
+        scanner_key_pub = MAGENI_CLIENT_CERTIFICATE;
       if (!scanner_key_priv)
-        scanner_key_priv = CLIENTKEY;
+        scanner_key_priv = MAGENI_CLIENT_KEY;
 
       if (!scanner_type || !strcasecmp (scanner_type, "OpenVAS"))
         type = SCANNER_TYPE_OPENVAS;
@@ -2805,7 +2807,7 @@ main (int argc, char **argv)
 #if LOG
   /* Open the log file. */
 
-  if (g_mkdir_with_parents (GVM_LOG_DIR, 0755) /* "rwxr-xr-x" */
+  if (g_mkdir_with_parents (MAGENI_LOG_DIR, 0755) /* "rwxr-xr-x" */
       == -1)
     {
       g_critical ("%s: failed to create log directory: %s",

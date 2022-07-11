@@ -1,4 +1,5 @@
 #!/bin/sh
+# Portions Copyright (C) 2020-2022 Mageni Security LLC
 # Copyright (C) 2015-2018 Greenbone Networks GmbH
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
@@ -16,14 +17,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
-
-# Manage certificate infrastructure for a GVM installation
-
-# The following TODOS are features deemed desirable which have not yet been
-# implemented.
-# TODO: Import a certificate
-# Does the certificate contain a private key?
-# Do we take the key generated for the signing request?
 
 # Script and feed information which will be made available to user through
 # command line options and automated tools.
@@ -68,67 +61,67 @@ log_verbose () {
 set_defaults () {
   # Set default values for certificate parameters
   # Lifetime
-  GVM_CERTIFICATE_LIFETIME=${GVM_CERTIFICATE_LIFETIME:-730}
+  MAGENI_CERTIFICATE_LIFETIME=${MAGENI_CERTIFICATE_LIFETIME:-730}
   # Country
-  GVM_CERTIFICATE_COUNTRY=${GVM_CERTIFICATE_COUNTRY:-"US"}
+  MAGENI_CERTIFICATE_COUNTRY=${MAGENI_CERTIFICATE_COUNTRY:-"US"}
   # State
-  GVM_CERTIFICATE_STATE=${GVM_CERTIFICATE_STATE:-"NY"}
+  MAGENI_CERTIFICATE_STATE=${MAGENI_CERTIFICATE_STATE:-"NY"}
   # Locality
-  GVM_CERTIFICATE_LOCALITY=${GVM_CERTIFICATE_LOCALITY:-"New York"}
+  MAGENI_CERTIFICATE_LOCALITY=${MAGENI_CERTIFICATE_LOCALITY:-"New York"}
   # Organization
-  GVM_CERTIFICATE_ORG=${GVM_CERTIFICATE_ORG:-"Mageni Security, LLC"}
+  MAGENI_CERTIFICATE_ORG=${MAGENI_CERTIFICATE_ORG:-"Mageni Security, LLC"}
   # (Organization unit)
-  GVM_CERTIFICATE_ORG_UNIT=${GVM_CERTIFICATE_ORG_UNIT:-""}
+  MAGENI_CERTIFICATE_ORG_UNIT=${MAGENI_CERTIFICATE_ORG_UNIT:-""}
 
   # Hostname
-  if [ -z "$GVM_CERTIFICATE_HOSTNAME" ]
+  if [ -z "$MAGENI_CERTIFICATE_HOSTNAME" ]
   then
-    GVM_CERTIFICATE_HOSTNAME=$(hostname --fqdn 2> /dev/null)
+    MAGENI_CERTIFICATE_HOSTNAME=$(hostname --fqdn 2> /dev/null)
     if [ $? -ne 0 ]
     then
-      GVM_CERTIFICATE_HOSTNAME="localhost"
+      MAGENI_CERTIFICATE_HOSTNAME="localhost"
     fi
   fi
 
   # Certificate Authority (CA) Certificate Parameters
   # CA Lifetime
-  GVM_CA_CERTIFICATE_LIFETIME=${GVM_CA_CERTIFICATE_LIFETIME:-3652}
+  MAGENI_CA_CERTIFICATE_LIFETIME=${MAGENI_CA_CERTIFICATE_LIFETIME:-3652}
   # Country
-  GVM_CA_CERTIFICATE_COUNTRY=${GVM_CA_CERTIFICATE_COUNTRY:-"$GVM_CERTIFICATE_COUNTRY"}
+  MAGENI_CA_CERTIFICATE_COUNTRY=${MAGENI_CA_CERTIFICATE_COUNTRY:-"$MAGENI_CERTIFICATE_COUNTRY"}
   # State
-  GVM_CA_CERTIFICATE_STATE=${GVM_CA_CERTIFICATE_STATE:-"$GVM_CERTIFICATE_STATE"}
+  MAGENI_CA_CERTIFICATE_STATE=${MAGENI_CA_CERTIFICATE_STATE:-"$MAGENI_CERTIFICATE_STATE"}
   # Locality
-  GVM_CA_CERTIFICATE_LOCALITY=${GVM_CA_CERTIFICATE_LOCALITY:-"$GVM_CERTIFICATE_LOCALITY"}
+  MAGENI_CA_CERTIFICATE_LOCALITY=${MAGENI_CA_CERTIFICATE_LOCALITY:-"$MAGENI_CERTIFICATE_LOCALITY"}
   # Organization
-  GVM_CA_CERTIFICATE_ORG=${GVM_CA_CERTIFICATE_ORG:-"$GVM_CERTIFICATE_ORG"}
+  MAGENI_CA_CERTIFICATE_ORG=${MAGENI_CA_CERTIFICATE_ORG:-"$MAGENI_CERTIFICATE_ORG"}
   # (Organization unit)
-  GVM_CA_CERTIFICATE_ORG_UNIT=${GVM_CA_CERTIFICATE_ORG_UNIT:-"Certificate Authority for $GVM_CERTIFICATE_HOSTNAME"}
+  MAGENI_CA_CERTIFICATE_ORG_UNIT=${MAGENI_CA_CERTIFICATE_ORG_UNIT:-"Certificate Authority for $MAGENI_CERTIFICATE_HOSTNAME"}
 
   # Key size
-  if [ -z "$GVM_CERTIFICATE_KEYSIZE" ]
+  if [ -z "$MAGENI_CERTIFICATE_KEYSIZE" ]
   then
-    GVM_CERTIFICATE_SECPARAM=${GVM_CERTIFICATE_SECPARAM:-"high"}
+    MAGENI_CERTIFICATE_SECPARAM=${MAGENI_CERTIFICATE_SECPARAM:-"high"}
   fi
 
   # Signature algorithm
-  GVM_CERTIFICATE_SIGNALG=${GVM_CERTIFICATE_SIGNALG:-"SHA256"}
+  MAGENI_CERTIFICATE_SIGNALG=${MAGENI_CERTIFICATE_SIGNALG:-"SHA256"}
 
   # Location in file system where private keys are stored
-  GVM_KEY_LOCATION=${GVM_KEY_LOCATION:-"@GVM_STATE_DIR@/private/CA"}
+  MAGENI_KEY_LOCATION=${MAGENI_KEY_LOCATION:-"@MAGENI_STATE_DIR@/private/CA"}
   # Location in file system where certificates are stored
-  GVM_CERT_LOCATION=${GVM_CERT_LOCATION:-"@GVM_STATE_DIR@/CA"}
+  MAGENI_CERT_LOCATION=${MAGENI_CERT_LOCATION:-"@MAGENI_STATE_DIR@/CA"}
 
   # Prefix for generated files
   # If not set, files will be named "key.pem" and "cert.pem"
   # If set to "server", files will be named "serverkey.pem" and "servercert.pem"
-  GVM_CERT_PREFIX=${GVM_CERT_PREFIX:-""}
+  MAGENI_CERT_PREFIX=${MAGENI_CERT_PREFIX:-""}
 }
 
 
 print_help ()
 {
   echo "Usage:"
-  echo "  $0 [OPTION] - Manage certificate infrastructure for Mageni Security Platform"
+  echo "  $0 [OPTION] - Manage certificates"
   echo
   echo "Options:"
   echo "  -h             Print help"
@@ -159,18 +152,18 @@ print_help ()
   echo "All certificate generation options can be set either through the configuration"
   echo "  file or through environment variables like the following:"
   echo
-  echo "  GVM_CERTIFICATE_LIFETIME   Days until the certificate will expire"
-  echo "  GVM_CERTIFICATE_HOSTNAME   Name to use for the certificate"
-  echo "  GVM_CERTIFICATE_SIGNALG    Hash algorithm to use for signing"
+  echo "  MAGENI_CERTIFICATE_LIFETIME   Days until the certificate will expire"
+  echo "  MAGENI_CERTIFICATE_HOSTNAME   Name to use for the certificate"
+  echo "  MAGENI_CERTIFICATE_SIGNALG    Hash algorithm to use for signing"
   echo
-  echo "  GVM_CERTIFICATE_KEYSIZE    Size in bits of the generated key"
+  echo "  MAGENI_CERTIFICATE_KEYSIZE    Size in bits of the generated key"
   echo "  or"
-  echo "  GVM_CERTIFICATE_SECPARAM   GnuTLS security level [low|medium|high|ultra]"
+  echo "  MAGENI_CERTIFICATE_SECPARAM   GnuTLS security level [low|medium|high|ultra]"
   echo
-  echo "  GVM_CERT_DIR               Directory where keys and certificates are stored"
+  echo "  MAGENI_CERT_DIR               Directory where keys and certificates are stored"
   echo "                                 before installation"
   echo
-  echo "  GVM_CERT_PREFIX            Prefix for certificate filename (e.g. \"server\")"
+  echo "  MAGENI_CERT_PREFIX            Prefix for certificate filename (e.g. \"server\")"
   echo
   echo "For a complete list of options, please refer to the documentation."
   echo
@@ -191,36 +184,36 @@ set_up ()
   # TODO: certtool version check?
 
   # Set directory to use for keys and certificates before installation
-  if [ -z "$GVM_CERT_DIR" ]
+  if [ -z "$MAGENI_CERT_DIR" ]
   then
     USE_TEMP_DIR=1
-    GVM_CERT_DIR=`mktemp -d`
-    log_verbose "Using $GVM_CERT_DIR to temporarily store files."
+    MAGENI_CERT_DIR=$(mktemp -d)
+    log_verbose "Using $MAGENI_CERT_DIR to temporarily store files."
   else
     USE_TEMP_DIR=0
-    if [ ! -w "$GVM_CERT_DIR" ]
+    if [ ! -w "$MAGENI_CERT_DIR" ]
     then
-      log_err "$GVM_CERT_DIR has to exist and has to be writable. Aborting."
+      log_err "$MAGENI_CERT_DIR has to exist and has to be writable. Aborting."
       exit 1
     fi
   fi
 
   # Logfile for certtool output
-  CERTTOOL_LOGFILE="$GVM_CERT_DIR/gvm-manage-certs.log"
+  CERTTOOL_LOGFILE="$MAGENI_CERT_DIR/gvm-manage-certs.log"
 
   # Filename to use for generated private key
-  GVM_KEY_FILENAME=${GVM_KEY_FILENAME:-"$GVM_CERT_DIR/${GVM_CERT_PREFIX}key.pem"}
+  MAGENI_KEY_FILENAME=${MAGENI_KEY_FILENAME:-"$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}key.pem"}
   # Filename to use for generated certificate
-  GVM_CERT_FILENAME=${GVM_CERT_FILENAME:-"$GVM_CERT_DIR/${GVM_CERT_PREFIX}cert.pem"}
+  MAGENI_CERT_FILENAME=${MAGENI_CERT_FILENAME:-"$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}cert.pem"}
   # Filename to use for generated certificate request
-  GVM_CERT_REQUEST_FILENAME=${GVM_CERT_REQUEST_FILENAME:-"$GVM_CERT_DIR/${GVM_CERT_PREFIX}request.pem"}
+  MAGENI_CERT_REQUEST_FILENAME=${MAGENI_CERT_REQUEST_FILENAME:-"$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}request.pem"}
   # Filename to use for generated certificate template
-  GVM_CERT_TEMPLATE_FILENAME=${GVM_CERT_TEMPLATE_FILENAME:-"$GVM_CERT_DIR/${GVM_CERT_PREFIX}gvm-cert.cfg"}
+  MAGENI_CERT_TEMPLATE_FILENAME=${MAGENI_CERT_TEMPLATE_FILENAME:-"$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}gvm-cert.cfg"}
 
   # Filename of CA private key used for signing certificates
-  GVM_SIGNING_CA_KEY_FILENAME=${GVM_SIGNING_CA_KEY_FILENAME:-"$GVM_KEY_LOCATION/cakey.pem"}
+  MAGENI_SIGNING_CA_KEY_FILENAME=${MAGENI_SIGNING_CA_KEY_FILENAME:-"$MAGENI_KEY_LOCATION/cakey.pem"}
   # Filename of CA certificate used for signing certificates
-  GVM_SIGNING_CA_CERT_FILENAME=${GVM_SIGNING_CA_CERT_FILENAME:-"$GVM_CERT_LOCATION/cacert.pem"}
+  MAGENI_SIGNING_CA_CERT_FILENAME=${MAGENI_SIGNING_CA_CERT_FILENAME:-"$MAGENI_CERT_LOCATION/cacert.pem"}
 }
 
 # Create installation directories with correct permissions
@@ -228,39 +221,39 @@ set_up_directories ()
 {
   log_verbose "Setting up directories"
 
-  if [ ! -d "$GVM_CERT_LOCATION" ]
+  if [ ! -d "$MAGENI_CERT_LOCATION" ]
   then
-    mkdir -p "$GVM_CERT_LOCATION"
+    mkdir -p "$MAGENI_CERT_LOCATION"
     if [ $? -ne 0 ]
     then
-      log_err "ERROR: Failed to create certificate directory ($GVM_CERT_LOCATION). Aborting."
+      log_err "ERROR: Failed to create certificate directory ($MAGENI_CERT_LOCATION). Aborting."
       exit 1
     fi
   fi
 
-  if [ ! -d "$GVM_KEY_LOCATION" ]
+  if [ ! -d "$MAGENI_KEY_LOCATION" ]
   then
-    mkdir -p "$GVM_KEY_LOCATION"
+    mkdir -p "$MAGENI_KEY_LOCATION"
     if [ $? -ne 0 ]
     then
-      log_err "ERROR: Failed to create private key directory ($GVM_KEY_LOCATION). Aborting."
+      log_err "ERROR: Failed to create private key directory ($MAGENI_KEY_LOCATION). Aborting."
       exit 1
     fi
   fi
 
-  chmod 0700 "$GVM_KEY_LOCATION"
+  chmod 0700 "$MAGENI_KEY_LOCATION"
 
-  chmod a+rx "$GVM_CERT_LOCATION"
+  chmod a+rx "$MAGENI_CERT_LOCATION"
 }
 
 # Apply file name prefix setting for generated files
 set_prefix ()
 {
-  GVM_CERT_PREFIX="$1"
-  GVM_KEY_FILENAME="$GVM_CERT_DIR/${GVM_CERT_PREFIX}key.pem"
-  GVM_CERT_FILENAME="$GVM_CERT_DIR/${GVM_CERT_PREFIX}cert.pem"
-  GVM_CERT_REQUEST_FILENAME="$GVM_CERT_DIR/${GVM_CERT_PREFIX}request.pem"
-  GVM_CERT_TEMPLATE_FILENAME="$GVM_CERT_DIR/${GVM_CERT_PREFIX}gvm-cert.cfg"
+  MAGENI_CERT_PREFIX="$1"
+  MAGENI_KEY_FILENAME="$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}key.pem"
+  MAGENI_CERT_FILENAME="$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}cert.pem"
+  MAGENI_CERT_REQUEST_FILENAME="$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}request.pem"
+  MAGENI_CERT_TEMPLATE_FILENAME="$MAGENI_CERT_DIR/${MAGENI_CERT_PREFIX}gvm-cert.cfg"
 }
 
 # Create a private key
@@ -270,11 +263,11 @@ create_private_key ()
 
   umask 022
 
-  if [ -z "$GVM_CERTIFICATE_KEYSIZE" ]
+  if [ -z "$MAGENI_CERTIFICATE_KEYSIZE" ]
   then
-    CERTTOOL_PRIVKEY_PARAM="--sec-param $GVM_CERTIFICATE_SECPARAM"
+    CERTTOOL_PRIVKEY_PARAM="--sec-param $MAGENI_CERTIFICATE_SECPARAM"
   else
-    CERTTOOL_PRIVKEY_PARAM="--bits $GVM_CERTIFICATE_KEYSIZE"
+    CERTTOOL_PRIVKEY_PARAM="--bits $MAGENI_CERTIFICATE_KEYSIZE"
   fi
 
   # Create a private key
@@ -298,96 +291,96 @@ create_certificate ()
 
   umask 022
 
-  rm -f "$GVM_CERT_TEMPLATE_FILENAME"
+  rm -f "$MAGENI_CERT_TEMPLATE_FILENAME"
 
   # Create template using parameters
   if [ $CERTIFICATE_TYPE -eq $CA_CERTIFICATE ]
   then
-    if [ -n "$GVM_CA_CERTIFICATE_LIFETIME" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_LIFETIME" ]
     then
-      echo "expiration_days = $GVM_CA_CERTIFICATE_LIFETIME" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "expiration_days = $MAGENI_CA_CERTIFICATE_LIFETIME" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_COUNTRY" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_COUNTRY" ]
     then
-      echo "country = \"$GVM_CA_CERTIFICATE_COUNTRY\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "country = \"$MAGENI_CA_CERTIFICATE_COUNTRY\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_STATE" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_STATE" ]
     then
-      echo "state = \"$GVM_CA_CERTIFICATE_STATE\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "state = \"$MAGENI_CA_CERTIFICATE_STATE\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_LOCALITY" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_LOCALITY" ]
     then
-      echo "locality = \"$GVM_CA_CERTIFICATE_LOCALITY\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "locality = \"$MAGENI_CA_CERTIFICATE_LOCALITY\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_ORG" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_ORG" ]
     then
-      echo "organization = \"$GVM_CA_CERTIFICATE_ORG\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "organization = \"$MAGENI_CA_CERTIFICATE_ORG\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_ORG_UNIT" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_ORG_UNIT" ]
     then
-      echo "unit = \"$GVM_CA_CERTIFICATE_ORG_UNIT\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "unit = \"$MAGENI_CA_CERTIFICATE_ORG_UNIT\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CA_CERTIFICATE_HOSTNAME" ]
+    if [ -n "$MAGENI_CA_CERTIFICATE_HOSTNAME" ]
     then
-      echo "cn = \"$GVM_CA_CERTIFICATE_HOSTNAME\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "cn = \"$MAGENI_CA_CERTIFICATE_HOSTNAME\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
   else
-    if [ -n "$GVM_CERTIFICATE_LIFETIME" ]
+    if [ -n "$MAGENI_CERTIFICATE_LIFETIME" ]
     then
-      echo "expiration_days = $GVM_CERTIFICATE_LIFETIME" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "expiration_days = $MAGENI_CERTIFICATE_LIFETIME" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_COUNTRY" ]
+    if [ -n "$MAGENI_CERTIFICATE_COUNTRY" ]
     then
-      echo "country = \"$GVM_CERTIFICATE_COUNTRY\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "country = \"$MAGENI_CERTIFICATE_COUNTRY\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_STATE" ]
+    if [ -n "$MAGENI_CERTIFICATE_STATE" ]
     then
-      echo "state = \"$GVM_CERTIFICATE_STATE\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "state = \"$MAGENI_CERTIFICATE_STATE\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_LOCALITY" ]
+    if [ -n "$MAGENI_CERTIFICATE_LOCALITY" ]
     then
-      echo "locality = \"$GVM_CERTIFICATE_LOCALITY\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "locality = \"$MAGENI_CERTIFICATE_LOCALITY\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_ORG" ]
+    if [ -n "$MAGENI_CERTIFICATE_ORG" ]
     then
-      echo "organization = \"$GVM_CERTIFICATE_ORG\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "organization = \"$MAGENI_CERTIFICATE_ORG\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_ORG_UNIT" ]
+    if [ -n "$MAGENI_CERTIFICATE_ORG_UNIT" ]
     then
-      echo "unit = \"$GVM_CERTIFICATE_ORG_UNIT\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "unit = \"$MAGENI_CERTIFICATE_ORG_UNIT\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
-    if [ -n "$GVM_CERTIFICATE_HOSTNAME" ]
+    if [ -n "$MAGENI_CERTIFICATE_HOSTNAME" ]
     then
-      echo "cn = \"$GVM_CERTIFICATE_HOSTNAME\"" >> $GVM_CERT_TEMPLATE_FILENAME
+      echo "cn = \"$MAGENI_CERTIFICATE_HOSTNAME\"" >> "$MAGENI_CERT_TEMPLATE_FILENAME"
     fi
   fi
 
   # Add key usage constraints if the certificate type is known
   if [ $CERTIFICATE_TYPE -eq $CA_CERTIFICATE ]
   then
-    echo "ca" >> $GVM_CERT_TEMPLATE_FILENAME
-    echo "cert_signing_key" >> $GVM_CERT_TEMPLATE_FILENAME
-    echo "crl_signing_key" >> $GVM_CERT_TEMPLATE_FILENAME
+    echo "ca" >> $MAGENI_CERT_TEMPLATE_FILENAME
+    echo "cert_signing_key" >> $MAGENI_CERT_TEMPLATE_FILENAME
+    echo "crl_signing_key" >> $MAGENI_CERT_TEMPLATE_FILENAME
   fi
   if [ $CERTIFICATE_TYPE -eq $SERVER_CERTIFICATE ]
   then
     # This certificate will be used to encrypt data.
     # This is the keyEncipherment flag in RFC5280 terminology.
-    echo "encryption_key" >> $GVM_CERT_TEMPLATE_FILENAME
-    echo "tls_www_server" >> $GVM_CERT_TEMPLATE_FILENAME
+    echo "encryption_key" >> $MAGENI_CERT_TEMPLATE_FILENAME
+    echo "tls_www_server" >> $MAGENI_CERT_TEMPLATE_FILENAME
   fi
   if [ $CERTIFICATE_TYPE -eq $CLIENT_CERTIFICATE ]
   then
     # This certificate will be used to sign data.
     # This is the digitalSignature flag in RFC5280 terminology.
-    echo "signing_key" >> $GVM_CERT_TEMPLATE_FILENAME
-    echo "tls_www_client" >> $GVM_CERT_TEMPLATE_FILENAME
+    echo "signing_key" >> $MAGENI_CERT_TEMPLATE_FILENAME
+    echo "tls_www_client" >> $MAGENI_CERT_TEMPLATE_FILENAME
   fi
 
   if [ $DEBUG -eq 1 ]
   then
-    echo "DEBUG: Using the following template ($GVM_CERT_TEMPLATE_FILENAME):" >> "$CERTTOOL_LOGFILE"
-    cat $GVM_CERT_TEMPLATE_FILENAME >> "$CERTTOOL_LOGFILE"
+    echo "DEBUG: Using the following template ($MAGENI_CERT_TEMPLATE_FILENAME):" >> "$CERTTOOL_LOGFILE"
+    cat $MAGENI_CERT_TEMPLATE_FILENAME >> "$CERTTOOL_LOGFILE"
   fi
 
   if [ $CREATE_SELF_SIGNED -eq 1 ]
@@ -396,10 +389,10 @@ create_certificate ()
     log_verbose "  Generating self signed certificate."
     certtool \
       --generate-self-signed \
-      --hash "$GVM_CERTIFICATE_SIGNALG" \
-      --load-privkey "$GVM_KEY_FILENAME" \
-      --outfile "$GVM_CERT_FILENAME" \
-      --template "$GVM_CERT_TEMPLATE_FILENAME" \
+      --hash "$MAGENI_CERTIFICATE_SIGNALG" \
+      --load-privkey "$MAGENI_KEY_FILENAME" \
+      --outfile "$MAGENI_CERT_FILENAME" \
+      --template "$MAGENI_CERT_TEMPLATE_FILENAME" \
       >> "$CERTTOOL_LOGFILE" 2>&1
     if [ $? -ne 0 ]
     then
@@ -407,15 +400,15 @@ create_certificate ()
       exit 1
     fi
 
-    log_write "Generated self signed certificate in $GVM_CERT_FILENAME."
+    log_write "Generated self signed certificate in $MAGENI_CERT_FILENAME."
   else
     # Create a certificate request
     log_verbose "  Generating certificate request."
     certtool \
       --generate-request \
-      --load-privkey "$GVM_KEY_FILENAME" \
-      --outfile "$GVM_CERT_REQUEST_FILENAME" \
-      --template "$GVM_CERT_TEMPLATE_FILENAME" \
+      --load-privkey "$MAGENI_KEY_FILENAME" \
+      --outfile "$MAGENI_CERT_REQUEST_FILENAME" \
+      --template "$MAGENI_CERT_TEMPLATE_FILENAME" \
       >> "$CERTTOOL_LOGFILE" 2>&1
     if [ $? -ne 0 ]
     then
@@ -423,7 +416,7 @@ create_certificate ()
       exit 1
     fi
 
-    log_write "Generated certificate request in $GVM_CERT_REQUEST_FILENAME."
+    log_write "Generated certificate request in $MAGENI_CERT_REQUEST_FILENAME."
   fi
 }
 
@@ -431,38 +424,38 @@ sign_certificate ()
 {
   log_verbose "Signing certificate request."
 
-  if [ ! -s "$GVM_CERT_REQUEST_FILENAME" ]
+  if [ ! -s "$MAGENI_CERT_REQUEST_FILENAME" ]
   then
-    log_err "ERROR: Failed to find certificate request in $GVM_CERT_REQUEST_FILENAME. Aborting."
+    log_err "ERROR: Failed to find certificate request in $MAGENI_CERT_REQUEST_FILENAME. Aborting."
     exit 1
   fi
-  if [ ! -s "$GVM_SIGNING_CA_CERT_FILENAME" ]
+  if [ ! -s "$MAGENI_SIGNING_CA_CERT_FILENAME" ]
   then
-    log_err "ERROR: Failed to find CA certificate in $GVM_SIGNING_CA_CERT_FILENAME. Aborting."
+    log_err "ERROR: Failed to find CA certificate in $MAGENI_SIGNING_CA_CERT_FILENAME. Aborting."
     exit 1
   fi
-  if [ ! -s "$GVM_SIGNING_CA_KEY_FILENAME" ]
+  if [ ! -s "$MAGENI_SIGNING_CA_KEY_FILENAME" ]
   then
-    log_err "ERROR: Failed to find CA key in $GVM_SIGNING_CA_KEY_FILENAME. Aborting."
+    log_err "ERROR: Failed to find CA key in $MAGENI_SIGNING_CA_KEY_FILENAME. Aborting."
     exit 1
   fi
 
   # Sign certificate
   certtool \
     --generate-certificate \
-    --hash "$GVM_CERTIFICATE_SIGNALG" \
-    --load-request "$GVM_CERT_REQUEST_FILENAME" \
-    --outfile "$GVM_CERT_FILENAME" \
-    --load-ca-certificate "$GVM_SIGNING_CA_CERT_FILENAME" \
-    --load-ca-privkey "$GVM_SIGNING_CA_KEY_FILENAME" \
-    --template "$GVM_CERT_TEMPLATE_FILENAME" >> "$CERTTOOL_LOGFILE" 2>&1
+    --hash "$MAGENI_CERTIFICATE_SIGNALG" \
+    --load-request "$MAGENI_CERT_REQUEST_FILENAME" \
+    --outfile "$MAGENI_CERT_FILENAME" \
+    --load-ca-certificate "$MAGENI_SIGNING_CA_CERT_FILENAME" \
+    --load-ca-privkey "$MAGENI_SIGNING_CA_KEY_FILENAME" \
+    --template "$MAGENI_CERT_TEMPLATE_FILENAME" >> "$CERTTOOL_LOGFILE" 2>&1
   if [ $? -ne 0 ]
   then
     log_err "ERROR: Failed to sign certificate, see $CERTTOOL_LOGFILE for details. Aborting."
     exit 1
   fi
 
-  log_write "Signed certificate request in $GVM_CERT_REQUEST_FILENAME with CA certificate in $GVM_SIGNING_CA_CERT_FILENAME to generate certificate in $GVM_CERT_FILENAME"
+  log_write "Signed certificate request in $MAGENI_CERT_REQUEST_FILENAME with CA certificate in $MAGENI_SIGNING_CA_CERT_FILENAME to generate certificate in $MAGENI_CERT_FILENAME"
 }
 
 # Install a certificate
@@ -471,53 +464,53 @@ install_cert ()
 {
   log_verbose "Installing certificate and key."
 
-  if [ ! -s "$GVM_KEY_FILENAME" ] || [ ! -s "$GVM_CERT_FILENAME" ]
+  if [ ! -s "$MAGENI_KEY_FILENAME" ] || [ ! -s "$MAGENI_CERT_FILENAME" ]
   then
-    log_err "ERROR: Files to install ($GVM_KEY_FILENAME and $GVM_CERT_FILENAME) not found. Aborting."
+    log_err "ERROR: Files to install ($MAGENI_KEY_FILENAME and $MAGENI_CERT_FILENAME) not found. Aborting."
     exit 1
   fi
 
-  if [ ! -d "$GVM_CERT_LOCATION" ] || [ ! -d "$GVM_KEY_LOCATION" ]
+  if [ ! -d "$MAGENI_CERT_LOCATION" ] || [ ! -d "$MAGENI_KEY_LOCATION" ]
   then
     log_verbose "Install destinations do not exist as directories, attempting to create them."
     set_up_directories
   fi
 
 
-  if [ ! -w "$GVM_CERT_LOCATION" ] || [ ! -w "$GVM_KEY_LOCATION" ]
+  if [ ! -w "$MAGENI_CERT_LOCATION" ] || [ ! -w "$MAGENI_KEY_LOCATION" ]
   then
     log_err "ERROR: Install destinations are not writable. Aborting."
     exit 1
   fi
 
-  KEY_INSTALL="$GVM_KEY_LOCATION/${1}key.pem"
+  KEY_INSTALL="$MAGENI_KEY_LOCATION/${1}key.pem"
   if [ -f "$KEY_INSTALL" ] && [ $FORCE -ne 1 ]
   then
     echo "$KEY_INSTALL exists already, not overwriting."
     echo "Use '-f' parameter to overwrite existing files."
     exit 1
   else
-    cp "$GVM_KEY_FILENAME" "$KEY_INSTALL"
+    cp "$MAGENI_KEY_FILENAME" "$KEY_INSTALL"
     if [ $? -ne 0 ]
     then
-      log_err "Failed to install $GVM_KEY_FILENAME to $KEY_INSTALL.  Aborting."
+      log_err "Failed to install $MAGENI_KEY_FILENAME to $KEY_INSTALL.  Aborting."
       exit 1
     else
       log_write "Installed private key to $KEY_INSTALL."
     fi
   fi
 
-  CERT_INSTALL="$GVM_CERT_LOCATION/${1}cert.pem"
+  CERT_INSTALL="$MAGENI_CERT_LOCATION/${1}cert.pem"
   if [ -f "$CERT_INSTALL" ] && [ $FORCE -ne 1 ]
   then
     echo "$CERT_INSTALL exists already, not overwriting."
     echo "Use '-f' parameter to overwrite existing files."
     exit 1
   else
-    cp "$GVM_CERT_FILENAME" "$CERT_INSTALL"
+    cp "$MAGENI_CERT_FILENAME" "$CERT_INSTALL"
     if [ $? -ne 0 ]
     then
-      log_err "Failed to install $GVM_CERT_FILENAME to $CERT_INSTALL.  Aborting."
+      log_err "Failed to install $MAGENI_CERT_FILENAME to $CERT_INSTALL.  Aborting."
       exit 1
     else
       log_write "Installed certificate to $CERT_INSTALL."
@@ -529,32 +522,32 @@ verify ()
 {
   ALL_OK=1
 
-  if [ -d "$GVM_KEY_LOCATION" ]
+  if [ -d "$MAGENI_KEY_LOCATION" ]
   then
-    echo "OK: Directory for keys ($GVM_KEY_LOCATION) exists."
+    echo "OK: Directory for keys ($MAGENI_KEY_LOCATION) exists."
   else
-    echo "ERROR: Directory for keys ($GVM_KEY_LOCATION) not found!"
+    echo "ERROR: Directory for keys ($MAGENI_KEY_LOCATION) not found!"
     ALL_OK=0
   fi
-  if [ -d "$GVM_CERT_LOCATION" ]
+  if [ -d "$MAGENI_CERT_LOCATION" ]
   then
-    echo "OK: Directory for certificates ($GVM_CERT_LOCATION) exists."
+    echo "OK: Directory for certificates ($MAGENI_CERT_LOCATION) exists."
   else
-    echo "ERROR: Directory for certificates ($GVM_CERT_LOCATION) not found!"
+    echo "ERROR: Directory for certificates ($MAGENI_CERT_LOCATION) not found!"
     ALL_OK=0
   fi
-  if [ -s "$GVM_KEY_LOCATION/cakey.pem" ]
+  if [ -s "$MAGENI_KEY_LOCATION/cakey.pem" ]
   then
-    echo "OK: CA key found in $GVM_KEY_LOCATION/cakey.pem"
+    echo "OK: CA key found in $MAGENI_KEY_LOCATION/cakey.pem"
   else
-    echo "ERROR: CA key not found in $GVM_KEY_LOCATION/cakey.pem"
+    echo "ERROR: CA key not found in $MAGENI_KEY_LOCATION/cakey.pem"
     ALL_OK=0
   fi
-  if [ -s "$GVM_CERT_LOCATION/cacert.pem" ]
+  if [ -s "$MAGENI_CERT_LOCATION/cacert.pem" ]
   then
-    echo "OK: CA certificate found in $GVM_CERT_LOCATION/cacert.pem"
+    echo "OK: CA certificate found in $MAGENI_CERT_LOCATION/cacert.pem"
   else
-    echo "ERROR: CA certificate not found in $GVM_CERT_LOCATION/cacert.pem"
+    echo "ERROR: CA certificate not found in $MAGENI_CERT_LOCATION/cacert.pem"
     ALL_OK=0
   fi
 
@@ -562,8 +555,8 @@ verify ()
 
   certtool \
     --verify \
-    --load-ca-certificate $GVM_CERT_LOCATION/cacert.pem \
-    --infile $GVM_CERT_LOCATION/cacert.pem \
+    --load-ca-certificate $MAGENI_CERT_LOCATION/cacert.pem \
+    --infile $MAGENI_CERT_LOCATION/cacert.pem \
     >> "$CERTTOOL_LOGFILE" 2>&1
   if [ $? -eq 0 ]
   then
@@ -573,11 +566,11 @@ verify ()
     ALL_OK=0
   fi
 
-  for cert in $(find $GVM_CERT_LOCATION -name "*pem" ! -name cacert.pem)
+  for cert in $(find $MAGENI_CERT_LOCATION -name "*pem" ! -name cacert.pem)
   do
     certtool \
       --verify \
-      --load-ca-certificate $GVM_CERT_LOCATION/cacert.pem \
+      --load-ca-certificate $MAGENI_CERT_LOCATION/cacert.pem \
       --infile $cert \
       >> "$CERTTOOL_LOGFILE" 2>&1
     if [ $? -eq 0 ]
@@ -610,10 +603,10 @@ clean_up ()
   then
     if [ $DEBUG -ne 1 ]
     then
-      log_write "Removing temporary directory $GVM_CERT_DIR."
-      rm -rf $GVM_CERT_DIR
+      log_write "Removing temporary directory $MAGENI_CERT_DIR."
+      rm -rf $MAGENI_CERT_DIR
     else
-      echo "DEBUG: Not removing $GVM_CERT_DIR in debug mode."
+      echo "DEBUG: Not removing $MAGENI_CERT_DIR in debug mode."
     fi
   fi
 }
@@ -733,15 +726,15 @@ then
 
   if [ $AUTO_SKIP_CA -eq 1 ]
   then
-    if [ -s "$GVM_CERT_LOCATION/servercert.pem" ] \
-      || [ -s "$GVM_CERT_LOCATION/clientcert.pem" ]
+    if [ -s "$MAGENI_CERT_LOCATION/servercert.pem" ] \
+      || [ -s "$MAGENI_CERT_LOCATION/clientcert.pem" ]
     then
       CERTS_EXIST=1
     fi
   else
-    if [ -s "$GVM_CERT_LOCATION/cacert.pem" ] \
-      || [ -s "$GVM_CERT_LOCATION/servercert.pem" ] \
-      || [ -s "$GVM_CERT_LOCATION/clientcert.pem" ]
+    if [ -s "$MAGENI_CERT_LOCATION/cacert.pem" ] \
+      || [ -s "$MAGENI_CERT_LOCATION/servercert.pem" ] \
+      || [ -s "$MAGENI_CERT_LOCATION/clientcert.pem" ]
     then
       CERTS_EXIST=1
     fi
@@ -764,10 +757,10 @@ then
     CERTIFICATE_TYPE=$CA_CERTIFICATE
     CREATE_SELF_SIGNED=1
     set_prefix "ca"
-    create_private_key "$GVM_KEY_FILENAME"
+    create_private_key "$MAGENI_KEY_FILENAME"
     create_certificate
     log_verbose "  CA certificate generated."
-    install_cert "${GVM_CERT_PREFIX}"
+    install_cert "${MAGENI_CERT_PREFIX}"
     log_verbose "  CA certificate and key installed."
     CREATE_SELF_SIGNED=0
   else
@@ -776,20 +769,20 @@ then
 
   CERTIFICATE_TYPE=$SERVER_CERTIFICATE
   set_prefix "server"
-  create_private_key "$GVM_KEY_FILENAME"
+  create_private_key "$MAGENI_KEY_FILENAME"
   create_certificate
   sign_certificate
   log_verbose "  Server certificate generated."
-  install_cert "${GVM_CERT_PREFIX}"
+  install_cert "${MAGENI_CERT_PREFIX}"
   log_verbose "  Server certificate and key installed."
 
   CERTIFICATE_TYPE=$CLIENT_CERTIFICATE
   set_prefix "client"
-  create_private_key "$GVM_KEY_FILENAME"
+  create_private_key "$MAGENI_KEY_FILENAME"
   create_certificate
   sign_certificate
   log_verbose "  Client certificate generated."
-  install_cert "${GVM_CERT_PREFIX}"
+  install_cert "${MAGENI_CERT_PREFIX}"
   log_verbose "  Client certificate and key installed."
 
   clean_up
@@ -810,7 +803,7 @@ then
   then
     set_prefix "ca"
   fi
-  create_private_key "$GVM_KEY_FILENAME"
+  create_private_key "$MAGENI_KEY_FILENAME"
   create_certificate
 fi
 
@@ -818,7 +811,7 @@ if [ $CREATE_CA -eq 1 ]
 then
   set_up
   set_prefix "ca"
-  create_private_key "$GVM_KEY_FILENAME"
+  create_private_key "$MAGENI_KEY_FILENAME"
   CERTIFICATE_TYPE=$CA_CERTIFICATE
   CREATE_SELF_SIGNED=1
   create_certificate
@@ -833,7 +826,7 @@ fi
 if [ $CREATE_CERTIFICATE -eq 1 ]
 then
   set_up
-  create_private_key "$GVM_KEY_FILENAME"
+  create_private_key "$MAGENI_KEY_FILENAME"
   create_certificate
   if [ $CREATE_SELF_SIGNED -ne 1 ]
   then
@@ -842,7 +835,7 @@ then
 
   if [ $INSTALL_CERTIFICATE -eq 1 ]
   then
-    install_cert "$GVM_CERT_PREFIX"
+    install_cert "$MAGENI_CERT_PREFIX"
   fi
 fi
 
@@ -855,7 +848,7 @@ fi
 if [ $INSTALL_CERTIFICATE -eq 1 ]
 then
   set_up
-  install_cert "$GVM_CERT_PREFIX"
+  install_cert "$MAGENI_CERT_PREFIX"
 fi
 
 # If the files have been installed, clean up the generation directory.

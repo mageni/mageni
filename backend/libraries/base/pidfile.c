@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2019 Greenbone Networks GmbH
+/* 
+ * Most new code since 2020 by Mageni Security LLC
+ * Copyright (C) 2009-2019 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -52,7 +54,7 @@ int
 pidfile_create (gchar *daemon_name)
 {
   gchar *name_pid = g_strconcat (daemon_name, ".pid", NULL);
-  gchar *pidfile_name = g_build_filename (GVM_PID_DIR, name_pid, NULL);
+  gchar *pidfile_name = g_build_filename (MAGENI_PID_DIR, name_pid, NULL);
   FILE *pidfile = g_fopen (pidfile_name, "w");
 
   g_free (name_pid);
@@ -81,7 +83,7 @@ void
 pidfile_remove (gchar *daemon_name)
 {
   gchar *name_pid = g_strconcat (daemon_name, ".pid", NULL);
-  gchar *pidfile_name = g_build_filename (GVM_PID_DIR, name_pid, NULL);
+  gchar *pidfile_name = g_build_filename (MAGENI_PID_DIR, name_pid, NULL);
   gchar *pidfile_contents;
 
   g_free (name_pid);

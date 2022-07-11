@@ -31,9 +31,9 @@ if (KSBA)
   add_definitions (-DHAVE_LIBKSBA)
 endif (KSBA)
 
-if (OPENVASSD_CONF)
-  add_definitions (-DOPENVASSD_CONF="${OPENVASSD_CONF}")
-endif (OPENVASSD_CONF)
+if (MAGENI_CONF_DIR)
+  add_definitions (-DMAGENI_CONF_DIR="${MAGENI_CONF_DIR}")
+endif (MAGENI_CONF_DIR)
 
 set (CMAKE_C_FLAGS              "${CMAKE_C_FLAGS} -Wall -Wextra -fno-strict-aliasing")
 set (CMAKE_C_FLAGS_DEBUG        "${CMAKE_C_FLAGS_DEBUG} -Werror")
@@ -99,9 +99,9 @@ set (FILES
 
 set_source_files_properties (nasl_grammar.tab.c GENERATED)
 
-add_definitions (-DOPENVAS_STATE_DIR="${OPENVAS_STATE_DIR}")
+add_definitions (-DMAGENI_STATE_DIR="${MAGENI_STATE_DIR}")
 add_definitions (-DOPENVASLIB_VERSION="${PROJECT_VERSION}")
-add_definitions (-DOPENVAS_SYSCONF_DIR="${OPENVAS_SYSCONF_DIR}")
+add_definitions (-DMAGENI_SYSCONF_DIR="${MAGENI_SYSCONF_DIR}")
 add_definitions (-DOPENVAS_NASL_VERSION="${PROJECT_VERSION}")
 
 include_directories (

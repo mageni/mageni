@@ -1,4 +1,6 @@
-/* Copyright (C) 2013-2019 Greenbone Networks GmbH
+/* 
+ * Most new code since 2020 by Mageni Security LLC
+ * Copyright (C) 2013-2019 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -105,7 +107,7 @@
  *     matches or is included in the password. It may eventually be
  *     extended to further tests.
  */
-#define PWPOLICY_FILE_NAME GVM_SYSCONF_DIR "/pwpolicy.conf"
+#define PWPOLICY_FILE_NAME MAGENI_SYSCONF_DIR "/pwpolicy.conf"
 
 /**
  * @brief Flag indicating that passwords are not checked.

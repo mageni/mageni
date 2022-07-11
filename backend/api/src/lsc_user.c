@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -232,7 +234,7 @@ lsc_user_rpm_create (const gchar *username,
 
   g_debug ("%s: Attempting RPM build", __FUNCTION__);
   cmd = (gchar **) g_malloc (6 * sizeof (gchar *));
-  cmd[0] = g_build_filename (GVM_DATA_DIR, "gvm-lsc-rpm-creator.sh", NULL);
+  cmd[0] = g_build_filename (MAGENI_DATA_DIR, "gvm-lsc-rpm-creator.sh", NULL);
   cmd[1] = g_strdup (username);
   cmd[2] = g_strdup (new_pubkey_filename);
   cmd[3] = g_strdup (tmpdir);
@@ -424,7 +426,7 @@ lsc_user_deb_create (const gchar *username,
 
   g_debug ("%s: Attempting DEB build", __FUNCTION__);
   cmd = (gchar **) g_malloc (7 * sizeof (gchar *));
-  cmd[0] = g_build_filename (GVM_DATA_DIR, "gvm-lsc-deb-creator.sh", NULL);
+  cmd[0] = g_build_filename (MAGENI_DATA_DIR, "gvm-lsc-deb-creator.sh", NULL);
   cmd[1] = g_strdup (username);
   cmd[2] = g_strdup (new_pubkey_filename);
   cmd[3] = g_strdup (tmpdir);

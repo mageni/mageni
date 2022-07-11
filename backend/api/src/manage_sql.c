@@ -1,4 +1,6 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -87,7 +89,7 @@
 /**
  * @brief Scanner (openvassd) address.
  */
-#define OPENVASSD_ADDRESS GVM_RUN_DIR "/mageni-vscand.sock"
+#define OPENVASSD_ADDRESS MAGENI_RUN_DIR "/mageni-vscand.sock"
 
 #ifdef DEBUG_FUNCTION_NAMES
 #include <dlfcn.h>
@@ -9661,7 +9663,7 @@ alert_script_exec (const char *alert_id, const char *command_args,
   gchar *script, *script_dir;
 
   /* Setup script file name. */
-  script_dir = g_build_filename (GVMD_DATA_DIR,
+  script_dir = g_build_filename (MAGENI_DATA_DIR,
                                  "global_alert_methods",
                                  alert_id,
                                  NULL);
@@ -10342,7 +10344,7 @@ send_to_sourcefire (const char *ip, const char *port, const char *pkcs12_64,
 
   /* Setup file names. */
 
-  script_dir = g_build_filename (GVMD_DATA_DIR,
+  script_dir = g_build_filename (MAGENI_DATA_DIR,
                                  "global_alert_methods",
                                  "cd1f5a34-6bdc-11e0-9827-002264764cea",
                                  NULL);
@@ -10662,7 +10664,7 @@ send_to_verinice (const char *url, const char *username, const char *password,
     }
 
   /* Setup file names. */
-  script_dir = g_build_filename (GVMD_DATA_DIR,
+  script_dir = g_build_filename (MAGENI_DATA_DIR,
                                  "global_alert_methods",
                                  "f9d97653-f89b-41af-9ba1-0f6ee00e9c1a",
                                  NULL);
@@ -11084,7 +11086,7 @@ send_to_vfire (const char *base_url, const char *client_id,
   g_string_free (config_xml, TRUE);
 
   // Run the script
-  alert_script = g_build_filename (GVMD_DATA_DIR,
+  alert_script = g_build_filename (MAGENI_DATA_DIR,
                                    "global_alert_methods",
                                    alert_id,
                                    "alert",
@@ -11211,7 +11213,7 @@ send_to_tippingpoint (const char *report, size_t report_size,
 
   /* Build args and run the script */
   hostname_clean = g_shell_quote (hostname);
-  convert_script = g_build_filename (GVMD_DATA_DIR,
+  convert_script = g_build_filename (MAGENI_DATA_DIR,
                                      "global_alert_methods",
                                      alert_id,
                                      "report-convert.py",
@@ -16563,7 +16565,6 @@ static int
 check_db_versions (int nvt_cache_mode)
 {
   char *database_version;
-  int scap_db_version, cert_db_version;
 
   database_version = sql_string ("SELECT value FROM %s.meta"
                                  " WHERE name = 'database_version';",
@@ -16958,12 +16959,12 @@ make_report_format_uuids_unique ()
           /* Dedicated subdir in user dir, but must be renamed. */
           copy = 0;
           owner_uuid = iterator_string (&rows, 4);
-          dir = g_build_filename (GVMD_STATE_DIR,
+          dir = g_build_filename (MAGENI_STATE_DIR,
                                   "report_formats",
                                   owner_uuid,
                                   old_uuid,
                                   NULL);
-          new_dir = g_build_filename (GVMD_STATE_DIR,
+          new_dir = g_build_filename (MAGENI_STATE_DIR,
                                       "report_formats",
                                       owner_uuid,
                                       new_uuid,
@@ -16983,12 +16984,12 @@ make_report_format_uuids_unique ()
                  && original_owner_uuid
                  && (strcmp (owner_uuid, original_owner_uuid) == 0);
 
-          dir = g_build_filename (GVMD_STATE_DIR,
+          dir = g_build_filename (MAGENI_STATE_DIR,
                                   "report_formats",
                                   owner_uuid,
                                   old_uuid,
                                   NULL);
-          new_dir = g_build_filename (GVMD_STATE_DIR,
+          new_dir = g_build_filename (MAGENI_STATE_DIR,
                                       "report_formats",
                                       owner_uuid,
                                       new_uuid,
@@ -17063,7 +17064,7 @@ check_db_trash_report_formats ()
   gchar *dir;
   struct stat state;
 
-  dir = g_build_filename (GVMD_STATE_DIR,
+  dir = g_build_filename (MAGENI_STATE_DIR,
                           "report_formats_trash",
                           NULL);
 
@@ -17247,12 +17248,12 @@ static gchar *
 report_format_trash_dir (const gchar *report_format_id)
 {
   if (report_format_id)
-    return g_build_filename (GVMD_STATE_DIR,
+    return g_build_filename (MAGENI_STATE_DIR,
                              "report_formats_trash",
                              report_format_id,
                              NULL);
 
-  return g_build_filename (GVMD_STATE_DIR,
+  return g_build_filename (MAGENI_STATE_DIR,
                            "report_formats_trash",
                            NULL);
 }
@@ -17775,7 +17776,7 @@ check_generate_scripts ()
           if (user_uuid == NULL)
             continue;
 
-          path = g_build_filename (GVMD_STATE_DIR,
+          path = g_build_filename (MAGENI_STATE_DIR,
                                    "report_formats",
                                    user_uuid,
                                    report_format_uuid,
@@ -31684,7 +31685,7 @@ run_report_format_script (gchar *report_format_id,
                           " WHERE id = (SELECT owner FROM"
                           "             report_formats WHERE id = %llu);",
                           report_format);
-      script_dir = g_build_filename (GVMD_STATE_DIR,
+      script_dir = g_build_filename (MAGENI_STATE_DIR,
                                      "report_formats",
                                      owner,
                                      report_format_id,
@@ -43869,7 +43870,7 @@ find_signature (const gchar *location, const gchar *installer_filename,
 
       signature_basename  = g_strdup_printf ("%s.asc", installer_basename);
       g_free (installer_basename);
-      signature_filename = g_build_filename (GVM_NVT_DIR,
+      signature_filename = g_build_filename (MAGENI_NVT_DIR,
                                              location,
                                              signature_basename,
                                              NULL);
@@ -43890,7 +43891,7 @@ find_signature (const gchar *location, const gchar *installer_filename,
 
               g_error_free (error);
               error = NULL;
-              signature_filename = g_build_filename (GVMD_STATE_DIR,
+              signature_filename = g_build_filename (MAGENI_STATE_DIR,
                                                      "signatures",
                                                      location,
                                                      signature_basename,
@@ -43958,7 +43959,7 @@ get_sysconf_gpghome ()
   static char *name;
 
   if (!name)
-    name = g_build_filename (GVM_SYSCONF_DIR, "gnupg", NULL);
+    name = g_build_filename (MAGENI_SYSCONF_DIR, "gnupg", NULL);
 
   return name;
 }
@@ -51064,7 +51065,7 @@ create_report_format (const char *uuid, const char *name,
        * report format in the feed.  This allows the signature to be shared. */
 
       base = g_strdup_printf ("%s.asc", uuid);
-      old = g_build_filename (GVM_NVT_DIR, "report_formats", base, NULL);
+      old = g_build_filename (MAGENI_NVT_DIR, "report_formats", base, NULL);
       real_old = realpath (old, NULL);
       if (real_old)
         {
@@ -51081,7 +51082,7 @@ create_report_format (const char *uuid, const char *name,
           /* Signature may be in private directory. */
 
           g_free (old);
-          old = g_build_filename (GVMD_STATE_DIR,
+          old = g_build_filename (MAGENI_STATE_DIR,
                                   "signatures",
                                   "report_formats",
                                   base,
@@ -51090,7 +51091,7 @@ create_report_format (const char *uuid, const char *name,
             {
               /* No.  Signature may not exist in the feed yet. */
               g_free (old);
-              old = g_build_filename (GVM_NVT_DIR, "report_formats", base,
+              old = g_build_filename (MAGENI_NVT_DIR, "report_formats", base,
                                       NULL);
               g_debug ("using standard old: %s", old);
             }
@@ -51119,7 +51120,7 @@ create_report_format (const char *uuid, const char *name,
         }
       g_free (base);
 
-      path = g_build_filename (GVMD_STATE_DIR,
+      path = g_build_filename (MAGENI_STATE_DIR,
                                "signatures", "report_formats", NULL);
 
       if (g_mkdir_with_parents (path, 0755 /* "rwxr-xr-x" */))
@@ -51171,7 +51172,7 @@ create_report_format (const char *uuid, const char *name,
   else
     {
       assert (current_credentials.uuid);
-      dir = g_build_filename (GVMD_STATE_DIR,
+      dir = g_build_filename (MAGENI_STATE_DIR,
                               "report_formats",
                               current_credentials.uuid,
                               new_uuid ? new_uuid : uuid,
@@ -51205,7 +51206,7 @@ create_report_format (const char *uuid, const char *name,
 
       /* glib seems to apply the mode to the first dir only. */
 
-      report_dir = g_build_filename (GVMD_STATE_DIR,
+      report_dir = g_build_filename (MAGENI_STATE_DIR,
                                      "report_formats",
                                      current_credentials.uuid,
                                      NULL);
@@ -51581,7 +51582,7 @@ copy_report_format (const char* name, const char* source_uuid,
       gchar *owner_uuid;
       owner_uuid = report_format_owner_uuid (old);
       assert (owner_uuid);
-      source_dir = g_build_filename (GVMD_STATE_DIR,
+      source_dir = g_build_filename (MAGENI_STATE_DIR,
                                      "report_formats",
                                      owner_uuid,
                                      source_uuid,
@@ -51609,7 +51610,7 @@ copy_report_format (const char* name, const char* source_uuid,
 
   /* Prepare directory to copy into. */
 
-  copy_dir = g_build_filename (GVMD_STATE_DIR,
+  copy_dir = g_build_filename (MAGENI_STATE_DIR,
                                "report_formats",
                                current_credentials.uuid,
                                copy_uuid,
@@ -51638,7 +51639,7 @@ copy_report_format (const char* name, const char* source_uuid,
 
   /* Correct permissions as glib doesn't seem to do so. */
 
-  tmp_dir = g_build_filename (GVMD_STATE_DIR,
+  tmp_dir = g_build_filename (MAGENI_STATE_DIR,
                               "report_formats",
                               current_credentials.uuid,
                               NULL);
@@ -51658,7 +51659,7 @@ copy_report_format (const char* name, const char* source_uuid,
     }
   g_free (tmp_dir);
 
-  tmp_dir = g_build_filename (GVMD_STATE_DIR,
+  tmp_dir = g_build_filename (MAGENI_STATE_DIR,
                               "report_formats",
                               current_credentials.uuid,
                               copy_uuid,
@@ -52037,7 +52038,7 @@ delete_report_format (const char *report_format_id, int ultimate)
       g_free (dir);
 
       /* Links to the feed signatures. */
-      dir = g_build_filename (GVMD_STATE_DIR, "signatures",
+      dir = g_build_filename (MAGENI_STATE_DIR, "signatures",
                               "report_formats", base, NULL);
       g_free (base);
       unlink (dir);
@@ -52054,7 +52055,7 @@ delete_report_format (const char *report_format_id, int ultimate)
     }
 
   owner_uuid = report_format_owner_uuid (report_format);
-  dir = g_build_filename (GVMD_STATE_DIR,
+  dir = g_build_filename (MAGENI_STATE_DIR,
                           "report_formats",
                           owner_uuid,
                           report_format_id,
@@ -59638,7 +59639,7 @@ manage_schema (gchar *format, gchar **output_return, gsize *output_length,
     else
       return 1;
 
-    script_dir = g_build_filename (GVMD_DATA_DIR,
+    script_dir = g_build_filename (MAGENI_DATA_DIR,
                                    "global_schema_formats",
                                    uuid_format,
                                    NULL);
@@ -59693,7 +59694,7 @@ manage_schema (gchar *format, gchar **output_return, gsize *output_length,
 
       /* Call the script. */
 
-      command = g_strdup_printf ("%s " GVMD_DATA_DIR
+      command = g_strdup_printf ("%s " MAGENI_DATA_DIR
                                  "/global_schema_formats"
                                  "/18e826fc-dab6-11df-b913-002264764cea/GMP.xml"
                                  " > %s"
@@ -60554,7 +60555,7 @@ manage_restore (const char *id)
       /* Move the dir last, in case any SQL rolls back. */
 
       owner_uuid = report_format_owner_uuid (report_format);
-      dir = g_build_filename (GVMD_STATE_DIR,
+      dir = g_build_filename (MAGENI_STATE_DIR,
                               "report_formats",
                               owner_uuid,
                               trash_uuid,

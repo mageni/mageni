@@ -1,4 +1,6 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
  * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
  * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
  *
@@ -112,8 +114,8 @@ typedef struct
  * @brief Default values for scanner options. Must be NULL terminated.
  */
 static openvassd_option openvassd_defaults[] = {
-  {"plugins_folder", OPENVAS_NVT_DIR},
-  {"include_folders", OPENVAS_NVT_DIR},
+  {"plugins_folder", MAGENI_NVT_DIR},
+  {"include_folders", MAGENI_NVT_DIR},
   {"max_hosts", "30"},
   {"max_checks", "10"},
   {"be_nice", "yes"},
@@ -333,7 +335,7 @@ reload_openvassd ()
 
   proctitle_set (PROCTITLE_RELOADING);
   /* Setup logging. */
-  rc_name = g_build_filename (OPENVAS_SYSCONF_DIR, "vscand_log.conf", NULL);
+  rc_name = g_build_filename (MAGENI_SYSCONF_DIR, "vscand_log.conf", NULL);
   if (g_file_test (rc_name, G_FILE_TEST_EXISTS))
     log_config = load_log_configuration (rc_name);
   g_free (rc_name);
@@ -820,7 +822,7 @@ init_openvassd (const char *config_file)
   prefs_config (config_file);
 
   /* Setup logging. */
-  rc_name = g_build_filename (OPENVAS_SYSCONF_DIR, "vscand_log.conf", NULL);
+  rc_name = g_build_filename (MAGENI_SYSCONF_DIR, "vscand_log.conf", NULL);
   if (g_file_test (rc_name, G_FILE_TEST_EXISTS))
     log_config = load_log_configuration (rc_name);
   g_free (rc_name);
@@ -980,7 +982,7 @@ main (int argc, char *argv[])
 
   if (!unix_socket_path)
     unix_socket_path =
-      g_build_filename (OPENVAS_RUN_DIR, "mageni-vscand.sock", NULL);
+      g_build_filename (MAGENI_PID_DIR, "mageni-vscand.sock", NULL);
 
   if (display_version)
     {
@@ -1010,7 +1012,7 @@ main (int argc, char *argv[])
     vendor_version_set (vendor_version_string);
 
   if (!config_file)
-    config_file = OPENVASSD_CONF;
+    config_file = MAGENI_CONF_DIR;
   if (only_cache)
     {
       if (init_openvassd (config_file))

@@ -1,4 +1,6 @@
-/* Copyright (C) 2013-2018 Greenbone Networks GmbH
+/* 
+ * Most new code since 2022 by Mageni Security LLC
+ * Copyright (C) 2013-2018 Greenbone Networks GmbH
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  *
@@ -166,6 +168,13 @@
  * @brief Database ROWID of 'Full and very deep ultimate' config.
  */
 #define CONFIG_ID_FULL_AND_VERY_DEEP_ULTIMATE 4
+
+/**
+ * @brief Location of client certificate private key.
+ */
+#ifndef MAGENI_CLIENT_KEY
+#define MAGENI_CLIENT_KEY "/usr/local/var/lib/mageni/private/CA/clientkey.pem"
+#endif
 
 /* Headers from backend specific manage_xxx.c file. */
 
@@ -1250,7 +1259,7 @@ migrate_9_to_10_user_uuid (const char *name)
 {
   gchar *uuid_file;
 
-  uuid_file = g_build_filename (GVM_STATE_DIR, "users", name, "uuid", NULL);
+  uuid_file = g_build_filename (MAGENI_STATE_DIR, "users", name, "uuid", NULL);
   if (g_file_test (uuid_file, G_FILE_TEST_EXISTS))
     {
       gsize size;
@@ -2234,12 +2243,12 @@ migrate_21_to_22 ()
                    iterator_int64 (&rows, 0)))
         {
           /* Global. */
-          old_dir = g_build_filename (GVM_SYSCONF_DIR,
+          old_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                                       "openvasmd",
                                       "global_report_formats",
                                       name,
                                       NULL);
-          new_dir = g_build_filename (GVM_SYSCONF_DIR,
+          new_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                                       "openvasmd",
                                       "global_report_formats",
                                       uuid,
@@ -2258,13 +2267,13 @@ migrate_21_to_22 ()
               // sql_rollback ();
               return -1;
             }
-          old_dir = g_build_filename (GVM_SYSCONF_DIR,
+          old_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                                       "openvasmd",
                                       "report_formats",
                                       owner_uuid,
                                       name,
                                       NULL);
-          new_dir = g_build_filename (GVM_SYSCONF_DIR,
+          new_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                                       "openvasmd",
                                       "report_formats",
                                       owner_uuid,
@@ -3099,7 +3108,7 @@ migrate_37_to_38 ()
   /* Remove the global report format dirs, as they should have been
    * installed in the new location already. */
 
-  old_dir = g_build_filename (GVM_SYSCONF_DIR,
+  old_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                               "openvasmd",
                               "global_report_formats",
                               NULL);
@@ -3109,7 +3118,7 @@ migrate_37_to_38 ()
 
   /* Move user uploaded report formats. */
 
-  new_dir = g_build_filename (GVMD_STATE_DIR,
+  new_dir = g_build_filename (MAGENI_STATE_DIR,
                               NULL);
 
   if (g_mkdir_with_parents (new_dir, 0755 /* "rwxr-xr-x" */))
@@ -3120,7 +3129,7 @@ migrate_37_to_38 ()
       return -1;
     }
 
-  old_dir = g_build_filename (GVM_SYSCONF_DIR,
+  old_dir = g_build_filename (MAGENI_SYSCONF_DIR,
                               "openvasmd",
                               "report_formats",
                               NULL);
@@ -3458,13 +3467,13 @@ migrate_43_to_44 ()
 
   /* The file permission got much tighter. */
 
-  if (chmod (gvmd_db_name ? gvmd_db_name : GVM_STATE_DIR "/mgr/tasks.db",
+  if (chmod (gvmd_db_name ? gvmd_db_name : MAGENI_STATE_DIR "/mgr/tasks.db",
              S_IRUSR | S_IWUSR))
     {
       g_warning ("%s: failed to chmod %s: %s",
                  __FUNCTION__,
                  gvmd_db_name ? gvmd_db_name
-                              : GVM_STATE_DIR "/mgr/tasks.db",
+                              : MAGENI_STATE_DIR "/mgr/tasks.db",
                  strerror (errno));
       // sql_rollback ();
       return -1;
@@ -3897,7 +3906,7 @@ migrate_54_to_55_format (const char *old_uuid, const char *new_uuid)
 {
   gchar *dir;
 
-  dir = g_build_filename (GVMD_DATA_DIR,
+  dir = g_build_filename (MAGENI_DATA_DIR,
                           "global_report_formats",
                           old_uuid,
                           NULL);
@@ -6412,12 +6421,12 @@ migrate_79_to_80 ()
   sql ("ALTER TABLE users ADD COLUMN method;");
   sql ("UPDATE users SET method = 'file';");
 
-  count = scandir (GVM_STATE_DIR "/users", &names, NULL, alphasort);
+  count = scandir (MAGENI_STATE_DIR "/users", &names, NULL, alphasort);
   if (count < 0)
     {
       g_warning ("%s: failed to open dir %s/users: %s",
                  __FUNCTION__,
-                 GVM_STATE_DIR,
+                 MAGENI_STATE_DIR,
                  strerror (errno));
       // sql_rollback ();
       return -1;
@@ -6454,12 +6463,12 @@ migrate_79_to_80 ()
 
       /* Figure out the user dir. */
 
-      remote_dir = g_build_filename (GVM_STATE_DIR,
+      remote_dir = g_build_filename (MAGENI_STATE_DIR,
                                      "users-remote",
                                      "ldap_connect",
                                      names[index]->d_name,
                                      NULL);
-      classic_dir = g_build_filename (GVM_STATE_DIR, "users",
+      classic_dir = g_build_filename (MAGENI_STATE_DIR, "users",
                                       names[index]->d_name,
                                       NULL);
       remote_flag_file = g_build_filename (classic_dir,
@@ -6682,7 +6691,7 @@ migrate_79_to_80 ()
 
   /* Remove entire user-remote dir. */
 
-  dir = g_build_filename (GVM_STATE_DIR, "users-remote", NULL);
+  dir = g_build_filename (MAGENI_STATE_DIR, "users-remote", NULL);
   if (g_lstat (dir, &state))
     {
       if (errno != ENOENT)
@@ -9225,7 +9234,7 @@ migrate_129_to_130 ()
       g_free (ca_pub);
       return -1;
     }
-  if (!g_file_get_contents (CLIENTKEY, &key_priv, NULL, &error))
+  if (!g_file_get_contents (MAGENI_CLIENT_KEY, &key_priv, NULL, &error))
     {
       g_warning ("%s: %s", __FUNCTION__, error->message);
       g_error_free (error);
@@ -12759,7 +12768,7 @@ migrate_170_to_171 ()
 
   /* The report formats trash moved to an FHS compliant location. */
 
-  new_dir = g_build_filename (GVMD_STATE_DIR,
+  new_dir = g_build_filename (MAGENI_STATE_DIR,
                               NULL);
 
   if (g_mkdir_with_parents (new_dir, 0755 /* "rwxr-xr-x" */))
@@ -12770,7 +12779,7 @@ migrate_170_to_171 ()
       return -1;
     }
 
-  old_dir = g_build_filename (GVMD_DATA_DIR,
+  old_dir = g_build_filename (MAGENI_DATA_DIR,
                               "report_formats_trash",
                               NULL);
 
@@ -12879,7 +12888,7 @@ migrate_171_to_172 ()
 
   /* The global report formats moved to an FHS compliant location. */
 
-  new_dir_path = g_build_filename (GVMD_STATE_DIR,
+  new_dir_path = g_build_filename (MAGENI_STATE_DIR,
                                    NULL);
 
   if (g_mkdir_with_parents (new_dir_path, 0755 /* "rwxr-xr-x" */))
@@ -12890,7 +12899,7 @@ migrate_171_to_172 ()
       return -1;
     }
 
-  old_dir_path = g_build_filename (GVMD_DATA_DIR,
+  old_dir_path = g_build_filename (MAGENI_DATA_DIR,
                                    "global_report_formats",
                                    NULL);
 
@@ -13155,12 +13164,12 @@ migrate_174_to_175 ()
   /* The global report formats moved back to the DATA directory, because
    * they are being merged into the predefined report formats. */
 
-  new_dir_path = g_build_filename (GVMD_DATA_DIR,
+  new_dir_path = g_build_filename (MAGENI_DATA_DIR,
                                    "report_formats",
                                    NULL);
 
   /* The new dir should exist already, so this will work even if we don't
-   * have write permission in GVMD_DATA_DIR. */
+   * have write permission in MAGENI_DATA_DIR. */
   if (g_mkdir_with_parents (new_dir_path, 0755 /* "rwxr-xr-x" */))
     {
       g_warning ("%s: failed to create dir %s", __FUNCTION__, new_dir_path);
@@ -13169,7 +13178,7 @@ migrate_174_to_175 ()
       return -1;
     }
 
-  old_dir_path = g_build_filename (GVMD_STATE_DIR,
+  old_dir_path = g_build_filename (MAGENI_STATE_DIR,
                                    "global_report_formats",
                                    NULL);
 
@@ -13306,7 +13315,7 @@ migrate_175_to_176 ()
   /* Update the database. */
 
   /* Change the default scanner to use unix file sockets. */
-  sql ("UPDATE scanners SET host = '" GVM_RUN_DIR "/mageni-vscand.sock'"
+  sql ("UPDATE scanners SET host = '" MAGENI_RUN_DIR "/mageni-vscand.sock'"
        " WHERE uuid = '" SCANNER_UUID_DEFAULT "';");
 
   /* Set the database version to 176. */
@@ -13699,7 +13708,7 @@ migrate_181_to_182_move (const char *dest)
   const gchar *asc_name;
   int move_failed;
 
-  new_dir_path = g_build_filename (GVMD_STATE_DIR,
+  new_dir_path = g_build_filename (MAGENI_STATE_DIR,
                                    "signatures",
                                    dest,
                                    NULL);
@@ -13711,7 +13720,7 @@ migrate_181_to_182_move (const char *dest)
       return -1;
     }
 
-  old_dir_path = g_build_filename (GVM_NVT_DIR,
+  old_dir_path = g_build_filename (MAGENI_NVT_DIR,
                                    "private",
                                    dest,
                                    NULL);
