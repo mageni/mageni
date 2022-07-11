@@ -2,3 +2,9 @@ frontend/* linguist-documentation=false
 frontend/* linguist-vendored
 backend/* linguist-documentation=false
 backend/* linguist-vendored
+
+*.c     text diff=c
+*.php   text diff=php
+*.h     text diff=c
+*.sh    text diff=bash
+*.js    text diff=javascript
