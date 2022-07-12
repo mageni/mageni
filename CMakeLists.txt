@@ -56,7 +56,6 @@ endif ()
 
 set (CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 include (${CMAKE_MODULE_PATH}/FindLinux.cmake)
-include (${CMAKE_MODULE_PATH}/IncludeHeaders.cmake)
 
 message (STATUS "Software: ${PROJECT_NAME}")
 message (STATUS "Version: ${PROJECT_VERSION}")
