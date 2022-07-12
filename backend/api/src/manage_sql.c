@@ -18619,49 +18619,6 @@ authenticate_any_method (const gchar *username, const gchar *password,
   int ret;
   gchar *hash;
 
-  if (gvm_auth_ldap_enabled ()
-      && ldap_auth_enabled ()
-      && user_exists_method (username, AUTHENTICATION_METHOD_LDAP_CONNECT))
-    {
-      ldap_auth_info_t info;
-      int allow_plaintext;
-      gchar *authdn, *host, *cacert;
-
-      *auth_method = AUTHENTICATION_METHOD_LDAP_CONNECT;
-      /* Search the LDAP authentication cache first. */
-      if (auth_cache_find (username, password, 0) == 0)
-        return 0;
-
-      manage_get_ldap_info (NULL, &host, &authdn, &allow_plaintext, &cacert);
-      info = ldap_auth_info_new (host, authdn, allow_plaintext);
-      g_free (host);
-      g_free (authdn);
-      ret = ldap_connect_authenticate (username, password, info, cacert);
-      ldap_auth_info_free (info);
-      free (cacert);
-
-      if (ret == 0)
-        auth_cache_insert (username, password, 0);
-      return ret;
-    }
-  if (gvm_auth_radius_enabled ()
-      && radius_auth_enabled ()
-      && user_exists_method (username, AUTHENTICATION_METHOD_RADIUS_CONNECT))
-    {
-      char *key = NULL, *host = NULL;
-
-      *auth_method = AUTHENTICATION_METHOD_RADIUS_CONNECT;
-      if (auth_cache_find (username, password, 1) == 0)
-        return 0;
-
-      manage_get_radius_info (NULL, &host, &key);
-      ret = radius_authenticate (host, key, username, password);
-      g_free (host);
-      g_free (key);
-      if (ret == 0)
-        auth_cache_insert (username, password, 1);
-      return ret;
-    }
   *auth_method = AUTHENTICATION_METHOD_FILE;
   hash = manage_user_hash (username);
   ret = gvm_authenticate_classic (username, password, hash);
