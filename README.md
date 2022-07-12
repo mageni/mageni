@@ -21,7 +21,7 @@
 4. [Audience](#audience)
 5. [Install on Linux](#linux)
 6. [Install on macOS](#macos)
-7. [Install on Windows](#macos)
+7. [Install on Windows](#windows)
 8. [Sponsorship](#sponsorship)
 9. [Thank you, open source](#thank-you-open-source)
 9. [License](#license)
