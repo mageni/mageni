@@ -55,6 +55,7 @@ Mageni eases simple tasks for vulnerability management, such as:
 - Compliance Testing (PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS)
 - Penetration Testing
 - Security Audits
+- IoT, OT, and SCADA Security Testing
 - And more ...
 
 This is what it currently looks like:
