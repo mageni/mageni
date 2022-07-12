@@ -14,6 +14,19 @@
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 </p>
 
+# Table of Contents
+1. [Introduction](#introduction)
+2. [What problem does Mageni solve?](#what-problem-does-mageni-solve)
+3. [About Mageni](#about-mageni)
+4. [Audience](#audience)
+5. [Install on Linux](#linux)
+6. [Install on macOS](#macos)
+7. [Install on Windows](#macos)
+8. [Sponsorship](#sponsorship)
+9. [Thank you, open source](#thank-you-open-source)
+9. [License](#license)
+10. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
+
 ## Introduction
 
 Mageni is passionate about solving the world's toughest and most complex problems using open-source. 
@@ -29,7 +42,7 @@ Mageni is passionate about solving the world's toughest and most complex problem
 
 Mageni provides a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches
 
-Mageni eases for you the vulnerability management cycle and takes the discomfort, angst and pain out of cybersecurity by easing simple tasks for vulnerability management, such as:
+Mageni eases simple tasks for vulnerability management, such as:
 
 - Asset Discovery
 - Prioritize Assets
@@ -157,9 +170,7 @@ Mageni is an important open source contribution to the upstream projects as it p
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
 
-## Legal, Copyright Law, and DMCA
+## Applicable Laws, Legal, Fair Use, and DMCA
+Mageni publishes open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
 
-If you have questions about the GPL license, copyrights, matter of copyright law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub.</a>
-
-## Free, forever free.
-Mageni does not sells the open source software. This software is, and always will be, free and open source.
+If you have questions about the GPL license, copyrights law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>
