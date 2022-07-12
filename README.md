@@ -16,7 +16,7 @@
 
 # Table of Contents
 1. [Introduction](#introduction)
-2. [What problem does Mageni solve?](#what-problem-does-mageni-solve)
+2. [Statistics](#statistics)
 3. [About Mageni](#about-mageni)
 4. [Audience](#audience)
 5. [Install on Linux](#linux)
@@ -31,7 +31,7 @@
 
 Mageni is passionate about solving the world's toughest and most complex problems using open-source. 
 
-### What problem does Mageni help you to solve?
+### Statistics
 
 - **Unpatched and exposed services** account for 82% of successful attack (Tetra Defense)
 - 60% of breach victims were breached due to an **unpatched known vulnerability** (Ponemom Institute)
