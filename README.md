@@ -50,24 +50,6 @@ This is what it currently looks like:
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </p>
 
-## Mission
-Mageni's mission is to make your life more enjoyable and peaceful by providing you with a wonderful vulnerability management platform.
-
-## Vision
-We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
-
-## What is the Vulnerability Management Cycle?
-
-The Vulnerability Management Cycle is intended to allow organizations and individuals to identify and assess computer system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated. **Mageni automates for you the Vulnerability Management Cycle saving you time, money, and resources, and helps you to comply with security standards like PCI DSS, NIST, and others.**
-
-Here you can see the Vulnerability Management Cycle according to Gartner:
-
-<p align="center">
-    <img src="https://www.mageni.net/assets/img/vmcycle.jpeg" width="600" style="padding-top:10px;">
-</p>
-
-Mageni takes the pain out of the vulnerability management cycle by easing those tasks.
-
 ## Audience
 - PenTester
 - Cybersecurity Professionals 
@@ -141,7 +123,6 @@ multipass shell mageni
 curl -sL https://www.mageni.net/installation | sudo bash
 ```
 ## Sponsorship
-
 We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can. However, if you choose to show your appreciation by sponsoring this project, know that we are deeply appreciative.
 
 1% of the proceeds go towards reducing climate change on earth.
@@ -152,7 +133,6 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Has Mageni helped your small business (less than 100 employees)? The sponsorship tier <a href="https://buy.stripe.com/aEUbJ6fbm1wudxK28i">Small Business</a> gives you the chance to give back. 
 - Has Mageni helped your medium business (less than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/00gfZmaV6fnkbpC4gp">Medium Business</a> gives you the chance to give back. 
 - Has Mageni helped your organization (more than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/28ocNa1kwfnk0KYbIQ">Organization</a> gives you the chance to give back. 
-- Has Mageni helped your MSP? The sponsorship tier <a href="https://buy.stripe.com/bIY4gE8MY7USgJWdQX">MSP</a> gives you the chance to give back.
 
 ### Benefits of Sponsorship
 - Access to the private issues repository
@@ -160,9 +140,6 @@ We love working on Mageni and give it to you without expecting anything in retur
 - Priority support to fix bugs
 - Your feature request will be a top priority
 - You have an active role in preserving the software that you use
-
-## CompTIA PenTest+ Certification
-Mageni is developed by certified CompTIA PenTest+ Professionals. CompTIA PenTest+ is for cybersecurity professionals tasked with penetration testing and vulnerability management, is compliant with ISO 17024 standards and approved by the US DoD. 
 
 ## Contributing
 You can also contribute with:
@@ -175,11 +152,12 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
+## License
+<a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
+
+## Legal, Copyright Law, and DMCA
+
 If you have questions about the GPL license, copyrights, matter of copyright law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub.</a>
 
 ## Free, forever free.
-
 Mageni does not sells the open source software. This software is, and always will be, free and open source.
-
-## License
-<a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
