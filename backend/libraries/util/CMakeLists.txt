@@ -19,12 +19,12 @@
 
 include_directories (${GLIB_INCLUDE_DIRS} ${GPGME_INCLUDE_DIRS} ${GCRYPT_INCLUDE_DIRS})
 
-set (FILES authutils.c compressutils.c fileutils.c gpgmeutils.c kb.c ldaputils.c
-           nvticache.c radiusutils.c serverutils.c sshutils.c uuidutils.c
+set (FILES authutils.c compressutils.c fileutils.c gpgmeutils.c kb.c
+           nvticache.c serverutils.c sshutils.c uuidutils.c
            xmlutils.c)
 
 set (HEADERS authutils.h compressutils.h fileutils.h gpgmeutils.h kb.h
-             ldaputils.h nvticache.h radiusutils.h serverutils.h sshutils.h
+             nvticache.h serverutils.h sshutils.h
              uuidutils.h xmlutils.h)
 
 add_library (mageni_util_shared SHARED ${FILES})
