@@ -74,10 +74,8 @@
 #include "../../libraries/util/gpgmeutils.h"
 #include "../../libraries/util/serverutils.h"
 #include "../../libraries/util/uuidutils.h"
-#include "../../libraries/util/radiusutils.h"
 #include "../../libraries/util/sshutils.h"
 #include "../../libraries/util/authutils.h"
-#include "../../libraries/util/ldaputils.h"
 #include "../../libraries/gmp/gmp.h"
 
 #undef G_LOG_DOMAIN
