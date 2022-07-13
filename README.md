@@ -22,10 +22,10 @@
 5. [Install on Linux](#linux)
 6. [Install on macOS](#macos)
 7. [Install on Windows](#windows)
-8. [Sponsorship](#sponsorship)
+8. [Contributing](#contributing)
 9. [Thank you, open source](#thank-you-open-source)
-9. [License](#license)
-10. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
+10. [License](#license)
+11. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
 
 ## Introduction
 
@@ -136,32 +136,18 @@ multipass shell mageni
 ```
 curl -sL https://www.mageni.net/installation | sudo bash
 ```
-## Sponsorship
-We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can. However, if you choose to show your appreciation by sponsoring this project, know that we are deeply appreciative.
-
-1% of the proceeds go towards reducing climate change on earth.
-
-- Are you using Mageni for your personal projects and side projects and really enjoying it? The sponsorship tier <a href="https://buy.stripe.com/5kA7sQ2oA1wu9hu7sy">Enthusiast</a> gives you the chance to give back. 
-- Has Mageni reinvigorated your love for cybersecurity? The sponsorship tier <a href="https://buy.stripe.com/aEU9AY3sE5MK8dq14g">Lover</a> gives you the chance to give back. 
-- Has Mageni helped you in your career and made your cybersecurity experience more enjoyable? The sponsorship tier <a href="https://buy.stripe.com/00g4gE8MYdfc79mbIT">Professional</a> gives you the chance to give back. 
-- Has Mageni helped your small business (less than 100 employees)? The sponsorship tier <a href="https://buy.stripe.com/aEUbJ6fbm1wudxK28i">Small Business</a> gives you the chance to give back. 
-- Has Mageni helped your medium business (less than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/00gfZmaV6fnkbpC4gp">Medium Business</a> gives you the chance to give back. 
-- Has Mageni helped your organization (more than 500 employees)? The sponsorship tier <a href="https://buy.stripe.com/28ocNa1kwfnk0KYbIQ">Organization</a> gives you the chance to give back. 
-
-### Benefits of Sponsorship
-- Access to the private issues repository
-- Access to the private discusion board
-- Priority support to fix bugs
-- Your feature request will be a top priority
-- You have an active role in preserving the software that you use
 
 ## Contributing
-You can also contribute with:
+We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can.
+
+You can contribute with:
 
 - Bug reports
 - Features request
 
 For more information, <a href="https://github.com/mageni/mageni/blob/master/CONTRIBUTING.md">read the contribution guide</a>
+
+Send your bug reports and features request to help@mageni.net
 
 ## Thank you, open source
 Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
