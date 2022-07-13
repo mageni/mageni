@@ -15,34 +15,21 @@
 </p>
 
 # Table of Contents
-1. [Introduction](#introduction)
-2. [Statistics](#statistics)
-3. [About Mageni](#about-mageni)
-4. [Audience](#audience)
-5. [Install on Linux](#linux)
-6. [Install on macOS](#macos)
-7. [Install on Windows](#windows)
-8. [Contributing](#contributing)
-9. [Thank you, open source](#thank-you-open-source)
-10. [License](#license)
-11. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
+1. [About Mageni](#about-mageni)
+2. [Audience](#audience)
+3. [Install on Linux](#linux)
+4. [Install on macOS](#macos)
+5. [Install on Windows](#windows)
+6. [Contributing](#contributing)
+7. [Thank you, open source](#thank-you-open-source)
+8. [License](#license)
+9. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
 
-## Introduction
+## About Mageni
 
-Mageni is passionate about solving the world's toughest and most complex problems using open-source. 
+Mageni is a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches
 
-### Statistics
-
-- **Unpatched and exposed services** account for 82% of successful attack (Tetra Defense)
-- 60% of breach victims were breached due to an **unpatched known vulnerability** (Ponemom Institute)
-- 62% were **unaware that they were vulnerable** prior to the data breach (Ponemom Institute)
-- $4.24 million cost per **data breach** on average; highest in 17-year report history (IBM)
-
-### About Mageni
-
-Mageni provides a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches
-
-Mageni eases simple tasks for vulnerability management, such as:
+Mageni eases for you simple tasks for vulnerability management, such as:
 
 - Asset Discovery
 - Prioritize Assets
