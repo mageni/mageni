@@ -41,7 +41,7 @@ if(description)
   script_mandatory_keys("login/SSH/success");
   script_exclude_keys("ssh/no_linux_shell");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
 
   script_add_preference(name:"Target checksum File", type:"file", value:"");
   script_add_preference(name:"List all and not only the first 100 entries", type:"checkbox", value:"no");

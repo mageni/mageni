@@ -40,7 +40,7 @@ if(description)
   script_require_ports(139, 445);
   script_mandatory_keys("SMB/registry_access");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
 
   script_tag(name:"summary", value:"Detection of the installed Windows build number and
   Service Pack version.

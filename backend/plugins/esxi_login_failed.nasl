@@ -40,7 +40,7 @@ if(description)
   script_dependencies("gb_vmware_esxi_init.nasl");
   script_mandatory_keys("login/ESXi/failed");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
 
   script_tag(name:"summary", value:"It was NOT possible to login using the provided
   VMware ESXi credentials. Hence authenticated checks are NOT enabled.");

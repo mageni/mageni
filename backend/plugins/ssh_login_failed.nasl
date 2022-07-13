@@ -39,7 +39,7 @@ if(description)
   script_dependencies("ssh_authorization.nasl", "gb_ssh_algos.nasl");
   script_mandatory_keys("login/SSH/failed");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
 
   script_tag(name:"summary", value:"It was NOT possible to login using the provided SSH
   credentials. Hence authenticated checks are NOT enabled.");
