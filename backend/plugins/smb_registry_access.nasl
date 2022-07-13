@@ -42,7 +42,7 @@ if(description)
   script_mandatory_keys("SMB/transport", "SMB/name", "SMB/login", "SMB/password");
   script_exclude_keys("SMB/samba");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
   script_xref(name:"URL", value:"https://support.microsoft.com/en-us/help/314837/how-to-manage-remote-access-to-the-registry");
   script_xref(name:"URL", value:"https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-remotely-accessible-registry-paths-and-subpaths");
 

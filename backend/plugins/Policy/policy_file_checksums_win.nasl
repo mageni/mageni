@@ -42,7 +42,7 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("SMB/samba");
 
-  script_xref(name:"URL", value:"https://documentation.mageni.net");
+  script_xref(name:"URL", value:"https://www.mageni.net/docs");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/rehash/files/rehash/0.2/rehash-0.2-src.zip/download");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/rehash/files/rehash/0.2/rehash-0.2-win.zip/download");
 
