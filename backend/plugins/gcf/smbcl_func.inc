@@ -107,7 +107,7 @@ function smbgetfile(share, filename, tmp_filename) {
   }
 }
 
-# Get Direntries from SMB Source. typ 0 = all entries. typ 1 = only file entries. typ 2 = only directory entries.
+# Get Directories from SMB Source. typ 0 = all entries. typ 1 = only file entries. typ 2 = only directory entries.
 function smbgetdir(share, dir, typ) {
 
   local_var share, dir, typ;
