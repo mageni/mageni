@@ -35,6 +35,7 @@ Mageni eases for you simple tasks for vulnerability management, such as:
 - Prioritize Assets
 - Vulnerability Scanning
 - Vulnerability Assessment
+- Attack Surface Management
 - Reporting
 - Remediation
 - Vulnerability Prioritization
