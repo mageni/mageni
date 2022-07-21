@@ -25,7 +25,7 @@
 
 ## About Mageni
 
-Mageni is a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches
+Mageni is a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 Mageni eases for you simple tasks for vulnerability management, such as:
 
@@ -34,6 +34,7 @@ Mageni eases for you simple tasks for vulnerability management, such as:
 - Vulnerability Scanning
 - Vulnerability Assessment
 - Attack Surface Management
+- Security Observability
 - Reporting
 - Remediation
 - Vulnerability Prioritization
