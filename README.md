@@ -17,9 +17,7 @@
 # Table of Contents
 1. [About Mageni](#about-mageni)
 2. [Audience](#audience)
-3. [Install on Linux](#linux)
-4. [Install on macOS](#macos)
-5. [Install on Windows](#windows)
+3. [How to install](#installation)
 6. [Contributing](#contributing)
 7. [Thank you, open source](#thank-you-open-source)
 8. [License](#license)
@@ -67,63 +65,7 @@ This is what it currently looks like:
 - And anyone concerned about cybersecurity and vulnerabilities
 
 ## Installation 
-
-### Linux
-
-1. Download Multipass
-```
-sudo snap install multipass
-```
-2. Launch a multipass instance
-```
-multipass launch -c 2 -m 6G -d 20G -n mageni 20.04 && multipass shell mageni
-```
-3. Install Mageni
-```
-curl -sL https://www.mageni.net/installation | sudo bash
-```
-
-### macOS
-
-1. If you don’t have it already, install Brew. Then, to install Multipass simply execute:
-```
-brew install --cask multipass
-```
-2. Launch a multipass instance
-```
-multipass launch -c 2 -m 6G -d 20G -n mageni 20.04 && multipass shell mageni
-```
-3. Install Mageni
-```
-curl -sL https://www.mageni.net/installation | sudo bash
-```
-
-### Windows
-
-1. Download the  <a href="https://multipass.run/download/windows" target="_blank">Multipass</a> installer for Windows
-```
-Note: You need Windows 10 Pro/Enterprise/Education v 1803 or later, or any Windows 10 with VirtualBox
-```
-2. Ensure your network is private
-```
-Make sure your local network is designated as private, otherwise Windows prevents Multipass from starting.
-```
-3. Run the installer
-```
-You need to allow the installer to gain Administrator privileges.
-```
-4. Launch a multipass instance
-```
-multipass launch -c 2 -m 6G -d 20G -n mageni 20.04
-```
-5. Log into the multipass instance
-```
-multipass shell mageni
-```
-6. Install Mageni
-```
-curl -sL https://www.mageni.net/installation | sudo bash
-```
+To install, please read the <a href="https://www.mageni.net/docs">docs</a>
 
 ## Contributing
 We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can.
