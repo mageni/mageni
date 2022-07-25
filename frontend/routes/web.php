@@ -15,8 +15,6 @@ use App\Http\Livewire\Analytics\VulnerabilitiesDetail;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
-// Route::get('/', Dashboard::class)->name('scans');
-
 Route::get('/notifications/email/{scan}/{email}', Email::class)->name('email');
 
 Route::group(['middleware' => [
