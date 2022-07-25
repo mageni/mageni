@@ -97,12 +97,12 @@
                                 Reports
                             </a>
 
-                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                                   </svg>
                                 Asset Management
-                            </a>
+                            </a> --}}
 
                             <a href="{{ route('users') }}" class="@if(Request::is('users')) {{ 'bg-indigo-800' }} @endif flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600 group">
                                 <!-- Heroicon name: outline/users -->
@@ -119,13 +119,12 @@
                                 Knowledge Base
                             </a>
 
-                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
                                 </svg>
                                 Audit Logs
-                            </a>
-
+                            </a> --}}
 
                             <a href="/user/profile" class="@if(Request::is('user/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -203,13 +202,12 @@
                                 Reports
                             </a>
 
-
-                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                                   </svg>
                                 Asset Management
-                            </a>
+                            </a> --}}
 
                             <a href="{{ route('users') }}" class="@if(Request::is('users')) {{ 'bg-indigo-800' }} @endif flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600 group">
                                 <!-- Heroicon name: outline/users -->
@@ -226,13 +224,12 @@
                                 Knowledge Base
                             </a>
 
-                            <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
                                 </svg>
                                 Audit Logs
-                            </a>
-
+                            </a> --}}
 
                             <a href="/user/profile" class="@if(Request::is('user/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
