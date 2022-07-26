@@ -17,7 +17,7 @@
 # Table of Contents
 1. [About Mageni](#about-mageni)
 2. [Audience](#audience)
-3. [How to install](#installation)
+3. [Official Documentation](#official-documentation)
 6. [Contributing](#contributing)
 7. [Thank you, open source](#thank-you-open-source)
 8. [License](#license)
@@ -65,8 +65,8 @@ This is what it currently looks like:
 - Developers
 - And anyone concerned about cybersecurity and vulnerabilities
 
-## Installation 
-To install, please read the <a href="https://www.mageni.net/docs">docs</a>
+## Official Documentation
+Documentation for Mageni can be found on the <a href="https://www.mageni.net/docs">Mageni website</a>
 
 ## Contributing
 We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can.
