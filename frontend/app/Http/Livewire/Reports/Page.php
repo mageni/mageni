@@ -164,6 +164,7 @@ class Page extends Component
                 'nvts.cvssv2_base_vector as CVSSv2_Vector',
                 'nvts.family as Category',
                 'tasks.name as Scan',
+                DB::raw("datetime(reports.date,'unixepoch') as Date"),
                 'nvts.cve as CVE',
                 'nvts.xref as References'
             )

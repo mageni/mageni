@@ -9,6 +9,7 @@ use App\Http\Livewire\KbDetails\Page as KbDetails;
 use App\Http\Livewire\UserManagement as Users;
 use App\Http\Livewire\Notification\Email;
 use App\Http\Livewire\Reports;
+use App\Http\Livewire\About;
 use App\Http\Livewire\Analytics\Vulnerabilities;
 use App\Http\Livewire\Dashboard\Page as Dashboard;
 use App\Http\Livewire\Analytics\VulnerabilitiesDetail;
@@ -36,6 +37,8 @@ Route::group(['middleware' => [
     Route::get('/knowledgebase/{uuid}', KbDetails::class)->name('kbdetails');
 
     Route::get('/users', Users::class)->name('users');
+
+    Route::get('/about', About::class)->name('about');
     
     Route::get('/reports', Reports::class)->name('reports');
 
