@@ -543,14 +543,24 @@
                                                             @endif
                                                         </div>
                                                         <div>
-                                                            <i 
-                                                                wire:key="{{ $loop->index }}" 
-                                                                wire:click="exportLastReport('{{$scan->id}}')" 
-                                                                class="text-indigo-500 cursor-pointer fas fa-regular fa-file-export fa-lg hover:text-indigo-900" 
-                                                                x-data
-                                                                x-tooltip="Export Last Report"
-                                                            >
-                                                            </i>
+                                                            @if($scan->run_status == 0 || $scan->run_status == 3 || $scan->run_status == 4 || $scan->run_status == 10 || $scan->run_status == 11 || $scan->run_status == 14 || $scan->run_status == 15 || $scan->run_status == 16 || $scan->run_status == 17)
+                                                                <i 
+                                                                    wire:key="{{ $loop->index }}" 
+                                                                    class="text-indigo-300 cursor-not-allowed fas fa-regular fa-file-export fa-lg" 
+                                                                    x-data
+                                                                    x-tooltip="Export Report"
+                                                                >
+                                                                </i>
+                                                            @else
+                                                                <i 
+                                                                    wire:key="{{ $loop->index }}" 
+                                                                    wire:click="exportLastReport('{{$scan->id}}')" 
+                                                                    class="text-indigo-500 cursor-pointer fas fa-regular fa-file-export fa-lg hover:text-indigo-900" 
+                                                                    x-data
+                                                                    x-tooltip="Export Report"
+                                                                >
+                                                                </i>
+                                                            @endif
                                                         </div>
                                                         <div>
                                                             @if(env('APP_ENV') === 'production')
