@@ -1,0 +1,1176 @@
+###############################################################################
+# OpenVAS Vulnerability Test
+#
+# Mandriva Update for mozilla MDVSA-2012:110 (mozilla)
+#
+# Authors:
+# System Generated Check
+#
+# Copyright:
+# Copyright (c) 2012 Greenbone Networks GmbH, http://www.greenbone.net
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2
+# (or any later version), as published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+###############################################################################
+
+if(description)
+{
+  script_xref(name:"URL", value:"http://www.mandriva.com/en/support/security/advisories/?name=MDVSA-2012:110");
+  script_oid("1.3.6.1.4.1.25623.1.0.831700");
+  script_version("$Revision: 12381 $");
+  script_tag(name:"last_modification", value:"$Date: 2018-11-16 12:16:30 +0100 (Fri, 16 Nov 2018) $");
+  script_tag(name:"creation_date", value:"2012-07-26 11:14:21 +0530 (Thu, 26 Jul 2012)");
+  script_cve_id("CVE-2012-1949", "CVE-2012-1948", "CVE-2012-1950", "CVE-2012-1951",
+                "CVE-2012-1954", "CVE-2012-1953", "CVE-2012-1952", "CVE-2012-1955",
+                "CVE-2012-1966", "CVE-2012-1957", "CVE-2012-1958", "CVE-2012-1959",
+                "CVE-2012-1960", "CVE-2012-1961", "CVE-2012-1962", "CVE-2012-1963",
+                "CVE-2012-1964", "CVE-2012-1965", "CVE-2012-1967");
+  script_tag(name:"cvss_base", value:"10.0");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
+  script_name("Mandriva Update for mozilla MDVSA-2012:110 (mozilla)");
+
+  script_tag(name:"summary", value:"The remote host is missing an update for the 'mozilla'
+  package(s) announced via the referenced advisory.");
+  script_category(ACT_GATHER_INFO);
+  script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");
+  script_family("Mandrake Local Security Checks");
+  script_dependencies("gather-package-list.nasl");
+  script_mandatory_keys("ssh/login/mandriva_mandrake_linux", "ssh/login/release", re:"ssh/login/release=MNDK_(2011\.0|mes5\.2)");
+  script_tag(name:"affected", value:"mozilla on Mandriva Linux 2011.0,
+  Mandriva Enterprise Server 5.2");
+  script_tag(name:"solution", value:"Please Install the Updated Packages.");
+  script_tag(name:"insight", value:"Security issues were identified and fixed in mozilla firefox and
+  thunderbird:
+
+  Mozilla developers identified and fixed several memory safety
+  bugs in the browser engine used in Firefox and other Mozilla-based
+  products. Some of these bugs showed evidence of memory corruption
+  under certain circumstances, and we presume that with enough effort
+  at least some of these could be exploited to run arbitrary code
+  (CVE-2012-1949, CVE-2012-1948).
+
+  Security researcher Mario Gomes andresearch firm Code Audit Labs
+  reported a mechanism to short-circuit page loads through drag and drop
+  to the addressbar by canceling the page load. This causes the address
+  of the previously site entered to be displayed in the addressbar
+  instead of the currently loaded page. This could lead to potential
+  phishing attacks on users (CVE-2012-1950).
+
+  Google security researcher Abhishek Arya used the Address Sanitizer
+  tool to uncover four issues: two use-after-free problems, one out of
+  bounds read bug, and a bad cast. The first use-after-free problem is
+  caused when an array of nsSMILTimeValueSpec objects is destroyed but
+  attempts are made to call into objects in this array later. The second
+  use-after-free problem is in nsDocument::AdoptNode when it adopts into
+  an empty document and then adopts into another document, emptying the
+  first one. The heap buffer overflow is in ElementAnimations when data
+  is read off of end of an array and then pointers are dereferenced. The
+  bad cast happens when nsTableFrame::InsertFrames is called with
+  frames in aFrameList that are a mix of row group frames and column
+  group frames. AppendFrames is not able to handle this mix. All four of
+  these issues are potentially exploitable (CVE-2012-1951, CVE-2012-1954,
+  CVE-2012-1953, CVE-2012-1952).
+
+  Security researcher Mariusz Mlynski reported an issue with spoofing
+  of the location property. In this issue, calls to history.forward
+  and history.back are used to navigate to a site while displaying the
+  previous site in the addressbar but changing the baseURI to the newer
+  site. This can be used for phishing by allowing the user input form
+  or other data on the newer, attacking, site while appearing to be on
+  the older, displayed site (CVE-2012-1955).
+
+  Mozilla security researcher moz_bug_r_a4 reported a cross-site
+  scripting (XSS) attack through the context menu using a data: URL. In
+  this issue, context menu functionality (View Image, Show only this
+  frame, and View background image) are disallowed in a javascript:
+  URL but allowed in a data: URL, a ...
+
+  Description truncated, please see the referenced URL(s) for more information.");
+  script_tag(name:"qod_type", value:"package");
+  script_tag(name:"solution_type", value:"VendorFix");
+
+  exit(0);
+}
+
+include("revisions-lib.inc");
+include("pkg-lib-rpm.inc");
+
+release = rpm_get_ssh_release();
+if(!release) exit(0);
+
+res = "";
+
+if(release == "MNDK_2011.0")
+{
+
+  if ((res = isrpmvuln(pkg:"firefox", rpm:"firefox~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-devel", rpm:"firefox-devel~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"icedtea-web", rpm:"icedtea-web~1.1.5~0.4", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"icedtea-web-javadoc", rpm:"icedtea-web-javadoc~1.1.5~0.4", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss3", rpm:"libnss3~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss-devel", rpm:"libnss-devel~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss-static-devel", rpm:"libnss-static-devel~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libxulrunner14.0.1", rpm:"libxulrunner14.0.1~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libxulrunner-devel", rpm:"libxulrunner-devel~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird", rpm:"mozilla-thunderbird~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ar", rpm:"mozilla-thunderbird-ar~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-be", rpm:"mozilla-thunderbird-be~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-bg", rpm:"mozilla-thunderbird-bg~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-bn_BD", rpm:"mozilla-thunderbird-bn_BD~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-br", rpm:"mozilla-thunderbird-br~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ca", rpm:"mozilla-thunderbird-ca~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-cs", rpm:"mozilla-thunderbird-cs~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-da", rpm:"mozilla-thunderbird-da~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-de", rpm:"mozilla-thunderbird-de~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-el", rpm:"mozilla-thunderbird-el~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-en_GB", rpm:"mozilla-thunderbird-en_GB~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail", rpm:"mozilla-thunderbird-enigmail~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-ar", rpm:"mozilla-thunderbird-enigmail-ar~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-ca", rpm:"mozilla-thunderbird-enigmail-ca~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-cs", rpm:"mozilla-thunderbird-enigmail-cs~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-de", rpm:"mozilla-thunderbird-enigmail-de~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-el", rpm:"mozilla-thunderbird-enigmail-el~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-es", rpm:"mozilla-thunderbird-enigmail-es~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-fi", rpm:"mozilla-thunderbird-enigmail-fi~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-fr", rpm:"mozilla-thunderbird-enigmail-fr~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-it", rpm:"mozilla-thunderbird-enigmail-it~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-ja", rpm:"mozilla-thunderbird-enigmail-ja~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-ko", rpm:"mozilla-thunderbird-enigmail-ko~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-nb", rpm:"mozilla-thunderbird-enigmail-nb~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-nl", rpm:"mozilla-thunderbird-enigmail-nl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-pl", rpm:"mozilla-thunderbird-enigmail-pl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-pt", rpm:"mozilla-thunderbird-enigmail-pt~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-pt_BR", rpm:"mozilla-thunderbird-enigmail-pt_BR~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-ru", rpm:"mozilla-thunderbird-enigmail-ru~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-sl", rpm:"mozilla-thunderbird-enigmail-sl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-sv", rpm:"mozilla-thunderbird-enigmail-sv~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-tr", rpm:"mozilla-thunderbird-enigmail-tr~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-vi", rpm:"mozilla-thunderbird-enigmail-vi~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-zh_CN", rpm:"mozilla-thunderbird-enigmail-zh_CN~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-enigmail-zh_TW", rpm:"mozilla-thunderbird-enigmail-zh_TW~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-es_AR", rpm:"mozilla-thunderbird-es_AR~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-es_ES", rpm:"mozilla-thunderbird-es_ES~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-et", rpm:"mozilla-thunderbird-et~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-eu", rpm:"mozilla-thunderbird-eu~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-fi", rpm:"mozilla-thunderbird-fi~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-fr", rpm:"mozilla-thunderbird-fr~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-fy", rpm:"mozilla-thunderbird-fy~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ga", rpm:"mozilla-thunderbird-ga~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-gd", rpm:"mozilla-thunderbird-gd~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-gl", rpm:"mozilla-thunderbird-gl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-he", rpm:"mozilla-thunderbird-he~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-hu", rpm:"mozilla-thunderbird-hu~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-id", rpm:"mozilla-thunderbird-id~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-is", rpm:"mozilla-thunderbird-is~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-it", rpm:"mozilla-thunderbird-it~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ja", rpm:"mozilla-thunderbird-ja~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ko", rpm:"mozilla-thunderbird-ko~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-lightning", rpm:"mozilla-thunderbird-lightning~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-lt", rpm:"mozilla-thunderbird-lt~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-nb_NO", rpm:"mozilla-thunderbird-nb_NO~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-nl", rpm:"mozilla-thunderbird-nl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-nn_NO", rpm:"mozilla-thunderbird-nn_NO~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-pl", rpm:"mozilla-thunderbird-pl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-pt_BR", rpm:"mozilla-thunderbird-pt_BR~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-pt_PT", rpm:"mozilla-thunderbird-pt_PT~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ro", rpm:"mozilla-thunderbird-ro~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ru", rpm:"mozilla-thunderbird-ru~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-si", rpm:"mozilla-thunderbird-si~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-sk", rpm:"mozilla-thunderbird-sk~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-sl", rpm:"mozilla-thunderbird-sl~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-sq", rpm:"mozilla-thunderbird-sq~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-sv_SE", rpm:"mozilla-thunderbird-sv_SE~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-ta_LK", rpm:"mozilla-thunderbird-ta_LK~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-tr", rpm:"mozilla-thunderbird-tr~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-uk", rpm:"mozilla-thunderbird-uk~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-vi", rpm:"mozilla-thunderbird-vi~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-zh_CN", rpm:"mozilla-thunderbird-zh_CN~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-zh_TW", rpm:"mozilla-thunderbird-zh_TW~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"nsinstall", rpm:"nsinstall~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"nss", rpm:"nss~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"rootcerts", rpm:"rootcerts~20120628.00~1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"rootcerts-java", rpm:"rootcerts-java~20120628.00~1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"xulrunner", rpm:"xulrunner~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"icedtea-web", rpm:"icedtea-web~1.1.5~0.4", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"mozilla-thunderbird-l10n", rpm:"mozilla-thunderbird-l10n~14.0~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"rootcerts", rpm:"rootcerts~20120628.00~1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss3", rpm:"lib64nss3~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss-devel", rpm:"lib64nss-devel~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss-static-devel", rpm:"lib64nss-static-devel~3.13.5~0.2", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64xulrunner14.0.1", rpm:"lib64xulrunner14.0.1~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64xulrunner-devel", rpm:"lib64xulrunner-devel~14.0.1~0.1", rls:"MNDK_2011.0")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if (__pkg_match) exit(99);
+  exit(0);
+}
+
+
+if(release == "MNDK_mes5.2")
+{
+
+  if ((res = isrpmvuln(pkg:"firefox", rpm:"firefox~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-af", rpm:"firefox-af~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ar", rpm:"firefox-ar~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-be", rpm:"firefox-be~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-bg", rpm:"firefox-bg~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-bn", rpm:"firefox-bn~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ca", rpm:"firefox-ca~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-cs", rpm:"firefox-cs~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-cy", rpm:"firefox-cy~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-da", rpm:"firefox-da~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-de", rpm:"firefox-de~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-devel", rpm:"firefox-devel~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-el", rpm:"firefox-el~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-en_GB", rpm:"firefox-en_GB~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-eo", rpm:"firefox-eo~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-es_AR", rpm:"firefox-es_AR~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-es_ES", rpm:"firefox-es_ES~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-et", rpm:"firefox-et~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-eu", rpm:"firefox-eu~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-fi", rpm:"firefox-fi~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-fr", rpm:"firefox-fr~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-fy", rpm:"firefox-fy~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ga_IE", rpm:"firefox-ga_IE~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-gl", rpm:"firefox-gl~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-gu_IN", rpm:"firefox-gu_IN~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-he", rpm:"firefox-he~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-hi", rpm:"firefox-hi~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-hu", rpm:"firefox-hu~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-id", rpm:"firefox-id~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-is", rpm:"firefox-is~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-it", rpm:"firefox-it~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ja", rpm:"firefox-ja~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ka", rpm:"firefox-ka~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-kn", rpm:"firefox-kn~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ko", rpm:"firefox-ko~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ku", rpm:"firefox-ku~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-lt", rpm:"firefox-lt~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-lv", rpm:"firefox-lv~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-mk", rpm:"firefox-mk~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-mr", rpm:"firefox-mr~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-nb_NO", rpm:"firefox-nb_NO~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-nl", rpm:"firefox-nl~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-nn_NO", rpm:"firefox-nn_NO~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-oc", rpm:"firefox-oc~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-pa_IN", rpm:"firefox-pa_IN~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-pl", rpm:"firefox-pl~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-pt_BR", rpm:"firefox-pt_BR~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-pt_PT", rpm:"firefox-pt_PT~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ro", rpm:"firefox-ro~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-ru", rpm:"firefox-ru~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-si", rpm:"firefox-si~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-sk", rpm:"firefox-sk~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-sl", rpm:"firefox-sl~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-sq", rpm:"firefox-sq~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-sr", rpm:"firefox-sr~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-sv_SE", rpm:"firefox-sv_SE~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-te", rpm:"firefox-te~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-th", rpm:"firefox-th~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-tr", rpm:"firefox-tr~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-uk", rpm:"firefox-uk~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-zh_CN", rpm:"firefox-zh_CN~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-zh_TW", rpm:"firefox-zh_TW~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"icedtea-web", rpm:"icedtea-web~1.1.5~0.3mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"icedtea-web-javadoc", rpm:"icedtea-web-javadoc~1.1.5~0.3mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss3", rpm:"libnss3~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss-devel", rpm:"libnss-devel~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libnss-static-devel", rpm:"libnss-static-devel~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libxulrunner10.0.6", rpm:"libxulrunner10.0.6~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"libxulrunner-devel", rpm:"libxulrunner-devel~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"nss", rpm:"nss~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"rootcerts", rpm:"rootcerts~20120628.00~1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"rootcerts-java", rpm:"rootcerts-java~20120628.00~1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"xulrunner", rpm:"xulrunner~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"firefox-l10n", rpm:"firefox-l10n~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss3", rpm:"lib64nss3~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss-devel", rpm:"lib64nss-devel~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64nss-static-devel", rpm:"lib64nss-static-devel~3.13.5~0.2mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64xulrunner10.0.6", rpm:"lib64xulrunner10.0.6~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if ((res = isrpmvuln(pkg:"lib64xulrunner-devel", rpm:"lib64xulrunner-devel~10.0.6~0.1mdvmes5.2", rls:"MNDK_mes5.2")) != NULL)
+  {
+    security_message(data:res);
+    exit(0);
+  }
+
+  if (__pkg_match) exit(99);
+  exit(0);
+}
