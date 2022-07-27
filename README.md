@@ -1,6 +1,9 @@
 <p align="center">
     <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
 </p>
+<p align="center">
+    <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
+</p>
 
 <p align="center">
 <a href="https://bestpractices.coreinfrastructure.org/projects/6196">
@@ -16,40 +19,46 @@
 
 # Table of Contents
 1. [About Mageni](#about-mageni)
-2. [Audience](#audience)
-3. [Official Documentation](#official-documentation)
-6. [Contributing](#contributing)
-7. [Thank you, open source](#thank-you-open-source)
-8. [License](#license)
-9. [Applicable Laws, Legal, Fair Use, and DMCA](#applicable-laws-legal-fair-use-and-dmca)
+2. [How Mageni can help you](#how-mageni-can-help-you)
+3. [Benefits of Mageni](#benefits-of-mageni)
+4. [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
+5. [Audience](#audience)
+6. [Official Documentation](#official-documentation)
+7. [Contributing](#contributing)
+8. [Thank you, open source](#thank-you-open-source)
+9. [License](#license)
+10. [Legal](#legal)
 
 ## About Mageni
+Mageni is a free and open source vulnerability and attack surface management platform full of delightful features.
 
-Mageni is a free and open-source vulnerability scanner full of delightful features. We believe cybersecurity must be an enjoyable and uplifting experience to be truly fulfilling in your life. Mageni empowers you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
+## How Mageni can help you?
+Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. 
 
-Mageni eases for you simple tasks for vulnerability management, such as:
+## Benefits of Mageni
+Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
-- Asset Discovery
-- Prioritize Assets
+## Real life problems that Mageni solves for you
+Mageni solves these problems for you:
+
+- Assets Discovery
+- Services Discovery
+- Ports Discovery
+- Applications Discovery
 - Vulnerability Scanning
 - Vulnerability Assessment
 - Attack Surface Management
 - Security Observability
-- Reporting
-- Remediation
+- Vulnerability Reporting
+- Vulnerability Remediation
 - Vulnerability Prioritization
 - Vulnerability Validation
 - Compliance Testing (PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS)
 - Penetration Testing
 - Security Audits
 - IoT, OT, and SCADA Security Testing
+- Hardening Testing
 - And more ...
-
-This is what it currently looks like:
-
-<p align="center">
-    <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
-</p>
 
 ## Audience
 - PenTester
@@ -69,8 +78,6 @@ This is what it currently looks like:
 Documentation for Mageni can be found on the <a href="https://www.mageni.net/docs">Mageni website</a>
 
 ## Contributing
-We love working on Mageni and give it to you without expecting anything in return. We find great joy in providing you with the best foundation for your vulnerability management program as we possibly can.
-
 You can contribute with:
 
 - Bug reports
@@ -88,7 +95,5 @@ Mageni is an important open source contribution to the upstream projects as it p
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
 
-## Applicable Laws, Legal, Fair Use, and DMCA
-Mageni publishes open-source software on Github solely for lawful purposes and for education, research and teaching in cybersecurity and computer programming. You must use the software in a manner that complies with all applicable national, federal, state and local laws, statutes, ordinances, regulations, codes, and other types of government authority.
-
-If you have questions about the GPL license, copyrights law, DMCA, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>
+## Legal
+If you have questions about the GPL license, copyrights law, DMCA, applicable laws, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>
