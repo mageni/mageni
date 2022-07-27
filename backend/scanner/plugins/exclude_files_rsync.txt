@@ -1,0 +1,5 @@
+LICENSE
+gb_manageengine_servicedesk_plus_detect.nasl
+gcf/gb_outdated_scan_engine.nasl
+removed_nvts
+plugin_feed_info.inc
