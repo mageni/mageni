@@ -53,12 +53,10 @@ Mageni solves these problems for you:
 - Vulnerability Remediation
 - Vulnerability Prioritization
 - Vulnerability Validation
-- Compliance Testing (PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS)
-- Penetration Testing
+- Addressing Vulnerabilities for Compliance with PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS
 - Security Audits
 - IoT, OT, and SCADA Security Testing
 - Hardening Testing
-- And more ...
 
 ## Audience
 - PenTester
