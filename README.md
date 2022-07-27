@@ -39,8 +39,6 @@ Mageni can help you to identify, prioritize, and respond to vulnerabilities, ris
 Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 ## Real life problems that Mageni solves for you
-Mageni solves these problems for you:
-
 - Assets Discovery
 - Services Discovery
 - Ports Discovery
