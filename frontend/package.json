@@ -24,6 +24,6 @@
     "dependencies": {
         "canvas-confetti": "^1.5.1",
         "party-js": "^2.1.2",
-        "sweetalert2": "^11.4.19"
+        "sweetalert2": "^11.4.20"
     }
 }
