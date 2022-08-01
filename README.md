@@ -19,9 +19,9 @@
 
 # Table of Contents
 - [About Mageni](#about-mageni)
+- [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
 - [How Mageni can help you](#how-mageni-can-help-you)
 - [Benefits of Mageni](#benefits-of-mageni)
-- [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
 - [Mission](#mission)
 - [Audience](#audience)
 - [Vision](#vision)
@@ -33,12 +33,6 @@
 
 ## About Mageni
 Mageni is a free and open source vulnerability and attack surface management platform full of delightful features. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
-
-## How Mageni can help you?
-Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. 
-
-## Benefits of Mageni
-Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 ## Real life problems that Mageni solves for you
 - Assets Discovery
@@ -59,6 +53,12 @@ Mageni will save you time, money, and resources while reducing the risk of non-c
 - Security Audits
 - IoT, OT, and SCADA Security Testing
 - Hardening Testing
+
+## How Mageni can help you?
+Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. 
+
+## Benefits of Mageni
+Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 ## Mission
 Mageni's mission is to make your life more enjoyable, productive, and peaceful by providing you with a wonderful vulnerability management platform that eases for you the vulenerability management lifecycle.
