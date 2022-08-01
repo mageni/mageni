@@ -18,16 +18,18 @@
 </p>
 
 # Table of Contents
-1. [About Mageni](#about-mageni)
-2. [How Mageni can help you](#how-mageni-can-help-you)
-3. [Benefits of Mageni](#benefits-of-mageni)
-4. [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
-5. [Audience](#audience)
-6. [Official Documentation](#official-documentation)
-7. [Contributing](#contributing)
-8. [Thank you, open source](#thank-you-open-source)
-9. [License](#license)
-10. [Legal](#legal)
+- [About Mageni](#about-mageni)
+- [How Mageni can help you](#how-mageni-can-help-you)
+- [Benefits of Mageni](#benefits-of-mageni)
+- [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
+- [Mission](#mission)
+- [Audience](#audience)
+- [Vision](#vision)
+- [Official Documentation](#official-documentation)
+- [Contributing](#contributing)
+- [Thank you, open source](#thank-you-open-source)
+- [License](#license)
+- [Legal](#legal)
 
 ## About Mageni
 Mageni is a free and open source vulnerability and attack surface management platform full of delightful features.
@@ -43,6 +45,7 @@ Mageni will save you time, money, and resources while reducing the risk of non-c
 - Services Discovery
 - Ports Discovery
 - Applications Discovery
+- Rogue Device Discovery
 - Vulnerability Scanning
 - Vulnerability Assessment
 - Attack Surface Management
@@ -51,10 +54,17 @@ Mageni will save you time, money, and resources while reducing the risk of non-c
 - Vulnerability Remediation
 - Vulnerability Prioritization
 - Vulnerability Validation
+- Vulnerability Intelligence
 - Addressing Vulnerabilities for Compliance with PCI DSS, NIST, HIPAA, ISO, NERC, FISMA, NIS
 - Security Audits
 - IoT, OT, and SCADA Security Testing
 - Hardening Testing
+
+## Mission
+Mageni's mission is to make your life more enjoyable and peaceful by providing you with a wonderful vulnerability management platform that eases for you the vulenerability management lifecycle.
+
+## Vision
+We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
 
 ## Audience
 - PenTester
