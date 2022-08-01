@@ -94,7 +94,7 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 Send your bug reports and features request to help@mageni.net
 
 ## Thank you, open source
-Mageni uses a lot of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
+Mageni uses thousands of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source project will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
 Mageni is an important open source contribution to the upstream projects as it provides a moderm web interface and EDA which was really missing to the open source community.
 
