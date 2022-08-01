@@ -106,4 +106,4 @@ If you have questions about the GPL license, copyrights law, DMCA, applicable la
 
 ---
 
-Made with love by Mageni in New York, USA
+Made with 🥰 by Mageni in New York, USA
