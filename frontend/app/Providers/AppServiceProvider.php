@@ -28,8 +28,12 @@ class AppServiceProvider extends ServiceProvider
     {
         URL::forceScheme('https');
 
-        Component::macro('notify', function ($message) {
-            $this->dispatchBrowserEvent('notify', $message);
+        // Component::macro('notify', function ($message) {
+        //     $this->dispatchBrowserEvent('notify', $message);
+        // });
+
+        Component::macro('notify', function ($message, $title = '', $type = 'success') {
+            $this->dispatchBrowserEvent('notify', ['message' => $message, 'title' => $title, 'type' => $type]);
         });
 
         Builder::macro('search', function ($field, $string) {

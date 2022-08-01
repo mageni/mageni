@@ -673,15 +673,9 @@ class Page extends Component
         $this->stopPolling = 'No';
 
         if($scan->get_create_result == 0) {
-            $this->emit('scan-created');
             $this->emit('confetti');
         } elseif($scan->get_create_result == 1) {
-            $this->emit('scan-created', [
-                'title'     => 'Scan Creation',
-                'icon'      => 'failure',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Error creating scan', 'Error', 'error');
         }
     }
 
@@ -694,30 +688,13 @@ class Page extends Component
         $scan->start($taskID);
 
         if($scan->get_start_result == 0) {
-            // $this->emit('scan-start');
-            // sleep(1);
-            $this->emit('confetti');
+            $this->notify('Scan restarted successfully', 'Success', 'success');
         } elseif ($scan->get_start_result == 2) {
-            $this->emit('scan-start', [
-                'title'     => 'Knowledge Base is refreshing. Please wait a few minutes.',
-                'icon'      => 'info',
-                'timer'     => $this->alertTimer,
-                'iconColor' => '#716add',
-            ]);
+            $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
         } elseif ($scan->get_start_result == 3) {
-            $this->emit('scan-start', [
-                'title'     => 'Backend is down. Please restart the services. Thanks and sorry for the inconvenience.',
-                'icon'      => 'error',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Backend is down. Please restart the services. Thanks and sorry for the inconvenience.', 'Error', 'error');
         } else {
-            $this->emit('scan-start', [
-                'title'     => 'Error Starting Scan',
-                'icon'      => 'error',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Error Starting Scan', 'Error', 'error');
         }
     }
 
@@ -729,12 +706,8 @@ class Page extends Component
 
         $scan->stop($taskID);
 
-        $this->emit('scan-stop', [
-            'title'     => 'Scan Stopped',
-            'icon'      => 'success',
-            'timer'     => $this->alertTimer,
-            'iconColor' => 'green',
-        ]);
+        $this->notify('Scan Stopped', 'Success', 'success');
+
     }
 
     public function taskLock($taskID)
@@ -746,19 +719,9 @@ class Page extends Component
         $scan->lock($taskID);
 
         if($scan->get_lock_result == 0) {
-            $this->emit('scan-lock', [
-                'title'     => 'Scan Locked',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            $this->notify('Scan Locked', 'Success', 'success');
         } elseif($scan->get_lock_result == 1) {
-            $this->emit('scan-lock', [
-                'title'     => 'Scan Lock',
-                'icon'      => 'failure',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Scan Lock', 'Error', 'error');
         }
     }
 
@@ -771,19 +734,9 @@ class Page extends Component
         $scan->unlock($taskID);
 
         if($scan->get_unlock_result == 0) {
-            $this->emit('scan-unlock', [
-                'title'     => 'Scan Unlocked',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            $this->notify('Scan Unlocked', 'Success', 'success');
         } elseif($scan->get_unlock_result == 1) {
-            $this->emit('scan-unlock', [
-                'title'     => 'Scan Unlock',
-                'icon'      => 'failure',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Scan Unlock', 'Error', 'error');
         }
     }
 
@@ -796,19 +749,9 @@ class Page extends Component
         $scan->clone($taskID);
 
         if($scan->get_clone_result == 0) {
-            $this->emit('scan-clone', [
-                'title'     => 'Scan Cloned',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            $this->notify('Scan Cloned', 'Success', 'success');
         } elseif($scan->get_clone_result == 1) {
-            $this->emit('scan-clone', [
-                'title'     => 'Scan Clone',
-                'icon'      => 'failure',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Error cloning scan', 'Error', 'error');
         }
     }
 
@@ -823,33 +766,13 @@ class Page extends Component
         $this->dispatchBrowserEvent('scan-resume-confetti');
 
          if($scan->get_resume_result == 0) {
-            $this->emit('scan-resume', [
-                'title'     => 'Scan Restarted',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            $this->notify('Scan restarted successfully', 'Success', 'success');
         } elseif ($scan->get_resume_result == 2) {
-            $this->emit('scan-resume', [
-                'title'     => 'Knowledge Base is refreshing. Please wait a few minutes.',
-                'icon'      => 'info',
-                'timer'     => $this->alertTimer,
-                'iconColor' => '#716add',
-            ]);
+            $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
         } elseif ($scan->get_resume_result == 3) {
-            $this->emit('scan-resume', [
-                'title'     => 'Service is down. Please restart the services.',
-                'icon'      => 'error',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
         } elseif ($scan->get_resume_result == 1) {
-            $this->emit('scan-resume', [
-                'title'     => 'Error Restarting Scan',
-                'icon'      => 'error',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Error restarting scan', 'Error', 'error');
         }
     }
 
@@ -864,19 +787,9 @@ class Page extends Component
         $this->deleteModalFormVisible = false;
         
         if($scan->get_delete_result == 0) {
-            $this->emit('scan-deleted', [
-                'title'     => 'Scan Deleted',
-                'icon'      => 'success',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'green',
-            ]);
+            $this->notify('Scan Deleted', 'Success', 'success');
         } else {
-            $this->emit('scan-deleted', [
-                'title'     => 'Error Deleting Scan',
-                'icon'      => 'error',
-                'timer'     => $this->alertTimer,
-                'iconColor' => 'red',
-            ]);
+            $this->notify('Error deleting scan', 'Error', 'error');
         }
         
         return $scan->get_delete_result;
