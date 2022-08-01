@@ -32,7 +32,7 @@
 - [Legal](#legal)
 
 ## About Mageni
-Mageni is a free and open source vulnerability and attack surface management platform full of delightful features. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
+Mageni is a free and open source vulnerability and attack surface management platform full of delightful features.
 
 ## Real life problems that Mageni solves for you
 - Assets Discovery
@@ -55,7 +55,7 @@ Mageni is a free and open source vulnerability and attack surface management pla
 - Hardening Testing
 
 ## How Mageni can help you?
-Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. 
+Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
 
 ## Benefits of Mageni
 Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
