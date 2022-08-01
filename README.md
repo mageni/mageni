@@ -103,3 +103,7 @@ Mageni is an important open source contribution to the upstream projects as it p
 
 ## Legal
 If you have questions about the GPL license, copyrights law, DMCA, applicable laws, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>
+
+---
+
+Made with love by Mageni in New York, USA
