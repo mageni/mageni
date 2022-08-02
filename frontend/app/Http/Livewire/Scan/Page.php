@@ -903,6 +903,7 @@ class Page extends Component
             'CVSSv2_Vector',
             'Category',
             'Scan',
+            'Date',
             'CVE',
             'References'
         );
@@ -944,6 +945,7 @@ class Page extends Component
                 'nvts.cvssv2_base_vector as CVSSv2_Vector',
                 'nvts.family as Category',
                 'tasks.name as Scan',
+                DB::raw("datetime(reports.date,'unixepoch') as Date"),
                 'nvts.cve as CVE',
                 'nvts.xref as References'
             )
@@ -975,6 +977,7 @@ class Page extends Component
                 $row['CVSSv2_Vector']  = $task->CVSSv2_Vector;
                 $row['Category']  = $task->Category;
                 $row['Scan']  = $task->Scan;
+                $row['Date']  = $task->Date;
                 $row['CVE']  = $task->CVE;
                 $row['References']  = $task->References;
 
@@ -996,6 +999,7 @@ class Page extends Component
                     $row['CVSSv2_Vector'],
                     $row['Category'],
                     $row['Scan'],
+                    $row['Date'],
                     $row['CVE'],
                     $row['References'],
                 ));
