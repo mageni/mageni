@@ -24,7 +24,7 @@
               <label for="company-website" class="block text-sm font-medium text-gray-700"> License </label>
               <div class="mt-1 rounded-md shadow-sm flex">
                 {{-- <span class="bg-gray-50 border border-r-0 border-gray-300 rounded-l-md px-3 inline-flex items-center text-gray-500 sm:text-sm"> workcation.com/ </span> --}}
-                <input wire:model="license" type="text" name="username" id="username" autocomplete="username" class="focus:ring-indigo-500 focus:border-indigo-500 flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
+                <input wire:model="license" type="text" class="focus:ring-indigo-500 focus:border-indigo-500 flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
               </div>
               @if($errors->first('license'))
                   <div class="flex flex-row py-1 space-x-1">
