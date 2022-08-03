@@ -33,18 +33,18 @@
 </p>
 
 # Table of Contents
-- [About Mageni](#about-mageni)
-- [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
-- [How Mageni can help you](#how-mageni-can-help-you)
-- [Benefits of Mageni](#benefits-of-mageni)
-- [Mission](#mission)
-- [Vision](#vision)
-- [Audience](#audience)
-- [Official Documentation](#official-documentation)
-- [Contributing](#contributing)
-- [Thank you, open source](#thank-you-open-source)
-- [License](#license)
-- [Legal](#legal)
+- [About Mageni](#💎-about-mageni)
+- [Real life problems that Mageni solves for you](#💡-real-life-problems-that-mageni-solves-for-you)
+- [How Mageni can help you](#🤝-how-mageni-can-help-you)
+- [Benefits of Mageni](#🎁-benefits-of-mageni)
+- [Mission](#🔭-mission)
+- [Vision](#👁-vision)
+- [Audience](#😊-audience)
+- [Official Documentation](#📜-official-documentation)
+- [Contributing](#🤝-contributing)
+- [Thank you, open source](#🙏-thank-you-open-source)
+- [License](#📄-license)
+- [Legal](#⚖️-legal)
 
 ## 💎 About Mageni
 Defenders are facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
