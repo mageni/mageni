@@ -26,6 +26,8 @@
 <a href="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml"><img src="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mageni/mageni/CodeQL">
 <a href="https://github.com/mageni/mageni/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mageni/mageni"></a>
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/mageni/mageni">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/mageni/mageni">
 <a href="https://twitter.com/magenisecurity" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/magenisecurity?style=social"></a>
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 </p>
