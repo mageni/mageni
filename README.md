@@ -77,7 +77,7 @@ Mageni can help you to identify, prioritize, and respond to vulnerabilities, ris
 Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 ## 🥅 Mission
-Mageni's mission is to make your life more enjoyable, productive, and peaceful by providing you with a wonderful vulnerability management platform that eases for you the vulenerability management lifecycle.
+Mageni's mission is to make your life more enjoyable, productive, and peaceful by providing you with a wonderful vulnerability and attack surface management platform that eases for you the vulnerability management lifecycle.
 
 ## 👁 Vision
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
