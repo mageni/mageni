@@ -24,6 +24,9 @@
 </a>
 <a href="https://codeclimate.com/github/mageni/mageni/maintainability"><img src="https://api.codeclimate.com/v1/badges/6f48e5542ead5e70f9fe/maintainability" /></a>
 <a href="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml"><img src="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mageni/mageni/CodeQL">
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mageni/mageni">
+<a href="https://twitter.com/magenisecurity" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/magenisecurity?style=social"></a>
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 </p>
 
