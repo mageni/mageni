@@ -7,9 +7,9 @@
 
 <div align="center">
   <br>
-  <h1>Mageni 🛡</h1>
-  <strong>Easy Vulnerability and Attack Surface Management</strong>
-  <br /><br />
+  <h1 align="center">Mageni - The moderm vulnerability and attack surface management platform</h1>
+  <i>Mageni is cross-platform, fast, scalable, has incredible features, and is loved by cybersecurity professionals.</i>
+  <!-- <br /><br /> -->
   <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </div>
 
@@ -44,7 +44,7 @@
 ## About Mageni
 Defenders are facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
 
-To counter these threats, Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Unlimited") is an open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss.
+To counter these threats, Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Unlimited") is the modern and open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss.
 
 ## Real life problems that Mageni solves for you
 - Assets Discovery
@@ -80,18 +80,18 @@ Mageni's mission is to make your life more enjoyable, productive, and peaceful b
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
 
 ## Audience
+- Defender
 - PenTester
 - Cybersecurity Professionals 
 - SOC Analyst
 - Chief Information Security Officer
 - Security Researchers
 - Auditors
+- Database Administrators
 - Red Team
-- Malware Analyst
 - Business owners
 - System Administrators
 - Developers
-- And anyone concerned about cybersecurity and vulnerabilities
 
 ## Official Documentation
 Documentation for Mageni can be found on the <a href="https://www.mageni.net/docs">Mageni website</a>
