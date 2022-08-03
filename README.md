@@ -9,7 +9,7 @@
   <br>
   <h1>Mageni 🛡</h1>
   <strong>Easy Vulnerability and Attack Surface Management</strong>
-  <br />
+  <br /><br />
   <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
 </div>
 
@@ -42,7 +42,9 @@
 - [Legal](#legal)
 
 ## About Mageni
-Mageni is a free and open source vulnerability and attack surface management platform full of delightful features.
+Defenders are facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
+
+To counter these threats, Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Unlimited") is an open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities that others miss.
 
 ## Real life problems that Mageni solves for you
 - Assets Discovery
@@ -50,6 +52,7 @@ Mageni is a free and open source vulnerability and attack surface management pla
 - Ports Discovery
 - Applications Discovery
 - Rogue Device Discovery
+- Shadow IT Discovery
 - Vulnerability Scanning
 - Vulnerability Assessment
 - Attack Surface Management
