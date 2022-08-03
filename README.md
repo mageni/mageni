@@ -73,7 +73,7 @@ To counter these threats, Mageni (From the Hebrew word for "My Defender" and fro
 ## 🤝 How Mageni can help you?
 Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
 
-## 🔒 Benefits of Mageni
+## 🎁 Benefits of Mageni
 Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
 ## 🥅 Mission
