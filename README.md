@@ -7,7 +7,7 @@
 
 <div align="center">
   <br>
-  <h1 align="center">Mageni - The moderm vulnerability and attack surface management platform</h1>
+  <h1 align="center">Mageni - The modern vulnerability and attack surface management platform</h1>
   <i>Mageni is cross-platform, fast, scalable, has incredible features, and is loved by cybersecurity professionals.</i>
   <br /><br />
   <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
