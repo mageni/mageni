@@ -33,25 +33,25 @@
 </p>
 
 # Table of Contents
-- [About Mageni](#💎-about-mageni)
-- [Real life problems that Mageni solves for you](#💡-real-life-problems-that-mageni-solves-for-you)
-- [How Mageni can help you](#🤝-how-mageni-can-help-you)
-- [Benefits of Mageni](#🎁-benefits-of-mageni)
-- [Mission](#🔭-mission)
-- [Vision](#👁-vision)
-- [Audience](#😊-audience)
-- [Official Documentation](#📜-official-documentation)
-- [Contributing](#🤝-contributing)
-- [Thank you, open source](#🙏-thank-you-open-source)
-- [License](#📄-license)
-- [Legal](#⚖️-legal)
+- [About Mageni](#about-mageni)
+- [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
+- [How Mageni can help you](#how-mageni-can-help-you)
+- [Benefits of Mageni](#benefits-of-mageni)
+- [Mission](#mission)
+- [Vision](#vision)
+- [Audience](#audience)
+- [Official Documentation](#official-documentation)
+- [Contributing](#contributing)
+- [Thank you, open source](#thank-you-open-source)
+- [License](#license)
+- [Legal](#legal)
 
-## 💎 About Mageni
+## About Mageni
 Defenders are facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
 
 To counter these threats, Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Unlimited") is the modern and open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss.
 
-## 💡 Real life problems that Mageni solves for you
+## Real life problems that Mageni solves for you
 - Assets Discovery
 - Services Discovery
 - Ports Discovery
@@ -72,19 +72,19 @@ To counter these threats, Mageni (From the Hebrew word for "My Defender" and fro
 - IoT, OT, and SCADA Security Testing
 - Hardening Testing
 
-## 🤝 How Mageni can help you?
+## How Mageni can help you?
 Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
 
-## 🎁 Benefits of Mageni
+## Benefits of Mageni
 Mageni will save you time, money, and resources while reducing the risk of non-compliance, financial losses, fines, and data breaches.
 
-## 🔭 Mission
+## Mission
 Mageni's mission is to make your life more enjoyable, productive, and peaceful by providing you with a wonderful vulnerability and attack surface management platform that eases for you the vulnerability management lifecycle and helps you outpace adversaries.
 
-## 👁 Vision
+## Vision
 We envision a world where cybersecurity and vulnerability management is an enjoyable and uplifting experience that is truly fulfilling in your life.
 
-## 😊 Audience
+## Audience
 - Defenders
 - PenTesters
 - Cybersecurity Professionals 
@@ -98,10 +98,10 @@ We envision a world where cybersecurity and vulnerability management is an enjoy
 - System Administrators
 - Developers
 
-## 📜 Official Documentation
+## Official Documentation
 Documentation for Mageni can be found on the <a href="https://www.mageni.net/docs">Mageni website</a>
 
-## 🤝 Contributing
+## Contributing
 You can contribute with:
 
 - Bug reports
@@ -111,15 +111,15 @@ For more information, <a href="https://github.com/mageni/mageni/blob/master/CONT
 
 Send your bug reports and features request to help@mageni.net
 
-## 🙏 Thank you, open source
+## Thank you, open source
 Mageni uses thousands of open source projects and we thank them with all our hearts. We hope that providing Mageni as an free, open source software will help other people the same way those softwares have helped us and in doing so Mageni is also in strict compliance with the open source licenses. 
 
 Mageni is an important open source contribution to the upstream projects as it provides a moderm web interface and EDA which was really missing to the open source community. Mageni is also a vital contribution to the whole world as it provides a modern vulnerability and attack surface management platform that also was really missing to the global cybersecurity community.
 
-## 📄 License
+## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
 
-## ⚖️ Legal
+## Legal
 If you have questions about the GPL license, copyrights law, DMCA, applicable laws, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>
 
 ---
