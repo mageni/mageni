@@ -1,9 +1,19 @@
-<p align="center">
+<!-- <p align="center">
     <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
 </p>
 <p align="center">
     <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
-</p>
+</p> -->
+
+<div align="center">
+  <br>
+  <h1>Mageni 🛡</h1>
+  <strong>Easy Vulnerability and Attack Surface Management</strong>
+  <br />
+  <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
+</div>
+
+<br>
 
 <p align="center">
 <a href="https://bestpractices.coreinfrastructure.org/projects/6196">
@@ -106,4 +116,6 @@ If you have questions about the GPL license, copyrights law, DMCA, applicable la
 
 ---
 
-Made with 🥰 by Mageni in New York, USA
+Made with ❤️ by Mageni in New York, USA
+
+[⬆ Back to Top](#Table-of-Contents)
