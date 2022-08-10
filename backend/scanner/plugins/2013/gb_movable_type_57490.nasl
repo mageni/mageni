@@ -39,7 +39,6 @@ if (description)
 
   script_name("Movable Type Multiple SQL Injection and Command Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57490");
   script_xref(name:"URL", value:"http://www.sixapart.com/movabletype/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-12-21 10:53:04 +0100 (Fri, 21 Dec 2018) $");

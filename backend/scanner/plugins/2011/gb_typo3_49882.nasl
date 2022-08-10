@@ -49,7 +49,6 @@ user-supplied input.");
 vulnerability.");
   script_tag(name:"affected", value:"TYPO3 version Unspecified");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49882");
   script_xref(name:"URL", value:"http://typo3.org");
   script_category(ACT_ATTACK);
   script_family("Web application abuses");

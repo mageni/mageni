@@ -37,7 +37,6 @@ if(description)
 
   script_name("AWCM CMS Multiple Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44868");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/awcm/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("kolibri/banner");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45579");
   script_xref(name:"URL", value:"http://www.senkas.com/kolibri/");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow remote attackers to

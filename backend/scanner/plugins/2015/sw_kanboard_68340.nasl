@@ -54,8 +54,6 @@ if(description)
   script_tag(name:"affected", value:"Kanboard versions below 1.0.6 are vulnerable.");
   script_tag(name:"solution", value:"The vendor has released updates listened in the referred advisory.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/68340");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/532619/100/0/threaded");
   script_xref(name:"URL", value:"http://kanboard.net/news/version-1.0.6");
 
   script_tag(name:"solution_type", value:"VendorFix");

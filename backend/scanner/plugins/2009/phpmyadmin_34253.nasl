@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34253");
 
   script_tag(name:"summary", value:"phpMyAdmin is prone to multiple input-validation vulnerabilities,
   including an HTTP response-splitting vulnerability and a local file-include vulnerability.");

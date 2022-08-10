@@ -34,7 +34,6 @@ if(description)
 
   script_name("POSH Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50077");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/posh/");
 
   script_tag(name:"cvss_base", value:"4.3");

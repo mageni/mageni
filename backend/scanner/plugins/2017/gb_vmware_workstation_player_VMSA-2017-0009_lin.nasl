@@ -46,7 +46,6 @@ if(description)
   script_tag(name:"affected", value:"12.5.6");
   script_tag(name:"solution", value:"Update to VMWare Workstation Player 12.5.6. Please see the references or vendor advisory for more information.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98566");
   script_xref(name:"URL", value:"http://www.vmware.com/security/advisories/VMSA-2017-0009.html");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

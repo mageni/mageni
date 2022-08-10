@@ -35,7 +35,6 @@ if (description)
 
   script_name("CoDeSys Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56300");
   script_xref(name:"URL", value:"http://www.digitalbond.com/2012/10/25/new-project-basecamp-tools-for-codesys-200-vendors-affected/");
   script_xref(name:"URL", value:"http://www.3s-software.com/");
   script_xref(name:"URL", value:"https://ics-cert.us-cert.gov/advisories/ICSA-13-011-01");

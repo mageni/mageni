@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_version("$Revision: 11003 $");
   script_name("webERP Multiple Remote and Local File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54236");
   script_xref(name:"URL", value:"http://www.weberp.org/HomePage");
   script_tag(name:"last_modification", value:"$Date: 2018-08-16 13:08:00 +0200 (Thu, 16 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-07-02 11:58:46 +0200 (Mon, 02 Jul 2012)");

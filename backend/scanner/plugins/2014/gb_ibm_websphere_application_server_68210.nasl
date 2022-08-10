@@ -44,8 +44,6 @@ if(description)
   script_dependencies("gb_ibm_websphere_detect.nasl");
   script_mandatory_keys("ibm_websphere_application_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/68210");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/68211");
   script_xref(name:"URL", value:"http://www.ibm.com");
   script_xref(name:"URL", value:"http://www-4.ibm.com/software/webservers/appserv/");
 

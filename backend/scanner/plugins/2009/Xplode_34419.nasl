@@ -49,7 +49,6 @@ if(description)
   access or modify data, or exploit latent vulnerabilities in the
   underlying database.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34419");
 
   script_tag(name:"qod", value:"50"); # Prone to false positives
 

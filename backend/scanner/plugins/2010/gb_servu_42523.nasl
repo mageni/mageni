@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Serv-U Denial of Service and Security Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42523");
   script_xref(name:"URL", value:"http://www.serv-u.com/releasenotes/");
   script_xref(name:"URL", value:"http://www.serv-u.com/");
 

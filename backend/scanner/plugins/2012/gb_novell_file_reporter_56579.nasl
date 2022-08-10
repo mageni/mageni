@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80, 3037);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56579");
   script_xref(name:"URL", value:"http://www.novell.com/products/file-reporter/");
 
   script_tag(name:"summary", value:"Novell File Reporter is prone to the following security

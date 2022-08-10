@@ -36,7 +36,6 @@ if (description)
 
   script_name("Foscam Prior to 11.37.2.49 Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58290");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-03-15 12:24:18 +0100 (Fri, 15 Mar 2013)");

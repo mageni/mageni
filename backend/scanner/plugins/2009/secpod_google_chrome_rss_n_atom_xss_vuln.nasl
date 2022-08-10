@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(36416);
   script_name("Google Chrome RSS Or Atom Feed Cross-Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/36770");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506517/100/0/threaded");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.com/2009/09/stable-channel-update.html");
   script_xref(name:"URL", value:"http://securethoughts.com/2009/09/exploiting-chrome-and-operas-inbuilt-atomrss-reader-with-script-execution-and-more/");
 

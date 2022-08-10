@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"9.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Microsoft Internet Explorer Unspecified vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/510280/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

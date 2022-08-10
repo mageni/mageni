@@ -38,14 +38,6 @@ if (description)
 
   script_name("Oracle MySQL Prior to 5.1.49 Multiple Denial Of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42646");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42633");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42643");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42598");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42596");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42638");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42599");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42625");
   script_xref(name:"URL", value:"http://bugs.mysql.com/bug.php?id=54575");
   script_xref(name:"URL", value:"http://dev.mysql.com/doc/refman/5.1/en/news-5-1-49.html");
   script_xref(name:"URL", value:"http://www.mysql.com/");

@@ -33,7 +33,6 @@ if (description)
 
   script_name("DD-WRT '/Info.live.htm' Multiple Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45598");
   script_xref(name:"URL", value:"http://www.dd-wrt.com/dd-wrtv3/dd-wrt/about.html");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Dec/651");
 

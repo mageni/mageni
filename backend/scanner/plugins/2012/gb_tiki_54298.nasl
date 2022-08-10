@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("TikiWiki/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54298");
 
   script_tag(name:"impact", value:"An attacker can exploit these issues to inject and execute arbitrary
   malicious PHP code in the context of the affected application. This may facilitate a compromise of the

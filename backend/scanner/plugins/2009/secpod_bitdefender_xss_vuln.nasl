@@ -37,7 +37,6 @@ if(description)
   script_name("BitDefender Internet Security 2009 XSS Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34082");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/0557");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/501277/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

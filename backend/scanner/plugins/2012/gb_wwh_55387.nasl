@@ -37,7 +37,6 @@ if (description)
 
   script_name("Wiki Web Help 'configpath' Parameter Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55387");
   script_xref(name:"URL", value:"http://wikiwebhelp.org/");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/wwh/");
 

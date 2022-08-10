@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33927");
 
   script_tag(name:"impact", value:"Successful exploits could allow an attacker to cause a denial-of-service
   condition. An unspecified issue with an unknown impact was also reported.");

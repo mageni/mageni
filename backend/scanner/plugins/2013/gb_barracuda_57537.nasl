@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/ssh", 22);
   script_mandatory_keys("ssh/server_banner/available");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57537");
   script_xref(name:"URL", value:"https://www.sec-consult.com/fxdata/seccons/prod/temedia/advisories_txt/20130124-0_Barracuda_Appliances_Backdoor_wo_poc_v10.txt");
   script_xref(name:"URL", value:"https://www.barracudanetworks.com/products/");
 

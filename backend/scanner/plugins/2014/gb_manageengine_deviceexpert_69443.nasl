@@ -36,7 +36,6 @@ if (description)
 
   script_name("ManageEngine DeviceExpert User Credentials Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69443");
   script_xref(name:"URL", value:"http://www.manageengine.com/products/device-expert/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to obtain potentially sensitive

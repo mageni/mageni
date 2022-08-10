@@ -64,7 +64,6 @@ also possible.");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46461");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/jira/");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/JIRA/JIRA+Security+Advisory+2011-02-21");
 

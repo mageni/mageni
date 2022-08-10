@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
 
   script_xref(name:"URL", value:"http://octogence.com/advisories/cve-2015-1178-xss-x-cart/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/534529/100/0/threaded");
 
   script_tag(name:"summary", value:"This host is installed with XCART
   and is prone to multiple cross site scripting vulnerabilities.");

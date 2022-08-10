@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48380/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52503");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18600/");
   script_xref(name:"URL", value:"http://aluigi.org/adv/pagemanager_1-adv.txt");
 

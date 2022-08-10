@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(37117);
   script_name("Microsoft Internet Explorer PDF Information Disclosure Vulnerability - Nov09");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37362/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508010/100/0/threaded");
   script_xref(name:"URL", value:"http://www.theregister.co.uk/2009/11/23/internet_explorer_file_disclosure_bug/");
   script_xref(name:"URL", value:"http://securethoughts.com/2009/11/millions-of-pdf-invisibly-embedded-with-your-internal-disk-paths/");
 

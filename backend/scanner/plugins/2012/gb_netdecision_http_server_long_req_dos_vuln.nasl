@@ -37,7 +37,6 @@ if(description)
   script_name("NetDecision HTTP Server Long HTTP Request Remote Denial of Service Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48168/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52208");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18541/");
   script_xref(name:"URL", value:"http://www.netmechanica.com/news/?news_id=26");
   script_xref(name:"URL", value:"http://secpod.org/exploits/SecPod_Netmechanica_NetDecision_HTTP_Server_DoS_PoC.py");

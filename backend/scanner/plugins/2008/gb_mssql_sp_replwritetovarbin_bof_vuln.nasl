@@ -44,7 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2008/Dec/1021363.html");
   script_xref(name:"URL", value:"http://www.microsoft.com/technet/security/advisory/961040.mspx");
   script_xref(name:"URL", value:"https://docs.microsoft.com/en-us/security-updates/SecurityBulletins/2009/ms09-004");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/499042/100/0/threaded");
   script_xref(name:"URL", value:"http://www.sec-consult.com/files/20081209_mssql-2000-sp_replwritetovarbin_memwrite.txt");
 
   script_tag(name:"impact", value:"Successful exploitation could result in heap based buffer overflow via

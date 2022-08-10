@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("magento/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/90724");
   script_xref(name:"URL", value:"http://netanelrub.in/2016/05/17/magento-unauthenticated-remote-code-execution/");
 
   script_tag(name:"summary", value:"The host is installed with Magento Web

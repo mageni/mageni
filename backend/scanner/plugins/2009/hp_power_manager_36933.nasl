@@ -39,10 +39,7 @@ if(description)
 
   script_name("HP Power Manager Management Web Server Login Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36933");
   script_xref(name:"URL", value:"http://h18000.www1.hp.com/products/servers/proliantstorage/power-protection/software/power-manager/index.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507697");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507708");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c01905743");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-09-081/");
 

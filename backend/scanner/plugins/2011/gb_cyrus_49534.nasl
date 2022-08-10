@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/imap", 143, "Services/pop3", 110);
   script_mandatory_keys("Cyrus/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49534");
   script_xref(name:"URL", value:"http://asg.andrew.cmu.edu/archive/message.php?mailbox=archive.cyrus-announce&msg=199");
   script_xref(name:"URL", value:"http://asg.andrew.cmu.edu/archive/message.php?mailbox=archive.cyrus-announce&msg=200");
   script_xref(name:"URL", value:"http://cyrusimap.web.cmu.edu/");

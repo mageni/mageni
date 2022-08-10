@@ -36,7 +36,6 @@ if(description)
 
   script_name("Siemens SIMATIC WinCC HMI Web Server Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51836");
   script_xref(name:"URL", value:"http://www.automation.siemens.com/mcms/human-machine-interface/en/visualization-software/scada/Pages/Default.aspx");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICSA-12-030-01A.pdf");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICSA-12-030-01.pdf");

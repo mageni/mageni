@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"9.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Mozilla Firefox Code Execution Vulnerability (Windows) - May10");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/510883/100/0/threaded");
   script_xref(name:"URL", value:"http://wizzrss.blat.co.za/2009/11/17/so-much-for-nsiscriptableunescapehtmlparsefragment/");
   script_xref(name:"URL", value:"http://www.security-assessment.com/files/whitepapers/Cross_Context_Scripting_with_Firefox.pdf");
 

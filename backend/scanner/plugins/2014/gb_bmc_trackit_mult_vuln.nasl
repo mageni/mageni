@@ -37,9 +37,6 @@ if (description)
 
   script_name("BMC Track-It! Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70264");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70268");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70265");
 
   script_tag(name:"summary", value:"BMC Track-It! is prone to Multiple Vulnerabilities");
 

@@ -39,7 +39,6 @@ if(description)
   script_require_ports("Services/www", 443);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/3697");
 
   script_tag(name:"solution", value:"Change the default password
 

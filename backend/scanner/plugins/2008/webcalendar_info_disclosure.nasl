@@ -49,8 +49,6 @@ if(description)
 
   script_tag(name:"solution", value:"Upgrade to WebCalendar 1.0.4 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/433053/30/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/436263/30/0/threaded");
   script_xref(name:"URL", value:"http://sourceforge.net/project/shownotes.php?group_id=3870&release_id=423010");
 
   exit(0);

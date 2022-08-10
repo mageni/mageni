@@ -34,7 +34,6 @@ if (description)
 
   script_name("ViewVC Regular Expression Search Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39053");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-26/");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/source/browse/viewvc/trunk/CHANGES?rev=HEAD");
   script_xref(name:"URL", value:"http://viewvc.org/");

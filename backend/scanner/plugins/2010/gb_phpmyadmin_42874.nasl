@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42874");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security/PMASA-2010-6.php");
   script_xref(name:"URL", value:"http://www.phpmyadmin.git.sourceforge.net/git/gitweb.cgi?p=phpmyadmin/phpmyadmin;a=commitdiff;h=133a77fac7d31a38703db2099a90c1b49de62e37");

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Orbit Downloader metalink 'name' Directory Traversal Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511348/100/100/threaded");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-73/");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39527");
 

@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"qod_type", value:"registry");
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"http://securitytracker.com/id?1025875");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/519049/100/0/threaded");
   script_xref(name:"URL", value:"http://www.wireshark.org/download.html");
   exit(0);
 }

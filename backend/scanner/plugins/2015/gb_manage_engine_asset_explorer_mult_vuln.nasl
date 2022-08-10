@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/131805");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535473");
   script_xref(name:"URL", value:"https://www.manageengine.com/products/asset-explorer/sp-readme.html");
   script_xref(name:"URL", value:"http://www.247webhost365.co.uk/csrfxss-in-manage-engine-asset-explorer");
 

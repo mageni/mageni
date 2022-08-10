@@ -46,7 +46,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("nginx/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50710");
   script_xref(name:"URL", value:"http://nginx.org/");
   script_xref(name:"URL", value:"http://www.nginx.org/en/CHANGES");
   script_xref(name:"URL", value:"http://trac.nginx.org/nginx/changeset/4268/nginx");

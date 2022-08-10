@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:A/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Wiki Web Help Insecure Cookie Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44152");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/wwh/");
   script_xref(name:"URL", value:"http://wikiwebhelp.org");
 

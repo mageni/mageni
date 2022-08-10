@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34112/discuss");
 
   script_tag(name:"summary", value:"Multiple EditeurScripts products are prone to a cross-site scripting
   vulnerability because they fail to sufficiently sanitize

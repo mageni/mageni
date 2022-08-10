@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Vivotek Network Cameras Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54476");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 09:34:51 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-07-17 14:10:13 +0200 (Tue, 17 Jul 2012)");

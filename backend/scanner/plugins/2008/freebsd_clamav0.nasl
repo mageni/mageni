@@ -67,7 +67,6 @@ if(description)
  script_tag(name:"solution_type", value:"VendorFix");
  script_xref(name : "URL" , value : "http://secunia.com/advisories/10826");
  script_xref(name : "URL" , value : "http://xforce.iss.net/xforce/xfdb/15077");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/353186");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/74a9541d-5d6c-11d8-80e3-0020ed76ef5a.html");
  exit(0);
 }

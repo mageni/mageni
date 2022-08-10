@@ -37,7 +37,6 @@ if (description)
 
   script_name("Gallo 'gfw_smarty.php' Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39890");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/gallo/");
 
   script_tag(name:"qod_type", value:"remote_vul");

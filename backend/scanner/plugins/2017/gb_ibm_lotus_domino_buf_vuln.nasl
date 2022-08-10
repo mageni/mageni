@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"solution", value:"Domino 9.0.x users should update to Domino 9.0.1 Fix Pack 3 Interim Fix 3. Domino 8.5.x users should update to Domino 8.5.3 Fix Pack 6 Interim Fix 7.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97910");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

@@ -39,7 +39,6 @@ if(description)
 
   script_name("Joomla! JooProperty Component SQL Injection and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56885");
   script_xref(name:"URL", value:"http://www.joomla.org");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");

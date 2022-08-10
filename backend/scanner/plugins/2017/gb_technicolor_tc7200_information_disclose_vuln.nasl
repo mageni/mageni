@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/31894/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/538955/100/0/threaded");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");
   script_family("Web application abuses");

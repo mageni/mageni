@@ -46,8 +46,7 @@ All php-cgi users should upgrade to the latest version:
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200412-14
 http://bugs.gentoo.org/show_bug.cgi?id=74547
 http://www.php.net/release_4_3_10.php
-http://www.hardened-php.net/advisories/012004.txt
-http://www.securityfocus.com/archive/1/384663/2004-12-15/2004-12-21/0";
+http://www.hardened-php.net/advisories/012004.txt";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200412-14.";
 

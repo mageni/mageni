@@ -35,7 +35,6 @@ if (description)
 
   script_name("osCommerce Multiple Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50793");
   script_xref(name:"URL", value:"https://www.dognaedis.com/vulns/DGS-SEC-4.html");
   script_xref(name:"URL", value:"http://www.oscommerce.com");
 

@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("sendmail/detected");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/10554");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/6118/solution");
   script_xref(name:"URL", value:"http://www.solucorp.qc.ca/linuxconf/");
   script_xref(name:"URL", value:"ftp://aix.software.ibm.com/aix/efixes/security/sendmail_3_mod.tar.Z");
 

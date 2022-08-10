@@ -40,7 +40,6 @@ if(description)
   script_dependencies("gb_firefox_detect_portable_win.nasl");
   script_mandatory_keys("Firefox/Win/Ver");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31855/exploit");
 
   script_tag(name:"impact", value:"Successful remote attack result in injection of arbitrary web
   script or HTML code.");

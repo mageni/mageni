@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Mongoose 'Content-Length' HTTP Header Remote Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45602");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/Mongoose.2.11.Denial.Of.Service/74");
   script_xref(name:"URL", value:"http://mongoose.googlecode.com/files/mongoose-2.11.exe");
 

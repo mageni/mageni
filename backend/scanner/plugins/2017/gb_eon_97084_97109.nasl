@@ -47,8 +47,6 @@ if(description)
   script_xref(name:"URL", value:"https://www.eyesofnetwork.com/?p=1912");
   script_xref(name:"URL", value:"http://www.openwall.com/lists/oss-security/2017/03/23/5");
   script_xref(name:"URL", value:"http://seclists.org/oss-sec/2017/q1/667");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97084");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97109");
 
   script_tag(name:"summary", value:"Eyes Of Network (EON) is prone to multiple arbitrary code execution
   and SQL injection vulnerabilities.");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("cvstrac/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/458455/30/0/threaded");
 
   script_tag(name:"solution", value:"Upgrade to CVSTrac 2.0.1 or later.");
 

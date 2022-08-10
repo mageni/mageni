@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Task Freak Cross Site Scripting and SQL Injection Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/40025");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/512078/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

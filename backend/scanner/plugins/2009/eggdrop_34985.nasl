@@ -62,7 +62,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to Eggdrop 1.6.19+ctcpfix are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34985");
 
   script_xref(name:"URL", value:"http://www.eggheads.org/");
   exit(0);

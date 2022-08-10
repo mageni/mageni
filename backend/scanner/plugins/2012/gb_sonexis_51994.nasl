@@ -31,7 +31,6 @@ if (description)
   script_bugtraq_id(51994);
   script_version("$Revision: 11855 $");
   script_name("Sonexis ConferenceManager Multiple Information Disclosure and Security Bypass Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51994");
   script_xref(name:"URL", value:"http://pentest.snosoft.com/2012/02/13/netragard-uncovers-0-days-in-sonexis-conferencemanager/");
   script_xref(name:"URL", value:"http://www.sonexis.com/products/index.asp");
   script_tag(name:"cvss_base", value:"7.5");

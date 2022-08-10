@@ -37,7 +37,6 @@ if (description)
 
   script_name("vtiger CRM 'onlyforuser' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49948");
   script_xref(name:"URL", value:"http://www.vtiger.com/");
   script_xref(name:"URL", value:"https://secure.wikimedia.org/wikipedia/en/wiki/Vtiger_CRM");
   script_xref(name:"URL", value:"http://yehg.net/lab/pr0js/advisories/%5BvTiger_5.2.1%5D_blind_sqlin");

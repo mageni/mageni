@@ -36,7 +36,6 @@ if(description)
   script_cve_id("CVE-2008-5551", "CVE-2008-5552", "CVE-2008-5553",
                 "CVE-2008-5554", "CVE-2008-5555", "CVE-2008-5556");
   script_name("Microsoft Internet Explorer Anti-XSS Filter Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499124");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/0812-exploits/ie80-xss.txt");
   script_xref(name:"URL", value:"http://www.webappsec.org/lists/websecurity/archive/2008-12/msg00057.html");
 

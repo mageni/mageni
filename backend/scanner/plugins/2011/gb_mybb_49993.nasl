@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("MyBB Compromised Source Packages Backdoor Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49993");
   script_xref(name:"URL", value:"http://blog.mybb.com/2011/10/06/1-6-4-security-vulnerabilit/");
   script_xref(name:"URL", value:"http://www.mybb.com/");
   script_xref(name:"URL", value:"http://blog.mybb.com/wp-content/uploads/2011/10/mybb_1604_patches.txt");

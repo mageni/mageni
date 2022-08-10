@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"http://secunia.com/advisories/42879");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/64626");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45779");
   script_xref(name:"URL", value:"http://www.vaadin.com/download/release/6.4/6.4.9/release-notes.html");
 
   script_tag(name:"qod_type", value:"remote_banner");

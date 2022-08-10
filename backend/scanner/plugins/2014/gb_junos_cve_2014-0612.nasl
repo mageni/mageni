@@ -71,7 +71,6 @@ condition where new Dynamic VPN connections may fail for other users.");
 workaround disable dynamic IPSec VPN.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10620");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66759");
 
   exit(0);
 }

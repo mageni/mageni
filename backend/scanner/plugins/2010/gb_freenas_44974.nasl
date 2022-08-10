@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("FreeNAS Remote Shell Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44974");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/freenas/");
 
   script_tag(name:"qod_type", value:"remote_vul");

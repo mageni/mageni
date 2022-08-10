@@ -50,7 +50,6 @@ if(description)
 
   script_tag(name:"affected", value:"Zervit 0.3 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34637");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

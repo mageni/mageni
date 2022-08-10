@@ -37,7 +37,6 @@ if(description)
   script_name("Support Incident Tracker SiT! Multiple SQL Injection And XSS Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/46019");
   script_xref(name:"URL", value:"http://sitracker.org/wiki/ReleaseNotes365");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519636");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_sit_support_incident_tracker.html");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/teamspeak-serverquery", 10011);
   script_mandatory_keys("teamspeak3_server/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40918");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/teamspeakrack-adv.txt");
   script_xref(name:"URL", value:"http://forum.teamspeak.com/showthread.php?t=55646");
   script_xref(name:"URL", value:"http://forum.teamspeak.com/showthread.php?t=55643");

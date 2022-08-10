@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("egroupware/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65651");
   script_xref(name:"URL", value:"http://openwall.com/lists/oss-security/2014/02/19/3");
   script_xref(name:"URL", value:"http://www.egroupware.org/");
 

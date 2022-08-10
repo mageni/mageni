@@ -37,7 +37,6 @@ if(description)
   script_name("Kaspersky Anti-Virus 2010 'kl1.sys' Driver DoS Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37398");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/54309");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507933/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

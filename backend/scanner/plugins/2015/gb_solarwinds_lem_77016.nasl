@@ -38,7 +38,6 @@ if (description)
 
   script_name("SolarWinds Log and Event Manager Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/77016");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary commands. Failed exploit attempts will result in a denial-of-service condition.");
   script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");

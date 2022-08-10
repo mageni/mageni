@@ -36,7 +36,6 @@ if(description)
 
   script_name("Zen Cart Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43628");
   script_xref(name:"URL", value:"http://www.zen-cart.com/");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2010-4967.php");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2010-4966.php");

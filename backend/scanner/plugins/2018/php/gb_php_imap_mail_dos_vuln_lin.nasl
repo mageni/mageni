@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("php/installed", "Host/runs_unixoide");
 
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=77020");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/106143");
 
   script_tag(name:"summary", value:"This host is installed with PHP and is prone
   to a Denial of Service vulnerability.");

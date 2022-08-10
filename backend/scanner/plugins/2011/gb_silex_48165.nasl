@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");
   script_name("Silex 'sitemap.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48165");
   script_xref(name:"URL", value:"http://projects.silexlabs.org/?/silex/#/flash.cms/what.is.silex");
 
   script_tag(name:"qod_type", value:"remote_vul");

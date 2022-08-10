@@ -36,7 +36,6 @@ if(description)
 
   script_name("ddrLPD Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39904");
   script_xref(name:"URL", value:"http://ddr.web.id/");
 
   script_tag(name:"qod_type", value:"remote_vul");

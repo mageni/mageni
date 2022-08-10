@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_icewarp_web_detect.nasl");
   script_mandatory_keys("icewarp/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34739");
 
   script_tag(name:"summary", value:"IceWarp Merak Mail Server is prone to a stack-based buffer-overflow
   vulnerability because the application fails to bounds-check user-supplied data before

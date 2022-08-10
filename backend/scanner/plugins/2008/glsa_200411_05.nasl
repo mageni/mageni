@@ -34,7 +34,6 @@ tag_solution = "All libxml2 users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200411-05
 http://bugs.gentoo.org/show_bug.cgi?id=69154
-http://www.securityfocus.com/archive/1/379383
 http://www.xmlsoft.org/ChangeLog.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200411-05.";

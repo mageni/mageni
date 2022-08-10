@@ -36,9 +36,7 @@ if (description)
 
   script_name("PhpShop Cross-Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37227");
   script_xref(name:"URL", value:"http://www.phpshop.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508243");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

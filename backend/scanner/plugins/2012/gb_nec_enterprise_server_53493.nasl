@@ -42,7 +42,6 @@ if(description)
   script_dependencies("find_service.nasl");
   script_require_ports(5001);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53493");
   script_xref(name:"URL", value:"http://www.nec.com.sg/index.php?q=products/enterprise-servers");
 
   script_tag(name:"summary", value:"NEC Enterprise Server is prone to an unauthorized-access vulnerability

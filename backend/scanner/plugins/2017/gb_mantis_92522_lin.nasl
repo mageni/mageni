@@ -47,7 +47,6 @@ if(description)
   script_require_ports("Services/www", 80);
 
   script_xref(name:"URL", value:"https://mantisbt.org/bugs/view.php?id=21611");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92522");
 
   script_tag(name:"summary", value:"This host is installed with MantisBT
   and is prone to a cross-site scripting vulnerability.");

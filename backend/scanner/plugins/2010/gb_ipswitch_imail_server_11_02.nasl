@@ -42,9 +42,6 @@ if(description)
   script_dependencies("gb_ipswitch_imail_server_detect.nasl");
   script_mandatory_keys("Ipswitch/IMail/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41719");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41718");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41717");
   script_xref(name:"URL", value:"http://www.ipswitch.com/Products/IMail_Server/index.html");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-127/");
 

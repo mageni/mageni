@@ -35,7 +35,6 @@ if(description)
 
   script_name("PineApp Mail-SeCure 'ldapsyncnow.php' Remote Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61474");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");
   script_tag(name:"creation_date", value:"2013-08-13 11:34:56 +0200 (Tue, 13 Aug 2013)");

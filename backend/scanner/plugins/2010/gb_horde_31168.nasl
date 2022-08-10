@@ -43,7 +43,6 @@ if(description)
   script_dependencies("imp_detect.nasl");
   script_mandatory_keys("horde/imp/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/31168");
   script_xref(name:"URL", value:"http://www.horde.org/turba/");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");

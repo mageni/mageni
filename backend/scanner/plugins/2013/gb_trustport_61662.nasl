@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 4849);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61662");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to read arbitrary files in the
   context of the web server process, which may aid in further attacks.");

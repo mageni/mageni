@@ -37,7 +37,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/37373");
   script_xref(name:"URL", value:"http://www.securitytracker.com/id?1023121");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/3126");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507811/100/0/threaded");
   script_xref(name:"URL", value:"http://www.pandasecurity.com/homeusers/support/card?id=80164&idIdioma=2");
 
   script_tag(name:"qod_type", value:"registry");

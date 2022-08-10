@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("NetSaro Enterprise Messenger Cross Site Scripting and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49390");
   script_xref(name:"URL", value:"http://www.netsaro.com/");
 
   script_category(ACT_ATTACK);

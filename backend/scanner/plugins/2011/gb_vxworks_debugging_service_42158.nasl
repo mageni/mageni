@@ -41,9 +41,7 @@ if(description)
   script_dependencies("find_service.nasl");
   script_require_udp_ports(17185);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42158");
   script_xref(name:"URL", value:"http://blog.metasploit.com/2010/08/vxworks-vulnerabilities.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512825");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/362332");
 
   script_tag(name:"summary", value:"VxWorks is prone to a remote security-bypass vulnerability.");

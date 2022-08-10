@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_version("$Revision: 11169 $");
   script_name("Novell Groupwise WebAccess 'User.interface' Parameter Directory Traversal Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54253");
   script_xref(name:"URL", value:"http://www.novell.com/groupwise/");
   script_tag(name:"last_modification", value:"$Date: 2018-08-30 16:20:05 +0200 (Thu, 30 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-07-16 12:02:03 +0200 (Mon, 16 Jul 2012)");

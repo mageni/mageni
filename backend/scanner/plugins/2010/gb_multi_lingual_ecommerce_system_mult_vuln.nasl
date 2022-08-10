@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Multi-lingual E-Commerce System Multiple Vulnerabilities");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/8480/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/502798");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

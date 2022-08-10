@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://marc.info/?l=bugtraq&m=126529736830358&w=2");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/0294");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509195/100/0/threaded");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c02000727");
 
   script_tag(name:"insight", value:"The flaw is caused by an input validation error in the 'proxy/smhui/getuiinfo'

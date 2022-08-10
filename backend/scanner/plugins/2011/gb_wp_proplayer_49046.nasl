@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("WordPress ProPlayer Plugin  'playlist-controller.php' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49046");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17616/");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

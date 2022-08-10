@@ -42,7 +42,6 @@ if(description)
   script_dependencies("firestats_detect.nasl");
   script_mandatory_keys("firestats/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41548");
   script_xref(name:"URL", value:"http://firestats.cc/");
   script_xref(name:"URL", value:"http://firestats.cc/ticket/1358#comment:3");
 

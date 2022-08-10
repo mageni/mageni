@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(33825);
   script_cve_id("CVE-2009-0647");
   script_name("Microsoft MSN Live Messneger Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/501043");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

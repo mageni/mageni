@@ -40,7 +40,6 @@ if(description)
 
   script_name("Open-Audit Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40315");
 
   script_tag(name:"qod_type", value:"remote_analysis");
   script_category(ACT_ATTACK);

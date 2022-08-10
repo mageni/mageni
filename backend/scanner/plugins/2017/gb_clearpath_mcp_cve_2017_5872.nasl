@@ -38,7 +38,6 @@ if (description)
 
   script_name("Unisys ClearPath MCP Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96782");
   script_xref(name:"URL", value:"http://www.unisys.com");
   script_xref(name:"URL", value:"https://public.support.unisys.com/common/public/vulnerability/NVD_Detail_Rpt.aspx?ID=42");
   script_tag(name:"impact", value:"Attackers can exploit this issue to cause a denial-of-service condition.");

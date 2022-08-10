@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("ckeditor/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69161");
   script_xref(name:"URL", value:"http://ckeditor.com/release/CKEditor-4.4.3");
 
   script_tag(name:"summary", value:"Preview plugin for CKEditor is prone to a unspecified cross-site scripting

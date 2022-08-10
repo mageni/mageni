@@ -56,7 +56,6 @@ if (description)
   script_tag(name:"insight", value:'It was possible to login with default credentials: admin/axis2');
   script_tag(name:"solution", value:'Change the password.');
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44055");
   script_xref(name:"URL", value:"http://ws.apache.org/axis2/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/15869");
 

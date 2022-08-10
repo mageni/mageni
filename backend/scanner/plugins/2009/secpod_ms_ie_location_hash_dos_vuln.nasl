@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-2954");
   script_name("Microsoft Internet Explorer 'location.hash' DOS Vulnerability");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3424/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506006/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

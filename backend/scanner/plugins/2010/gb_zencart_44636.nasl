@@ -36,7 +36,6 @@ if(description)
 
   script_name("Zen Cart 'includes/initsystem.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44636");
   script_xref(name:"URL", value:"http://www.zen-cart.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

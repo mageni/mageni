@@ -37,7 +37,6 @@ if(description)
 
   script_name("Cisco Unified Communications Manager Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/83103");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-201600208-ucm");
 
   script_tag(name:"impact", value:"An attacker could exploit this vulnerability by browsing to a specific URL.

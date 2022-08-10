@@ -43,8 +43,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
   script_mandatory_keys("Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49610");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49611");
   script_xref(name:"URL", value:"http://www.cogentdatahub.com/Products/Cogent_DataHub.html");
   script_xref(name:"URL", value:"http://aluigi.org/mytoolz/mydown.zip");
 

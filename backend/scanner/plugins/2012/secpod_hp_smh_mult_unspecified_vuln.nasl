@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/43012/");
   script_xref(name:"URL", value:"http://securitytracker.com/id/1026925");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522374");
   script_xref(name:"URL", value:"http://h18000.www1.hp.com/products/servers/management/agents/index.html");
 
   script_tag(name:"insight", value:"The flaws are due to multiple unspecified errors, which allows

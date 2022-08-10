@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/smallftpd/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40180");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/smallftpd/");
 
   script_tag(name:"summary", value:"SmallFTPD is prone to a remote denial-of-service vulnerability.");

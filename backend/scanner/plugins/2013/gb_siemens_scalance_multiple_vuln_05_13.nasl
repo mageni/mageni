@@ -36,8 +36,6 @@ if(description)
 
   script_name("Siemens Scalance X200 Series Switches Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60165");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60168");
   script_xref(name:"URL", value:"http://subscriber.communications.siemens.com/");
   script_xref(name:"URL", value:"http://www.siemens.com/corporate-technology/pool/de/forschungsfelder/siemens_security_advisory_ssa-170686.pdf");
 

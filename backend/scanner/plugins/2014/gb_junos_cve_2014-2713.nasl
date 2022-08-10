@@ -68,7 +68,6 @@ of service condition.");
   script_tag(name:"solution", value:"New builds of Junos OS software are available from Juniper.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10621");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66764");
 
   exit(0);
 }

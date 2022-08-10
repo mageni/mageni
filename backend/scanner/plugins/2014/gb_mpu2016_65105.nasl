@@ -44,7 +44,6 @@ if(description)
   script_dependencies("gb_mpu2016_detect.nasl", "gb_mpu2016_snmp_detect.nasl");
   script_mandatory_keys("MPU2016/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65105");
 
   script_tag(name:"impact", value:"A remote attacker can exploit this issue to obtain sensitive
   information that could aid in further attacks.");

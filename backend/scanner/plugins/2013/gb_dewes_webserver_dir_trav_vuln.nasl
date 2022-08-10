@@ -50,7 +50,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Aug/136");
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23167");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/528139/30/0/threaded");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/dewes-042-path-traversal");
 
   script_category(ACT_ATTACK);

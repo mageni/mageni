@@ -36,8 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-29 12:12:12 +0530 (Thu, 29 Mar 2012)");
   script_name("at32 Reverse Proxy Multiple HTTP Header Fields Denial Of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/48460");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52553");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521993");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/110967/at32-dos.txt");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/bugtraq/2012-03/0080.html");
 

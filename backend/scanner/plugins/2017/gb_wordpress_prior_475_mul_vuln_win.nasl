@@ -61,7 +61,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to 4.7.5.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98509");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

@@ -51,7 +51,6 @@ underlying database, and view and execute arbitrary local files within
 the context of the webserver.");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer release, disable respective features, remove the product or replace the product by another one.");
   script_tag(name:"solution_type", value:"WillNotFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50773");
   script_xref(name:"URL", value:"http://www.teacharabia.com/?module=solutions&page=details&id=30");
   exit(0);
 }

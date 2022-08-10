@@ -39,7 +39,6 @@ if (description)
 
   script_name("Bugzilla Response Splitting and Security Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44618");
   script_xref(name:"URL", value:"http://www.bugzilla.org/security/3.2.8/");
   script_xref(name:"URL", value:"http://www.bugzilla.org");
 

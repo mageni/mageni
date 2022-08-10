@@ -57,7 +57,6 @@ if(description)
  Flex Data Services 2.0.1
  ColdFusion 9.0, 8.0.1, 8.0, and 7.0.2");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38197");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb10-05.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

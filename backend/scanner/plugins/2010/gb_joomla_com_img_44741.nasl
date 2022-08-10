@@ -40,7 +40,6 @@ if (description)
 
   script_name("Joomla Component 'com_img' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44741");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

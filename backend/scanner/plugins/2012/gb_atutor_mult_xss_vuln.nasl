@@ -39,8 +39,6 @@ if(description)
 
   script_name("Atutor Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51423/info");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521260");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108706/SSCHADV2012-002.txt");
 
   script_category(ACT_ATTACK);

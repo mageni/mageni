@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("dolibarr/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47542");
   script_xref(name:"URL", value:"http://www.dolibarr.org/downloads/cat_view/62-stables-versions");
   script_xref(name:"URL", value:"http://www.dolibarr.org/");
 

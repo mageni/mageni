@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("OTRS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66569");
   script_xref(name:"URL", value:"https://www.otrs.com/security-advisory-2014-04-xss-issue");
   script_xref(name:"URL", value:"https://www.otrs.com/security-advisory-2014-05-clickjacking-issue/");
 

@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("tftgallery/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44523");
   script_xref(name:"URL", value:"http://tftgallery.sourceforge.net/");
   script_xref(name:"URL", value:"http://www.tftgallery.org/versions/tftgallery-0.13-to-0.13.1.zip");
 

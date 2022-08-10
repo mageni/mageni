@@ -62,7 +62,6 @@ if(description)
   options are to upgrade to a newer release, disable respective features, remove the product or
   replace the product by another one.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34928");
 
   exit(0);
 }

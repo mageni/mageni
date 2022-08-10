@@ -33,8 +33,7 @@ tag_solution = "All Cscope users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose '>=dev-util/cscope-15.5-r2'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200412-11
-http://bugs.gentoo.org/show_bug.cgi?id=71595
-http://www.securityfocus.com/archive/1/381443";
+http://bugs.gentoo.org/show_bug.cgi?id=71595";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200412-11.";
 

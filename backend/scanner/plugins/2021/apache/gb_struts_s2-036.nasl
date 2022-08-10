@@ -39,7 +39,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-036");
   script_xref(name:"Advisory-ID", value:"S2-036");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/91277");
 
   script_tag(name:"summary", value:"Apache Struts is prone to a remote code execution
   (RCE) vulnerability.");

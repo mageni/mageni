@@ -36,7 +36,6 @@ if(description)
   script_name("South River Technologies WebDrive Local Privilege Escalation Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37083/");
   script_xref(name:"URL", value:"http://retrogod.altervista.org/9sg_south_river_priv.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507323/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

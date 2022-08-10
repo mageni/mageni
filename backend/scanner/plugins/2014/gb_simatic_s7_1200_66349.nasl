@@ -38,9 +38,6 @@ if (description)
 
   script_name("Siemens SIMATIC S7-1200  Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66349");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66353");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66344");
   script_xref(name:"URL", value:"http://subscriber.communications.siemens.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

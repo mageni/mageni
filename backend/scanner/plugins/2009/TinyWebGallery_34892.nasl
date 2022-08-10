@@ -59,7 +59,6 @@ if (description)
   QuiXplorer 2.3.2 and prior versions are vulnerable.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34892");
   script_xref(name:"URL", value:"http://www.tinywebgallery.com/forum/viewtopic.php?t=1653");
 
   exit(0);

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("os_detection.nasl", "gb_php_detect.nasl");
   script_mandatory_keys("php/installed", "Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53621");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18861");
   script_xref(name:"URL", value:"http://isc.sans.edu/diary.html?storyid=13255");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=823464");

@@ -52,7 +52,6 @@ if(description)
   script_tag(name:"affected", value:"Cybozu Office 9.0.0 through 10.4.0 are vulnerable");
   script_tag(name:"solution", value:"Update to Cybozu Office 10.4.0.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97716");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

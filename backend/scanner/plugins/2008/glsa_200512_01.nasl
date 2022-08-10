@@ -35,8 +35,7 @@ tag_solution = "All Perl users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200512-01
 http://bugs.gentoo.org/show_bug.cgi?id=114113
-http://www.dyadsecurity.com/perl-0002.html
-http://www.securityfocus.com/archive/1/418460/30/30";
+http://www.dyadsecurity.com/perl-0002.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200512-01.";
 

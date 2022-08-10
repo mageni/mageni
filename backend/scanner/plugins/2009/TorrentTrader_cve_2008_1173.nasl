@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("torrenttraderclassic/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/28082");
   script_xref(name:"URL", value:"http://sourceforge.net/project/shownotes.php?group_id=98584&release_id=545219");
   script_xref(name:"URL", value:"http://www.torrenttrader.org/index.php");
 

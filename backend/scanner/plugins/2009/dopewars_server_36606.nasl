@@ -37,7 +37,6 @@ if (description)
 
   script_name("Dopewars Server 'REQUESTJET' Message Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36606");
   script_xref(name:"URL", value:"http://dopewars.svn.sourceforge.net/viewvc/dopewars?view=rev&revision=1033");
 
   script_category(ACT_GATHER_INFO);

@@ -35,7 +35,6 @@ if (description)
   script_cve_id("CVE-2006-2861");
   script_name("Particle Wiki Index.PHP SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/18273");
   script_xref(name:"URL", value:"http://pridels0.blogspot.com/2006/06/particle-wiki-sql-inj.html");
   script_xref(name:"URL", value:"http://www.particlesoft.net/particlewiki/");
   script_xref(name:"URL", value:"http://www.particlesoft.net/kb-16.htm");

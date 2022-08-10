@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"deprecated", value:TRUE);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33995");
   script_xref(name:"URL", value:"http://www.phpbb.com/");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");

@@ -48,7 +48,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/41963/");
   script_xref(name:"URL", value:"https://exploitbox.io/vuln/WordPress-Exploit-4-7-Unauth-Password-Reset-0day-CVE-2017-8295.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98295");
 
   script_tag(name:"summary", value:"This host is running WordPress and is prone to a security-bypass vulnerability.");
 

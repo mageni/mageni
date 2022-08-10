@@ -74,7 +74,6 @@ if(description)
   script_xref(name:"URL", value:"https://www.phpmyadmin.net/security/PMASA-2017-5/");
   script_xref(name:"URL", value:"https://www.phpmyadmin.net/security/PMASA-2017-6/");
   script_xref(name:"URL", value:"https://www.phpmyadmin.net/security/PMASA-2017-7/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95914");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_tag(name:"solution_type", value:"VendorFix");

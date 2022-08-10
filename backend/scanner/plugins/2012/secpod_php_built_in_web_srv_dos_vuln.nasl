@@ -36,7 +36,6 @@ if(description)
   script_name("PHP Built-in WebServer 'Content-Length' Denial of Service Vulnerability");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=61461");
   script_xref(name:"URL", value:"http://www.1337day.com/exploits/17831");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52704");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/74317");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18665");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/111163/PHP-5.4.0-Denial-Of-Service.html");

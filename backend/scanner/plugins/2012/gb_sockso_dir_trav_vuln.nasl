@@ -36,7 +36,6 @@ if(description)
   script_name("Sockso Directory Traversal Vulnerability");
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18605/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52509/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/110828/sockso_1-adv.txt");
 
   script_category(ACT_ATTACK);

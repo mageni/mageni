@@ -38,7 +38,6 @@ if (description)
 
   script_name("Splunk Cross Site Scripting and Directory Traversal Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41269");
   script_xref(name:"URL", value:"http://www.splunk.com/view/SP-CAAAFGD#31067");
   script_xref(name:"URL", value:"http://www.splunk.com/");
 

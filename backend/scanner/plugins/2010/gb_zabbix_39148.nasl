@@ -38,7 +38,6 @@ if (description)
 
   script_name("ZABBIX 'DBcondition' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39148");
   script_xref(name:"URL", value:"http://www.zabbix.com/rn1.8.2.php");
   script_xref(name:"URL", value:"http://www.zabbix.com/index.php");
 

@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_ingate_firewall_detect.nasl");
   script_mandatory_keys("Ingate_Firewall/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48567");
   script_xref(name:"URL", value:"http://www.ingate.com/");
   script_xref(name:"URL", value:"http://www.ingate.com/Relnote.php?ver=492");
 

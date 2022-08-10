@@ -51,7 +51,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/26053");
   script_xref(name:"URL", value:"http://www.us-cert.gov/cas/techalerts/TA06-109A.html");
   script_xref(name:"URL", value:"http://www.red-database-security.com/advisory/oracle_cpu_apr_2006.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/431345/30/5490/threaded");
 
   script_tag(name:"impact", value:"The impact of a successful exploitation is not described in detail.");
 

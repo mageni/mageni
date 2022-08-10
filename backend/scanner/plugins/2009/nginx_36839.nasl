@@ -39,7 +39,6 @@ if (description)
 
   script_name("nginx 'ngx_http_process_request_headers()' Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36839");
   script_xref(name:"URL", value:"http://nginx.net/");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=552035");
 

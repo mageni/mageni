@@ -43,7 +43,6 @@ if(description)
   script_dependencies("smtpserver_detect.nasl");
   script_mandatory_keys("smtp/quickneasy/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34814");
 
   script_tag(name:"summary", value:"Quick 'n Easy Mail Server is prone to a denial-of-service
   vulnerability because it fails to adequately handle multiple socket requests.");

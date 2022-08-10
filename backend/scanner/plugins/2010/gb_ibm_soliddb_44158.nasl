@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("IBM solidDB Multiple Denial of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44158");
   script_xref(name:"URL", value:"http://www.solidtech.com/en/products/relationaldatabasemanagementsoftware/embed.asp");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv.htm");
 

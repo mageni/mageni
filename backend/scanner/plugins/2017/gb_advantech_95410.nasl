@@ -37,7 +37,6 @@ if (description)
 
   script_name("Advantech WebAccess 'updateTemplate.aspx' SQL Injection and Authentication Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95410");
   script_xref(name:"URL", value:"http://webaccess.advantech.com");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-17-043/");
   script_xref(name:"URL", value:"https://ics-cert.us-cert.gov/advisories/ICSA-17-012-01");

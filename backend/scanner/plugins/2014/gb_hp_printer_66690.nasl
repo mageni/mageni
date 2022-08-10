@@ -36,7 +36,6 @@ if(description)
 
   script_name("HP Officejet Pro X Printers, Certain Officejet Pro Printers, Remote Disclosure of Information");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/531993");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-14 14:43:25 +0100 (Thu, 14 Mar 2019) $");
   script_tag(name:"creation_date", value:"2014-06-03 16:01:41 +0200 (Tue, 03 Jun 2014)");

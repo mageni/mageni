@@ -37,7 +37,6 @@ if(description)
   script_name("glFusion Multiple SQL Injection Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34519");
   script_xref(name:"URL", value:"http://retrogod.altervista.org/9sg_glfusion_sql.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502260/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 SecPod");

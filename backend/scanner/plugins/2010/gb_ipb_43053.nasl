@@ -39,7 +39,6 @@ if (description)
 
   script_name("Invision Power Board BBCode Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43053");
   script_xref(name:"URL", value:"http://www.invisionpower.com");
   script_xref(name:"URL", value:"http://www.invisionpower.com/products/board/");
   script_xref(name:"URL", value:"http://community.invisionpower.com/topic/320838-ipboard-31x-security-patch-released/");

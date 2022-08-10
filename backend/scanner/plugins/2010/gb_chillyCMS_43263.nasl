@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/43263");
   script_xref(name:"URL", value:"http://www.chillycms.bplaced.net/chillyCMS/");
 
   script_tag(name:"summary", value:"chillyCMS is prone to a vulnerability that lets attackers upload

@@ -54,7 +54,6 @@ if (description)
 
   script_tag(name:"solution", value:"Update to the latest available version.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/771");
 
   exit(0);
 }

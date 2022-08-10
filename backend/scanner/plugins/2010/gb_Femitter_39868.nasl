@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39868");
   script_xref(name:"URL", value:"http://www.acritum.com/fem/index.htm");
 
   script_tag(name:"summary", value:"Acritum Femitter Server is prone to multiple remote vulnerabilities,

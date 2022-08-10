@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("PHPAuctions 'viewfaqs.php' SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45928");
   script_xref(name:"URL", value:"http://www.phpauctions.info/");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

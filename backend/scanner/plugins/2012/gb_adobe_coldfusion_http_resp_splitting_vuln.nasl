@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-07-23 14:14:14 +0530 (Mon, 23 Jul 2012)");
   script_name("Adobe ColdFusion HTTP Response Splitting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49517");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53941");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb12-15.html");
 
   script_category(ACT_ATTACK);

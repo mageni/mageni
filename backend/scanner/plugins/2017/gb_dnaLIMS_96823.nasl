@@ -38,7 +38,6 @@ if(description)
 
   script_name("dnaLIMS Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96823");
   script_xref(name:"URL", value:"http://www.dnatools.com");
   script_xref(name:"URL", value:"https://www.shorebreaksecurity.com/blog/product-security-advisory-psa0002-dnalims/");
 

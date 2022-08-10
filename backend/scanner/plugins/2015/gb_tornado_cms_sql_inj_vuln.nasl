@@ -60,7 +60,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"qod_type", value:"remote_vul");
 
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/131796");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535465");
   script_xref(name:"URL", value:"http://www.vulnerability-lab.com/get_content.php?id=1489");
 
   script_category(ACT_ATTACK);

@@ -39,7 +39,6 @@ if(description)
   script_name("Microsoft Windows 'UnhookWindowsHookEx' Local DoS Vulnerability");
 
   script_xref(name:"URL", value:"http://killprog.com/whk.zip");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/498165");
 
   script_dependencies("smb_reg_service_pack.nasl");
   script_mandatory_keys("SMB/WindowsVersion");

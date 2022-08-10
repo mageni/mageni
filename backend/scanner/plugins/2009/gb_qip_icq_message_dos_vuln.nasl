@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(33609);
   script_name("Qip ICQ Message Denial Of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/33851");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500656/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

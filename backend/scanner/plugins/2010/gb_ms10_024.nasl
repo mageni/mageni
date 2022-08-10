@@ -43,8 +43,6 @@ if(description)
   script_dependencies("sw_ms_exchange_server_remote_detect.nasl");
   script_mandatory_keys("microsoft/exchange_server/smtp/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39308");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39381");
   script_xref(name:"URL", value:"http://www.microsoft.com");
   script_xref(name:"URL", value:"http://support.avaya.com/css/P8/documents/100079218");
   script_xref(name:"URL", value:"http://www.microsoft.com/technet/security/Bulletin/MS10-024.mspx");

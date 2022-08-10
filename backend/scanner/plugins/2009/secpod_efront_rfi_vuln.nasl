@@ -59,7 +59,6 @@ if(description)
   vulnerability.");
 
   script_xref(name:"URL", value:"http://svn.efrontlearning.net/repos/efront/trunc/libraries/database.php");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36411");
   script_xref(name:"URL", value:"https://cxsecurity.com/issue/WLB-2009090034");
   script_xref(name:"URL", value:"http://forum.efrontlearning.net/viewtopic.php?f=1&t=1354&p=7174#p7174");
 

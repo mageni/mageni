@@ -38,9 +38,6 @@ if (description)
 
   script_name("EMC M&R (Watch4net) Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72255");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72256");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72259");
 
   script_tag(name:"impact", value:"A remote attacker could exploit the traversal vulnerability using directory-
 traversal characters ('../') to access arbitrary files that contain sensitive information. Information harvested

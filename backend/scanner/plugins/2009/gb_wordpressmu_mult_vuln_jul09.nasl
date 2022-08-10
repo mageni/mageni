@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/1833");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2009/Jul/1022528.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504795/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to view the content of plugins
   configuration pages, inject malicious scripting code, or gain knowledge of sensitive username information.");

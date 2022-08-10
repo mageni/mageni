@@ -37,7 +37,6 @@ if(description)
   script_name("VertrigoServ 'ext' Parameter Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/47469/");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Jan/33");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521125");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108391/INFOSERVE-ADV2011-11.txt");
 
   script_category(ACT_ATTACK);

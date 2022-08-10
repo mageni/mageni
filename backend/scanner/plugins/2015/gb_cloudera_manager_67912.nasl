@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cloudera Manager Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67912");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to obtain sensitive information that
 may aid in launching further attacks.");

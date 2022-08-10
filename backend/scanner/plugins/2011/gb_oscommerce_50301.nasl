@@ -37,7 +37,6 @@ if (description)
 
   script_name("osCommerce Remote File Upload and File Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50301");
   script_xref(name:"URL", value:"http://www.oscommerce.com/solutions/downloads");
 
   script_tag(name:"qod_type", value:"remote_vul");

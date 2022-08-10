@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("WebmediaExplorer/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/44598");
   script_xref(name:"URL", value:"http://www.webmediaexplorer.com/");
 
   script_tag(name:"summary", value:"Webmedia Explorer is prone to an HTML-injection vulnerability because

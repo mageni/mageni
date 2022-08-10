@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/ncftpd/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35822");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/52067");
   script_xref(name:"URL", value:"http://www.ncftpd.com/ncftpd/");
 

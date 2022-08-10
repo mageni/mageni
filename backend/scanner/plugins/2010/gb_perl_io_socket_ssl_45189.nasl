@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/io_socket_ssl/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45189");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=606058");
   script_xref(name:"URL", value:"http://cpansearch.perl.org/src/SULLR/IO-Socket-SSL-1.35/Changes");
   script_xref(name:"URL", value:"http://search.cpan.org/dist/IO-Socket-SSL/");

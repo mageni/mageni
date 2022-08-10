@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("WordPress Annonces Plugin 'abspath' Parameter Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49689");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/annonces/");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

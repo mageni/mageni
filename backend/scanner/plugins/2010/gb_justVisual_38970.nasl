@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38970");
   script_xref(name:"URL", value:"http://fh54.de/2009/09/justvisual2/");
 
   script_tag(name:"summary", value:"justVisual is prone to a local file-include vulnerability because it

@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("Serv-U/FTP/installed");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47021");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50875");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/71583");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18182");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/2011-11/0454.html");

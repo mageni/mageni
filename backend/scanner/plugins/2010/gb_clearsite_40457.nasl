@@ -36,9 +36,7 @@ if (description)
 
   script_name("Clearsite 'header.php' Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40457");
   script_xref(name:"URL", value:"http://clearsite.sourceforge.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511507");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

@@ -63,7 +63,6 @@ if(description)
   script_tag(name:"summary", value:"The host is running OpenCart and is prone to cross-site request
   forgery vulnerability.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509313/100/0/threaded");
   script_xref(name:"URL", value:"http://forum.opencart.com/viewtopic.php?f=16&t=10203&p=49654&hilit=csrf#p49654");
   script_xref(name:"URL", value:"http://blog.visionsource.org/2010/01/28/opencart-csrf-vulnerability/");
   script_xref(name:"URL", value:"http://www.opencart.com");

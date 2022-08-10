@@ -53,7 +53,6 @@ if(description)
   vulnerabilities in the underlying database.
 
   Ajax Portal 3.0 is vulnerable, other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34338");
   exit(0);
 }
 

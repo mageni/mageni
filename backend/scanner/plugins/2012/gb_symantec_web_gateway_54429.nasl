@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("symantec_web_gateway/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54429");
   script_xref(name:"URL", value:"http://www.symantec.com/business/web-gateway");
 
   script_tag(name:"solution", value:"Vendor updates are available. Please see the references for more

@@ -66,7 +66,6 @@ information that may aid in further attacks.");
   script_mandatory_keys("foreman/installed");
   script_require_ports("Services/www", 443);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97526");
 
   exit(0);
 }

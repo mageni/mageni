@@ -62,7 +62,6 @@ vectors.");
   script_tag(name:"qod_type", value:"package");
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63025");
   script_xref(name:"URL", value:"http://en.securitylab.ru/nvd/446283.php");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.in/2013/10/stable-channel-update_15.html");
   script_category(ACT_GATHER_INFO);

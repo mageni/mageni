@@ -38,7 +38,6 @@ if(description)
 
   script_name("DNET Live-Stats 'team.rc5-72.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43708");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/dnetlivestats/");
 
   script_tag(name:"qod_type", value:"remote_vul");

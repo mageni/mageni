@@ -58,7 +58,6 @@ if (description)
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34383");
   script_xref(name:"URL", value:"http://mail-archives.apache.org/mod_mbox/perl-advocacy/200904.mbox/<ad28918e0904011458h273a71d4x408f1ed286c9dfbc@mail.gmail.com>");
   exit(0);
 }

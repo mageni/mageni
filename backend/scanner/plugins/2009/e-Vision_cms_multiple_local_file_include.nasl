@@ -61,7 +61,6 @@ if(description)
   since the disclosure of this vulnerability. Likely none will be provided anymore.
   General solution options are to upgrade to a newer release, disable respective features,
   remove the product or replace the product by another one.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32180");
   exit(0);
 }
 

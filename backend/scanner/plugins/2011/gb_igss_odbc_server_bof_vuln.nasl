@@ -37,7 +37,6 @@ if(description)
   script_name("Interactive Graphical SCADA System ODBC Server Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/44345/");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2011/May/168");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518110");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

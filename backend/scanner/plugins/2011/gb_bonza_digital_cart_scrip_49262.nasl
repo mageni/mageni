@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Bonza Digital Cart Script Cross Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49262");
   script_xref(name:"URL", value:"http://www.turnkeycentral.com/scripts/bonza-digital-cart-script/");
 
   script_tag(name:"qod_type", value:"remote_vul");

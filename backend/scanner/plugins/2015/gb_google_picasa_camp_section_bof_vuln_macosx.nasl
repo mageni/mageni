@@ -58,7 +58,6 @@ if(description)
   script_tag(name:"qod_type", value:"executable_version");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/134315");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/536878/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_family("Buffer overflow");

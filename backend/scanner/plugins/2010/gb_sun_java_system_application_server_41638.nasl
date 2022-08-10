@@ -41,7 +41,6 @@ if (description)
 
   script_name("Sun Java System Application Server Local Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41638");
   script_xref(name:"URL", value:"http://www.oracle.com/technology/deploy/security/critical-patch-updates/cpujul2010.html");
 
   script_tag(name:"qod_type", value:"remote_banner");

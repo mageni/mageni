@@ -37,7 +37,6 @@ if (description)
 
   script_name("SPIP 'connect' Parameter PHP Code Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54292");
   script_xref(name:"URL", value:"http://www.securitytracker.com/id/1029317");
 
   script_tag(name:"last_modification", value:"2019-04-23 06:25:48 +0000 (Tue, 23 Apr 2019)");

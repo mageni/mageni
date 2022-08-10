@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://packetstorm.decepticons.org/advisories/ibm-ers/96-09");
   script_xref(name:"URL", value:"http://www.eeye.com/html/Research/Advisories/AD20010409.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/2605");
 
   script_tag(name:"solution", value:"Disable suid, side effects are minimal.");
 

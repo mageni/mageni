@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("WordPress flash-album-gallery Plugin 'facebook.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50861");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/flash-album-gallery");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-20 13:59:41 +0200 (Sat, 20 Oct 2018) $");

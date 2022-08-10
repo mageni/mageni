@@ -34,7 +34,6 @@ if(description)
 
   script_name("Abtp Portal Project 'ABTPV_BLOQUE_CENT' Parameter Local and Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45290");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/abtpportal/");
 
   script_tag(name:"cvss_base", value:"6.8");

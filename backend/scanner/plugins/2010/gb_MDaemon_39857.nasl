@@ -40,7 +40,6 @@ if(description)
   script_dependencies("smtpserver_detect.nasl");
   script_mandatory_keys("smtp/mdaemon/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39857");
   script_xref(name:"URL", value:"http://www.altn.com/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/May/9");
 

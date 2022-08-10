@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("openEngine 'id' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49794");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-019.txt");
   script_xref(name:"URL", value:"http://www.openengine.de/");
 

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Zenphoto Multiple Security Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51916");
   script_xref(name:"URL", value:"http://www.zenphoto.org/news/zenphoto-1.4.2.1");
   script_xref(name:"URL", value:"http://www.zenphoto.org/");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/HTB23070");

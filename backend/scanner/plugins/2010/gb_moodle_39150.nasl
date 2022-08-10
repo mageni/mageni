@@ -36,7 +36,6 @@ if (description)
 
   script_name("Moodle Prior to 1.9.8/1.8.12 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39150");
   script_xref(name:"URL", value:"http://docs.moodle.org/en/Moodle_1.9.8_release_notes");
   script_xref(name:"URL", value:"http://www.moodle.org");
   script_xref(name:"URL", value:"http://moodle.org/security/");

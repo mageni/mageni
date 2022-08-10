@@ -54,7 +54,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-20 16:59:10 +0530 (Tue, 20 Mar 2012)");
   script_name("Apple iTunes Multiple Vulnerabilities - Mar12 (Windows)");
   script_xref(name:"URL", value:"http://support.apple.com/kb/HT5191");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521910");
   script_xref(name:"URL", value:"http://lists.apple.com/archives/security-announce/2012/Mar/msg00000.html");
 
   script_category(ACT_GATHER_INFO);

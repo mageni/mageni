@@ -37,10 +37,7 @@ if(description)
 
   script_name("WarFTPD Multiple Format String Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/20944");
   script_xref(name:"URL", value:"http://support.jgaa.com/index.php?MenuPage=product");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506443");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/450804");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

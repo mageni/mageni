@@ -35,7 +35,6 @@ if (description)
 
   script_name("Fisheye Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45776");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/crucible/");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/fisheye/");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/FISHEYE/FishEye+and+Crucible+Security+Advisory+2011-01-12");

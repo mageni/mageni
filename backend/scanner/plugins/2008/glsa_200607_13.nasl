@@ -33,8 +33,7 @@ tag_solution = "All Audacious users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose '>=media-sound/audacious-1.1.0'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200607-13
-http://bugs.gentoo.org/show_bug.cgi?id=139957
-http://www.securityfocus.com/archive/1/439432/30/0/threaded";
+http://bugs.gentoo.org/show_bug.cgi?id=139957";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200607-13.";
 

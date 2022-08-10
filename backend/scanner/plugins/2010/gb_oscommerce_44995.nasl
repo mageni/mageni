@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("Software/osCommerce");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44995");
   script_xref(name:"URL", value:"http://www.oscommerce.com/solutions/downloads");
 
   script_tag(name:"summary", value:"osCommerce is prone to a vulnerability that lets attackers upload

@@ -36,9 +36,7 @@ if(description)
 
   script_name("Papoo CMS Light Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49587");
   script_xref(name:"URL", value:"http://www.papoo.de/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519612");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

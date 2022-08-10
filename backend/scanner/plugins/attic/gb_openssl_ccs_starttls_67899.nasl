@@ -39,7 +39,6 @@ if(description)
   script_family("General");
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67899");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow attackers to obtain
   sensitive information by conducting a man-in-the-middle attack. This

@@ -36,7 +36,6 @@ if(description)
   script_name("BugTracker.NET Cross-Site Scripting and SQL Injection Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/42418");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/15653/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514957/100/0/threaded");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/multiple-vulnerabilities-in-bugtracker");
 
   script_tag(name:"qod_type", value:"remote_banner");

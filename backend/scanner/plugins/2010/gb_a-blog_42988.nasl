@@ -37,7 +37,6 @@ if(description)
 
   script_name("A-Blog 'sources/search.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42988");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/a-blog/");
 
   script_tag(name:"qod_type", value:"remote_vul");

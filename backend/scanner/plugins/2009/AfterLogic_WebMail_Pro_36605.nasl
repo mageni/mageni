@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"affected", value:"AfterLogic WebMail Pro 4.7.10 and prior versions are affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36605");
   script_xref(name:"URL", value:"http://www.afterlogic.com/");
 
   script_tag(name:"solution_type", value:"VendorFix");

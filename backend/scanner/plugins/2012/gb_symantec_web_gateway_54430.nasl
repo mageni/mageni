@@ -37,7 +37,6 @@ if (description)
 
   script_name("Symantec Web Gateway Password Change Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54430");
   script_xref(name:"URL", value:"http://www.symantec.com/business/web-gateway");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 11:11:30 +0200 (Mon, 17 Sep 2018) $");

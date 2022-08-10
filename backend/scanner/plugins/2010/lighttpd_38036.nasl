@@ -39,7 +39,6 @@ if (description)
 
   script_name("lighttpd Slow Request Handling Remote Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38036");
   script_xref(name:"URL", value:"http://www.lighttpd.net/");
   script_xref(name:"URL", value:"http://redmine.lighttpd.net/issues/2147");
   script_xref(name:"URL", value:"http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2010_01.txt");

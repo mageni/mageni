@@ -35,7 +35,6 @@ if (description)
 
   script_name("Support Incident Tracker (SiT!) Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50632");
   script_xref(name:"URL", value:"http://sitracker.sourceforge.net");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2011-78/");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2011-76/");

@@ -40,8 +40,7 @@ All rssh users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200412-01
 http://bugs.gentoo.org/show_bug.cgi?id=72815
-http://bugs.gentoo.org/show_bug.cgi?id=72816
-http://www.securityfocus.com/archive/1/383046/2004-11-30/2004-12-06/0";
+http://bugs.gentoo.org/show_bug.cgi?id=72816";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200412-01.";
 

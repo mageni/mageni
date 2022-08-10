@@ -35,7 +35,6 @@ if (description)
 
   script_name("PhreeBooks Multiple HTML-Injection and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40639");
   script_xref(name:"URL", value:"http://www.phreebooks.com/");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/phreebooks/");
 

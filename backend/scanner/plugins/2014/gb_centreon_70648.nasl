@@ -38,8 +38,6 @@ if (description)
 
   script_name("Centreon and Centreon Enterprise Server Multiple SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70648");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70649");
   script_xref(name:"URL", value:"http://www.centreon.com/");
 
   script_tag(name:"impact", value:"A successful exploit may allow an attacker to compromise the

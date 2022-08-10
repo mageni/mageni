@@ -37,7 +37,6 @@ if(description)
 
   script_name("Mollify 'index.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43262");
   script_xref(name:"URL", value:"http://www.mollify.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

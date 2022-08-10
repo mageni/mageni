@@ -33,7 +33,6 @@ if (description)
 
   script_name("SoftPerfect Bandwidth Manager Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54182");
 
   script_tag(name:"last_modification", value:"$Date: 2018-08-29 14:43:22 +0200 (Wed, 29 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-06-26 11:12:35 +0200 (Tue, 26 Jun 2012)");

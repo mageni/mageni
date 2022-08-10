@@ -64,7 +64,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2016/Jun/97");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/538745");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2016 Greenbone Networks GmbH");

@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("SAPID CMS Multiple Remote File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51323");
   script_xref(name:"URL", value:"http://sapid.sourceforge.net/");
   script_tag(name:"last_modification", value:"$Date: 2018-08-28 13:37:19 +0200 (Tue, 28 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-01-10 11:23:59 +0100 (Tue, 10 Jan 2012)");

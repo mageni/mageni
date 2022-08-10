@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco Prime Collaboration Provisioning SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/77050");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151008-pcp");
 
   script_tag(name:"impact", value:"An attacker could exploit this vulnerability by sending a crafted SQL statement to an affected system.

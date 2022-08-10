@@ -37,7 +37,6 @@ if (description)
   script_name("QNAP QTS 'f' Parameter Directory Traversal Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64719");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2014-01-09 18:58:01 +0100 (Thu, 09 Jan 2014)");

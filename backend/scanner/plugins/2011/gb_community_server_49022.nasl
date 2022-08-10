@@ -36,9 +36,7 @@ if(description)
 
   script_name("Community Server 'TagSelector.aspx' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49022");
   script_xref(name:"URL", value:"http://telligent.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519156");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

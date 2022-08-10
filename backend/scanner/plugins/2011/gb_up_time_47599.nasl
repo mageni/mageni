@@ -35,7 +35,6 @@ if (description)
 
   script_name("up.time Software Administration Interface Remote Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47599");
   script_xref(name:"URL", value:"http://www.insomniasec.com/advisories/ISVA-110427.2.htm");
   script_xref(name:"URL", value:"http://www.uptimesoftware.com/");
 

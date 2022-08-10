@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_version("$Revision: 11355 $");
   script_name("asaanCart Multiple Input Validation Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52498");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/asaancart/");
   script_xref(name:"URL", value:"http://asaancart.wordpress.com");
   script_tag(name:"last_modification", value:"$Date: 2018-09-12 12:32:04 +0200 (Wed, 12 Sep 2018) $");

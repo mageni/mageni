@@ -38,7 +38,6 @@ if(description)
 
   script_name("Drupal Prior to 6.16 and 5.22 Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38545");
   script_xref(name:"URL", value:"http://drupal.org");
   script_xref(name:"URL", value:"http://drupal.org/node/731710");
 

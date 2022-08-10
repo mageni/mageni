@@ -85,7 +85,6 @@ if(description)
  script_tag(name:"solution_type", value:"VendorFix");
  script_xref(name : "URL" , value : "https://bugzilla.redhat.com/show_bug.cgi?id=484052");
  script_xref(name : "URL" , value : "http://trac.roundcube.net/changeset/2245");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/bid/33372");
  script_xref(name : "URL" , value : "http://secunia.com/advisories/33622");
  script_xref(name : "URL" , value : "http://xforce.iss.net/xforce/xfdb/48129");
  exit(0);

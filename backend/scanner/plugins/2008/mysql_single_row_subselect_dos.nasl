@@ -58,7 +58,6 @@ if(description)
   script_tag(name:"solution", value:"Upgrade to MySQL version 5.0.37 or newer.");
 
   script_xref(name:"URL", value:"http://www.sec-consult.com/284.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/462339/100/0/threaded");
   script_xref(name:"URL", value:"http://dev.mysql.com/doc/refman/5.0/en/releasenotes-cs-5-0-37.html");
 
   exit(0);

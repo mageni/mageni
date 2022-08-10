@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/33899");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/1202");
   script_xref(name:"URL", value:"http://php-calendar.blogspot.com/2010/05/php-calendar-20-beta7.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511395/100/0/threaded");
 
   script_tag(name:"affected", value:"PHP-Calendar version 2.0 Beta6 and prior on all platforms.");
   script_tag(name:"insight", value:"The flaws are due to input validation errors when processing the

@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-02-09 17:17:17 +0530 (Thu, 09 Feb 2012)");
   script_name("phpMyAdmin 'url' Parameter URI Redirection Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/44641");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47943");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/67569");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security/PMASA-2011-4.php");
 

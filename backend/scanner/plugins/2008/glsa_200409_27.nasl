@@ -36,7 +36,6 @@ tag_solution = "All glFTPd users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-27
 http://bugs.gentoo.org/show_bug.cgi?id=64809
-http://www.securityfocus.com/archive/1/375775/2004-09-17/2004-09-23/0
 http://www.glftpd.com/modules.php?op=modload&name=News&file=article&sid=23&mode=thread&order=0&thold=0";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-27.";

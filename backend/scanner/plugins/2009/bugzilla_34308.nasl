@@ -57,7 +57,6 @@ if(description)
   script_tag(name:"affected", value:"This issue affects versions prior to Bugzilla 3.2.3 and 3.3.4.");
 
   script_xref(name:"URL", value:"http://www.bugzilla.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34308");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

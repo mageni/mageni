@@ -39,7 +39,6 @@ if(description)
   script_mandatory_keys("apache/struts/http/detected");
 
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-020");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65999");
   script_xref(name:"Advisory-ID", value:"S2-020");
 
   script_tag(name:"summary", value:"ClassLoader Manipulation allows remote attackers to execute

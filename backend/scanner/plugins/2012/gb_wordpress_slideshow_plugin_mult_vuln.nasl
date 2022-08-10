@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.waraxe.us/advisory-92.html");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Oct/97");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/524452/30/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation could allow attackers to execute arbitrary
   HTML and script code in a user's browser session in context of an affected site

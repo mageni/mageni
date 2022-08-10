@@ -46,7 +46,6 @@ if(description)
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/May/57");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/121643");
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23154");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/526609");
   script_xref(name:"URL", value:"http://forums.exponentcms.org/viewtopic.php?f=16&t=789");
   script_xref(name:"URL", value:"http://www.exponentcms.org/news/release-candidate-1-v2-2-0-set-loose");
 

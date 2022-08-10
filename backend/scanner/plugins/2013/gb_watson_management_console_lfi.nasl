@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57237");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/23995/");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year

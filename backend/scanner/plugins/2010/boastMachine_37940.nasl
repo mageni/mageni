@@ -38,7 +38,6 @@ if (description)
 
   script_name("boastMachine Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37940");
   script_xref(name:"URL", value:"http://boastology.com/");
 
   script_tag(name:"qod_type", value:"remote_banner");

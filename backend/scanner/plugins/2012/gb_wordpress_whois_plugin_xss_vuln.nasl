@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("wordpress/installed");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47428/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51244/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108271/wpwhois-xss.txt");
   script_xref(name:"URL", value:"http://plugins.trac.wordpress.org/changeset/482954/wordpress-whois-search");
 

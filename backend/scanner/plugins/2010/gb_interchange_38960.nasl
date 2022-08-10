@@ -35,7 +35,6 @@ if (description)
 
   script_name("Interchange HTTP Response Splitting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38960");
   script_xref(name:"URL", value:"http://www.icdevgroup.org/i/dev/index.html");
   script_xref(name:"URL", value:"http://www.icdevgroup.org/i/dev/news?mv_arg=00042");
 

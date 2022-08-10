@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Digital College 'basepath' Parameter Multiple Remote File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49830");
   script_xref(name:"URL", value:"http://digitalcollege.magtrb.com/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/105353/digitalcollege-rfi.txt");
   script_tag(name:"qod_type", value:"remote_vul");

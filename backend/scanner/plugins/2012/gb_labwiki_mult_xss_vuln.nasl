@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-13 14:45:05 +0200 (Thu, 13 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-08-27 16:52:41 +0530 (Mon, 27 Aug 2012)");
   script_name("LabWiki Multiple Cross Site Scripting (XSS) Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/523960");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2012/Aug/262");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/115801/LabWiki-1.5-Cross-Site-Scripting.html");
 

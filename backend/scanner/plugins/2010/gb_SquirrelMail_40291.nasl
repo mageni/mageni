@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("squirrelmail/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40291");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/2935");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/3064");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/2936");

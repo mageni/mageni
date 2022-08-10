@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:N/A:N");
   script_name("PHPmyGallery Local File Disclosure and Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58081");
   script_xref(name:"URL", value:"http://phpmygallery.kapierich.net/en/");
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-02-26 12:29:14 +0100 (Tue, 26 Feb 2013)");

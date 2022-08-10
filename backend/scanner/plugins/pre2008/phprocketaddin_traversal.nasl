@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/3751");
 
   script_tag(name:"summary", value:"There is a vulnerability in the PHP Rocket Add-in for FrontPage
   that allows a remote attacker to view the contents of any arbitrary

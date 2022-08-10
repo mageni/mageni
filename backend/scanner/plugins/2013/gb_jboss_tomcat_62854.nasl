@@ -36,7 +36,6 @@ if (description)
 
   script_name("Apache Tomcat/JBoss EJBInvokerServlet / JMXInvokerServlet (RMI over HTTP) Marshalled Object Remote Code Execution");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62854");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/28713/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

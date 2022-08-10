@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("FormMail/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34929");
 
   script_tag(name:"summary", value:"FormMail is prone to an HTTP-response-splitting vulnerability and multiple
   cross-site scripting vulnerabilities because it fails to properly sanitize user-supplied input.");

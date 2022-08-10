@@ -69,7 +69,6 @@ Denial of Service condition.");
 a workaround disable PIM if not required or if fxp0 is unused, disable the external management interface.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10618");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66762");
 
   exit(0);
 }

@@ -51,7 +51,6 @@ when a PDF file is being viewed in a browser.");
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/54754");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62888");
   script_xref(name:"URL", value:"https://www.adobe.com/support/security/bulletins/apsb13-25.html");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2013 Greenbone Networks GmbH");

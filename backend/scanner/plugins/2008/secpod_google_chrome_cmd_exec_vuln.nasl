@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(32997);
   script_name("Google Chrome Argument Injection Vulnerability");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/7566");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/499581/100/0/threaded");
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");
   script_copyright("Copyright (C) 2008 SecPod");

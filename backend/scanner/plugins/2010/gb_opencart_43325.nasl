@@ -38,7 +38,6 @@ if(description)
 
   script_name("OpenCart 'fckeditor' Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/43325");
   script_xref(name:"URL", value:"http://www.opencart.com");
 
   script_category(ACT_ATTACK);

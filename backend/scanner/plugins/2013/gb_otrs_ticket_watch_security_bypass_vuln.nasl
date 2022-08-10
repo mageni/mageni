@@ -52,7 +52,6 @@ security bypass vulnerability.");
   script_tag(name:"affected", value:"OTRS (Open Ticket Request System) version 3.0.x up to and including 3.0.20,
 3.1.x up to and including 3.1.16 and 3.2.x up to and including 3.2.7.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60688");
   script_xref(name:"URL", value:"http://secunia.com/advisories/53851/");
   script_xref(name:"URL", value:"http://www.otrs.com/en/open-source/community-news/security-advisories/Security-Advisory-2013-04/");
   script_category(ACT_GATHER_INFO);

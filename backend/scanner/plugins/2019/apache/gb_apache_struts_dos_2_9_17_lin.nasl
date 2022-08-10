@@ -37,7 +37,6 @@ if(description)
   script_dependencies("gb_apache_struts2_detection.nasl", "os_detection.nasl");
   script_mandatory_keys("ApacheStruts/installed", "Host/runs_unixoide");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100612");
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-051");
 
   script_tag(name:"summary", value:"Apache Struts is prone to a Denial of Service in the Struts REST plugin.");

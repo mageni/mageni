@@ -40,7 +40,6 @@ software upgrades.
 http://sf.net/forum/forum.php?forum_id=387635
 http://secunia.com/advisories/11974
 http://eagle.kecapi.com/sec/fd/phpMyAdmin.html
-http://www.securityfocus.com/archive/1/367486
 http://www.vuxml.org/freebsd/0d4c31ac-cb91-11d8-8898-000d6111a684.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

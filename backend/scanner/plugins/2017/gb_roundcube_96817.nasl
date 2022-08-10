@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"solution", value:"Upgrade Roundcube Webmail to 1.1.8 or 1.2.4.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96817");
   script_xref(name:"URL", value:"https://roundcube.net/news/2017/03/10/updates-1.2.4-and-1.1.8-released");
 
   script_tag(name:"solution_type", value:"VendorFix");

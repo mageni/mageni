@@ -35,7 +35,6 @@ if (description)
 
   script_name("Mereo Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40053");
   script_xref(name:"URL", value:"http://www.assembla.com/wiki/show/babsJ-LFer3B3tab7jnrAJ");
 
   script_tag(name:"qod_type", value:"remote_vul");

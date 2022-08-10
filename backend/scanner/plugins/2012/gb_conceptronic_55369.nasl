@@ -35,7 +35,6 @@ if(description)
 
   script_name("Multiple Conceptronic Products Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55369");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-08 15:43:51 +0100 (Fri, 08 Feb 2019) $");
   script_tag(name:"creation_date", value:"2012-09-12 12:56:11 +0200 (Wed, 12 Sep 2012)");

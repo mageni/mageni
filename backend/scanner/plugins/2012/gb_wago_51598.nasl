@@ -27,7 +27,6 @@
 
 if (description)
 {
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51598");
   script_xref(name:"URL", value:"http://dsecrg.com/pages/vul/show.php?id=401");
   script_xref(name:"URL", value:"http://dsecrg.com/pages/vul/show.php?id=402");
   script_xref(name:"URL", value:"http://dsecrg.com/pages/vul/show.php?id=403");

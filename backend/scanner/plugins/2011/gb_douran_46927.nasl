@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46927");
   script_xref(name:"URL", value:"http://www.douran.com/HomePage.aspx?TabID=3901&Site=DouranPortal&Lang=en-US");
 
   script_tag(name:"summary", value:"Douran Portal is prone to a vulnerability that lets attackers download

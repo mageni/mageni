@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_open_site_detect.nasl", "os_detection.nasl");
   script_mandatory_keys("primalfusion/opensite/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45709");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/contentone/");
 
   script_tag(name:"summary", value:"openSite is prone to multiple local file-include vulnerabilities

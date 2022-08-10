@@ -37,7 +37,6 @@ if(description)
   script_name("Computer Associates WebScan ActiveX Control Multiple Remote Code Execution Vulnerabilities");
 
   script_xref(name:"URL", value:"http://www.microsoft.com/technet/security/Bulletin/MS10-034.mspx");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511764/100/0/threaded");
   script_xref(name:"URL", value:"https://support.ca.com/irj/portal/anonymous/phpsupcontent?contentID=238635");
 
   script_tag(name:"qod_type", value:"registry");

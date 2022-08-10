@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Calibre Cross Site Scripting and Directory Traversal Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45532");
   script_xref(name:"URL", value:"http://www.waraxe.us/advisory-77.html");
   script_xref(name:"URL", value:"http://calibre-ebook.com/");
 

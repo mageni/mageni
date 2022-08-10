@@ -41,7 +41,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Sawmill Unspecified Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38387");
   script_xref(name:"URL", value:"http://www.sawmill.net");
   script_xref(name:"URL", value:"http://www.sawmill.net/version_history7.html");
 

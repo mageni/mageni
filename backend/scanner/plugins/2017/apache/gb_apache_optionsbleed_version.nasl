@@ -47,7 +47,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://openwall.com/lists/oss-security/2017/09/18/2");
   script_xref(name:"URL", value:"https://blog.fuzzing-project.org/60-Optionsbleed-HTTP-OPTIONS-method-can-leak-Apaches-server-memory.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100872");
   script_xref(name:"URL", value:"https://archive.apache.org/dist/httpd/patches/apply_to_2.2.34/");
   script_xref(name:"URL", value:"https://www.apache.org/dist/httpd/CHANGES_2.4.28");
 

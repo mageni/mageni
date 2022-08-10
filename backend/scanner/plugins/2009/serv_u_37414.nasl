@@ -54,7 +54,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to SERV-U File Server 9.2.0.1 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37414");
   script_xref(name:"URL", value:"http://www.serv-u.com/releasenotes/");
   script_xref(name:"URL", value:"http://www.serv-u.com/");
 

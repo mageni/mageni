@@ -43,9 +43,7 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51119");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/bookingcalendar/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520929");
 
   script_tag(name:"summary", value:"PHP Booking Calendar is prone to a cross-site scripting vulnerability
   because it fails to sufficiently sanitize user-supplied data.");

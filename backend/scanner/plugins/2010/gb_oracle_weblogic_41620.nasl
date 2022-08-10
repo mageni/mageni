@@ -41,7 +41,6 @@ if (description)
 
   script_name("Oracle WebLogic Server Encoded URL Remote Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41620");
   script_xref(name:"URL", value:"http://www.vsecurity.com/resources/advisory/20100713-1/");
   script_xref(name:"URL", value:"http://www.oracle.com/technology/deploy/security/critical-patch-updates/cpujul2010.html");
 

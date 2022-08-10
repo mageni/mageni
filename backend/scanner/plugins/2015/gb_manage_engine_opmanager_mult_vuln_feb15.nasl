@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_vul");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/130162");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/534575/100/0/threaded");
   script_xref(name:"URL", value:"https://support.zoho.com/portal/manageengine/helpcenter/articles/vulnerabilities-in-failoverhelperservle");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

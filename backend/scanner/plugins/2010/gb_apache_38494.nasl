@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38494");
   script_xref(name:"URL", value:"http://httpd.apache.org/security/vulnerabilities_22.html");
   script_xref(name:"URL", value:"http://httpd.apache.org/");
   script_xref(name:"URL", value:"https://issues.apache.org/bugzilla/show_bug.cgi?id=48359");

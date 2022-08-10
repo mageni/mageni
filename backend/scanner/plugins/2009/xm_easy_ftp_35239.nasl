@@ -54,7 +54,6 @@ if(description)
   script_tag(name:"affected", value:"XM Easy Personal FTP Server 5.7.0 is vulnerable. Other versions may
   also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35239");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

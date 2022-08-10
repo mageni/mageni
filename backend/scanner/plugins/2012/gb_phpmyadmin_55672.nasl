@@ -37,7 +37,6 @@ if (description)
 
   script_name("phpMyAdmin 'server_sync.php' Backdoor Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55672");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security/PMASA-2012-5.php");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/");
 

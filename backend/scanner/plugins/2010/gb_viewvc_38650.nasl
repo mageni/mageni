@@ -36,7 +36,6 @@ if (description)
 
   script_name("ViewVC 'lib/viewvc.py' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38650");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/source/browse/viewvc/trunk/CHANGES?rev=HEAD");
 
   script_tag(name:"qod_type", value:"remote_banner");

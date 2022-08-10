@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("php/installed");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/47316");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/498746/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation could allow attackers to execute arbitrary code
   corrupt files and cause denial of service.");

@@ -37,8 +37,6 @@ if (description)
   script_tag(name:"creation_date", value:"2010-03-09 14:33:24 +0100 (Tue, 09 Mar 2010)");
   script_name("Perforce Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38589");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38595");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/56738");
   script_xref(name:"URL", value:"http://www.perforce.com/perforce/products/p4web.html");
   script_xref(name:"URL", value:"http://resources.mcafee.com/forms/Aurora_VDTRG_WP");

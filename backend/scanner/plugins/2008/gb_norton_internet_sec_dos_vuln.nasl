@@ -35,8 +35,6 @@ if(description)
   script_cve_id("CVE-2008-5427");
   script_name("Norton Internet Security Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://mime.recurity.com/cgi-bin/twiki/view/Main/AttackIntro");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/499038/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/499045/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

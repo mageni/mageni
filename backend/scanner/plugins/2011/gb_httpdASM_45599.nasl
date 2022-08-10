@@ -36,7 +36,6 @@ if(description)
 
   script_name("httpdASM Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45599");
   script_xref(name:"URL", value:"http://www.japheth.de/httpdASM.html");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/httpdASM.0.92.Directory.Traversal/73");
 

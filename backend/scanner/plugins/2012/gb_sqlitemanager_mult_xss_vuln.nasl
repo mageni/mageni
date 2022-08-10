@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-27 13:53:00 +0200 (Thu, 27 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-01-06 13:17:25 +0530 (Fri, 06 Jan 2012)");
   script_name("SQLiteManager 'dbsel' And 'nsextt' Parameters Multiple XSS Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521126");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108393/sqlitemanager124-xss.txt");
 
   script_category(ACT_ATTACK);

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("CMScout IBrowser TinyMCE Plugin Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43260");
   script_xref(name:"URL", value:"http://www.cmscout.co.za/");
 
   script_tag(name:"qod_type", value:"remote_vul");

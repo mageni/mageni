@@ -74,12 +74,6 @@ if(description)
   script_tag(name:"qod", value:"30"); ## Build information is not available
 
   script_xref(name:"URL", value:"https://support.apple.com/en-us/HT202966");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67026/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63330/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67029/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63873/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67025/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67024/");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2016 Greenbone Networks GmbH");

@@ -38,7 +38,6 @@ if(description)
 
   script_name("Red Hat JBoss Operations Network Deserialization Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/90430");
   script_xref(name:"URL", value:"https://access.redhat.com/security/cve/cve-2016-3737");
 
   script_tag(name:"impact", value:"Exploiting this issue will allow attackers to execute arbitrary code within the context of the affected application.");

@@ -36,7 +36,6 @@ if (description)
 
   script_name("osCommerce Local File Include and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39820");
   script_xref(name:"URL", value:"http://www.oscommerce.com");
   script_xref(name:"URL", value:"http://ictsec.wordpress.com/exploits/oscommerce-v3-0a5-multiple-vulnerabilities/");
 

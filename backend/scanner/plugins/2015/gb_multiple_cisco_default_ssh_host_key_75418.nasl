@@ -36,7 +36,6 @@ if(description)
 
   script_name("Multiple Cisco Products Default SSH Host Keys Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75418");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150625-ironport");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass security restrictions and

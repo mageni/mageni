@@ -38,7 +38,6 @@ if(description)
 
   script_name("PHP Traverser 'mp3_id.php' Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41899");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/phptraverse/");
 
   script_tag(name:"qod_type", value:"remote_vul");

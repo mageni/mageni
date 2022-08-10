@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80, 8000);
   script_mandatory_keys("EAServer/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47987");
   script_xref(name:"URL", value:"http://www.sybase.com/products/modelingdevelopment/easerver");
   script_xref(name:"URL", value:"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=912");
   script_xref(name:"URL", value:"http://www.sybase.com/detail?id=1093216");

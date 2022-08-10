@@ -59,7 +59,6 @@ if (description)
 
   script_tag(name:"affected", value:"RaidenHTTPD 2.0 build 26 and prior versions are affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35781");
   script_xref(name:"URL", value:"http://raidenhttpd.com/changelog.txt");
 
   exit(0);

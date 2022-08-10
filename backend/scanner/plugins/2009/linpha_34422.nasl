@@ -61,7 +61,6 @@ if (description)
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"qod_type", value:"remote_banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34422");
 
   script_copyright("This script is Copyright (C) 2009 Greenbone Networks GmbH");
   script_category(ACT_GATHER_INFO);

@@ -38,7 +38,6 @@ if (description)
  script_name("QNAP QTS Multiple Arbitrary Command Execution Vulnerabilities");
 
  script_xref(name:"URL", value:"https://www.qnap.com/en-us/releasenotes/");
- script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97059");
 
  script_tag(name:"last_modification", value:"$Date: 2017-10-26 09:59:06 +0200 (Thu, 26 Oct 2017) $");
  script_tag(name:"creation_date", value:"2017-03-24 12:56:10 +0100 (Fri, 24 Mar 2017)");

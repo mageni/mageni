@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cherokee Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36874");
   script_xref(name:"URL", value:"http://www.alobbs.com/modules.php?op=modload&name=cherokee&file=index");
   script_xref(name:"URL", value:"http://freetexthost.com/ncyss3plli");
 

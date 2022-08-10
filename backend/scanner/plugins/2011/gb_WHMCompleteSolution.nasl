@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("WHMCompleteSolution 'cart.php' Local File Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50280");
   script_xref(name:"URL", value:"http://whmcs.com/");
   script_xref(name:"URL", value:"http://forum.whmcs.com/showthread.php?t=42121");
   script_tag(name:"qod_type", value:"remote_vul");

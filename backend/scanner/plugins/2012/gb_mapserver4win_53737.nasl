@@ -44,9 +44,7 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53737");
   script_xref(name:"URL", value:"http://maptools.org/ms4w/index.phtml?page=home.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522908");
 
   script_tag(name:"summary", value:"Mapserver for Windows(MS4W) is prone to an local file include vulnerability
   because it fails to sufficiently sanitize user supplied input.");

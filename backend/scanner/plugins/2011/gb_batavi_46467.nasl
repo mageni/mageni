@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Batavi Multiple Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46467");
   script_xref(name:"URL", value:"http://www.batavi.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

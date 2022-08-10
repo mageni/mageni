@@ -55,7 +55,6 @@ if (description)
   vulnerabilities in the underlying database.
 
   PHPRecipeBook 2.24 is vulnerable, other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34052");
   exit(0);
 }
 

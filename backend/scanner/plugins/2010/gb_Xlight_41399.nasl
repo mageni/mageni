@@ -36,10 +36,8 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:P/I:P/A:P");
   script_name("Xlight FTP Server Multiple Directory Traversal Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41399");
   script_xref(name:"URL", value:"http://www.xlightftpd.com/whatsnew.htm");
   script_xref(name:"URL", value:"http://www.xlightftpd.com/index.htm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512192");
 
   script_category(ACT_GATHER_INFO);
   script_family("General");

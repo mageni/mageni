@@ -51,7 +51,6 @@ if(description)
   vulnerabilities in the underlying database.
 
   YAP 1.1.1 is vulnerable, other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34274");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year
   since the disclosure of this vulnerability. Likely none will be provided anymore.

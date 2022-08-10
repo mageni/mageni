@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(28747);
   script_name("Trillian Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/41782");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/490772/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

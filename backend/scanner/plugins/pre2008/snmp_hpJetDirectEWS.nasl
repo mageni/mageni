@@ -45,7 +45,6 @@ if(description)
   script_require_udp_ports("Services/udp/snmp", 161);
   script_mandatory_keys("SNMP/detected", "hp_printer/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/313714/2003-03-01/2003-03-07/0");
   script_xref(name:"URL", value:"http://www.iss.net/security_center/static/9693.php");
   script_xref(name:"URL", value:"http://www.iss.net/issEn/delivery/xforce/alertdetail.jsp?id=advise15");
 

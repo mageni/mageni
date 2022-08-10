@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("httpd/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38875");
   script_xref(name:"URL", value:"http://www.corelan.be:8800/index.php/forum/security-advisories/remote-help-httpd-denial-of-service/");
   script_xref(name:"URL", value:"http://www.softpedia.com/get/Internet/Servers/WEB-Servers/Remote-Help.shtml");
 

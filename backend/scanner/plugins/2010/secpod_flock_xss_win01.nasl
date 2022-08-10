@@ -52,7 +52,6 @@ if(description)
   script_tag(name:"summary", value:"This host is installed with Flock browser and is prone to cross
   site scripting vulnerability.");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/61820");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513701/100/0/threaded");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

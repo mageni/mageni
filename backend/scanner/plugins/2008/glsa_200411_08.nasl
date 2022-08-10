@@ -34,8 +34,7 @@ tag_solution = "All GD users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose '>=media-libs/gd-2.0.32'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200411-08
-http://bugs.gentoo.org/show_bug.cgi?id=69070
-http://www.securityfocus.com/archive/1/379382";
+http://bugs.gentoo.org/show_bug.cgi?id=69070";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200411-08.";
 

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_collabtive_detect.nasl");
   script_mandatory_keys("collabtive/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44050");
 
   script_tag(name:"summary", value:"Collabtive is prone to multiple cross-site scripting vulnerabilities
   and an HTML-injection vulnerability because it fails to properly

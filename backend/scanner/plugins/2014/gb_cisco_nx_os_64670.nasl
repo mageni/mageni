@@ -37,7 +37,6 @@ if (description)
   script_name("Cisco NX-OS BGP Message Denial of Service Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64670");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCuj03174");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

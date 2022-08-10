@@ -54,7 +54,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"qod_type", value:"remote_app");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62631");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/123496");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/elprolog-monitor-webaccess-21-xss-sql-injection");
   script_category(ACT_ATTACK);

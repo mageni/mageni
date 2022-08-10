@@ -39,7 +39,6 @@ if (description)
 
   script_name("MantisBT Cross Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49235");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/104149/mantisbt-sqlxss.txt");
   script_xref(name:"URL", value:"http://www.mantisbt.org");
 

@@ -39,7 +39,6 @@ if(description)
   script_family("General");
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75525");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass certain security
   restrictions and perform unauthorized actions. This may lead to further attacks");

@@ -57,7 +57,6 @@ if(description)
   manually. See the referenced advisories for mitigation steps.");
 
   script_xref(name:"URL", value:"https://www.kb.cert.org/vuls/id/632656/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/460597/100/0/threaded");
 
   exit(0);
 }

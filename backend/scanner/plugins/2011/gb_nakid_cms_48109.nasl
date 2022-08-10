@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("NakidCMS/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/48109");
   script_xref(name:"URL", value:"http://www.nakid.org/");
 
   script_tag(name:"summary", value:"Nakid CMS is prone to a cross-site scripting vulnerability because it

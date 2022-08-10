@@ -35,7 +35,6 @@ if (description)
 
   script_name("Omni-Secure 'dir' Parameter Multiple File Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56575");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-27 11:31:07 +0200 (Thu, 27 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-12-07 10:59:11 +0100 (Fri, 07 Dec 2012)");

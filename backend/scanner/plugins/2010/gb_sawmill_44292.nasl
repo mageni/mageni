@@ -37,11 +37,9 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Sawmill Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44292");
   script_xref(name:"URL", value:"https://www.sec-consult.com/files/20101021-0_sawmill_multiple_critical_vulns.txt");
   script_xref(name:"URL", value:"http://www.sawmill.net");
   script_xref(name:"URL", value:"http://www.sawmill.net/version_history8.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514405");
 
   script_category(ACT_ATTACK);
   script_family("Web application abuses");

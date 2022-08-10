@@ -60,7 +60,6 @@ if(description)
   script_tag(name:"qod_type", value:"remote_banner");
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51954/info");
   script_xref(name:"URL", value:"http://svn.php.net/viewvc?view=revision&revision=323016");
 
   script_xref(name:"URL", value:"http://php.net/downloads.php");

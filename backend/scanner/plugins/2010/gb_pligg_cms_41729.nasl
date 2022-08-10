@@ -33,9 +33,7 @@ if (description)
 
   script_name("Pligg 'search.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41729");
   script_xref(name:"URL", value:"http://www.pligg.com");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512394");
 
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");

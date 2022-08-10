@@ -52,7 +52,6 @@ if(description)
   script_tag(name:"summary", value:"The remote Citrix NetScaler web management interface is susceptible
   to cross-site scripting attacks.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/483920/100/0/threaded");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

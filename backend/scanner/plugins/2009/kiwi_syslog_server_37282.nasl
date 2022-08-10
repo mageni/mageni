@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 8088);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37282");
   script_xref(name:"URL", value:"http://www.kiwisyslog.com/kiwi-syslog-server-overview/");
 
   script_tag(name:"summary", value:"Kiwi Syslog Server is prone to an information-disclosure weakness and

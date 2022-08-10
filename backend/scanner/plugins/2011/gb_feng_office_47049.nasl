@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("FengOffice/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47049");
   script_xref(name:"URL", value:"http://www.fengoffice.com/web/");
 
   script_tag(name:"impact", value:"Attackers can exploit these issues to upload and execute arbitrary PHP

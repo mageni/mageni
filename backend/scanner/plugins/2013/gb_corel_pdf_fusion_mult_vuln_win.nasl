@@ -65,7 +65,6 @@ if(description)
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/52707/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61010");
   script_xref(name:"URL", value:"http://cxsecurity.com/cveshow/CVE-2013-0742");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");

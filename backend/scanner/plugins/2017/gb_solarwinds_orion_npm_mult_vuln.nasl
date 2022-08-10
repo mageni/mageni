@@ -45,8 +45,6 @@ if(description)
   script_dependencies("gb_solarwinds_orion_npm_consolidation.nasl");
   script_mandatory_keys("solarwinds/orion/npm/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/541263/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/541262/100/0/threaded");
   script_xref(name:"URL", value:"https://support.solarwinds.com/Success_Center/Orion_Platform/Orion_Documentation/Orion_Platform_2017.3_Hotfix_1");
 
   script_tag(name:"summary", value:"This host is installed with SolarWinds Orion NPM

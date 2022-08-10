@@ -47,7 +47,6 @@ if(description)
   script_tag(name:"affected", value:"Palo Alto Networks PAN-OS 7.1.8 and prior versions are vulnerable");
   script_tag(name:"solution", value:"Update to Paloaltonetworks PAN-OS 7.1.9.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97590");
   script_xref(name:"URL", value:"https://securityadvisories.paloaltonetworks.com/Home/Detail/80");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

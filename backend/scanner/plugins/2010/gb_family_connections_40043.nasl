@@ -40,7 +40,6 @@ if (description)
 
   script_name("Family Connections 2.2.3 Multiple SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40043");
   script_xref(name:"URL", value:"http://www.familycms.com/index.php");
 
   script_tag(name:"qod_type", value:"remote_banner");

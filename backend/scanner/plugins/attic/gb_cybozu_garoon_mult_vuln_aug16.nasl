@@ -39,11 +39,6 @@ if(description)
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");
   script_family("Web application abuses");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92599");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92598");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92600");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92596");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92601");
 
   script_tag(name:"summary", value:"This host is installed with Cybozu Garoon
   and is prone to multiple vulnerabilities.

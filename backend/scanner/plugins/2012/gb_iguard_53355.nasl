@@ -31,7 +31,6 @@ if(description)
   script_bugtraq_id(53355);
   script_version("$Revision: 11435 $");
   script_name("iGuard Security Access Control Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53355");
   script_xref(name:"URL", value:"http://iguard.me/iguard-access-control.html");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");

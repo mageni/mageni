@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"https://www.openssl.org/news/vulnerabilities.html");
   script_xref(name:"URL", value:"https://github.com/openssl/openssl/commit/aab7c770353b1dc4ba045938c8fb446dd1c4531e");
   script_xref(name:"URL", value:"https://github.com/openssl/openssl/commit/b18162a7c9bbfb57112459a4d6631fa258fd8c0cq");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/105897");
   script_xref(name:"URL", value:"https://eprint.iacr.org/2018/1060.pdf");
   script_xref(name:"URL", value:"https://github.com/bbbrumley/portsmash");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/45785/");

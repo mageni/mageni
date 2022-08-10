@@ -35,7 +35,6 @@ if (description)
 
   script_name("ZEN Load Balancer Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55638");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 12:08:59 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-09-24 10:00:04 +0200 (Mon, 24 Sep 2012)");

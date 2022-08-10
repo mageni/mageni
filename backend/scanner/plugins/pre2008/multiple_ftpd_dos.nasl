@@ -40,7 +40,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/war_ftpd/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/2698");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

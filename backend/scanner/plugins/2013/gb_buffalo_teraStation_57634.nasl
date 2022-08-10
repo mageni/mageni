@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_buffalotech_nas_web_detect.nasl", "os_detection.nasl");
   script_mandatory_keys("buffalo/nas/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57634");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year
   since the disclosure of this vulnerability. Likely none will be provided anymore.

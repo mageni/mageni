@@ -59,7 +59,6 @@ if(description)
   cross-site scripting vulnerabilities.");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/39839");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511341");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/1005-exploits/cauchoresin312-xss.txt");
 
   exit(0);

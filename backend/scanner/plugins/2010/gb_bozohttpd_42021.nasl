@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_bozotic_http_server_detect.nasl");
   script_mandatory_keys("bozohttpd/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42021");
   script_xref(name:"URL", value:"https://bugs.launchpad.net/ubuntu/+source/bozohttpd/+bug/582473");
   script_xref(name:"URL", value:"http://www.eterna.com.au/bozohttpd/");
 

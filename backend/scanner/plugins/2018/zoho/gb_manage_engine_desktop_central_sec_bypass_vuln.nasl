@@ -44,7 +44,6 @@ if (description)
   script_mandatory_keys("ManageEngine/Desktop_Central/installed");
   script_require_ports("Services/www", 8040);
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/archive/1/534356/100/0/threaded");
   script_xref(name:"URL", value:"https://www.manageengine.com/products/desktop-central/cve20147862-unauthorized-account-creation.html");
 
   script_tag(name:"summary", value:"This host is installed with ManageEngine

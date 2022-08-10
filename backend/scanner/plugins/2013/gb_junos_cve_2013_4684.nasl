@@ -69,7 +69,6 @@ repeatedly causing a denial of service condition.");
   script_tag(name:"solution", value:"New builds of Junos OS software are available from Juniper.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10573");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61127");
   script_xref(name:"URL", value:"http://secunia.com/advisories/54157");
 
   exit(0);

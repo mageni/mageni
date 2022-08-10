@@ -40,7 +40,6 @@ if(description)
   script_require_ports(4786);
 
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityResponse/cisco-sr-20170214-smi");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/540130");
   script_xref(name:"URL", value:"https://2016.zeronights.ru/wp-content/uploads/2016/12/CiscoSmartInstall.v3.pdf");
   script_xref(name:"URL", value:"http://www.cisco.com/c/en/us/td/docs/switches/lan/smart_install/configuration/guide/smart_install/concepts.html#23355");
 

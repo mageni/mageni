@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("allocPSA 'login/login.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47860");
   script_xref(name:"URL", value:"http://allocpsa.com/index.php");
   script_xref(name:"URL", value:"http://www.autosectools.com/Advisory/allocPSA-1.7.4-Reflected-Cross-site-Scripting-212");
 

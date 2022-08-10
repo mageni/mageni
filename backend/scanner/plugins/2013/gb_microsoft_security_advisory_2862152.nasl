@@ -70,7 +70,6 @@ if(description)
   script_tag(name:"impact", value:"Successful exploitation will allow an attacker to intercept the target user's
   network traffic and potentially determine their encrypted domain credentials.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63666");
   script_xref(name:"URL", value:"https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2014/2862152");
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

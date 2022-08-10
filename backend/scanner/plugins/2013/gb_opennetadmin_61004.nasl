@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:P/A:P");
   script_version("$Revision: 13994 $");
   script_name("OpenNetAdmin 'ona.log' File Remote PHP Code Execution Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61004");
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");
   script_tag(name:"creation_date", value:"2013-08-13 15:18:42 +0200 (Tue, 13 Aug 2013)");
   script_category(ACT_ATTACK);

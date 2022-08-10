@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_ipswitch_imail_server_detect.nasl");
   script_mandatory_keys("Ipswitch/IMail/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38109");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/2010-02/0076.html");
   script_xref(name:"URL", value:"http://www.ipswitch.com/Products/IMail_Server/index.html");
 

@@ -39,7 +39,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/0171");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2010/Jan/1023481.html");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb10-03.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509062/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

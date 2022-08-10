@@ -39,7 +39,6 @@ if(description)
 
   script_name("bloofoxCMS 'search' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36700");
   script_xref(name:"URL", value:"http://www.bloofox.com/cms/");
 
   script_tag(name:"qod_type", value:"remote_banner");

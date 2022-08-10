@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"http://comments.gmane.org/gmane.comp.security.oss.general/947?set_lines=100000");
   script_xref(name:"URL", value:"http://fd.the-wildcat.de/pma_e36a091q11.php");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-7");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31188/exploit");
 
   script_tag(name:"summary", value:"phpMyAdmin is prone to Remote Command Execution vulnerability.");
 

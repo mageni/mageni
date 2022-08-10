@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/mysql", 3306);
   script_mandatory_keys("MySQL/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/29106");
 
   script_tag(name:"summary", value:"According to its version number, the remote version of MySQL is
   prone to a security-bypass vulnerability.");

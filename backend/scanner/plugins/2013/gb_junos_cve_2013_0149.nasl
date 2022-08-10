@@ -70,7 +70,6 @@ MD5 authentication when configuring OSPF. MD5 authentication completely mitigate
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10582");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/229804");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61566");
 
   exit(0);
 }

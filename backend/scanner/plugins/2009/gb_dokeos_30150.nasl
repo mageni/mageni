@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"solution", value:"The vendor has provided a workaround to mitigate this
   vulnerability. Please see the references for more information.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30150");
   script_xref(name:"URL", value:"https://web.archive.org/web/20100102111721/http://www.dokeos.com/wiki/index.php/Security#Dokeos_1.8.5");
 
   exit(0);

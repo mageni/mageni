@@ -35,7 +35,6 @@ if(description)
 
   script_name("Polycom Products Directory Traversal and Command Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52301");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2012/Mar/18");
   script_xref(name:"URL", value:"http://blog.tempest.com.br/joao-paulo-campello/path-traversal-on-polycom-web-management-interface.html");
   script_xref(name:"URL", value:"http://www.polycom.com/");

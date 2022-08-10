@@ -41,7 +41,6 @@ if(description)
   script_family("Buffer overflow");
   script_copyright("Copyright (C) 2013 Greenbone Networks GmbH");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57602");
 
   script_tag(name:"solution", value:"libupnp is prone to multiple buffer-overflow vulnerabilities because
   it fails to perform adequate boundary checks on user-supplied data.");

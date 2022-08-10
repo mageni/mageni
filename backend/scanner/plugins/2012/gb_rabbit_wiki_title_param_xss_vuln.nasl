@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-02-13 15:15:15 +0530 (Mon, 13 Feb 2012)");
   script_name("RabbitWiki 'title' Parameter Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51971");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109628/rabbitwiki-xss.txt");
   script_xref(name:"URL", value:"http://st2tea.blogspot.in/2012/02/rabbitwiki-cross-site-scripting.html");
 

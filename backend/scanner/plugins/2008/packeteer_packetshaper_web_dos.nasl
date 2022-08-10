@@ -50,7 +50,6 @@ if(description)
 
   script_tag(name:"solution", value:"Restrict network access to the device management interfaces.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/470835/30/0/threaded");
 
   script_tag(name:"solution_type", value:"Mitigation");
 

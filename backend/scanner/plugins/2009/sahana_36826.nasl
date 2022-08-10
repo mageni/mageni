@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("sahana/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36826");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=530255");
   script_xref(name:"URL", value:"http://www.sahana.lk/");
   script_xref(name:"URL", value:"http://sourceforge.net/mailarchive/forum.php?thread_name=5d9043b70910191044l4bb0178fs563a5128a0f5db01%40mail.gmail.com&forum_name=sahana-maindev");

@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("tftp/backdoor", "keys/TARGET_IS_IPV6");
 
   script_xref(name:"URL", value:"http://www.distinct.com");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52938");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18718");
   script_xref(name:"URL", value:"http://www.spentera.com/advisories/2012/SPN-01-2012.pdf");
 

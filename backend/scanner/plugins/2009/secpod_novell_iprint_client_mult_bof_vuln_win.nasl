@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2009-40/");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/3429");
   script_xref(name:"URL", value:"http://download.novell.com/Download?buildid=29T3EFRky18~");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508288/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

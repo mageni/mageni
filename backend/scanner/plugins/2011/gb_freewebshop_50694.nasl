@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("FreeWebshop/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50694");
   script_xref(name:"URL", value:"http://www.freewebshop.org");
 
   script_tag(name:"summary", value:"FreeWebshop is prone to a remote code-execution vulnerability because the

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-13 14:45:05 +0200 (Thu, 13 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-06-01 10:53:55 +0530 (Fri, 01 Jun 2012)");
   script_name("PBBoard 'page' Parameter Local File Inclusion Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53710");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/75922");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18937");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113084/pbboard-lfi.txt");

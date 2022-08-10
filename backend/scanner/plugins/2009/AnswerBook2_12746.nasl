@@ -69,10 +69,8 @@ other attacks.");
 
   script_tag(name:"affected", value:"AnswerBook2 1.4.4 and prior versions are affected by these issues.");
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/12746");
   script_xref(name:"URL", value:"http://wwws.sun.com/software//ab2/");
   script_xref(name:"URL", value:"http://sunsolve.sun.com/search/document.do?assetkey=1-26-57737-1&searchclause=%22category:security%22%20%22availability,%20security%22");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/394429");
   script_xref(name:"URL", value:"http://sunsolve.sun.com/search/document.do?assetkey=1-66-200305-1");
   script_xref(name:"URL", value:"http://docs.sun.com");
 

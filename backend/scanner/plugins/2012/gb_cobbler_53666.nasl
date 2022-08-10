@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cobbler Remote Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53666");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/cobbler");
   script_xref(name:"URL", value:"https://bugs.launchpad.net/ubuntu/+source/cobbler/+bug/978999");
   script_xref(name:"URL", value:"https://github.com/cobbler/cobbler/issues/141");

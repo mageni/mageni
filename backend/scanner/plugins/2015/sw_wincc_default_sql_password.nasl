@@ -52,7 +52,6 @@ if(description)
   WinCCConnect/2WSXcder');
   script_tag(name:"solution", value:'Update to V7.0 SP2 Update 1 (V 7.0.2.1) or later.');
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41753");
   script_xref(name:"URL", value:"http://scadastrangelove.blogspot.de/2012/07/wincc-default-password-7-years-long.html");
 
   script_tag(name:"qod_type", value:"remote_vul");

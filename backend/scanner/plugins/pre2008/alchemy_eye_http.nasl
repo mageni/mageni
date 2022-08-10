@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("www/alchemy");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/243404");
 
   script_tag(name:"summary", value:"Alchemy Eye and Alchemy Network Monitor are network management
   tools for Microsoft Windows. The product contains a built-in HTTP

@@ -37,7 +37,6 @@ if (description)
 
   script_name("Cacti Unspecified SQL Injection and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50671");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://www.cacti.net/release_notes_0_8_7h.php");
 

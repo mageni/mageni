@@ -43,7 +43,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://wiki.rpath.com/wiki/Advisories:rPSA-2008-0308");
   script_xref(name:"URL", value:"http://www.samba.org/samba/history/samba-3.0.32.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/497941/100/0/threaded");
 
   script_tag(name:"affected", value:"Samba version prior to 3.0.32.");
 

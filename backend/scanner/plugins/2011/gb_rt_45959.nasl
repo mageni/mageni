@@ -36,7 +36,6 @@ if (description)
 
   script_name("Request Tracker Password Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45959");
   script_xref(name:"URL", value:"http://www.bestpractical.com/rt/");
 
   script_tag(name:"qod_type", value:"remote_banner");

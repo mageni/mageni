@@ -48,7 +48,6 @@ if(description)
   script_name("CuteNews/UTF-8 CuteNews Multiple Vulneablities");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/54243");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507782/100/0/threaded");
   script_xref(name:"URL", value:"http://www.morningstarsecurity.com/advisories/MORNINGSTAR-2009-02-CuteNews.txt");
 
   script_tag(name:"qod_type", value:"remote_banner");

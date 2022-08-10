@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/30545");
   script_xref(name:"URL", value:"http://cxsecurity.com/issue/WLB-2006120002");
   script_xref(name:"URL", value:"http://support.3com.com/software/utilities_for_windows_32_bit.htm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/452754/100/0/threaded");
 
   script_category(ACT_DENIAL);
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

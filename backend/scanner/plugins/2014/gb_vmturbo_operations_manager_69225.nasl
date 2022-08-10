@@ -39,7 +39,6 @@ if (description)
   script_name("VMTurbo Operations Manager '/cgi-bin/vmtadmin.cgi' Remote Command Execution Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69225");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2014-8/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");

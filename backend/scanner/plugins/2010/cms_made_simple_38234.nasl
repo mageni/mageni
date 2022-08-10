@@ -40,7 +40,6 @@ if (description)
 
   script_name("CMS Made Simple Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38234");
   script_xref(name:"URL", value:"http://www.cmsmadesimple.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

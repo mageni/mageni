@@ -35,7 +35,6 @@ if(description)
 
   script_name("Direct News Multiple Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38975");
   script_xref(name:"URL", value:"http://www.direct-news.net");
 
   script_tag(name:"cvss_base", value:"6.8");

@@ -37,10 +37,8 @@ if(description)
 
   script_name("Ruby WEBrick Terminal Escape Sequence in Logs Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37710");
   script_xref(name:"URL", value:"http://www.ruby-lang.org");
   script_xref(name:"URL", value:"http://www.ruby-lang.org/en/news/2010/01/10/webrick-escape-sequence-injection/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508830");
 
   script_category(ACT_GATHER_INFO);
   script_family("Web Servers");

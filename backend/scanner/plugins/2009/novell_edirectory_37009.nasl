@@ -42,9 +42,7 @@ if(description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("eDirectory/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37009");
   script_xref(name:"URL", value:"http://www.novell.com/products/edirectory/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507812");
 
   script_tag(name:"summary", value:"Novell eDirectory is prone to a buffer-overflow vulnerability
   because it fails to perform adequate boundary checks on user-supplied data.");

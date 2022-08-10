@@ -42,9 +42,7 @@ if(description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("ldap/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/25460");
   script_xref(name:"URL", value:"http://www.alphacentauri.co.nz/sidvault/index.htm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/477821");
 
   script_tag(name:"solution", value:"The vendor released SIDVault 2.0f to address this issue. Please see
   the references for more information.");

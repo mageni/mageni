@@ -43,7 +43,6 @@ if(description)
   script_dependencies("secpod_zikula_detect.nasl");
   script_mandatory_keys("zikula/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49491");
   script_xref(name:"URL", value:"http://zikula.org/");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/xss_in_zikula.html");
 

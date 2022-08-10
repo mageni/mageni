@@ -48,7 +48,6 @@ Rugged Operating System versions prior to 3.12.1 are vulnerable.");
 
   script_name("Rugged Operating System Web UI Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57125");
   script_xref(name:"URL", value:"http://www.ruggedcom.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

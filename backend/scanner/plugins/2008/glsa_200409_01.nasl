@@ -38,8 +38,7 @@ tag_solution = "All vpopmail users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-01
 http://bugs.gentoo.org/show_bug.cgi?id=60844
-http://sourceforge.net/forum/forum.php?forum_id=400873
-http://www.securityfocus.com/archive/1/371913/2004-08-15/2004-08-21/0";
+http://sourceforge.net/forum/forum.php?forum_id=400873";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-01.";
 

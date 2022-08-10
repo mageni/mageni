@@ -54,7 +54,6 @@ if(description)
   multiple stored cross-site scripting vulnerabilities.");
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/22881/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56622");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/118254/PHP-Server-Monitor-Cross-Site-Scripting.html");
 
   script_tag(name:"qod_type", value:"remote_app");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45602");
 
   script_tag(name:"impact", value:"Successful exploitation will let the remote unauthenticated
   attackers to cause a denial of service or possibly execute arbitrary code.");

@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-06-11 15:15:15 +0530 (Mon, 11 Jun 2012)");
   script_name("WordPress HTML5 AV Manager Plugin 'custom.php' Arbitrary File Upload Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49390");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53804");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18990");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113277/WordPress-HTML5-AV-Manager-0.2.7-Shell-Upload.html");
 

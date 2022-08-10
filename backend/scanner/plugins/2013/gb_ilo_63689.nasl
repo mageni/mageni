@@ -43,8 +43,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("HP_ILO/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63689");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63691");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to obtain sensitive information that may
 aid in further attacks or to execute arbitrary HTML and script code in an unsuspecting user's browser in the

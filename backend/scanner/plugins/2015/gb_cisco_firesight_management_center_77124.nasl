@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco FireSIGHT Management Center for VMware Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/77124");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20151016-fmc");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to bypass security restrictions to perform unauthorized actions. This may aid in launching

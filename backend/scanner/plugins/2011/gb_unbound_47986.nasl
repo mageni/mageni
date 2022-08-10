@@ -43,7 +43,6 @@ if(description)
   script_dependencies("unbound_version.nasl");
   script_mandatory_keys("unbound/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47986");
   script_xref(name:"URL", value:"http://unbound.net/index.html");
   script_xref(name:"URL", value:"http://unbound.nlnetlabs.nl/downloads/CVE-2011-1922.txt");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/531342");

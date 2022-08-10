@@ -37,7 +37,6 @@ if(description)
 
   script_name("PHP MicroCMS Local File Include and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43232");
   script_xref(name:"URL", value:"http://www.apphp.com/php-microcms/index.php");
 
   script_tag(name:"qod_type", value:"remote_vul");

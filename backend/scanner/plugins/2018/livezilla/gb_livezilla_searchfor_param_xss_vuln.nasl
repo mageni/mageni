@@ -54,7 +54,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/archive/1/541688/100/0/threaded");
   script_xref(name:"URL", value:"https://www.pallas.com/advisories/cve-2017-15869-livezilla-xss-knowledgebase");
 
   script_category(ACT_GATHER_INFO);

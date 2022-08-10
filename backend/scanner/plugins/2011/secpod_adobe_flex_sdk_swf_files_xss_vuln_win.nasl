@@ -37,7 +37,6 @@ if(description)
   script_name("Adobe Flex SDK 'SWF' Files Cross-Site Scripting Vulnerability (Windows)");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47053/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50869/info");
   script_xref(name:"URL", value:"http://kb2.adobe.com/cps/915/cpsid_91544.html");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb11-25.html");
 

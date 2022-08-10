@@ -38,7 +38,6 @@ if(description)
 
   script_name("IBM WebSphere Application Server Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74439");
   script_xref(name:"URL", value:"http://www.ibm.com/");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to execute arbitrary code in the

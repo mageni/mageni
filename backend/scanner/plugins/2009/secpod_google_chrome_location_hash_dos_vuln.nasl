@@ -52,7 +52,6 @@ if(description)
   script_tag(name:"summary", value:"This host is installed with Google Chrome and is prone to Denial of
   Service vulnerability.");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3424/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506006/100/0/threaded");
   script_xref(name:"URL", value:"http://www.google.com/chrome");
   exit(0);
 }

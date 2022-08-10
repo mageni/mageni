@@ -60,7 +60,6 @@ if (description)
 
   script_tag(name:"affected", value:"The issue affects versions prior to 1.5.2 and 1.6.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40976");
   script_xref(name:"URL", value:"http://ws.apache.org/axis2/");
   script_xref(name:"URL", value:"http://geronimo.apache.org/2010/07/21/apache-geronimo-v216-released.html");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg27019456");

@@ -51,7 +51,6 @@ if(description)
   Exploiting these issues could allow an attacker to compromise the
   application, access or modify data, or exploit latent
   vulnerabilities in the underlying database.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34058");
   exit(0);
 }
 

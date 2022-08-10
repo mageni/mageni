@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("interleave/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46771");
   script_xref(name:"URL", value:"http://www.interleave.nl/");
 
   script_tag(name:"summary", value:"Interleave is prone to multiple cross-site scripting vulnerabilities

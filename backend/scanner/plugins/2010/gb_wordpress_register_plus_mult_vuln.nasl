@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://websecurity.com.ua/4539");
   script_xref(name:"URL", value:"http://secunia.com/advisories/42360");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/96143/registerplus-xss.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514903/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

@@ -59,7 +59,6 @@ if(description)
   mitigates the attack.");
 
   script_tag(name:"solution_type", value:"Mitigation");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/531722/100/0/threaded");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");
   script_family("Mac OS X Local Security Checks");

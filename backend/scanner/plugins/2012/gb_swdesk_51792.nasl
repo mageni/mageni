@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51792");
   script_xref(name:"URL", value:"http://www.swdesk.com/");
 
   script_tag(name:"summary", value:"swDesk is prone to the following vulnerabilities:

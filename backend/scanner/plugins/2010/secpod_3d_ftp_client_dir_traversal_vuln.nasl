@@ -36,7 +36,6 @@ if(description)
   script_name("3D FTP Client Directory Traversal Vulnerability");
   script_xref(name:"URL", value:"http://vuln.sg/3dftp801-en.html");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2010/Aug/227");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513244");
   script_xref(name:"URL", value:"http://osdir.com/ml/bugtraq.security/2010-08/msg00226.html");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/directory_traversal_in_3d_ftp_client.html");
 

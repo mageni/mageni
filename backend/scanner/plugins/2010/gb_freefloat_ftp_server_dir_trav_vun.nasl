@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/freefloat/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45218/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/96423/freefloat-traversal.txt");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to read arbitrary

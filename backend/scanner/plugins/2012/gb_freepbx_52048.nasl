@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("FreePBX 'gen_amp_conf.php' Credentials Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52048");
   script_xref(name:"URL", value:"http://www.freepbx.org/");
   script_xref(name:"URL", value:"http://www.freepbx.org/forum/freepbx/development/security-gen-amp-conf-php");
 

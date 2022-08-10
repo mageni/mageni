@@ -37,7 +37,6 @@ if (description)
   script_name("DD-WRT Web Management Interface Remote Arbitrary Shell Command Injection Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35742");
   script_xref(name:"URL", value:"http://dd-wrt.com/dd-wrtv3/index.php");
   script_xref(name:"URL", value:"http://www.dd-wrt.com");
   script_xref(name:"URL", value:"http://www.heise.de/ct/artikel/Aufstand-der-Router-1960334.html");

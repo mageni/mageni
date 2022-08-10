@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"6.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("appRain CMF 'uploadify.php' Remote Arbitrary File Upload Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51576");
   script_xref(name:"URL", value:"http://www.apprain.com");
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");
   script_tag(name:"creation_date", value:"2012-01-23 11:04:51 +0100 (Mon, 23 Jan 2012)");

@@ -35,7 +35,6 @@ if (description)
   script_cve_id("CVE-2012-0882");
   script_name("MySQL 'yaSSL' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51925");
   script_xref(name:"URL", value:"http://www.mysql.com/");
   script_xref(name:"URL", value:"https://lists.immunityinc.com/pipermail/canvas/2012-February/000011.html");
 

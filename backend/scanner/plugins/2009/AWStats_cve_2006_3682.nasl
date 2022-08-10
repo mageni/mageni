@@ -45,7 +45,6 @@ if(description)
   script_dependencies("awstats_detect.nasl");
   script_mandatory_keys("awstats/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34159");
 
   script_tag(name:"summary", value:"AWStats is prone to a path-disclosure vulnerability.");
 

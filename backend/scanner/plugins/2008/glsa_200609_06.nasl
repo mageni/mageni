@@ -32,8 +32,7 @@ tag_solution = "All AdPlug users should update to the latest version:
     # emerge --ask --oneshot --verbose '>=media-libs/adplug-2.0.1'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200609-06
-http://bugs.gentoo.org/show_bug.cgi?id=139593
-http://www.securityfocus.com/archive/1/439432/30/0/threaded";
+http://bugs.gentoo.org/show_bug.cgi?id=139593";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200609-06.";
 

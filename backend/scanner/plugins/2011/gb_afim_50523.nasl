@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Ajax File and Image Manager 'data.php' PHP Code Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50523");
   script_xref(name:"URL", value:"http://www.phpletter.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 12:01:47 +0200 (Mon, 22 Oct 2018) $");

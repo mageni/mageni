@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80, 8880);
   script_mandatory_keys("ibm_websphere_application_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/77653");
   script_xref(name:"URL", value:"https://www-01.ibm.com/support/docview.wss?uid=swg21970575");
   script_xref(name:"URL", value:"http://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/");
 

@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 10:25:16 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-06-20 16:16:16 +0530 (Wed, 20 Jun 2012)");
   script_name("WordPress Nmedia Users File Uploader Plugin Arbitrary File Upload Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53786");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113282/wpnmedia-shell.txt");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/nmedia-user-file-uploader/changelog/");
 

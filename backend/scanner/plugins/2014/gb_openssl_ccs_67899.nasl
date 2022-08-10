@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("ssl_tls/port");
 
   script_xref(name:"URL", value:"https://www.openssl.org/news/secadv/20140605.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67899");
   script_xref(name:"URL", value:"http://openssl.org/");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow attackers to obtain

@@ -39,7 +39,6 @@ certain Windows executable programs, as demonstrated by qemu-dos.com.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/484429
 http://www.vuxml.org/freebsd/30f5ca1d-a90b-11dc-bf13-0211060005df.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"http://www.phlatline.org/index.php?page=prod-ppim");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30627");
 
   script_tag(name:"summary", value:"This host is running pPIM which is prone to multiple vulnerabilities, including two security-bypass
   issues, a cross-site scripting issue, and a file-upload issue.");

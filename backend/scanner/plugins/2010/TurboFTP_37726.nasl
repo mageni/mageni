@@ -53,7 +53,6 @@ if(description)
 
   script_tag(name:"affected", value:"TurboFTP 1.00.712 is vulnerable. Prior versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37726");
   script_xref(name:"URL", value:"http://www.corelan.be:8800/index.php/forum/security-advisories/corelan-10-004-turboftp-server-1-00-712-dos/");
   script_xref(name:"URL", value:"http://www.turboftp.com/");
   script_xref(name:"URL", value:"http://www.tbsoftinc.com/tbserver/turboftp-server-releasenotes.htm");

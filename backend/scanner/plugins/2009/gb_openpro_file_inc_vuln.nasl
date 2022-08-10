@@ -34,7 +34,6 @@ if(description)
   script_cve_id("CVE-2008-7087");
   script_bugtraq_id(30264);
   script_name("OpenPro Remote File Inclusion Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/494426/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

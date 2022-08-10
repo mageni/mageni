@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_name("Atlassian Confluence Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47398");
   script_xref(name:"URL", value:"http://jira.atlassian.com/browse/CONF-21508");
   script_xref(name:"URL", value:"http://jira.atlassian.com/browse/CONF-21819");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/DOC/Confluence+Security+Advisory+2011-01-18");

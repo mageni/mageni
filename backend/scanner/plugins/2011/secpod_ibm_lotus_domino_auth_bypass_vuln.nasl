@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/43860");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2011/0758");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-110/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517119/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2011 SecPod");

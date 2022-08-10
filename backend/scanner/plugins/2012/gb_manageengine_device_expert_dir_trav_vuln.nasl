@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-20 15:57:28 +0530 (Tue, 20 Mar 2012)");
   script_name("Zoho ManageEngine Device Expert Directory Traversal Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/48456/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522004");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/110985/manageenginede56-traversal.txt");
 
   script_category(ACT_ATTACK);

@@ -45,9 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("Serendipity/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95652");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95656");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95659");
   script_xref(name:"URL", value:"https://blog.s9y.org/archives/272-Serendipity-2.1-First-Release-Candidate.html");
 
   script_tag(name:"summary", value:"Serendipity is prone to multiple vulnerabilities because of

@@ -49,7 +49,6 @@ if(description)
   script_tag(name:"affected", value:"NETGEAR DGN2200 v1, v2, v3, v4");
   script_tag(name:"solution", value:"Update the Firmware, for more details");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96463");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

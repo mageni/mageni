@@ -54,9 +54,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 2.0.8 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/1872");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/1873");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/1874");
 
   exit(0);
 }

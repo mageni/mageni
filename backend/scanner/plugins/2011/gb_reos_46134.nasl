@@ -34,13 +34,7 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("ReOS Local File Include and SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46134");
   script_xref(name:"URL", value:"http://reos.elazos.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516154");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516155");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516152");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516149");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516156");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);
   script_family("Web application abuses");

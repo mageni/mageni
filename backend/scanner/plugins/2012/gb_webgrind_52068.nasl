@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"2.6");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("webgrind 'dataFile' Parameter Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52068");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5073.php");
   script_xref(name:"URL", value:"http://code.google.com/p/webgrind/");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");

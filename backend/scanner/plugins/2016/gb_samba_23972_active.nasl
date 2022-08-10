@@ -46,7 +46,6 @@ if(description)
   script_require_ports(139, 445);
   script_mandatory_keys("samba/smb/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23972");
   script_xref(name:"URL", value:"https://www.samba.org/samba/security/CVE-2007-2447.html");
 
   script_tag(name:"summary", value:"Samba is prone to a vulnerability that allows attackers to execute arbitrary shell

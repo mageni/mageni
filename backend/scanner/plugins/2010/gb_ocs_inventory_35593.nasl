@@ -54,7 +54,6 @@ if (description)
   attackers to elevate their privileges and compromise the application
   or the underlying computer. Other attacks may also be possible.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/35593");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=506416");
   script_xref(name:"URL", value:"http://www.ocsinventory-ng.org/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=144&cntnt01returnid=64");
 

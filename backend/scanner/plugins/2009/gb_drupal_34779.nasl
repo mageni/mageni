@@ -57,7 +57,6 @@ if(description)
 
   Drupal 6.x (prior to 6.11)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34779");
   script_xref(name:"URL", value:"http://drupal.org/node/449078");
 
   script_tag(name:"solution_type", value:"VendorFix");

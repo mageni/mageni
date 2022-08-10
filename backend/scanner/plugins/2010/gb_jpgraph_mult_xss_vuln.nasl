@@ -61,7 +61,6 @@ if(description)
 
   script_tag(name:"solution", value:"Apply the update from the referenced link.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508586/100/0/threaded");
 
   exit(0);
 }

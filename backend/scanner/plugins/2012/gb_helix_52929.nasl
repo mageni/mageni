@@ -35,7 +35,6 @@ if (description)
 
   script_name("RealNetworks Helix Server Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52929");
   script_xref(name:"URL", value:"http://www.realnetworks.com/products-services/helix-server-proxy.aspx");
   script_xref(name:"URL", value:"http://helixproducts.real.com/docs/security/SecurityUpdate04022012HS.pdf");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2012-9/");

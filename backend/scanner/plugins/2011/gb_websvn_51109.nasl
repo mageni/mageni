@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("WebSVN 'path' Parameter Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51109");
   script_xref(name:"URL", value:"http://websvn.tigris.org/");
   script_xref(name:"URL", value:"http://st2tea.blogspot.com/2011/12/websvn-cross-site-scripting.html");
 

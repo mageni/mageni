@@ -63,7 +63,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"WillNotFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41216");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/91251");
 
   script_category(ACT_ATTACK);

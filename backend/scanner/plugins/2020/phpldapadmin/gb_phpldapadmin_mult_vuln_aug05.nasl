@@ -37,7 +37,6 @@ if(description)
   script_mandatory_keys("phpldapadmin/installed");
 
   script_xref(name:"URL", value:"https://marc.info/?l=bugtraq&m=112542447219235&w=2");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/14695");
 
   script_tag(name:"summary", value:"phpLDAPadmin is prone to multiple vulnerabilities.");
 

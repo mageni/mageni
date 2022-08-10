@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Weborf 'get_param_value()' Function HTTP Header Handling Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46054");
   script_xref(name:"URL", value:"http://galileo.dmi.unict.it/svn/weborf/trunk/CHANGELOG");
   script_xref(name:"URL", value:"http://galileo.dmi.unict.it/wiki/weborf/doku.php");
 

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("ocPortal Arbitrary File Disclosure and Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52768");
   script_xref(name:"URL", value:"http://ocportal.com/site/news/view/new-releases/ocportal-7-1-6-released.htm?filter=1%2C2%2C3%2C29%2C30");
   script_xref(name:"URL", value:"http://ocportal.com/start.htm");
   script_xref(name:"URL", value:"http://ocportal.com/site/news/view/ocportal-security-update.htm");

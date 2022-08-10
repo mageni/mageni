@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("ManageEngine/ServiceDeskPlus/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/93215");
   script_xref(name:"URL", value:"https://www.manageengine.com/products/service-desk/readme-9.0.html");
 
   script_tag(name:"summary", value:"This host is installed with ManageEngine ServiceDesk Plus and

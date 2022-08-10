@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("Novell File Reporter 'NFRAgent.exe' XML Parsing Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-116/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517321/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2011 Greenbone Networks GmbH");

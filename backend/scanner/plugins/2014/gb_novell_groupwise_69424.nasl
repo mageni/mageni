@@ -40,7 +40,6 @@ if(description)
 
   script_name("Novell Groupwise 'FileUploadServlet' Arbitrary File Access Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69424");
   script_xref(name:"URL", value:"http://www.novell.com/groupwise/");
   script_xref(name:"URL", value:"http://www.novell.com/support/kb/doc.php?id=7015566");
 

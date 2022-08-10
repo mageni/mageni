@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_kodi_web_server_detect.nasl", "os_detection.nasl");
   script_mandatory_keys("Kodi/WebServer/installed", "Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98668");
   script_xref(name:"URL", value:"https://security.gentoo.org/glsa/201706-17");
 
   script_tag(name:"summary", value:"Multiple vulnerabilities have been found in Kodi, the worst

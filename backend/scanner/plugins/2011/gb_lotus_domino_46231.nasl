@@ -38,7 +38,6 @@ if(description)
 
   script_name("IBM Lotus Domino 'nLDAP.exe' Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46231");
   script_xref(name:"URL", value:"http://www-142.ibm.com/software/sw-lotus/products/product4.nsf/wdocs/dominohomepage");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-047/");
 

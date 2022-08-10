@@ -37,7 +37,6 @@ if(description)
 
   script_name("TestLink Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54990");
   script_xref(name:"URL", value:"http://www.teamst.org/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");

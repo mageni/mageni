@@ -41,11 +41,9 @@ if(description)
   script_dependencies("smtpserver_detect.nasl");
   script_mandatory_keys("smtp/mailenable/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43182");
   script_xref(name:"URL", value:"http://www.mailenable.com/");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-112/");
   script_xref(name:"URL", value:"http://www.mailenable.com/hotfix/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513648");
 
   script_tag(name:"solution", value:"The vendor has released hotfix ME-10044. Please see the references for
   more information.");

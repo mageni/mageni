@@ -38,7 +38,6 @@ if(description)
 
   script_name("SquidClamav Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55293");
   script_xref(name:"URL", value:"http://squidclamav.darold.net/news.html");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");

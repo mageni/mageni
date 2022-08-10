@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpldapadmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50331");
   script_xref(name:"URL", value:"http://phpldapadmin.sourceforge.net/");
 
   script_tag(name:"summary", value:"phpLDAPadmin is prone to a remote PHP code-injection vulnerability.");

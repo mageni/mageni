@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510879");
 
   script_tag(name:"impact", value:"Remote attackers can exploit this issue to obtain the host name or IP address
   of the Tomcat server. Information harvested may aid in further attacks.");

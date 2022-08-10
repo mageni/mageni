@@ -40,7 +40,6 @@ if (description)
 
   script_name("Joomla NoNumber! Extension Manager Plugin Local File Include and PHP code Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50191");
   script_xref(name:"URL", value:"http://www.nonumber.nl/extensions/nonumbermanager");
 
   script_tag(name:"qod_type", value:"remote_vul");

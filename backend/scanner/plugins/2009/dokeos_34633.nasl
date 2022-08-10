@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"affected", value:"Dokeos prior to version 1.8.5 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34633");
 
   exit(0);
 }

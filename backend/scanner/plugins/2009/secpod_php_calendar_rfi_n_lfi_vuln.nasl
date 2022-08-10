@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("PHP-Calendar/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508548/100/0/threaded");
 
   script_tag(name:"affected", value:"PHP-Calendar version 1.1 and prior on all platforms.");
 

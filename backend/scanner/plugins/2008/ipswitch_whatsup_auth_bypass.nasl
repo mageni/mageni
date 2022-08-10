@@ -51,7 +51,6 @@ if(description)
   allows an attacker to bypass authentication with a specially-crafted request.");
 
   script_xref(name:"URL", value:"http://www.ftusecurity.com/pub/whatsup.public.pdf");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/434247/30/0/threaded");
   script_xref(name:"URL", value:"http://www.ipswitch.com/support/whatsup_professional/releases/wup200601.asp");
 
   exit(0);

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base", value:"9.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Foxit Reader Multiple Buffer Overflow Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42241/");
   script_xref(name:"URL", value:"http://www.foxitsoftware.com/pdf/reader/security_bulletins.php#iphone");
   script_xref(name:"URL", value:"http://www.us-cert.gov/current/index.html#foxit_releases_foxit_reader_4");
 

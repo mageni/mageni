@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("horde/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51989");
   script_xref(name:"URL", value:"http://lists.horde.org/archives/announce/2012/000751.html");
   script_xref(name:"URL", value:"http://lists.horde.org/archives/announce/2012/000749.html");
   script_xref(name:"URL", value:"http://lists.horde.org/archives/announce/2012/000750.html");

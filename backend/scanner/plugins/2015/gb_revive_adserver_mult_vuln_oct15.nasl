@@ -89,7 +89,6 @@ if(description)
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/133893");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2015/Oct/32");
   script_xref(name:"URL", value:"http://www.revive-adserver.com/security/revive-sa-2015-001");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/536633/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

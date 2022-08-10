@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to OTRS 2.4.9 are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44384");
   script_xref(name:"URL", value:"http://otrs.org/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2010-03-en/");
   script_category(ACT_GATHER_INFO);

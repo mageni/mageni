@@ -43,8 +43,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.cert.org/advisories/CA-99-08-cmsd.html");
   script_xref(name:"URL", value:"http://www.iss.net/security_center/reference/vuln/sun-cmsd-bo.htm");
   script_xref(name:"URL", value:"http://www1.itrc.hp.com/service/cki/docDisplay.do?docId=HPSBUX9908-102");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/advisories/1691");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/advisories/1721");
 
   script_tag(name:"impact", value:"Successful exploitation could allow attackers to execute
   arbitrary code with the privileges of the rpc.cmsd daemon, typically root. With some

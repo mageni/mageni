@@ -36,7 +36,6 @@ if (description)
   script_version("$Revision: 11867 $");
   script_name("FreePBX 'admin/config.php' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65509");
   script_xref(name:"URL", value:"http://freepbx.org");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

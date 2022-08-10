@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/typsoft/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34901");
 
   script_tag(name:"summary", value:"TYPSoft FTP Server is prone to a remote denial-of-service
   vulnerability.");

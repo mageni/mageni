@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_cve_id("CVE-2009-2260");
   script_name("StarDict Information Disclosure Vulnerability (Linux)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504583");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=508945");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=534731");
 

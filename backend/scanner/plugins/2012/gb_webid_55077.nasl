@@ -37,7 +37,6 @@ if(description)
 
   script_name("WeBid Remote File Include and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55077");
   script_xref(name:"URL", value:"http://www.webidsupport.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-08-17 12:36:09 +0200 (Fri, 17 Aug 2018) $");

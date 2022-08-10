@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("Wireshark/Linux/Ver");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/55951");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37985/info");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/0239");
 
   script_tag(name:"impact", value:"Successful exploitation allows attackers to crash an affected application or

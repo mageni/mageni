@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("avm/fritz/model", "avm/fritz/firmware_version");
 
   script_xref(name:"URL", value:"https://web.archive.org/web/20160308013152/http://mazzoo.de/blog/2007/01/18");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/457406/30/0/threaded");
 
   script_tag(name:"summary", value:"Multiple AVM FRITZ!Box devices are prone to a Denial of Service.");
 

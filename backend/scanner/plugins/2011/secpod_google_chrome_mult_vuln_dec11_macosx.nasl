@@ -39,7 +39,6 @@ if(description)
   script_tag(name:"creation_date", value:"2011-12-15 16:18:22 +0530 (Thu, 15 Dec 2011)");
   script_name("Google Chrome Multiple Vulnerabilities - December11 (Mac OS X)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/47231/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51041");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.com/2011/12/stable-channel-update.html");
 
   script_copyright("Copyright (c) 2011 SecPod");

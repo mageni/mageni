@@ -35,8 +35,7 @@ tag_solution = "All mpg123 users should upgrade to the latest version:
     # emerge '>=media-sound/mpg123-0.59s-r4'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-20
-http://bugs.gentoo.org/show_bug.cgi?id=63079
-http://www.securityfocus.com/archive/1/374433/2004-09-05/2004-09-11/0";
+http://bugs.gentoo.org/show_bug.cgi?id=63079";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-20.";
 

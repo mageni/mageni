@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("SMB/WindowsVersion");
   script_require_ports(139, 445);
   script_xref(name:"URL", value:"http://secunia.com/advisories/31832/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496226");
   script_xref(name:"URL", value:"http://www.frsirt.com/english/advisories/2008/2556");
   script_tag(name:"summary", value:"The host has ZoneAlarm Internet Security Suite installed, which
  is prone to buffer overflow vulnerability.");

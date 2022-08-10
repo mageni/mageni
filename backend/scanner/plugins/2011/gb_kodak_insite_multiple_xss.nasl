@@ -44,8 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2011/Mar/73");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/65941");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516880");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/516880/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to execute arbitrary
   script code in the browser of an unsuspecting user in the context of the

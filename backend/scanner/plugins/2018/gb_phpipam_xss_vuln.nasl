@@ -60,7 +60,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://phpipam.net/documents/changelog/");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/133055/phpipam-1.1.010-Cross-Site-Scripting.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/536188/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_tag(name:"solution_type", value:"VendorFix");

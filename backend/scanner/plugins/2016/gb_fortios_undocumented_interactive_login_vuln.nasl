@@ -59,7 +59,6 @@ if (description)
   5.4.0 or later.");
 
   script_xref(name:"URL", value:"https://fortiguard.com/psirt/FG-IR-16-001");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/80581");
 
   exit(0);
 }

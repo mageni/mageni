@@ -37,7 +37,6 @@ if(description)
   script_name("HP System Health Application and Command Line Utilities Multiple Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49051/");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/49051");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522549");
 
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");
   script_category(ACT_GATHER_INFO);

@@ -38,7 +38,6 @@ if (description)
 
   script_name("WordPress CM Download Manager Plugin Remote PHP Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71204");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary PHP code
 within the context of the web server. This may lead to a full compromise of the affected application

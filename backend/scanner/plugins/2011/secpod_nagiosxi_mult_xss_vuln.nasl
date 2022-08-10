@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-29 14:35:30 +0100 (Mon, 29 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-12-16 10:10:10 +0530 (Fri, 16 Dec 2011)");
   script_name("Nagios XI Multiple Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51069");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/71825");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/71826");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Dec/354");

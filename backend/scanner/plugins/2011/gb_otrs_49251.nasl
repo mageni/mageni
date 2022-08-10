@@ -51,7 +51,6 @@ user-supplied input.");
   script_tag(name:"affected", value:"Open Ticket Request System (OTRS) version 2.4.x before 2.4.11 and 3.x before 3.0.8");
 
   script_tag(name:"qod_type", value:"remote_banner");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49251");
   script_xref(name:"URL", value:"http://otrs.org/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2011-03-en/");
   script_category(ACT_GATHER_INFO);

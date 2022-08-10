@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("tftgallery/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36833");
   script_xref(name:"URL", value:"http://www.tftgallery.org/");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary script code

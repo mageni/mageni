@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"affected", value:"FreeWebShop 2.2.9 R2 is vulnerable, other versions may also be
   affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34538");
   script_xref(name:"URL", value:"http://www.freewebshop.org");
 
   exit(0);

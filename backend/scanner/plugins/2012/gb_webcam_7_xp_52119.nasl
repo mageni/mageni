@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("webcam_7_xp/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52119");
   script_xref(name:"URL", value:"http://www.webcamxp.com/home.aspx");
 
   script_tag(name:"summary", value:"WebcamXP and Webcam7 are prone to a directory-traversal vulnerability

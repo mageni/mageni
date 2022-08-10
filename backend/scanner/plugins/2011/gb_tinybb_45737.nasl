@@ -37,7 +37,6 @@ if(description)
 
   script_name("TinyBB 'Profile' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45737");
   script_xref(name:"URL", value:"http://www.tinybb.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

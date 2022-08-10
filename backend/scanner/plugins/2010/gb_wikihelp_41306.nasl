@@ -57,7 +57,6 @@ if (description)
 
   Wiki Web Help 0.2.7 is vulnerable, other versions may also be
   affected.");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41306");
   script_xref(name:"URL", value:"http://sourceforge.net/tracker/?func=detail&atid=1296085&aid=3025530&group_id=307693");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/wwh/");
   exit(0);

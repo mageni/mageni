@@ -41,7 +41,6 @@ if (description)
 
   script_name("Centreon 'main.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39118");
   script_xref(name:"URL", value:"http://www.centreon.com/");
 
   script_tag(name:"qod_type", value:"remote_banner");

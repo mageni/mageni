@@ -68,8 +68,6 @@ announced via advisory FEDORA-2009-3283.";
 
 if(description)
 {
-script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/archive/1/502231/100/0/threaded");
-script_xref(name : "URL" , value : "http://www.securityfocus.com/bid/34278");
 script_xref(name : "URL" , value : "http://www.milw0rm.com/exploits/8297");
  script_oid("1.3.6.1.4.1.25623.1.0.311690");
  script_version("$Revision: 6624 $");

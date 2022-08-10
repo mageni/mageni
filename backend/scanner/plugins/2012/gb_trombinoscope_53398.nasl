@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_version("$Revision: 11435 $");
   script_name("Trombinoscope 'photo.php' Server SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53398");
   script_xref(name:"URL", value:"http://www.toocharger.com");
   script_xref(name:"URL", value:"http://ftp1.toocharger.com/sc2MP3p/trombinoscope_4116.zip");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");

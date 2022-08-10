@@ -36,8 +36,7 @@ tag_solution = "All phpMyAdmin users should upgrade to the latest version:
     # emerge '>=dev-db/phpmyadmin-2.5.7_p1'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200407-22
-http://bugs.gentoo.org/show_bug.cgi?id=57890
-http://www.securityfocus.com/archive/1/367486";
+http://bugs.gentoo.org/show_bug.cgi?id=57890";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200407-22.";
 

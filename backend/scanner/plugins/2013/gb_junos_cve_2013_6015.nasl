@@ -69,7 +69,6 @@ or 12.1X45.");
 a workaround disable ALGs and UTM features if they are not required.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10596");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62963");
   script_xref(name:"URL", value:"http://secunia.com/advisories/55218");
 
   exit(0);

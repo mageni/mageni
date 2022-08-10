@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(36002);
   script_name("SQLiteManager Cross-Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/28642");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36002");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_MIXED_ATTACK);

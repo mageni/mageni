@@ -37,7 +37,6 @@ if(description)
   script_name("Creasito 'username' SQL Injection Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34809");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/8497");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502818/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

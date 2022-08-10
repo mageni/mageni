@@ -33,7 +33,6 @@ if (description)
 
   script_name("Syncrify Multiple Remote Security Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43333");
   script_xref(name:"URL", value:"http://web.synametrics.com/SyncrifyVersionHistory.htm");
 
   script_tag(name:"cvss_base", value:"5.0");

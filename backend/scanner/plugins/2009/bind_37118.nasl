@@ -43,7 +43,6 @@ if(description)
   script_dependencies("bind_version.nasl");
   script_mandatory_keys("ISC BIND/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37118");
   script_xref(name:"URL", value:"https://www.isc.org/node/504");
   script_xref(name:"URL", value:"http://www.isc.org/products/BIND/");
 

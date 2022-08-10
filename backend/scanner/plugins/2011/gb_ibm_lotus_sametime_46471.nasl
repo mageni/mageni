@@ -39,9 +39,7 @@ if (description)
 
   script_name("IBM Lotus Sametime Server 'stconf.nsf' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46471");
   script_xref(name:"URL", value:"http://www-03.ibm.com/software/products/en/ibmsame");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516563");
 
   script_category(ACT_ATTACK);
   script_family("Web application abuses");

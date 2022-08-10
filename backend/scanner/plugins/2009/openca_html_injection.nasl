@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("openca/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/11113");
 
   script_tag(name:"solution", value:"Upgrade OpenCA to the newer version.");
 

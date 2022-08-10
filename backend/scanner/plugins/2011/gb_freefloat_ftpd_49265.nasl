@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:P/I:P/A:P");
   script_name("Freefloat FTP Server 'ALLO' Command Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49265");
   script_xref(name:"URL", value:"http://www.freefloat.com/sv/freefloat-ftp-server/freefloat-ftp-server.php");
 
   script_tag(name:"qod_type", value:"remote_vul");

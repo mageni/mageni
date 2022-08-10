@@ -56,7 +56,6 @@ if (description)
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34317");
 
   exit(0);
 }

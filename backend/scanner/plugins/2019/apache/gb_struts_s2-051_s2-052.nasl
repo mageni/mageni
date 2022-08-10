@@ -41,8 +41,6 @@ if(description)
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-052");
   script_xref(name:"Advisory-ID", value:"S2-051");
   script_xref(name:"Advisory-ID", value:"S2-052");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100609");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100611");
 
   script_tag(name:"summary", value:"Apache Struts is prone to multiple vulnerabilities.");
 

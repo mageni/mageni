@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:P/I:P/A:P");
   script_name("Evaria ECMS 'Poll.php' Local File Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43640");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

@@ -52,7 +52,6 @@ if(description)
   the context of the webserver process. This may facilitate a compromise of the application and the
   underlying system. Other attacks are also possible.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/29906");
   script_xref(name:"URL", value:"http://labs.geody.com/dagger/");
   exit(0);
 }

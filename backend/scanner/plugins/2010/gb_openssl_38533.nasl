@@ -37,13 +37,11 @@ if(description)
 
   script_name("OpenSSL 'dtls1_retrieve_buffered_fragment()' Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38533");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=567711");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=569774");
   script_xref(name:"URL", value:"http://www.openwall.com/lists/oss-security/2010/03/03/5");
   script_xref(name:"URL", value:"http://cvs.openssl.org/chngview?cn=19374");
   script_xref(name:"URL", value:"http://www.openssl.org");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510726");
 
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");

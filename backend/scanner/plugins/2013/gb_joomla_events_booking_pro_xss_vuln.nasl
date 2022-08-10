@@ -53,7 +53,6 @@ is not properly sanitised before being returned to the user.");
 script code and or discloses sensitive information resulting in loss of confidentiality.");
 
   script_xref(name:"URL", value:"http://inter5.org/archives/262789");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/527775");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/joomseller-events-booking-pro-jse-event-cross-site-scripting");
 
   script_category(ACT_ATTACK);

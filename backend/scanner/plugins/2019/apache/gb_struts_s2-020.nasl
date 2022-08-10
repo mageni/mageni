@@ -38,8 +38,6 @@ if(description)
   script_mandatory_keys("ApacheStruts/installed", "Host/runs_windows");
 
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-020");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65400");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65999");
 
   script_tag(name:"summary", value:"Apache Struts is prone to multiple vulnerabilities.");
 

@@ -60,7 +60,6 @@ allows remote attackers to inject arbitrary web script or HTML via the PATH_INFO
 
   script_tag(name:"qod_type", value:"remote_banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/538413");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2016 Greenbone Networks GmbH");

@@ -60,7 +60,6 @@ if(description)
 
   script_tag(name:"qod_type", value:"remote_banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508613/100/0/threaded");
   exit(0);
 }
 

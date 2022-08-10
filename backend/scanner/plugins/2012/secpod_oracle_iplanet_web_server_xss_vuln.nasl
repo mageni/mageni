@@ -39,7 +39,6 @@ if(description)
   script_name("Oracle iPlanet Web Server Multiple Cross Site Scripting Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/43942");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53133");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuapr2012-366314.html");
   script_xref(name:"URL", value:"http://chingshiong.blogspot.in/2012/04/oracle-iplanet-web-server-709-multiple.html");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuapr2012-366314.html#AppendixSUNS");

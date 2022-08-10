@@ -47,7 +47,6 @@ if(description)
   script_tag(name:"affected", value:"VM Turbo Operations Manager 4.5.x and earlier");
   script_tag(name:"solution", value:"Upgrade to VM Turbo Operations Manager 4.6 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/532061");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/vm-turbo-operations-manager-45x-directory-traversal");
   script_xref(name:"URL", value:"https://support.vmturbo.com/hc/en-us/articles/203170127-VMTurbo-Operations-Manager-v4-6-Announcement");
   script_category(ACT_ATTACK);

@@ -54,7 +54,6 @@ if (description)
 
   script_tag(name:"affected", value:"My Dealer CMS 2.0 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34464");
 
   script_tag(name:"qod_type", value:"remote_app");
 

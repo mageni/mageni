@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"2.6");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("OneOrZero AIMS 'index.php' Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51549");
   script_xref(name:"URL", value:"http://oneorzero.com/");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-01-19 11:24:53 +0100 (Thu, 19 Jan 2012)");

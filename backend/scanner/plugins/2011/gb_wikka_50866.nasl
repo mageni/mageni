@@ -34,9 +34,7 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("WikkaWiki Multiple Security Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50866");
   script_xref(name:"URL", value:"http://wikkawiki.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520687");
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 15:31:29 +0200 (Mon, 22 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-12-01 11:51:48 +0100 (Thu, 01 Dec 2011)");
   script_tag(name:"qod_type", value:"remote_vul");

@@ -64,8 +64,6 @@ if(description)
   release, disable respective features, remove the product or replace the product by another one.");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/50869");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35155");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30990");
 
   exit(0);
 }

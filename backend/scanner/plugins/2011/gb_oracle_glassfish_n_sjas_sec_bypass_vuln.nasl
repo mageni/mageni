@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("GlassFish/installed", "GlassFishAdminConsole/port");
   script_require_ports("Services/www", 8080);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47438/discuss");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/cve/CVE-2011-0807");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuapr2011-301950.html");
 

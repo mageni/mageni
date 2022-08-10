@@ -38,7 +38,6 @@ if (description)
 
   script_name("NovaBoard 'nova_lang' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44459");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/lfi_in_novaboard.html");
   script_xref(name:"URL", value:"http://www.novaboard.net/");
 

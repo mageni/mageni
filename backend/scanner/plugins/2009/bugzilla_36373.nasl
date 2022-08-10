@@ -39,7 +39,6 @@ if(description)
 
   script_name("Mozilla Bugzilla 'Bug.create()' WebService Function SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36373");
   script_xref(name:"URL", value:"https://bugzilla.mozilla.org/show_bug.cgi?id=515191");
   script_xref(name:"URL", value:"http://www.bugzilla.org/security/3.0.8/");
   script_xref(name:"URL", value:"http://www.bugzilla.org");

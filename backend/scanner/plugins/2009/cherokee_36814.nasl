@@ -37,9 +37,7 @@ if (description)
 
   script_name("Cherokee Web Server Malformed Packet Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36814");
   script_xref(name:"URL", value:"http://www.alobbs.com/modules.php?op=modload&name=cherokee&file=index");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507456");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

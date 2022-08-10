@@ -63,7 +63,6 @@ if (description)
 
   Note that additional products that use the Horde framework may also be vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43001");
   script_xref(name:"URL", value:"http://git.horde.org/diff.php/horde/util/icon_browser.php?rt=horde-git&r1=a978a35c3e95e784253508fd4333d2fbb64830b6&r2=9342addbd2b95f184f230773daa4faf5ef6d65e9");
   script_xref(name:"URL", value:"http://www.horde.org");
   exit(0);

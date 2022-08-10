@@ -61,7 +61,6 @@ if(description)
   2011.54 are vulnerable.");
   script_tag(name:"solution", value:"Updates are available.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52159");
   script_xref(name:"URL", value:"https://matt.ucc.asn.au/dropbear/dropbear.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

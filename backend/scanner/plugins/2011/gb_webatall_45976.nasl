@@ -36,7 +36,6 @@ if(description)
 
   script_name("web@all 'url' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45976");
   script_xref(name:"URL", value:"http://webatall.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

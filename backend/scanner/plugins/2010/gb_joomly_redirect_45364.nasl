@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Joomla Redirect Component 'com_redirect' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45364");
   script_xref(name:"URL", value:"http://www.tutorialjoomla.net/2010/11/joomla-extensions-redirect-for-joomla-1-5/");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 

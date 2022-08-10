@@ -54,7 +54,6 @@ network share.");
   script_tag(name:"summary", value:"This host is installed with TortoiseSVN and is prone to insecure
   library loading vulnerability.");
   script_tag(name:"solution_type", value:"WillNotFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513442/100/0/threaded");
   script_xref(name:"URL", value:"http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&dsMessageId=2653163");
   script_xref(name:"URL", value:"http://tortoisesvn.tigris.org/ds/viewMessage.do?dsForumId=4061&dsMessageId=2653202&orderBy=createDate&orderType=desc");
   exit(0);

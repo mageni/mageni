@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("Host/is_dlink_device"); # nb: Experiences in the past have shown that various different devices could be affected
   script_require_ports("Services/www", 80, 8080);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58938");
   script_xref(name:"URL", value:"http://www.dlink.com/");
   script_xref(name:"URL", value:"http://www.s3cur1ty.de/m1adv2013-017");
 

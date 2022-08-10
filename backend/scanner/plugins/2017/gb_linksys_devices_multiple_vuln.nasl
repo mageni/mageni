@@ -88,7 +88,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/43013");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/541369/30/0/threaded");
   script_xref(name:"URL", value:"https://www.sec-consult.com/en/blog/advisories/multiple-vulnerabilities-in-linksys-e-series-products/index.html");
 
   script_category(ACT_ATTACK);

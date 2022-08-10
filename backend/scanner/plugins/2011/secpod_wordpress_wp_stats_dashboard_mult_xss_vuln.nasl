@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("wordpress/installed");
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2011/Aug/128");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519348");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/multiple_xss_in_wp_stats_dashboard.html");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to execute arbitrary

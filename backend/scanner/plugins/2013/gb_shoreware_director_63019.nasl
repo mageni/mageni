@@ -37,7 +37,6 @@ if (description)
   script_name("ShoreTel ShoreWare Director Remote Security Bypass Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63019");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-10-16 12:02:38 +0200 (Wed, 16 Oct 2013)");

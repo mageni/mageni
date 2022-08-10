@@ -35,9 +35,7 @@ tag_solution = "All xine-lib users should upgrade to the latest version:
     # emerge '>=media-libs/xine-lib-1_rc6'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-30
-http://bugs.gentoo.org/show_bug.cgi?id=64348
-http://www.securityfocus.com/archive/1/375485/2004-09-02/2004-09-08/0
-http://www.securityfocus.com/archive/1/375482/2004-09-02/2004-09-08/0";
+http://bugs.gentoo.org/show_bug.cgi?id=64348";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-30.";
 

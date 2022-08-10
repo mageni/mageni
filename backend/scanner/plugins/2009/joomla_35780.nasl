@@ -40,11 +40,9 @@ if(description)
 
   script_name("Joomla! Remote File Upload Vulnerability And Information Disclosure Weakness");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35780");
   script_xref(name:"URL", value:"http://developer.joomla.org/security/news/301-20090722-core-file-upload.html");
   script_xref(name:"URL", value:"http://developer.joomla.org/security/news/302-20090722-core-missing-jexec-check.html");
   script_xref(name:"URL", value:"http://www.joomla.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/505231");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

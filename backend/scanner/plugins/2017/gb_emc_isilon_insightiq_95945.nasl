@@ -38,7 +38,6 @@ if (description)
 
   script_name("EMC Isilon InsightIQ Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95945");
   script_xref(name:"URL", value:"http://www.emc.com/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass authentication mechanism and perform unauthorized actions. This may lead to further attacks.");

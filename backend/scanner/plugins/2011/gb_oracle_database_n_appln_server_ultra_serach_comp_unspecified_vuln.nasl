@@ -44,7 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://securitytracker.com/id?1019218");
   script_xref(name:"URL", value:"http://www.us-cert.gov/cas/techalerts/TA08-017A.html");
   script_xref(name:"URL", value:"http://www.petefinnigan.com/Advisory_CPU_Jan_2008.htm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/487322/100/100/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation allows an attackers to execute arbitrary code or
   commands in context of the affected application, information disclosure and denial of service.");

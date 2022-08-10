@@ -37,7 +37,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/46968");
   script_xref(name:"URL", value:"http://www.pmwiki.org/wiki/PITS/01271");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18149");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520631");
   script_xref(name:"URL", value:"http://www.pmwiki.org/wiki/PmWiki/ChangeLog#v2235");
 
   script_tag(name:"qod_type", value:"remote_vul");

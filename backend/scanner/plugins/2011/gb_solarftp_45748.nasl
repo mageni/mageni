@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/solarftp/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45748");
   script_xref(name:"URL", value:"http://www.solarftp.com/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary code within

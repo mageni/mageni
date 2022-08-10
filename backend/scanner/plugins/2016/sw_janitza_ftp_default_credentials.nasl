@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("ftp/ready_banner/detected");
 
   script_xref(name:"URL", value:"https://wiki.janitza.de/display/GRIDVIS40/UMG+604+-+Passwort");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/77291");
 
   script_tag(name:"summary", value:'The remote Janitza device has default credentials set.');
 

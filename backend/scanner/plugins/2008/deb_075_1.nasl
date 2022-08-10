@@ -33,7 +33,6 @@ bugtraq on Jul 18 2001. At that time, netkit-telnet versions after 0.14 were
 not believed to be vulnerable.
 On Aug 10 2001, zen-parse posted an advisory based on the same problem, for
 all netkit-telnet versions below 0.17.
-More details can be found on http://www.securityfocus.com/archive/1/203000 .
 As Debian uses the 'telnetd' user to run in.telnetd, this is not a remote
 root compromise on Debian systems; the 'telnetd' user can be compromised.
 

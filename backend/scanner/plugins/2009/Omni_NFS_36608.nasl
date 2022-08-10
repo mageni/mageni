@@ -52,7 +52,6 @@ if(description)
 
   script_tag(name:"affected", value:"Omni-NFS 5.2 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36608");
   script_xref(name:"URL", value:"http://www.xlink.com/nfs_products/NFS_Server/NFS_Server.htm");
 
   script_tag(name:"solution_type", value:"WillNotFix");

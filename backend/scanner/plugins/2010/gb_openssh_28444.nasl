@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/28444");
   script_xref(name:"URL", value:"http://support.apple.com/kb/HT3137");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata41.html");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata42.html");
@@ -50,7 +49,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.openssh.com/txt/release-5.0");
   script_xref(name:"URL", value:"http://sourceforge.net/project/shownotes.php?release_id=590180");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=463011");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/492447");
   script_xref(name:"URL", value:"http://aix.software.ibm.com/aix/efixes/security/ssh_advisory.asc");
   script_xref(name:"URL", value:"http://support.avaya.com/elmodocs2/security/ASA-2008-205.htm");
   script_xref(name:"URL", value:"http://www.globus.org/mail_archive/security-announce/2008/04/msg00000.html");

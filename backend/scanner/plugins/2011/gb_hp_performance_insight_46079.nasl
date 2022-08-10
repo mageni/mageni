@@ -25,7 +25,6 @@
 
 if (description)
 {
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46079");
   script_xref(name:"URL", value:"http://www.hp.com/");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-034/");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c02695453");

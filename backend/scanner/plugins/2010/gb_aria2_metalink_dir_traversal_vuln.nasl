@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Aria2 metalink 'name' Directory Traversal Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-71/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511280/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

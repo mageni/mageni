@@ -43,11 +43,9 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23235");
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php#5.2.3");
   script_xref(name:"URL", value:"http://www.php-security.org/MOPB/MOPB-41-2007.html");
   script_xref(name:"URL", value:"http://www.php.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/481830");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary machine code
   in the context of the affected webserver. Failed exploit attempts will

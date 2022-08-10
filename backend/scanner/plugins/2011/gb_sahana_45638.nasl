@@ -54,7 +54,6 @@ if(description)
   disclosure of this vulnerability. Likely none will be provided anymore. General solution options are to
   upgrade to a newer release, disable respective features, remove the product or replace the product by another one.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45638");
   script_xref(name:"URL", value:"http://www.sahanafoundation.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -35,7 +35,6 @@ if (description)
   script_version("$Revision: 11865 $");
 
   script_name("Multiple NetGear ProSafe Switches  Information Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61918");
   script_xref(name:"URL", value:"http://www.netgear.com");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

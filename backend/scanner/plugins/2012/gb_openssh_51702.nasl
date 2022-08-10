@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51702");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=657445");
   script_xref(name:"URL", value:"https://downloads.avaya.com/css/P8/documents/100161262");
 

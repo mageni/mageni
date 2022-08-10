@@ -44,7 +44,6 @@ if(description)
   script_exclude_keys("keys/is_private_addr", "Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"https://support.microsoft.com/en-us/kb/218180");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/1499/");
   script_xref(name:"URL", value:"http://foofus.net/?p=758");
 
   script_tag(name:"summary", value:"This web server leaks a private IP address through its HTTP headers.");

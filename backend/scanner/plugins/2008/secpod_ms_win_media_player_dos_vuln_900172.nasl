@@ -38,7 +38,6 @@ if(description)
   script_family("Denial of Service");
   script_name("Microsoft Windows Media Player 'MIDI' or 'DAT' File DoS Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/data/vulnerabilities/exploits/32077.py");
 
   script_dependencies("secpod_ms_win_media_player_detect_900173.nasl");
   script_mandatory_keys("Win/MediaPlayer/Ver");

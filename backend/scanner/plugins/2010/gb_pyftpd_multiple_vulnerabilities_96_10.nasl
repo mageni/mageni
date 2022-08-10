@@ -37,8 +37,6 @@ if(description)
 
   script_name("pyftpd Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40839");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40842");
   script_xref(name:"URL", value:"http://comments.gmane.org/gmane.comp.security.oss.general/3038");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=585776");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/pyftpd/");

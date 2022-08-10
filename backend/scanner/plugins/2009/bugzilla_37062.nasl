@@ -39,7 +39,6 @@ if(description)
 
   script_name("Bugzilla Bug Alias Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37062");
   script_xref(name:"URL", value:"http://www.bugzilla.org");
   script_xref(name:"URL", value:"http://www.bugzilla.org/security/3.4.3/");
 

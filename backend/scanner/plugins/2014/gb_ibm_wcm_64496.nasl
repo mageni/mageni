@@ -36,7 +36,6 @@ if (description)
 
   script_name("IBM Web Content Manager 'LIBRARY' Parameter XPath Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64496");
   script_xref(name:"URL", value:"http://www.ibm.com/");
   script_xref(name:"URL", value:"http://www-306.ibm.com/software/websphere/portal/");
   script_xref(name:"URL", value:"https://www.sec-consult.com/fxdata/seccons/prod/temedia/advisories_txt/20131227-0_IBM_WCM_XPath_Injection_v10.txt");

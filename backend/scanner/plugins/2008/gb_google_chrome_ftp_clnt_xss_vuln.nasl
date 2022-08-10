@@ -41,7 +41,6 @@ if(description)
   script_mandatory_keys("GoogleChrome/Win/Ver");
 
   script_xref(name:"URL", value:"https://www.google.com/intl/en/chrome/browser");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31855");
 
   script_tag(name:"impact", value:"Successful remote attack result in injection of arbitrary web
   script or HTML code.");

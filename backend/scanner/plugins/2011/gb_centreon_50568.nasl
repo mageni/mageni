@@ -38,7 +38,6 @@ if (description)
 
   script_name("Centreon 'command_name' Parameter Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50568");
   script_xref(name:"URL", value:"http://www.centreon.com/");
   script_xref(name:"URL", value:"https://www.trustwave.com/spiderlabs/advisories/TWSL2011-017.txt");
 

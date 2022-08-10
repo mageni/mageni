@@ -35,9 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("eoCMS Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44640");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/514633");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/514634");
   script_xref(name:"URL", value:"http://eocms.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

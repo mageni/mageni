@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("AIOCP 'cp_html2xhtmlbasic.php' Remote File Inclusion Vulnerability");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/53679");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507030/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

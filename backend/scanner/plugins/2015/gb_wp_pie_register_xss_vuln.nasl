@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://wpvulndb.com/vulnerabilities/8212");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/133928");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/536668");
   script_xref(name:"URL", value:"https://github.com/GTSolutions/Pie-Register");
 
   script_tag(name:"summary", value:"The host is installed with wordpress

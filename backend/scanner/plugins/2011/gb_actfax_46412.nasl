@@ -40,7 +40,6 @@ if(description)
   script_dependencies("find_service.nasl");
   script_require_ports(21, 515);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46412");
   script_xref(name:"URL", value:"http://www.actfax.com/");
 
   script_tag(name:"summary", value:"ActFax is prone to multiple remote buffer-overflow vulnerabilities

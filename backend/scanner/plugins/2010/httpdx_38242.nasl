@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/httpdx/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38242");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/httpdx/");
 
   script_tag(name:"summary", value:"The 'httpdx' program is prone to a directory-traversal vulnerability

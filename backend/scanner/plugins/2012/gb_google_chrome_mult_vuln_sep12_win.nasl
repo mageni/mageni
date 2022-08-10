@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-09-03 14:01:42 +0530 (Mon, 03 Sep 2012)");
   script_name("Google Chrome Multiple Vulnerabilities - Sep12 (Windows)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/50447");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55331");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.in/2012/08/stable-channel-update_30.html");
 
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

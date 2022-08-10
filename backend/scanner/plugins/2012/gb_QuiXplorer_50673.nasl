@@ -36,7 +36,6 @@ if(description)
 
   script_name("QuiXplorer 'index.php' Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50673");
   script_xref(name:"URL", value:"http://quixplorer.sourceforge.net/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");

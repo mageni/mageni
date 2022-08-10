@@ -33,7 +33,6 @@ if (description)
 
   script_name("AeroMail Cross Site Request Forgery, HTML Injection and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48510");
   script_xref(name:"URL", value:"http://www.nicolaas.net/aeromail/index.php?page=index");
 
   script_tag(name:"cvss_base", value:"4.3");

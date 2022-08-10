@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("NodeBB/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71824");
   script_xref(name:"URL", value:"http://seclists.org/oss-sec/2015/q2/94");
 
   script_tag(name:"summary", value:"This host is running NodeBB and is prone to a stored Cross Site Scripting

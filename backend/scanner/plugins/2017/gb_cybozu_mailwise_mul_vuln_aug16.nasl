@@ -47,10 +47,6 @@ if(description)
   script_tag(name:"affected", value:"Cybozu Mailwise before version 5.4.0.");
   script_tag(name:"solution", value:"Update to Cybozu Mailwise 5.4.0 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92460");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92459");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92461");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92462");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

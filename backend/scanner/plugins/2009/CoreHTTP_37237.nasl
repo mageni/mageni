@@ -53,9 +53,7 @@ if(description)
   script_tag(name:"affected", value:"This issue affects CoreHTTP 0.5.3.1. Other versions may also
   be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37237");
   script_xref(name:"URL", value:"http://corehttp.sourceforge.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508272");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

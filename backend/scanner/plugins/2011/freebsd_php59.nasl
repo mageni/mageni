@@ -57,7 +57,6 @@ file_exists function.");
   script_tag(name:"solution", value:"Update your system with the appropriate patches or
   software upgrades.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/445788/100/0/threaded");
   script_xref(name:"URL", value:"http://artofhacking.com/files/phrack/phrack55/P55-07.TXT");
   script_xref(name:"URL", value:"http://www.vuxml.org/freebsd/3761df02-0f9c-11e0-becc-0022156e8794.html");
 

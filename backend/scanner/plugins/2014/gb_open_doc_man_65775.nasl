@@ -38,7 +38,6 @@ if (description)
   script_name("OpenDocMan 'ajax_udf.php' Multiple SQL Injection Vulnerabilities");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65775");
   script_xref(name:"URL", value:"http://opendocman.sourceforge.net/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

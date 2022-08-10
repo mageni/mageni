@@ -39,9 +39,7 @@ if (description)
 
   script_name("Atmail 'MailType' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43377");
   script_xref(name:"URL", value:"http://atmail.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513890");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

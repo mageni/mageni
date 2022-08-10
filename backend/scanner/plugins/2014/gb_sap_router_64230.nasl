@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/SAProuter", 3299);
   script_mandatory_keys("SAProuter/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64230");
   script_xref(name:"URL", value:"http://erpscan.com/advisories/erpscan-13-023-saprouter-authentication-bypass/");
   script_xref(name:"URL", value:"https://service.sap.com/sap/support/notes/1853140");
 

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-25 13:43:33 +0200 (Thu, 25 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-01-06 13:10:29 +0530 (Fri, 06 Jan 2012)");
   script_name("HServer Webserver Multiple Directory Traversal Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521119");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108376/hserverwebserver-traversal.txt");
   script_xref(name:"URL", value:"https://github.com/lpicanco/hserver");
   script_category(ACT_ATTACK);

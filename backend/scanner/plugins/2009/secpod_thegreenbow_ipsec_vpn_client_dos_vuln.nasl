@@ -36,7 +36,6 @@ if(description)
   script_name("TheGreenBow IPSec VPN Client Denial Of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/36332/");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/2294");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/505816/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

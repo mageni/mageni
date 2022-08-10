@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"summary", value:"This host is running PHP-Nuke and is prone to SQL Injection
   vulnerability.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/503845");
   script_xref(name:"URL", value:"http://gsasec.blogspot.com/2009/05/php-nuke-v80-referer-sql-injection.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

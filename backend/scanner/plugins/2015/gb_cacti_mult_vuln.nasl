@@ -63,9 +63,6 @@ commands, inject arbitrary web script or HTML via unspecified vectors.");
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75108");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75270");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75669");
   script_xref(name:"URL", value:"https://fortiguard.com/zeroday/FG-VD-15-017");
 
   script_category(ACT_GATHER_INFO);

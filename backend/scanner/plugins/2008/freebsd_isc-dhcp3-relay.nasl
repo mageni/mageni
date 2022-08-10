@@ -69,8 +69,6 @@ if(description)
  script_tag(name : "summary" , value : tag_summary);
  script_tag(name:"qod_type", value:"package");
  script_tag(name:"solution_type", value:"VendorFix");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/366801");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/367286");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/7a9d5dfe-c507-11d8-8898-000d6111a684.html");
  exit(0);
 }

@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Appweb Web Server Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45568");
   script_xref(name:"URL", value:"http://appwebserver.org/");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2010-4985.php");
   script_xref(name:"URL", value:"http://appwebserver.org/downloads/appweb/download.php");

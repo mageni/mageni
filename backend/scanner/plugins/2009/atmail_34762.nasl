@@ -39,7 +39,6 @@ if(description)
 
   script_name("Atmail 'admin.php' Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34762");
   script_xref(name:"URL", value:"http://www.atmail.com");
 
   script_tag(name:"qod_type", value:"remote_banner");

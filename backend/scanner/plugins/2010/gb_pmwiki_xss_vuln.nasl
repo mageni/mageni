@@ -36,7 +36,6 @@ if(description)
   script_name("PmWiki Table Feature 'width' Parameter Cross-site scripting vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39698");
   script_xref(name:"URL", value:"http://int21.de/cve/CVE-2010-1481-pmwiki-xss.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511177/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

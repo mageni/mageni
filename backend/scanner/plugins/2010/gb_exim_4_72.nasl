@@ -43,8 +43,6 @@ if(description)
   script_dependencies("gb_exim_detect.nasl");
   script_mandatory_keys("exim/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40454");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40451");
   script_xref(name:"URL", value:"http://lists.exim.org/lurker/message/20100524.175925.9a69f755.en.html");
   script_xref(name:"URL", value:"http://bugs.exim.org/show_bug.cgi?id=989");
   script_xref(name:"URL", value:"http://vcs.exim.org/viewvc/exim/exim-doc/doc-txt/ChangeLog?view=markup&pathrev=exim-4_72_RC2");

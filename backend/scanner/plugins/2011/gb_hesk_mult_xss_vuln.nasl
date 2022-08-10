@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("HESK Multiple Cross-site Scripting (XSS) Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519148");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/multiple_xss_in_hesk.html");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/103733/hesk-xss.txt");
 

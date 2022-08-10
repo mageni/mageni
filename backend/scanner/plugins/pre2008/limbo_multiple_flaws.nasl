@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/419470");
 
   script_tag(name:"summary", value:"The remote version of Limbo CMS is vulnerable to several flaws.");
 

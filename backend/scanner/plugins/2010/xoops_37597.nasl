@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("XOOPS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37597");
   script_xref(name:"URL", value:"http://www.xoops.org/modules/news/article.php?storyid=5178");
   script_xref(name:"URL", value:"http://www.xoops.org");
 

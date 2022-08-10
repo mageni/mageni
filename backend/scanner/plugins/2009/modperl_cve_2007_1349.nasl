@@ -52,7 +52,6 @@ if (description)
   script_tag(name:"impact", value:"Successful exploits may allow remote attackers to cause
   denial-of-service conditions on the webserver running the mod_perl module.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23192");
 
   exit(0);
 }

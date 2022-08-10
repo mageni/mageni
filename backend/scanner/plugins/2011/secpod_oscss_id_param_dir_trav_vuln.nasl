@@ -42,7 +42,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/46741");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18099/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520421");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Nov/117");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-034.txt");
 

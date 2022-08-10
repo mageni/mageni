@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("e107/installed");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40252");
   script_xref(name:"URL", value:"http://e107.org/");
   script_xref(name:"URL", value:"http://www.php-security.org/2010/05/19/mops-2010-035-e107-bbcode-remote-php-code-execution-vulnerability/index.html");
 

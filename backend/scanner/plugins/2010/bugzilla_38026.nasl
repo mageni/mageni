@@ -39,7 +39,6 @@ if (description)
 
   script_name("Bugzilla Group Selection During Bug Move Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38026");
   script_xref(name:"URL", value:"https://bugzilla.mozilla.org/show_bug.cgi?id=532493");
   script_xref(name:"URL", value:"http://www.bugzilla.org");
   script_xref(name:"URL", value:"http://www.bugzilla.org/security/3.0.10/");

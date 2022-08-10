@@ -42,7 +42,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Dec/0");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520692");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/107425/INFOSERVE-ADV2011-08.txt");
 
   script_tag(name:"impact", value:"Successful exploitation will allow remote attackers to include arbitrary

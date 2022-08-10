@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("apache/tomcat/http/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/24476/");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-4.html");

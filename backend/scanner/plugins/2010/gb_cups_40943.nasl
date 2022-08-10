@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 631);
   script_mandatory_keys("CUPS/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40943");
   script_xref(name:"URL", value:"http://cups.org/articles.php?L596");
   script_xref(name:"URL", value:"http://www.cups.org");
   script_xref(name:"URL", value:"http://cups.org/str.php?L3516");

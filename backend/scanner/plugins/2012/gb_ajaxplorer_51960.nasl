@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("AjaXplorer/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51960");
   script_xref(name:"URL", value:"http://ajaxplorer.info/ajaxplorer-4-0-2/");
   script_xref(name:"URL", value:"http://www.ajaxplorer.info");
 

@@ -38,8 +38,6 @@ if(description)
   script_mandatory_keys("ApacheStruts/installed", "Host/runs_unixoide");
 
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-021");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67064");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67081");
 
   script_tag(name:"summary", value:"ClassLoader Manipulation allows remote attackers to execute
   arbitrary Java code.");

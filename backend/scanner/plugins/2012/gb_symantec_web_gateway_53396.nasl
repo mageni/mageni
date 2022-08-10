@@ -38,7 +38,6 @@ if(description)
 
   script_name("Symantec Web Gateway 'l' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53396");
   script_xref(name:"URL", value:"http://www.symantec.com/business/web-gateway");
   script_xref(name:"URL", value:"https://support.symantec.com/en_US/article.SYMSA1250.html");
 

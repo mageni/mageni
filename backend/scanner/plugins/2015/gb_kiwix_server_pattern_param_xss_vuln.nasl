@@ -57,7 +57,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://sourceforge.net/p/kiwix/bugs/763");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/130007");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/534502/100/0/threaded");
   script_xref(name:"URL", value:"http://sourceforge.net/p/kiwix/kiwix/ci/d1af5f0375c6db24d4071acf4806735725fd206e");
 
   script_category(ACT_ATTACK);

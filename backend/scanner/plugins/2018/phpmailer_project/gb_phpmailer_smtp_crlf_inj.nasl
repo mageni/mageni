@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_phpmailer_detect.nasl");
   script_mandatory_keys("phpmailer/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/78619");
   script_xref(name:"URL", value:"https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md");
 
   script_tag(name:"summary", value:"This host is running PHPMailer and is prone

@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49473");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/596827");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue in conjunction with other latent

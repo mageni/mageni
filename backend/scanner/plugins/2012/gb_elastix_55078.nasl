@@ -35,7 +35,6 @@ if (description)
 
   script_name("Elastix 'graph.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55078");
   script_xref(name:"URL", value:"http://www.elastix.org/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 16:54:51 +0200 (Mon, 22 Oct 2018) $");

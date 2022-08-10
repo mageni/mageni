@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-28 10:36:31 +0530 (Wed, 28 Mar 2012)");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48027/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51984");
   script_xref(name:"URL", value:"http://jvn.jp/en/jp/JVN85695061/index.html");
   script_xref(name:"URL", value:"http://jvn.jp/en/jp/JVN85695061/995223/index.html");
   script_xref(name:"URL", value:"http://jvndb.jvn.jp/en/contents/2012/JVNDB-2012-000011.html");

@@ -32,7 +32,6 @@ if (description)
   script_tag(name:"creation_date", value:"2011-07-12 13:37:01 +0200 (Tue, 12 Jul 2011)");
   script_bugtraq_id(48633);
   script_name("Portix-CMS 'page' Parameter Local File Include Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48633");
   script_xref(name:"URL", value:"http://www.easy-script.com/scripts-PHP/portix-cms-150-rc5-3005.html");
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");

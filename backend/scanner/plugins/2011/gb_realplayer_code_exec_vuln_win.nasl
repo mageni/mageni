@@ -38,7 +38,6 @@ if(description)
   script_xref(name:"URL", value:"http://securitytracker.com/id?1025351");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/66728");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2011/0979");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517470/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2011 Greenbone Networks GmbH");

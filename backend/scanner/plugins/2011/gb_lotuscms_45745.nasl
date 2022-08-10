@@ -36,7 +36,6 @@ if(description)
 
   script_name("LotusCMS 'index.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45745");
   script_xref(name:"URL", value:"http://www.lotuscms.org/?page=download");
   script_xref(name:"URL", value:"http://www.lotuscms.org/");
 

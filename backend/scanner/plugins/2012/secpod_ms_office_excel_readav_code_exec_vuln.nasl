@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-11-08 14:28:19 +0530 (Thu, 08 Nov 2012)");
   script_name("Microsoft Office Excel ReadAV Arbitrary Code Execution Vulnerability");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Oct/63");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/524379");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2012 SecPod");

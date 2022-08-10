@@ -38,7 +38,6 @@ if (description)
 
   script_name("Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46787");
   script_xref(name:"URL", value:"http://www.joomla.org/announcements/release-news/5350-joomla-161-released.html");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 

@@ -69,7 +69,6 @@ if(description)
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/128257");
   script_xref(name:"URL", value:"http://www.securiteam.com/cves/2014/CVE-2014-5234.html");
   script_xref(name:"URL", value:"http://www.securiteam.com/cves/2014/CVE-2014-5235.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/533443/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57979");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references or vendor advisory
   for more information.");

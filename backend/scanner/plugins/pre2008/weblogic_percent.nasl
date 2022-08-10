@@ -39,7 +39,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("OracleWebLogicServer/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/2513");
 
   script_tag(name:"solution", value:"Upgrade to WebLogic 6.0 with Service Pack 1.");
 

@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Open Realty 'select_users_template' Parameter Local File Include Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52296");
   script_xref(name:"URL", value:"http://www.open-realty.org/");
   script_xref(name:"URL", value:"http://yehg.net/lab/pr0js/advisories/%5Bopen-realty_2.5.8_2.x%5D_lfi");
   script_tag(name:"last_modification", value:"$Date: 2018-09-26 14:08:49 +0200 (Wed, 26 Sep 2018) $");

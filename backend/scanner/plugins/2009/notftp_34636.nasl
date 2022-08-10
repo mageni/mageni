@@ -54,7 +54,6 @@ if (description)
 
   script_tag(name:"affected", value:"NotFTP 1.3.1 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34636");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

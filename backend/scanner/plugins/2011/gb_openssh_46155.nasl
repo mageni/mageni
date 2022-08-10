@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46155");
   script_xref(name:"URL", value:"http://www.openssh.com/txt/release-5.8");
 
   script_tag(name:"impact", value:"Successful exploits will allow attackers to gain access to sensitive

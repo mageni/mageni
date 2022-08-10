@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 8443);
   script_mandatory_keys("trendmicro/datalossprevention/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48225");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17388/");
   script_xref(name:"URL", value:"http://us.trendmicro.com/us/products/enterprise/data-loss-prevention/index.html");
 

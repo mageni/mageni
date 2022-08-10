@@ -42,9 +42,6 @@ if(description)
   script_dependencies("gb_collabtive_detect.nasl");
   script_mandatory_keys("collabtive/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47105");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517267");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517266");
 
   script_tag(name:"summary", value:"Collabtive is prone to multiple remote input-validation
   vulnerabilities including cross-site scripting, HTML-injection, and

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("Easy Chat Server 'username' Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519257");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Aug/109");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/104016");
 

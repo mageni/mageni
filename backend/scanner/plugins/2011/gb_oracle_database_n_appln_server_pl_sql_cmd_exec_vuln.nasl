@@ -44,8 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/169164");
   script_xref(name:"URL", value:"http://securitytracker.com/id?1015961");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/24363");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/423822/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/423819/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation allows an attackers to send a specially-crafted HTTP
   request to bypass the PLSQLExclusion list and execute SQL commands on the back-end database with DBA privileges.");

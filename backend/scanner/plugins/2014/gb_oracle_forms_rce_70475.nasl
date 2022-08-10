@@ -36,7 +36,6 @@ if (description)
 
   script_name("Oracle E-Business Suite/Oracle Forms Remote Security Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70475");
   script_xref(name:"URL", value:"https://blog.netspi.com/advisory-oracle-forms-10g-unauthenticated-remote-code-execution-cve-2014-4278/");
 
   script_tag(name:"impact", value:"The vulnerability can be exploited over the 'HTTP' protocol. The

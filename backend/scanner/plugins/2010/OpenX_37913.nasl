@@ -53,7 +53,6 @@ latent vulnerabilities in the underlying database.
 
 OpenX 2.6.1 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37913");
   script_xref(name:"URL", value:"http://www.openx.org/");
 
   script_tag(name:"solution_type", value:"WillNotFix");

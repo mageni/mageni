@@ -38,7 +38,6 @@ if(description)
 
   script_name("nginx Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40420");
   script_xref(name:"URL", value:"http://nginx.org/");
 
   script_category(ACT_GATHER_INFO);

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("znc_detect.nasl");
   script_mandatory_keys("znc/version");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66926");
   script_xref(name:"URL", value:"http://en.znc.in/wiki/ZNC");
 
   script_tag(name:"summary", value:"ZNC is prone to a denial-of-service vulnerability.");

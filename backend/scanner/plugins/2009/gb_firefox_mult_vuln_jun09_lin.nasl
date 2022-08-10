@@ -55,7 +55,6 @@ if(description)
   multiple vulnerabilities.");
   script_tag(name:"qod_type", value:"executable_version_unreliable");
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504214");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/1572");
   script_xref(name:"URL", value:"http://research.microsoft.com/apps/pubs/default.aspx?id=79323");
   script_xref(name:"URL", value:"http://www.mozilla.org/security/announce/2009/mfsa2009-24.html");

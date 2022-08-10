@@ -53,7 +53,6 @@ if(description)
 
   script_tag(name:"affected", value:"Sahana Agasti versions 0.6.5 and prior are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45730");
   script_xref(name:"URL", value:"http://www.sahanafoundation.org/Sahana066");
   script_xref(name:"URL", value:"https://launchpad.net/sahana-agasti/");
   script_xref(name:"URL", value:"http://www.sahanafoundation.org/");

@@ -43,7 +43,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/75319");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18816");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522545");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/112389/VL-537.txt");
   script_xref(name:"URL", value:"http://www.vulnerability-lab.com/get_content.php?id=537");
 

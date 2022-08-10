@@ -56,7 +56,6 @@ if(description)
   script_tag(name:"solution", value:"Upgrade to Sophos UTM 9.354 or later.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/537662");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/136019/SYSS-2016-009.txt");
 
   script_category(ACT_ATTACK);

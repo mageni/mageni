@@ -44,8 +44,6 @@ if(description)
   script_dependencies("gb_miniupnp_detect_tcp.nasl");
   script_mandatory_keys("miniupnp/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57607");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57608");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-20 13:59:41 +0200 (Sat, 20 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-11-18 11:15:15 +0530 (Fri, 18 Nov 2011)");
   script_name("Zoho ManageEngine ADSelfService Plus Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520562");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/107093/vrpth-2011-001.txt");
 
   script_category(ACT_ATTACK);

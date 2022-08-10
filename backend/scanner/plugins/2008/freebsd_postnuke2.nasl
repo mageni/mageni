@@ -32,7 +32,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://xforce.iss.net/xforce/xfdb/29271
-http://www.securityfocus.com/archive/1/archive/1/447361/100/0/threaded
 http://www.vuxml.org/freebsd/35f2679f-52d7-11db-8f1a-000a48049292.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

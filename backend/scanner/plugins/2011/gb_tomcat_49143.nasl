@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_apache_tomcat_consolidation.nasl", "os_detection.nasl");
   script_mandatory_keys("apache/tomcat/detected", "Host/runs_unixoide"); #  This issue affects applications running on Linux operating systems only.
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49143");
   script_xref(name:"URL", value:"http://mail-archives.apache.org/mod_mbox/tomcat-announce/201108.mbox/%3C4E45221D.1020306@apache.org%3E");
   script_xref(name:"URL", value:"http://commons.apache.org/daemon/");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");

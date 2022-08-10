@@ -39,7 +39,6 @@ if (description)
 
   script_name("bloofoxCMS 'gender' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44464");
   script_xref(name:"URL", value:"http://www.bloofox.com/cms/");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/sql_injection_in_bloofoxcms_registration_plugin.html");
 

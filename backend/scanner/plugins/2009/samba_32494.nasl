@@ -43,7 +43,6 @@ if (description)
   script_dependencies("smb_nativelanman.nasl", "gb_samba_detect.nasl");
   script_mandatory_keys("samba/smb_or_ssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32494");
   script_xref(name:"URL", value:"http://www.samba.org");
   script_xref(name:"URL", value:"http://support.avaya.com/elmodocs2/security/ASA-2009-014.htm");
   script_xref(name:"URL", value:"http://sourceforge.net/project/shownotes.php?group_id=151951&release_id=503763");

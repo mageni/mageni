@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpBB/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37882");
   script_xref(name:"URL", value:"http://www.phpbb.com/community/viewtopic.php?f=14&p=9764445");
   script_xref(name:"URL", value:"http://www.phpbb.com/");
 

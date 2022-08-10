@@ -33,11 +33,7 @@ if (description)
 
   script_name("SyndeoCMS Multiple Cross Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47018");
   script_xref(name:"URL", value:"http://www.syndeocms.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517160");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517172");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517162");
 
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");

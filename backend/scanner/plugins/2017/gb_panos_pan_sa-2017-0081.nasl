@@ -55,7 +55,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to PAN-OS 7.0.15 and later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97953");
   script_xref(name:"URL", value:"https://securityadvisories.paloaltonetworks.com/Home/Detail/81");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("LiteSpeed/banner");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40815");
   script_xref(name:"URL", value:"http://www.litespeedtech.com/latest/litespeed-web-server-4.0.15-released.html");
   script_xref(name:"URL", value:"http://www.litespeedtech.com");
 

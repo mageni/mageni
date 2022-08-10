@@ -35,7 +35,6 @@ if (description)
 
   script_name("MiniWebsvr URI Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40133");
   script_xref(name:"URL", value:"http://miniwebsvr.sourceforge.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to TestLink 1.8.5 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37258");
   script_xref(name:"URL", value:"http://www.teamst.org/index.php?option=com_content&task=view&id=84&Itemid=2");
   script_xref(name:"URL", value:"http://www.teamst.org/");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/testlink-multiple-injection-vulnerabilities");

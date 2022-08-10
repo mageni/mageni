@@ -36,8 +36,7 @@ tag_solution = "All SUS users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-17
 http://bugs.gentoo.org/show_bug.cgi?id=63927
-http://pdg.uow.edu.au/sus/CHANGES
-http://www.securityfocus.com/archive/1/375109/2004-09-11/2004-09-17/0";
+http://pdg.uow.edu.au/sus/CHANGES";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-17.";
 

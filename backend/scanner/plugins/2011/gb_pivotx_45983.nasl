@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("PivotX/Installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45983");
   script_xref(name:"URL", value:"http://pivotx.net/page/security");
 
   script_tag(name:"solution", value:"Currently, we are not aware of any vendor-supplied patches. If you

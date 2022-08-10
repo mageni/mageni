@@ -59,7 +59,6 @@ Description :
 The installed version of CuteNews is vulnerable to cross-site scripting attacks.  An attacker may use this bug to
 steal the credentials of legitimate users of this site.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/367289");
 
   exit(0);
 }

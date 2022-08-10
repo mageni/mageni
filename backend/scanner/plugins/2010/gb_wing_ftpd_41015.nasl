@@ -41,10 +41,8 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/wing/ftp/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41015");
   script_xref(name:"URL", value:"http://www.wftpserver.com/");
   script_xref(name:"URL", value:"http://www.wftpserver.com/serverhistory.htm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511905");
   script_xref(name:"URL", value:"http://blog.trendmicro.com/trend-micro-discovers-wing-ftp-server-port-command-dos-bug/");
 
   script_tag(name:"summary", value:"Wing FTP Server is prone to a denial-of-service vulnerability.");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36658");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/phpmyadmin/releases/306669");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/phpmyadmin/releases/306667");

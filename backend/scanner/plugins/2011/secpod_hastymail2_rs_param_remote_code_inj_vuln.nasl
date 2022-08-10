@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"2019-05-13 14:05:09 +0000 (Mon, 13 May 2019)");
   script_tag(name:"creation_date", value:"2011-11-25 12:12:12 +0530 (Fri, 25 Nov 2011)");
   script_name("Hastymail 'rs' and 'rsargs[]' Parameters Remote Code Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50791");
   script_xref(name:"URL", value:"https://www.dognaedis.com/vulns/DGS-SEC-3.html");
   script_xref(name:"URL", value:"https://www.dognaedis.com/vulns/pdf/DGS-SEC-3.pdf");
 

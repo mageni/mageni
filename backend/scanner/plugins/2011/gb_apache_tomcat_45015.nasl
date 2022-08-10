@@ -42,12 +42,10 @@ if(description)
   script_dependencies("gb_apache_tomcat_consolidation.nasl");
   script_mandatory_keys("apache/tomcat/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45015");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-7.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-7.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514866");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 

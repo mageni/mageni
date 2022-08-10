@@ -38,8 +38,6 @@ if(description)
 
   script_name("Scalix Web Access XML External Entity Injection and Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70857");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70859");
 
   script_tag(name:"impact", value:"Attackers can exploit the XML External Entity Injection to
   obtain potentially sensitive information. This may lead to further attacks. An attacker may leverage

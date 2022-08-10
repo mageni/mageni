@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/58204");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/12410");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39713");
 
   script_tag(name:"insight", value:"The flaw exists due to failure to sufficiently sanitize user
   supplied data to 'modules.php' via 'sid' parameter before using it in an SQL query.");

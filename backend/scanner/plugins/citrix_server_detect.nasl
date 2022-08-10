@@ -36,7 +36,6 @@ if(description)
   script_dependencies("find_service.nasl");
   script_require_ports(1494);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/7276");
 
   script_tag(name:"summary", value:"A Citrix server is running on this machine.");
 

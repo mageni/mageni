@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"affected", value:"FireStats 1.6.1 is vulnerable, prior versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35367");
 
   exit(0);
 }

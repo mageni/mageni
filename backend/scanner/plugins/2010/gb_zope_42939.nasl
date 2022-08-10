@@ -36,7 +36,6 @@ if (description)
 
   script_name("Zope Unspecified Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42939");
   script_xref(name:"URL", value:"https://mail.zope.org/pipermail/zope-announce/2010-September/002247.html");
   script_xref(name:"URL", value:"http://www.zope.org/");
 

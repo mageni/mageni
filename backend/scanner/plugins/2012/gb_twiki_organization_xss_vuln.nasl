@@ -67,7 +67,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/47784");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/72821");
   script_xref(name:"URL", value:"http://www.securitytracker.com/id?1026604");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51731/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109246/twiki-xss.txt");
 
   script_tag(name:"solution_type", value:"WillNotFix");

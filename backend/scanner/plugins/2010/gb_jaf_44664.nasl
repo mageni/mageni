@@ -35,10 +35,7 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("JAF CMS Multiple Remote File Include and Remote Shell Command Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44664");
   script_xref(name:"URL", value:"http://jaf-cms.sourceforge.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514625");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514626");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/rfi_in_jaf_cms.html");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/shell_create__command_execution_in_jaf_cms.html");
 

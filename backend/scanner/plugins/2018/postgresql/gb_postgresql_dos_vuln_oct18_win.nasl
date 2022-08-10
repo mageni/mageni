@@ -60,7 +60,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 7.4.19, 8.0.15, 8.1.11 or 8.2.6 respectively.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/485864/100/0/threaded");
 
   exit(0);
 }

@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:A/AC:L/Au:N/C:P/I:N/A:N");
   script_name("ASUS RT-N56U Wireless Router 'QIS_wizard.htm' Password Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49308");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/200814");
   script_xref(name:"URL", value:"http://www.asus.com/Networks/Wireless_Routers/RTN56U/");
   script_xref(name:"URL", value:"http://www.asus.com/");

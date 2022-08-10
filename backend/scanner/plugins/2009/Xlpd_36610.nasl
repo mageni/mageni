@@ -41,9 +41,7 @@ if(description)
   script_dependencies("find_service2.nasl");
   script_require_ports("Services/lpd", 515);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36610");
   script_xref(name:"URL", value:"http://www.netsarang.com/products/xlp_detail.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507029");
 
   script_tag(name:"summary", value:"Xlpd is prone to a denial-of-service vulnerability because it fails to
   adequately validate user-supplied input.");

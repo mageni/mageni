@@ -35,11 +35,9 @@ if (description)
 
   script_name("Monkey HTTP Daemon Invalid HTTP 'Connection' Header Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37307");
   script_xref(name:"URL", value:"http://groups.google.com/group/monkeyd/browse_thread/thread/055b4e9b83973861/c0e013d166ae1eb3?show_docid=c0e013d166ae1eb3");
   script_xref(name:"URL", value:"http://monkeyd.sourceforge.net/");
   script_xref(name:"URL", value:"http://census-labs.com/news/2009/12/14/monkey-httpd/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508442");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

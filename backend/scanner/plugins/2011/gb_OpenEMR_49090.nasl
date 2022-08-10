@@ -40,7 +40,6 @@ if(description)
   script_dependencies("gb_openemr_detect.nasl");
   script_mandatory_keys("openemr/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49090");
   script_xref(name:"URL", value:"http://www.open-emr.org/");
 
   script_tag(name:"summary", value:"OpenEMR is prone to multiple cross-site scripting vulnerabilities

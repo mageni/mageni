@@ -38,7 +38,6 @@ if (description)
 
   script_name("Sendio ESP Multiple Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74786");
 
   script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("Enigma2 'file' Parameter Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51330");
   script_xref(name:"URL", value:"http://dream.reichholf.net/wiki/Enigma2");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-27 15:32:51 +0200 (Thu, 27 Sep 2018) $");

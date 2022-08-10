@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-2351");
   script_bugtraq_id(35571);
   script_name("Opera Web Browser 'Refresh' Header XSS Vulnerabilities (Windows)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504718/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

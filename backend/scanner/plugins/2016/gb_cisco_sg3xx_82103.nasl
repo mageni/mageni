@@ -38,7 +38,6 @@ if(description)
 
   script_name("Cisco Small Business SG300 Managed Switch Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/82103");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160127-sbms");
   script_xref(name:"URL", value:"https://bst.cloudapps.cisco.com/bugsearch/bug/CSCuw87174");
 

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("squirrelmail/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42399");
   script_xref(name:"URL", value:"http://www.squirrelmail.org/");
   script_xref(name:"URL", value:"http://www.squirrelmail.org/security/issue/2010-07-23");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=618096");

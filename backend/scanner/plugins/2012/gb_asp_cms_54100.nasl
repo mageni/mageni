@@ -31,7 +31,6 @@ if (description)
   script_bugtraq_id(54100);
   script_version("$Revision: 11159 $");
   script_name("ASP Content Management Database Information Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54100");
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_tag(name:"last_modification", value:"$Date: 2018-08-29 12:26:39 +0200 (Wed, 29 Aug 2018) $");

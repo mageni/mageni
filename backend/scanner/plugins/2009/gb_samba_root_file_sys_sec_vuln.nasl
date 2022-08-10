@@ -46,7 +46,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/33379");
   script_xref(name:"URL", value:"http://liudieyu0.blog124.fc2.com/blog-entry-6.html");
   script_xref(name:"URL", value:"http://us1.samba.org/samba/security/CVE-2009-0022.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/497091/100/0/threaded");
 
   script_tag(name:"affected", value:"Samba 3.2.0 through 3.2.6 on Linux.");
 

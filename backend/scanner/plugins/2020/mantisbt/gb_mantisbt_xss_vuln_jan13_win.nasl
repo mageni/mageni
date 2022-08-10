@@ -60,7 +60,6 @@ if (description)
   script_tag(name:"solution", value:"Update to version 1.2.14 or later.");
 
   script_xref(name:"URL", value:"https://mantisbt.org/bugs/view.php?id=15415");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/58893");
 
   exit(0);
 }

@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");
   script_name("Room Juice 'display.php' Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47914");
   script_xref(name:"URL", value:"http://www.grecni.com/roomjuice/");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

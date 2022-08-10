@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://support.sonicwall.com/product-notification/215257?productName=SonicWALL%20GMS");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2016-5388.php");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95155/");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/40977/");
 
   script_tag(name:"summary", value:"This host is installed with Dell SonicWALL GMS/Analayzer and is prone to multiple SQL vulnerabilities.");

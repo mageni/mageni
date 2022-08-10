@@ -62,7 +62,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_xref(name:"URL", value:"http://secunia.com/advisories/57306");
   script_xref(name:"URL", value:"https://www.httpcs.com/advisory/httpcs127");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2014/Mar/73");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/531373/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

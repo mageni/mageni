@@ -39,7 +39,6 @@ if (description)
 
   script_name("SolarWinds Orion Network Performance Monitor (NPM) Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45257");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

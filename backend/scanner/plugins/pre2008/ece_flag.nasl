@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("Host/runs_unixoide");
   script_exclude_keys("keys/islocalhost", "keys/islocalnet", "keys/TARGET_IS_IPV6");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/2293/");
 
   script_tag(name:"summary", value:"The remote host seems vulnerable to a bug wherein a remote
   attacker can circumvent the firewall by setting the ECE bit within the TCP flags field.");

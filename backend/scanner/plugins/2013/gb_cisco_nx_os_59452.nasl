@@ -35,9 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:C/I:C/A:C");
   script_version("$Revision: 12083 $");
   script_name("Multiple Cisco Products  Multiple Remote Buffer Overflow Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59452");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59454");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59456");
   script_xref(name:"URL", value:"http://cxsecurity.com/cveshow/CVE-2013-1178");
   script_xref(name:"URL", value:"http://cxsecurity.com/cveshow/CVE-2013-1179");
   script_xref(name:"URL", value:"http://cxsecurity.com/cveshow/CVE-2013-1180");

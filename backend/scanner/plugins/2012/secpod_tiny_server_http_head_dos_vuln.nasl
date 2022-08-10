@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-22 12:12:12 +0530 (Thu, 22 Mar 2012)");
   script_name("Tiny Server HTTP HEAD Request Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52635");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18629");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/111024/tinyserver119-dos.txt");
 

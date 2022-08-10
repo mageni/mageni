@@ -36,10 +36,8 @@ if (description)
 
   script_name("Acme thttpd and mini_httpd Terminal Escape Sequence in Logs Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37714");
   script_xref(name:"URL", value:"http://www.acme.com/software/mini_httpd/");
   script_xref(name:"URL", value:"http://www.acme.com/software/thttpd/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508830");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

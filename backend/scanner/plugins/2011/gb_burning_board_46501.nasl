@@ -42,7 +42,6 @@ if(description)
   script_dependencies("secpod_woltlab_burning_board_detect.nasl");
   script_mandatory_keys("WoltLabBurningBoard/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46501");
   script_xref(name:"URL", value:"http://www.woltlab.com/de/");
 
   script_tag(name:"summary", value:"Woltlab Burning Board is prone to an SQL-injection vulnerability

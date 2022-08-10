@@ -38,7 +38,6 @@ if (description)
 
   script_name("OpenEMR 'interface/globals.php' Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75299");
   script_xref(name:"URL", value:"http://www.open-emr.org/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass the authentication

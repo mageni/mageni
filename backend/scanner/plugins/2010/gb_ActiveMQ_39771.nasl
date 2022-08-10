@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 8161);
   script_mandatory_keys("ActiveMQ/Web/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39771");
   script_xref(name:"URL", value:"https://issues.apache.org/activemq/browse/AMQ-2714");
   script_xref(name:"URL", value:"http://activemq.apache.org/");
 

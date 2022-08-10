@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("limny/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38859");
   script_xref(name:"URL", value:"http://www.limny.org/");
 
   script_tag(name:"summary", value:"Limny is prone to multiple remote vulnerabilities, including:

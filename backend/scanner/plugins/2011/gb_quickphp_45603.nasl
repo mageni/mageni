@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("QuickPHP Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45603");
   script_xref(name:"URL", value:"http://www.zachsaw.co.cc/?pg=quickphp_php_tester_debugger");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/QuickPHP.Web.Server.1.9.1.Directory.Traversal/72");
 

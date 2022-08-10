@@ -41,7 +41,6 @@ if(description)
   script_dependencies("find_service.nasl", "http_version.nasl");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45573");
   script_xref(name:"URL", value:"http://www.sourceforge.net/projects/httpblitz/");
 
   script_tag(name:"summary", value:"HttpBlitz Server is prone to a remote denial-of-service vulnerability.");

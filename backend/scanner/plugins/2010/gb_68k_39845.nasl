@@ -34,7 +34,6 @@ if(description)
 
   script_name("68designs 68kb Multiple Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/39845");
   script_xref(name:"URL", value:"http://68kb.com/");
 
   script_tag(name:"cvss_base", value:"7.5");

@@ -39,7 +39,6 @@ if (description)
 
   script_name("Apache CouchDB Cross Site Request Forgery Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42501");
   script_xref(name:"URL", value:"http://couchdb.apache.org/downloads.html");
   script_xref(name:"URL", value:"http://couchdb.apache.org/");
   script_xref(name:"URL", value:"http://wiki.apache.org/couchdb/Breaking_changes");

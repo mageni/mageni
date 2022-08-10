@@ -36,9 +36,7 @@ if(description)
 
   script_name("Boonex Dolphin 'xml/get_list.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50286");
   script_xref(name:"URL", value:"http://www.boonex.com/dolphin/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520146");
   script_xref(name:"URL", value:"http://en.securitylab.ru/lab/PT-2011-14");
 
   script_tag(name:"qod_type", value:"remote_active");

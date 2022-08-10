@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_cve_id("CVE-2009-3275");
   script_name("Microsoft Windows Patterns & Practices EntLib DOS Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506453/100/0/threaded");
   script_xref(name:"URL", value:"http://www.checkmarx.com/Upload/Documents/PDF/Checkmarx_OWASP_IL_2009_ReDoS.pdf");
 
   script_category(ACT_GATHER_INFO);

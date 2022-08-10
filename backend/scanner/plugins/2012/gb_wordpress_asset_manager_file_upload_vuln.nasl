@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-06-08 16:16:16 +0530 (Fri, 08 Jun 2012)");
   script_name("WordPress Asset Manager Plugin 'upload.php' Arbitrary File Upload Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49378");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53809");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18993");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113285/WordPress-Asset-Manager-0.2-Shell-Upload.html");
 

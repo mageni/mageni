@@ -58,9 +58,7 @@ if (description)
 
   script_tag(name:"affected", value:"Versions prior to CommuniGate Pro 5.2.15 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35783");
   script_xref(name:"URL", value:"http://www.communigate.com/cgatepro/History52.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/505211");
 
   exit(0);
 }

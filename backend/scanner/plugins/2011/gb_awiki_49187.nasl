@@ -42,7 +42,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/36047/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49187");
   script_xref(name:"URL", value:"http://www.kobaonline.com/awiki/");
 
   script_tag(name:"impact", value:"An attacker can exploit this vulnerability to obtain potentially

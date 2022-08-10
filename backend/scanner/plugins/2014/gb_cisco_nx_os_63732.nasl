@@ -36,7 +36,6 @@ if (description)
 
   script_name("Cisco Nexus 1000V  Local Arbitrary Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63732");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCui21340");
 
   script_tag(name:"impact", value:"Local authenticated attackers can exploit this issue to execute

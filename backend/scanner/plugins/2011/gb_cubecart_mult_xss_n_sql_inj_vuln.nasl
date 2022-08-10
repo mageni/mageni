@@ -40,7 +40,6 @@ if(description)
   script_name("CubeCart Multiple Cross-Site Scripting and SQL Injection Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/41352");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513572/100/0/threaded");
   script_xref(name:"URL", value:"http://www.acunetix.com/blog/web-security-zone/articles/sql-injection-xss-cubecart-4-3-3/");
 
   script_category(ACT_ATTACK);

@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("torrenttraderclassic/installed");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/35456");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504294/100/0/threaded");
 
   script_tag(name:"affected", value:"TorrentTrader Classic version 1.09 and prior.");
 

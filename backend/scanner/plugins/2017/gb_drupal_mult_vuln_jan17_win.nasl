@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
 
   script_xref(name:"URL", value:"https://www.drupal.org/SA-2017-001");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96919");
 
   script_tag(name:"summary", value:"This host is running Drupal and is prone
   to multiple vulnerabilities.");

@@ -36,7 +36,6 @@ if(description)
   script_name("Microsoft SharePoint '_layouts/help.aspx' Cross Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"http://www.microsoft.com/technet/security/advisory/983438.mspx");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509683/100/0/threaded");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/xss_in_microsoft_sharepoint_server_2007.html");
 
   script_category(ACT_GATHER_INFO);

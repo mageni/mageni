@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"creation_date", value:"2013-05-02 13:34:27 +0530 (Thu, 02 May 2013)");
   script_name("Personal File Share HTTP Server Remote Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Apr/184");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/526480");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/personal-file-share-http-server-remote-overflow");
   script_category(ACT_DENIAL);
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");

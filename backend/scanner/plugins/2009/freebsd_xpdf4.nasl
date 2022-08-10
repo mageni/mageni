@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: xpdf";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/507261
 http://secunia.com/advisories/37053/
 http://www.vuxml.org/freebsd/8581189c-bd5f-11de-8709-0017a4cccfc6.html";
 tag_summary = "The remote host is missing an update to the system

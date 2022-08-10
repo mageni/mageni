@@ -37,7 +37,6 @@ if (description)
   script_name("Cisco NX-OS Software TACACS+ Server Local Privilege Escalation Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65083");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityNotice/CVE-2014-0676");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

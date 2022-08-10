@@ -43,7 +43,6 @@ if(description)
   script_dependencies("cvspserver_version.nasl");
   script_mandatory_keys("cvspserver/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/10384");
   script_xref(name:"URL", value:"http://security.e-matters.de/advisories/072004.html?SID=384b888de96e3bce19306db8577fca26");
   script_xref(name:"URL", value:"http://support.coresecurity.com/impact/exploits/62024ecea12fe1bbd01479065b3a1797.html");
   script_xref(name:"URL", value:"http://ccvs.cvshome.org/");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/postgresql", 5432);
   script_mandatory_keys("PostgreSQL/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46084");
   script_xref(name:"URL", value:"http://www.postgresql.org/");
   script_xref(name:"URL", value:"http://www.postgresql.org/about/news.1289");
 

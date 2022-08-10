@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/smtp", 25);
   script_mandatory_keys("smtp/inetserver/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45960");
   script_xref(name:"URL", value:"http://www.avtronics.net/inetserv.php");
 
   script_tag(name:"summary", value:"InetServ is prone to a denial-of-service vulnerability.");

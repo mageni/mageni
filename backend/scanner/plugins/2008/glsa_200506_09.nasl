@@ -34,7 +34,6 @@ tag_solution = "All gedit users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200506-09
 http://bugs.gentoo.org/show_bug.cgi?id=93352
-http://www.securityfocus.com/bid/13699
 http://mail.gnome.org/archives/gnome-announce-list/2005-June/msg00006.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200506-09.";

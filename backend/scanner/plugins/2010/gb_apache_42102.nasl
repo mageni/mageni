@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed", "Host/runs_unixoide");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42102");
   script_xref(name:"URL", value:"http://httpd.apache.org/security/vulnerabilities_22.html");
   script_xref(name:"URL", value:"http://httpd.apache.org/");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/3243");

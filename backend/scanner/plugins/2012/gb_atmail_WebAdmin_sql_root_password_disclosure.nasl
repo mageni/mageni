@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Atmail WebAdmin and Webmail Control Panel SQL Root Password Disclosure");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54641");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/114955/Atmail-WebAdmin-Webmail-Control-Panel-SQL-Root-Password-Disclosure.html");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 11:11:30 +0200 (Mon, 17 Sep 2018) $");

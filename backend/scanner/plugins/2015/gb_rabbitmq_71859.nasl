@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("rabbitmq/web/installed");
   script_exclude_keys("keys/islocalhost");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71859");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass certain security
   restrictions to perform unauthorized actions. This may aid in further attacks.");

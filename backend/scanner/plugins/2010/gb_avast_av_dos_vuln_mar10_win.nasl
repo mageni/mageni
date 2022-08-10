@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/0449");
   script_xref(name:"URL", value:"http://www.trapkit.de/advisories/TKADV2010-003.txt");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2010/Feb/1023644.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509710/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2010 Greenbone Networks GmbH");

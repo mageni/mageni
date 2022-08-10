@@ -48,7 +48,6 @@ if(description)
   script_mandatory_keys("moinmoinWiki/installed");
 
   script_xref(name:"URL", value:"http://moinmo.in/SecurityFixes");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40549");
   script_xref(name:"URL", value:"http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary script code

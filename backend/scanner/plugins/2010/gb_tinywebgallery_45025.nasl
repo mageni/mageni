@@ -33,7 +33,6 @@ if (description)
 
   script_name("TinyWebGallery Multiple Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45025");
   script_xref(name:"URL", value:"http://www.tinywebgallery.com/en/overview.php");
   script_xref(name:"URL", value:"http://www.tinywebgallery.com/blog/2010/11/twg-1-8-3-is-available/");
 

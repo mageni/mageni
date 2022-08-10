@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("punBB/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/450055/30/0/threaded");
   script_xref(name:"URL", value:"http://forums.punbb.org/viewtopic.php?id=13496");
 
   script_tag(name:"solution", value:"Update to version 1.2.14 or later.");

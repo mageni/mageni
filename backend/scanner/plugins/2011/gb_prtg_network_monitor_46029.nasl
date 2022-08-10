@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");
   script_name("PRTG Network Monitor 'errormsg' Parameter Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46029");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

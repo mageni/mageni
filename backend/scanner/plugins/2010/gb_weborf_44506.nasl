@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Weborf HTTP Request Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44506");
   script_xref(name:"URL", value:"http://galileo.dmi.unict.it/wiki/weborf/doku.php");
   script_xref(name:"URL", value:"http://galileo.dmi.unict.it/wiki/weborf/doku.php?id=news:released_0.12.4");
 

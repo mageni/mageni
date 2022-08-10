@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-02-21 15:19:43 +0530 (Tue, 21 Feb 2012)");
   script_name("RealNetworks RealPlayer Atrac Sample Decoding Remote Code Execution Vulnerability (Windows)");
   script_xref(name:"URL", value:"http://securitytracker.com/id/1026643");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51890");
   script_xref(name:"URL", value:"http://service.real.com/realplayer/security/02062012_player/en/");
 
   script_category(ACT_GATHER_INFO);

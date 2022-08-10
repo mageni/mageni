@@ -36,7 +36,6 @@ if (description)
 
   script_name("Mahara 'groupviews.tpl' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44705");
   script_xref(name:"URL", value:"http://wiki.mahara.org/Release_Notes/1.3.3");
   script_xref(name:"URL", value:"http://mahara.org/");
 

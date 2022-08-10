@@ -38,7 +38,6 @@ if (description)
 
   script_name("Symantec Encryption Management Server  Local Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72308");
   script_xref(name:"URL", value:"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=&suid=20150129_00M");
 
   script_tag(name:"impact", value:"A local attacker can exploit this issue to execute arbitrary commands with elevated privileges.");

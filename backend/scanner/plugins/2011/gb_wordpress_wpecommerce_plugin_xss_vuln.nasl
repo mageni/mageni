@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("wordpress/installed");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/45513/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519149");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/xss_in_wp_e_commerce.html");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/103724/wpecommerce-xss.txt");
 

@@ -40,7 +40,6 @@ if(description)
 
   script_name("phpMyFAQ 2.5.4 and Prior Multiple Unspecified Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37180");
   script_xref(name:"URL", value:"http://www.phpmyfaq.de/");
   script_xref(name:"URL", value:"http://www.phpmyfaq.de/advisory_2009-12-01.php");
 

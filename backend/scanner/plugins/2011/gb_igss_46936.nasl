@@ -46,9 +46,7 @@ if(description)
   script_require_ports(12401);
   script_mandatory_keys("Host/runs_windows");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46936");
   script_xref(name:"URL", value:"http://www.igss.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517080");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17300/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17024/");
   script_xref(name:"URL", value:"http://aluigi.org/adv/igss_1-adv.txt");

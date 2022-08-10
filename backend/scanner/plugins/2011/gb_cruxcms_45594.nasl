@@ -38,9 +38,7 @@ if(description)
 
   script_name("CruxCMS Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45594");
   script_xref(name:"URL", value:"http://www.cruxsoftware.co.uk/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/515444");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

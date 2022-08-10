@@ -39,7 +39,6 @@ if(description)
   script_name("IBM DB2 XML Feature DoS and CREATE VARIABLE Security Bypass Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48279/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52326");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73496");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21588098");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg1IC81379");

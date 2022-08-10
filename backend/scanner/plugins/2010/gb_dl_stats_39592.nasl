@@ -37,7 +37,6 @@ if(description)
 
   script_name("dl_stats Cross Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39592");
   script_xref(name:"URL", value:"http://dl.clausvb.de/view_file.php?id=10");
   script_xref(name:"URL", value:"http://www.xenuser.org/2010/04/18/dl_stats-multiple-vulnerabilities-sqli-xss-unprotected-admin-panel/");
   script_xref(name:"URL", value:"http://www.xenuser.org/documents/security/dl_stats_multiple_vulnerabilities.txt");

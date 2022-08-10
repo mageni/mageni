@@ -74,7 +74,6 @@ if( description )
   script_tag(name:"affected", value:"Kentico CMS versions 9 through 11.");
   script_tag(name:"solution", value:"No solution available as of 20th February 2018. Information will be updated once a fix becomes available.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/541792");
   script_xref(name:"URL", value:"https://devnet.kentico.com/download/hotfixes");
 
   exit( 0 );

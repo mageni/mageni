@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.unrealircd.com/txt/unrealsecadvisory.20100612.txt");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Jun/277");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40820");
 
   script_tag(name:"summary", value:"Detection of backdoor in UnrealIRCd.");
 

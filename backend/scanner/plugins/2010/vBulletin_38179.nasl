@@ -36,7 +36,6 @@ if (description)
 
   script_name("vBulletin Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38179");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/56279");
   script_xref(name:"URL", value:"http://www.vbulletin.com/");
 

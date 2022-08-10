@@ -42,8 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/telnet_ftp/detected", "Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/21339");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/21340");
 
   script_tag(name:"summary", value:"The host is running Telnet-Ftp server and is prone to directory traversal
   vulnerabilities.");

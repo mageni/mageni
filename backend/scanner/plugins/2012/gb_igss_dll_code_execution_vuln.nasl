@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 10:25:16 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-01-23 15:15:15 +0530 (Mon, 23 Jan 2012)");
   script_name("Interactive Graphical SCADA System DLL Loading Arbitrary Code Execution Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51438");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICSA-11-353-01.pdf");
 
   script_tag(name:"qod_type", value:"executable_version");

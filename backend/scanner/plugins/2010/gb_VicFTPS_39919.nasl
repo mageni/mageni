@@ -36,7 +36,6 @@ if(description)
 
   script_name("VicFTPS Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39919");
   script_xref(name:"URL", value:"http://vicftps.50webs.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

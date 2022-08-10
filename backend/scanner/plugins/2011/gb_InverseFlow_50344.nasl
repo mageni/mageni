@@ -36,7 +36,6 @@ if(description)
 
   script_name("InverseFlow Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50344");
   script_xref(name:"URL", value:"http://www.inverseflow.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

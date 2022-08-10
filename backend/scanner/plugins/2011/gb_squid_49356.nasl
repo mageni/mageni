@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/http_proxy", 3128, "Services/www", 8080);
   script_mandatory_keys("squid_proxy_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49356");
   script_xref(name:"URL", value:"http://www.squid-cache.org/");
   script_xref(name:"URL", value:"http://www.squid-cache.org/Advisories/SQUID-2011_3.txt");
 

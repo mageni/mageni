@@ -60,7 +60,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/36844");
   script_xref(name:"URL", value:"https://wpvulndb.com/vulnerabilities/7945");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535370");
 
   script_category(ACT_DESTRUCTIVE_ATTACK); # Stored XSS
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

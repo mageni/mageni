@@ -31,7 +31,6 @@ if(description)
   script_cve_id("CVE-2011-5262");
   script_version("$Revision: 12010 $");
   script_name("SonicWALL Aventail 'CategoryID' Parameter SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50702");
   script_xref(name:"URL", value:"http://www.sonicwall.com/us/products/EX_Series.html");
 
   script_tag(name:"cvss_base", value:"7.5");

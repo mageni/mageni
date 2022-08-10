@@ -39,7 +39,6 @@ if (description)
 
   script_name("Apache Archiva Cross Site Request Forgery Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45095");
   script_xref(name:"URL", value:"http://archiva.apache.org/download.html");
   script_xref(name:"URL", value:"http://jira.codehaus.org/browse/MRM-1438");
   script_xref(name:"URL", value:"http://archiva.apache.org/docs/1.3.2/release-notes.html");

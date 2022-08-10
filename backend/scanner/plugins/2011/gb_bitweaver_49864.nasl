@@ -36,11 +36,9 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Bitweaver Multiple Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49864");
   script_xref(name:"URL", value:"http://www.bitweaver.org/forums/index.php?t=12439");
   script_xref(name:"URL", value:"http://www.bitweaver.org/");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-021.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519921");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

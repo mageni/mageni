@@ -55,8 +55,6 @@ and is prone to multiple input validation vulnerability.");
 OTRS::ITSM 3.0.x up to and including 3.0.8, 3.1.x up to and including 3.1.9
 and 3.2.x up to and including 3.2.6");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61036");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61037");
   script_xref(name:"URL", value:"http://secunia.com/advisories/52623/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2013-05-en/");
   script_category(ACT_GATHER_INFO);

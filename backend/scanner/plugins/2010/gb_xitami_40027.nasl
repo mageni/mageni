@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40027");
   script_xref(name:"URL", value:"http://www.imatix.com/products");
 
   script_tag(name:"summary", value:"Xitami is prone to a denial-of-service vulnerability.");

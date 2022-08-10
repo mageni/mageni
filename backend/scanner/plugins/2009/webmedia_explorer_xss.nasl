@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("WebmediaExplorer/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35368");
 
   script_tag(name:"summary", value:"Webmedia Explorer is prone to multiple cross-site scripting
   vulnerabilities because it fails to sufficiently sanitize user-supplied data.");

@@ -38,7 +38,6 @@ if(description)
 
   script_name("HTTP File Server Security Bypass and Denial of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39544");
   script_xref(name:"URL", value:"http://www.rejetto.com/hfs/?f=intro");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/hfsref-adv.txt");
 

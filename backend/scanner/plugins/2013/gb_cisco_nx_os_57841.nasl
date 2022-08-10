@@ -37,7 +37,6 @@ if (description)
 
   script_name("Cisco Nexus 7000 Series Switches  Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57841");
   script_xref(name:"URL", value:"http://www.cisco.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-25 11:48:10 +0200 (Thu, 25 Oct 2018) $");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("orangehrm/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43905");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/orangehrm/");
 
   script_tag(name:"summary", value:"OrangeHRM is prone to a local file-include vulnerability because it

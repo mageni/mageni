@@ -37,7 +37,6 @@ if(description)
   script_xref(name:"URL", value:"http://inj3ct0r.com/exploits/13733");
   script_xref(name:"URL", value:"http://www.expbase.com/Dos/12737.html");
   script_xref(name:"URL", value:"http://www.0daynet.com/2010/0819/995.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42525");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/safe/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40302");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-1168");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/2932");
   script_xref(name:"URL", value:"http://blogs.perl.org/users/rafael_garcia-suarez/2010/03/new-safepm-fixes-security-hole.html");

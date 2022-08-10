@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("TikiWiki/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43507");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/Tiki.Wiki.CMS.Groupware.5.2.Local.File.Inclusion/46");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/Tiki.Wiki.CMS.Groupware.5.2.Reflected.Cross-site.Scripting/44");
   script_xref(name:"URL", value:"http://www.tiki.org");

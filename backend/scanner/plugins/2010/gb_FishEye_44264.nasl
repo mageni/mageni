@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Atlassian FishEye Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44264");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/62658");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/fisheye/");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/FISHEYE/FishEye+Security+Advisory+2010-10-20");

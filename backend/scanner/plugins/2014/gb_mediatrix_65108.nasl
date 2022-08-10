@@ -37,7 +37,6 @@ if (description)
   script_name("Mediatrix 4402 Web Management Interface 'login' Page Cross Site Scripting Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65108");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2014-02-04 14:02:25 +0100 (Tue, 04 Feb 2014)");

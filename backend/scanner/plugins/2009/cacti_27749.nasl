@@ -64,7 +64,6 @@ if(description)
 
   script_tag(name:"affected", value:"These issues affect Cacti 0.8.7a and prior versions.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/27749");
   script_xref(name:"URL", value:"http://cacti.net/");
   exit(0);
 }

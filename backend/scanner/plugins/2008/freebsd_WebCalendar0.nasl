@@ -38,8 +38,6 @@ that is used in an include_once call.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/435379
-http://www.securityfocus.com/archive/1/436263
 http://www.vuxml.org/freebsd/09c92f3a-fd49-11da-995c-605724cdf281.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

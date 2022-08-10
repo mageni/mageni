@@ -42,9 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/3316");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/3324");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/85054");
   script_xref(name:"URL", value:"https://helpx.adobe.com/dreamweaver/kb/remove-ds-store-files-mac.html");
   script_xref(name:"URL", value:"https://support.apple.com/en-us/HT1629");
 

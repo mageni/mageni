@@ -36,7 +36,6 @@ if (description)
 
   script_name("Mantis Attachment HTML Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42119");
   script_xref(name:"URL", value:"http://www.mantisbt.org/bugs/changelog_page.php");
   script_xref(name:"URL", value:"http://www.mantisbt.org/");
   script_xref(name:"URL", value:"http://www.mantisbt.org/blog/?p=113");

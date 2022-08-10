@@ -38,7 +38,6 @@ if (description)
 
   script_name("Invision Power Board IP.Board Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44553");
   script_xref(name:"URL", value:"http://www.invisionpower.com/");
   script_xref(name:"URL", value:"http://community.invisionpower.com/topic/323970-ipboard-30x-31x-security-patch-released/");
 

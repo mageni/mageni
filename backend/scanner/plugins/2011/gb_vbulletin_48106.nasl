@@ -37,7 +37,6 @@ if (description)
 
   script_name("vBulletin vBExperience 'sortorder' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/48106");
   script_xref(name:"URL", value:"http://www.vbulletin.org/forum/showthread.php?t=171014");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -34,8 +34,7 @@ tag_solution = "All phpGroupWare users should upgrade to the latest version:
 '>=www-apps/phpgroupware-0.9.16.004'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200501-08
-http://bugs.gentoo.org/show_bug.cgi?id=74487
-http://www.securityfocus.com/archive/1/384492";
+http://bugs.gentoo.org/show_bug.cgi?id=74487";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200501-08.";
 

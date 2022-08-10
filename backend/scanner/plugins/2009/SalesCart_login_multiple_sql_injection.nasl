@@ -45,7 +45,6 @@ if(description)
   script_tag(name:"impact", value:"Exploiting this issue could allow an attacker to compromise the
  application, access or modify data, or exploit latent vulnerabilities in the underlying database.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33534");
 
   script_tag(name:"qod_type", value:"remote_app");
 

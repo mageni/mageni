@@ -55,7 +55,6 @@ if(description)
 
   script_tag(name:"affected", value:"ConnX 4.0.20080606 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34370");
 
   script_tag(name:"qod_type", value:"remote_app");
 

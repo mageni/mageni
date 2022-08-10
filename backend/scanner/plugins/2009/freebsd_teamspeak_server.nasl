@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: teamspeak_server";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/bid/33256
 http://www.vuxml.org/freebsd/4b68d917-e705-11dd-afcd-00e0815b8da8.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

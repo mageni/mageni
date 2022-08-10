@@ -36,7 +36,6 @@ if(description)
   script_name("SurgeMail 'APPEND' Command Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/30739/");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/5968");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496482");
   script_xref(name:"URL", value:"http://www.netwinsite.com/surgemail/help/updates.htm");
 
   script_tag(name:"qod_type", value:"remote_banner");

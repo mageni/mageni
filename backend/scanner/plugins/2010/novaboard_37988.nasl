@@ -39,7 +39,6 @@ if (description)
 
   script_name("NovaBoard 'forums' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37988");
   script_xref(name:"URL", value:"http://www.novaboard.net/");
 
   script_tag(name:"qod_type", value:"remote_banner");

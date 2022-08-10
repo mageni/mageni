@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40948");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=605641");
   script_xref(name:"URL", value:"http://www.php.net");
 

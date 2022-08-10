@@ -36,7 +36,6 @@ if(description)
 
   script_name("uHTTP Server GET Request Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38986");
   script_xref(name:"URL", value:"http://uhttps.sourceforge.net");
   script_xref(name:"URL", value:"http://www.salvatorefresta.net/files/adv/uhttp%20Server%200.1.0%20alpha%20Path%20Traversal%20Vulnerability-10032010.txt");
 

@@ -36,7 +36,6 @@ if(description)
 
   script_name("httpdx Multiple Remote Denial Of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38718");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/httpdx/");
 
   script_tag(name:"qod_type", value:"remote_vul");

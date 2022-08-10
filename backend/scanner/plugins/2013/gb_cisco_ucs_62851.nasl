@@ -38,11 +38,6 @@ if (description)
   script_name("Cisco Unified Computing System Multiple Vulnerabilities");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59451");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59453");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59457");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59459");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59455");
 
   script_xref(name:"URL", value:"http://www.cisco.com/");
 

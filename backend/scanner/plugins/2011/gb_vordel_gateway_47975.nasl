@@ -42,7 +42,6 @@ if(description)
   script_require_keys("Host/runs_unixoide");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47975");
   script_xref(name:"URL", value:"https://web.archive.org/web/20130908024536/http://www.upsploit.com/index.php/advisories/view/UPS-2011-0023");
   script_xref(name:"URL", value:"http://www.vordel.com/");
 

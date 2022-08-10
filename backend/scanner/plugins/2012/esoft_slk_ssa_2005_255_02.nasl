@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gather-package-list.nasl");
   script_mandatory_keys("ssh/login/slackware_linux", "ssh/login/slackpack", re:"ssh/login/release=SLK(8\.1|9\.0|9\.1|10\.0|10\.1)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/410333");
   script_xref(name:"URL", value:"https://secure1.securityspace.com/smysecure/catid.html?in=SSA:2005-255-01");
 
   script_tag(name:"solution", value:"Upgrade to the new package(s).");

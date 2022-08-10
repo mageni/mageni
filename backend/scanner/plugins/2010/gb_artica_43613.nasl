@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Artica Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43613");
 
   script_category(ACT_ATTACK);
   script_family("Web application abuses");

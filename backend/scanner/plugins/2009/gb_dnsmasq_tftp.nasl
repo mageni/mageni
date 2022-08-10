@@ -37,8 +37,6 @@ if (description)
   script_dependencies("gb_dnsmasq_consolidation.nasl");
   script_mandatory_keys("thekelleys/dnsmasq/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36121");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36120");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/dnsmasq-vulnerabilities");
   script_xref(name:"URL", value:"http://thekelleys.org.uk/dnsmasq/CHANGELOG");
 

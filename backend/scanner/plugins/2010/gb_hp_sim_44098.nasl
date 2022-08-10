@@ -36,7 +36,6 @@ if (description)
 
   script_name("HP Systems Insight Manager Arbitrary File Download Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44098");
   script_xref(name:"URL", value:"http://www13.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02548231");
   script_xref(name:"URL", value:"http://h18000.www1.hp.com/products/servers/management/hpsim/index.html");
 

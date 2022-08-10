@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 81);
   script_mandatory_keys("Axon-Virtual-PBX/www/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39483");
   script_xref(name:"URL", value:"http://www.nch.com.au/pbx/index.html");
   script_xref(name:"URL", value:"http://nchsoftware.com/");
 

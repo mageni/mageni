@@ -67,9 +67,7 @@ if (description)
 
   script_tag(name:"affected", value:"Versions prior and including Pandora FMS 3.1 are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45112");
   script_xref(name:"URL", value:"http://pandorafms.org/index.php?sec=project&sec2=home&lng=en");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514939");
 
   exit(0);
 }

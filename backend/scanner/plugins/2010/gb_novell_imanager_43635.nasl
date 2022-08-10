@@ -36,7 +36,6 @@ if (description)
 
   script_name("Novell iManager 'getMultiPartParameters()' Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43635");
   script_xref(name:"URL", value:"http://www.novell.com/products/consoles/imanager/features.html");
   script_xref(name:"URL", value:"http://www.novell.com/support/viewContent.do?externalId=7006515");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-190/");

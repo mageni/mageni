@@ -38,10 +38,6 @@ if (description)
 
   script_name("Atmail Multiple Unspecified Security Vulnerabilities.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64798");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64797");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64796");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64789");
   script_xref(name:"URL", value:"http://blog.atmail.com/2013/atmail-7-1-2-security-hotfix/");
   script_xref(name:"URL", value:"http://atmail.com/");
 

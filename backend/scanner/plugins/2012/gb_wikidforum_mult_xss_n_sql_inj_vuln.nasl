@@ -38,7 +38,6 @@ if(description)
   script_xref(name:"URL", value:"http://seclists.org/oss-sec/2012/q2/75");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73985");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73980");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521934");
   script_xref(name:"URL", value:"http://www.darksecurity.de/advisories/2012/SSCHADV2012-005.txt");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/110697/SSCHADV2012-005.txt");
   script_xref(name:"URL", value:"http://sec.jetlib.com/Bugtraq/2012/03/12/Wikidforum_2.10_Multiple_security_vulnerabilities");

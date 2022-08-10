@@ -70,7 +70,6 @@ if(description)
   script_xref(name:"URL", value:"http://klikki.fi/adv/wpml.html");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/130810");
   script_xref(name:"URL", value:"http://wpml.org/2015/03/wpml-security-update-bug-and-fix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/534862/30/0/threaded");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");
   script_family("Web application abuses");

@@ -34,8 +34,7 @@ tag_solution = "All users are recommended to upgrade GAIM to 0.75-r7.
     $> emerge '>=net-im/gaim-0.75-r7'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200401-04
-http://bugs.gentoo.org/show_bug.cgi?id=39470
-http://www.securityfocus.com/archive/1/351235/2004-01-23/2004-01-29/0";
+http://bugs.gentoo.org/show_bug.cgi?id=39470";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200401-04.";
 

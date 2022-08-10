@@ -72,7 +72,6 @@ a workaround disable the security extension if DNSSEC is not required by typing 
 dns dnssec.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10556");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54658");
 
   exit(0);
 }

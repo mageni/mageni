@@ -45,8 +45,6 @@ if(description)
   script_mandatory_keys("moinmoinWiki/installed", "Host/runs_windows");
 
   script_xref(name:"URL", value:"http://moinmo.in/SecurityFixes");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/94259");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/94501");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary script code
   in the browser of an unsuspecting user in the context of the affected

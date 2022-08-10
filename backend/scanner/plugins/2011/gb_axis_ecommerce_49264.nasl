@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Axis Commerce HTML Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49264");
   script_xref(name:"URL", value:"https://github.com/downloads/axis/axiscommerce/axis-0.8.1.zip");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -44,10 +44,8 @@ if(description)
   script_require_ports("Services/sap_maxdb", 7210);
   script_mandatory_keys("sap_maxdb/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38769");
   script_xref(name:"URL", value:"https://www.sdn.sap.com/irj/sdn/maxdb");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-032/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510125");
   script_xref(name:"URL", value:"https://websmp202.sap-ag.de/sap/support/notes/1409425");
 
   script_tag(name:"solution", value:"Vendor updates are available through SAP note 1409425. Please contact the vendor for more information.");

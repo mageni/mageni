@@ -45,7 +45,6 @@ if(description)
   script_tag(name:"summary", value:"The remote version of Trac is prone to a SQL injection flaw
   through the ticket query module due to 'group' parameter is not properly sanitized.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/418294/30/0/threaded");
   script_xref(name:"URL", value:"http://projects.edgewall.com/trac/wiki/ChangeLog");
 
   script_tag(name:"qod_type", value:"remote_analysis");

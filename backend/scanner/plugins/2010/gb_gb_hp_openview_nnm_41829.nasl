@@ -44,9 +44,7 @@ if(description)
   script_require_ports("Services/www", 7510);
   script_mandatory_keys("HP/OVNNM/installed", "Host/runs_windows");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41829");
   script_xref(name:"URL", value:"http://www.exploit-db.com/moaub-6-hp-openview-nnm-webappmon-exe-execvp_nc-remote-code-execution/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512543");
   script_xref(name:"URL", value:"http://itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02286088");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-137/");
 

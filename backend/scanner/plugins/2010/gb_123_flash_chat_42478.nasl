@@ -33,7 +33,6 @@ if (description)
 
   script_name("123 Flash Chat Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42478");
   script_xref(name:"URL", value:"http://123flashchat.com/");
 
   script_tag(name:"cvss_base", value:"5.0");

@@ -38,7 +38,6 @@ if (description)
 
   script_name("IBM Tivoli Endpoint Manager Mobile Device Management Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71424");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21691701");
 
   script_tag(name:"impact", value:"An attacker could use this vulnerability to steal the victim's cookie-based

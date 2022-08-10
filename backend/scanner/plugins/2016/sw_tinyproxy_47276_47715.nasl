@@ -45,8 +45,6 @@ if(description)
   script_tag(name:"affected", value:"Tinyproxy versions before 1.8.3");
   script_tag(name:"solution", value:"Upgrade to Tinyproxy 1.8.3 or newer.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47276");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47715");
   script_xref(name:"URL", value:"https://tinyproxy.github.io/");
 
   script_copyright("This script is Copyright (C) 2016 SCHUTZWERK GmbH");

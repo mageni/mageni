@@ -35,7 +35,6 @@ if(description)
 
   script_name("Multiple Trendnet Camera Products Remote Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51922");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/36680");
   script_xref(name:"URL", value:"http://www.trendnet.com/press/view.asp?id=1959");
   script_xref(name:"URL", value:"http://www.trendnet.com/products/proddetail.asp?prod=145_TV-IP110W");

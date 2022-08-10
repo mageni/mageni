@@ -23,7 +23,6 @@
 #
 
 # exploit is available at:
-# http://www.securityfocus.com/data/vulnerabilities/exploits/7350oftpd.tar.gz
 
 if(description)
 {

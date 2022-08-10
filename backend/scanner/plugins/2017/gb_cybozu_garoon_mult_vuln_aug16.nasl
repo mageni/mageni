@@ -45,11 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("CybozuGaroon/Installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92599");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92598");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92600");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92596");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92601");
 
   script_tag(name:"summary", value:"This host is installed with Cybozu Garoon
   and is prone to multiple vulnerabilities.");

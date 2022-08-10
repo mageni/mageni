@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: vte";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/512388
 http://www.vuxml.org/freebsd/9a8fecef-92c0-11df-b140-0015f2db7bde.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

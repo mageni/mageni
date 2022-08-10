@@ -36,7 +36,6 @@ if (description)
 
   script_name("Sympa 'sympa.pl' Insecure Temporary File Creation Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30727");
   script_xref(name:"URL", value:"http://www.sympa.org/");
   script_xref(name:"URL", value:"http://www.sympa.org/distribution/");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=494969");

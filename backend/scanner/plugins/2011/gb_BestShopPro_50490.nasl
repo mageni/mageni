@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("BestShopPro 'str' Parameter Cross Site Scripting and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50490");
   script_xref(name:"URL", value:"http://www.bst.pl/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 10:23:57 +0200 (Mon, 22 Oct 2018) $");

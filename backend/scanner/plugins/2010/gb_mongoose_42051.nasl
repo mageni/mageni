@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42051");
   script_xref(name:"URL", value:"http://code.google.com/p/mongoose/");
 
   script_tag(name:"summary", value:"Mongoose is prone to a remote file-disclosure vulnerability because it

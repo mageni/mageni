@@ -47,7 +47,6 @@ if(description)
   script_mandatory_keys("dolibarr/detected");
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2011/Nov/144");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520619");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_dolibarr.html");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attacker to execute arbitrary HTML and

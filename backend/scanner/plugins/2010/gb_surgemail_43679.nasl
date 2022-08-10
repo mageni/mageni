@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2010-3201");
   script_bugtraq_id(43679);
   script_name("SurgeMail SurgeWeb Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43679");
   script_xref(name:"URL", value:"http://ictsec.se/?p=108");
   script_xref(name:"URL", value:"http://www.netwinsite.com/surgemail/");
   script_tag(name:"qod_type", value:"remote_banner");

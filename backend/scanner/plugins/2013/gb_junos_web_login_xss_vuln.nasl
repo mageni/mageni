@@ -50,7 +50,6 @@ is able to read the cookie or not.");
   script_tag(name:"summary", value:"This host is running JunOS and is prone to cross-site scripting
 vulnerability.");
   script_tag(name:"solution_type", value:"WillNotFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63656");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/junos-114-cross-site-scripting");
   script_category(ACT_ATTACK);
   script_tag(name:"qod_type", value:"remote_vul");

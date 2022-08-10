@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:S/C:P/I:N/A:N");
   script_name("Novatel Wireless MiFi 2352 Password Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/37962");
   script_xref(name:"URL", value:"http://www.novatelwireless.com/");
   script_xref(name:"URL", value:"http://www.securitybydefault.com/2010/01/vulnerabilidad-en-modemrouter-3g.html");
 

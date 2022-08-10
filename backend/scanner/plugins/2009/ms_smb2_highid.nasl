@@ -62,7 +62,6 @@ if(description)
 
   UPDATE (September 9, 2009): Symantec has confirmed the issue on Windows Vista SP1 and Windows Server 2008.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36299");
   script_xref(name:"URL", value:"http://blog.48bits.com/?p=510#more-510");
   script_xref(name:"URL", value:"https://docs.microsoft.com/de-de/security-updates/securitybulletins/2009/ms09-050");
   script_xref(name:"URL", value:"http://blogs.technet.com/msrc/archive/2009/09/08/microsoft-security-advisory-975497-released.aspx");
@@ -70,8 +69,6 @@ if(description)
   script_xref(name:"URL", value:"http://blogs.technet.com/srd/archive/2009/09/18/update-on-the-smb-vulnerability.aspx");
   script_xref(name:"URL", value:"http://www.microsoft.com/windows/products/windowsvista/default.mspx");
   script_xref(name:"URL", value:"http://g-laurent.blogspot.com/2009/09/windows-vista7-smb20-negotiate-protocol.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506300");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506327");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/135940");
 
   script_tag(name:"solution_type", value:"VendorFix");

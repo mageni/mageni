@@ -40,7 +40,6 @@ if(description)
   script_dependencies("gb_openemr_detect.nasl");
   script_mandatory_keys("openemr/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45575");
   script_xref(name:"URL", value:"http://www.sourceforge.net/projects/openemr/");
   script_xref(name:"URL", value:"http://www.oemr.org/");
 

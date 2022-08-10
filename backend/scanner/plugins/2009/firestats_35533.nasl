@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to FireStats 1.6.2 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35533");
 
   script_xref(name:"URL", value:"http://firestats.cc/");
   exit(0);

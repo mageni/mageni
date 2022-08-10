@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: vnc";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/433994/30/0/threaded
 http://www.vuxml.org/freebsd/4645b98c-e46e-11da-9ae7-00123fcc6e5c.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

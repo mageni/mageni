@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23219");
   script_xref(name:"URL", value:"http://www8.itrc.hp.com/service/cki/docDisplay.do?docId=c01056506");
   script_xref(name:"URL", value:"http://www.php-security.org/MOPB/MOPB-38-2007.html");
   script_xref(name:"URL", value:"http://www.php.net/releases/4_4_5.php");

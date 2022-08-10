@@ -56,7 +56,6 @@ if(description)
   files on the affected host subject to the privileges of the user id
   under which the server operates, LOCAL SYSTEM by default.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/459500/30/0/threaded");
   script_xref(name:"URL", value:"http://www.kiwisyslog.com/kb/idx/5/178/article/");
 
   script_tag(name:"solution_type", value:"VendorFix");

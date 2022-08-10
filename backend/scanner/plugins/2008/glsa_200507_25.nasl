@@ -34,7 +34,6 @@ tag_solution = "All Clam AntiVirus users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200507-25
 http://bugs.gentoo.org/show_bug.cgi?id=100178
-http://www.securityfocus.com/archive/1/406377/30/
 http://sourceforge.net/project/shownotes.php?release_id=344514";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200507-25.";

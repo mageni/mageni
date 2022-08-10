@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("ftp/teamtek/universal_ftp/detected");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/22553");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/488142/100/200/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation could allows remote attackers to crash the affected
   application, denying the service to legitimate users.");

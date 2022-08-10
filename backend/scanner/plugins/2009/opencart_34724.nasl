@@ -60,7 +60,6 @@ if (description)
 
   OpenCart 1.1.8 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34724");
   script_xref(name:"URL", value:"http://www.opencart.com/");
 
   exit(0);

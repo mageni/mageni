@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("WordPress Filedownload Local File Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49669");
   script_xref(name:"URL", value:"http://plugins.svn.wordpress.org/filedownload/trunk/filedownload.php");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

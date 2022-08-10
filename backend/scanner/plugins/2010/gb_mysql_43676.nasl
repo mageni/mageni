@@ -39,7 +39,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Oracle MySQL Prior to 5.1.51 Multiple Denial Of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43676");
   script_xref(name:"URL", value:"http://dev.mysql.com/doc/refman/5.1/en/news-5-1-51.html");
   script_xref(name:"URL", value:"http://www.mysql.com/");
 

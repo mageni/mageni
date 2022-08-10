@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Moodle Prior to 1.9.11/2.0.2 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46646");
   script_xref(name:"URL", value:"http://www.moodle.org");
   script_xref(name:"URL", value:"http://moodle.org/mod/forum/discuss.php?d=170002");
   script_xref(name:"URL", value:"http://moodle.org/mod/forum/discuss.php?d=170003");

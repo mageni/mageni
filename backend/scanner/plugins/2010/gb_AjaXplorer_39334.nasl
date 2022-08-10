@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:P/I:P/A:P");
   script_name("AjaXplorer Remote Command Injection and Local File Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39334");
   script_xref(name:"URL", value:"http://www.ajaxplorer.info/wordpress/2010/04/ajaxplorer-2-6-security-ajaxplorer-2-7-1-early-beta-for-3-0/");
   script_xref(name:"URL", value:"http://www.ajaxplorer.info");
 

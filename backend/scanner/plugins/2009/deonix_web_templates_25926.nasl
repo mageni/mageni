@@ -35,7 +35,6 @@ if (description)
   script_cve_id("CVE-2007-5233");
   script_bugtraq_id(25926);
   script_name("Deonix Web Templates Management Index.PHP SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/25926");
   script_xref(name:"URL", value:"http://www.deonixscripts.com/index.php?view=products_templatesmng");
   script_category(ACT_ATTACK);
   script_tag(name:"qod_type", value:"remote_vul");

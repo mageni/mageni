@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("redaxscript/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34476");
 
   script_tag(name:"summary", value:"Redaxscript is prone to a local file-include vulnerability because
   it fails to properly sanitize user-supplied input.");

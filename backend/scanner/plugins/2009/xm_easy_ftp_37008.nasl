@@ -36,9 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("XM Easy Personal FTP Server 'NLST' Command Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37008");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36969");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507785");
   script_xref(name:"URL", value:"http://www.dxm2008.com/");
 
   script_category(ACT_MIXED_ATTACK);

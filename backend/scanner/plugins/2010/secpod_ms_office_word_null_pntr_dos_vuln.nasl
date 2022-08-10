@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2010-3200");
   script_name("Microsoft Word 2003 'MSO.dll' Null Pointer Dereference Vulnerability");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2010/Sep/100");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513679/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 SecPod");

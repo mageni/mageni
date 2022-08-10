@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/complete/ftp/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39802");
   script_xref(name:"URL", value:"http://www.enterprisedt.com/products/completeftp/");
 
   script_tag(name:"summary", value:"CompleteFTP is prone to a directory-traversal vulnerability because it

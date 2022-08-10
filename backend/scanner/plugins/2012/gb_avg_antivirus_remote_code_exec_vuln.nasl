@@ -37,7 +37,6 @@ if(description)
   script_name("AVG Anti-Virus 'hcp://' Protocol Handler Remote Code Execution Vulnerability");
 
   script_xref(name:"URL", value:"http://www.n00bz.net/antivirus-cve");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514356");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Jun/205");
 
   script_tag(name:"qod_type", value:"registry");

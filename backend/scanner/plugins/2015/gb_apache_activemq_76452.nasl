@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 8161);
   script_mandatory_keys("ActiveMQ/Web/detected", "Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/76452");
   script_xref(name:"URL", value:"http://activemq.apache.org/");
 
   script_tag(name:"impact", value:"A remote attacker could exploit this vulnerability using directory-

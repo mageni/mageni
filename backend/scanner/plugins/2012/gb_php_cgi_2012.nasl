@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"http://eindbazen.net/2012/05/php-cgi-advisory-cve-2012-1823/");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=61910");
   script_xref(name:"URL", value:"http://www.php.net/manual/en/security.cgi-bin.php");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53388");
 
   script_tag(name:"summary", value:"PHP is prone to an information-disclosure vulnerability.");
 

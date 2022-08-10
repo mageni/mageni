@@ -34,9 +34,7 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Ariadne Multiple Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50879");
   script_xref(name:"URL", value:"http://ariadne.muze.nl/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520708");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 15:31:29 +0200 (Mon, 22 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-12-02 11:28:44 +0100 (Fri, 02 Dec 2011)");

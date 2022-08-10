@@ -37,11 +37,9 @@ if (description)
 
   script_name("FreePBX System Recordings Menu Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43454");
   script_xref(name:"URL", value:"http://freepbx.org");
   script_xref(name:"URL", value:"http://www.freepbx.org/trac/ticket/4553");
   script_xref(name:"URL", value:"https://www.trustwave.com/spiderlabs/advisories/TWSL2010-005.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513947");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

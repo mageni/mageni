@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("JINAIS IRC Message Remote Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38972");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/jinais/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -57,10 +57,8 @@ if (description)
 
   script_tag(name:"affected", value:"AproxEngine 5.3.04 and 6.0 are vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37515");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2009-2/");
   script_xref(name:"URL", value:"http://www.aprox.de/index.php?id=1");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508641");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

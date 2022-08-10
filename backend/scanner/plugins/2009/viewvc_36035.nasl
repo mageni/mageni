@@ -35,7 +35,6 @@ if (description)
 
   script_name("ViewVC Cross Site Scripting and Unspecified Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36035");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/source/browse/viewvc/trunk/CHANGES?rev=HEAD");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/");
 

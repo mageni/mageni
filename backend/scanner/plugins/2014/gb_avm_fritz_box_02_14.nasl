@@ -47,8 +47,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.avm.de/de/Sicherheit/liste_update.html");
   script_xref(name:"URL", value:"http://www.fritzbox.eu/en/news/2014/security_updates_available.php");
   script_xref(name:"URL", value:"http://www.heise.de/newsticker/meldung/Jetzt-Fritzbox-aktualisieren-Hack-gegen-AVM-Router-auch-ohne-Fernzugang-2115745.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74927");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65520");
 
   script_tag(name:"vuldetect", value:"Check the firmware version.");
 

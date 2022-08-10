@@ -37,7 +37,6 @@ if(description)
   script_name("Semantic Enterprise Wiki Halo Extension 'target' XSS Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47968");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51980");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73167");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109637/SMW-1.5.6-Cross-Site-Scripting.html");
 

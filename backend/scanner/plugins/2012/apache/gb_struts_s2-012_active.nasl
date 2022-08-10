@@ -38,7 +38,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("apache/struts/http/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/523956");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/115770/struts2-exec.txt");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/apache-struts2-remote-code-execution");
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-012");

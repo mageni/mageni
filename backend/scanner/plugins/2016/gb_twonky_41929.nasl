@@ -43,8 +43,6 @@ if(description)
   script_require_ports("Services/www", 9000);
   script_mandatory_keys("twonky_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41929");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507616");
 
   script_tag(name:"summary", value:"Twonky Server is prone to a cross-site scripting vulnerability and multiple
   HTML-injection vulnerabilities because it fails to properly sanitize user-supplied input before using it in

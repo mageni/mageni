@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to Cacti 0.8.7b are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34991");
   script_xref(name:"URL", value:"http://cacti.net/");
   exit(0);
 }

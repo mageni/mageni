@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/drb", 8787);
 
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/viewAlert.x?alertId=22750");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47071");
   script_xref(name:"URL", value:"http://blog.recurity-labs.com/archives/2011/05/12/druby_for_penetration_testers/");
   script_xref(name:"URL", value:"http://www.ruby-doc.org/stdlib-1.9.3/libdoc/drb/rdoc/DRb.html");
 

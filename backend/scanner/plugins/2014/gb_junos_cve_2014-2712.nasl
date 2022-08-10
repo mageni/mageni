@@ -67,7 +67,6 @@ passed as arguments to index.php can result in the execution of scripting tags w
 workaround disable J-Web.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10521");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66767");
 
   exit(0);
 }

@@ -56,8 +56,6 @@ if(description)
   script_tag(name:"affected", value:"Zervit 0.2, 0.3 and 0.4 are vulnerable. Other versions may also be
   affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34530");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34570");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

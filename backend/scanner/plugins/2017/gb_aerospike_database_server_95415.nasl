@@ -38,9 +38,6 @@ if(description)
 
   script_name("Aerospike Database Server Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95415");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95419");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95421");
   script_xref(name:"URL", value:"http://www.aerospike.com/");
   script_xref(name:"URL", value:"http://www.talosintelligence.com/reports/TALOS-2016-0264/");
   script_xref(name:"URL", value:"http://www.talosintelligence.com/reports/TALOS-2016-0263/");

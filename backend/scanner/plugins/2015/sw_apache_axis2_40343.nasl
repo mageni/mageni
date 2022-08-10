@@ -57,7 +57,6 @@ if (description)
  information that could aid in further attacks.");
   script_tag(name:"affected", value:"Apache Axis2 1.4.1 is vulnerable. Other versions may be affected.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40343");
   script_xref(name:"URL", value:"http://ws.apache.org/axis2/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/12721/");
 

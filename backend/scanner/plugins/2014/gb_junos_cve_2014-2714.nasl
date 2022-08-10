@@ -69,7 +69,6 @@ of service condition for SRX Series devices.");
 workaround disable Enhanced Web Filtering.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10622");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66760");
 
   exit(0);
 }

@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/postgresql", 5432);
   script_mandatory_keys("PostgreSQL/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34090");
   script_xref(name:"URL", value:"http://www.postgresql.org/");
 
   script_tag(name:"summary", value:"PostgreSQL is prone to a remote denial-of-service vulnerability.");

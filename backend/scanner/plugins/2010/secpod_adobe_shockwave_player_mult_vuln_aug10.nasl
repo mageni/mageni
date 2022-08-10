@@ -43,8 +43,6 @@ if(description)
   script_xref(name:"URL", value:"http://dvlabs.tippingpoint.com/advisory/TPTI-10-15");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-161/");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb10-20.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513299/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513334/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

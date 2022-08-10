@@ -59,7 +59,6 @@ if (description)
  cookie-based authentication credentials and to launch other attacks.");
   script_tag(name:"affected", value:"The issue affects versions prior to 1.5.2.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40327");
   script_xref(name:"URL", value:"http://ws.apache.org/axis2/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/12689");
 

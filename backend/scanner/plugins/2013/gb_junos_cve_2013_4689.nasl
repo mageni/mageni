@@ -69,7 +69,6 @@ new administrative accounts to gain complete control over the device.");
 a workaround disable J-Web or limit access to only trusted hosts.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10597");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62940");
 
   exit(0);
 }

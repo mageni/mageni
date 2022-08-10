@@ -40,7 +40,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("citrix_netscaler/http/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/484182/100/0/threaded");
 
   script_tag(name:"summary", value:"It is possible to extract information about the remote Citrix NetScaler appliance
   obtained from the web management interface's session cookie, including the appliance's main IP address and software version.");

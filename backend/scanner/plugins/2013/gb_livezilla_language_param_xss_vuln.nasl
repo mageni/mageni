@@ -56,7 +56,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/54505");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Dec/31");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/124344");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/530209");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2013 Greenbone Networks GmbH");
   script_family("Web application abuses");

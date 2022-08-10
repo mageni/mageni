@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
   script_mandatory_keys("Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52081");
   script_xref(name:"URL", value:"http://www.voxtronic.com/");
 
   script_tag(name:"summary", value:"VOXTRONIC Voxlog Professional is prone to a file-disclosure

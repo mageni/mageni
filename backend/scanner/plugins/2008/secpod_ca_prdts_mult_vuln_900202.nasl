@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.ca.com/us/securityadvisor/vulninfo/vuln.aspx?id=36560");
   script_xref(name:"URL", value:"http://www.ca.com/us/securityadvisor/vulninfo/vuln.aspx?id=36559");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/495397/100/0/threaded");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2008/Aug/1020662.html");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2008/Aug/1020663.html");
   script_xref(name:"URL", value:"http://www.trapkit.de/advisories/TKADV2008-006.txt");

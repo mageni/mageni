@@ -56,7 +56,6 @@ if(description)
   script_tag(name:"solution", value:"Trend Micro OfficeScan XG (12.0) users should update to XG CP 1352.
   Trend Micro OfficeScan XG 11.0 users should update to Version 11.0 SP1 CP 6325 .");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98007");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

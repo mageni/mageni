@@ -36,7 +36,6 @@ if (description)
 
   script_name("Ziproxy Image Parsing Multiple Integer Overflow Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40344");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-75/");
   script_xref(name:"URL", value:"http://ziproxy.sourceforge.net/");
 

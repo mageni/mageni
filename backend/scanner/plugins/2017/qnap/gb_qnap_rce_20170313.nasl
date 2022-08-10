@@ -38,7 +38,6 @@ if(description)
 
   script_name("QNAP QTS Multiple Arbitrary Command Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97059");
   script_xref(name:"URL", value:"https://sintonen.fi/advisories/qnap-qts-multiple-rce-vulnerabilities.txt");
   script_xref(name:"URL", value:"https://www.qnap.com/en/support/con_show.php?cid=113");
 

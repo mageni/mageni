@@ -45,7 +45,6 @@ if(description)
   script_dependencies("secpod_zikula_detect.nasl");
   script_mandatory_keys("postnuke/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/5809");
 
   script_tag(name:"summary", value:"The remote host is running a version of Post-Nuke which contains
   the 'News' module which itself is vulnerable to a cross site scripting issue.");

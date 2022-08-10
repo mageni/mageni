@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("www/sambar");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/199410");
 
   script_tag(name:"solution", value:"Remove this script.");
 

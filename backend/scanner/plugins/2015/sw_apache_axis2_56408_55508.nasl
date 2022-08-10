@@ -66,8 +66,6 @@ General solution options are to upgrade to a newer release, disable respective f
  and contain arbitrary content. This may aid in further attacks.");
   script_tag(name:"affected", value:"The issue affects versions up to 1.6.2.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/56408");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/55508");
   script_xref(name:"URL", value:"http://ws.apache.org/axis2/");
   script_xref(name:"URL", value:"https://issues.apache.org/jira/browse/AXIS2C-1607");
 

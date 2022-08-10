@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
 
   script_xref(name:"URL", value:"http://httpd.apache.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495180");
   script_xref(name:"URL", value:"http://httpd.apache.org/docs/2.0/mod/mod_proxy_ftp.html");
   script_xref(name:"URL", value:"http://svn.apache.org/viewvc?view=rev&revision=682871");
   script_xref(name:"URL", value:"http://svn.apache.org/viewvc?view=rev&revision=682868");

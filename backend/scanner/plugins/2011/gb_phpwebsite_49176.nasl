@@ -40,7 +40,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpwebsite/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49176");
   script_xref(name:"URL", value:"http://phpwebsite.appstate.edu/");
 
   script_tag(name:"summary", value:"phpWebSite is prone to a cross-site scripting vulnerability because it

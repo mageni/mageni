@@ -37,7 +37,6 @@ if(description)
   script_mandatory_keys("lightneasy/detected");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/35354");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504092/100/0/threaded");
 
   script_tag(name:"summary", value:"LightNEasy is prone to a cross-site scripting (XSS)
   vulnerability.");

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Search Network 'search.php' Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49064/exploit");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/103780/searchnetwork-xss.txt");
 
   script_tag(name:"qod_type", value:"remote_vul");

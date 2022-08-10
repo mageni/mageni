@@ -41,7 +41,6 @@ if(description)
 
   script_name("Cacti Multiple HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37109");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://docs.cacti.net/#cross-site_scripting_fixes");
 

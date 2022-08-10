@@ -44,7 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/69488");
   script_xref(name:"URL", value:"http://voidroot.blogspot.com/2011/08/xss-in-ibm-open-admin-tool.html");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/104617/ibmopenadmin-xss.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/519468/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

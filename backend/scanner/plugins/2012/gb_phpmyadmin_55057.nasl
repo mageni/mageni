@@ -37,7 +37,6 @@ if (description)
 
   script_name("phpMyAdmin 'show_config_errors.php' Full Path Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55057");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/index.php");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-10 13:24:56 +0200 (Mon, 10 Sep 2018) $");

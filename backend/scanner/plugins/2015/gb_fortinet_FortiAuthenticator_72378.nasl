@@ -38,7 +38,6 @@ if (description)
 
   script_name("Fortinet FortiAuthenticator Appliance Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72378");
   script_xref(name:"URL", value:"https://fortiguard.com/psirt/FG-IR-15-003");
 
   script_tag(name:"affected", value:"FortiAuthenticator lower than 3.2.1");

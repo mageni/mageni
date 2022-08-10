@@ -63,7 +63,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/136543");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/537959/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

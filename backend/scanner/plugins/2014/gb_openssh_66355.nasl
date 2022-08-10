@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66355");
 
   script_tag(name:"impact", value:"The security bypass allows remote attackers to bypass intended environment
   restrictions by using a substring located before a wildcard character.");

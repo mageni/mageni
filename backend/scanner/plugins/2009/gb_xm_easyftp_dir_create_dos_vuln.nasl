@@ -37,7 +37,6 @@ if(description)
   script_name("XM Easy Personal FTP Server File/Folder Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37473");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/54400");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508049/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

@@ -36,7 +36,6 @@ if(description)
 
   script_name("freeSSHd SSH2 Connection Data Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38887");
   script_xref(name:"URL", value:"http://www.freesshd.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

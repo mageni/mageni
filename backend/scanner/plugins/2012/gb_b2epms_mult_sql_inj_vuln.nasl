@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-13 14:45:05 +0200 (Thu, 13 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-06-01 13:07:29 +0530 (Fri, 01 Jun 2012)");
   script_name("b2ePMS Multiple SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53690");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/75923");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18935");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113064/b2epms10-sql.txt");

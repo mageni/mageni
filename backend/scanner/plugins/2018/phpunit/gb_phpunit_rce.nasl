@@ -45,7 +45,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"http://phpunit.vulnbusters.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/101798");
   script_xref(name:"URL", value:"https://moodle.org/mod/forum/discuss.php?d=358588");
   script_xref(name:"URL", value:"https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-November/000216.html");
 

@@ -62,7 +62,6 @@ if(description)
   script_tag(name:"affected", value:"openUrgence Vaccin 1.03 is vulnerable. Other versions may also
   be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39412");
   script_xref(name:"URL", value:"https://adullact.net/projects/openurgence/");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39400");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/57815");

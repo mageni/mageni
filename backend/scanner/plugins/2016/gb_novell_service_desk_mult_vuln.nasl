@@ -72,7 +72,6 @@ if(description)
   script_tag(name:"qod_type", value:"remote_banner");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/136646");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/538043");
   script_xref(name:"URL", value:"https://www.novell.com/support/kb/doc.php?id=7017428");
   script_xref(name:"URL", value:"https://www.novell.com/support/kb/doc.php?id=7017429");
   script_xref(name:"URL", value:"https://www.novell.com/support/kb/doc.php?id=7017431");

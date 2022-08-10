@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Joomla! 'com_jobprofile' Component 'id' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50891");
   script_xref(name:"URL", value:"http://extensions.joomla.org/extensions/ads-a-affiliates/jobs-a-recruitment/11924");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 

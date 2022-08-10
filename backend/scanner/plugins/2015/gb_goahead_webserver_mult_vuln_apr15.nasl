@@ -44,7 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/131156");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2015/Mar/157");
   script_xref(name:"URL", value:"https://github.com/embedthis/goahead/issues/106");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/535027/100/0/threaded");
 
   script_tag(name:"summary", value:"This host is installed with GoAhead Webserver
   and is prone to multiple vulnerabilities.");

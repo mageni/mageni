@@ -63,7 +63,6 @@ if(description)
   attacker can exploit this issue to manipulate SQL queries, possibly leading to disclosure of sensitive data,
   attacks against the underlying database, and the like.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/451838/30/0/threaded");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"qod_type", value:"remote_vul");

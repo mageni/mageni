@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65230");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary code in
   context of the application. Failed exploits may result in denial-of-service conditions.");

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:L/AC:L/Au:N/C:C/I:C/A:C");
   script_name("VMware Products Tools Local Privilege Escalation Vulnerability (Linux)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514995");
   script_xref(name:"URL", value:"http://www.vmware.com/security/advisories/VMSA-2010-0018.html");
   script_xref(name:"URL", value:"http://lists.vmware.com/pipermail/security-announce/2010/000112.html");
 

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 4080);
   script_mandatory_keys("MLDonkey/www/port/");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33865");
 
   script_tag(name:"solution", value:"Fixes are available.");
 

@@ -50,7 +50,6 @@ if(description)
   host provided PHP's 'magic_quotes' setting is disabled or, regardless of that setting, files with
   a '.txt' extension such as those used by the application to store administrative credentials.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/422499");
 
   script_tag(name:"solution_type", value:"Mitigation");
   script_tag(name:"qod_type", value:"remote_vul");

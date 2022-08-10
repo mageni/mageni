@@ -51,7 +51,6 @@ webserver process. This may allow the attacker to compromise the
 application and the computer. Other attacks are also possible.
 
 SiteX 0.7.4.418 is vulnerable. Other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35122");
   script_xref(name:"URL", value:"http://sitex.bjsintay.com/index.php");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year

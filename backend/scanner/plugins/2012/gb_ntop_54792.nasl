@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("ntop/installed");
   script_require_ports("Services/www", 3000);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54792");
   script_xref(name:"URL", value:"http://www.ntop.org/ntop.html");
 
   script_tag(name:"solution", value:"Reportedly the issue is fixed, however Symantec has not confirmed

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("modx_cms/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43577");
   script_xref(name:"URL", value:"http://modxcms.com");
 
   script_tag(name:"summary", value:"MODX is prone to a local file-include vulnerability and a cross-site

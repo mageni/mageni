@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("ganglia/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54699");
   script_xref(name:"URL", value:"http://ganglia.sourceforge.net/");
   script_xref(name:"URL", value:"http://console-cowboys.blogspot.de/2012/07/extending-your-ganglia-install-with.html");
 

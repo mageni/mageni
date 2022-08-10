@@ -42,7 +42,6 @@ if(description)
   script_require_ports(139, 445);
 
   script_xref(name:"URL", value:"http://support.microsoft.com/kb/240797");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496232");
   script_xref(name:"URL", value:"http://www.juniper.net/security/auto/vulnerabilities/vuln31129.html");
 
   script_tag(name:"summary", value:"The host is running Microsoft SQL Server, which is prone to

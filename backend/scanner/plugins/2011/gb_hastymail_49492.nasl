@@ -35,7 +35,6 @@ if (description)
 
   script_name("Hastymail2 Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49492");
   script_xref(name:"URL", value:"http://www.hastymail.org/");
   script_xref(name:"URL", value:"http://hastymail.svn.sourceforge.net/viewvc/hastymail/trunk/hastymail2/CHANGES?revision=1983");
 

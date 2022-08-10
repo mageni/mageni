@@ -27,8 +27,7 @@
 include("revisions-lib.inc");
 tag_insight = "We have received reports that the 'apache' http daemon, as included in
 the Debian 'stable' distribution, is vulnerable to the 'artificially
-long slash path directory listing vulnerability' as described in
-http://www.securityfocus.com/vdb/bottom.html?vid=2503 .
+long slash path directory listing vulnerability'
 
 This vulnerability was announced to bugtraq by Dan Harkless.
 

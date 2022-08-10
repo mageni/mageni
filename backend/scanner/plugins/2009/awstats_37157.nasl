@@ -38,7 +38,6 @@ if(description)
 
   script_name("AWStats Multiple Unspecified Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37157");
   script_xref(name:"URL", value:"http://awstats.sourceforge.net/docs/awstats_changelog.txt");
   script_xref(name:"URL", value:"http://awstats.sourceforge.net/");
 

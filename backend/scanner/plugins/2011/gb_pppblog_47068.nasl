@@ -32,7 +32,6 @@ if (description)
   script_tag(name:"creation_date", value:"2011-03-31 17:03:50 +0200 (Thu, 31 Mar 2011)");
   script_bugtraq_id(47068);
   script_name("pppBLOG 'search.php' Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47068");
   script_xref(name:"URL", value:"http://joerg.jo.funpic.org/pppblog/static.php?page=welcome");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");

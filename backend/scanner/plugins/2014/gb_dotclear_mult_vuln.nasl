@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"solution", value:"Upgrade to version 2.6.3 or later.");
 
   script_xref(name:"URL", value:"http://karmainsecurity.com/KIS-2014-05");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/532184");
   script_category(ACT_ATTACK);
   script_family("Web application abuses");
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");

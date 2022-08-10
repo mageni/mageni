@@ -65,7 +65,6 @@ if (description)
 
   script_tag(name:"solution", value:"Update to the latest JIRA version.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42025");
 
 
   exit(0);

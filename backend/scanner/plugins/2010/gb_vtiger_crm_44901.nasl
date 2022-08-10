@@ -39,7 +39,6 @@ if (description)
 
   script_name("Vtiger CRM Multiple Remote Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44901");
   script_xref(name:"URL", value:"http://www.vtiger.com/index.php");
   script_xref(name:"URL", value:"http://www.ush.it/team/ush/hack-vtigercrm_520/vtigercrm_520.txt");
 

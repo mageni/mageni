@@ -56,8 +56,6 @@ if(description)
   script_tag(name:"affected", value:"SecureTransport 4.8.x prior to 4.8.2 Patch 12 are vulnerable.");
   script_tag(name:"solution", value:"The vendor has released updates.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49355");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519464");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

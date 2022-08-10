@@ -37,7 +37,6 @@ if (description)
 
   script_name("IceWarp Mail Server 'raw.php' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55507");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/50441");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-12 12:32:04 +0200 (Wed, 12 Sep 2018) $");

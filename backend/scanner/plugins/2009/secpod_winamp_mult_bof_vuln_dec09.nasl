@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/3575");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/3576");
   script_xref(name:"URL", value:"http://forums.winamp.com/showthread.php?threadid=315355");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508528/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

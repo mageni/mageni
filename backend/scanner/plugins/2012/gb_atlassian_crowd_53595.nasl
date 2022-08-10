@@ -44,7 +44,6 @@ if(description)
   script_dependencies("gb_atlassian_crowd_detect.nasl", "os_detection.nasl");
   script_mandatory_keys("atlassian_crowd/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53595");
   script_xref(name:"URL", value:"https://jira.atlassian.com/browse/JRA-27719");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/jira/");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/JIRA/JIRA+Security+Advisory+2012-05-17");

@@ -37,7 +37,6 @@ if (description)
 
   script_name("ejabberd 'client2server' Message Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38003");
   script_xref(name:"URL", value:"https://support.process-one.net/browse/EJAB/fixforversion/10453");
   script_xref(name:"URL", value:"http://www.process-one.net/en/ejabberd/");
 

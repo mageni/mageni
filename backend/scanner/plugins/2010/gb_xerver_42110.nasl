@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:P/A:N");
   script_name("Xerver Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42110");
   script_xref(name:"URL", value:"http://www.javascript.nu/xerver/");
   script_xref(name:"URL", value:"http://spareclockcycles.org/2010/08/01/multiple-vulnerabilities-in-xerver-4-32/");
 

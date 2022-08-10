@@ -37,7 +37,6 @@ if (description)
   script_version("$Revision: 10458 $");
   script_name("PHP Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53403");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=799187");
   script_xref(name:"URL", value:"http://www.php.net/archive/2012.php#id2012-04-26-1");
   script_xref(name:"URL", value:"http://www.php.net/");

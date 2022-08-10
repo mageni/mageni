@@ -39,7 +39,6 @@ if (description)
 
   script_name("Nagios 'layer' Parameter Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46826");
   script_xref(name:"URL", value:"http://www.nagios.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

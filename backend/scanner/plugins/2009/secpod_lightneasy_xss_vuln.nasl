@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(35229);
   script_name("Cross-Site Scripting Vulnerability in LightNEasy");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35354");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504092/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

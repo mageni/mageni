@@ -43,7 +43,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/35184");
   script_xref(name:"URL", value:"http://support.microsoft.com/kb/967340");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2009-29");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/503451");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

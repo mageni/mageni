@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("TikiWiki/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38608");
   script_xref(name:"URL", value:"http://tikiwiki.svn.sourceforge.net/viewvc/tikiwiki?view=rev&revision=24734");
   script_xref(name:"URL", value:"http://tikiwiki.svn.sourceforge.net/viewvc/tikiwiki?view=rev&revision=25046");
   script_xref(name:"URL", value:"http://tikiwiki.svn.sourceforge.net/viewvc/tikiwiki?view=rev&revision=25424");

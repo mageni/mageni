@@ -74,7 +74,6 @@ if(description)
   script_tag(name:"solution", value:"Update to the latest version of Apache OFBiz.");
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2010/Apr/139");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510746");
   script_xref(name:"URL", value:"http://www.bonsai-sec.com/en/research/vulnerabilities/apacheofbiz-multiple-xss-0103.php");
 
   exit(0);

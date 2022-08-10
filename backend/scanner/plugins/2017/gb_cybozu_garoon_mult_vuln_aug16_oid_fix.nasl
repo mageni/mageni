@@ -64,11 +64,6 @@ if(description)
   script_tag(name:"qod_type", value:"remote_banner");
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92599");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92598");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92600");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92596");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92601");
 
   exit(0);
 }

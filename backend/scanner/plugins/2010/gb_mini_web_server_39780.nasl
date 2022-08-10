@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Mini Web Server Cross Site Scripting and Directory Traversal Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39780");
   script_xref(name:"URL", value:"http://www.jibble.org/miniwebserver/");
 
   script_tag(name:"qod_type", value:"remote_banner");

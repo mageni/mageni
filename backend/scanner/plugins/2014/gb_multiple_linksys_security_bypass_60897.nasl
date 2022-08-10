@@ -36,7 +36,6 @@ if(description)
 
   script_name("Multiple Cisco Linksys Products Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60897");
   script_xref(name:"URL", value:"http://www.cisco.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-14 14:43:25 +0100 (Thu, 14 Mar 2019) $");

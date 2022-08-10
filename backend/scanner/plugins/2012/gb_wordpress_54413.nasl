@@ -37,7 +37,6 @@ if(description)
 
   script_name("WordPress Global Content Blocks PHP Code Execution and Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54413");
   script_xref(name:"URL", value:"http://www.wordpress.org/");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/49854");
 

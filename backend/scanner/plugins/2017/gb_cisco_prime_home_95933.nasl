@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco Prime Home Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95933");
   script_xref(name:"URL", value:"http://www.cisco.com/");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20170201-prime-home");
 

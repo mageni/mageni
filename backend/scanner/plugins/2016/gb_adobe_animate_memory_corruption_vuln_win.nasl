@@ -62,7 +62,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2016/Dec/45");
   script_xref(name:"URL", value:"https://helpx.adobe.com/security/products/animate/apsb16-38.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/539923/100/0/threaded");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/140164/Adobe-Animate-15.2.1.95-Buffer-Overflow.html");
   script_xref(name:"URL", value:"http://hyp3rlinx.altervista.org/advisories/ADOBE-ANIMATE-MEMORY-CORRUPTION-VULNERABILITY.txt");
   script_category(ACT_GATHER_INFO);

@@ -36,10 +36,6 @@ if (description)
 
   script_name("Zavio IP Cameras Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60189");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60191");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60190");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60188");
   script_xref(name:"URL", value:"http://www.coresecurity.com/advisories/zavio-IP-cameras-multiple-vulnerabilities");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

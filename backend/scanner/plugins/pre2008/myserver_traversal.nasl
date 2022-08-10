@@ -39,7 +39,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/339145");
 
   script_tag(name:"solution", value:"Upgrade to myServer 0.7.1 or later.");
 

@@ -34,7 +34,6 @@ if(description)
 
   script_name("TextPattern 'txplib_db.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43055");
   script_xref(name:"URL", value:"http://www.textpattern.com/");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2010-4963.php");
 

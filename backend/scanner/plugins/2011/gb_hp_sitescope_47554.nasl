@@ -60,7 +60,6 @@ site is rendered to the user. Other attacks are also possible.
 
 HP SiteScope versions 9.54, 10.13, 11.01, and 11.1 are affected.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47554");
   script_xref(name:"URL", value:"https://h10078.www1.hp.com/cda/hpms/display/main/hpms_content.jsp?zn=bto&cp=1-11-15-25%5E849_4000_100__");
   script_xref(name:"URL", value:"http://www11.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02807712");
   exit(0);

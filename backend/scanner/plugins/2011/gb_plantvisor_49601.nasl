@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("CarelDataServer/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49601");
   script_xref(name:"URL", value:"http://www.carel.com/carelcom/web/eng/catalogo/prodotto_dett.jsp?id_prodotto=91");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/plantvisor_1-adv.txt");
 

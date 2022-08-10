@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("SunJavaDirServer/installed", "ldap/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37699");
   script_xref(name:"URL", value:"http://intevydis.blogspot.com/2010/01/sun-directory-server-70.html");
   script_xref(name:"URL", value:"http://www.sun.com/software/products/directory_srvr/home_directory.xml");
 

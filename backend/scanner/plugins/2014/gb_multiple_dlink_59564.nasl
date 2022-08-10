@@ -36,7 +36,6 @@ if (description)
 
   script_name("Multiple D-Link Products Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59564");
   script_xref(name:"URL", value:"http://www.dlink.com/");
 
   script_tag(name:"impact", value:"Exploiting this issue could allow an attacker to execute arbitrary

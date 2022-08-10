@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("IBM Lotus Domino iCalendar Meeting Request Parsing Remote Stack Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46232");
   script_xref(name:"URL", value:"http://www-142.ibm.com/software/sw-lotus/products/product4.nsf/wdocs/dominohomepage");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-048");
 

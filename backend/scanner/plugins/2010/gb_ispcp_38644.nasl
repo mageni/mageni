@@ -36,7 +36,6 @@ if(description)
 
   script_name("ispCP Omega 'net2ftp_globals[application_skinsdir]' Parameter Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38644");
   script_xref(name:"URL", value:"http://isp-control.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

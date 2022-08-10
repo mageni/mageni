@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("imap/mercur/detected");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/19267/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/17138");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure
   of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer

@@ -58,7 +58,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to Coppermine Photo Gallery 1.4.22 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34782");
 
   exit(0);
 }

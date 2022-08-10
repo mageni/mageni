@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: ImageMagick";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/bid/21185/discuss
 http://www.vuxml.org/freebsd/18e3a5be-81f9-11db-95a2-0012f06707f0.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

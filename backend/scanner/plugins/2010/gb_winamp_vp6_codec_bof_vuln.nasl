@@ -36,7 +36,6 @@ if(description)
   script_name("Winamp VP6 Content Parsing Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-95/");
   script_xref(name:"URL", value:"http://forums.winamp.com/showthread.php?t=322995");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514484/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(36507);
   script_name("avast! Multiple Vulnerabilities - Oct09 (Windows)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/36858/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506681");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/2761");
 
   script_category(ACT_GATHER_INFO);

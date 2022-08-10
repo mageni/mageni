@@ -36,8 +36,7 @@ tag_solution = "All users should upgrade to uudeview 0.5.20:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200403-05
 http://bugs.gentoo.org/show_bug.cgi?id=44859
-http://www.idefense.com/application/poi/display?id=76&type=vulnerabilities
-http://www.securityfocus.com/bid/9758";
+http://www.idefense.com/application/poi/display?id=76&type=vulnerabilities";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200403-05.";
 

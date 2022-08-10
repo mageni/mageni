@@ -40,7 +40,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/40933");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/14598/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/512974/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

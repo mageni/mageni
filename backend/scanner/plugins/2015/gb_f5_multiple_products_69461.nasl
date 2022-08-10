@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/rsync", 873);
   script_mandatory_keys("rsync/modules_in_kb");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69461");
   script_xref(name:"URL", value:"https://support.f5.com/kb/en-us/solutions/public/15000/200/sol15236.html");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary code within

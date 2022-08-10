@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Open-FTPD Multiple Buffer Overflow Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30993");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/64931");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/open-ftpd");
 

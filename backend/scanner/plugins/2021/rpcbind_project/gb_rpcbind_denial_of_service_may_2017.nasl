@@ -57,7 +57,6 @@ if(description)
 
   script_tag(name:"solution", value:"The vendor has released updates. Please see the references for more information.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/98325/discuss");
 
   exit(0);
 }

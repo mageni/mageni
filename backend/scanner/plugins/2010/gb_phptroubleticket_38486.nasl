@@ -36,7 +36,6 @@ if(description)
 
   script_name("Phptroubleticket 'vedi_faq.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38486");
   script_xref(name:"URL", value:"http://www.phptroubleticket.org/downloads.html");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -38,7 +38,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"https://ikkisoft.com/stuff/LC-2009-01.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33702");
 
   script_tag(name:"summary", value:"ZeroShell is prone to a remote code execution (RCE) vulnerability
   because it fails to sufficiently sanitize user-supplied input.");

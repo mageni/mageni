@@ -37,7 +37,6 @@ if(description)
   script_name("HP SNMP Agents Open Redirect and Cross-site Scripting Vulnerabilities (Linux)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/48978/");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/48978");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522546");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

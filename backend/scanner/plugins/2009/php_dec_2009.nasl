@@ -43,8 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37390");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37389");
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php#5.2.12");
   script_xref(name:"URL", value:"http://www.php.net/releases/5_2_12.php");
   script_xref(name:"URL", value:"http://www.php.net");

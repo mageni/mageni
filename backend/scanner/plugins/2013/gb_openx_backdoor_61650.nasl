@@ -38,7 +38,6 @@ if(description)
 
   script_name("OpenX 'flowplayer-3.1.1.min.js' Backdoor Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61650");
   script_xref(name:"URL", value:"http://blog.openx.org/08/important-update-for-openx-source-2-8-10-users/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-13 08:37:35 +0100 (Wed, 13 Mar 2019) $");

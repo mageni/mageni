@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/35473");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/534149/30/0/threaded");
   script_xref(name:"URL", value:"http://www.itas.vn/news/ITAS-Team-discovered-SQL-Injection-in-PBBoard-CMS-68.html");
 
   script_tag(name:"summary", value:"This host is installed with PBBoard CMS

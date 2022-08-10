@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("MercuryBoard/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37605");
   script_xref(name:"URL", value:"http://www.mercuryboard.com/");
 
   script_tag(name:"summary", value:"MercuryBoard is prone to a cross-site scripting vulnerability because

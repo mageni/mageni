@@ -48,7 +48,6 @@ if(description)
  application, access or modify data, or exploit latent
  vulnerabilities in the underlying database.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34273");
 
   script_tag(name:"qod_type", value:"remote_app");
 

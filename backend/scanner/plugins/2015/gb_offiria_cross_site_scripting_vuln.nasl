@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"solution_type", value:"Workaround");
 
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23210");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/532048");
   script_xref(name:"URL", value:"http://www.zerodaylab.com/vulnerabilities/CVE-2014/CVE-2014-2689.html");
 
   script_category(ACT_ATTACK);

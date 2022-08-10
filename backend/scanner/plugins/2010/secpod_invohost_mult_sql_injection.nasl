@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("INVOhost Multiple SQL injection vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39095");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38962");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/11874");
 
   script_category(ACT_GATHER_INFO);

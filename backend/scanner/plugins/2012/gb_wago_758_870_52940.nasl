@@ -42,8 +42,6 @@ if(description)
   script_dependencies("http_version.nasl", "telnetserver_detect_type_nd_version.nasl");
   script_require_ports("Services/www", 80, "Services/telnet", 23);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52940");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52942");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICSA-12-249-02.pdf");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICS-ALERT-12-097-01.pdf");
   script_xref(name:"URL", value:"http://www.wago.com/wagoweb/documentation/app_note/a1176/a117600e.pdf");

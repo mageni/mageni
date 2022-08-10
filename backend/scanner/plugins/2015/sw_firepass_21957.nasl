@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"affected", value:"F5 Firepass from 5.4.0 to 5.5.1 and 6.0.0.");
   script_tag(name:"solution", value:"The vendor has released updates listened in the referred advisory.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/21957");
   script_xref(name:"URL", value:"https://support.f5.com/kb/en-us/solutions/public/6000/900/sol6923.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

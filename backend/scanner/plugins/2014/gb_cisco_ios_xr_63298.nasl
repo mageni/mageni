@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco IOS XR Software Fragmented Packets Processing Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63298");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20131023-iosxr");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow an attacker to cause a denial-of-service condition.");

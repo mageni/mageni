@@ -36,7 +36,6 @@ if(description)
 
   script_name("SMC Networks SMC8024L2 Switch Web Interface Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54390");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/377915");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-06 12:59:26 +0200 (Thu, 06 Sep 2018) $");

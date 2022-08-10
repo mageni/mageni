@@ -62,7 +62,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/57063");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/91443");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/125344");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/531191/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");

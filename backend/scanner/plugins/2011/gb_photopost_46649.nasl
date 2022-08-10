@@ -36,9 +36,7 @@ if (description)
 
   script_name("PhotoPost PHP 'showgallery.php' Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46649");
   script_xref(name:"URL", value:"http://www.photopost.com");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516793");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

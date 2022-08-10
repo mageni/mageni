@@ -58,7 +58,6 @@ if(description)
   script_tag(name:"summary", value:"TWiki is prone to multiple cross-site scripting vulnerabilities
  because it fails to sufficiently sanitize user-supplied data.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44103");
   script_xref(name:"URL", value:"http://twiki.org/cgi-bin/view/Codev/SecurityAlert-CVE-2010-3841");
   script_xref(name:"URL", value:"http://twiki.org/");
 

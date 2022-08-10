@@ -36,7 +36,6 @@ if(description)
 
   script_name("Dienstplan Predictable Random Password Generation Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49412");
   script_xref(name:"URL", value:"http://www.thomas-gubisch.de/dienstplan.html");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/current/0370.html");
 

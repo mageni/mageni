@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("ExponentCMS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96039");
   script_xref(name:"URL", value:"https://github.com/exponentcms/exponent-cms/issues/73");
   script_xref(name:"URL", value:"http://www.exponentcms.org/news/patch-2-released-for-v2-4-1");
 

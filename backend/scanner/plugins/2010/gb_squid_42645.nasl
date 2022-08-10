@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/http_proxy", 3128, "Services/www", 8080);
   script_mandatory_keys("squid_proxy_server/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42645");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=62692");
   script_xref(name:"URL", value:"http://marc.info/?l=squid-users&m=128263555724981&w=2");
   script_xref(name:"URL", value:"http://www.squid-cache.org/");

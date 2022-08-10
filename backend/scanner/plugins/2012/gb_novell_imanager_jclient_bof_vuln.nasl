@@ -38,8 +38,6 @@ if (description)
   script_name("Novell iManager jclient 'EnteredAttrName' Buffer Overflow Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48672/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40485");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40480");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/74669");
   script_xref(name:"URL", value:"http://www.novell.com/support/kb/doc.php?id=7002971");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/novell-imanager-buffer-overflow-off-by-one-vulnerabilities");

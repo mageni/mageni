@@ -38,7 +38,6 @@ if (description)
   script_name("Siemens Scalance X-200 Series Switches Insufficient Entropy Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62341");
   script_xref(name:"URL", value:"http://subscriber.communications.siemens.com/");
   script_xref(name:"URL", value:"http://blog.ioactive.com/2014/02/the-password-is-irrelevant-too.html");
 

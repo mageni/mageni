@@ -53,7 +53,6 @@ it fails to sufficiently sanitize user-supplied input data.
 
 Versions prior to AWStats 7.0 are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45210");
   script_xref(name:"URL", value:"http://awstats.sourceforge.net/docs/awstats_changelog.txt");
   script_xref(name:"URL", value:"http://sourceforge.net/tracker/?func=detail&aid=2537928&group_id=13764&atid=113764");
   script_xref(name:"URL", value:"http://awstats.sourceforge.net/");

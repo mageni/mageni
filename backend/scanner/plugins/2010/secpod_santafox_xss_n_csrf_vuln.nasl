@@ -36,8 +36,6 @@ if(description)
   script_name("Santafox Cross-Site Scripting and Cross-Site Request Forgery Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/41465");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/1009-exploits/santafox-xssxsrf.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513737/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513738/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2010 SecPod");

@@ -36,7 +36,6 @@ if(description)
   script_name("XnView Multiple Buffer Overflow Vulnerabilities - Mar12 (Windows)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/47388/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18491/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52405/info");
   script_xref(name:"URL", value:"http://forums.cnet.com/7726-6132_102-5285780.html");
 
   script_category(ACT_GATHER_INFO);

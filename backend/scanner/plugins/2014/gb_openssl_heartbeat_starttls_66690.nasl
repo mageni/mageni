@@ -43,7 +43,6 @@ if(description)
                       "gb_postgres_tls_support.nasl", "gb_starttls_xmpp.nasl", "gb_starttls_nntp.nasl", "gb_starttls_ldap.nasl");
   script_mandatory_keys("ssl_tls/port");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66690");
   script_xref(name:"URL", value:"http://openssl.org/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to gain access to sensitive

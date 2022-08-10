@@ -50,7 +50,6 @@ if (description)
   vulnerabilities in the underlying database.
 
   Bugs Online 2.14 is vulnerable, other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33539");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/48382");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year

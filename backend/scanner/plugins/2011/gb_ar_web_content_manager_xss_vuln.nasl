@@ -37,7 +37,6 @@ if(description)
   script_name("AR Web Content Manager (AWCM) 'search.php' Cross Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"http://secpod.org/blog/?p=179");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/47126/");
   script_xref(name:"URL", value:"http://secpod.org/advisories/SECPOD_AWCM_XSS.txt");
 
   script_category(ACT_ATTACK);

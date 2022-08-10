@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");
   script_cve_id("CVE-2008-6063");
   script_name("Microsoft Word 2007 Sensitive Information Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/486088/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

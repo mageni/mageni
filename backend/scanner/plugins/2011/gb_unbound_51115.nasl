@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47220");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/209659");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51115");
   script_xref(name:"URL", value:"http://unbound.nlnetlabs.nl/downloads/CVE-2011-4528.txt");
   script_xref(name:"URL", value:"http://unbound.net/index.html");
 

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 10:25:16 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-12-04 12:37:33 +0530 (Tue, 04 Dec 2012)");
   script_name("Google Chrome Multiple Vulnerabilities-02 Dec2012 (Windows)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56741");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.in/2012/11/stable-channel-update_29.html");
 
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

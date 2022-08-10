@@ -34,9 +34,7 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Nagios XI Multiple Cross Site Request Forgery Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42322");
   script_xref(name:"URL", value:"http://www.nagios.com/products/nagiosxi");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512967");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

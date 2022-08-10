@@ -48,8 +48,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpip_management/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/27468");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/487122");
 
   script_tag(name:"summary", value:"phpIP Management is prone to multiple SQL-injection vulnerabilities
   because it fails to sufficiently sanitize user-supplied data before using it in an SQL query.");

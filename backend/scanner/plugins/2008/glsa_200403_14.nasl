@@ -35,9 +35,7 @@ tag_solution = "Monit users should upgrade to version 4.2 or later:
     # emerge '>=app-admin/monit-4.2'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200403-14
-http://bugs.gentoo.org/show_bug.cgi?id=43967
-http://www.securityfocus.com/bid/9098
-http://www.securityfocus.com/bid/9099";
+http://bugs.gentoo.org/show_bug.cgi?id=43967";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200403-14.";
 

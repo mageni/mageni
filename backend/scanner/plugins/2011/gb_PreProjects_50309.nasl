@@ -32,7 +32,6 @@ if (description)
   script_tag(name:"creation_date", value:"2011-10-24 14:18:38 +0200 (Mon, 24 Oct 2011)");
   script_bugtraq_id(50309);
   script_name("PreProjects Pre Studio Business Cards Designer 'page.php' SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50309");
   script_xref(name:"URL", value:"http://www.preprojects.com/card.asp");
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");

@@ -37,7 +37,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://coppermine.sourceforge.net/board/index.php?topic=17134.0
-http://www.securityfocus.com/archive/1/396080
 http://www.vuxml.org/freebsd/756db070-b9d4-11d9-ae81-000ae42e9b93.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

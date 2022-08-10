@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2010-0716");
   script_name("Microsoft SharePoint Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://www.hacktics.com/content/advisories/AdvMS20100222.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509683/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

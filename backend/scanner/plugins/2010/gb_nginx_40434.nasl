@@ -40,7 +40,6 @@ if (description)
 
   script_name("nginx Space String Remote Source Code Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40434");
   script_xref(name:"URL", value:"http://nginx.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

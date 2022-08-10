@@ -65,7 +65,6 @@ pass-through authentication on the firewall.");
 a workaround disable telnet pass-through authentication if not required.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10594");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62962");
 
   exit(0);
 }

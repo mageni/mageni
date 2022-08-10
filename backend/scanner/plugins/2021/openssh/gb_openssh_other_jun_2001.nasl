@@ -60,7 +60,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 2.9.1 or later.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/2917");
 
   exit(0);
 }

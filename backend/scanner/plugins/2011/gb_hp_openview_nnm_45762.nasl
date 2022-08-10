@@ -44,9 +44,7 @@ if(description)
   script_require_ports("Services/www", 7510);
   script_mandatory_keys("HP/OVNNM/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45762");
   script_xref(name:"URL", value:"http://openview.hp.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/515628");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-003/");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-004/");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-005/");

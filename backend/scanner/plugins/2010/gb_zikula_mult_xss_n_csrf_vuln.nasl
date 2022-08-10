@@ -47,7 +47,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/39614");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/58224");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/510988/100/0/threaded");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/xss_vulnerability_in_zikula_application_framework.html");
 
   script_tag(name:"insight", value:"- Input passed to the 'lang' parameter and to the 'func' parameter in the

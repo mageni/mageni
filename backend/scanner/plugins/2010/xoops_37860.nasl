@@ -43,10 +43,8 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("XOOPS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37860");
   script_xref(name:"URL", value:"http://www.codescanlabs.com/research/advisories/xoops-2-4-3-vulnerability/");
   script_xref(name:"URL", value:"http://www.xoops.org");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/509034");
 
   script_tag(name:"summary", value:"XOOPS is prone to an HTTP-header-injection vulnerability and an arbitrary-file-
   deletion vulnerability.");

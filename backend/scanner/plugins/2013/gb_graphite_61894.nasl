@@ -37,7 +37,6 @@ if (description)
   script_name("Graphite Remote Code Execution Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61894");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-08-22 17:46:22 +0200 (Thu, 22 Aug 2013)");

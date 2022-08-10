@@ -34,9 +34,7 @@ tag_solution = "All FreeRADIUS users should upgrade to the latest available vers
     # emerge --ask --oneshot --verbose '>=net-dialup/freeradius-1.0.2-r4'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200505-13
-http://bugs.gentoo.org/show_bug.cgi?id=91736
-http://www.securityfocus.com/bid/13540/
-http://www.securityfocus.com/bid/13541/";
+http://bugs.gentoo.org/show_bug.cgi?id=91736";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200505-13.";
 

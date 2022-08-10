@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-10-03 11:40:26 +0530 (Wed, 03 Oct 2012)");
   script_name("Symantec Norton AntiVirus Protocol Handler (HCP) Code Execution Vulnerability");
   script_xref(name:"URL", value:"http://www.n00bz.net/antivirus-cve");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514356");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Oct/274");
 
   script_tag(name:"qod_type", value:"registry");

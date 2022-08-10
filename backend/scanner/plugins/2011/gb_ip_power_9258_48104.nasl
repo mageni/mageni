@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:N");
   script_name("IP Power 9258 TGI Scripts Unauthorized Access Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/48104");
   script_xref(name:"URL", value:"http://www.opengear.com/product-ip-power-9258.html");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/101963/ippower-bypass.txt");
 

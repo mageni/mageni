@@ -59,7 +59,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2015-3");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/134084");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/536761/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_family("General");

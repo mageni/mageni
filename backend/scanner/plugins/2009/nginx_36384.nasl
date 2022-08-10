@@ -39,7 +39,6 @@ if (description)
 
   script_name("nginx HTTP Request Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36384");
   script_xref(name:"URL", value:"http://nginx.net/CHANGES-0.5");
   script_xref(name:"URL", value:"http://nginx.net/CHANGES-0.6");
   script_xref(name:"URL", value:"http://nginx.net/CHANGES-0.7");

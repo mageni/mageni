@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(45805);
   script_name("ICQ 7 Instant Messaging Client Remote Code Execution Vulnerability");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/680540");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/515724");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

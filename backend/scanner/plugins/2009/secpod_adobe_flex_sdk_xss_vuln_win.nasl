@@ -39,7 +39,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/36374");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/52608");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb09-13.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/505948/100/0/threaded");
   script_xref(name:"URL", value:"http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+3");
 
   script_category(ACT_GATHER_INFO);

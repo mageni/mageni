@@ -39,7 +39,6 @@ if (description)
 
   script_name("Mantis 'manage_proj_cat_add.php' HTML Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42233");
   script_xref(name:"URL", value:"http://www.mantisbt.org/");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-103/");
 

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("PhreeBooks Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44260");
   script_xref(name:"URL", value:"http://www.phreebooks.com/");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-122/");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-123/");

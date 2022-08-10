@@ -41,7 +41,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-04-12 18:02:44 +0530 (Thu, 12 Apr 2012)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/70444");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18728/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50024/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/111749/joomlatheestateagent-sql.txt");
   script_xref(name:"URL", value:"http://www.sectechno.com/2012/04/11/sql-injection-in-joomla-com_estateagent/");
 

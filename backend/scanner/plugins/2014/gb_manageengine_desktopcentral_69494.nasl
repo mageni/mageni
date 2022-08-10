@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("ManageEngine/Desktop_Central/installed");
   script_require_ports("Services/www", 8020);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69494");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to upload arbitrary files to the
   affected computer. This can result in arbitrary code execution within the context of the vulnerable application.");

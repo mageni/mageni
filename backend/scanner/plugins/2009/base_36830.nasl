@@ -44,7 +44,6 @@ if(description)
 
   script_name("Basic Analysis and Security Engine Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36830");
   script_xref(name:"URL", value:"http://secureideas.sourceforge.net/");
 
   script_category(ACT_GATHER_INFO);

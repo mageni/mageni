@@ -41,12 +41,8 @@ if (description)
 
   script_name("HP Power Manager Multiple Remote Code Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37866");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37867");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37873");
   script_xref(name:"URL", value:"http://h18000.www1.hp.com/products/servers/proliantstorage/power-protection/software/power-manager/index.html");
   script_xref(name:"URL", value:"http://h18004.www1.hp.com/products/servers/proliantstorage/power-protection/software/power-manager/dl/HPPM_Windows_Readme4210_Eng.zip");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/509042");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Serva32 Directory Traversal and Denial of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47760");
   script_xref(name:"URL", value:"http://www.vercot.com/~serva/");
 
   script_category(ACT_ATTACK);

@@ -45,7 +45,6 @@ if(description)
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-7.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51447/info");
 
   script_tag(name:"impact", value:"Successful exploitation could allow remote attackers to cause a denial
   of service via a specially crafted request.");

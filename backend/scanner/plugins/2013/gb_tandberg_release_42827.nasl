@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/telnet", 23);
   script_mandatory_keys("tandberg_codec_release");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42827");
   script_xref(name:"URL", value:"http://www.tandberg.com/products/mxp_user_guide.jsp");
   script_xref(name:"URL", value:"ftp://ftp.tandberg.com/pub/software/endpoints/mxp/TANDBERG%20MXP%20Endpoints%20Software%20Release%20Notes%20%28F9%29.pdf");
 

@@ -46,7 +46,6 @@ if(description)
   script_tag(name:"affected", value:"Apache Struts 2.3.7 through 2.3.33, and 2.5 through  2.5.12 are vulnerable");
   script_tag(name:"solution", value:"Updates are available. Apache Struts 2.3.x users should update to Apache Struts 2.3.34, Apache Struts 2.5.x users should update to Apache Struts 2.5.13.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100611");
   script_xref(name:"URL", value:"https://struts.apache.org/docs/s2-050.html");
   script_xref(name:"URL", value:"https://struts.apache.org/docs/s2-051.html");
 

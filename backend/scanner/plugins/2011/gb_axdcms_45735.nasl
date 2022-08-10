@@ -37,7 +37,6 @@ if (description)
 
   script_name("Ax Developer CMS 'user.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45735");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

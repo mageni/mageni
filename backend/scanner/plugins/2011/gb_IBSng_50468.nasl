@@ -32,9 +32,7 @@ if (description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("IBSng 'str' Parameter Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50468");
   script_xref(name:"URL", value:"http://ibs.sourceforge.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520347");
   script_tag(name:"last_modification", value:"$Date: 2018-10-20 13:59:41 +0200 (Sat, 20 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-11-02 08:00:00 +0100 (Wed, 02 Nov 2011)");
   script_tag(name:"qod_type", value:"remote_vul");

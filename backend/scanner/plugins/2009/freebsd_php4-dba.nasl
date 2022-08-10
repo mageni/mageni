@@ -33,7 +33,6 @@ tag_insight = "The following packages are affected:
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/498746/30/0/threaded
 http://securityreason.com/achievement_securityalert/58
 http://www.vuxml.org/freebsd/1e8031be-4258-11de-b67a-0030843d3802.html";
 tag_summary = "The remote host is missing an update to the system

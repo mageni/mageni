@@ -59,7 +59,6 @@ likely cause denial-of-service conditions.
 
 Novell iManager 2.7.2 and prior are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37672");
   script_xref(name:"URL", value:"http://www.novell.com/products/consoles/imanager/features.html");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-001/");
   script_xref(name:"URL", value:"http://www.novell.com/support/viewContent.do?externalId=7004985&sliceId=1");

@@ -33,7 +33,6 @@ if (description)
 
   script_name("Multiple Toshiba e-Studio Devices Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50168");
   script_xref(name:"URL", value:"http://www.eid.toshiba.com.au/n_mono_search.asp");
 
   script_tag(name:"cvss_base", value:"5.0");

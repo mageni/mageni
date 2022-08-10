@@ -67,7 +67,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/37322");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535796/30/0/threaded");
   script_xref(name:"URL", value:"http://www.vulnerability-lab.com/download_content.php?id=1501");
 
   script_category(ACT_GATHER_INFO);

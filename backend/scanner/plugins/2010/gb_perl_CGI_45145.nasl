@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/cgi/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45145");
   script_xref(name:"URL", value:"http://search.cpan.org/~lds/CGI.pm-3.50/");
   script_xref(name:"URL", value:"http://www.perl.com");
   script_xref(name:"URL", value:"http://perl5.git.perl.org/perl.git/commit/84601d63a7e34958da47dad1e61e27cb3bd467d1");

@@ -39,7 +39,6 @@ if(description)
 
   script_name("OpenSSL Cryptographic Message Syntax Memory Corruption Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40502");
   script_xref(name:"URL", value:"http://www.openssl.org");
   script_xref(name:"URL", value:"http://www.openssl.org/news/secadv_20100601.txt");
 

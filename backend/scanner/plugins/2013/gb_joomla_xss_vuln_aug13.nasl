@@ -55,7 +55,6 @@ is not properly sanitised before being returned to the user.");
 or script code or discloses sensitive information resulting in loss of confidentiality.");
 
   script_xref(name:"URL", value:"http://cxsecurity.com/issue/WLB-2013080045");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/527765");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/joomla-315-cross-site-scripting");
 
   script_category(ACT_ATTACK);

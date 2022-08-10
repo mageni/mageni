@@ -41,7 +41,6 @@ if(description)
   script_mandatory_keys("SMB/WindowsVersion");
   script_require_ports(139, 445);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30499/discuss");
   script_xref(name:"URL", value:"http://www.realvnc.com/");
 
   script_tag(name:"summary", value:"This host is installed with RealVNC product, which is prone to

@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"6.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("w-CMS HTML Injection and Local File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51359");
   script_xref(name:"URL", value:"http://w-cms.info/");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-01-11 11:29:25 +0100 (Wed, 11 Jan 2012)");

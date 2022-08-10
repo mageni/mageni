@@ -52,7 +52,6 @@ if (description)
   underlying database.
 
   RevSense 1.0 is vulnerable, other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32624");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year
   since the disclosure of this vulnerability. Likely none will be provided anymore.

@@ -38,7 +38,6 @@ if (description)
 
   script_name("net2ftp 'admin1.template.php' Local and Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45312");
   script_xref(name:"URL", value:"http://www.net2ftp.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

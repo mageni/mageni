@@ -104,7 +104,6 @@ if(description)
  script_xref(name : "URL" , value : "http://secunia.com/advisories/12232");
  script_xref(name : "URL" , value : "http://bugzilla.mozilla.org/show_bug.cgi?id=251381");
  script_xref(name : "URL" , value : "http://dl.sourceforge.net/sourceforge/libpng/ADVISORY.txt");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/370853");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/f9e3e60b-e650-11d8-9b0a-000347a4fa7d.html");
  exit(0);
 }

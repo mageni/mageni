@@ -32,7 +32,6 @@ if(description)
   script_cve_id("CVE-2012-1217");
   script_version("$Revision: 11435 $");
   script_name("STHS v2 Web Portal 'team' parameter Multiple SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51991");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73154");
   script_xref(name:"URL", value:"http://www.simhl.net/");
   script_xref(name:"URL", value:"http://0nto.wordpress.com/2012/02/13/sths-v2-web-portal-2-2-sql-injection-vulnerabilty/");

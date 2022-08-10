@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_version("$Revision: 11144 $");
   script_name("Campaign Enterprise Multiple Security Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56117");
   script_xref(name:"URL", value:"http://www.arialsoftware.com/enterprise.htm");
   script_tag(name:"last_modification", value:"$Date: 2018-08-28 13:37:19 +0200 (Tue, 28 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-10-22 13:15:10 +0200 (Mon, 22 Oct 2012)");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("vsftpd/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51013");
   script_xref(name:"URL", value:"http://dividead.wordpress.com/tag/heap-overflow/");
   script_xref(name:"URL", value:"https://security.appspot.com/vsftpd/Changelog.txt");
   script_xref(name:"URL", value:"https://security.appspot.com/vsftpd.html");

@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Pentaho BI Server Multiple Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37024");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507168/100/0/threaded");
   script_xref(name:"URL", value:"http://antisnatchor.com/2009/06/20/pentaho-1701062-multiple-vulnerabilities/");
   script_xref(name:"URL", value:"http://jira.pentaho.com/browse/BISERVER-2698?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel");
 

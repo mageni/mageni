@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
   script_name("Opera Browser 'SELECT' HTML Tag Remote Memory Corruption Vulnerability (Windows)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/67338");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517914/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2011 Greenbone Networks GmbH");

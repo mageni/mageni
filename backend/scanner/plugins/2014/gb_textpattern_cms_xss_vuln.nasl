@@ -61,7 +61,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/96802");
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23223");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/128519/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/533596/100/0/threaded");
   script_xref(name:"URL", value:"http://textpattern.com/weblog/379/textpattern-cms-457-released-ten-years-on");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");

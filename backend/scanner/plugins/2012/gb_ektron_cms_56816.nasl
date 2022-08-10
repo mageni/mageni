@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_version("$Revision: 11003 $");
   script_name("Ektron CMS 'XslCompiledTransform' Class Remote Code Execution Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56816");
   script_tag(name:"last_modification", value:"$Date: 2018-08-16 13:08:00 +0200 (Thu, 16 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-12-10 11:13:54 +0100 (Mon, 10 Dec 2012)");
   script_category(ACT_ATTACK);

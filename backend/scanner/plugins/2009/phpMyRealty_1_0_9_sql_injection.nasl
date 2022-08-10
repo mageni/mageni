@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"affected", value:"These issues affect phpMyRealty 1.0.7 and 1.0.9, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30862");
   exit(0);
 }
 

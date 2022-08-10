@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Microsoft IIS IP Address/Internal Network Name Disclosure Vulnerability");
   script_xref(name:"URL", value:"http://support.microsoft.com/kb/834141/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/3159/info");
   script_xref(name:"URL", value:"http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q218180");
   script_xref(name:"URL", value:"http://www.juniper.net/security/auto/vulnerabilities/vuln3159.html");
 

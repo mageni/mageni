@@ -35,7 +35,6 @@ if (description)
 
   script_name("Ingate SIParator SIP Module Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48567");
   script_xref(name:"URL", value:"http://www.ingate.com/Relnote.php?ver=492");
 
   script_tag(name:"qod_type", value:"remote_banner");

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/golden_tfp/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45924");
   script_xref(name:"URL", value:"http://www.mediafire.com/?jej19gc93zjbiyu");
 
   script_tag(name:"summary", value:"Golden FTP Server is prone to a denial-of-service vulnerability.");

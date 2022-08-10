@@ -55,7 +55,6 @@ if (description)
   is rendered to the user, other attacks are also possible.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35134");
   exit(0);
 }
 

@@ -76,7 +76,6 @@ administrative actions and gain unauthorized access to the affected application.
 Other attacks are also possible.
 
 Symantec Message Filter 6.3 is vulnerable.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54136");
   script_xref(name:"URL", value:"http://www.symantec.com");
   script_xref(name:"URL", value:"http://www.symantec.com/business/support/index?page=content&id=TECH191487");
   exit(0);

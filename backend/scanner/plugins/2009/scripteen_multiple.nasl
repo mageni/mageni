@@ -52,8 +52,6 @@ if(description)
   script_tag(name:"affected", value:"Scripteen Free Image Hosting Script 2.3 is vulnerable. Other versions
   may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35800");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35801");
   script_xref(name:"URL", value:"http://www.scripteen.com/scripts/scripteen-free-image-hosting-script.html#more-10");
 
   script_tag(name:"qod_type", value:"remote_app");

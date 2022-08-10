@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("MapServer/Installed");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41855");
   script_xref(name:"URL", value:"http://trac.osgeo.org/mapserver/ticket/3484");
   script_xref(name:"URL", value:"http://trac.osgeo.org/mapserver/ticket/3485");
   script_xref(name:"URL", value:"http://lists.osgeo.org/pipermail/mapserver-users/2010-July/066052.html");

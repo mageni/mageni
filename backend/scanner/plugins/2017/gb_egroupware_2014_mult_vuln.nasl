@@ -44,8 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("egroupware/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67303");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67409");
   script_xref(name:"URL", value:"http://www.egroupware.org/");
 
   script_tag(name:"summary", value:"EGroupware is prone to multiple CSRF and remote PHP code-execution vulnerabilities.");

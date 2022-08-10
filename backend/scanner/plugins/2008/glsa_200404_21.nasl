@@ -48,7 +48,6 @@ sambaPwdLastSet attribute on each account, and ensure it is not 0.
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200404-21
 http://bugs.gentoo.org/show_bug.cgi?id=41800
 http://bugs.gentoo.org/show_bug.cgi?id=45965
-http://www.securityfocus.com/archive/1/353222/2004-04-09/2004-04-15/1
 http://seclists.org/lists/bugtraq/2004/Mar/0189.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200404-21.";

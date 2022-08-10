@@ -34,7 +34,6 @@ if(description)
 
   script_name("TYPSoft FTP Server 'RETR' Command Remote Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40181");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/ftpserv/");
 
   script_tag(name:"cvss_base", value:"5.0");

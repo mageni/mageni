@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("XAMPP Cross Site Scripting and Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44579");
   script_xref(name:"URL", value:"http://www.apachefriends.org/en/xampp.html");
 
   script_tag(name:"qod_type", value:"remote_vul");

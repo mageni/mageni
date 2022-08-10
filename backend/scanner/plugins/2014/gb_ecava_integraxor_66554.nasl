@@ -36,7 +36,6 @@ if (description)
   script_name("Ecava IntegraXor Account Information Disclosure Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66554");
   script_xref(name:"URL", value:"http://www.integraxor.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-25 14:00:24 +0200 (Thu, 25 Oct 2018) $");

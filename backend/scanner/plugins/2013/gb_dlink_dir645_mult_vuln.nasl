@@ -58,7 +58,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/27283");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Aug/17");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/122659");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/527705");
   script_xref(name:"URL", value:"http://roberto.greyhats.it/advisories/20130801-dlink-dir645.txt");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/hardware/d-link-dir-645-103b08-multiple-vulnerabilities");
 

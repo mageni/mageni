@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:N/I:N/A:P");
   script_name("XM Easy Personal FTP Server 'TYPE' Command Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46314");
   script_xref(name:"URL", value:"http://www.dxm2008.com/data/ftpserversetup.exe");
 
   script_tag(name:"qod_type", value:"remote_banner");

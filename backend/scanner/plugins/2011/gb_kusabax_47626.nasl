@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Kusaba X Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47626");
   script_xref(name:"URL", value:"http://kusabax.cultnet.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

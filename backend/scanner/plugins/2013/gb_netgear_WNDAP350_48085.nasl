@@ -35,7 +35,6 @@ if (description)
 
   script_name("NetGear WNDAP350 Wireless Access Point Multiple Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48085");
   script_xref(name:"URL", value:"http://www.netgear.com/");
   script_xref(name:"URL", value:"https://revspace.nl/RevelationSpace/NewsItem11x05x30x0");
 

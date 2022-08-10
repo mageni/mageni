@@ -43,9 +43,7 @@ if(description)
   script_dependencies("imp_detect.nasl");
   script_mandatory_keys("horde/imp/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43515");
   script_xref(name:"URL", value:"http://www.horde.org/imp/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513992");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 

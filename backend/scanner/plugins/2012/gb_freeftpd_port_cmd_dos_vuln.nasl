@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/17737");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/1339/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/417602");
 
   script_tag(name:"impact", value:"Successful exploitation allows remote attackers to crash an affected server,
   effectively denying service to legitimate users.");

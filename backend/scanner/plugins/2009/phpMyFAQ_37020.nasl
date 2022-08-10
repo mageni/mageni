@@ -36,7 +36,6 @@ if (description)
 
   script_name("phpMyFAQ Search Page Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37020");
   script_xref(name:"URL", value:"http://www.phpmyfaq.de/advisory_2009-09-01.php");
 
   script_tag(name:"qod_type", value:"remote_banner");

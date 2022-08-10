@@ -59,8 +59,6 @@ if(description)
   script_tag(name:"affected", value:"TYPO3 3.5 b5");
   script_tag(name:"solution", value:"Upgrade to TYPO3 version 3.5.0 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/6985");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/313488");
 
   script_tag(name:"qod_type", value:"remote_app");
   script_tag(name:"solution_type", value:"VendorFix");

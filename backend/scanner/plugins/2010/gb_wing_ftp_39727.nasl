@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/wing/ftp/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39727");
   script_xref(name:"URL", value:"http://www.wftpserver.com/");
   script_xref(name:"URL", value:"http://www.wftpserver.com/serverhistory.htm");
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("op5 Monitor Unspecified SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55255");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 11:11:30 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-08-30 11:27:11 +0200 (Thu, 30 Aug 2012)");

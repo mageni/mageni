@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Mundi Mail Multiple Remote Command Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41957");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/mundimail/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -37,7 +37,6 @@ if (description)
 
   script_name("ircd-ratbox 'HELP' Command Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37979");
   script_xref(name:"URL", value:"http://www.ircd-ratbox.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/246358");
 
   script_tag(name:"solution", value:"Remove sample NLMs and default files from the web server.
   Also, ensure the RCONSOLE password is encrypted and utilize a password

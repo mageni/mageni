@@ -31,7 +31,6 @@ if (description)
   script_bugtraq_id(53189);
   script_version("$Revision: 14117 $");
   script_name("Mega File Manager 'name' Parameter Directory Traversal Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53189");
   script_xref(name:"URL", value:"http://www.awesomephp.com/?MegaFileManager");
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");

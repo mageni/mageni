@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-03-20 11:56:00 +0530 (Tue, 20 Mar 2012)");
   script_name("Google Chrome 'History navigation' Arbitrary Code Execution Vulnerability (Linux)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/48321/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52369");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.in/2012/03/chrome-stable-channel-update.html");
   script_xref(name:"URL", value:"http://www.zdnet.com/blog/security/cansecwest-pwnium-google-chrome-hacked-with-sandbox-bypass/10563");
 

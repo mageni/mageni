@@ -38,7 +38,6 @@ if (description)
   script_name("Tapatalk Blind SQL Injection Vulnerability");
 
   script_xref(name:"URL", value:"https://github.com/tintinweb/pub/tree/master/pocs/cve-2014-2023");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70418/");
 
   script_tag(name:"summary", value:"Tapatalk is prone to a SQL Injection Vulnerability");
 

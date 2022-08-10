@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Alt-N WebAdmin Remote Source Code Information Disclosure Vulnerability");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45476");
   script_xref(name:"URL", value:"http://www.comingchina.com/");
   script_xref(name:"URL", value:"http://www.altn.com/products/default.asp?product%5Fid=WebAdmin");
   script_tag(name:"qod_type", value:"remote_vul");

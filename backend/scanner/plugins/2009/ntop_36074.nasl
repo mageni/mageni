@@ -46,10 +46,7 @@ if(description)
   script_mandatory_keys("ntop/installed");
   script_require_ports("Services/www", 3000);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36074");
   script_xref(name:"URL", value:"http://www.ntop.org/ntop.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/505876");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/505862");
 
   script_tag(name:"summary", value:"The 'ntop' tool is prone to a denial-of-service vulnerability because
   of a NULL-pointer dereference that occurs when crafted HTTP Basic Authentication credentials are

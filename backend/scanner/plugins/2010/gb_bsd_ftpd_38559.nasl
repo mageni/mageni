@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:C");
   script_name("FreeBSD and OpenBSD 'ftpd' NULL Pointer Dereference Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38559");
   script_xref(name:"URL", value:"http://www.freebsd.org/");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata45.html");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata46.html");

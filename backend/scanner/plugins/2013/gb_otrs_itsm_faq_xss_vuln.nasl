@@ -52,7 +52,6 @@ input before using it");
   script_tag(name:"affected", value:"OTRS::ITSM 3.2.0 up to and including 3.2.3, 3.1.0 up to and including 3.1.7
 and 3.0.0 up to and including 3.0.6");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58930");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/24922/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2012-02-en/");
   script_category(ACT_GATHER_INFO);

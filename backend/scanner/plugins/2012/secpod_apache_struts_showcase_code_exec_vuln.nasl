@@ -60,7 +60,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"WillNotFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/523956");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/115770/struts2-exec.txt");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/apache-struts2-remote-code-execution");
 

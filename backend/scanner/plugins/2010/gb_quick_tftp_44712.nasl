@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Quick Tftp Server Pro Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44712");
   script_xref(name:"URL", value:"http://www.tallsoft.com/tftpserver.htm");
 
   script_category(ACT_ATTACK);

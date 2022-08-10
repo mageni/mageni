@@ -36,7 +36,6 @@ if(description)
 
   script_name("openstock/opentel 'dsn[phptype]' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39484");
   script_xref(name:"URL", value:"https://adullact.net/projects/openstock");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -40,7 +40,6 @@ if (description)
 
   script_name("phpMyFAQ Backdoor Unauthorized Access Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45442");
   script_xref(name:"URL", value:"http://www.phpmyfaq.de/");
   script_xref(name:"URL", value:"http://www.phpmyfaq.de/advisory_2010-12-15.php");
 

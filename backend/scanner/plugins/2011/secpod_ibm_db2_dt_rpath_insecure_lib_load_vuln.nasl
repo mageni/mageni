@@ -38,7 +38,6 @@ if(description)
 
   script_name("IBM DB2 'DT_RPATH' Insecure Library Loading Code Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518659");
   script_xref(name:"URL", value:"http://www.nth-dimension.org.uk/downloads.php?id=77");
   script_xref(name:"URL", value:"http://www.nth-dimension.org.uk/downloads.php?id=83");
 

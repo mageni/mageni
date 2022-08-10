@@ -31,7 +31,6 @@ if (description)
   script_bugtraq_id(53460);
   script_version("$Revision: 11301 $");
   script_name("Kerio WinRoute Firewall Web Server Remote Source Code Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53460");
   script_xref(name:"URL", value:"http://www.kerio.com");
   script_tag(name:"cvss_base", value:"7.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:C");

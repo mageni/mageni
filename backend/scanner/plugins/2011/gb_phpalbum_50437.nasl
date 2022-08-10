@@ -34,7 +34,6 @@ if(description)
   script_name("phpAlbum Multiple Security Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/44078");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50437");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18045/");
   script_xref(name:"URL", value:"http://www.phpalbum.net/dw");
 

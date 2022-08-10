@@ -42,7 +42,6 @@ if(description)
   script_require_ports(139, 445);
 
   script_xref(name:"URL", value:"http://www.secniche.org/ie_mal_png_dos.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496483");
 
   script_tag(name:"summary", value:"The host has Microsoft Internet Explorer installed, which is prone
   to denial of service vulnerability.");

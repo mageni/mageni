@@ -37,7 +37,6 @@ if(description)
 
   script_name("Pulse CMS Basic Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45186");
   script_xref(name:"URL", value:"http://pulsecms.com/");
   script_xref(name:"URL", value:"http://www.uncompiled.com/2010/12/pulse-cms-basic-local-file-inclusion-vulnerability-cve-2010-4330/");
 

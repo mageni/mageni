@@ -40,7 +40,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/350026");
 
   script_tag(name:"solution", value:"Upgrade to the latest version of phpShop.");
 

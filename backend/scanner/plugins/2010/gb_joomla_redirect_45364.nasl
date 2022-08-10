@@ -37,7 +37,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("joomla/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45364");
   script_xref(name:"URL", value:"http://www.tutorialjoomla.net/2010/11/joomla-extensions-redirect-for-joomla-1-5/");
 
   script_tag(name:"summary", value:"The 'com_redirect' component for Joomla! is prone to a local

@@ -39,10 +39,8 @@ if (description)
 
   script_name("CMS Made Simple 'admin/editprefs.php' Cross-Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39997");
   script_xref(name:"URL", value:"http://blog.cmsmadesimple.org/2010/05/01/announcing-cms-made-simple-1-7-1-escade/");
   script_xref(name:"URL", value:"http://www.cmsmadesimple.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511178");
 
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");

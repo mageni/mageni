@@ -36,7 +36,6 @@ if(description)
 
   script_name("Core FTP Server Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40422");
   script_xref(name:"URL", value:"http://www.coreftp.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

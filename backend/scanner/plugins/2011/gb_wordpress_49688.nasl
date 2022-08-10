@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49688");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/thecartpress/download/");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

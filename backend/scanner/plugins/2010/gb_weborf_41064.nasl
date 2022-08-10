@@ -58,7 +58,6 @@ if (description)
 
   script_tag(name:"affected", value:"Weborf 0.12.1 is vulnerable. Prior versions may also be affected.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41064");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/weborf/releases/318531");
   script_xref(name:"URL", value:"http://code.google.com/p/weborf/source/browse/branches/0.12.2/CHANGELOG?spec=svn437&r=437");
   exit(0);

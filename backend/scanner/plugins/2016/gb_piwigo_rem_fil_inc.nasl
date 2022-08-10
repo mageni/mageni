@@ -66,7 +66,6 @@ if (description)
 
   script_tag(name:"solution", value:"Update to version 2.8.5 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95164/");
   script_xref(name:"URL", value:"http://piwigo.org/releases/2.8.5");
 
   exit(0);

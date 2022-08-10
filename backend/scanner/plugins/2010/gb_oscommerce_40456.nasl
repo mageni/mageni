@@ -26,7 +26,6 @@
 
 if (description)
 {
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40456");
   script_xref(name:"URL", value:"http://www.oscommerce.com");
   script_oid("1.3.6.1.4.1.25623.1.0.100661");
   script_version("$Revision: 13960 $");

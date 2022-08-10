@@ -33,8 +33,7 @@ tag_solution = "All Zebedee users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose net-misc/zebedee
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200509-14
-http://bugs.gentoo.org/show_bug.cgi?id=105115
-http://www.securityfocus.com/bid/14796";
+http://bugs.gentoo.org/show_bug.cgi?id=105115";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200509-14.";
 

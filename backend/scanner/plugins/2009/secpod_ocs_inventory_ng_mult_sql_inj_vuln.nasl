@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-3040");
   script_bugtraq_id(35152);
   script_name("OCS Inventory NG Multiple SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/503936/100/0/threaded");
   script_xref(name:"URL", value:"http://www.leidecker.info/advisories/2009-05-30-ocs_inventory_ng_sql_injection.shtml");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

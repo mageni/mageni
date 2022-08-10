@@ -35,7 +35,6 @@ if(description)
 
   script_name("AlstraSoft AskMe Pro 'forum_answer.php' and 'profile.php' Multiple SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/29732");
   script_xref(name:"URL", value:"http://www.alstrasoft.com/askme.htm");
 
   script_tag(name:"cvss_base", value:"7.5");

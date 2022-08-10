@@ -44,7 +44,6 @@ if(description)
   script_dependencies("pdns_version.nasl");
   script_mandatory_keys("powerdns/authoritative_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51355");
   script_xref(name:"URL", value:"http://wiki.powerdns.com/trac/changeset/2331");
   script_xref(name:"URL", value:"http://www.powerdns.com/");
   script_xref(name:"URL", value:"http://mailman.powerdns.com/pipermail/pdns-users/2012-January/008457.html");

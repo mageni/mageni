@@ -58,7 +58,6 @@ if (description)
 
   script_tag(name:"affected", value:"Beerwin's PhpLinkAdmin 1.0 is vulnerable. Other versions may also be
   affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34129");
 
   exit(0);
 }

@@ -35,7 +35,6 @@ if (description)
 
   script_name("httpdx 'USER' Command Remote Format String Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38135");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/httpdx/");
 
   script_tag(name:"qod_type", value:"remote_banner");

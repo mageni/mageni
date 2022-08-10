@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(33909);
   script_name("Apple Safari URI NULL Pointer Dereference DoS Vulnerability (Windows)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/48943");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/501229/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

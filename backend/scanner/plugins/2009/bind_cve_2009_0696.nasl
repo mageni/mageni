@@ -42,7 +42,6 @@ if(description)
   script_dependencies("bind_version.nasl");
   script_mandatory_keys("ISC BIND/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35848");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=514292");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=538975");
   script_xref(name:"URL", value:"http://www.isc.org/products/BIND/");

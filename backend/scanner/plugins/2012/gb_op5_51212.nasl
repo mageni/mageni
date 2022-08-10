@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("op5 Appliance Multiple Remote Command Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51212");
   script_xref(name:"URL", value:"http://www.op5.com/news/support-news/fixed-vulnerabilities-op5-monitor-op5-appliance/");
   script_xref(name:"URL", value:"http://www.op5.com/accessories/appliance-server/");
 

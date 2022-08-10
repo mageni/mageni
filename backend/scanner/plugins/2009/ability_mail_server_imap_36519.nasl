@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/imap", 143);
   script_mandatory_keys("imap/codecrafters/ability/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36519");
   script_xref(name:"URL", value:"http://www.code-crafters.com/abilitymailserver/index.html");
   script_xref(name:"URL", value:"http://www.code-crafters.com/abilitymailserver/updatelog.html");
 

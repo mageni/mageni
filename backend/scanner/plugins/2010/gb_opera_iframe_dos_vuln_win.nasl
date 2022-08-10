@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
   script_name("Opera 'IFRAME' Denial Of Service vulnerability (Windows)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511509/100/0/threaded");
   script_xref(name:"URL", value:"http://websecurity.com.ua/4238/");
 
   script_category(ACT_GATHER_INFO);

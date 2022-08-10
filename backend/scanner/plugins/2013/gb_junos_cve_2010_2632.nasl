@@ -70,7 +70,6 @@ a workaround ACLs or firewall filters to limit FTP access to the router only
 from trusted hosts.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10598");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/43819");
 
   exit(0);
 }

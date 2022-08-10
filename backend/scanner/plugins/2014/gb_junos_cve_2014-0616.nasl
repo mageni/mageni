@@ -72,7 +72,6 @@ workaround restrict received communities and/or create an import policy to drop 
 than a specified number. See security bulletin from Juniper for further details.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10609");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64766");
 
   exit(0);
 }

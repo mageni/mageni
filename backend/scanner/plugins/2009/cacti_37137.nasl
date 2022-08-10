@@ -41,7 +41,6 @@ if(description)
 
   script_name("Cacti 'Linux - Get Memory Usage' Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37137");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/2009-11/0292.html");
   script_xref(name:"URL", value:"http://cacti.net/");
 

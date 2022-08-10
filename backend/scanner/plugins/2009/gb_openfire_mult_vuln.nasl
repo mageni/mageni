@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/33452");
   script_xref(name:"URL", value:"http://svn.igniterealtime.org/svn/repos/openfire/trunk/src/web/log.jsp");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/499880/100/0/threaded");
 
   script_tag(name:"impact", value:"Attacker may leverage this issue by executing arbitrary script code or
   injecting HTML or JavaScript code in the context of the affected system

@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2019-02-11 11:22:27 +0100 (Mon, 11 Feb 2019) $");
   script_tag(name:"creation_date", value:"2012-02-21 13:19:06 +0100 (Tue, 21 Feb 2012)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51399");
   script_xref(name:"URL", value:"http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/12169-304616-241493-241493-241493-3971478.html");
   script_xref(name:"URL", value:"http://www.compaq.com/storage/");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-12-015/");

@@ -38,9 +38,7 @@ if(description)
 
   script_name("Joomla! 'Beatz' Component Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53030");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/74912");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522361");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/111896/joomlabeatz-xss.txt");
 
   script_category(ACT_ATTACK);

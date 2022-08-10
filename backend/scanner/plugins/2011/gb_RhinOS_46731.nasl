@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("RhinOS 'gradient.php' Multiple Directory Traversal Vulnerabilities");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46731");
   script_xref(name:"URL", value:"http://www.autosectools.com/Advisories/RhinOS.3.0.r1113_Local.File.Inclusion_133.html");
   script_xref(name:"URL", value:"http://www.saltos.net/portal/en/rhinos.htm");
   script_tag(name:"qod_type", value:"remote_vul");

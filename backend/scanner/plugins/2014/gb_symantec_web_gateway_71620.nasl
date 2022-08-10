@@ -38,7 +38,6 @@ if (description)
 
   script_name("Symantec Web Gateway  Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71620");
   script_xref(name:"URL", value:"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=2014&suid=20141216_00");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow an attacker to execute

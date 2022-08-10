@@ -45,8 +45,7 @@ system:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200407-16
 http://bugs.gentoo.org/show_bug.cgi?id=56171
-http://bugs.gentoo.org/show_bug.cgi?id=56479
-http://www.securityfocus.com/archive/1/367977";
+http://bugs.gentoo.org/show_bug.cgi?id=56479";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200407-16.";
 

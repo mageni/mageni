@@ -36,7 +36,6 @@ tag_solution = "Usermin users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200406-15
 http://bugs.gentoo.org/show_bug.cgi?id=54030
-http://www.securityfocus.com/bid/10521
 http://www.lac.co.jp/security/csl/intelligence/SNSadvisory_e/75_e.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200406-15.";

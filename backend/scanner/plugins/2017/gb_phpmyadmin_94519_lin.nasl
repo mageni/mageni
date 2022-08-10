@@ -57,7 +57,6 @@ if(description)
   script_tag(name:"solution", value:"Update to version 4.0.10.16 or later.");
 
   script_xref(name:"URL", value:"https://www.phpmyadmin.net/security/PMASA-2016-57");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/94519");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_tag(name:"solution_type", value:"VendorFix");

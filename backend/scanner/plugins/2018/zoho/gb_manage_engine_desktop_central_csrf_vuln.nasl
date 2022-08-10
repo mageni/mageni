@@ -58,7 +58,6 @@ if (description)
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/archive/1/534604/100/0/threaded");
   script_xref(name:"URL", value:"https://www.manageengine.com/products/desktop-central/cve20149331-cross-site-request-forgery.html");
 
   script_copyright("Copyright (C) 2018 Greenbone Networks GmbH");

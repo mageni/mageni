@@ -37,7 +37,6 @@ if (description)
 
   script_name("NTP mode 7 MODE_PRIVATE Packet Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37255");
   script_xref(name:"URL", value:"https://support.ntp.org/bugs/show_bug.cgi?id=1331");
   script_xref(name:"URL", value:"http://www.ntp.org/");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/568372");

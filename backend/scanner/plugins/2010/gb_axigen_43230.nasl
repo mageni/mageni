@@ -39,7 +39,6 @@ if (description)
 
   script_name("Axigen Webmail Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43230");
   script_xref(name:"URL", value:"http://www.axigen.com/");
   script_xref(name:"URL", value:"http://www.axigen.com/press/product-releases/axigen-releases-version-742_74.html");
 

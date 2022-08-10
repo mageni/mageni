@@ -40,9 +40,7 @@ if(description)
 
   script_name("Invision Power Board Local File Include and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37208");
   script_xref(name:"URL", value:"http://www.invisionpower.com/community/board/index.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508207");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

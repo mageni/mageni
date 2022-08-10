@@ -38,7 +38,6 @@ if (description)
 
   script_name("IBM BigFix Platform  Remote Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/94155");
   script_xref(name:"URL", value:"http://www.ibm.com/");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21993206");
 

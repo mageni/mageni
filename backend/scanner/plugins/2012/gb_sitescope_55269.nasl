@@ -39,7 +39,6 @@ if(description)
 
   script_name("HP SiteScope Multiple Security Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55269");
   script_xref(name:"URL", value:"http://www.hp.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");

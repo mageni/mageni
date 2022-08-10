@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://bugs.php.net/bug.php?id=52929");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=646684");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514562/30/150/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation could allow remote attackers to
   cause a denial of service (memory consumption and application crash)

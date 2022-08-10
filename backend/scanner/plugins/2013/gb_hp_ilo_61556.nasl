@@ -43,7 +43,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("HP_ILO/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61556");
   script_xref(name:"URL", value:"http://www.hp.com/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass the authentication mechanism and

@@ -33,8 +33,7 @@ tag_solution = "All cpio users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose '>=app-arch/cpio-2.6-r3'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200506-16
-http://bugs.gentoo.org/show_bug.cgi?id=90619
-http://www.securityfocus.com/archive/1/396429";
+http://bugs.gentoo.org/show_bug.cgi?id=90619";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200506-16.";
 

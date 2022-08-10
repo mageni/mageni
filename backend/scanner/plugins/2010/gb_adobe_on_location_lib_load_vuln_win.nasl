@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Adobe On Location Insecure Library Loading Vulnerability (Windows)");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/14772/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/513332/2010-08-20/2");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2010 Greenbone Networks GmbH");

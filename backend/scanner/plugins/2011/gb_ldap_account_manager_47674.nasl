@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("LDAP Account Manager 'selfserviceSaveOk' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47674");
   script_xref(name:"URL", value:"http://www.autosectools.com/Advisory/LDAP-Account-Manager-3.4.0-Reflected-Cross-site-Scripting-193");
   script_xref(name:"URL", value:"http://lam.sourceforge.net/index.htm");
 

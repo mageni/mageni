@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"affected", value:"Dokeos 1.8.5 is affected, prior versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34928");
 
   exit(0);
 }

@@ -36,10 +36,8 @@ if(description)
 
   script_name("Cisco TANDBERG C Series and E/EX Series Default Credentials Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46107");
   script_xref(name:"URL", value:"http://www.cisco.com/en/US/products/ps11422/products_security_advisory09186a0080b69541.shtml");
   script_xref(name:"URL", value:"http://www.tandberg.com/support/video-conferencing-software-download.jsp?t=2");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516126");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/436854");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-11 11:22:27 +0100 (Mon, 11 Feb 2019) $");

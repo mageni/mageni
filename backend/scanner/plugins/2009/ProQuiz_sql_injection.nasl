@@ -50,7 +50,6 @@ if (description)
  vulnerabilities in the underlying database.");
   script_tag(name:"affected", value:"ProQuiz 1.0 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32724");
 
   script_tag(name:"qod_type", value:"remote_app");
 

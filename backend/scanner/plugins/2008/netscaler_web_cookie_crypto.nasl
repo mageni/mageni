@@ -54,7 +54,6 @@ remote host uses weak encryption for protecting the HTTP cookie
 content by XORing sensitive values, including the username and
 password, with a fixed key stream.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/484182/100/0/threaded");
 
   script_tag(name:"solution_type", value:"Workaround");
 

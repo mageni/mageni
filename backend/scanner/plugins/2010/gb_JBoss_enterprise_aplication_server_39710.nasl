@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("jboss/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39710");
   script_xref(name:"URL", value:"http://www.jboss.org");
 
   script_tag(name:"impact", value:"An attacker can exploit these issues to bypass certain security

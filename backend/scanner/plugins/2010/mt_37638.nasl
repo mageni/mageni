@@ -40,7 +40,6 @@ if (description)
 
   script_name("Movable Type Unspecified Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37638");
   script_xref(name:"URL", value:"http://www.movabletype.jp/blog/movable_type_501.html");
   script_xref(name:"URL", value:"http://www.movabletype.org/");
   script_xref(name:"URL", value:"http://jvn.jp/en/jp/JVN09872874/index.html");

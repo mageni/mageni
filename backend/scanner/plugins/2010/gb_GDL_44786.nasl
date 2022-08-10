@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("GDL 'id' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44786");
   script_xref(name:"URL", value:"http://kmrg.itb.ac.id/");
 
   script_tag(name:"qod_type", value:"remote_vul");

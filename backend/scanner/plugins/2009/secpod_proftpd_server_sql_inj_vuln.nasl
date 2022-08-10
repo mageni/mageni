@@ -44,8 +44,6 @@ if(description)
   script_mandatory_keys("ProFTPD/Installed");
 
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/8037");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500833/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500851/100/0/threaded");
 
   script_tag(name:"summary", value:"This host is running ProFTPD Server and is prone to remote
   SQL Injection vulnerability.");

@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("cubecart/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37065");
   script_xref(name:"URL", value:"http://forums.cubecart.com/index.php?showtopic=39900");
 
   script_tag(name:"summary", value:"CubeCart is prone to an SQL-injection vulnerability because it fails

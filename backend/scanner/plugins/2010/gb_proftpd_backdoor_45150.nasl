@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ProFTPD/Installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45150");
   script_xref(name:"URL", value:"http://sourceforge.net/mailarchive/message.php?msg_name=alpine.DEB.2.00.1012011542220.12930%40familiar.castaglia.org");
   script_xref(name:"URL", value:"http://www.proftpd.org");
 

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/ftp_ready_banner/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52805");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18671");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/111296/knftpd-dos.txt");
 

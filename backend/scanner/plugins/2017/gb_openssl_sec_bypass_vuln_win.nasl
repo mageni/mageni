@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"solution", value:"OpenSSL 1.0.2 users should upgrade to 1.0.2n.");
 
   script_xref(name:"URL", value:"https://www.openssl.org/news/secadv/20171207.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/102103");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

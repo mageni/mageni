@@ -37,7 +37,6 @@ if (description)
 
   script_name("AlienVault Open Source SIEM (OSSIM) 'timestamp' Parameter Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62899");
   script_xref(name:"URL", value:"http://forums.alienvault.com/discussion/comment/9407");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65674");
   script_xref(name:"URL", value:"http://www.openssh.com/txt/portable-keysign-rand-helper.adv");
 
   script_tag(name:"impact", value:"Local attackers can exploit this issue to obtain sensitive

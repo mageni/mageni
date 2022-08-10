@@ -46,10 +46,6 @@ if(description)
   script_xref(name:"Advisory-ID", value:"S2-022");
   script_xref(name:"Advisory-ID", value:"S2-023");
   script_xref(name:"Advisory-ID", value:"S2-025");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67064");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67081");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/76624");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/76625");
   script_xref(name:"URL", value:"https://jvn.jp/en/jp/JVN88408929/index.html");
   script_xref(name:"URL", value:"http://jvndb.jvn.jp/en/contents/2015/JVNDB-2015-000124.html");
   script_xref(name:"URL", value:"http://jvn.jp/en/jp/JVN95989300/index.html");

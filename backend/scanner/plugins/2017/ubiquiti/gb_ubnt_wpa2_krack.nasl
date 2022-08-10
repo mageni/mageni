@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("ubnt_discovery_proto/detected", "ubnt_discovery_proto/firmware", "ubnt_discovery_proto/short_model");
 
   script_xref(name:"URL", value:"https://community.ubnt.com/t5/UniFi-Updates-Blog/FIRMWARE-3-9-3-7537-for-UAP-USW-has-been-released/ba-p/2099365");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/101274");
   script_xref(name:"URL", value:"https://www.krackattacks.com/");
 
   script_tag(name:"summary", value:"WPA2 as used in Ubiquiti Networks UAP/USW products is prone to

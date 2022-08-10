@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_kerio_mailserver_detect.nasl");
   script_mandatory_keys("KerioMailServer/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40505");
   script_xref(name:"URL", value:"http://www.kerio.com");
   script_xref(name:"URL", value:"http://www.kerio.com/support/security-advisories#1006");
 

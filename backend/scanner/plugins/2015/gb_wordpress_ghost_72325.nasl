@@ -38,7 +38,6 @@ if (description)
 
   script_name("GNU glibc Remote Heap Buffer Overflow Vulnerability (Wordpress)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72325");
   script_xref(name:"URL", value:"http://www.gnu.org/software/libc/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary code in the

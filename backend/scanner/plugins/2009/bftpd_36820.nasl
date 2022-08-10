@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 2.4 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36820");
   script_xref(name:"URL", value:"http://bftpd.sourceforge.net/index.html");
   script_xref(name:"URL", value:"http://bftpd.sourceforge.net/news.html#032130");
 

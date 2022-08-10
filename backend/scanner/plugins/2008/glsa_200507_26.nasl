@@ -59,8 +59,7 @@ are encouraged to migrate to an alternative package.
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200507-26
 http://bugs.gentoo.org/show_bug.cgi?id=99816
 http://bugs.gentoo.org/show_bug.cgi?id=99890
-http://bugs.gentoo.org/show_bug.cgi?id=99583
-http://www.securityfocus.com/archive/1/406026/30/";
+http://bugs.gentoo.org/show_bug.cgi?id=99583";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200507-26.";
 

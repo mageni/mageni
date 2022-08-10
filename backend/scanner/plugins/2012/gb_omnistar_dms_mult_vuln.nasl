@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-10-11 13:29:47 +0530 (Thu, 11 Oct 2012)");
   script_name("Omnistar Document Manager Software Multiple Vulnerabilities");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Oct/65");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/524380");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

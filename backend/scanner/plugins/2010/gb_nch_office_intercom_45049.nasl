@@ -40,7 +40,6 @@ if(description)
   script_dependencies("sip_detection.nasl");
   script_mandatory_keys("sip/banner/available");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45049");
   script_xref(name:"URL", value:"http://www.nch.com.au/oi/");
 
   script_tag(name:"summary", value:"NCH Software Office Intercom is prone to a remote denial-of-service

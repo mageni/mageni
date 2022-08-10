@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:P/A:P");
   script_version("$Revision: 11865 $");
   script_name("php-Charts 'index.php' Arbitrary PHP Code Execution Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59987");
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-05-23 10:07:15 +0200 (Thu, 23 May 2013)");
   script_category(ACT_ATTACK);

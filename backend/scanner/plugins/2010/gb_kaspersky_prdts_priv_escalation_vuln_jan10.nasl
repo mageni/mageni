@@ -38,7 +38,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.kaspersky.com/productupdates");
   script_xref(name:"URL", value:"http://secunia.com/advisories/37398");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/3573");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508508/100/0/threaded");
 
   script_tag(name:"qod_type", value:"registry");
   script_category(ACT_GATHER_INFO);

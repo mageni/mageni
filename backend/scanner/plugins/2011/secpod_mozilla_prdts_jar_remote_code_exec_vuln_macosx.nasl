@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2011-12-22 13:17:34 +0530 (Thu, 22 Dec 2011)");
   script_name("Mozilla Products jar Files Remote Code Execution Vulnerability (MAC OS X)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51139/discuss");
   script_xref(name:"URL", value:"http://www.mozilla.org/security/announce/2011/mfsa2011-59.html");
 
   script_category(ACT_GATHER_INFO);

@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46915");
   script_xref(name:"URL", value:"http://bukulokomedia.com/home");
 
   script_tag(name:"summary", value:"CMS Lokomedia is prone to a vulnerability that lets attackers download

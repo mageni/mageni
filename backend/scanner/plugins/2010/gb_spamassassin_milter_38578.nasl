@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/smtp", 25);
   script_mandatory_keys("smtp/banner/available");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38578");
   script_xref(name:"URL", value:"http://savannah.nongnu.org/projects/spamass-milt/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Mar/140");
 

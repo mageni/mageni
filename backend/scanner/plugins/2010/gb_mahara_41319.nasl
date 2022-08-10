@@ -36,7 +36,6 @@ if (description)
 
   script_name("Mahara Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41319");
   script_xref(name:"URL", value:"http://wiki.mahara.org/Release_Notes/1.0.15");
   script_xref(name:"URL", value:"http://wiki.mahara.org/Release_Notes/1.1.9");
   script_xref(name:"URL", value:"http://wiki.mahara.org/Release_Notes/1.2.5");

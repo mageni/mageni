@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("fcms/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50897");
   script_xref(name:"URL", value:"http://www.haudenschilt.com/fcms/index.html");
   script_xref(name:"URL", value:"http://sourceforge.net/apps/trac/fam-connections/ticket/407");
 

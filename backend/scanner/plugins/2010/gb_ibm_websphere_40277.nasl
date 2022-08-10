@@ -46,7 +46,6 @@ if(description)
   script_dependencies("gb_ibm_websphere_detect.nasl");
   script_mandatory_keys("ibm_websphere_application_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40277");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?rs=180&uid=swg27007951");
   script_xref(name:"URL", value:"http://www-306.ibm.com/software/websphere/#");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/58557");

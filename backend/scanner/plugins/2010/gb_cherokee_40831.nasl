@@ -50,9 +50,7 @@ if (description)
 
   script_tag(name:"affected", value:"Cherokee 0.5.4 and prior versions are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40831");
   script_xref(name:"URL", value:"http://www.alobbs.com/modules.php?op=modload&name=cherokee&file=index");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511814");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

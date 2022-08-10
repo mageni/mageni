@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 631);
   script_mandatory_keys("CUPS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37048");
   script_xref(name:"URL", value:"http://www.cups.org");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=530111");
 

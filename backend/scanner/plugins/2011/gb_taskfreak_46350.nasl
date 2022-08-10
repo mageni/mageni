@@ -33,7 +33,6 @@ if (description)
 
   script_name("TaskFreak! Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46350");
   script_xref(name:"URL", value:"http://www.taskfreak.com/");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2011-4990.php");
 

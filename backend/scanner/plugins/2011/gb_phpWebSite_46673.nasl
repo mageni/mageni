@@ -35,7 +35,6 @@ if (description)
 
   script_name("phpWebSite 'local' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46673");
   script_xref(name:"URL", value:"http://phpwebsite.appstate.edu/");
   script_xref(name:"URL", value:"http://www.autosectools.com/Advisories/phpWebSite.1.7.1_Reflected.Cross-site.Scripting_131.html");
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("Adobe ColdFusion  Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/59773");
   script_xref(name:"URL", value:"http://www.adobe.com/products/coldfusion/");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb13-13.html");
 

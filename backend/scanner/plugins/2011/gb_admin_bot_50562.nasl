@@ -32,7 +32,6 @@ if(description)
 
   script_name("Admin Bot 'news.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50562");
   script_xref(name:"URL", value:"http://www.imfiles.com/Instant_Messaging/Paltalk/Paltalk_Admin_Bot_10_L646.html");
   script_xref(name:"URL", value:"http://www.paltalk.com/");
 

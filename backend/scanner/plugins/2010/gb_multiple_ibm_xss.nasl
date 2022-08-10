@@ -36,7 +36,6 @@ if (description)
 
   script_name("Multiple IBM Products Login Page Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38412");
   script_xref(name:"URL", value:"http://www.hacktics.com/#view=Resources%7CAdvisory");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21421469");
 

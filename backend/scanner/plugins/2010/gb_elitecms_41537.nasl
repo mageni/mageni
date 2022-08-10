@@ -40,7 +40,6 @@ if (description)
 
   script_name("eliteCMS Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41537");
   script_xref(name:"URL", value:"http://elitecms.elite-graphix.net/");
 
   script_tag(name:"qod_type", value:"remote_banner");

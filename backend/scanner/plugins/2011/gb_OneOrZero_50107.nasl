@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("OneOrZero AIMS Security Bypass and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50107");
   script_xref(name:"URL", value:"http://oneorzero.com/");
   script_xref(name:"URL", value:"http://en.securitylab.ru/lab/PT-2011-20");
   script_xref(name:"URL", value:"http://en.securitylab.ru/lab/PT-2011-21");

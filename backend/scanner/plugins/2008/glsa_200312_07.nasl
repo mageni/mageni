@@ -37,8 +37,7 @@ version 2.6.0 or higher using these commands:
     # emerge clean
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200312-07
-http://bugs.gentoo.org/show_bug.cgi?id=35866
-http://www.securityfocus.com/archive/1/347587/2003-12-13/2003-12-19/0";
+http://bugs.gentoo.org/show_bug.cgi?id=35866";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200312-07.";
 

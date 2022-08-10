@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"solution", value:"Updates are available. Please contact the vendor for details.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36407");
   script_xref(name:"URL", value:"http://www.bigantsoft.com");
   exit(0);
 }

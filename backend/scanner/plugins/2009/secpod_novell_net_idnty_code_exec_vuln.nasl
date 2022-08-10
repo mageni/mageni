@@ -39,7 +39,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/0954");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-09-016");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2009/Apr/1021990.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502514/100/0/threaded");
   script_xref(name:"URL", value:"http://download.novell.com/Download?buildid=6ERQGPjRZ8o~");
 
   script_category(ACT_GATHER_INFO);

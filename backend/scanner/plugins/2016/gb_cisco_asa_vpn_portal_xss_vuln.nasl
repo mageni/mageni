@@ -48,7 +48,6 @@ if(description)
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/viewAlert.x?alertId=33406");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/135813");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2016/Feb/82");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66290");
   script_xref(name:"URL", value:"https://www.trustwave.com/Resources/SpiderLabs-Blog/CVE-2014-2120-%E2%80%93-A-Tale-of-Cisco-ASA-%E2%80%9CZero-Day%E2%80%9D/");
   script_xref(name:"URL", value:"https://www3.trustwave.com/spiderlabs/advisories/TWSL2014-008.txt");
 

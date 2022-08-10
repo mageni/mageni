@@ -43,9 +43,7 @@ if(description)
   script_dependencies("deluxeBB_detect.nasl");
   script_mandatory_keys("deluxebb/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44259");
   script_xref(name:"URL", value:"http://www.deluxebb.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514374");
 
   script_tag(name:"summary", value:"DeluxeBB is prone to an SQL-injection vulnerability because it fails to
   sufficiently sanitize user-supplied data before using it in an SQL query.");

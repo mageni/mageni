@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"summary", value:"This host is installed with Oracle Database Server and is prone to security
   bypass vulnerability.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/1853");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/5380");
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");
   script_category(ACT_GATHER_INFO);

@@ -51,7 +51,6 @@ integrity, and availability via unknown vectors.");
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/55315");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63131");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuoct2013-1899837.html");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");

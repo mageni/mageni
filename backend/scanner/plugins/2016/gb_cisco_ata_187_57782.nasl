@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco ATA 187 Analog Telephone Adapter Unauthorized Access Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57782");
 
   script_tag(name:"vuldetect", value:"Try to connect to TCP port 7870 and execute the `id` command.");
   script_tag(name:"insight", value:"The Cisco ATA 187 Analog Telephone Adaptor with firmware 9.2.1.0 and 9.2.3.1 before ES build 4 does not properly implement access control, which allows remote attackers to execute operating-system commands via vectors involving a session on TCP port 7870");

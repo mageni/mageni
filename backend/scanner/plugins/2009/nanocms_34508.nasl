@@ -44,7 +44,6 @@ if (description)
   script_mandatory_keys("nanocms/detected");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34508");
 
   script_tag(name:"summary", value:"NanoCMS is prone to an information-disclosure vulnerability because
   it fails to validate access to sensitive files.");

@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_sendmail_detect.nasl");
   script_mandatory_keys("sendmail/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37543");
   script_xref(name:"URL", value:"http://www.sendmail.org/releases/8.14.4");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");

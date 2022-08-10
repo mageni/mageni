@@ -52,7 +52,6 @@ if(description)
 
   script_xref(name:"URL", value:"https://glassfish.dev.java.net/");
   script_xref(name:"URL", value:"http://www.sun.com/software/products/appsrvr/index.xml");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34824");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 

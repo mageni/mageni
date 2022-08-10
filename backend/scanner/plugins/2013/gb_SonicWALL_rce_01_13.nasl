@@ -36,7 +36,6 @@ if(description)
 
   script_name("Multiple SonicWALL Products Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57445");
   script_xref(name:"URL", value:"http://www.sonicwall.com/");
   script_xref(name:"URL", value:"http://sotiriu.de/adv/NSOADV-2013-001.txt");
 

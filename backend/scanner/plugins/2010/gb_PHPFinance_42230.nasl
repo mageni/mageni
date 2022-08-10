@@ -35,7 +35,6 @@ if (description)
 
   script_name("PHPFinance 'group.php' SQL Injection and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42230");
   script_xref(name:"URL", value:"http://phpfinance.sourceforge.net/");
 
   script_tag(name:"qod_type", value:"remote_banner");

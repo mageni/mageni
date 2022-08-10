@@ -41,7 +41,6 @@ if(description)
   script_dependencies("cisco_vpn_client_detect.nasl");
   script_mandatory_keys("SMB/CiscoVPNClient/Version");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37077");
   script_xref(name:"URL", value:"http://www.cisco.com/warp/public/cc/pd/sqsw/vpncl/index.shtml");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=19445");
 

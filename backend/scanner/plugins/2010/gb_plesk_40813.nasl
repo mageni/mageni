@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 8443);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40813");
   script_xref(name:"URL", value:"http://www.parallels.com/");
 
   script_tag(name:"summary", value:"Plesk Server Administrator (PSA) is prone to a local file-include

@@ -51,7 +51,6 @@ cross-site scripting vulnerability.");
   script_xref(name:"URL", value:"http://secunia.com/advisories/25205");
   script_xref(name:"URL", value:"http://secunia.com/advisories/25419");
   script_xref(name:"URL", value:"http://secunia.com/advisories/25787");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23862");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/34164");
   script_category(ACT_ATTACK);
   script_tag(name:"qod_type", value:"remote_vul");

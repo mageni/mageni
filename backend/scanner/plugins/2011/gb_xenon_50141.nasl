@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Xenon 'id' Parameter Multiple SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50141");
   script_xref(name:"URL", value:"http://m3rcil3ss.blogspot.com/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/105805/xenon-sql.txt");
   script_xref(name:"URL", value:"http://xe.co.za/index.shtml");

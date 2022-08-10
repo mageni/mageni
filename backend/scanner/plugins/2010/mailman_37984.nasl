@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("gnu_mailman/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37984");
   script_xref(name:"URL", value:"http://mailman.sourceforge.net/index.html");
 
   script_tag(name:"summary", value:"Mailman is prone to an unspecified privilege-escalation scripting

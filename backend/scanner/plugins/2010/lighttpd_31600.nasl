@@ -39,7 +39,6 @@ if(description)
 
   script_name("Lighttpd < 1.4.20 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31600");
   script_xref(name:"URL", value:"http://www.lighttpd.net/");
   script_xref(name:"URL", value:"http://www.lighttpd.net/security/lighttpd_sa_2008_05.txt");
   script_xref(name:"URL", value:"http://www.lighttpd.net/security/lighttpd_sa_2008_06.txt");

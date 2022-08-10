@@ -47,7 +47,6 @@ if(description)
   script_tag(name:"affected", value:"QuickHeal 16.00 is vulnerable");
   script_tag(name:"solution", value:"Updates are available. Please see the references or vendor advisory for more information.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97996");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

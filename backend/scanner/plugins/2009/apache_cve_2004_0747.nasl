@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/11182");
   script_xref(name:"URL", value:"http://www.apache.org/dist/httpd/Announcement2.html");
 
   script_tag(name:"insight", value:"The flas occurs because the application fails to validate user-supplied

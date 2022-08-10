@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:P/I:P/A:P");
   script_name("Uebimiau Webmail 'stage' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43713");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/t-dahmail/files/");
 
   script_tag(name:"qod_type", value:"remote_banner");

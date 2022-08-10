@@ -40,7 +40,6 @@ triggers a heap-based buffer overflow.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/498169/30/0/threaded
 http://svn.clamav.net/svn/clamav-devel/trunk/ChangeLog
 http://www.vuxml.org/freebsd/24b64fb0-af1d-11dd-8a16-001b1116b350.html";
 tag_summary = "The remote host is missing an update to the system

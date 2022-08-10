@@ -39,10 +39,8 @@ if (description)
 
   script_name("Nessus Web Server Plugin Unspecified Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41966");
   script_xref(name:"URL", value:"https://discussions.nessus.org/message/7245");
   script_xref(name:"URL", value:"http://www.nessus.org");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512645");
 
   script_category(ACT_GATHER_INFO);
   script_family("Web application abuses");

@@ -38,7 +38,6 @@ if(description)
   script_name("CruxCMS 'txtusername' Parameter Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/1708");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/xss_vulnerability_in_cruxcms_1.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/512245/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (c) 2010 Greenbone Networks GmbH");

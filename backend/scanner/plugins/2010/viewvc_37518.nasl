@@ -38,7 +38,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("ViewVC Versions Prior to 1.1.3 Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37518");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/source/browse/viewvc/trunk/CHANGES?rev=HEAD");
   script_xref(name:"URL", value:"http://viewvc.tigris.org/");
 

@@ -53,7 +53,6 @@ if(description)
   script_tag(name:"impact", value:"Hostile HTML and script code may be injected into vulnerable sections of the
   application. When viewed, this code may be rendered in the browser of a user viewing a malicious site.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34529");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

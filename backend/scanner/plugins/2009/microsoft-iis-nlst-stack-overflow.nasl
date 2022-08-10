@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/microsoft/iis_ftp/detected", "ftp/writeable_dir");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36189");
 
   script_tag(name:"summary", value:"Microsoft IIS FTPd NLST stack overflow
 

@@ -39,9 +39,7 @@ if (description)
 
   script_name("vtiger CRM Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/36062");
   script_xref(name:"URL", value:"http://www.vtiger.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/505834");
   script_xref(name:"URL", value:"http://www.ush.it/team/ush/hack-vtigercrm_504/vtigercrm_504.txt");
 
   script_tag(name:"qod_type", value:"remote_vul");

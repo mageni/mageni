@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33698");
   script_xref(name:"URL", value:"http://www.adaptcms.com");
 
   script_tag(name:"summary", value:"AdaptCMS Lite is prone to multiple cross-site scripting

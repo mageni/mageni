@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("ActiveMQ/Web/detected");
 
   script_xref(name:"URL", value:"https://issues.apache.org/activemq/browse/AMQ-2700");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510896");
 
   script_tag(name:"impact", value:"Successful exploitation allows an attacker to view the source code of
   a visited page which can be used for further attacks.");

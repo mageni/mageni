@@ -57,7 +57,6 @@ if(description)
   may aid in launching further attacks.");
 
   script_tag(name:"affected", value:"Sourcefire Defense Center versions prior to 4.10.2.3 are vulnerable.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52887");
   script_xref(name:"URL", value:"http://www.sourcefire.com/products/3D/defense_center");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2012/Apr/52");
   exit(0);

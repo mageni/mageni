@@ -36,7 +36,6 @@ if (description)
 
   script_name("iWeb Server URL Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37228");
   script_xref(name:"URL", value:"http://www.ashleybrown.co.uk/iweb/");
 
   script_tag(name:"qod_type", value:"remote_vul");

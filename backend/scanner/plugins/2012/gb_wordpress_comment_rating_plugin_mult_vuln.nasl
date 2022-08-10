@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51241");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/36487/");
   script_xref(name:"URL", value:"http://securityreason.com/exploitalert/11106");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108314/wpcommentrating-sqlxss.txt");

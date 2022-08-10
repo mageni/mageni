@@ -39,7 +39,6 @@ if (description)
 
   script_name("WeBid Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44765");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/WeBid.0.8.5P1.Reflected.Cross-site.Scripting/62");
   script_xref(name:"URL", value:"http://www.webidsupport.com/");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/WeBid.0.8.5P1.Local.File.Inclusion/63");

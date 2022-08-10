@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"creation_date", value:"2011-09-22 13:43:24 +0200 (Thu, 22 Sep 2011)");
   script_bugtraq_id(49474);
   script_name("PlaySMS 'apps_path[themes]' Parameter Multiple Remote File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49474");
   script_xref(name:"URL", value:"http://playsms.sourceforge.net/");
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");

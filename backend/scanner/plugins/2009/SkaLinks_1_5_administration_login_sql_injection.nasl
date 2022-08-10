@@ -49,7 +49,6 @@ if(description)
  vulnerabilities in the underlying database.");
   script_tag(name:"affected", value:"SkaLinks 1.5 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33546");
 
   script_tag(name:"qod_type", value:"remote_app");
 

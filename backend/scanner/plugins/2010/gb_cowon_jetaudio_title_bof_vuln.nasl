@@ -36,7 +36,6 @@ if(description)
   script_name("jetAudio jetCast Title Processing Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35195");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/8780");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/503826/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

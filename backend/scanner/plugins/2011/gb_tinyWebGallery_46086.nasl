@@ -33,7 +33,6 @@ if (description)
 
   script_name("TinyWebGallery Cross Site Scripting and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46086");
   script_xref(name:"URL", value:"http://www.tinywebgallery.com/en/overview.php");
 
   script_tag(name:"cvss_base", value:"5.0");

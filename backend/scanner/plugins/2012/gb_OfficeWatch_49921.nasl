@@ -43,9 +43,7 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
   script_mandatory_keys("Host/runs_windows");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49921");
   script_xref(name:"URL", value:"http://www.metropolis.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519990");
 
   script_tag(name:"summary", value:"Metropolis Technologies OfficeWatch is prone to a directory-traversal
   vulnerability because it fails to sufficiently sanitize user-supplied input data.");

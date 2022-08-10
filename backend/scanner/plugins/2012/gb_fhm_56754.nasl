@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:P/A:P");
   script_version("$Revision: 11435 $");
   script_name("Free Hosting Manager 'id' Parameter SQL Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56754");
   script_xref(name:"URL", value:"http://www.fhm-script.com/index.php");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-12-04 11:39:15 +0100 (Tue, 04 Dec 2012)");

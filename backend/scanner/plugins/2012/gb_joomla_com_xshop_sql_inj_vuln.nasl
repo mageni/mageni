@@ -40,7 +40,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.1337day.com/exploits/17540");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73332");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52077/info");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109938/Joomla-X-Shop-SQL-Injection.html");
 
   script_category(ACT_ATTACK);

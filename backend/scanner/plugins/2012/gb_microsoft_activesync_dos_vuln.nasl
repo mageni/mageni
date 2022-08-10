@@ -43,7 +43,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/8383/");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/11589");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/8383");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/315901");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to cause denial
   of service condition.");

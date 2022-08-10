@@ -41,7 +41,6 @@ if (description)
   script_name("Dell Kace 1000 Systems Management Appliance DS-2014-001 Multiple SQL Injection Vulnerabilities");
 
   script_xref(name:"URL", value:"http://www.baesystemsdetica.com.au/Research/Advisories/Dell-KACE-K1000-SQL-Injection-%28DS-2014-001%29");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65029");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-25 14:00:24 +0200 (Thu, 25 Oct 2018) $");
   script_tag(name:"creation_date", value:"2014-01-27 17:25:18 +0100 (Mon, 27 Jan 2014)");

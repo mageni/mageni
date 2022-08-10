@@ -60,7 +60,6 @@ if(description)
 
   script_tag(name:"affected", value:"Eggdrop 1.6.18 is known to be vulnerable, other versions may be affected as well.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/24070");
   script_xref(name:"URL", value:"http://www.eggheads.org/");
 
   exit(0);

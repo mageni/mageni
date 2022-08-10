@@ -36,7 +36,6 @@ if (description)
 
   script_name("Dell EqualLogic Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70760");
   script_xref(name:"URL", value:"http://dell.com");
 
   script_tag(name:"impact", value:"Exploiting this issue can allow an attacker to gain access to

@@ -41,7 +41,6 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45626");
   script_xref(name:"URL", value:"http://www.zachsaw.co.cc/?pg=quickphp_php_tester_debugger");
 
   script_tag(name:"summary", value:"QuickPHP is prone to a remote source-code-disclosure vulnerability

@@ -34,7 +34,6 @@ tag_solution = "All gxine users should upgrade to the latest available version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200505-19
 http://bugs.gentoo.org/show_bug.cgi?id=93532
-http://www.securityfocus.com/bid/13707
 http://www.0xbadexworm.org/adv/gxinefmt.txt";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200505-19.";

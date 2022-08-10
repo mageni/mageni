@@ -37,11 +37,9 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("WordPress All-in-One Event Calendar Plugin Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52986");
   script_xref(name:"URL", value:"http://theseednetwork.com/services/websites-and-software/software/all-in-one-event-calendar-wordpress/");
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23082");
   script_xref(name:"URL", value:"http://www.wordpress.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522292");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-04-12 10:32:26 +0200 (Thu, 12 Apr 2012)");

@@ -47,7 +47,6 @@ if(description)
   Citrix XenServer 6.5, Citrix XenServer 6.2.0 Sp1, Citrix XenServer 6.2");
   script_tag(name:"solution", value:"Updates are available.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95801");
   script_xref(name:"URL", value:"https://support.citrix.com/article/CTX220112");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

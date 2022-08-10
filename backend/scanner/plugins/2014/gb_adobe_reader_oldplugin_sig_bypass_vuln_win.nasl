@@ -53,7 +53,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/689835");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/328224");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");
   script_family("General");

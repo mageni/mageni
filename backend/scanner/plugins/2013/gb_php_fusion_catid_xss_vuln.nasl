@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("php-fusion/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51365/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/108542/phpfusion70204-xss.txt");
 
   script_tag(name:"insight", value:"The flaw is due to input passed via the 'cat_id' parameter to

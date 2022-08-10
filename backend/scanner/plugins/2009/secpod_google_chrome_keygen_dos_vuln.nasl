@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-3268");
   script_name("Google Chrome 'KEYGEN' Element Denial Of Service Vulnerability");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3194/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506328/100/100/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

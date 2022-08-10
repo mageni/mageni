@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"affected", value:"Jetty 6.1.16 and prior versions are affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34800");
   script_xref(name:"URL", value:"http://jetty.mortbay.org/jetty/index.html");
 
   exit(0);

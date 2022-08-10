@@ -37,7 +37,6 @@ if (description)
 
   script_name("IBM SolidDB 'solid.exe' Handshake Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41653");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21439148");
   script_xref(name:"URL", value:"http://www.solidtech.com/en/products/relationaldatabasemanagementsoftware/embed.asp");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-125/");

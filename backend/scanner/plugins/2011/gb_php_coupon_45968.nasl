@@ -36,7 +36,6 @@ if(description)
 
   script_name("PHP Coupon Script 'page' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45968");
   script_xref(name:"URL", value:"http://www.couponscript.com/");
 
   script_tag(name:"qod_type", value:"remote_active");

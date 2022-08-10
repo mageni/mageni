@@ -54,7 +54,6 @@ if(description)
   script_tag(name:"impact", value:"An attacker may exploit this issue to execute arbitrary code in the
   context of the TFTP server process.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/20131");
   script_xref(name:"URL", value:"http://www.prosysinfo.com.pl/tftpserver/");
 
   script_tag(name:"qod_type", value:"exploit");

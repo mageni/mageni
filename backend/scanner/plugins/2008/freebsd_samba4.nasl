@@ -72,8 +72,6 @@ if(description)
  script_xref(name : "URL" , value : "http://www.samba.org/samba/whatsnew/samba-3.0.5.html");
  script_xref(name : "URL" , value : "http://www.samba.org/samba/whatsnew/samba-2.2.10.html");
  script_xref(name : "URL" , value : "http://secunia.com/advisories/12130");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/369698");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/369706");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/2de14f7a-dad9-11d8-b59a-00061bc2ad93.html");
  exit(0);
 }

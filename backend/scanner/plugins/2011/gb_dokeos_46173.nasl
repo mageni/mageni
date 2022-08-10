@@ -40,7 +40,6 @@ if (description)
 
   script_name("Dokeos Multiple Remote File Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46173");
   script_xref(name:"URL", value:"http://www.chamilo.org");
   script_xref(name:"URL", value:"http://code.google.com/p/chamilo/");
   script_xref(name:"URL", value:"http://www.dokeos.com/");

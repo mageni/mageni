@@ -37,7 +37,6 @@ if(description)
 
   script_name("Zen Cart 'extras/curltest.php' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37283");
   script_xref(name:"URL", value:"http://www.acunetix.com/blog/websecuritynews/acusensor-curl-and-zen-cart/");
   script_xref(name:"URL", value:"http://www.zen-cart.com/forum/showthread.php?t=142784");
   script_xref(name:"URL", value:"http://www.zen-cart.com/");

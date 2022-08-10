@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Zope 'standard_error_message' Cross-Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37765");
   script_xref(name:"URL", value:"https://mail.zope.org/pipermail/zope-announce/2010-January/002229.html");
   script_xref(name:"URL", value:"http://www.zope.org");
 

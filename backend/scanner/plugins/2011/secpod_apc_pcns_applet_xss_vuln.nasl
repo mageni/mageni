@@ -35,7 +35,6 @@ if(description)
   script_name("APC PowerChute Network Shutdown 'security/applet' Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34066");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/48973");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/501255");
   script_xref(name:"URL", value:"http://www.dsecrg.com/pages/vul/show.php?id=82");
   script_xref(name:"URL", value:"http://nam-en.apc.com/app/answers/detail/a_id/9539");
 

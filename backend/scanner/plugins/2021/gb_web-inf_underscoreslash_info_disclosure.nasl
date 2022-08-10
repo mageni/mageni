@@ -38,7 +38,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/108460");
   script_xref(name:"URL", value:"https://jira.atlassian.com/browse/JRASERVER-69241");
 
   script_tag(name:"summary", value:"Various application or web servers / products are prone to an

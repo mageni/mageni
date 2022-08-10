@@ -43,7 +43,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/9160");
   script_xref(name:"URL", value:"http://www.g-sec.lu/one-bug-to-rule-them-all.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504969/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attacker to cause a denial of
   service by exhausting memory.");

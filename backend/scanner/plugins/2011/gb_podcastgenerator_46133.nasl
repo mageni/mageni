@@ -33,7 +33,6 @@ if (description)
 
   script_name("Podcast Generator Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46133");
   script_xref(name:"URL", value:"http://podcastgen.sourceforge.net/download.php?lang=en");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/local_file_inclusion_in_podcast_generator.html");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/xss_in_podcast_generator.html");

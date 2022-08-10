@@ -37,7 +37,6 @@ if(description)
 
   script_name("VicFTPS 'LIST' Command Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46546");
   script_xref(name:"URL", value:"http://vicftps.50webs.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

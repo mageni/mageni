@@ -40,7 +40,6 @@ if (description)
 
   script_name("RSForm! Component for Joomla! 'lang' Parameter SQL Injection and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44724");
   script_xref(name:"URL", value:"http://www.rsjoomla.com/joomla-components/rsform.html");
   script_xref(name:"URL", value:"http://www.rsjoomla.com/customer-support/documentations/12-general-overview-of-the-component/46-rsform-changelog.html");
 

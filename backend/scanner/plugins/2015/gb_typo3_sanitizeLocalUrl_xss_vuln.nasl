@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/536464/100/0/threaded");
   script_xref(name:"URL", value:"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-009");
 
   script_category(ACT_GATHER_INFO);

@@ -36,7 +36,6 @@ if(description)
   script_name("Hero Framework Cross-Site Scripting and Request Forgery Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/51668");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57035");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/80796");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/119470");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2013/Jan/62");

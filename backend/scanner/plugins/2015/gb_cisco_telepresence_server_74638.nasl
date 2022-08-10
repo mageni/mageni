@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco TelePresence Server Remote Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74638");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20150513-tp");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow an attacker to execute

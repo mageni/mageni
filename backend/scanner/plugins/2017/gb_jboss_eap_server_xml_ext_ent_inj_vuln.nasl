@@ -53,7 +53,6 @@ if(description)
 
   script_tag(name:"solution", value:"Mitigation: Enable the security features of the DocumentBuilderFactory or SaxParserFactory as described by OWASP below.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98450");
   script_xref(name:"URL", value:"https://www.owasp.org/index.php/XML_External_Entity_(XXE)_Prevention_Cheat_Sheet#JAXP_DocumentBuilderFactory.2C_SAXParserFactory_and_DOM4J");
 
   script_tag(name:"solution_type", value:"Mitigation");

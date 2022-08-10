@@ -37,7 +37,6 @@ if (description)
 
   script_name("Novell ZENworks Mobile Management  Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58402");
   script_xref(name:"URL", value:"http://www.novell.com/support/kb/doc.php?id=7011895");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

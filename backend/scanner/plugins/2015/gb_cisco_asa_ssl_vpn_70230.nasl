@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco ASA Software Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70230");
   script_xref(name:"URL", value:"http://www.cisco.com/");
 
   script_tag(name:"impact", value:"An attacker can leverage this issue to obtain sensitive information

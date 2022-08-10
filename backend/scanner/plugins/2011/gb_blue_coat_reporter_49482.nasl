@@ -52,7 +52,6 @@ if (description)
   aid in launching further attacks.");
 
   script_tag(name:"affected", value:"Blue Coat Reporter versions prior to 9.3 are vulnerable.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49482");
   script_xref(name:"URL", value:"http://www.bluecoat.com/products/reporter/index.html");
   script_xref(name:"URL", value:"http://www.bluecoat.com");
   script_xref(name:"URL", value:"https://kb.bluecoat.com/index?page=content&id=SA60");

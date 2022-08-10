@@ -45,7 +45,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.securitytracker.com/id?1020644");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/44370");
   script_xref(name:"URL", value:"http://secunia.com/advisories/31442/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495264");
 
   script_tag(name:"summary", value:"This host is running Qbik WinGate, which is prone to Denial of
   Service Vulnerability.");

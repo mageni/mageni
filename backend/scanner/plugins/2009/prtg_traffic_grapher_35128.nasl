@@ -55,7 +55,6 @@ if (description)
 
   script_tag(name:"affected", value:"PRTG Traffic Grapher 6.2.2.977 is vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35128");
   script_xref(name:"URL", value:"http://www.paessler.com/prtg6");
   exit(0);
 }

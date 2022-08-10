@@ -55,7 +55,6 @@ cross-site scripting vulnerability.");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/50465/");
   script_xref(name:"URL", value:"http://secunia.com/advisories/51031/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56093");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/79451");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/22070/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/20959/");

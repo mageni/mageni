@@ -39,7 +39,6 @@ if(description)
 
   script_name("WordPress Trashed Posts Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38368");
   script_xref(name:"URL", value:"http://tmacuk.co.uk/?p=180");
   script_xref(name:"URL", value:"http://wordpress.org/development/2010/02/wordpress-2-9-2/");
   script_xref(name:"URL", value:"http://wordpress.org/");

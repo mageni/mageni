@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-06-08 12:12:12 +0530 (Fri, 08 Jun 2012)");
   script_name("MyBB 'member.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53814");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/76097");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113300/mybb168-sql.txt");
 

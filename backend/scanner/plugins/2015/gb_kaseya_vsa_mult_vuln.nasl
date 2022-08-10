@@ -67,7 +67,6 @@ if (description)
 
   script_xref(name:"URL", value:"https://www.kb.cert.org/vuls/id/919604");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/37621");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535996");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2015/Jul/63");
   script_xref(name:"URL", value:"https://raw.githubusercontent.com/pedrib/PoC/master/generic/kaseya-vsa-vuln.txt");
 

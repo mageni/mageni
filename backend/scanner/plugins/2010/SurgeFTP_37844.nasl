@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/surgeftp/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37844");
   script_xref(name:"URL", value:"http://netwinsite.com/surgeftp/");
 
   script_tag(name:"summary", value:"SurgeFTP is prone to multiple cross-site scripting vulnerabilities

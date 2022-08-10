@@ -37,8 +37,6 @@ if (description)
 
   script_name("Novell iManager < 2.7.4 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40480");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40485");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/novell-imanager-buffer-overflow-off-by-one-vulnerabilities");
   script_xref(name:"URL", value:"http://www.novell.com/products/consoles/imanager/features.html");
 

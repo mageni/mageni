@@ -52,7 +52,6 @@ if (description)
   denial-of-service vulnerability");
   script_tag(name:"affected", value:"OTRS versions prior to 2.3.6 and 2.4.8 are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43264");
   script_xref(name:"URL", value:"http://otrs.org/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2010-02-en/");
   script_category(ACT_GATHER_INFO);

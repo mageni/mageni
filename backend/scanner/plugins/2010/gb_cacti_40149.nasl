@@ -40,7 +40,6 @@ if (description)
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40149");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://www.php-security.org/2010/05/13/mops-2010-023-cacti-graph-viewer-sql-injection-vulnerability/index.html");
 

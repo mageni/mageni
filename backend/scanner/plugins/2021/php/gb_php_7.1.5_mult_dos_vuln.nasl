@@ -75,8 +75,6 @@ if (description)
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=74310");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=74577");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=74593");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98518");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98596");
 
   exit(0);
 }

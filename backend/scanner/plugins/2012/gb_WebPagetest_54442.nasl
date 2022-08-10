@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:C/A:C");
   script_version("$Revision: 11355 $");
   script_name("WebPagetest Multiple Input Validation Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54442");
   script_tag(name:"last_modification", value:"$Date: 2018-09-12 12:32:04 +0200 (Wed, 12 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-08-02 14:06:26 +0200 (Thu, 02 Aug 2012)");
   script_category(ACT_ATTACK);

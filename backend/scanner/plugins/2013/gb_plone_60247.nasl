@@ -36,7 +36,6 @@ if (description)
 
   script_name("PloneFormGen Arbitrary Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60247");
   script_xref(name:"URL", value:"http://plone.org/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

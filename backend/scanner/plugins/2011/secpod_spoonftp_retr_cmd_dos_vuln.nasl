@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("ftp/spoonftp/detected");
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17021/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46952/");
   script_xref(name:"URL", value:"http://www.softpedia.com/progDownload/SpoonFTP-Download-49969.html");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to cause a denial of

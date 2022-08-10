@@ -43,7 +43,6 @@ if(description)
   script_dependencies("unbound_version.nasl");
   script_mandatory_keys("unbound/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38701");
   script_xref(name:"URL", value:"http://www.unbound.net/pipermail/unbound-users/2010-March/001057.html");
   script_xref(name:"URL", value:"http://unbound.net/index.html");
 

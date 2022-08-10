@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-3265", "CVE-2009-3266");
   script_bugtraq_id(36418);
   script_name("Opera Multiple Cross-Site Scripting Vulnerabilities - Sep09 (Linux)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506517/100/0/threaded");
   script_xref(name:"URL", value:"http://securethoughts.com/2009/09/exploiting-chrome-and-operas-inbuilt-atomrss-reader-with-script-execution-and-more/");
 
   script_category(ACT_GATHER_INFO);

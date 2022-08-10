@@ -34,8 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
   script_cve_id("CVE-2008-5429");
   script_name("Incredimail Malformed MIME Message DoS Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499038");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499045");
   script_xref(name:"URL", value:"http://mime.recurity.com/cgi-bin/twiki/view/Main/AttackIntro");
 
   script_category(ACT_GATHER_INFO);

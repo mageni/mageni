@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(33440);
   script_name("MS Windows taskmgr.exe Information Disclosure Vulnerability");
   script_xref(name:"URL", value:"http://www.unifiedds.com/?p=44");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500393/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

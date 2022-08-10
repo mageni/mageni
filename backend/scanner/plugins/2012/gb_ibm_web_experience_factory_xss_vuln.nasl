@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 10:25:16 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-01-19 18:01:09 +0530 (Thu, 19 Jan 2012)");
   script_name("IBM Web Experience Factory Multiple Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51246/info");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21575083");
 
   script_tag(name:"qod_type", value:"registry");

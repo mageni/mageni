@@ -47,7 +47,6 @@ it is able to read the string or not.");
   script_tag(name:"summary", value:"This host is installed with BoltWire and is prone to multiple cross-site
 scripting vulnerability.");
   script_tag(name:"solution_type", value:"WillNotFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62907");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/87809");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/123558");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/bugtraq/2013-10/0033.html");

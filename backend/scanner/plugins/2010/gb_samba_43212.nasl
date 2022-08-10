@@ -43,7 +43,6 @@ if(description)
   script_dependencies("smb_nativelanman.nasl", "gb_samba_detect.nasl");
   script_mandatory_keys("samba/smb_or_ssh/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43212");
   script_xref(name:"URL", value:"http://us1.samba.org/samba/history/samba-3.5.5.html");
   script_xref(name:"URL", value:"http://www.samba.org");
   script_xref(name:"URL", value:"http://us1.samba.org/samba/security/CVE-2010-2069.html");

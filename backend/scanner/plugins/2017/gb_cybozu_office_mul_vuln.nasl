@@ -52,7 +52,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 10.6.0.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97717");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

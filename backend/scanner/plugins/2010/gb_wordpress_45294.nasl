@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45294");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/WordPress.Twitter.Feed.0.3.1.Reflected.Cross-site.Scripting/68");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/twitter-feed/");
 

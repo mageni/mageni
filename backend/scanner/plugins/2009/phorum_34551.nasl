@@ -51,7 +51,6 @@ if (description)
   script_tag(name:"affected", value:"Phorum 5.2.10 and 5.2-dev are vulnerable, other versions may also be
   affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34551");
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Nagios XI 'users.php' Multiple Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43294");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-115/");
   script_xref(name:"URL", value:"http://assets.nagios.com/downloads/nagiosxi/CHANGES.TXT");
   script_xref(name:"URL", value:"http://www.nagios.com/products/nagiosxi");

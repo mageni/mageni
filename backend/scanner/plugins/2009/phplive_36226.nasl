@@ -36,7 +36,6 @@ if (description)
 
   script_name("PHP Live! 'deptid' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36226");
   script_xref(name:"URL", value:"http://www.phplivesupport.com/?freshmeat");
 
   script_tag(name:"qod_type", value:"remote_banner");

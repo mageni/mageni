@@ -33,7 +33,6 @@ if (description)
 
   script_name("todoyu 'lang' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47540");
   script_xref(name:"URL", value:"http://www.todoyu.com/");
 
   script_tag(name:"cvss_base", value:"4.3");

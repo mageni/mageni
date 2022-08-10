@@ -36,7 +36,6 @@ if(description)
   script_name("Novell File Reporter Engine 'RECORD' Processing Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/45065");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-11-227/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/518632/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2011 Greenbone Networks GmbH");

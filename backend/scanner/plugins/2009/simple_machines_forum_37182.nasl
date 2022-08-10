@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:C");
   script_name("Simple Machines Forum Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37182");
   script_xref(name:"URL", value:"http://code.google.com/p/smf2-review/issues/list");
 
   script_tag(name:"qod_type", value:"remote_banner");

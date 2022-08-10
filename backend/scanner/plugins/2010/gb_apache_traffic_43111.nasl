@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/http_proxy", 8080, 3128);
   script_mandatory_keys("apache_trafficserver/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43111");
   script_xref(name:"URL", value:"https://issues.apache.org/jira/browse/TS-425");
   script_xref(name:"URL", value:"http://www.nth-dimension.org.uk/pub/NDSA20100830.txt.asc");
 

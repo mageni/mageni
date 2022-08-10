@@ -34,7 +34,6 @@ if(description)
   script_version("$Revision: 11435 $");
   script_cve_id("CVE-2012-1934");
   script_name("Sourcefabric Newscoop Multiple Cross Site Scripting and SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52941");
   script_xref(name:"URL", value:"http://dev.sourcefabric.org/browse/CS-4184");
   script_xref(name:"URL", value:"http://dev.sourcefabric.org/browse/CS-4183");
   script_xref(name:"URL", value:"http://dev.sourcefabric.org/browse/CS-4182");

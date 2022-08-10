@@ -38,7 +38,6 @@ if (description)
 
   script_name("Atlassian Bamboo  Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92057");
   script_xref(name:"URL", value:"https://jira.atlassian.com/browse/BAM-17736?src=confmacro&_ga=1.65705644.34970059.1459525314");
   script_xref(name:"URL", value:"https://www.atlassian.com/software/bamboo/download");
   script_xref(name:"URL", value:"https://confluence.atlassian.com/bamboo/bamboo-security-advisory-2016-07-20-831660461.html");

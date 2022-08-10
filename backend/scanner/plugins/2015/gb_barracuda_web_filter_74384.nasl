@@ -38,7 +38,6 @@ if (description)
 
   script_name("Barracuda Web Filter SSL Certificate Multiple Security Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74384");
 
   script_tag(name:"impact", value:"Successfully exploiting these issues allow attackers to perform man-in-the-
 middle attacks or impersonate trusted servers, which will aid in further attacks.");

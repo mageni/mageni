@@ -37,7 +37,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/49205");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/May/79");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/75654");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522726");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/112737/liferay6-xss.txt");
 
   script_category(ACT_ATTACK);

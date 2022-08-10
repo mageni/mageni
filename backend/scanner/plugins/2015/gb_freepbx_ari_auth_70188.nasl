@@ -38,7 +38,6 @@ if (description)
 
   script_name("FreePBX 'index.php' Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70188");
   script_xref(name:"URL", value:"http://www.freepbx.org/");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary commands in

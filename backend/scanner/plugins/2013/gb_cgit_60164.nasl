@@ -37,7 +37,6 @@ if (description)
 
   script_name("cgit 'url' Parameter Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60164");
   script_xref(name:"URL", value:"http://hjemli.net/git/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-18 12:48:11 +0200 (Thu, 18 Oct 2018) $");

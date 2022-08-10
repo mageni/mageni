@@ -39,7 +39,6 @@ if (description)
 
   script_name("EMC Data Domain OS Local Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95829");
   script_xref(name:"URL", value:"http://www.emc.com/");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2017/Jan/att-79/ESA-2016-160.txt");
 

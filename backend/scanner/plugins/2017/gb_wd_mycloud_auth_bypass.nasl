@@ -48,7 +48,6 @@ if(description)
   script_xref(name:"URL", value:"https://blog.westerndigital.com/western-digital-my-cloud-update/");
   script_xref(name:"URL", value:"https://www.exploitee.rs/index.php/Western_Digital_MyCloud");
   script_xref(name:"URL", value:"https://securify.nl/nl/advisory/SFY20180102/authentication-bypass-vulnerability-in-western-digital-my-cloud-allows-escalation-to-admin-privileges.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/105359");
 
   script_tag(name:"summary", value:"Western Digital MyCloud Products are prone to an authentication bypass and
   multiple remote command injection vulnerabilities.");

@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/ftp_ready_banner/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519498");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/69557");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/104731");
 

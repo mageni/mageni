@@ -36,7 +36,6 @@ if (description)
 
   script_name("vBulletin Multiple Unspecified Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38977");
   script_xref(name:"URL", value:"http://www.vbulletin.com/forum/showthread.php?346761-Security-Patch-Release-4.0.2-PL3");
   script_xref(name:"URL", value:"http://www.vbulletin.com/forum/showthread.php?346897-Security-Patch-Release-4.0.2-PL4");
   script_xref(name:"URL", value:"http://www.vbulletin.com/");

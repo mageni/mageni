@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("YOPS (Your Own Personal [WEB] Server) Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/43156");
   script_xref(name:"URL", value:"http://zed.karelia.ru/yops/index.html");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/yops2009");
 

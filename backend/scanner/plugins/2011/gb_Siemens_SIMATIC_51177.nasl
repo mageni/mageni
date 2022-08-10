@@ -35,7 +35,6 @@ if (description)
 
   script_name("Multiple Siemens SIMATIC Products Authentication Bypass Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51177");
   script_xref(name:"URL", value:"http://www.automation.siemens.com/mcms/human-machine-interface/en/visualization-software/Pages/Default.aspx");
   script_xref(name:"URL", value:"http://www.automation.siemens.com/mcms/human-machine-interface/en/visualization-software/wincc-flexible/wincc-flexible-runtime/user-interface/pages/default.aspx");
   script_xref(name:"URL", value:"http://xs-sniper.com/blog/2011/12/20/the-siemens-simatic-remote-authentication-bypass-that-doesnt-exist/");

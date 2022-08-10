@@ -57,7 +57,6 @@ if (description)
 
   The issue affects versions prior to Nagios 3.0.6.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32611");
   script_xref(name:"URL", value:"http://www.nagios.org/");
 
   exit(0);

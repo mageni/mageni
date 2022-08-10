@@ -44,8 +44,6 @@ if (description)
   script_mandatory_keys("dnsmasq/installed");
   script_require_keys("tftp/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36121");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36120");
   script_xref(name:"URL", value:"http://www.thekelleys.org.uk/dnsmasq/doc.html");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/dnsmasq-vulnerabilities");
 

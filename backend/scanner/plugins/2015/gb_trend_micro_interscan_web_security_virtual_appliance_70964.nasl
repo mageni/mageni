@@ -38,7 +38,6 @@ if(description)
 
   script_name("Trend Micro InterScan Web Security Virtual Appliance Multiple Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70964");
   script_xref(name:"URL", value:"http://www.trend.com");
 
   script_tag(name:"impact", value:"Attackers can exploit these issues to obtain potentially sensitive

@@ -35,7 +35,6 @@ tag_solution = "All Horde-IMP users should upgrade to the latest stable version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200406-11
 http://bugs.gentoo.org/show_bug.cgi?id=53862
-http://www.securityfocus.com/bid/10501";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200406-11.";
 

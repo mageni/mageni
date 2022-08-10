@@ -36,7 +36,6 @@ if (description)
 
   script_name("TP-LINK TL-WR841N Router Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56320");
 
   script_tag(name:"last_modification", value:"$Date: 2018-08-29 14:43:22 +0200 (Wed, 29 Aug 2018) $");
   script_tag(name:"creation_date", value:"2012-10-30 11:42:36 +0100 (Tue, 30 Oct 2012)");

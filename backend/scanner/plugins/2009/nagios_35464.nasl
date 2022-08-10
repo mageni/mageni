@@ -63,7 +63,6 @@ if (description)
 
   Versions prior to Nagios 3.1.1 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35464");
   script_xref(name:"URL", value:"http://www.nagios.org/");
 
   exit(0);

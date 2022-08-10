@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/67515");
   script_xref(name:"URL", value:"http://cxsecurity.com/issue/WLB-2011050142");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/518032/100/0/threaded");
 
   script_tag(name:"summary", value:"This host is running Apache Tomcat and is prone to security bypass
   vulnerability.");

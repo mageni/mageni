@@ -31,7 +31,6 @@ tag_insight = "The following package is affected: sql-ledger";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/462375
 http://www.vuxml.org/freebsd/8e02441d-d39c-11db-a6da-0003476f14d3.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

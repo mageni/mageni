@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Project Jug Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44569");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/Project.Jug.Directory.Traversal/54");
   script_xref(name:"URL", value:"http://sourceforge.net/p/projectjug/home/");
 

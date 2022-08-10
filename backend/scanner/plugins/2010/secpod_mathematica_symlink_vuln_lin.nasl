@@ -56,7 +56,6 @@ overwriting vulnerability.");
   script_tag(name:"qod_type", value:"executable_version");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39805");
   script_xref(name:"URL", value:"http://marc.info/?l=full-disclosure&m=127380255201760&w=2");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511298/100/0/threaded");
   exit(0);
 }
 

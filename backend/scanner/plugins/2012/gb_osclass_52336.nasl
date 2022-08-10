@@ -33,10 +33,8 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("OSClass Directory Traversal and Arbitrary File Upload Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52336");
   script_xref(name:"URL", value:"http://osclass.org/2012/03/05/osclass-2-3-6/");
   script_xref(name:"URL", value:"http://osclass.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521902");
   script_xref(name:"URL", value:"http://www.codseq.it/advisories/osclass_directory_traversal_vulnerability");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 11:11:30 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-03-08 11:53:08 +0100 (Thu, 08 Mar 2012)");

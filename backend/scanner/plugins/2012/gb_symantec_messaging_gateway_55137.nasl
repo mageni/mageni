@@ -38,7 +38,6 @@ if (description)
 
   script_name("Symantec Messaging Gateway  Cross Site Request Forgery Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55137");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-20 12:38:00 +0200 (Thu, 20 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-12-03 10:22:01 +0100 (Mon, 03 Dec 2012)");

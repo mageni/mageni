@@ -47,7 +47,6 @@ if(description)
   script_exclude_keys("www/too_long_url_crash");
 
   script_xref(name:"URL", value:"https://www.westpoint.ltd.uk/advisories/wp-02-0006.txt");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/6122");
   script_xref(name:"URL", value:"ftp://ftp.newatlanta.com/public/4_1/patches/");
 
   script_tag(name:"summary", value:"By sending an overly long request for a .jsp file it is

@@ -38,7 +38,6 @@ if (description)
 
   script_name("Docker Local Privilege Escalation Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95361");
   script_xref(name:"URL", value:"https://www.docker.com/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2017/Jan/21");
 

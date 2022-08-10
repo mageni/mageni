@@ -38,7 +38,6 @@ if (description)
 
   script_name("Elasticsearch Groovy Scripting Engine Unauthenticated Remote Code Execution");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72585");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass certain security
 restrictions and execute code in the context of this application.");

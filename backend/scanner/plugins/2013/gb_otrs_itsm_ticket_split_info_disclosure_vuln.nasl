@@ -56,7 +56,6 @@ and is prone to information disclosure vulnerability.");
 OTRS::ITSM 3.1.0 up to and including 3.1.8, 3.0.0 up to and including 3.0.7
 and 3.2.0 up to and including 3.2.4");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60117");
   script_xref(name:"URL", value:"http://secunia.com/advisories/53496/");
   script_xref(name:"URL", value:"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2013-03/");
   script_category(ACT_GATHER_INFO);

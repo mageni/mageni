@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("WeBid 'converter.php' Multiple Remote PHP Code Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48554");
   script_xref(name:"URL", value:"http://www.webidsupport.com/forums/showthread.php?3892");
   script_xref(name:"URL", value:"http://www.webidsupport.com");
 

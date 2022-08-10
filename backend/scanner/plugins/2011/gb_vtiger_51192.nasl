@@ -37,7 +37,6 @@ if (description)
 
   script_name("vtiger CRM 'graph.php ' Script Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51192");
   script_xref(name:"URL", value:"http://www.vtiger.com/");
   script_xref(name:"URL", value:"http://francoisharvey.ca/2011/12/advisory-meds-2011-01-vtigercrm-anonymous-access-to-setting-module/");
 

@@ -42,7 +42,6 @@ if(description)
   script_require_ports(23);
 
   script_xref(name:"URL", value:"http://sourceforge.net/projects/iptools/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521142");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108430/iptools-overflow.txt");
 
   script_tag(name:"impact", value:"Successful exploitation may allow remote attackers to execute

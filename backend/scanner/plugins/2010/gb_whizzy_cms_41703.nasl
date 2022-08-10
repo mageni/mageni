@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:P/I:P/A:P");
   script_name("Whizzy CMS 'whizzycms1001.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41703");
   script_xref(name:"URL", value:"http://unverse.net/Whizzy-CMS");
 
   script_tag(name:"qod_type", value:"remote_vul");

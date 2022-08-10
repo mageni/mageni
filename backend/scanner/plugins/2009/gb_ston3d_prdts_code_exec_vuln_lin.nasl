@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(35105);
   script_name("StoneTrip Ston3D Standalone Player Code Execution Vulnerability (Linux)");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/StoneTrip-S3DPlayers");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/503887/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

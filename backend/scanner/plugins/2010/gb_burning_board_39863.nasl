@@ -42,7 +42,6 @@ if(description)
   script_dependencies("secpod_woltlab_burning_board_detect.nasl");
   script_mandatory_keys("WoltLabBurningBoard/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39863");
   script_xref(name:"URL", value:"http://www.woltlab.de/products/burning_board/index_en.php");
 
   script_tag(name:"summary", value:"Woltlab Burning Board is prone to a vulnerability that lets attackers

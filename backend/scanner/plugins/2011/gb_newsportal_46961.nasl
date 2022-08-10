@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46961");
   script_xref(name:"URL", value:"http://florian-amrhein.de/newsportal");
 
   script_tag(name:"summary", value:"NewsPortal is prone to a cross-site scripting vulnerability because it

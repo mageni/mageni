@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2011-12-22 12:45:21 +0530 (Thu, 22 Dec 2011)");
   script_name("Mozilla Products DOM Frame Denial of Service Vulnerability (MAC OS X)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51137/discuss");
   script_xref(name:"URL", value:"http://www.mozilla.org/security/announce/2011/mfsa2011-57.html");
 
   script_category(ACT_GATHER_INFO);

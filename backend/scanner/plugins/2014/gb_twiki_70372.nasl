@@ -47,7 +47,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("twiki/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70372");
   script_xref(name:"URL", value:"http://twiki.org/");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue

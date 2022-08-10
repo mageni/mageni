@@ -39,7 +39,6 @@ if (description)
 
   script_name("phpMyAdmin Prior to 3.3.10.2 and 3.4.3.1 Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48563");
   script_xref(name:"URL", value:"http://ha.xxor.se/2011/07/phpmyadmin-3x-multiple-remote-code.html");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/index.php");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security/PMASA-2011-5.php");

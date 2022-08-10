@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:C/I:C/A:C");
   script_version("$Revision: 11865 $");
   script_name("HP Onboard Administrator Multiple Security Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52862");
   script_xref(name:"URL", value:"http://h18004.www1.hp.com/products/blades/components/onboard/index.html?jumpid=reg_R1002_USEN");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c03263573");
 

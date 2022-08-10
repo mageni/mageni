@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("joomla/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/79195");
   script_xref(name:"URL", value:"https://developer.joomla.org/security-centre/630-20151214-core-remote-code-execution-vulnerability.html");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue allows attackers to execute arbitrary code

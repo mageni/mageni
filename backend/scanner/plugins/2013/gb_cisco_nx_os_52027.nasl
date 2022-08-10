@@ -36,7 +36,6 @@ if (description)
   script_version("$Revision: 12131 $");
 
   script_name("Multiple Cisco Nexus Devices IP Stack Remote Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52027");
   script_xref(name:"URL", value:"http://www.cisco.com/en/US/products/ps9902/tsd_products_support_series_home.html");
   script_xref(name:"URL", value:"http://www.cisco.com/en/US/products/ps9670/");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120215-nxos");

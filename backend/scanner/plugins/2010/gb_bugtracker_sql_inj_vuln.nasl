@@ -36,7 +36,6 @@ if(description)
   script_name("BugTracker.NET 'search.aspx' SQL Injection Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/41150");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/61434");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513385/100/0/threaded");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/btnet/files/btnet_3_4_4_release_notes.txt/view");
 
   script_tag(name:"qod_type", value:"remote_banner");

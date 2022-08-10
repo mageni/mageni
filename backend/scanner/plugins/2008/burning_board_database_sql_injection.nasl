@@ -45,7 +45,6 @@ if(description)
   script_dependencies("secpod_woltlab_burning_board_detect.nasl");
   script_mandatory_keys("WoltLabBurningBoard/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/426583/30/0/threaded");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the
   disclosure of this vulnerability. Likely none will be provided anymore. General solution options are to

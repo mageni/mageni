@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("WoltLabBurningBoard/detected");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/39990");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/487139/100/200/threaded");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to delete private messages by
   sending malicious input in the 'pmID' parameter in a delete action in a PM page.");

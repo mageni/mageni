@@ -37,7 +37,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/oracle-forms-and-reports-database-disclosure");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuoct2012-1515893.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55955");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");
   script_tag(name:"creation_date", value:"2014-02-03 23:08:02 +0700 (Mon, 03 Feb 2014)");

@@ -38,7 +38,6 @@ if (description)
 
   script_name("Barracuda Web Application Firewall 660 'cgi-mod/index.cgi' Multiple HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37432");
   script_xref(name:"URL", value:"http://www.barracudanetworks.com/ns/products/web-site-firewall-overview.php");
 
   script_tag(name:"qod_type", value:"remote_banner");

@@ -36,9 +36,7 @@ if (description)
 
   script_name("Wing FTP Server 'admin_loginok.html' HTML Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40510");
   script_xref(name:"URL", value:"http://www.wftpserver.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511612");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

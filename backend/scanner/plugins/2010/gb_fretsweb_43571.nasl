@@ -35,9 +35,7 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Fretsweb Multiple Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43571");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/fretsweb/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504451");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

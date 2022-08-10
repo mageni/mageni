@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("hp_openview_insight/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49096");
   script_xref(name:"URL", value:"https://h10078.www1.hp.com/cda/hpms/display/main/hpms_content.jsp?zn=bto&cp=1-11-15-119^1211_4000_100");
   script_xref(name:"URL", value:"http://h20566.www2.hp.com/portal/site/hpsc/public/kb/docDisplay/?docId=emr_na-c02942411&ac.admitted=1312903473487.876444892.199480143");
 

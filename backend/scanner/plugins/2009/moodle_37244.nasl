@@ -37,7 +37,6 @@ if (description)
 
   script_name("Moodle Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37244");
   script_xref(name:"URL", value:"http://www.moodle.org");
   script_xref(name:"URL", value:"http://moodle.org/security/");
 

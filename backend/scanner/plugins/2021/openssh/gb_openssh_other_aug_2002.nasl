@@ -61,7 +61,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to version 3.3 or later.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/4803");
 
   exit(0);
 }

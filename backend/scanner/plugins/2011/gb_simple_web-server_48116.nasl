@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("Indy/banner");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/48116");
   script_xref(name:"URL", value:"http://www.storecalc.com/langs/eng/webserv.html");
   script_xref(name:"URL", value:"http://www.autosectools.com/Advisory/Simple-web-server-1.2-Directory-Traversal-232");
 

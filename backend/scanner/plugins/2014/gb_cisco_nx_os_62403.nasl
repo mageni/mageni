@@ -37,7 +37,6 @@ if (description)
   script_name("Cisco Open Network Environment Platform  Denial of Service Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62403");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCui51551");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

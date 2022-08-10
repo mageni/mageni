@@ -33,9 +33,7 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Support Incident Tracker 'translate.php' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50742");
   script_xref(name:"URL", value:"http://sitracker.sourceforge.net");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520577");
 
   script_tag(name:"last_modification", value:"2019-05-13 14:05:09 +0000 (Mon, 13 May 2019)");
   script_tag(name:"creation_date", value:"2011-11-30 11:40:15 +0100 (Wed, 30 Nov 2011)");

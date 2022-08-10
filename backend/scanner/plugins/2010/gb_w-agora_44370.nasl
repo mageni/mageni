@@ -37,7 +37,6 @@ if(description)
 
   script_name("w-Agora 'search.php' Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44370");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

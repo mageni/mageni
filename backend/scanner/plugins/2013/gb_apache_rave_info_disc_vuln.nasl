@@ -41,7 +41,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/24744/");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/120769/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2013/Mar/127");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525982/30/0/threaded");
 
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");
   script_category(ACT_GATHER_INFO);

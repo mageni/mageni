@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 631);
   script_mandatory_keys("CUPS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34571");
   script_xref(name:"URL", value:"http://www.cups.org/str.php?L3031");
 
   script_tag(name:"impact", value:"Successful exploits may allow attackers to execute arbitrary code

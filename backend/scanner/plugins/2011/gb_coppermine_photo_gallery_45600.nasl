@@ -42,7 +42,6 @@ if (description)
 
   script_name("Coppermine Photo Gallery Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45600");
   script_xref(name:"URL", value:"http://www.waraxe.us/advisory-79.html");
   script_xref(name:"URL", value:"http://coppermine-gallery.net/");
 

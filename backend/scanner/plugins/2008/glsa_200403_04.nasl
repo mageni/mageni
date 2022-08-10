@@ -56,8 +56,7 @@ tag_solution = "Users are urged to upgrade to Apache 2.0.49:
     
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200403-04
-http://bugs.gentoo.org/show_bug.cgi?id=45206
-http://www.securityfocus.com/bid/9933/info/
+http://bugs.gentoo.org/show_bug.cgi?id=45206";
 http://www.apache.org/dist/httpd/Announcement2.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200403-04.";

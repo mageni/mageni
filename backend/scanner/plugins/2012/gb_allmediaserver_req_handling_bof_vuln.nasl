@@ -36,7 +36,6 @@ if(description)
   script_name("ALLMediaServer Request Handling Buffer Overflow Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/49931");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54475");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/19625");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/114758/allmediaserver_bof.rb.txt");
 

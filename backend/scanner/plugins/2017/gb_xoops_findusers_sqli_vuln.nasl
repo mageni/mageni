@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("XOOPS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97230");
   script_xref(name:"URL", value:"https://gist.github.com/jk1986/3b304ac6b4ae52ae667bba380c2dce19");
 
   script_tag(name:"summary", value:"This host is running XOOPS and is prone to a sql injection vulnerability.");

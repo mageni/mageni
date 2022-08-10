@@ -39,7 +39,6 @@ if (description)
 
   script_name("nginx 'ngx_http_mp4_module.c' Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52999");
   script_xref(name:"URL", value:"http://nginx.org/en/security_advisories.html");
   script_xref(name:"URL", value:"http://nginx.org/");
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("WebMaid CMS Multiple Remote and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38993");
   script_xref(name:"URL", value:"http://code.google.com/p/webmaidcms/");
 
   script_tag(name:"qod_type", value:"remote_vul");

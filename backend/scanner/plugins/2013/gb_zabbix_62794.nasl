@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("Zabbix/Web/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62794");
   script_xref(name:"URL", value:"https://support.zabbix.com/browse/ZBX-7091");
 
   script_tag(name:"impact", value:"A successful exploit may allow an attacker to compromise the

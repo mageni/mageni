@@ -51,7 +51,6 @@ if(description)
   script_tag(name:"affected", value:"rancher Server 1.5.2, rancher Server 1.4.2, rancher Server 1.3.4, rancher Server 1.2.3");
   script_tag(name:"solution", value:"Update to : rancher Server 1.5.3, rancher Server 1.4.3, rancher Server 1.3.5 or rancher Server 1.2.4.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97180");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

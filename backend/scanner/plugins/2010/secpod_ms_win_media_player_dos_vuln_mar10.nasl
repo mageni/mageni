@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
 
   script_name("Microsoft Windows Media Player '.AVI' File DOS Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38790");
   script_xref(name:"URL", value:"http://www.security-database.com/detail.php?alert=CVE-2010-1042");
 
   script_category(ACT_GATHER_INFO);

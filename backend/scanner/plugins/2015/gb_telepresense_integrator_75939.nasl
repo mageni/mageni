@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco TelePresence Integrator C Series Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75939");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCuv00604");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass the authentication mechanism on an affected device. This may lead to further attacks.");

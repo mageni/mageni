@@ -41,10 +41,8 @@ if (description)
 
   script_name("Cacti Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40332");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://www.cacti.net/release_notes_0_8_7f.php");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/511393");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

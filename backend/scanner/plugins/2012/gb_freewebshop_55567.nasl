@@ -39,7 +39,6 @@ if(description)
 
   script_name("FreeWebshop Multiple SQL Injection and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55567");
   script_xref(name:"URL", value:"http://www.freewebshop.org");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");

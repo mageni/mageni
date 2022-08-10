@@ -37,7 +37,6 @@ if (description)
 
   script_name("IRCD-Hybrid and ircd-ratbox 'LINKS' Command Remote Integer Underflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37978");
   script_xref(name:"URL", value:"http://www.ircd-hybrid.org/");
   script_xref(name:"URL", value:"http://www.ircd-ratbox.org/");
 

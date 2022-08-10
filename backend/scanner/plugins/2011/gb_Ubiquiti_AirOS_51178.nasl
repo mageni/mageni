@@ -32,7 +32,6 @@ if(description)
   script_version("$Revision: 11894 $");
   script_name("Ubiquiti Networks AirOS Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51178");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/2011-12/0412.html");
   script_xref(name:"URL", value:"http://www.ubnt.com/");
   script_xref(name:"URL", value:"http://ubnt.com/forum/showthread.php?p=236875");

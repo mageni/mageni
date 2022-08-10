@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Joostina 'index.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45732");
   script_xref(name:"URL", value:"http://www.joostina.ru/");
   script_xref(name:"URL", value:"http://websecurity.com.ua/4818/");
 

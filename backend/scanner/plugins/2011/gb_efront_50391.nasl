@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("efront/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50391");
   script_xref(name:"URL", value:"http://bugs.efrontlearning.net/browse/EF-675");
   script_xref(name:"URL", value:"http://www.efrontlearning.net/");
 

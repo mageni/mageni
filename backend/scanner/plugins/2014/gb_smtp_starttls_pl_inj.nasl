@@ -43,7 +43,6 @@ if(description)
   script_dependencies("smtpserver_detect.nasl", "gb_starttls_smtp.nasl");
   script_mandatory_keys("smtp/starttls/supported");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46767");
   script_xref(name:"URL", value:"http://kolab.org/pipermail/kolab-announce/2011/000101.html");
   script_xref(name:"URL", value:"http://bugzilla.cyrusimap.org/show_bug.cgi?id=3424");
   script_xref(name:"URL", value:"http://cyrusimap.org/mediawiki/index.php/Bugs_Resolved_in_2.4.7");
@@ -54,7 +53,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.watchguard.com/support/release-notes/xcs/9/en-US/EN_ReleaseNotes_XCS_9_1_1/EN_ReleaseNotes_WG_XCS_9_1_TLS_Hotfix.pdf");
   script_xref(name:"URL", value:"http://www.spamdyke.org/documentation/Changelog.txt");
   script_xref(name:"URL", value:"http://datatracker.ietf.org/doc/draft-josefsson-kerberos5-starttls/?include_text=1");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516901");
   script_xref(name:"URL", value:"http://support.avaya.com/css/P8/documents/100134676");
   script_xref(name:"URL", value:"http://support.avaya.com/css/P8/documents/100141041");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpuapr2011-301950.html");

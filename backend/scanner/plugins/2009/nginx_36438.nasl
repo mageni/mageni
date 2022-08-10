@@ -38,10 +38,7 @@ if (description)
 
   script_name("nginx Proxy DNS Cache Domain Spoofing Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36438");
   script_xref(name:"URL", value:"http://nginx.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506541");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506543");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

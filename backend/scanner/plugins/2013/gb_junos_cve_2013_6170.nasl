@@ -70,7 +70,6 @@ environment.");
 a workaround ACLs or firewall filters to limit PIM access to the router only from trusted hosts.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10548");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62973");
   script_xref(name:"URL", value:"http://secunia.com/advisories/55216");
 
   exit(0);

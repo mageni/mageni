@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2010-0924");
   script_bugtraq_id(38447);
   script_name("Apple Safari 'background' Remote Denial Of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38447");
   script_xref(name:"URL", value:"http://nobytes.com/exploits/Safari_4.0.4_background_DoS_pl.txt");
 
   script_tag(name:"qod_type", value:"executable_version");

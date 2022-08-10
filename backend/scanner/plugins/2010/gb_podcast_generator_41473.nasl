@@ -33,7 +33,6 @@ if (description)
 
   script_name("Podcast Generator 'download.php' Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41473");
   script_xref(name:"URL", value:"http://www.scribd.com/doc/28080332/Podcast-Generator-1-3-Arbitrary-File-Download-Windows");
   script_xref(name:"URL", value:"http://podcastgen.sourceforge.net/download.php?lang=en");
 

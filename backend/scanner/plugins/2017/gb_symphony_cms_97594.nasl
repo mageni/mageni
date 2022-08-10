@@ -45,7 +45,6 @@ if(description)
   script_mandatory_keys("symphony/installed");
 
   script_xref(name:"URL", value:"http://www.math1as.com/symphonycms_2.7_exec.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97594");
   script_xref(name:"URL", value:"https://github.com/symphonycms/symphony-2/releases/tag/2.7.0");
 
   script_tag(name:"summary", value:"This host is installed with Symphony CMS

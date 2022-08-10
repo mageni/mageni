@@ -58,7 +58,6 @@ if(description)
   script_tag(name:"summary", value:"The host is running MyBB and is prone to cross site scripting
   vulnerability.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45388");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/64148");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/108156/mybb165-xss.txt");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/96658/mybbtag-xss.txt");

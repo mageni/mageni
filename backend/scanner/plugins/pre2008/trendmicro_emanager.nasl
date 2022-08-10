@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/3327");
 
   script_tag(name:"solution", value:"Remove this CGI or upgrade to the latest version of this software");
 

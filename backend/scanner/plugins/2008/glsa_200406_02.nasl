@@ -36,7 +36,6 @@ tag_solution = "All tripwire users should upgrade to the latest stable version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200406-02
 http://bugs.gentoo.org/show_bug.cgi?id=52945
-http://www.securityfocus.com/archive/1/365036/2004-05-31/2004-06-06/0";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200406-02.";
 

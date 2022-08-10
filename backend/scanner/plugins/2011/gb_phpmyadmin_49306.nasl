@@ -39,7 +39,6 @@ if (description)
 
   script_name("phpMyAdmin Tracking Feature Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49306");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/home_page/security/PMASA-2011-13.php");
 

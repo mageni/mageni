@@ -38,7 +38,6 @@ if(description)
   script_name("MySQL 'sql_parse.cc' Multiple Format String Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35767");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/51614");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504799/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

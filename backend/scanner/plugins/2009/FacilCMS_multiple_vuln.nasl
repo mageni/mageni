@@ -54,7 +54,6 @@ if(description)
   exploit latent vulnerabilities in the underlying database.");
 
   script_tag(name:"affected", value:"FacilCMS 0.1RC2 is vulnerable. Other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34177");
   exit(0);
 }
 

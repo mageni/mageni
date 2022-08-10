@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_name("ejabberd 'mod_pubsub' Module Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50737");
   script_xref(name:"URL", value:"http://www.ejabberd.im/");
   script_xref(name:"URL", value:"http://www.process-one.net/en/ejabberd/release_notes/release_note_ejabberd_2.1.9/");
   script_xref(name:"URL", value:"https://support.process-one.net/browse/EJAB-1498");

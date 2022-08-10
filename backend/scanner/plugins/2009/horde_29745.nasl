@@ -59,7 +59,6 @@ if(description)
 
   script_tag(name:"affected", value:"Horde 3.1.7, 3.2, and prior versions are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/29745");
 
   exit(0);
 }

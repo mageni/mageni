@@ -41,7 +41,6 @@ overflows in many functions in lib/rdfparse.c.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/bid/21185/discuss
 http://www.vuxml.org/freebsd/ed124f8c-82a2-11db-b46b-0012f06707f0.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

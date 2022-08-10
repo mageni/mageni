@@ -38,7 +38,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Sawmill < 8.6.3 Unspecified Remote Security Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61075");
   script_xref(name:"URL", value:"http://www.sawmill.net");
   script_xref(name:"URL", value:"http://www.sawmill.net/version_history8.html");
 

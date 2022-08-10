@@ -37,7 +37,6 @@ if (description)
 
   script_name("Linksys WAP610N Unauthenticated Root Access Security Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46305");
   script_xref(name:"URL", value:"http://www.linksysbycisco.com/APAC/en/home");
   script_xref(name:"URL", value:"http://www.securenetwork.it/ricerca/advisory/download/SN-2010-08.txt");
 

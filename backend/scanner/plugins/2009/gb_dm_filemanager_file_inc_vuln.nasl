@@ -38,7 +38,6 @@ if(description)
   script_bugtraq_id(35521);
   script_name("DM FileManager 'album.php' Remote File Inclusion Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35622");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35521/exploit");
   script_xref(name:"URL", value:"http://www.dutchmonkey.com/?label=Latest+News+%26+Announcements#20090704");
   script_xref(name:"URL", value:"http://www.dutchmonkey.com/?file=products/dm-albums/download_form.html");
 

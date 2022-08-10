@@ -46,7 +46,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/31541");
   script_xref(name:"URL", value:"http://www.us-cert.gov/cas/techalerts/TA07-017A.html");
   script_xref(name:"URL", value:"http://www.appsecinc.com/resources/alerts/oracle/2007-05.shtml");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/474047/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation allows an attacker to execute arbitrary code. It
   can also be exploited to cause a Denial of Service by crashing the Oracle server process.");

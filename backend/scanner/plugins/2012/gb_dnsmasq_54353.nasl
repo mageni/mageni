@@ -44,7 +44,6 @@ if(description)
   script_dependencies("dnsmasq_version.nasl");
   script_mandatory_keys("dnsmasq/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54353");
   script_xref(name:"URL", value:"http://www.thekelleys.org.uk/dnsmasq/doc.html");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=833033");
 

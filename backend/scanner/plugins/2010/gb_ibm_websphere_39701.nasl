@@ -46,7 +46,6 @@ if(description)
   script_dependencies("gb_ibm_websphere_detect.nasl");
   script_mandatory_keys("ibm_websphere_application_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39701");
   script_xref(name:"URL", value:"http://www-306.ibm.com/software/websphere/#");
 
   script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");

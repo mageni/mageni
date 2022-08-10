@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("MyNews 1.2 'basepath' Parameter Multiple Remote File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49818");
   script_xref(name:"URL", value:"http://mynews.magtrb.com/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/105352/mynews12-rfi.txt");
   script_tag(name:"qod_type", value:"remote_vul");

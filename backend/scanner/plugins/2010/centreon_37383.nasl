@@ -41,7 +41,6 @@ if (description)
 
   script_name("Centreon Authentication Mechanism Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37383");
   script_xref(name:"URL", value:"http://www.centreon.com/Development/changelog-2x.html");
   script_xref(name:"URL", value:"http://www.centreon.com/");
 

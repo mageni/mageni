@@ -60,7 +60,6 @@ if(description)
   script_tag(name:"qod_type", value:"registry");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/135185");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535958");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2016 Greenbone Networks GmbH");

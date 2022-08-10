@@ -61,7 +61,6 @@ to inject arbitrary JavaScript in a specially crafted URL request that may allow
   script_tag(name:"solution", value:"Geovap has released Version 4.7.3 Update 3");
 
   script_xref(name:"URL", value:"https://ics-cert.us-cert.gov/advisories/ICSA-17-334-02");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/102031");
   script_xref(name:"URL", value:"https://www.reliance-scada.com/en/download");
 
   exit(0);

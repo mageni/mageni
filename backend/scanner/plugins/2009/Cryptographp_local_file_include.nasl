@@ -52,7 +52,6 @@ if(description)
 
   script_tag(name:"affected", value:"Cryptographp 1.4 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34122");
 
   script_tag(name:"qod_type", value:"remote_app");
 

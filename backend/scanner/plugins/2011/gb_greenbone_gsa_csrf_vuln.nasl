@@ -62,7 +62,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/43092");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/65012");
   script_xref(name:"URL", value:"http://www.openvas.org/OVSA20110118.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/515971/100/0/threaded");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner");

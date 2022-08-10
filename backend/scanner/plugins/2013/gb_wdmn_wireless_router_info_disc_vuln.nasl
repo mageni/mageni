@@ -64,7 +64,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Aug/10");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/85903");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/527433");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/bugtraq/2013-07/0146.html");
 
   script_category(ACT_ATTACK);

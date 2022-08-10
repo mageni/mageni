@@ -33,7 +33,6 @@ if (description)
 
   script_name("Atlassian JIRA FishEye and Crucible Plugins XML Parsing Unspecified Security Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53603");
   script_xref(name:"URL", value:"http://www.atlassian.com/software/jira/");
   script_xref(name:"URL", value:"https://jira.atlassian.com/browse/FE-4016");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/FISHEYE/FishEye+and+Crucible+Security+Advisory+2012-05-17");

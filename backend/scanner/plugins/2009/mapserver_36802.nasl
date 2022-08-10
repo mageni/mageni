@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("MapServer/Installed");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36802");
   script_xref(name:"URL", value:"http://mapserver.gis.umn.edu/");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to execute arbitrary code.

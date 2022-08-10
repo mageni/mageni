@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("piwigo/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/58016");
   script_xref(name:"URL", value:"http://piwigo.org");
 
   script_tag(name:"summary", value:"Piwigo is prone to an arbitrary file-disclosure vulnerability and an

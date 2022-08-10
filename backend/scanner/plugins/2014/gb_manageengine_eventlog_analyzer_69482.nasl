@@ -40,7 +40,6 @@ if(description)
 
   script_name("ManageEngine EventLog Analyzer Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69482");
   script_xref(name:"URL", value:"http://www.manageengine.com/products/eventlog/");
   script_xref(name:"URL", value:"https://www.mogwaisecurity.de/advisories/MSA-2014-01.txt");
 

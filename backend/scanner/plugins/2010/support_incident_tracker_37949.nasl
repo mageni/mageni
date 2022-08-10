@@ -36,7 +36,6 @@ if (description)
 
   script_name("Support Incident Tracker Blank Password Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37949");
   script_xref(name:"URL", value:"http://sitracker.sourceforge.net");
   script_xref(name:"URL", value:"http://sitracker.org/wiki/ReleaseNotes351");
 

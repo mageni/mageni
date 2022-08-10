@@ -33,7 +33,6 @@ if (description)
 
   script_name("Pligg CMS Multiple Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46998");
   script_xref(name:"URL", value:"http://www.pligg.com/");
   script_xref(name:"URL", value:"http://forums.pligg.com/current-version/23041-pligg-content-management-system-1-1-4-a.html");
   script_xref(name:"URL", value:"http://h.ackack.net/the-pligg-cms-0dayset-1.html");

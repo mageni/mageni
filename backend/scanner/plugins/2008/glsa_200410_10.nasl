@@ -35,8 +35,7 @@ tag_solution = "All gettext users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200410-10
 http://bugs.gentoo.org/show_bug.cgi?id=66355
-http://bugs.gentoo.org/show_bug.cgi?id=85766
-http://www.securityfocus.com/advisories/7263";
+http://bugs.gentoo.org/show_bug.cgi?id=85766";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200410-10.";
 

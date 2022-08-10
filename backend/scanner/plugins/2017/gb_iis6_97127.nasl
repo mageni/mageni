@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("IIS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97127");
   script_xref(name:"URL", value:"https://support.microsoft.com/en-us/help/3197835/description-of-the-security-update-for-windows-xp-and-windows-server");
   script_xref(name:"URL", value:"https://github.com/edwardz246003/IIS_exploit");
 

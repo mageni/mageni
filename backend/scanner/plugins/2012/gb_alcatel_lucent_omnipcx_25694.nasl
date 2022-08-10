@@ -36,9 +36,7 @@ if (description)
 
   script_name("Alcatel-Lucent OmniPCX Enterprise Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/25694");
   script_xref(name:"URL", value:"http://www1.alcatel-lucent.com/enterprise/en/products/ip_telephony/omnipcxenterprise/index.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/479699");
   script_xref(name:"URL", value:"http://www1.alcatel-lucent.com/psirt/statements/2007002/OXEUMT.htm");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-12 12:32:04 +0200 (Wed, 12 Sep 2018) $");

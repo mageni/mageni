@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-02-07 12:53:59 +0530 (Tue, 07 Feb 2012)");
   script_name("phux Download Manager 'file' Parameter SQL Injection Vulnerability");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18432/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51725/info");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2012 Greenbone Networks GmbH");

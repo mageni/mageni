@@ -37,7 +37,6 @@ if(description)
 
   script_name("TFTPUtil GUI Long Transport Mode Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39872");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/tftputil");
 
   script_category(ACT_DENIAL);

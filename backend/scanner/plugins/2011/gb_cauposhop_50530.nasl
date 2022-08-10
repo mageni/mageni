@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("CaupoShop 'template' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50530");
   script_xref(name:"URL", value:"http://www.caupo.com");
   script_xref(name:"URL", value:"http://www.caupo.net/de/shopsysteme/csp/");
 

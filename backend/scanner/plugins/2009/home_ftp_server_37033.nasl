@@ -35,9 +35,7 @@ if(description)
   script_cve_id("CVE-2009-4051");
   script_bugtraq_id(37033);
   script_name("Home FTP Server 'SITE INDEX' Command Remote Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37033");
   script_xref(name:"URL", value:"http://downstairs.dnsalias.net/homeftpserver.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507893");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_DENIAL);
   script_family("FTP");

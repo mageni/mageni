@@ -43,7 +43,6 @@ if(description)
   script_dependencies("bind_version.nasl");
   script_mandatory_keys("ISC BIND/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46491");
   script_xref(name:"URL", value:"http://www.isc.org/products/BIND/");
   script_xref(name:"URL", value:"http://www.isc.org/software/bind/advisories/cve-2011-0414");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/559980");

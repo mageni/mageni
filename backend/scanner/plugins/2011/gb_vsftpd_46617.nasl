@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("vsftpd/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46617");
   script_xref(name:"URL", value:"https://security.appspot.com/vsftpd/Changelog.txt");
   script_xref(name:"URL", value:"https://security.appspot.com/vsftpd.html");
 

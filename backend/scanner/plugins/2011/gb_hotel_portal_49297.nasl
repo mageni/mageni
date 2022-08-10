@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("Tourismscripts Hotel Portal 'hotel_city' Parameter HTML Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49297");
   script_xref(name:"URL", value:"http://www.tourismscripts.com");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

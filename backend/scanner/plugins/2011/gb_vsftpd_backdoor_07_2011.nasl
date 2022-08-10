@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/ftp", 21, 6200);
   script_mandatory_keys("vsftpd/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48539");
   script_xref(name:"URL", value:"http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html");
   script_xref(name:"URL", value:"https://security.appspot.com/vsftpd.html");
 

@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"qod_type", value:"remote_banner");
 
   script_xref(name:"URL", value:"http://www.securitytracker.com/id/1031408");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/534284");
   script_xref(name:"URL", value:"https://www.novell.com/support/kb/doc.php?id=3426981");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

@@ -41,7 +41,6 @@ if(description)
 
   script_name("Webuzo Cookie Value Handling Remote Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63483");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-14 14:57:54 +0100 (Thu, 14 Mar 2019) $");
   script_tag(name:"creation_date", value:"2013-11-13 18:18:47 +0100 (Wed, 13 Nov 2013)");

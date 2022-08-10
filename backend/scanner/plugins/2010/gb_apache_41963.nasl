@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41963");
   script_xref(name:"URL", value:"http://httpd.apache.org/download.cgi");
   script_xref(name:"URL", value:"http://httpd.apache.org/");
   script_xref(name:"URL", value:"http://www.apache.org/dist/httpd/Announcement2.2.html");

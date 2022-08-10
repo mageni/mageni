@@ -41,7 +41,6 @@ if(description)
   script_dependencies("gb_clamav_detect_lin.nasl", "gb_clamav_detect_win.nasl", "gb_clamav_remote_detect.nasl");
   script_mandatory_keys("ClamAV/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45152");
   script_xref(name:"URL", value:"http://git.clamav.net/gitweb?p=clamav-devel.git;a=commitdiff;h=1f3db7f074995bd4e1d0183b2db8b1c472d2f41b");
   script_xref(name:"URL", value:"http://www.clamav.net/");
   script_xref(name:"URL", value:"http://git.clamav.net/gitweb?p=clamav-devel.git;a=commitdiff;h=019f1955194360600ecf0644959ceca6734c2d7b");

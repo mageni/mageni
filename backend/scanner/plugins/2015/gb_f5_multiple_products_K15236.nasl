@@ -36,7 +36,6 @@ if(description)
   script_require_ports("Services/rsync", 873);
   script_mandatory_keys("rsync/modules_in_kb");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/69461");
   script_xref(name:"URL", value:"https://support.f5.com/csp/article/K15236");
 
   script_tag(name:"summary", value:"Multiple F5 Networks Products are prone to a remote

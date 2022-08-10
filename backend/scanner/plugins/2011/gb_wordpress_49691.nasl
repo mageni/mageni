@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("WordPress Mailing List Plugin 'wpabspath' Parameter Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49691");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/mailz/");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

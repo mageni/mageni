@@ -54,8 +54,6 @@ Denial of Service vulnerability.");
   script_tag(name:"qod_type", value:"registry");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3338/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/505122/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/505120/100/0/threaded");
   exit(0);
 }
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("vBSEO 'proc_deutf()' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51647");
   script_xref(name:"URL", value:"http://www.vbseo.com/f5/vbseo-security-bulletin-all-supported-versions-patch-release-52783/");
   script_xref(name:"URL", value:"http://www.vbseo.com/");
 

@@ -57,9 +57,7 @@ if(description)
   script_tag(name:"solution", value:"The vendor reports that NaviCOPA 3.01, with a release date of February
   6, 2009, addresses this issue. Contact the vendor for details.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33585");
   script_xref(name:"URL", value:"http://www.navicopa.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/500626");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

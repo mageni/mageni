@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpBB/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45005");
   script_xref(name:"URL", value:"http://www.phpbb.com/");
   script_xref(name:"URL", value:"http://www.phpbb.com/support/documents.php?mode=changelog&version=3#v307-PL1");
 

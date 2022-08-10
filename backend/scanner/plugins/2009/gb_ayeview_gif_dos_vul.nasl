@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2008-5884");
   script_bugtraq_id(31572);
   script_name("AyeView GIF Image Handling Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/497045/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

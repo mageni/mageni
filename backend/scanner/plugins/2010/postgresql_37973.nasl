@@ -48,7 +48,6 @@ if(description)
   script_mandatory_keys("PostgreSQL/installed");
 
   script_xref(name:"URL", value:"http://www.postgresql.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37973");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/55902");
   script_xref(name:"URL", value:"http://intevydis.blogspot.com/2010/01/postgresql-8023-bitsubstr-overflow.html");
 

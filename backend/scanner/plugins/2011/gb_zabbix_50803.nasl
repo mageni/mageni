@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("Zabbix/Web/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50803");
   script_xref(name:"URL", value:"http://www.zabbix.com/index.php");
   script_xref(name:"URL", value:"https://support.zabbix.com/browse/ZBX-4385");
 

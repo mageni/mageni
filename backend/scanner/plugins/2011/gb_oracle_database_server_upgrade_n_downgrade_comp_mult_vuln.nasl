@@ -46,7 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.securitytracker.com/id?1017927");
   script_xref(name:"URL", value:"http://www.us-cert.gov/cas/techalerts/TA07-108A.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/466153/100/0/threaded");
   script_xref(name:"URL", value:"http://www.red-database-security.com/advisory/oracle_sql_injection_dbms_upgrade_internal.html");
 
   script_tag(name:"impact", value:"Successful exploitation allows remote authenticated users to execute

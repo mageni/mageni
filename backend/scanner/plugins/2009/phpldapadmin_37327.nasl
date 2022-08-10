@@ -38,7 +38,6 @@ if (description)
 
   script_name("phpldapadmin 'cmd.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37327");
   script_xref(name:"URL", value:"http://phpldapadmin.sourceforge.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

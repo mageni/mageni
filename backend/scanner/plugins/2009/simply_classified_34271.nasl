@@ -54,7 +54,6 @@ if (description)
 
   script_tag(name:"affected", value:"Simply Classified 0.2 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34271");
   exit(0);
 }
 

@@ -35,7 +35,6 @@ if(description)
   script_bugtraq_id(37713);
   script_name("Varnish Log Escape Sequence Injection Vulnerability");
   script_xref(name:"URL", value:"http://www.ush.it/team/ush/hack_httpd_escape/adv.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/508830/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

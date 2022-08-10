@@ -35,7 +35,6 @@ if (description)
 
   script_name("RealNetworks Helix and Helix Mobile Server Multiple Remote Code Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39490");
   script_xref(name:"URL", value:"http://www.realnetworks.com/products/media_delivery.html");
   script_xref(name:"URL", value:"http://www.realnetworks.com/uploadedFiles/Support/helix-support/SecurityUpdate041410HS.pdf");
 

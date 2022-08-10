@@ -37,7 +37,6 @@ if(description)
 
   script_name("BaconMap Local File Include and SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43908");
   script_xref(name:"URL", value:"http://baconmap.nmsu.edu/");
 
   script_tag(name:"qod_type", value:"remote_vul");

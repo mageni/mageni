@@ -39,9 +39,7 @@ if (description)
 
   script_name("WordPress 'wp-admin/includes/file.php' Arbitrary File Upload Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37005");
   script_xref(name:"URL", value:"http://wordpress.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507819");
   script_xref(name:"URL", value:"http://wordpress.org/development/2009/11/wordpress-2-8-6-security-release/");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");

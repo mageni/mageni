@@ -36,7 +36,6 @@ if(description)
   script_name("Orca Browser 'javascript:' And 'data:' URI XSS Vulnerability");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3386/");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/53002");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506163/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

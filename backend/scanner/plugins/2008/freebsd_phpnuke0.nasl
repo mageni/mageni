@@ -39,8 +39,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://security.nnov.ru/search/document.asp?docid=5748
-http://www.securityfocus.com/archive/1/348375
-http://www.securityfocus.com/archive/1/353201
 http://www.vuxml.org/freebsd/75770425-67a2-11d8-80e3-0020ed76ef5a.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

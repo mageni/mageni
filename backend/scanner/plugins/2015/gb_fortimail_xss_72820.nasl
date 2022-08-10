@@ -36,7 +36,6 @@ if (description)
 
   script_name("Fortinet FortiMail Web Action Quarantine Release Feature Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72820");
   script_xref(name:"URL", value:"http://www.fortinet.com/products/fortimail/");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary script code

@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-06-12 12:12:12 +0530 (Tue, 12 Jun 2012)");
   script_name("WordPress WP-Property Plugin 'uploadify.php' Arbitrary File Upload Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49394");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53787");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18987");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113274/WordPress-WP-Property-1.35.0-Shell-Upload.html");
   script_category(ACT_ATTACK);

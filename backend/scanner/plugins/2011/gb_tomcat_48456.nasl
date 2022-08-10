@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_apache_tomcat_consolidation.nasl");
   script_mandatory_keys("apache/tomcat/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48456");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-7.html");

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("WonderCMS 'page' Parameter Cross Site Scripting And Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44916");
   script_xref(name:"URL", value:"http://krneky.com/en/wondercms");
 
   script_tag(name:"qod_type", value:"remote_vul");

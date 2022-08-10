@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("apache/tomcat/http/detected");
 
   script_xref(name:"URL", value:"http://www.packetstormsecurity.org/0903-exploits/CVE-2009-0781.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/501538/100/0/threaded");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-6.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-5.html");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-4.html");

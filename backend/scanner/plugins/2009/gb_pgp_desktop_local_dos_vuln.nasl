@@ -36,7 +36,6 @@ if(description)
   script_name("PGP Desktop Local Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/33310/");
   script_xref(name:"URL", value:"http://en.securitylab.ru/lab/PT-2009-01");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/502633");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

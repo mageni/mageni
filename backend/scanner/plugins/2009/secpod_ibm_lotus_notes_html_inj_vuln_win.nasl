@@ -54,7 +54,6 @@ Injection vulnerability.");
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"http://www.scip.ch/?vuldb.4021");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21403834");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506296/100/0/threaded");
   exit(0);
 }
 

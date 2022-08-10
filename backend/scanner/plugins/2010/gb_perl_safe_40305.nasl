@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/safe/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40305");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2010-1447");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/2932");
   script_xref(name:"URL", value:"http://cpansearch.perl.org/src/RGARCIA/Safe-2.27/Changes");

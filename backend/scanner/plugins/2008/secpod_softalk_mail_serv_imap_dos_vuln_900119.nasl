@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("imap/softalk/detected");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/31715/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495896");
   script_xref(name:"URL", value:"http://www.softalkltd.com/products/download_wm.asp");
 
   script_tag(name:"summary", value:"The host is running Softalk Mail Server, which is prone to denial

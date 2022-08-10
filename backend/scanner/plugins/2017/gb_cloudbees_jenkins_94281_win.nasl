@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 8080);
 
   script_xref(name:"URL", value:"https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-11-16");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/94281");
   script_xref(name:"URL", value:"https://jenkins.io/changelog-stable/");
 
   script_tag(name:"summary", value:"This host is installed with CloudBees Jenkins and is prone to

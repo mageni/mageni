@@ -39,7 +39,6 @@ if (description)
 
   script_name("Apache CouchDB Web Administration Interface Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46066");
   script_xref(name:"URL", value:"http://couchdb.apache.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

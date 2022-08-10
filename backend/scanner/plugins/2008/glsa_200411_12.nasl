@@ -33,8 +33,7 @@ tag_solution = "All zgv users should upgrade to the latest version:
     # emerge --ask --oneshot --verbose '>=media-gfx/zgv-5.8'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200411-12
-http://bugs.gentoo.org/show_bug.cgi?id=69150
-http://www.securityfocus.com/archive/1/379472";
+http://bugs.gentoo.org/show_bug.cgi?id=69150";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200411-12.";
 

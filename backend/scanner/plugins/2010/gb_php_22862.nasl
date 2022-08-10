@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/22862");
   script_xref(name:"URL", value:"http://www.php-security.org/MOPB/MOPB-15-2007.html");
   script_xref(name:"URL", value:"http://www.php.net");
   script_xref(name:"URL", value:"http://lists.suse.com/archive/suse-security-announce/2007-May/0007.html");

@@ -63,7 +63,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/89084");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/124091");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/529907");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"qod_type", value:"remote_app");

@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("1024 CMS 1.1.0 Beta 'force_download.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50275");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/70820");
   script_xref(name:"URL", value:"http://1024cms.org/index.php");
 

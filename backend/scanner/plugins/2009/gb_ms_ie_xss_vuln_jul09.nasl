@@ -36,8 +36,6 @@ if(description)
   script_bugtraq_id(35570);
   script_name("Microsoft Internet Explorer XSS Vulnerability - July09");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3275");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504718/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504723/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

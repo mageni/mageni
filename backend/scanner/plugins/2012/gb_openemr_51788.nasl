@@ -36,10 +36,8 @@ if (description)
 
   script_name("OpenEMR Local File Include and Command Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51788");
   script_xref(name:"URL", value:"http://www.open-emr.org/");
   script_xref(name:"URL", value:"http://www.open-emr.org/wiki/index.php/OpenEMR_Patches");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521448");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-25 11:00:11 +0200 (Tue, 25 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-02-02 12:55:39 +0100 (Thu, 02 Feb 2012)");

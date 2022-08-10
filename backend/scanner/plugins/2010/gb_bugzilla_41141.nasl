@@ -37,7 +37,6 @@ if (description)
 
   script_name("Bugzilla 'time-tracking' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41141");
   script_xref(name:"URL", value:"http://www.bugzilla.org");
   script_xref(name:"URL", value:"http://www.bugzilla.org/security/3.2.6/");
 

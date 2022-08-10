@@ -34,7 +34,6 @@ if (description)
 
   script_name("Adobe ColdFusion Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42342");
   script_xref(name:"URL", value:"http://www.adobe.com/products/coldfusion/");
   script_xref(name:"URL", value:"http://www.adobe.com");
   script_xref(name:"URL", value:"http://www.gnucitizen.org/blog/coldfusion-directory-traversal-faq-cve-2010-2861/");

@@ -37,7 +37,6 @@ if (description)
 
   script_name("Perforce Socket Hijacking Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38594");
   script_xref(name:"URL", value:"http://www.perforce.com/perforce/products/p4d.html");
   script_xref(name:"URL", value:"http://resources.mcafee.com/forms/Aurora_VDTRG_WP");
 

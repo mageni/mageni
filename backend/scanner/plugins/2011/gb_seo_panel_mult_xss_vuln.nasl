@@ -36,7 +36,6 @@ if(description)
   script_name("Seo Panel Multiple Cross-site Scripting (XSS) Vulnerabilities");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/64725");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/16000/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/515768/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (c) 2011 Greenbone Networks GmbH");

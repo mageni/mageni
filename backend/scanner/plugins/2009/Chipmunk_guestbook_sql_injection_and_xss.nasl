@@ -49,7 +49,6 @@ if(description)
   A successful exploit could allow an attacker to compromise the
   application, access or modify data, or exploit vulnerabilities in
   the underlying database.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/18195");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year
   since the disclosure of this vulnerability. Likely none will be provided anymore.

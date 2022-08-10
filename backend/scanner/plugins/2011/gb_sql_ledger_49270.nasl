@@ -34,10 +34,8 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("SQL-Ledger SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49270");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/ledger-smb/files/Development%20Snapshots/1.2.25-rc1/");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/ledger-smb/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519383");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

@@ -38,7 +38,6 @@ if(description)
   script_xref(name:"URL", value:"http://en.securitylab.ru/nvd/367866.php");
   script_xref(name:"URL", value:"http://en.securitylab.ru/nvd/367867.php");
   script_xref(name:"URL", value:"http://www.fortiguardcenter.com/advisory/FGA-2009-04.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500722/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

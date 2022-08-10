@@ -57,7 +57,6 @@ if(description)
   Woltlab Burning Board 3.0.5
   Woltlab Burning Board 3.0.3 PL 1
   Woltlab Burning Board 3.0");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34057");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure
   of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer

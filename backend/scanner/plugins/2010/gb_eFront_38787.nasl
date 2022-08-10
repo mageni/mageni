@@ -57,11 +57,9 @@ if(description)
   script_tag(name:"summary", value:"eFront is prone to a local file-include vulnerability because it fails
   to properly sanitize user-supplied input.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38787");
   script_xref(name:"URL", value:"http://www.efrontlearning.net/");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/efront-php-file-inclusion");
   script_xref(name:"URL", value:"http://forum.efrontlearning.net/viewtopic.php?f=15&t=1945");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510155");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_app");

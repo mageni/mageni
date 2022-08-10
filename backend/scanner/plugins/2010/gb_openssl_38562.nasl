@@ -39,7 +39,6 @@ if(description)
 
   script_name("OpenSSL 'bn_wexpend()' Error Handling Unspecified Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38562");
   script_xref(name:"URL", value:"http://openssl.org/");
 
   script_tag(name:"solution_type", value:"VendorFix");

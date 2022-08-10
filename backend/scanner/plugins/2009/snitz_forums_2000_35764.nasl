@@ -36,7 +36,6 @@ if (description)
 
   script_name("Snitz Forums 2000 'register.asp' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35764");
   script_xref(name:"URL", value:"http://forum.snitz.com/");
 
   script_tag(name:"qod_type", value:"remote_banner");

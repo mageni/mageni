@@ -36,7 +36,6 @@ if(description)
 
   script_name("phpMyRealty 'seed' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49250");
   script_xref(name:"URL", value:"http://www.phpmyrealty.com");
 
   script_tag(name:"qod_type", value:"remote_active");

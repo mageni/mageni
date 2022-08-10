@@ -40,10 +40,8 @@ if(description)
 
   script_name("FlatPress 'userid' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36543");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/53589");
   script_xref(name:"URL", value:"https://sourceforge.net/project/shownotes.php?group_id=157089&release_id=628765");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/506816");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"remote_banner");

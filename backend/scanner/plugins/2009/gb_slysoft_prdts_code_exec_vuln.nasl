@@ -39,7 +39,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/34289");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34287");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34288");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/501713/100/0/threaded");
   script_xref(name:"URL", value:"http://www.slysoft.com/en/download.html");
 
   script_tag(name:"qod_type", value:"executable_version");

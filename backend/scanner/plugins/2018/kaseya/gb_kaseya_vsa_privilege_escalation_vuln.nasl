@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/archive/1/541884/100/0/threaded");
   script_xref(name:"URL", value:"https://helpdesk.kaseya.com/hc/en-gb/articles/360002367172-CVE-2017-12410-TOCTOU-Flaw-in-the-VSA-s-Agent-");
   script_xref(name:"URL", value:"https://www.kaseya.com/products/vsa");
 

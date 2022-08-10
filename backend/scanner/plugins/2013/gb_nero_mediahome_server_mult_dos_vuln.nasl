@@ -54,7 +54,6 @@ if(description)
   script_xref(name:"URL", value:"http://inter5.org/archives/226548");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Jan/36");
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23130");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525249/30/0/threaded");
 
   script_category(ACT_DENIAL);
   script_tag(name:"qod_type", value:"remote_vul");

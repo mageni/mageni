@@ -56,7 +56,6 @@ if(description)
 
   phpDatingClub 3.7 is vulnerable, other versions may also be
   affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35454");
   exit(0);
 }
 

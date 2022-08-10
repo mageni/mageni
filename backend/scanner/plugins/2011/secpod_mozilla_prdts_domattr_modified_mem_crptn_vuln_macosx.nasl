@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-20 13:59:41 +0200 (Sat, 20 Oct 2018) $");
   script_name("Mozilla Products DOMAttrModified Memory Corruption Vulnerability (MAC OS X)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51138/info");
   script_xref(name:"URL", value:"http://www.mozilla.org/security/announce/2011/mfsa2011-55.html");
 
   script_category(ACT_GATHER_INFO);

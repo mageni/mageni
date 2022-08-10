@@ -36,7 +36,6 @@ if(description)
 
   script_name("IBM 1754 GCM16 and GCM32 Global Console Managers Multiple Command Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61816");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-14 14:57:54 +0100 (Thu, 14 Mar 2019) $");
   script_tag(name:"creation_date", value:"2013-08-19 15:12:16 +0200 (Mon, 19 Aug 2013)");

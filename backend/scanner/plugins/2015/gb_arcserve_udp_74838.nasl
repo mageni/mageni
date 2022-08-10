@@ -38,8 +38,6 @@ if (description)
 
   script_name("Arcserve Unified Data Protection Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74838");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/74845");
 
   script_tag(name:"impact", value:"Attackers can exploit these issues to obtain sensitive information
 that may lead to further attacks.");

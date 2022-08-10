@@ -25,7 +25,6 @@
 
 if (description)
 {
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/6939");
   script_xref(name:"URL", value:"http://httpd.apache.org/docs/mod/core.html#fileetag");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata32.html");
   script_xref(name:"URL", value:"http://support.novell.com/docs/Tids/Solutions/10090670.html");

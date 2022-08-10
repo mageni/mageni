@@ -40,7 +40,6 @@ if (description)
 
   script_name("OpenSSL Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51281");
   script_xref(name:"URL", value:"http://www.openssl.org");
   script_xref(name:"URL", value:"http://www.openssl.org/news/secadv_20120104.txt");
 

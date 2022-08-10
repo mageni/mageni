@@ -44,7 +44,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51806");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=54446");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=782657");
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php");

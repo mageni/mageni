@@ -44,7 +44,6 @@ if(description)
   script_dependencies("gb_hp_printer_detect.nasl");
   script_mandatory_keys("hp_printer/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61565");
   script_xref(name:"URL", value:"http://www.hp.com/");
 
   script_tag(name:"impact", value:"The vulnerability could be exploited remotely to gain unauthorized access to data.");

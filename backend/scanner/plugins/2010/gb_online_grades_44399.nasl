@@ -37,7 +37,6 @@ if(description)
 
   script_name("Online Grades Multiple Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/44399");
   script_xref(name:"URL", value:"http://www.onlinegrades.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

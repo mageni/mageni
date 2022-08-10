@@ -41,7 +41,6 @@ if (description)
 
   script_xref(name:"URL", value:"http://www.dahuasecurity.com/en/us/uploads/Dahua%20Technology%20Vulnerability%20030617v2.pdf");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2017/Mar/7");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96449");
   script_xref(name:"URL", value:"https://nullku7.github.io/stuff/exposure/dahua/2017/02/24/dahua-nvr.html");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass authentication mechanism and perform unauthorized actions. This may lead to further attacks.");

@@ -59,7 +59,6 @@
 # Message-Id: <D8F6A4EC-ABE3-11D6-AF54-0003936D6AE0@oreillynet.com>
 # Subject: Re: [VulnWatch] Foundstone Labs Advisory - Information Leakage in Orinoco and Compaq Access Points
 #
-# http://www.securityfocus.com/archive/1/313714/2003-03-01/2003-03-07/0
 # http://www.iss.net/issEn/delivery/xforce/alertdetail.jsp?id=advise15
 
 if(description)

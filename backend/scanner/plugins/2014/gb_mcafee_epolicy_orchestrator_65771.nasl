@@ -37,7 +37,6 @@ if (description)
   script_version("$Revision: 12095 $");
 
   script_name("McAfee ePolicy Orchestrator XML External Entity Information Disclosure Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65771");
   script_xref(name:"URL", value:"http://www.mcafee.com/us/enterprise/products/system_security_management/epolicy_orchestrator.html");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-25 14:00:24 +0200 (Thu, 25 Oct 2018) $");

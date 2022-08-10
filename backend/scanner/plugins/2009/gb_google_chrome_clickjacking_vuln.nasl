@@ -35,8 +35,6 @@ if(description)
   script_cve_id("CVE-2009-0374");
   script_name("Google Chrome Clickjacking Vulnerability");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/7903");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500533/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/500499/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

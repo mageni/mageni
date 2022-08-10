@@ -54,7 +54,6 @@ if(description)
   user-supplied input in 'options.php' and 'viewforum.php' before using it in the SQL query, and
   magic_quotes_gpc is set to off.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/15502");
   script_xref(name:"URL", value:"http://secunia.com/advisories/17664/");
   script_xref(name:"URL", value:"http://www.php-fusion.co.uk/downloads.php?cat_id=3");
 

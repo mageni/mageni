@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:N/A:P");
   script_cve_id("CVE-2009-1335");
   script_name("Microsoft Internet Explorer Denial of Service Vulnerability - Apr09");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502617/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

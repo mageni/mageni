@@ -39,7 +39,6 @@ if (description)
 
   script_name("nginx 'ngx_cpystrn()' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52578");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=803856");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Mar/65");
   script_xref(name:"URL", value:"http://nginx.org/");

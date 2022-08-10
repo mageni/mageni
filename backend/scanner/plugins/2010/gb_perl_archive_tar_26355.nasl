@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/archive_tar/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/26355");
   script_xref(name:"URL", value:"http://search.cpan.org/~kane/Archive-Tar-1.36/lib/Archive/Tar.pm");
   script_xref(name:"URL", value:"https://issues.rpath.com/browse/RPL-1716?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel");
   script_xref(name:"URL", value:"http://rt.cpan.org/Public/Bug/Display.html?id=30380");

@@ -70,7 +70,6 @@ if(description)
   script_tag(name:"solution", value:"Jenkins main line users should update to 2.57,
     Jenkins LTS users should update to 2.46.2");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98056");
   script_xref(name:"URL", value:"https://jenkins.io/security/advisory/2017-04-26/");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

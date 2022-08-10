@@ -63,7 +63,6 @@ if(description)
   7.6.1-rev21 or later.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/535388/100/1100/threaded");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");
   script_family("Web application abuses");
@@ -93,7 +92,6 @@ if(oxRev)
   ## Updating version with revision number
   oxsVer = oxsVer + "." + oxRev;
 
-  ##http://www.securityfocus.com/bid/74350
   if(oxsVer =~ "^(6|7)")
   {
     if(version_in_range(version:oxsVer, test_version:"6.20.7.15", test_version2:"7.6.1.20"))

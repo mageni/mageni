@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_perl_modules_detect_lin.nasl");
   script_mandatory_keys("perl/linux/modules/cgi/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/44892");
   script_xref(name:"URL", value:"http://perl5.git.perl.org/perl.git/commit/84601d63a7e34958da47dad1e61e27cb3bd467d1");
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");

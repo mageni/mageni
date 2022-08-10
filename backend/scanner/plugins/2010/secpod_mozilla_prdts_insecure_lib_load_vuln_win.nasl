@@ -37,7 +37,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/41095");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/14783/");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/2169");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513324/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 SecPod");

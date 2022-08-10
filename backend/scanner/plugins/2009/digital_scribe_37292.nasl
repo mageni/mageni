@@ -37,9 +37,7 @@ if (description)
 
   script_name("Digital Scribe Multiple SQL Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37292");
   script_xref(name:"URL", value:"http://www.digital-scribe.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508410");
 
   script_category(ACT_ATTACK);
   script_tag(name:"qod_type", value:"remote_vul");

@@ -35,7 +35,6 @@ if (description)
 
   script_name("UseBB Forum and Topic Feed Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43292");
   script_xref(name:"URL", value:"http://www.usebb.net/community/topic.php?id=2501");
   script_xref(name:"URL", value:"http://www.usebb.net/");
 

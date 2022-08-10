@@ -39,7 +39,6 @@ if (description)
 
   script_name("Symphony SQL Injection and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43180");
   script_xref(name:"URL", value:"http://symphony-cms.com/");
 
   script_tag(name:"qod_type", value:"remote_banner");

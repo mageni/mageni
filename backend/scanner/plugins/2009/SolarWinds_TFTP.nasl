@@ -52,7 +52,6 @@ if (description)
 
   script_tag(name:"affected", value:"SolarWinds TFTP Server 9.2.0.111 and prior versions are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36182");
   script_xref(name:"URL", value:"http://solarwinds.net/Tools/Free_tools/TFTP_Server/index.htm");
 
   script_tag(name:"qod_type", value:"exploit");

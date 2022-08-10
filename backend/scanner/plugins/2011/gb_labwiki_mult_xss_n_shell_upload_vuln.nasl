@@ -35,7 +35,6 @@ if(description)
   script_name("LabWiki Multiple Cross-site Scripting (XSS) and Shell Upload Vulnerabilities");
   script_xref(name:"URL", value:"https://secunia.com/advisories/46762");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18100/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520441");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/current/0112.html");
 
   script_category(ACT_ATTACK);

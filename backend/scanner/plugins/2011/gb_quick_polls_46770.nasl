@@ -35,9 +35,7 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:P");
   script_cve_id("CVE-2011-1099");
   script_name("Quick Poll Local File Include and Arbitrary File Deletion Vulnerabilities");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46770");
   script_xref(name:"URL", value:"http://www.focalmedia.net/create_voting_poll.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516873");
   script_xref(name:"URL", value:"http://www.uncompiled.com/2011/03/quick-polls-local-file-inclusion-deletion-vulnerabilities-cve-2011-1099/");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

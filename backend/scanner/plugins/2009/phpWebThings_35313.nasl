@@ -51,7 +51,6 @@ if (description)
   script_tag(name:"affected", value:"phpWebThings 1.5.2 is vulnerable, other versions may also be
   affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35313");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

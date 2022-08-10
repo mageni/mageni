@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_phpmailer_detect.nasl");
   script_mandatory_keys("phpmailer/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/24417");
   script_xref(name:"URL", value:"https://github.com/PHPMailer/PHPMailer/blob/master/changelog.md#version-200-rc1-thu-nov-08-2007-interim-release");
   script_xref(name:"URL", value:"https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md");
 

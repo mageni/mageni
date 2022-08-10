@@ -35,8 +35,6 @@ if(description)
   script_cve_id("CVE-2008-5424");
   script_bugtraq_id(32702);
   script_name("Microsoft Outlook Express Malformed MIME Message DoS Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499038");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499045");
   script_xref(name:"URL", value:"http://mime.recurity.com/cgi-bin/twiki/view/Main/AttackIntro");
 
   script_category(ACT_GATHER_INFO);

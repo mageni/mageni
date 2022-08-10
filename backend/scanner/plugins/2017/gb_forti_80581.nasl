@@ -36,7 +36,6 @@ if(description)
 
   script_name("Fortinet FortiOS SSH Undocumented Interactive Login Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/80581");
   script_xref(name:"URL", value:"http://www.fortinet.com/products/fortigate_overview.html");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to bypass certain security restrictions to perform unauthorized actions. This may aid in

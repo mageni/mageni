@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco Unified Communications Manager IM and Presence Service EST API Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/76944");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/Cisco-SA-20151002-CVE-2015-6310");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to restart the affected service and cause a denial of service condition.");

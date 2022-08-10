@@ -42,9 +42,7 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33864");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/taifajobs/");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/502312");
 
   script_tag(name:"summary", value:"This host is running Taifajobs.
 

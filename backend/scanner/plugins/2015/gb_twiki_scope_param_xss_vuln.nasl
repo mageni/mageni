@@ -64,7 +64,6 @@ if(description)
   script_tag(name:"solution", value:"Update to the hotfix in the referenced advisory.");
 
   script_xref(name:"URL", value:"http://www.securitytracker.com/id/1031400");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/534289");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2014/Dec/82");
   script_xref(name:"URL", value:"http://twiki.org/cgi-bin/view/Codev/SecurityAlert-CVE-2014-9367");
 

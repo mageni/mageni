@@ -55,7 +55,6 @@ if (description)
   vulnerabilities in the underlying database.");
 
   script_tag(name:"affected", value:"ComicShout 2.8 is vulnerable. Other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/29464");
 
   exit(0);
 }

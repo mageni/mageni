@@ -40,7 +40,6 @@ if(description)
   script_require_ports("Services/smtp", 25, "Services/imap", 143);
   script_mandatory_keys("imap/banner/available", "smtp/mailenable/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/417589");
   script_xref(name:"URL", value:"http://www.mailenable.com/hotfix/MEIMAPS.ZIP");
 
   script_tag(name:"solution", value:"Apply the IMAP Cumulative Hotfix/Update provided in the

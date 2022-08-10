@@ -47,7 +47,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ProFTPD/Installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36804");
   script_xref(name:"URL", value:"http://bugs.proftpd.org/show_bug.cgi?id=3275");
   script_xref(name:"URL", value:"http://www.proftpd.org");
 

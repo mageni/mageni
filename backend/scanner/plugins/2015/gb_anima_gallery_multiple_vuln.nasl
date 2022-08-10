@@ -71,7 +71,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/132150");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/535705/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

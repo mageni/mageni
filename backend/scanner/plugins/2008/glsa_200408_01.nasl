@@ -36,7 +36,6 @@ tag_solution = "All MPlayer users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200408-01
 http://bugs.gentoo.org/show_bug.cgi?id=55456
-http://www.securityfocus.com/bid/10615/
 http://www.open-security.org/advisories/5";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200408-01.";

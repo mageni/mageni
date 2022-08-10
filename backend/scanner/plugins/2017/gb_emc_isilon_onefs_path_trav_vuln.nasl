@@ -64,7 +64,6 @@ strings in input parameters of the application.");
 
   script_tag(name:"solution", value:"Update 7.1.1.11, 7.2.1.4, 8.0.0.2 or later versions.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/540338/30/0/threaded");
 
   exit(0);
 }

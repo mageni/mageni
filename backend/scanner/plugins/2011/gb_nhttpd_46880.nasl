@@ -37,9 +37,7 @@ if (description)
 
   script_name("nostromo nhttpd Directory Traversal Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46880");
   script_xref(name:"URL", value:"http://www.nazgul.ch/dev_nostromo.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517026");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

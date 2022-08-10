@@ -49,7 +49,6 @@ if (description)
 
   script_tag(name:"affected", value:"CoreHTTP 0.5.3.1 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37454");
   script_xref(name:"URL", value:"http://aconole.brad-x.com/advisories/corehttp.txt");
 
   script_tag(name:"solution_type", value:"WillNotFix");

@@ -38,7 +38,6 @@ if(description)
 
   script_name("WordPress Google Doc Embedder Plugin Arbitrary File Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57133");
   script_xref(name:"URL", value:"http://www.wordpress.org/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");

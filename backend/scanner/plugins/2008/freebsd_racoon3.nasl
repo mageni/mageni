@@ -38,7 +38,6 @@ properly handled in isakmp_inf.c.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/349756
 http://www.vuxml.org/freebsd/739bb51d-7e82-11d8-9645-0020ed76ef5a.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

@@ -36,7 +36,6 @@ if(description)
   script_name("SWFTools Multiple Integer Overflow Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39970");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-80/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/513102/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");

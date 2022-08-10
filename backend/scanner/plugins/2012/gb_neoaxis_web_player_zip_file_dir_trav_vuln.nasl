@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-13 14:45:05 +0200 (Thu, 13 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-02-01 14:14:14 +0530 (Wed, 01 Feb 2012)");
   script_name("NeoAxis Web Player Zip File Directory Traversal Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51666");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/72427");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/neoaxis_1-adv.txt");
 

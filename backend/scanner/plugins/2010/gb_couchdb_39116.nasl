@@ -37,7 +37,6 @@ if (description)
 
   script_name("CouchDB Message Digest Verification Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39116");
   script_xref(name:"URL", value:"http://couchdb.apache.org/");
 
   script_tag(name:"cvss_base", value:"4.3");

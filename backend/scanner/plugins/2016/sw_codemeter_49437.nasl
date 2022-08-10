@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"affected", value:"Wibu-Systems CodeMeter 4.30c is affected. Other versions may also be vulnerable.");
   script_tag(name:"solution", value:"Upgrade to Wibu-Systems CodeMeter 4.30d or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49437");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/codemeter_1-adv.txt");
 
   script_tag(name:"qod_type", value:"remote_app");

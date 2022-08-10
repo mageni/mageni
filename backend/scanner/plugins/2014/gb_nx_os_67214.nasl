@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco Nexus 7000 Series Switches Local Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67214");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCui56136");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");

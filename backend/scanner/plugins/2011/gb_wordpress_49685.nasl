@@ -39,7 +39,6 @@ if (description)
 
   script_name("WordPress AllWebMenus Plugin 'abspath' Parameter Remote File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49685");
   script_xref(name:"URL", value:"http://wordpress.org/");
 
   script_category(ACT_ATTACK);

@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("mikrotik/detected");
 
   script_xref(name:"URL", value:"https://forum.mikrotik.com/viewtopic.php?f=21&t=126695");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/101274");
   script_xref(name:"URL", value:"https://www.krackattacks.com/");
   script_xref(name:"URL", value:"https://mikrotik.com/download/changelogs/");
 

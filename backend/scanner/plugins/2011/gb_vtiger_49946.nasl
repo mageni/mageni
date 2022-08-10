@@ -38,7 +38,6 @@ if (description)
 
   script_name("vtiger CRM 'class.phpmailer.php' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49946");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Oct/223");
   script_xref(name:"URL", value:"http://www.vtiger.com/");
 

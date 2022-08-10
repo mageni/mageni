@@ -39,7 +39,6 @@ if (description)
 
   script_name("Awstats Configuration File Remote Arbitrary Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45123");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/870532");
   script_xref(name:"URL", value:"http://www.exploitdevelopment.com/Vulnerabilities/2010-WEB-001.html");
   script_xref(name:"URL", value:"http://awstats.sourceforge.net/");

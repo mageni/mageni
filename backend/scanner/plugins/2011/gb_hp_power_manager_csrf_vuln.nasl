@@ -42,7 +42,6 @@ if(description)
   script_name("HP Power Manager Cross Site Request Forgery (CSRF) and XSS Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/43058");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/46258/info");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c02711131");
 
   script_tag(name:"qod_type", value:"remote_banner");

@@ -38,7 +38,6 @@ if (description)
 
   script_name("VICIDIAL 'manager_send.php' Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63288");
   script_xref(name:"URL", value:"http://www.vicidial.org/vicidial.php");
   script_xref(name:"URL", value:"http://adamcaudill.com/2013/10/23/vicidial-multiple-vulnerabilities/");
 

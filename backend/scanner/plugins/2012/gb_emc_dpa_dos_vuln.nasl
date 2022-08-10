@@ -46,7 +46,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18688/");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/dpa_1-adv.txt");
   script_xref(name:"URL", value:"http://forums.cnet.com/7726-6132_102-5292999.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522408/30/0/threaded");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2012/Apr/att-132/ESA-2012-018.txt");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attackers to cause denial of

@@ -46,7 +46,6 @@ if(description)
   script_mandatory_keys("modx_cms/installed");
 
   script_xref(name:"URL", value:"https://raw.githubusercontent.com/modxcms/revolution/v2.5.5-pl/core/docs/changelog.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97228");
   script_xref(name:"URL", value:"https://mazinahmed.net/services/public-reports/ModX%20-%20Responsible%20Disclosure%20-%20January%202017.pdf");
 
   script_tag(name:"summary", value:"MODX Revolution CMS is prone to multiple vulnerabilities.");

@@ -40,7 +40,6 @@ if(description)
   script_name("Jetty 'CookieDump.java' Cross-Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/jetty-persistent-xss");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507013/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_category(ACT_GATHER_INFO);

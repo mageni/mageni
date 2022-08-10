@@ -42,7 +42,6 @@ modifying the PATH variable to reference a malicious killall program.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/archive/1/342736
 http://www.henschelsoft.de/kpopup_en.html
 http://www.vuxml.org/freebsd/1613db79-8e52-11da-8426-000fea0a9611.html";
 tag_summary = "The remote host is missing an update to the system

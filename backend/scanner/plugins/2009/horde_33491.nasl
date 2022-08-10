@@ -65,7 +65,6 @@ if(description)
 
   Horde Groupware 1.1.5");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33491");
 
   exit(0);
 }

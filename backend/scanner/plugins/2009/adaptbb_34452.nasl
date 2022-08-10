@@ -57,7 +57,6 @@ if(description)
 
   script_tag(name:"affected", value:"AdaptBB 1.0 Beta is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34452");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

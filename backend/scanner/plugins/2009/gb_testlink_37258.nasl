@@ -60,7 +60,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.teamst.org/index.php?option=com_content&task=view&id=84&Itemid=2");
   script_xref(name:"URL", value:"http://www.coresecurity.com/content/testlink-multiple-injection-vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37258");
 
   exit(0);
 }

@@ -37,7 +37,6 @@ if(description)
 
   script_name("Wiki Web Help 'getpage.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41344");
   script_xref(name:"URL", value:"http://wikiwebhelp.org/");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/wwh/");
 

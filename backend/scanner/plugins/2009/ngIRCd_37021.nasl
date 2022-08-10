@@ -37,7 +37,6 @@ if (description)
 
   script_name("ngIRCd SSL/TLS Support MOTD Request Multiple Denial Of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37021");
   script_xref(name:"URL", value:"http://arthur.barton.de/cgi-bin/gitweb.cgi?p=ngircd.git;a=commit;h=627b0b713c52406e50c84bb9459e7794262920a2");
   script_xref(name:"URL", value:"http://ngircd.barton.de/doc/ChangeLog");
   script_xref(name:"URL", value:"http://ngircd.barton.de/index.php.en");

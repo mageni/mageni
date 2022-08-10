@@ -34,8 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-10-01 11:48:48 +0200 (Mon, 01 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-03-29 14:38:14 +0530 (Thu, 29 Mar 2012)");
   script_name("Dell Webcam 'crazytalk4.ocx' ActiveX Multiple BOF Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52571/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52560/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18621/");
 
   script_tag(name:"qod_type", value:"registry");

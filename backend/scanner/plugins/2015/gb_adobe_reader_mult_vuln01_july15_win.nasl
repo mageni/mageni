@@ -81,9 +81,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75740");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75749");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75402");
   script_xref(name:"URL", value:"https://helpx.adobe.com/security/products/acrobat/apsb15-15.html");
 
   script_category(ACT_GATHER_INFO);

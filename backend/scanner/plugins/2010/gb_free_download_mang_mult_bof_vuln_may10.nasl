@@ -36,7 +36,6 @@ if(description)
   script_name("Free Download Manager Multiple Buffer Overflow Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39447");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-68/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511282/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

@@ -58,8 +58,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/56485");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64929");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64936");
   script_xref(name:"URL", value:"http://www.oracle.com/technetwork/topics/security/cpujan2014-1972949.html");
 
   script_category(ACT_GATHER_INFO);

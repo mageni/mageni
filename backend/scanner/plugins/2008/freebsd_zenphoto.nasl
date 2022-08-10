@@ -36,7 +36,6 @@ albumnr parameter.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/bid/27084
 http://secunia.com/advisories/28281
 http://www.vuxml.org/freebsd/1a818749-d646-11dc-8959-000bcdc1757a.html";
 tag_summary = "The remote host is missing an update to the system

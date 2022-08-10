@@ -45,10 +45,8 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("owncloud/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53145");
   script_xref(name:"URL", value:"http://owncloud.org/");
   script_xref(name:"URL", value:"http://www.tele-consulting.com/advisories/TC-SA-2012-01.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522397");
 
   script_tag(name:"summary", value:"ownCloud is prone to a URI open-redirection vulnerability,
   multiple cross-site scripting vulnerabilities and multiple HTML-injection vulnerabilities

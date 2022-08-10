@@ -51,7 +51,6 @@ service via a crafted port number values in the 'Host' header.");
   script_xref(name:"URL", value:"http://www.scip.ch/en/?vuldb.9547");
   script_xref(name:"URL", value:"http://secunia.com/advisories/54142");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Jul/98");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/527294");
   script_xref(name:"URL", value:"http://www.squid-cache.org/Advisories/SQUID-2013_3.txt");
   script_category(ACT_DENIAL);
   script_tag(name:"qod_type", value:"remote_vul");

@@ -42,9 +42,6 @@ if(description)
   script_dependencies("gb_apache_tomcat_consolidation.nasl");
   script_mandatory_keys("apache/tomcat/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37945");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37944");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37942");
 
   script_xref(name:"URL", value:"http://svn.apache.org/viewvc?view=revision&revision=892815");
   script_xref(name:"URL", value:"http://svn.apache.org/viewvc?view=revision&revision=902650");

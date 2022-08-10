@@ -33,7 +33,6 @@ if (description)
 
   script_name("SyndeoCMS Local File Include, Cross Site Scripting, and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42978");
   script_xref(name:"URL", value:"http://www.syndeocms.org/");
 
   script_tag(name:"cvss_base", value:"4.3");

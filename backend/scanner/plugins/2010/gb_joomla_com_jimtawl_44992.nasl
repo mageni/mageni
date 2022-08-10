@@ -41,7 +41,6 @@ if (description)
 
   script_name("Joomla Component 'com_jimtawl' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44992");
   script_xref(name:"URL", value:"http://extensions.joomla.org/extensions/multimedia/streaming-a-broadcasting/audio-broadcasting/4344");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 

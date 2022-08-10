@@ -43,9 +43,7 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("efront/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50469");
   script_xref(name:"URL", value:"http://www.efrontlearning.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520351");
 
   script_tag(name:"impact", value:"An attacker may leverage these issues to execute arbitrary script code
   in the browser of an unsuspecting user in the context of the affected site. This may allow the attacker

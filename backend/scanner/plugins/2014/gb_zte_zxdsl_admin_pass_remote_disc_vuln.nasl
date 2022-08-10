@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"qod_type", value:"remote_app");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2014/Nov/40");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/35203");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/533929/30/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");

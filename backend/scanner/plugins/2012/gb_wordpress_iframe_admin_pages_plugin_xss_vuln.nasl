@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");
   script_tag(name:"creation_date", value:"2012-05-16 15:26:57 +0530 (Wed, 16 May 2012)");
   script_name("WordPress iFrame Admin Pages Plugin 'url' Parameter XSS Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53522");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/75626");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/112701/wpiframeadminpages-xss.txt");
 

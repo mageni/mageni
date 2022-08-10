@@ -63,7 +63,6 @@ data.
 
 Successful exploitation of this issue may allow an attacker to use the
 remote server to perform an attack against a third-party user.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/385453");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

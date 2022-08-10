@@ -37,7 +37,6 @@ if (description)
 
   script_name("BASE 'base_qry_main.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51874");
   script_xref(name:"URL", value:"http://base.secureideas.net/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-27 13:53:00 +0200 (Thu, 27 Sep 2018) $");

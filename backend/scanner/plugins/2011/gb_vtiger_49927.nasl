@@ -37,7 +37,6 @@ if (description)
 
   script_name("vtiger CRM Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49927");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Oct/154");
 
   script_tag(name:"cvss_base", value:"4.3");

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Fork CMS Cross Site Scripting and Local File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51972");
   script_xref(name:"URL", value:"http://www.fork-cms.com/blog/detail/fork-cms-3-2-5-released");
   script_xref(name:"URL", value:"http://www.fork-cms.com/features");
   script_xref(name:"URL", value:"https://github.com/forkcms/forkcms/commit/c8ec9c58a6b3c46cdd924532c1de99bcda6072ed");

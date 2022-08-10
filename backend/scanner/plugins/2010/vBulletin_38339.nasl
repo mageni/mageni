@@ -36,7 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("vBulletin 4.0.2 Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38339");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/56459");
   script_xref(name:"URL", value:"http://www.vbulletin.com/");
 

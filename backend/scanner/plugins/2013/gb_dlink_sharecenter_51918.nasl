@@ -35,10 +35,8 @@ if (description)
 
   script_name("D-Link ShareCenter Products Multiple Remote Code Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51918");
   script_xref(name:"URL", value:"http://sharecenter.dlink.com/");
   script_xref(name:"URL", value:"http://blog.emaze.net/2012/02/advisory-information-title.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521532");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-04-18 12:07:07 +0200 (Thu, 18 Apr 2013)");

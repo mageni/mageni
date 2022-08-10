@@ -38,7 +38,6 @@ if (description)
   script_tag(name:"creation_date", value:"2010-07-14 13:50:55 +0200 (Wed, 14 Jul 2010)");
   script_name("CMS Made Simple 'default_cms_lang' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41565");
   script_xref(name:"URL", value:"http://www.cmsmadesimple.org/");
 
   script_tag(name:"solution_type", value:"VendorFix");

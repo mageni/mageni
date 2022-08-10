@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47912");
   script_xref(name:"URL", value:"http://security.inshell.net/advisory/5");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52235");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73591");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18643");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18658");

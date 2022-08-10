@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50105");
   script_xref(name:"URL", value:"http://plugins.trac.wordpress.org/changeset/405672/teachpress/trunk/export.php?old=340149&old_path=teachpress%2Ftrunk%2Fexport.php");
   script_xref(name:"URL", value:"http://plugins.trac.wordpress.org/changeset/405672/teachpress/trunk/feed.php?old=340149&old_path=teachpress%2Ftrunk%2Ffeed.php");
   script_xref(name:"URL", value:"http://wordpress.org/");

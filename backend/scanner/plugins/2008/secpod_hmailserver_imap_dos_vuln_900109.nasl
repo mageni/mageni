@@ -41,7 +41,6 @@ if(description)
   script_require_ports(139, 445);
   script_mandatory_keys("SMB/WindowsVersion");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495361");
   script_xref(name:"URL", value:"http://secunia.com/advisories/31480/");
   script_xref(name:"URL", value:"http://www.hmailserver.com/?page=download_mirrors&downloadid=144");
 

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Zervit HTTP Server Source Code Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40132");
   script_xref(name:"URL", value:"http://zervit.sourceforge.net/");
 
   script_tag(name:"qod_type", value:"remote_banner");

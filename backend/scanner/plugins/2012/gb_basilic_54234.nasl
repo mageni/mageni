@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:P/A:P");
   script_version("$Revision: 12021 $");
   script_name("Basilic 'diff.php' Remote Command Execution Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54234");
   script_xref(name:"URL", value:"http://artis.imag.fr/Software/Basilic/");
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 16:54:51 +0200 (Mon, 22 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-07-02 10:46:56 +0200 (Mon, 02 Jul 2012)");

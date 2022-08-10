@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base", value:"6.4");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:N");
   script_name("Nagios Looking Glass Local File Include Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63381");
   script_xref(name:"URL", value:"http://www.nagios.org/");
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-12-03 10:16:11 +0100 (Tue, 03 Dec 2013)");

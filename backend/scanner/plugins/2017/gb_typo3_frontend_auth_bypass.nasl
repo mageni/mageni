@@ -46,7 +46,6 @@ if(description)
   script_tag(name:"affected", value:"TYPO3 versions 8.2.0 through 8.6.0 are vulnerable");
   script_tag(name:"solution", value:"Update to TYPO3 version 8.6.1.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96501");
   script_xref(name:"URL", value:"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-002/");
 
   script_tag(name:"solution_type", value:"VendorFix");

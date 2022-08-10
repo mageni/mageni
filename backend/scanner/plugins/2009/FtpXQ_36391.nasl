@@ -50,7 +50,6 @@ if(description)
 
   script_tag(name:"affected", value:"FtpXQ 3.0 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36391");
   script_xref(name:"URL", value:"http://www.datawizard.net");
 
   script_tag(name:"solution_type", value:"WillNotFix");

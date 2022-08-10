@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:P/A:N");
   script_version("$Revision: 11998 $");
   script_name("LISTSERV 'SHOWTPL' Parameter Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55082");
   script_xref(name:"URL", value:"http://www.lsoft.com/products/default.asp?item=listserv");
   script_tag(name:"last_modification", value:"$Date: 2018-10-20 20:17:12 +0200 (Sat, 20 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-08-20 10:41:31 +0200 (Mon, 20 Aug 2012)");

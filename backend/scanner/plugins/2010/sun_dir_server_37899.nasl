@@ -42,7 +42,6 @@ if (description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("SunJavaDirServer/installed", "ldap/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37899");
   script_xref(name:"URL", value:"http://www.sun.com/software/products/directory_srvr/home_directory.xml");
   script_xref(name:"URL", value:"http://sunsolve.sun.com/search/document.do?assetkey=1-66-275711-1");
 

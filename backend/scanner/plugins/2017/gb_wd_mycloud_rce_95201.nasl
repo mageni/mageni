@@ -45,8 +45,6 @@ if(description)
   script_mandatory_keys("wd-mycloud/http/detected");
 
   script_xref(name:"URL", value:"http://support.wdc.com/downloads.aspx?lang=en#firmware");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95200");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95201");
   script_xref(name:"URL", value:"https://www.stevencampbell.info/2016/12/command-injection-in-western-digital-mycloud-nas/");
 
   script_tag(name:"summary", value:"Western Digital MyCloud Products are prone to multiple remote command injection vulnerabilities.");

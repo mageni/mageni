@@ -72,7 +72,6 @@ if(description)
  script_xref(name : "URL" , value : "http://www.cipher.org.uk/index.php?p=advisories/Certificate_Spoofing_Mozilla_FireFox_25-07-2004.advisory");
  script_xref(name : "URL" , value : "http://secunia.com/advisories/12160");
  script_xref(name : "URL" , value : "http://bugzilla.mozilla.org/show_bug.cgi?id=253121");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/369953");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/abe47a5a-e23c-11d8-9b0a-000347a4fa7d.html");
  exit(0);
 }

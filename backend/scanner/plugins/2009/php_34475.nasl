@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34475");
 
   script_tag(name:"impact", value:"Successful exploits could allow an attacker to
   access files in unauthorized locations.");

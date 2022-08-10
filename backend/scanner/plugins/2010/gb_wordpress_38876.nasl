@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("WordPress Password Protection Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38876");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Mar/361");
   script_xref(name:"URL", value:"http://wordpress.org/");
 

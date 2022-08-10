@@ -57,7 +57,6 @@ if(description)
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.11");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517013/100/0/threaded");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");
   script_family("Web Servers");

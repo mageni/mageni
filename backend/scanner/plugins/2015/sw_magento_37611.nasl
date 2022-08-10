@@ -54,7 +54,6 @@ if(description)
   script_tag(name:"affected", value:"Magento 1.3.2.4 is vulnerable. Other versions may also be affected.");
   script_tag(name:"solution", value:"Check for updated versions of Magento");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37611");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner_unreliable");

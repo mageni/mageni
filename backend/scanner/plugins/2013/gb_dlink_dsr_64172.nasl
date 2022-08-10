@@ -37,7 +37,6 @@ if(description)
   script_name("D-Link DSR Router Series SQL Injection Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/64172");
   script_xref(name:"URL", value:"http://www.dlink.com/");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/30062/");
 

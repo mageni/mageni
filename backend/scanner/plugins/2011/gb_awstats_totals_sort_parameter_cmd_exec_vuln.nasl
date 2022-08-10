@@ -38,7 +38,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/44712");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17324/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/495770/100/0/threaded");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/101698/awstatstotals_multisort.rb.txt");
 
   script_category(ACT_ATTACK);

@@ -36,7 +36,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30862");
 
   script_tag(name:"summary", value:"phpMyRealty is prone to multiple SQL injection (SQLi)
   vulnerabilities because it fails to sufficiently sanitize user-supplied data before using it in an

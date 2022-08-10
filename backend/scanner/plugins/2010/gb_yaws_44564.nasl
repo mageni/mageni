@@ -38,7 +38,6 @@ if (description)
 
   script_name("Yaws URI Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44564");
   script_xref(name:"URL", value:"http://yaws.hyber.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

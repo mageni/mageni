@@ -35,7 +35,6 @@ if (description)
 
   script_name("Xerox WorkCentre/ColorQube Multiple Unspecified Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60844");
   script_xref(name:"URL", value:"http://www.xerox.com");
   script_xref(name:"URL", value:"http://www.xerox.com/download/security/security-bulletin/18344-4e02474da251c/cert_XRX13-006_v1.2.pdf");
 

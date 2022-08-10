@@ -65,7 +65,6 @@ if(description)
   script_tag(name:"solution", value:"Upgrade to EspoCRM version 2.6.0 or later.");
 
   script_xref(name:"URL", value:"https://www.htbridge.com/advisory/HTB23238");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/533844");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");

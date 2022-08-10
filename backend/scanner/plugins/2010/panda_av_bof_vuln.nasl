@@ -33,7 +33,6 @@ if(description)
   script_cve_id("CVE-2007-3969");
   script_bugtraq_id(24989);
   script_name("Panda Antivirus Buffer Overflow");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/474247/100/0/threaded");
   script_xref(name:"URL", value:"http://secunia.com/advisories/26171");
   script_tag(name:"qod_type", value:"registry");
   script_tag(name:"cvss_base", value:"9.3");

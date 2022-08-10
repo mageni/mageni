@@ -36,9 +36,7 @@ if (description)
 
   script_name("Yaws Terminal Escape Sequence in Logs Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37716");
   script_xref(name:"URL", value:"http://yaws.hyber.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508830");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

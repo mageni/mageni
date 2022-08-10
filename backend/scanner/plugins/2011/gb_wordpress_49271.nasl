@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49271");
   script_xref(name:"URL", value:"http://plugins.trac.wordpress.org/changeset?reponame=&new=400553%40ungallery&old=397601%40ungallery");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/ungallery/changelog/");
   script_xref(name:"URL", value:"http://wordpress.org/");

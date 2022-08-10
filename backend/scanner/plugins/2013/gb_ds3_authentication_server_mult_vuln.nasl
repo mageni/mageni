@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-15 10:45:50 +0200 (Sat, 15 Sep 2018) $");
   script_tag(name:"creation_date", value:"2013-06-04 13:59:02 +0530 (Tue, 04 Jun 2013)");
   script_name("DS3 Authentication Server Multiple Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/526784/30/0/threaded");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/121862/ds3authserv-exec.txt");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/ds3-authentication-server-command-execution");
   script_cve_id("CVE-2013-4096", "CVE-2013-4097", "CVE-2013-4098");

@@ -54,7 +54,6 @@ if (description)
   perform a cross site scripting attack on this host or execute arbitrary
   code through the gallery image uploader under the administrator directory.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/306206");
 
   exit(0);
 }

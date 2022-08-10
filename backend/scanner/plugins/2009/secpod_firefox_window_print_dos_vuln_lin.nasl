@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2008-7244");
   script_name("Mozilla Firefox 'window.print()' Denial Of Service Vulnerability (Linux)");
   script_xref(name:"URL", value:"http://websecurity.com.ua/2456/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506328/100/100/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

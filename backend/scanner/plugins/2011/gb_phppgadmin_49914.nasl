@@ -36,7 +36,6 @@ if (description)
 
   script_name("phpPgAdmin Multiple Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49914");
   script_xref(name:"URL", value:"http://freshmeat.net/projects/phppgadmin/releases/336969");
   script_xref(name:"URL", value:"http://phppgadmin.sourceforge.net/");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/46248");

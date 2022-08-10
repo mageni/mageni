@@ -23,7 +23,6 @@
 #
 
 # Original advisory / discovered by :
-# http://www.securityfocus.com/archive/1/431862/30/0/threaded
 
 if(description)
 {
@@ -65,7 +64,6 @@ if(description)
   are both enabled for the local file inclusions flaw.
   And if 'allow_url_fopen' is also enabled remote file inclusions are also
   possible.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/431862/30/0/threaded");
   exit(0);
 }
 

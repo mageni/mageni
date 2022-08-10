@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("IceWarp/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49753");
   script_xref(name:"URL", value:"http://www.icewarp.com/Products/IceWarp_Web_Mail/");
   script_xref(name:"URL", value:"https://www.trustwave.com/spiderlabs/advisories/TWSL2011-013.txt");
 

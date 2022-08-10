@@ -55,7 +55,6 @@ if(description)
 
   script_tag(name:"affected", value:"Lighttpd 1.4.23 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35097");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner_unreliable");

@@ -35,7 +35,6 @@ if (description)
 
   script_name("Multiple ZyWALL USG Products Remote Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47707");
   script_xref(name:"URL", value:"http://www.redteam-pentesting.de/en/advisories/rt-sa-2011-003/-authentication-bypass-in-configuration-import-and-export-of-zyxel-zywall-usg-appliances");
 
   script_tag(name:"qod_type", value:"remote_vul");

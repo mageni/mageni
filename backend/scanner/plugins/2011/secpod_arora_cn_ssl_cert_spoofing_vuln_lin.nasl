@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("ssh/no_linux_shell");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/46269");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520041");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=746875");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/2011-10/att-0353/NDSA20111003.txt.asc");
 

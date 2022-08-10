@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Barracuda Networks Multiple Products 'view_help.cgi' Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43520");
   script_xref(name:"URL", value:"http://www.barracudanetworks.com/ns/?L=en_ca");
   script_xref(name:"URL", value:"http://www.barracudanetworks.com/ns/support/tech_alert.php");
 

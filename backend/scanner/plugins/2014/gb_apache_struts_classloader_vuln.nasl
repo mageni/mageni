@@ -46,8 +46,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://struts.apache.org/release/2.3.x/docs/s2-020.html");
   script_xref(name:"URL", value:"http://struts.apache.org/release/2.3.x/docs/s2-021.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65999");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67064");
 
   script_tag(name:"summary", value:"ClassLoader Manipulation allows remote attackers to to execute
   arbitrary Java code");

@@ -37,7 +37,6 @@ if (description)
 
   script_name("Helix Server Administration Interface Cross Site Request Forgery Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45340");
   script_xref(name:"URL", value:"http://www.realnetworks.com/products-services/helix-server-proxy.aspx");
 
   script_tag(name:"qod_type", value:"remote_banner");

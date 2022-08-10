@@ -43,9 +43,7 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38707");
   script_xref(name:"URL", value:"http://www.phpmyadmin.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510052");
 
   script_tag(name:"summary", value:"phpMyAdmin is prone to a cross-site scripting vulnerability because it
   fails to sufficiently sanitize user-supplied data.");

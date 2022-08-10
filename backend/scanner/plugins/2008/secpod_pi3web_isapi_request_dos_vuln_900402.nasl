@@ -44,7 +44,6 @@ if(description)
   script_xref(name:"URL", value:"http://milw0rm.com/exploits/7109/");
   script_xref(name:"URL", value:"http://secunia.com/advisories/32696/");
   script_xref(name:"URL", value:"http://pi3web.sourceforge.net/pi3web/files/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32287/info/");
 
   script_tag(name:"impact", value:"Successful exploitation will crash Pi3Web Server.");
 

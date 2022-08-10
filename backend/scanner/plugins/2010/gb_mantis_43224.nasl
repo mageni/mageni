@@ -38,7 +38,6 @@ if (description)
 
   script_name("Mantis Multiple HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43224");
   script_xref(name:"URL", value:"http://www.mantisbt.org/");
   script_xref(name:"URL", value:"http://www.mantisbt.org/bugs/changelog_page.php?version_id=111");
 

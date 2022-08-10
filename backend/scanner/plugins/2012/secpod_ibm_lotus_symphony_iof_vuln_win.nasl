@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("IBM/Lotus/Symphony/Win/Ver");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47245");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51591");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/72424");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21578684");
 

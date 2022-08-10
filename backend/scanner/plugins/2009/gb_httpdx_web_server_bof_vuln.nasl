@@ -35,7 +35,6 @@ if(description)
   script_name("httpdx Web Server 'h_handlepeer()' Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/36991");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/2874");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507042/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

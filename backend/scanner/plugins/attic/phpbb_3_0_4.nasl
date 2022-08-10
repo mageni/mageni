@@ -53,7 +53,6 @@ if(description)
 
   script_tag(name:"deprecated", value:TRUE);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33995");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
   script_tag(name:"solution_type", value:"VendorFix");

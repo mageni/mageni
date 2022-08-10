@@ -58,7 +58,6 @@ if(description)
   script_tag(name:"solution", value:"Upgrade to version 3.16.6 or 3.18.2 or later.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71803/info");
   script_xref(name:"URL", value:"http://bugs.koha-community.org/bugzilla3/show_bug.cgi?id=13425");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

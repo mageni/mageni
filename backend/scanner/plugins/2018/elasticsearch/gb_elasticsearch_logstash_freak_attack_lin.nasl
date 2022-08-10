@@ -63,7 +63,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"https://www.elastic.co/community/security/");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/76015/");
 
   script_copyright("Copyright (C) 2018 Greenbone Networks GmbH");
   script_category(ACT_GATHER_INFO);

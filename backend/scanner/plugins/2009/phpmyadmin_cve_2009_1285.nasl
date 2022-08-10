@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34526");
 
   script_tag(name:"summary", value:"According to its version number, the remote version of phpMyAdmin is
   prone to a remote PHP code-injection vulnerability.");

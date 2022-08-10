@@ -41,7 +41,6 @@ if (description)
 
   script_name("Cacti Cross Site Scripting and HTML Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42575");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=459105");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=459229");
   script_xref(name:"URL", value:"http://cacti.net/");

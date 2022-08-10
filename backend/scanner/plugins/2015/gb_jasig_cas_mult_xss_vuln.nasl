@@ -61,7 +61,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2015/Sep/88");
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/133630");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/536510");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");
   script_family("Web application abuses");

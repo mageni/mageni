@@ -54,7 +54,6 @@ if(description)
   script_tag(name:"solution", value:"Update to TYPO3 versions 7.6.22 or 8.7.5 that fix the problem described, make sure overridden settings for TYPO3_CONF_VARS/BE/fileDenyPattern are adjusted.");
 
   script_xref(name:"URL", value:"http://www.securitytracker.com/id/1039295");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100620");
   script_xref(name:"URL", value:"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2017-007/");
 
   script_tag(name:"solution_type", value:"VendorFix");

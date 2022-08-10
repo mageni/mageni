@@ -37,7 +37,6 @@ if (description)
 
   script_name("RealNetworks Helix Server < 14.2 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47110");
   script_xref(name:"URL", value:"http://www.realnetworks.com/products/media_delivery.html");
   script_xref(name:"URL", value:"http://docs.real.com/docs/security/SecurityUpdate033111HS.pdf");
 

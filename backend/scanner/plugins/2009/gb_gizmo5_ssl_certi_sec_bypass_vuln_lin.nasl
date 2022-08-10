@@ -37,7 +37,6 @@ if(description)
   script_name("Gizmo5 SSL Certificate Validation Security Bypass Vulnerability (Linux) ");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35628");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/51399");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504572/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

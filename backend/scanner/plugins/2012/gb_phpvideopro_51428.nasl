@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("phpVideoPro Multiple Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51428");
   script_xref(name:"URL", value:"http://code.google.com/p/simplesamlphp/issues/detail?id=468");
   script_xref(name:"URL", value:"http://simplesamlphp.org/");
   script_xref(name:"URL", value:"http://code.google.com/p/simplesamlphp/source/detail?r=3009");

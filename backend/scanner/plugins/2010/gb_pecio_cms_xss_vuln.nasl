@@ -36,7 +36,6 @@ if(description)
   script_name("Pecio CMS 'target' Parameter Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://pecio-cms.com/");
   script_xref(name:"URL", value:"http://secpod.org/blog/?p=137");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/514404");
   script_xref(name:"URL", value:"http://secpod.org/advisories/SECPOD_pecioCMS_XSS.txt");
 
   script_tag(name:"qod_type", value:"remote_vul");

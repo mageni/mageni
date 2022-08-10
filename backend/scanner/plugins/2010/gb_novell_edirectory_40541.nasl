@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("eDirectory/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40541");
   script_xref(name:"URL", value:"http://www.novell.com/support/viewContent.do?externalId=3426981");
   script_xref(name:"URL", value:"http://support.novell.com/docs/Readmes/InfoDocument/patchbuilder/readme_5076150.html");
   script_xref(name:"URL", value:"http://support.novell.com/docs/Readmes/InfoDocument/patchbuilder/readme_5076151.html");

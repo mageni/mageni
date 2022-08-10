@@ -36,7 +36,6 @@ if(description)
   script_name("VMware Products Descheduled Time Accounting Driver DoS Vulnerability (Linux)");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35269");
   script_xref(name:"URL", value:"http://securitytracker.com/alerts/2009/May/1022300.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/503912/100/0/threaded");
   script_xref(name:"URL", value:"http://www.vmware.com/security/advisories/VMSA-2009-0007.html");
 
   script_tag(name:"qod_type", value:"executable_version");

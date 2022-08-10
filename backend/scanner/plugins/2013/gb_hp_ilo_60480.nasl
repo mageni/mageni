@@ -46,7 +46,6 @@ if (description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("HP_ILO/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/60480");
   script_xref(name:"URL", value:"http://www.hp.com");
 
   script_tag(name:"impact", value:"A remote attacker can exploit this issue to gain unauthorized administrative

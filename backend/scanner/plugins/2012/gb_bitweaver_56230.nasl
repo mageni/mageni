@@ -38,7 +38,6 @@ if (description)
 
   script_name("Bitweaver Multiple Cross Site Scripting and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56230");
   script_xref(name:"URL", value:"http://bitweaver.org");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 09:34:51 +0200 (Fri, 12 Oct 2018) $");

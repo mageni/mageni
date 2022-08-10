@@ -37,7 +37,6 @@ if(description)
   script_dependencies("gb_apache_struts_consolidation.nasl");
   script_mandatory_keys("apache/struts/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/100612");
   script_xref(name:"URL", value:"https://cwiki.apache.org/confluence/display/WW/S2-051");
 
   script_tag(name:"summary", value:"Apache Struts is prone to a Denial of Service (DoS)

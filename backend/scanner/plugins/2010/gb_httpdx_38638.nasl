@@ -35,7 +35,6 @@ if (description)
 
   script_name("httpdx PNG File Handling Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38638");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/httpdx/");
 
   script_category(ACT_MIXED_ATTACK);

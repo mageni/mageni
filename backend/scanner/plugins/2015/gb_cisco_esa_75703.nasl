@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco AsyncOS for Email Security Appliance Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/75703");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/viewAlert.x?alertId=39785");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to cause an affected device to become unresponsive,

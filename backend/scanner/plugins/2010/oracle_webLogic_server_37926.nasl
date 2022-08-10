@@ -41,7 +41,6 @@ if (description)
 
   script_name("Oracle WebLogic Server Node Manager 'beasvc.exe' Remote Command Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37926");
   script_xref(name:"URL", value:"http://intevydis.blogspot.com/2010/01/oracle-weblogic-1032-node-manager-fun.html");
   script_xref(name:"URL", value:"http://blogs.oracle.com/security/2010/02/security_alert_for_cve-2010-00.html");
   script_xref(name:"URL", value:"http://www.oracle.com/technology/products/weblogic/index.html");

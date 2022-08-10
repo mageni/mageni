@@ -36,7 +36,6 @@ if(description)
   script_name("Firefox Browser Libxul Memory Leak Remote DoS Vulnerability - Win");
   script_xref(name:"URL", value:"http://liudieyu0.blog124.fc2.com/blog-entry-6.html");
   script_xref(name:"URL", value:"http://www.packetstormsecurity.org/0812-exploits/mzff_libxul_ml.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/497091/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 Greenbone Networks GmbH");

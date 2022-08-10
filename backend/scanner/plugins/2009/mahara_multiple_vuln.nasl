@@ -36,8 +36,6 @@ if (description)
 
   script_name("Mahara Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36893");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36892");
   script_xref(name:"URL", value:"http://wiki.mahara.org/Release_Notes/1.1.7");
   script_xref(name:"URL", value:"http://mahara.org/interaction/forum/topic.php?id=1169");
   script_xref(name:"URL", value:"http://mahara.org/interaction/forum/topic.php?id=1170");

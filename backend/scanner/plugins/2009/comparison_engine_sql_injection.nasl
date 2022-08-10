@@ -49,7 +49,6 @@ if(description)
 
   script_tag(name:"affected", value:"Comparison Engine Power 1.0 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34232");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year

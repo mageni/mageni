@@ -57,7 +57,6 @@ if (description)
   These issues affect net2ftp 0.98 and earlier.");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/49791");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34440");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

@@ -36,9 +36,7 @@ if(description)
 
   script_name("phpWebSite 'mod.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49354");
   script_xref(name:"URL", value:"http://phpwebsite.appstate.edu/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519456");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

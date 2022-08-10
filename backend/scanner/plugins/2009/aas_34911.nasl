@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"affected", value:"These issues affect version 2.0.48. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34911");
 
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

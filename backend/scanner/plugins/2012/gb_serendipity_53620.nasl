@@ -38,7 +38,6 @@ if (description)
 
   script_name("Serendipity 'functions_trackbacks.inc.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53620");
   script_xref(name:"URL", value:"https://github.com/s9y/Serendipity/commit/87153991d06bc18fe4af05f97810487c4a340a92#diff-1");
   script_xref(name:"URL", value:"http://blog.s9y.org/archives/241-Serendipity-1.6.2-released.html");
   script_xref(name:"URL", value:"http://www.s9y.org/");

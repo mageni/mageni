@@ -42,7 +42,6 @@ if(description)
   script_name("Oracle GlassFish Server Cross-Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17551/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518923");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/103167/SOS-11-009.txt");
 
   script_tag(name:"qod_type", value:"remote_banner");

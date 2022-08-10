@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2008-5105", "CVE-2008-5106");
   script_bugtraq_id(27817);
   script_name("Sami FTP Server Multiple Commands Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/488198/100/200/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"remote_banner");

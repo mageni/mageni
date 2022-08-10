@@ -59,7 +59,6 @@ if(description)
   6.0.5, 5.8.x before 6.0.5, 6.0.x before 6.0.5, 6.1.x before 6.1.4");
   script_tag(name:"solution", value:"Updates are available.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98939");
   script_xref(name:"URL", value:"http://www.vmware.com/security/advisories/VMSA-2017-0010.html");
   script_tag(name:"solution_type", value:"VendorFix");
   script_category(ACT_GATHER_INFO);

@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(27981);
   script_name("MyServer Remote Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://www.milw0rm.com/exploits/5184");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/27981");
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"remote_banner");
   script_copyright("Copyright (C) 2008 Greenbone Networks GmbH");

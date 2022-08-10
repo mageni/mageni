@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/mysql", 3306);
   script_mandatory_keys("MySQL/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37640");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/dailydave/2010-q1/0002.html");
   script_xref(name:"URL", value:"http://www.mysql.com/");
   script_xref(name:"URL", value:"http://intevydis.com/mysql_demo.html");

@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("nessus/installed", "Host/runs_windows");
   script_require_ports("Services/www", 8834);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/96418");
   script_xref(name:"URL", value:"https://www.tenable.com/security/tns-2017-06");
 
   script_tag(name:"summary", value:"This host is installed with Nessus and is prone to

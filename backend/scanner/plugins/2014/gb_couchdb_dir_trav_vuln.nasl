@@ -37,7 +37,6 @@ if(description)
 
   script_bugtraq_id(57313);
   script_cve_id("CVE-2012-5641");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57313");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/81240");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2013/Jan/81");
 

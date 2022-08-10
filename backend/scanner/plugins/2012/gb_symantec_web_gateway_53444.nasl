@@ -55,7 +55,6 @@ if (description)
   script_tag(name:"solution", value:"Upgrade to Symantec Web Gateway version 5.0.3 or later.");
   script_tag(name:"summary", value:"This host is running Symantec Web Gateway and is prone to directory
   traversal vulnerability.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53442");
   script_xref(name:"URL", value:"http://www.symantec.com/business/web-gateway");
   script_xref(name:"URL", value:"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=2012&suid=20120517_00");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49216");

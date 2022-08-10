@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-08-02 18:57:35 +0530 (Thu, 02 Aug 2012)");
   script_name("Winamp 'AVI' File Multiple Heap-based Buffer Overflow Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/46624");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54131/discuss");
   script_xref(name:"URL", value:"http://forums.winamp.com/showthread.php?t=345684");
 
   script_tag(name:"qod_type", value:"registry");

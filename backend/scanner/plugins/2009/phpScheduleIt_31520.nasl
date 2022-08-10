@@ -37,7 +37,6 @@ if (description)
 
   script_name("phpScheduleIt 'reserve.php' Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31520");
   script_xref(name:"URL", value:"http://www.php.brickhost.com/");
 
   script_tag(name:"qod_type", value:"remote_banner");

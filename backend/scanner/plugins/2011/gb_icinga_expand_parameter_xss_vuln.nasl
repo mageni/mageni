@@ -38,7 +38,6 @@ if(description)
   script_name("Icinga 'expand' Parameter Cross-Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"https://dev.icinga.org/issues/1605");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518218");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/101904/SSCHADV2011-005.txt");
 
   script_category(ACT_ATTACK);

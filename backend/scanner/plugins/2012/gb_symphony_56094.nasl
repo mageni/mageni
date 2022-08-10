@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("symphony/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/56094");
 
   script_tag(name:"solution", value:"Reportedly, the issue is fixed. However, Symantec has not confirmed
  this. Please contact the vendor for more information.");

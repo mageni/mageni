@@ -34,8 +34,7 @@ tag_solution = "All Shoutcast Server users should upgrade to the latest version:
 '>=media-sound/shoutcast-server-bin-1.9.5'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200501-04
-http://bugs.gentoo.org/show_bug.cgi?id=75482
-http://www.securityfocus.com/archive/1/385350";
+http://bugs.gentoo.org/show_bug.cgi?id=75482";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200501-04.";
 

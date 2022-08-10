@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_version("$Revision: 13659 $");
   script_name("ZTE F460/F660 Backdoor Unauthorized Access Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65962");
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");
   script_tag(name:"creation_date", value:"2014-03-20 09:52:23 +0100 (Thu, 20 Mar 2014)");
   script_category(ACT_ATTACK);

@@ -36,8 +36,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("eGroupware <= 1.8.001 Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47273");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47262");
   script_xref(name:"URL", value:"http://www.egroupware.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

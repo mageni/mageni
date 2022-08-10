@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("aphpkb/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47097");
   script_xref(name:"URL", value:"http://aphpkb.sourceforge.net/");
 
   script_tag(name:"solution", value:"Updates are available. Please contact the vendor for more information.");

@@ -36,7 +36,6 @@ if(description)
   script_bugtraq_id(37985);
   script_name("Wireshark Multiple Buffer Overflow Vulnerabilities (Windows)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/55951");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37985/info");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/0239");
 
   script_category(ACT_GATHER_INFO);

@@ -63,7 +63,6 @@ if(description)
  script_xref(name : "URL" , value : "http://secunia.com/advisories/9096");
  script_xref(name : "URL" , value : "http://x82.inetcop.org/h0me/adv1sor1es/INCSA.2003-0x82-018-GNATS-bt.txt");
  script_xref(name : "URL" , value : "http://www.gnu.org/software/gnats/gnats.html");
- script_xref(name : "URL" , value : "http://www.securityfocus.com/archive/1/326337");
  script_xref(name : "URL" , value : "http://www.vuxml.org/freebsd/4d837296-cc28-11d8-a54c-02e0185c0b53.html");
  exit(0);
 }

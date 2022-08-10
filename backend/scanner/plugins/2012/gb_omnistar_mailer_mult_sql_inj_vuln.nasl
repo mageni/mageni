@@ -35,7 +35,6 @@ if(description)
   script_name("Omnistar Mailer Software Multiple SQL Injection Vulnerabilities");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/21716/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2012/Oct/27");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/524301/30/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (c) 2012 Greenbone Networks GmbH");

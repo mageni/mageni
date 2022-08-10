@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php#5.2.7");
   script_xref(name:"URL", value:"http://www.php.net/archive/2008.php#id2008-12-07-1");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/498985/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation could allow remote attackers to write arbitrary file,
   bypass security restrictions and cause directory traversal attacks.");

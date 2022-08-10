@@ -66,8 +66,6 @@ if(description)
   script_tag(name:"affected", value:"Versions prior to Dropbear SSH Server 2013.59 are vulnerable.");
   script_tag(name:"solution", value:"Updates are available.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62958");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62993");
   script_xref(name:"URL", value:"https://matt.ucc.asn.au/dropbear/dropbear.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

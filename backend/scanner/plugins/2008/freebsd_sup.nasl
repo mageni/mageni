@@ -37,7 +37,6 @@ specifiers in messages that are logged by syslog.";
 tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
-http://www.securityfocus.com/advisories/6874
 http://www.vuxml.org/freebsd/2c5757f4-88bf-11d9-8720-0007e900f87b.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

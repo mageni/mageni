@@ -36,7 +36,6 @@ if(description)
 
   script_name("PithCMS 'lang' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40926");
   script_xref(name:"URL", value:"http://pithcms.altervista.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

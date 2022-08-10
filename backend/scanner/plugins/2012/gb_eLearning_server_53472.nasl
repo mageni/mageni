@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("eLearning Server 4G Remote File Include and SQL Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53472");
   script_xref(name:"URL", value:"http://www.hypermethod.ru/");
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 15:44:25 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-05-14 10:31:27 +0200 (Mon, 14 May 2012)");

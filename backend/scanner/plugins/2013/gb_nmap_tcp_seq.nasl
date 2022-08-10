@@ -36,7 +36,6 @@ if (description)
 
   script_name("TCP/IP Predictable TCP Initial Sequence Number Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/670");
   script_xref(name:"URL", value:"http://teso.scene.at/");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20010301-ios-tcp-isn-random");
   script_xref(name:"URL", value:"ftp://ftp.freebsd.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-00:52.tcp-iss.asc");

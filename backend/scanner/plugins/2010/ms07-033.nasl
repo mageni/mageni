@@ -33,7 +33,6 @@ if(description)
   script_cve_id("CVE-2007-1751", "CVE-2007-1750", "CVE-2007-0218",
                 "CVE-2007-3027", "CVE-2007-2222", "CVE-2007-1499");
   script_name("Cumulative Security Update for Internet Explorer (933566)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/471210/100/0/threaded");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-07-038.html");
   script_xref(name:"URL", value:"http://www.microsoft.com/technet/security/bulletin/ms07-033.mspx");
   script_tag(name:"qod_type", value:"executable_version");

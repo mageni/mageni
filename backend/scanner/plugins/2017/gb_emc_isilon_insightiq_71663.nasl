@@ -38,7 +38,6 @@ if (description)
 
   script_name("EMC Isilon InsightIQ Unspecified Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71663");
 
   script_tag(name:"impact", value:"An attacker may leverage this issue to execute arbitrary script code  in the browser of an unsuspecting user in the context of the affected
 site. This may allow the attacker to steal cookie-based authentication credentials and launch other attacks.");

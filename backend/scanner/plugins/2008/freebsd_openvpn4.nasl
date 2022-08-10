@@ -32,7 +32,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://openvpn.net/changelog.html
-http://www.securityfocus.com/archive/1/415293/30/0/threaded
 http://www.vuxml.org/freebsd/6129fdc7-6462-456d-a3ef-8fc3fbf44d16.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

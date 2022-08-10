@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpBB/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32842");
   script_xref(name:"URL", value:"http://www.phpbb.com/");
 
   script_tag(name:"impact", value:"Attackers can exploit this vulnerability to gain unauthorized access

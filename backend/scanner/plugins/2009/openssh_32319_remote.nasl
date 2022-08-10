@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32319");
 
   script_tag(name:"impact", value:"Successful exploits will allow attackers to obtain four bytes of plaintext from
   an encrypted session.");

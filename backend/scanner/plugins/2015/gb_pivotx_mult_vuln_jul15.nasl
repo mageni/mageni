@@ -70,7 +70,6 @@ if (description)
   script_tag(name:"qod_type", value:"exploit");
 
   script_xref(name:"URL", value:"https://packetstormsecurity.com/files/132474");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/535860/100/0/threaded");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

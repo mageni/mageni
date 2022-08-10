@@ -39,7 +39,6 @@ if(description)
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/51592");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/51593");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/1817");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/504737/100/0/threaded");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to execute arbitrary
   SQL quries in the context of affected application, and can cause buffer overflow or

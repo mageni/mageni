@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("nuralstorm_webmail/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41559");
   script_xref(name:"URL", value:"http://www.nuralstorm.net/");
   script_xref(name:"URL", value:"http://www.madirish.net/?article=466");
 

@@ -38,7 +38,6 @@ if (description)
 
   script_name("OSSIM 'file' Parameter Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38780");
   script_xref(name:"URL", value:"http://www.alienvault.com/community.php?section=News");
   script_xref(name:"URL", value:"http://www.cybsec.com/vuln/cybsec_advisory_2010_0306_ossim2_2_arbitrary_file_download.pdf");
   script_xref(name:"URL", value:"http://ossim.net/");

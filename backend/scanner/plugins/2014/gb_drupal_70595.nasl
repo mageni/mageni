@@ -38,7 +38,6 @@ if(description)
 
   script_name("Drupal Core SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/70595");
   script_xref(name:"URL", value:"http://drupal.org/");
 
   script_tag(name:"impact", value:"Exploiting this issue could allow an attacker to execute arbitrary

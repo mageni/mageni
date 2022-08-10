@@ -36,10 +36,8 @@ if (description)
 
   script_name("Mathopd Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51872");
   script_xref(name:"URL", value:"http://www.mathopd.org/");
   script_xref(name:"URL", value:"http://www.mail-archive.com/mathopd%40mathopd.org/msg00392.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521507");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 09:34:51 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-02-16 15:14:41 +0100 (Thu, 16 Feb 2012)");

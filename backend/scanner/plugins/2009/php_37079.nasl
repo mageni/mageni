@@ -43,13 +43,11 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37079");
   script_xref(name:"URL", value:"http://securityreason.com/securityalert/6601");
   script_xref(name:"URL", value:"http://securityreason.com/securityalert/6600");
   script_xref(name:"URL", value:"http://www.php.net/releases/5_3_1.php");
   script_xref(name:"URL", value:"http://www.php.net/");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2009/Nov/228");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507982");
 
   script_tag(name:"impact", value:"Some of these issues may be exploited to bypass security restrictions
   and create arbitrary files or cause denial-of-service conditions. The

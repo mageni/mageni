@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("wordpress/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50080");
   script_xref(name:"URL", value:"http://plugins.trac.wordpress.org/changeset/437217/light-post/trunk/wp-light-post.php?old=416259&old_path=light-post%2Ftrunk%2Fwp-light-post.php");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/light-post/changelog/");
   script_xref(name:"URL", value:"http://www.wordpress.org");

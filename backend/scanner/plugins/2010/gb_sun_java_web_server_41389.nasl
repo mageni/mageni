@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 8989);
   script_mandatory_keys("Sun/JavaSysWebServ/Ver", "Sun/JavaSysWebServ/Port");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/41389");
   script_xref(name:"URL", value:"http://www.sun.com/software/products/web_srvr/home_web_srvr.xml");
 
   script_tag(name:"summary", value:"Sun Java System Web Server is prone to a denial-of-service

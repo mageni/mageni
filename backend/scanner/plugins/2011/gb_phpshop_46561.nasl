@@ -35,7 +35,6 @@ if (description)
 
   script_name("phpShop 'page' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46561");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/phpshop/");
 
   script_tag(name:"qod_type", value:"remote_vul");

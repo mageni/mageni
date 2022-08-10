@@ -35,9 +35,6 @@ if (description)
 
   script_name("XAMPP Multiple Vulnerabilities June 2009");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37997");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37998");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37999");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3230/");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3220/");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3257/");

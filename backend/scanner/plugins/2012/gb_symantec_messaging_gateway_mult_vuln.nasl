@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("ssh/server_banner/available");
 
   script_xref(name:"URL", value:"http://www.securitytracker.com/id/1027449");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/524060");
   script_xref(name:"URL", value:"http://www.securelist.com/en/advisories/50435");
   script_xref(name:"URL", value:"https://www.hkcert.org/my_url/en/alert/12082901");
   script_xref(name:"URL", value:"http://www.symantec.com/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&suid=20120827_00");

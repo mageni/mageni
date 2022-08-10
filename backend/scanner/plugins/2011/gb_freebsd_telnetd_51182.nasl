@@ -36,7 +36,6 @@ if (description)
 
   script_name("FreeBSD 'telnetd' Daemon Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51182");
   script_xref(name:"URL", value:"http://www.freebsd.org/");
   script_xref(name:"URL", value:"http://security.freebsd.org/advisories/FreeBSD-SA-11:08.telnetd.asc");
 

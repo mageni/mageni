@@ -43,7 +43,6 @@ if(description)
   script_exclude_keys("Settings/disable_cgi_scanning");
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/62767");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514423/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attacker to execute arbitrary
   script code in the browser of an unsuspecting user in the context of the affected site.");

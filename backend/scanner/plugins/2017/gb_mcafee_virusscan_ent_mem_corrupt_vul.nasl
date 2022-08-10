@@ -55,7 +55,6 @@ if(description)
 
   script_tag(name:"solution", value:"Update to VirusScan Enterprise 8.8 Patch 9.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/98041");
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_category(ACT_GATHER_INFO);

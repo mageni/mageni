@@ -39,7 +39,6 @@ if(description)
   script_family("General");
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66690");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to gain access to sensitive
   information that may aid in further attacks.");

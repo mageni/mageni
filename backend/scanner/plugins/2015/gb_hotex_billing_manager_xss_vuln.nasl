@@ -64,7 +64,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"solution_type", value:"WillNotFix");
 
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2015/Apr/18");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/535186/100/0/threaded");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/131297/HotExBilling-Manager-73-Cross-Site-Scripting.html");
 
   script_category(ACT_ATTACK);

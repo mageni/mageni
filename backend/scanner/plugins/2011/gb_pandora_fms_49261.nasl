@@ -35,7 +35,6 @@ if (description)
 
   script_name("Pandora FMS 'index.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49261");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

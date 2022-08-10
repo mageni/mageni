@@ -51,7 +51,6 @@ if (description)
 
   script_tag(name:"affected", value:"phpBugTracker 1.0.4 and prior versions are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35125");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

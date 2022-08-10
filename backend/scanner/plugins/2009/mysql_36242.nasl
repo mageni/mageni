@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/mysql", 3306);
   script_mandatory_keys("MySQL/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36242");
   script_xref(name:"URL", value:"http://www.mysql.com/");
 
   script_tag(name:"summary", value:"MySQL is prone to a buffer-overflow vulnerability because if fails to

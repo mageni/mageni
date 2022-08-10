@@ -42,8 +42,6 @@ if(description)
   script_mandatory_keys("SMB/WindowsVersion");
   script_require_ports(139, 445);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31059/discuss");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/31059/exploit");
   script_xref(name:"URL", value:"http://www.nullcode.com.ar/ncs/crash/orgchart.htm");
 
   script_tag(name:"summary", value:"The host has Microsoft Organization Chart, which is prone to a

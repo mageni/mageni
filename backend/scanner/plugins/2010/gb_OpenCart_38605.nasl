@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("OpenCart/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38605");
   script_xref(name:"URL", value:"http://www.opencart.com");
 
   script_tag(name:"summary", value:"OpenCart is prone to an SQL-injection vulnerability because it fails

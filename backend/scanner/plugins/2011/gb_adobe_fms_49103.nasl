@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 1111);
   script_mandatory_keys("Adobe/FMS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49103");
   script_xref(name:"URL", value:"http://www.adobe.com/products/flashmediaserver/");
   script_xref(name:"URL", value:"http://www.adobe.com/support/security/bulletins/apsb11-20.html");
 

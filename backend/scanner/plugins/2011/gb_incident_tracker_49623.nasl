@@ -35,10 +35,8 @@ if (description)
 
   script_name("Support Incident Tracker (SiT!) Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49623");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_sit_support_incident_tracker.html");
   script_xref(name:"URL", value:"http://sitracker.sourceforge.net");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519636");
   script_xref(name:"URL", value:"http://sitracker.org/wiki/ReleaseNotes365");
 
   script_tag(name:"qod_type", value:"remote_active");

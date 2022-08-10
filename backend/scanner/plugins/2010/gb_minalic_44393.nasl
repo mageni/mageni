@@ -35,7 +35,6 @@ if (description)
 
   script_name("MinaliC Directory Traversal and Denial of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44393");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/minalic/");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/MinaliC.Webserver.1.0.Directory.Traversal/53");
   script_xref(name:"URL", value:"http://www.johnleitch.net/Vulnerabilities/MinaliC.Webserver.1.0.Denial.Of.Service/52");

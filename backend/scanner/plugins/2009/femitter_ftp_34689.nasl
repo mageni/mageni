@@ -51,7 +51,6 @@ if(description)
   script_tag(name:"affected", value:"Acritum Femitter Server 0.96 and 1.03 are affected. Other versions
   may be vulnerable as well.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34689");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure
   of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer

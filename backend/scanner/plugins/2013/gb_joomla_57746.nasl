@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("joomla/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57746");
   script_xref(name:"URL", value:"http://www.joomla.org/");
 
   script_tag(name:"solution", value:"Vendor updates are available. Please see the references for more

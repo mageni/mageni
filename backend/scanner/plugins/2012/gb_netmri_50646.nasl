@@ -36,7 +36,6 @@ if (description)
 
   script_name("Infoblox NetMRI Admin Login Page Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50646");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Nov/158");
   script_xref(name:"URL", value:"http://www.infoblox.com/en/products/netmri.html");
 

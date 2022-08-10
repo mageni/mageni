@@ -44,8 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("dokuwiki/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37821");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37820");
   script_xref(name:"URL", value:"http://www.dokuwiki.org/");
 
   script_tag(name:"impact", value:"Exploiting this issues may allow attackers to determine whether certain

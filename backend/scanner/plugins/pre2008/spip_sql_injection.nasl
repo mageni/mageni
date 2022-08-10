@@ -54,7 +54,6 @@ if(description)
   the admin password hash, or execute malicious script code on the remote system.");
 
   script_xref(name:"URL", value:"http://www.zone-h.org/en/advisories/read/id=8650/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/423655/30/0/threaded");
   script_xref(name:"URL", value:"http://listes.rezo.net/archives/spip-en/2006-02/msg00002.html");
   script_xref(name:"URL", value:"http://listes.rezo.net/archives/spip-en/2006-02/msg00004.html");
 

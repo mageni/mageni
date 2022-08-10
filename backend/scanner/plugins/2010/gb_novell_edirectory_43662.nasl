@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/ldap", 389, 636);
   script_mandatory_keys("eDirectory/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43662");
   script_xref(name:"URL", value:"http://www.novell.com");
   script_xref(name:"URL", value:"http://www.novell.com/support/viewContent.do?externalId=7006389&sliceId=2");
 

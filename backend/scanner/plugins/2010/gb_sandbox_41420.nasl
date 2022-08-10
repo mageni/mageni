@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Sandbox Multiple Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41420");
   script_xref(name:"URL", value:"http://www.iguanadons.net/sandbox");
   script_xref(name:"URL", value:"http://www.iguanadons.net/downloads/Sandbox-204-56.html");
 

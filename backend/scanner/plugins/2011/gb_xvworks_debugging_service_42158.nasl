@@ -27,10 +27,8 @@
 
 if (description)
 {
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42158");
   script_xref(name:"URL", value:"http://blog.metasploit.com/2010/08/vxworks-vulnerabilities.html");
   script_xref(name:"URL", value:"http://www.windriver.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512825");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/362332");
   script_oid("1.3.6.1.4.1.25623.1.0.103367");
   script_bugtraq_id(42158);

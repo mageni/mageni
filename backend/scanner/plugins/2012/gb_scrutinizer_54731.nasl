@@ -38,7 +38,6 @@ if (description)
 
   script_name("Scrutinizer Default Password Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54731");
   script_xref(name:"URL", value:"http://www.plixer.com");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 09:34:51 +0200 (Fri, 12 Oct 2018) $");

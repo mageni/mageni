@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_citrix_provisioning_services_detect.nasl");
   script_mandatory_keys("Citrix/Provisioning/Services/Ver");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95620/");
 
   script_tag(name:"impact", value:"Successfully exploiting these issues may allow remote attackers to execute arbitrary code in the context of the
   application or obtain potentially sensitive information. Failed exploits may result in denial-of-service conditions.");

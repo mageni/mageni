@@ -39,7 +39,6 @@ if(description)
 
   script_name("OpenSSL 'ssl3_get_key_exchange()' Use-After-Free Memory Corruption Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42306");
   script_xref(name:"URL", value:"http://www.openssl.org");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2010/Aug/84");
 

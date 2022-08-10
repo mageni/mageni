@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 8123);
   script_mandatory_keys("Polipo/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37226");
   script_xref(name:"URL", value:"http://www.pps.jussieu.fr/~jch/software/polipo/");
 
   script_tag(name:"summary", value:"Polipo is prone to a memory-corruption vulnerability.");

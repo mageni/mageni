@@ -60,7 +60,6 @@ if (description)
   affected. Note that these issues affect only versions running on
   Windows platforms.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/32452");
   script_xref(name:"URL", value:"http://pdnsadmin.iguanadons.net/index.php?a=newspost&t=85");
   script_xref(name:"URL", value:"http://www.quicksilverforums.com/");
   exit(0);

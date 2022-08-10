@@ -39,7 +39,6 @@ if (description)
 
   script_name("nginx Remote Source Code Disclosure and Denial of Service Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/40760");
   script_xref(name:"URL", value:"http://nginx.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

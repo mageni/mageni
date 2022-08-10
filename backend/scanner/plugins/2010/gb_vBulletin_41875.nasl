@@ -36,10 +36,8 @@ if (description)
 
   script_name("vBulletin 'faq.php' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41875");
   script_xref(name:"URL", value:"http://www.vbulletin.com/forum/showthread.php?357818-Security-Patch-Release-3.8.6-PL1");
   script_xref(name:"URL", value:"http://www.vbulletin.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512575");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

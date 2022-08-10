@@ -42,7 +42,6 @@ if(description)
   script_mandatory_keys("Firefox/Win/Ver");
 
   script_xref(name:"URL", value:"http://liudieyu0.blog124.fc2.com/blog-entry-6.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/497091/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful remote exploitation could result in disclosure of sensitive
   information.");

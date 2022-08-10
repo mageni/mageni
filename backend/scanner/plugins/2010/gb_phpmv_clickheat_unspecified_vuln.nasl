@@ -37,7 +37,6 @@ if(description)
   script_name("PhpMyVisites ClickHeat Plugin Unspecified Vulnerability");
   script_xref(name:"URL", value:"http://www.phpmyvisites.us/phpmv2/CHANGELOG");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/57004");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38824");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 Greenbone Networks GmbH");
   script_family("Web application abuses");

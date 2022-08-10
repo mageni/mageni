@@ -36,9 +36,7 @@ if (description)
 
   script_name("Cherokee Terminal Escape Sequence in Logs Command Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37715");
   script_xref(name:"URL", value:"http://www.alobbs.com/modules.php?op=modload&name=cherokee&file=index");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508830");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"remote_banner");

@@ -40,7 +40,6 @@ if(description)
 
   script_name("Family Connections Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37379");
   script_xref(name:"URL", value:"http://www.haudenschilt.com/fcms/index.html");
 
   script_tag(name:"qod_type", value:"remote_banner");

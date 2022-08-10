@@ -40,7 +40,6 @@ if (description)
 
   script_name("Dokeos 'style' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46370");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

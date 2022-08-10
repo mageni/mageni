@@ -35,7 +35,6 @@ if(description)
   script_cve_id("CVE-2009-0047");
   script_bugtraq_id(33150);
   script_name("Gale EVP_VerifyFinal() Security Bypass Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/499855");
   script_xref(name:"URL", value:"http://www.ocert.org/advisories/ocert-2008-016.html");
 
   script_tag(name:"qod_type", value:"executable_version");

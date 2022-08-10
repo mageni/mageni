@@ -41,7 +41,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://securityreason.com/exploitalert/10169");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Mar/157");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/516982/30/270/threaded");
 
   script_tag(name:"qod_type", value:"remote_analysis");
   script_category(ACT_ATTACK);

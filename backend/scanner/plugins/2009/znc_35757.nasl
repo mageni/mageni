@@ -43,7 +43,6 @@ if(description)
   script_dependencies("znc_detect.nasl");
   script_mandatory_keys("znc/version");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35757");
   script_xref(name:"URL", value:"http://znc.svn.sourceforge.net/viewvc/znc?view=rev&sortby=rev&sortdir=down&revision=1570");
   script_xref(name:"URL", value:"http://en.znc.in/wiki/ZNC");
 

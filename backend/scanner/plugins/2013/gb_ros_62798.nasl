@@ -37,7 +37,6 @@ if (description)
   script_name("RuggedCom Rugged Operating System Remote Security Bypass Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62798");
   script_xref(name:"URL", value:"http://www.ruggedcom.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

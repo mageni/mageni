@@ -56,7 +56,6 @@ if(description)
 
   script_tag(name:"affected", value:"Xampp Linux 1.6.7 and prior on Linux (All).");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495096");
 
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_app");

@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"solution_type", value:"WillNotFix");
   script_tag(name:"qod_type", value:"exploit");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/535393");
   script_xref(name:"URL", value:"http://www.vulnerability-lab.com/get_content.php?id=1359");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2015 Greenbone Networks GmbH");

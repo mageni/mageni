@@ -36,7 +36,6 @@ if (description)
 
   script_name("ZTE ZXV10 W300 Wireless Router Hardcoded Credentials Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65310");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:48:11 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2014-02-10 13:47:33 +0100 (Mon, 10 Feb 2014)");

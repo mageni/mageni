@@ -36,7 +36,6 @@ if(description)
   script_name("SurgeMail SurgeWeb Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://ictsec.se/?p=108");
   script_xref(name:"URL", value:"http://secunia.com/advisories/41685");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514115/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

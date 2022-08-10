@@ -35,7 +35,6 @@ if (description)
 
   script_name("MySQL 5.5.20 Unspecified Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52154");
   script_xref(name:"URL", value:"https://lists.immunityinc.com/pipermail/canvas/2012-February/000014.html");
   script_xref(name:"URL", value:"http://www.intevydis.com/index.shtml");
   script_xref(name:"URL", value:"http://www.mysql.com/");

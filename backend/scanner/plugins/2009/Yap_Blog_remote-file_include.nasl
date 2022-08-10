@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/28120");
 
   script_tag(name:"summary", value:"Yap Blog is prone to a remote file-include vulnerability because it
   fails to sufficiently sanitize user-supplied input.");

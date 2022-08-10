@@ -60,7 +60,6 @@ if(description)
 
   Note that this issue also affects Turba on Horde IMP.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33367");
 
   exit(0);
 }

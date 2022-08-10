@@ -60,7 +60,6 @@ if(description)
   version 7.6.2-rev47 or 7.8.0-rev30 or 7.8.2-rev8 or later.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/93458");
   script_xref(name:"URL", value:"https://vuldb.com/?id.99054");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2017 Greenbone Networks GmbH");

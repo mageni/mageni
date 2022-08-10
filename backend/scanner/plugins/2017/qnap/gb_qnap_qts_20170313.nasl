@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("qnap/qts", "qnap/version", "qnap/build");
 
   script_xref(name:"URL", value:"https://www.qnap.com/en-us/releasenotes/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97059");
 
   script_tag(name:"vuldetect", value:"Check the firmware version");
 

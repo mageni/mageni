@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco TelePresence Video Communication Server Expressway Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/76352");
   script_xref(name:"URL", value:"https://tools.cisco.com/bugsearch/bug/CSCuv31853");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to cause a denial of service condition or read arbitrary files on an affected system.");

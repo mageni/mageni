@@ -37,7 +37,6 @@ if(description)
   script_name("Microsoft SharePoint Team Services Information Disclosure Vulnerability");
   script_xref(name:"URL", value:"http://support.microsoft.com/kb/976829");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/53955");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/507419/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

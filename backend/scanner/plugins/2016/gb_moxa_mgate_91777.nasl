@@ -38,7 +38,6 @@ if(description)
 
   script_name("Moxa MGate Authentication Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/91777");
   script_xref(name:"URL", value:"https://ics-cert.us-cert.gov/advisories/ICSA-16-196-02");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to bypass the authentication

@@ -47,7 +47,6 @@ if(description)
   script_require_ports("Services/www", 7510);
   script_mandatory_keys("HP/OVNNM/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512508");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2010/1866");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c02290344");
   script_xref(name:"URL", value:"http://support.openview.hp.com/selfsolve/patches");

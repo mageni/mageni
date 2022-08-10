@@ -65,7 +65,6 @@ or modify sensitive information, or perform unauthorized actions. Other attacks 
 
 Versions prior to Cacti 0.8.7i are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51048");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://forums.cacti.net/viewtopic.php?f=4&t=45871");
 

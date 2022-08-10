@@ -45,9 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
 
   script_xref(name:"URL", value:"http://www.getsymphony.com/download/releases/version/2.6.10/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/97101");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95689");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/95686");
 
   script_tag(name:"summary", value:"This host is installed with Symphony CMS
   and is prone to a cross-site scripting and directory traversal vulnerability.");

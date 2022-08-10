@@ -65,7 +65,6 @@ attacker steal cookie-based authentication credentials and launch other attacks.
 
   script_tag(name:"solution", value:"Updates are available. Please see the references for more information.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45192");
   script_xref(name:"URL", value:"http://confluence.atlassian.com/display/JIRA/JIRA+Security+Advisory+2010-12-06#JIRASecurityAdvisory2010-12-06-xssfix");
 
 

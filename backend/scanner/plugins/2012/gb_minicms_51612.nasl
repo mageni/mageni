@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("miniCMS Multiple Remote PHP Code Injection Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51612");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/mini-cms/files/mini-cms/");
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");
   script_tag(name:"creation_date", value:"2012-01-24 11:44:44 +0100 (Tue, 24 Jan 2012)");

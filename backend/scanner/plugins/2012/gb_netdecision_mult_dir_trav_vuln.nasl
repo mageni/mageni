@@ -36,7 +36,6 @@ if(description)
   script_name("NetDecision Multiple Directory Traversal Vulnerabilities");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/48269");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52327");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73714");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73715");
   script_xref(name:"URL", value:"http://aluigi.altervista.org/adv/netdecision_1-adv.txt");

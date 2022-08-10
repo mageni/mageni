@@ -44,7 +44,6 @@ if(description)
   script_mandatory_keys("TYPO3/installed");
   script_require_ports("Services/www", 80);
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/90832");
   script_xref(name:"URL", value:"https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/");
 
   script_tag(name:"impact", value:"A remote attacker can leverage this issue to execute arbitrary code within the context

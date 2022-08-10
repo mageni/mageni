@@ -59,9 +59,7 @@ process. This may facilitate unauthorized access or privilege escalation, other 
 
 The issue affects OpenX 2.8.1 and prior.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37110");
   script_xref(name:"URL", value:"http://www.openx.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508050");
 
   exit(0);
 }

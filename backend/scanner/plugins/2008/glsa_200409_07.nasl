@@ -35,8 +35,7 @@ tag_solution = "All xv users should upgrade to the latest stable version:
     # emerge '>=media-gfx/xv-3.10a-r7'
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-07
-http://bugs.gentoo.org/show_bug.cgi?id=61619
-http://www.securityfocus.com/archive/1/372345/2004-08-15/2004-08-21/0";
+http://bugs.gentoo.org/show_bug.cgi?id=61619";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-07.";
 

@@ -44,7 +44,6 @@ if(description)
   script_require_ports(139, 445);
   script_xref(name:"URL", value:"http://securitytracker.com/id?1020711");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/44423");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30636/solution");
   script_xref(name:"URL", value:"http://www.nullcode.com.ar/ncs/crash/nsloo.htm");
   script_tag(name:"summary", value:"The host is running Windows XP SP2, which prone to remote code
 execution vulnerability.");

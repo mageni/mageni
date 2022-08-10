@@ -36,7 +36,6 @@ if (description)
 
   script_name("Pligg Cross Site Scripting And Request Forgery Remote Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37185");
   script_xref(name:"URL", value:"http://holisticinfosec.org/content/view/130/45/");
   script_xref(name:"URL", value:"http://www.pligg.com/blog/775/pligg-cms-1-0-3-release/");
   script_xref(name:"URL", value:"http://www.pligg.com/");

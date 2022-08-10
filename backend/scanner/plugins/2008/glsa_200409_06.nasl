@@ -36,8 +36,7 @@ tag_solution = "All eGroupWare users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200409-06
 http://bugs.gentoo.org/show_bug.cgi?id=61510
-https://sourceforge.net/forum/forum.php?forum_id=401807
-http://www.securityfocus.com/archive/1/372603/2004-08-21/2004-08-27/0";
+https://sourceforge.net/forum/forum.php?forum_id=401807";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200409-06.";
 

@@ -36,7 +36,6 @@ if (description)
 
   script_name("Xerver HTTP Response Splitting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37064");
   script_xref(name:"URL", value:"http://www.javascript.nu/xerver/");
 
   script_tag(name:"qod_type", value:"remote_banner");

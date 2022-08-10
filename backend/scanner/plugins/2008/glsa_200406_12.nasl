@@ -36,7 +36,6 @@ tag_solution = "All Webmin users should upgrade to the latest stable version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200406-12
 http://bugs.gentoo.org/show_bug.cgi?id=53375
-http://www.securityfocus.com/bid/10474
 http://www.webmin.com/changes-1.150.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200406-12.";

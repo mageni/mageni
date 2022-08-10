@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/22496");
   script_xref(name:"URL", value:"http://support.avaya.com/elmodocs2/security/ASA-2007-136.htm");
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php#5.2.1");
   script_xref(name:"URL", value:"http://www.php.net/releases/5_2_1.php");

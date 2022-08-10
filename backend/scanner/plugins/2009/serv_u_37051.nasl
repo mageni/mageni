@@ -55,9 +55,7 @@ if(description)
 
   script_tag(name:"affected", value:"Serv-U 9.0.0.5 is vulnerable. Other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37051");
   script_xref(name:"URL", value:"http://www.serv-u.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507955");
 
   exit(0);
 }

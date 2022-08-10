@@ -56,7 +56,6 @@ if (description)
 
   script_tag(name:"affected", value:"Versions prior to WordPress 2.8.2 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35755");
   script_xref(name:"URL", value:"http://bugs.gentoo.org/show_bug.cgi?id=278492");
   script_xref(name:"URL", value:"http://wordpress.org/development/2009/07/wordpress-2-8-2/");
   script_xref(name:"URL", value:"http://wordpress.org/");

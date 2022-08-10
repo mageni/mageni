@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base", value:"2.6");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("YABSoft Advanced Image Hosting Script 'report.php' Cross Site Scripting Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49457");
   script_xref(name:"URL", value:"http://yabsoft.com/aihs-feature.php");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

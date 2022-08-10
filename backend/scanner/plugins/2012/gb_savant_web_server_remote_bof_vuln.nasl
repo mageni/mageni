@@ -54,7 +54,6 @@ General solution options are to upgrade to a newer release, disable respective f
   script_tag(name:"summary", value:"This host is running Savant Web Server and prone to buffer overflow
   vulnerability.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/12429");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/19177");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18401");
   script_xref(name:"URL", value:"http://marc.info/?l=full-disclosure&m=110725682327452&w=2");

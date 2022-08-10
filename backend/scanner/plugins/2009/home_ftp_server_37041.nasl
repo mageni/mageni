@@ -26,9 +26,7 @@
 
 if(description)
 {
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37041");
   script_xref(name:"URL", value:"http://downstairs.dnsalias.net/homeftpserver.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507932");
   script_oid("1.3.6.1.4.1.25623.1.0.100349");
   script_version("$Revision: 13488 $");
   script_tag(name:"last_modification", value:"$Date: 2019-02-06 10:04:46 +0100 (Wed, 06 Feb 2019) $");

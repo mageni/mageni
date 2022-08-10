@@ -36,7 +36,6 @@ if(description)
   script_name("Phorum 'admin.php' Cross-Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/46282");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-023.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/519991/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

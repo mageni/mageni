@@ -36,7 +36,6 @@ if (description)
 
   script_name("LightNEasy 'LightNEasy.php' SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43330");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

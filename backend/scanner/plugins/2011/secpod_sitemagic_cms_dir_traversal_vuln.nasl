@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48399");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/102498/sitemagic-traversal.txt");
 
   script_tag(name:"impact", value:"Successful exploitation could allow an attacker to obtain

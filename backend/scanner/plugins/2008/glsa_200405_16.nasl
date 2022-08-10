@@ -36,7 +36,6 @@ tag_solution = "All SquirrelMail users should upgrade to the latest stable versi
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200405-16
 http://bugs.gentoo.org/show_bug.cgi?id=49675
 http://sourceforge.net/mailarchive/forum.php?thread_id=4199060&forum_id=1988
-http://www.securityfocus.com/bid/10246/
 http://www.cert.org/advisories/CA-2000-02.html";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200405-16.";

@@ -43,11 +43,8 @@ if(description)
   script_dependencies("pdns_version.nasl");
   script_mandatory_keys("powerdns/recursor/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37653");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37650");
   script_xref(name:"URL", value:"http://www.powerdns.com/");
   script_xref(name:"URL", value:"http://doc.powerdns.com/powerdns-advisory-2010-02.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/508743");
 
   script_tag(name:"impact", value:"An attacker can exploit the remote cache-poisoning vulnerability to
   divert data from a legitimate site to an attacker-specified site.

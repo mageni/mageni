@@ -43,7 +43,6 @@ if(description)
   script_require_keys("Host/runs_unixoide");
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51004");
   script_xref(name:"URL", value:"http://koha-community.org/");
   script_xref(name:"URL", value:"http://bugs.koha-community.org/bugzilla3/show_bug.cgi?id=6628");
 

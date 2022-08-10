@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/15216/");
   script_xref(name:"URL", value:"http://www.syhunt.com/?n=Advisories.Vs-httpd-dirtrav");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/514167/100/0/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attacker to launch directory
   traversal attack and gain sensitive information about the remote system's directory contents.");

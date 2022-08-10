@@ -41,7 +41,6 @@ if(description)
   script_dependencies("gb_get_http_banner.nasl");
   script_mandatory_keys("Domino/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/101/155904/2001-01-08/2001-01-14/0");
 
   script_tag(name:"summary", value:"This plugin attempts to determine the existence of a directory
   traversal bug on the remote Lotus Domino Web server");

@@ -55,7 +55,6 @@ if (description)
 
   script_tag(name:"affected", value:"Symantec IM Manager versions 8.4.15 and prior are vulnerable.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44299");
   script_xref(name:"URL", value:"http://www.symantec.com/business/security_response/securityupdates/detail.jsp?fid=security_advisory&pvid=security_advisory&year=2010&suid=20101027_01");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-220/");
   script_xref(name:"URL", value:"http://www.zerodayinitiative.com/advisories/ZDI-10-221/");

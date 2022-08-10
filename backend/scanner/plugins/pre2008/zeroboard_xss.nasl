@@ -58,7 +58,6 @@ scripting attacks due to a lack of sanitization of user-supplied data.
 Successful exploitation of this issue may allow an attacker to execute
 malicious script code in a user's browser within the context of the
 affected web site.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/390933");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

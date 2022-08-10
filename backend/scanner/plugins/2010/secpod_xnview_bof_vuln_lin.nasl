@@ -37,7 +37,6 @@ if(description)
 
   script_name("XnView DICOM Parsing Integer Overflow Vulnerability (Linux)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/56802");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/509999/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2010 SecPod");

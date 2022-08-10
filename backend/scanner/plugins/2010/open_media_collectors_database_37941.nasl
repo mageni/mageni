@@ -54,7 +54,6 @@ and the computer, other attacks are also possible.
 
 OpenDb 1.5.0.4 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37941");
   script_xref(name:"URL", value:"http://sourceforge.net/project/showfiles.php?group_id=37089&package_id=29402&release_id=573315");
 
   script_tag(name:"solution_type", value:"WillNotFix");

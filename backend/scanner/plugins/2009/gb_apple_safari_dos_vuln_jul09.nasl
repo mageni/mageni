@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:P");
   script_cve_id("CVE-2009-2420", "CVE-2009-2421");
   script_name("Apple Safari Denial Of Service Vulnerability - Jul09");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/504479");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"registry");

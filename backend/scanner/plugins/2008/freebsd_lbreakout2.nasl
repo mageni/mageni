@@ -38,7 +38,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://www.debian.org/security/2004/dsa-445
-http://www.securityfocus.com/archive/1/354760
 http://www.vuxml.org/freebsd/ad4f6ca4-6720-11d8-9fb5-000a95bc6fae.html";
 tag_summary = "The remote host is missing an update to the system
 as announced in the referenced advisory.";

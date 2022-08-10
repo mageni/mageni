@@ -33,7 +33,6 @@ if(description)
 
   script_name("Support Incident Tracker (SiT!) Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46671");
   script_xref(name:"URL", value:"http://sitracker.sourceforge.net");
   script_xref(name:"URL", value:"http://sitracker.org/wiki/ReleaseNotes362");
 

@@ -37,7 +37,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("Bitweaver 'style' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41301");
   script_xref(name:"URL", value:"http://www.bitweaver.org/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -60,7 +60,6 @@ credentials and launch other attacks.
 Apache Continuum 1.3.6 and 1.4.0 (Beta) are vulnerable. Other versions
 may also be affected.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46311");
   script_xref(name:"URL", value:"http://continuum.apache.org/");
   script_xref(name:"URL", value:"http://svn.apache.org/viewvc?view=revision&revision=1066056");
   script_xref(name:"URL", value:"http://continuum.apache.org/security.html");

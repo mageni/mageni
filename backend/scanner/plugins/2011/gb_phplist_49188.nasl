@@ -35,9 +35,7 @@ if (description)
 
   script_name("PHPList Security Bypass and Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49188");
   script_xref(name:"URL", value:"http://www.phplist.com");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519295");
 
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_ATTACK);

@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2018-09-17 12:08:59 +0200 (Mon, 17 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-01-24 11:53:50 +0530 (Tue, 24 Jan 2012)");
   script_name("SolarWinds Orion Data Storage Manager SQL Injection and XSS Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521328");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2012/Jan/384");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109007/DDIVRT-2011-39.txt");
   script_category(ACT_ATTACK);

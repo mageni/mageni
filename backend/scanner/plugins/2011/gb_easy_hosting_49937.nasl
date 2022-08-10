@@ -36,7 +36,6 @@ if(description)
 
   script_name("Easy Hosting Control Panel FTP Account Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49937");
   script_xref(name:"URL", value:"http://www.ehcp.net");
 
   script_tag(name:"qod_type", value:"remote_vul");

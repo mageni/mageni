@@ -37,8 +37,6 @@ if (description)
   script_tag(name:"cvss_base", value:"9.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:S/C:C/I:C/A:C");
   script_name("HP System Management Homepage Multiple Vulnerabilities");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43269");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43208");
   script_xref(name:"URL", value:"http://www11.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02512995&admit=109447626+1284637282234+28353475");
   script_xref(name:"URL", value:"https://www.itrc.hp.com/service/cki/docDisplay.do?docId=emr_na-c02475053");
   script_category(ACT_GATHER_INFO);

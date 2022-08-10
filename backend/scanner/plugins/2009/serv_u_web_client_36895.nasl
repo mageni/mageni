@@ -53,7 +53,6 @@ if (description)
   script_tag(name:"affected", value:"Serv-U Web Client 9.0.0.5 is vulnerable, other versions may also
   be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36895");
   script_xref(name:"URL", value:"http://www.rangos.de/ServU-ADV.txt");
   script_xref(name:"URL", value:"http://www.serv-u.com/Browser-Transfer-Client.asp");
   script_tag(name:"solution_type", value:"WillNotFix");

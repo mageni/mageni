@@ -35,7 +35,6 @@ if(description)
 
   script_name("Mereo 'GET' Request Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/42839");
   script_xref(name:"URL", value:"http://www.assembla.com/spaces/mereo/wiki?id=bMd54a1Xer3OfueJe5aVNr");
 
   script_tag(name:"qod_type", value:"remote_vul");

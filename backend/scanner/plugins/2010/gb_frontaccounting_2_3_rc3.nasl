@@ -34,8 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:N/I:P/A:N");
   script_name("FrontAccounting Multiple Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44556");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/44557");
   script_xref(name:"URL", value:"http://frontaccounting.com/");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/frontaccounting/");
   script_xref(name:"URL", value:"http://frontaccounting.com/wb3/pages/posts/release-2.3-rc3157.php");

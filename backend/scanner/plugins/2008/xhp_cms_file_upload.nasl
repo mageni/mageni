@@ -60,7 +60,6 @@ if(description)
   script_tag(name:"impact", value:"This allows an attacker to upload content to the webserver, and
   execute arbitrary commands with privileges of the webserver account.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/17209");
   script_xref(name:"URL", value:"http://xhp.targetit.ro/index.php?page=3&box_id=34&action=show_single_entry&post_id=10");
 
   exit(0);

@@ -33,7 +33,6 @@ if (description)
 
   script_name("Trac Ticket Validation Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39040");
   script_xref(name:"URL", value:"http://trac.edgewall.org/wiki/ChangeLog#a0.11.7");
   script_xref(name:"URL", value:"http://trac.edgewall.org/");
 

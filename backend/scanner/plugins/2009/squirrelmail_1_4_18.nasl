@@ -55,7 +55,6 @@ if(description)
 
   script_tag(name:"affected", value:"Versions prior to SquirrelMail 1.4.18 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34916");
 
   script_tag(name:"solution_type", value:"VendorFix");
 

@@ -37,7 +37,6 @@ if(description)
 
   script_name("LittlePhpGallery 'gallery.php' Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45143");
   script_xref(name:"URL", value:"http://brunetton.tuxfamily.org/index.php?n=Main.LittlePhpGallery");
 
   script_tag(name:"qod_type", value:"remote_vul");

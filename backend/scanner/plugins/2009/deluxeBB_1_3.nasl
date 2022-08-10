@@ -42,7 +42,6 @@ if(description)
   script_dependencies("deluxeBB_detect.nasl");
   script_mandatory_keys("deluxebb/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34174");
   script_xref(name:"URL", value:"http://www.deluxebb.com/");
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure

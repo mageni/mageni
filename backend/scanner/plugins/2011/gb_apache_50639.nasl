@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50639");
   script_xref(name:"URL", value:"http://httpd.apache.org/");
   script_xref(name:"URL", value:"http://www.halfdog.net/Security/2011/ApacheModSetEnvIfIntegerOverflow/");
   script_xref(name:"URL", value:"http://www.gossamer-threads.com/lists/apache/dev/403775");

@@ -53,7 +53,6 @@ if(description)
   osCommerce 3.0 Beta
 
   Other versions may also be affected.");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34348");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

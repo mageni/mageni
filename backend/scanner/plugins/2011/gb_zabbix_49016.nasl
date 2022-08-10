@@ -38,7 +38,6 @@ if (description)
 
   script_name("ZABBIX 'backurl' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49016");
   script_xref(name:"URL", value:"http://www.zabbix.com/rn1.8.6.php");
   script_xref(name:"URL", value:"http://www.zabbix.org");
   script_xref(name:"URL", value:"https://support.zabbix.com/browse/ZBX-3835");

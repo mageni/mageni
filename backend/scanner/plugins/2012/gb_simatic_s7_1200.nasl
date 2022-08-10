@@ -38,7 +38,6 @@ if (description)
 
   script_name("Siemens SIMATIC S7-1200 SSL Private Key Reuse Spoofing Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55559");
   script_xref(name:"URL", value:"http://subscriber.communications.siemens.com/");
   script_xref(name:"URL", value:"http://www.siemens.com/corporate-technology/pool/de/forschungsfelder/siemens_security_advisory_ssa-240718.pdf");
 

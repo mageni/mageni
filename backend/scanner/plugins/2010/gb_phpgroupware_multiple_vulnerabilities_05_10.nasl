@@ -36,8 +36,6 @@ if (description)
 
   script_name("phpGroupWare Multiple Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40168");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40167");
   script_xref(name:"URL", value:"http://www.phpgroupware.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

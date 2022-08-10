@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:C/I:C/A:C");
   script_name("Colasoft Capsa Malformed SNMP V1 Packet Remote Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/46034");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519630");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/bugtraq/2011-09/0088.html");
 
   script_tag(name:"qod_type", value:"registry");

@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:N");
   script_name("CultBooking 'cultbooking.php' Local File Include and Multiple Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/45965");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2011-4987.php");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2011-4988.php");
   script_xref(name:"URL", value:"http://www.cultuzz.com/cultbooking");

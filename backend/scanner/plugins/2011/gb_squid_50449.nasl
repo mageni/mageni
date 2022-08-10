@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/http_proxy", 3128, "Services/www", 8080);
   script_mandatory_keys("squid_proxy_server/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50449");
   script_xref(name:"URL", value:"http://bugs.squid-cache.org/show_bug.cgi?id=3237");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=750316");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.security.oss.general/6144");

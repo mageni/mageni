@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"affected", value:"Versions prior to TangoCMS 2.2.4 are vulnerable.");
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33833");
 
   exit(0);
 }

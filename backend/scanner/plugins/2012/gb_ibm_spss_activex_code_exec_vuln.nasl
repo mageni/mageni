@@ -38,7 +38,6 @@ if(description)
   script_name("IBM SPSS SamplePower 'VsVIEW6' ActiveX Control Multiple Code Execution Vulnerabilities (Windows)");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/47605");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51448");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/72119");
   script_xref(name:"URL", value:"http://www-01.ibm.com/support/docview.wss?uid=swg21577951");
 

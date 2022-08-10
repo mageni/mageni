@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:H/Au:N/C:N/I:P/A:N");
   script_name("Manx Multiple Cross Site Scripting and Directory Traversal Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50839");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2011-5058.php");
   script_xref(name:"URL", value:"http://www.zeroscience.mk/en/vulnerabilities/ZSL-2011-5060.php");
   script_xref(name:"URL", value:"http://manx.jovascript.com/");

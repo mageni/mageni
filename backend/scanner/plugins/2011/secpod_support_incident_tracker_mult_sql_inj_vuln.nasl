@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("sit/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518999");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/103442/PT-2011-25.txt");
 
   script_tag(name:"insight", value:"The flaws are due to improper input validation in 'tasks.php',

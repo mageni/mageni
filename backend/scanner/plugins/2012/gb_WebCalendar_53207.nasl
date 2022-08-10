@@ -35,9 +35,7 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("WebCalendar Local File Include and PHP code Injection Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53207");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/webcalendar/?source=directory");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522460");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-27 13:53:00 +0200 (Thu, 27 Sep 2018) $");
   script_tag(name:"creation_date", value:"2012-04-25 09:40:31 +0200 (Wed, 25 Apr 2012)");

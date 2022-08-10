@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"6.4");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:N/A:P");
   script_name("ionCube Loader Wizard 'loader-wizard.php' Multiple Security Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66531");
   script_tag(name:"last_modification", value:"$Date: 2019-03-14 14:43:25 +0100 (Thu, 14 Mar 2019) $");
   script_tag(name:"creation_date", value:"2014-04-01 13:11:55 +0200 (Tue, 01 Apr 2014)");
   script_category(ACT_ATTACK);

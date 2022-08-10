@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("IIS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53906");
   script_xref(name:"URL", value:"http://www.microsoft.com/windowsserver2003/iis/default.mspx");
 
   script_tag(name:"summary", value:"Microsoft IIS is prone to an authentication-bypass vulnerability and a

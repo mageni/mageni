@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_php_detect.nasl");
   script_mandatory_keys("php/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40173");
   script_xref(name:"URL", value:"http://www.mail-archive.com/php-cvs@lists.php.net/msg46330.html");
   script_xref(name:"URL", value:"http://svn.php.net/viewvc?view=revision&revision=298667");
   script_xref(name:"URL", value:"http://php-security.org/2010/05/14/mops-2010-024-php-phar_stream_flush-format-string-vulnerability/index.html");

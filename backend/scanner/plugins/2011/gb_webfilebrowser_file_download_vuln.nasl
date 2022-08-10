@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/71131");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18070/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50508/exploit");
 
   script_tag(name:"impact", value:"Successful exploitation could allow attackers to download and
   read arbitrary files on the affected application.");

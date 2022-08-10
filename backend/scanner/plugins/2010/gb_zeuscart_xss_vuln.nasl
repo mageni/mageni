@@ -44,7 +44,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secpod.org/blog/?p=109");
   script_xref(name:"URL", value:"http://secunia.com/advisories/35319/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/512885");
   script_xref(name:"URL", value:"http://secpod.org/advisories/SECPOD_ZeusCart_XSS.txt");
 
   script_tag(name:"impact", value:"Successful exploitation will allow attacker to execute arbitrary

@@ -41,7 +41,6 @@ if (description)
 
   script_name("Dell iDRAC6 and iDRAC7 'ErrorMsg' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62598");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/920038");
 
   script_category(ACT_GATHER_INFO);

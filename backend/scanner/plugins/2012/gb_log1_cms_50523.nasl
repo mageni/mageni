@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Log1 CMS 'data.php' PHP Code Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50523");
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 09:34:51 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2012-06-18 17:36:01 +0100 (Mon, 18 Jun 2012)");
   script_category(ACT_ATTACK);

@@ -38,7 +38,6 @@ if (description)
 
   script_name("Perforce Multiple Unspecified Remote Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36261");
   script_xref(name:"URL", value:"http://www.perforce.com/perforce/products/p4d.html");
   script_xref(name:"URL", value:"http://intevydis.com/company.shtml");
 

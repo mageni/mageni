@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-06-11 12:12:12 +0530 (Mon, 11 Jun 2012)");
   script_name("WordPress Foxypress Plugin 'uploadify.php' Arbitrary File Upload Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/49382");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53805");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18991");
   script_xref(name:"URL", value:"http://wordpress.org/extend/plugins/foxypress/changelog/");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/113283/wpfoxypress-shell.txt");

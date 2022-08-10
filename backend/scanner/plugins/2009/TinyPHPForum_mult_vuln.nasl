@@ -51,8 +51,6 @@ if (description)
 
   script_tag(name:"affected", value:"TinyPHPForum 3.6 and 3.6.1 are vulnerable.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/19281");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34339");
 
   script_tag(name:"solution_type", value:"WillNotFix");
 

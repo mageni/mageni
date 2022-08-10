@@ -60,7 +60,6 @@ if(description)
   script_tag(name:"solution_type", value:"VendorFix");
   script_tag(name:"qod_type", value:"remote_banner_unreliable");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/72949");
   script_xref(name:"URL", value:"https://www.phpmyadmin.net/security/PMASA-2015-1/");
   script_copyright("This script is Copyright (C) 2016 SCHUTZWERK GmbH");
   script_category(ACT_GATHER_INFO);

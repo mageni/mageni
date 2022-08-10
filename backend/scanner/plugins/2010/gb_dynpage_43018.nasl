@@ -36,7 +36,6 @@ if(description)
 
   script_name("DynPage 'dynpage_load.php' Local File Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43018");
   script_xref(name:"URL", value:"http://www.dynpage.net/");
 
   script_tag(name:"qod_type", value:"remote_vul");

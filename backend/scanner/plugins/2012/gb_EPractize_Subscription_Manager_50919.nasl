@@ -33,7 +33,6 @@ if(description)
   script_tag(name:"cvss_base", value:"7.5");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("EPractize Labs Subscription Manager 'showImg.php' PHP Code Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50919");
   script_xref(name:"URL", value:"http://www.epractizelabs.com/email-marketing/subscription-manager.html");
   script_xref(name:"URL", value:"http://archives.neohapsis.com/archives/fulldisclosure/current/0118.html");
   script_tag(name:"last_modification", value:"$Date: 2019-03-05 13:23:37 +0100 (Tue, 05 Mar 2019) $");

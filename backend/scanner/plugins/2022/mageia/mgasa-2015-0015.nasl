@@ -43,7 +43,6 @@ if(description)
   script_xref(name:"URL", value:"https://bugs.mageia.org/show_bug.cgi?id=14961");
   script_xref(name:"URL", value:"http://openwall.com/lists/oss-security/2014/12/24/3");
   script_xref(name:"URL", value:"http://openwall.com/lists/oss-security/2015/01/04/4");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71796");
 
   script_tag(name:"summary", value:"The remote host is missing an update for the 'libsndfile' package(s) announced via the MGASA-2015-0015 advisory.");
 

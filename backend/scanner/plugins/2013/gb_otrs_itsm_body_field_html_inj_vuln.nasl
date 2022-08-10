@@ -57,7 +57,6 @@ and is prone to HTML injection vulnerability.");
 OTRS::ITSM 3.1.0 up to and including 3.1.5, 3.0.0 up to and including 3.0.5
 and 2.1.0 up to and including 2.1.4");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54890");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/20359/");
   script_xref(name:"URL", value:"http://otrs.org/advisory/OSA-2012-01-en/");
   script_category(ACT_GATHER_INFO);

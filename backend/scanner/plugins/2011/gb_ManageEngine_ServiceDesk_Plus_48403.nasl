@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_ManageEngine_ServiceDesk_Plus_detect.nasl", "os_detection.nasl");
   script_mandatory_keys("ManageEngine/ServiceDeskPlus/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48403");
   script_xref(name:"URL", value:"http://manageengine.adventnet.com/products/service-desk/");
 
   script_tag(name:"summary", value:"ManageEngine ServiceDesk Plus is prone to a directory-traversal

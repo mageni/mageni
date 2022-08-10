@@ -36,7 +36,6 @@ if(description)
   script_name("Avaya IP Office Manager TFTP Server Directory Traversal Vulnerability");
 
   script_xref(name:"URL", value:"http://secpod.org/blog/?p=225");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48272");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17507");
   script_xref(name:"URL", value:"http://support.avaya.com/css/P8/documents/100141179");
   script_xref(name:"URL", value:"http://secpod.org/SECPOD_Exploit-Avaya-IP-Manager-Dir-Trav.py");

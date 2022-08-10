@@ -37,7 +37,6 @@ if(description)
   script_name("Trend Micro OfficeScan Client Denial Of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34737");
   script_xref(name:"URL", value:"http://www.vupen.com/english/advisories/2009/1146");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502847/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_tag(name:"qod_type", value:"executable_version");

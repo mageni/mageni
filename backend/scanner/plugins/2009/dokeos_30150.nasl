@@ -59,7 +59,6 @@ if(description)
 
   Please note that this issue affects only Dokeos running on Windows.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30150");
 
   exit(0);
 }

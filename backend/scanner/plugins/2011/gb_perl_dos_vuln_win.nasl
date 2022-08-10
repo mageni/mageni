@@ -37,7 +37,6 @@ if(description)
   script_name("Perl Denial of Service Vulnerability (Windows)");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/67355");
   script_xref(name:"URL", value:"http://www.toucan-system.com/advisories/tssa-2011-03.txt");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/517916/100/0/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (c) 2011 Greenbone Networks GmbH");

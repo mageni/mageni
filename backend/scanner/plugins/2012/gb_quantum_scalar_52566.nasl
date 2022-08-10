@@ -37,7 +37,6 @@ if (description)
 
   script_name("Multiple Vendor Products Security Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52566");
   script_xref(name:"URL", value:"http://www.quantum.com/ServiceandSupport/SoftwareandDocumentationDownloads/SI500/Index.aspx");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/913483");
 

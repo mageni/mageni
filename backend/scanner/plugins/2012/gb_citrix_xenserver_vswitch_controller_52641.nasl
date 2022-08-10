@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 443);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52641");
   script_xref(name:"URL", value:"http://www.citrix.com/English/ps2/products/feature.asp?contentID=1686939");
   script_xref(name:"URL", value:"http://support.citrix.com/article/CTX132476");
 

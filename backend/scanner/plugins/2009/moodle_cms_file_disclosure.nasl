@@ -64,7 +64,6 @@ if (description)
   or upgrade to latest development version where patch should be applied by now.");
 
   script_tag(name:"solution_type", value:"VendorFix");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/502231/30/0/threaded");
 
   exit(0);
 }

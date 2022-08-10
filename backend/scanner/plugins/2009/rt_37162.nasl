@@ -36,7 +36,6 @@ if (description)
 
   script_name("RT Session Fixation Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37162");
   script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2009-November/000177.html");
   script_xref(name:"URL", value:"http://lists.bestpractical.com/pipermail/rt-announce/2009-November/000176.html");
   script_xref(name:"URL", value:"http://www.bestpractical.com/rt/");

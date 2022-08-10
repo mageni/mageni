@@ -40,8 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://websecurity.com.ua/3338/");
   script_xref(name:"URL", value:"http://websecurity.com.ua/2456/");
   script_xref(name:"URL", value:"http://websecurity.com.ua/3194/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/505092/100/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/506328/100/100/threaded");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

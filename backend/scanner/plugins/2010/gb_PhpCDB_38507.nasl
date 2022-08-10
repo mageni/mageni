@@ -37,7 +37,6 @@ if(description)
 
   script_name("PhpCDB 'lang_global' Parameter Multiple Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38507");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/phpcdb/");
 
   script_tag(name:"qod_type", value:"remote_vul");

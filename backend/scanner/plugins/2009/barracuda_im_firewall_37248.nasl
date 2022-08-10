@@ -38,7 +38,6 @@ if(description)
 
   script_name("Barracuda IM Firewall 'smtp_test.cgi' Cross-Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37248");
   script_xref(name:"URL", value:"http://www.barracudanetworks.com/ns/products/im_overview.php");
 
   script_tag(name:"qod_type", value:"remote_banner");

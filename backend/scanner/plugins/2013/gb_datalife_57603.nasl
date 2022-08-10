@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_version("$Revision: 11865 $");
   script_name("DataLife Engine 'catlist' Parameter PHP Code Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57603");
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-02-02 12:26:45 +0100 (Sat, 02 Feb 2013)");
   script_category(ACT_ATTACK);

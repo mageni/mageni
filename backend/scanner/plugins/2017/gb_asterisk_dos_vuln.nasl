@@ -65,7 +65,6 @@ Digium Certified Asterisk 13 before 13.8-cert3,
 Digium Certified Asterisk 11 before 11.6-cert15.");
   script_tag(name:"solution", value:"Updates are available. Please see the references or vendor advisory for more information.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/92888");
   script_xref(name:"URL", value:"https://downloads.asterisk.org/pub/security/AST-2016-007.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

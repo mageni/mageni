@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("orangehrm/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47046");
   script_xref(name:"URL", value:"http://www.orangehrm.com/");
 
   script_tag(name:"summary", value:"OrangeHRM is prone to a cross-site scripting vulnerability because it

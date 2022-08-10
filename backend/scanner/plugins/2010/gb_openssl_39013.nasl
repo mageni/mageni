@@ -37,12 +37,10 @@ if(description)
 
   script_name("OpenSSL 'ssl3_get_record()' Remote Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39013");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata45.html");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata46.html");
   script_xref(name:"URL", value:"http://www.openbsd.org/errata47.html");
   script_xref(name:"URL", value:"http://www.openssl.org");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/510726");
   script_xref(name:"URL", value:"http://openssl.org/news/secadv_20100324.txt");
 
   script_tag(name:"cvss_base", value:"5.0");

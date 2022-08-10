@@ -33,9 +33,7 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("webERP Information Disclosure, SQL Injection, and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50713");
   script_xref(name:"URL", value:"http://www.weberp.org/HomePage");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520561");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_weberp.html");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 15:31:29 +0200 (Mon, 22 Oct 2018) $");

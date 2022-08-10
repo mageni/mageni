@@ -33,7 +33,6 @@ if (description)
   script_tag(name:"cvss_base", value:"10.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
   script_name("PineApp Mail-SeCure 'livelog.html' Remote Command Injection Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61473");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");
   script_tag(name:"creation_date", value:"2013-08-13 12:13:20 +0200 (Tue, 13 Aug 2013)");

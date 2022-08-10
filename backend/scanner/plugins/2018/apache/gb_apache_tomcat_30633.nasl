@@ -43,9 +43,7 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("apache/tomcat/http/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30633");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/6229/");
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/499926");
 
   script_tag(name:"summary", value:"Apache Tomcat is prone to a directory-traversal
   vulnerability because it fails to sufficiently sanitize user-supplied input.");

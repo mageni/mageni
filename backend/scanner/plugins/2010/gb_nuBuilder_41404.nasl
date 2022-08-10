@@ -37,7 +37,6 @@ if(description)
 
   script_name("nuBuilder Local File Include and Cross Site Scripting Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/41404");
   script_xref(name:"URL", value:"http://cross-site-scripting.blogspot.com/2010/07/nubuilder-100420-local-file-inclusion.html");
   script_xref(name:"URL", value:"http://cross-site-scripting.blogspot.com/2010/07/nubuilder-100420-reflected-xss.html");
   script_xref(name:"URL", value:"http://www.nubuilder.com/nubuilderwww/");

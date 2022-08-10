@@ -57,7 +57,6 @@ if(description)
   script_tag(name:"impact", value:"Local exploitation will allow attackers to execute arbitrary
   code with kernel level privileges to result in complete compromise of the system.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/30719/discuss");
 
   exit(0);
 }

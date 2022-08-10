@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("SpecView/banner");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54243");
 
   script_tag(name:"summary", value:"SpecView is prone to a directory-traversal vulnerability because it
   fails to properly sanitize user-supplied input.");

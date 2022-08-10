@@ -32,9 +32,7 @@ if (description)
   script_cve_id("CVE-2012-0996", "CVE-2012-0997");
   script_version("$Revision: 11167 $");
   script_name("11in1 Cross Site Request Forgery and Local File Include Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52025");
   script_xref(name:"URL", value:"http://www.11in1.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521660");
   script_tag(name:"cvss_base", value:"6.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_tag(name:"last_modification", value:"$Date: 2018-08-30 14:04:11 +0200 (Thu, 30 Aug 2018) $");

@@ -43,9 +43,7 @@ if(description)
   script_mandatory_keys("Host/runs_windows");
   script_exclude_keys("keys/TARGET_IS_IPV6");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50441");
   script_xref(name:"URL", value:"http://sites.google.com/site/zhaojieding2/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520302");
 
   script_tag(name:"summary", value:"YaTFTPSvr TFTP Server is prone to a directory-traversal vulnerability
   because it fails to sufficiently sanitize user-supplied input.");

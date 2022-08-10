@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/46107/");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=741020");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519770/30/0/threaded");
   script_xref(name:"URL", value:"http://www.byte.nl/blog/2011/09/23/security-bug-in-is_a-function-in-php-5-3-7-5-3-8/");
 
   script_tag(name:"impact", value:"Successful exploitation could allow remote attackers to execute

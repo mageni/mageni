@@ -37,7 +37,6 @@ if(description)
 
   script_name("OneCMS 'index.php' Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42949");
   script_xref(name:"URL", value:"http://sourceforge.net/project/showfiles.php?group_id=148948");
 
   script_tag(name:"qod_type", value:"remote_vul");

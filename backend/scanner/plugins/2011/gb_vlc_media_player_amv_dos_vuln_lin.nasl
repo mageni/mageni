@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base", value:"6.8");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:P/A:P");
   script_name("VLC Media Player 'AMV' Denial of Service Vulnerability (Linux)");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/517706");
   script_xref(name:"URL", value:"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=624339");
 
   script_copyright("Copyright (c) 2011 Greenbone Networks GmbH");

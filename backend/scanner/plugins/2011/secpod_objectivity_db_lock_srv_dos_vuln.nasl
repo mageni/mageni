@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Objectivity/DB Lock Server Denial of Service Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/42901");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/45803");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/64699");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/15988/");
 

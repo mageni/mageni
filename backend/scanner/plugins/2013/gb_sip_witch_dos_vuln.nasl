@@ -40,7 +40,6 @@ if(description)
   script_mandatory_keys("sip/banner/available");
 
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2013/Mar/60");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525904/30/90/threaded");
 
   script_tag(name:"impact", value:"Successful exploitation will allow remote attacker to cause
   denial of service resulting in a loss of availability.");

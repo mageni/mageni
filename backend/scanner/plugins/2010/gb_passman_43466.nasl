@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("cpassman/detected");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/43466");
   script_xref(name:"URL", value:"http://code.google.com/p/cpassman/");
   script_xref(name:"URL", value:"http://cpassman.org/");
 

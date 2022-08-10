@@ -50,7 +50,6 @@ if (description)
 
   script_tag(name:"affected", value:"PHPMySpace Gold 8.0 is vulnerable, other versions may also be affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37881");
   script_xref(name:"URL", value:"http://popscript.com/php-scripts/social-network/php-myspace-gold-edition-8-10/prod_180.html");
 
   script_tag(name:"solution_type", value:"WillNotFix");

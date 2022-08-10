@@ -55,7 +55,6 @@ if(description)
   script_tag(name:"impact", value:"Remote attackers can crash or deny the service by executing
   long LOGIN string.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/495259");
 
   script_tag(name:"qod_type", value:"registry");
   script_tag(name:"solution_type", value:"VendorFix");

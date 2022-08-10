@@ -42,7 +42,6 @@ if(description)
   script_dependencies("gb_php_support_tickets_detect.nasl");
   script_mandatory_keys("php_support_tickets/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49567");
   script_xref(name:"URL", value:"http://www.phpsupporttickets.com/index.php");
 
   script_tag(name:"summary", value:"PHP Support Tickets is prone to a vulnerability that lets remote

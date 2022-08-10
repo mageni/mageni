@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("HNAP/vendor", "HNAP/port");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65585");
   script_xref(name:"URL", value:"http://www.linksys.com");
 
   script_tag(name:"impact", value:"An attacker can exploit these issues to execute arbitrary code in the

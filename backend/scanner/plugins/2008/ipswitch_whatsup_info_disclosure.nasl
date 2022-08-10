@@ -58,7 +58,6 @@ if(description)
   The version of WhatsUp Professional installed on the remote host is prone to multiple issues, including source
   code disclosure and cross-site scripting vulnerabilities.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/433808/30/0/threaded");
   script_xref(name:"URL", value:"http://www.ipswitch.com/products/whatsup/professional/");
 
   script_tag(name:"qod_type", value:"remote_banner");

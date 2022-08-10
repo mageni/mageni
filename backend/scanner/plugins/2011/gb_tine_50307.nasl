@@ -32,9 +32,7 @@ if (description)
   script_tag(name:"creation_date", value:"2011-10-25 14:02:26 +0200 (Tue, 25 Oct 2011)");
   script_bugtraq_id(50307);
   script_name("Tine Multiple Cross Site Scripting Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50307");
   script_xref(name:"URL", value:"http://www.tine20.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520167");
   script_xref(name:"URL", value:"https://www.htbridge.ch/advisory/multiple_vulnerabilities_in_tine_2_0.html");
   script_tag(name:"cvss_base", value:"4.3");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:M/Au:N/C:P/I:N/A:N");

@@ -36,7 +36,6 @@ if (description)
 
   script_name("phpGroupWare Multiple Input Validation Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35761");
   script_xref(name:"URL", value:"http://www.phpgroupware.org/");
 
   script_tag(name:"qod_type", value:"remote_banner");

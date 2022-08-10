@@ -40,7 +40,6 @@ if (description)
 
   script_tag(name:"solution_type", value:"VendorFix");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39639");
   script_xref(name:"URL", value:"http://cacti.net/");
   script_xref(name:"URL", value:"http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-os-command-injection-0105.php");
   script_xref(name:"URL", value:"http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-sql-injection-0104.php");

@@ -36,7 +36,6 @@ if (description)
 
   script_name("Savant Web Server Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/12429");
   script_xref(name:"URL", value:"http://savant.sourceforge.net/index.html");
 
   script_tag(name:"qod_type", value:"remote_banner");

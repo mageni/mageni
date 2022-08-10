@@ -52,7 +52,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/60261");
   script_xref(name:"URL", value:"http://www.tenable.com/security/tns-2014-05");
   script_xref(name:"URL", value:"http://packetstormsecurity.com/files/127532");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/532839/100/0/threaded");
   script_category(ACT_ATTACK);
   script_copyright("Copyright (C) 2014 Greenbone Networks GmbH");
   script_family("Web application abuses");

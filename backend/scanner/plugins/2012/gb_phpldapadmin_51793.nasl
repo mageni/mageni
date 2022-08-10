@@ -35,10 +35,8 @@ if(description)
 
   script_name("phpLDAPadmin 'base' Parameter Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51793");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/phpldapadmin/develop");
   script_xref(name:"URL", value:"http://phpldapadmin.sourceforge.net/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/521450");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");
   script_tag(name:"creation_date", value:"2012-02-02 12:25:56 +0100 (Thu, 02 Feb 2012)");

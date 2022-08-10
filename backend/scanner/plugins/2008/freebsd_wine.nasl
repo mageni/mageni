@@ -39,7 +39,6 @@ software upgrades.
 http://bugs.winehq.org/show_bug.cgi?id=2715
 http://www.securitytracker.com/alerts/2005/Mar/1013428.html
 http://www.zone-h.org/advisories/read/id=7300
-http://www.securityfocus.com/bid/12791
 http://xforce.iss.net/xforce/xfdb/19697
 http://marc.theaimsgroup.com/?l=bugtraq&m=111082537009842
 http://www.vuxml.org/freebsd/48a59c96-9c6e-11d9-a040-000a95bc6fae.html";

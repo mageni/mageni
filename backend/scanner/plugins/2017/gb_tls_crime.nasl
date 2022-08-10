@@ -43,8 +43,6 @@ if(description)
   script_require_ports("Services/www", 443);
   script_mandatory_keys("ssl_tls/port");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55704");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55707");
   script_xref(name:"URL", value:"http://permalink.gmane.org/gmane.comp.lib.qt.devel/6729");
   script_xref(name:"URL", value:"https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2012/september/details-on-the-crime-attack/");
 

@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/48132");
   script_xref(name:"URL", value:"http://blogcms.com/");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-007.txt");
 

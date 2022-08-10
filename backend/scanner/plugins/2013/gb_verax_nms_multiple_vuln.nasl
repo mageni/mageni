@@ -41,9 +41,6 @@ if(description)
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Mar/37");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Mar/36");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Mar/35");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525916");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525917");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525918");
 
   script_category(ACT_ATTACK);
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");

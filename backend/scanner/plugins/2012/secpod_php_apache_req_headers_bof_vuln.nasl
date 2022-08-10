@@ -45,7 +45,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/49014");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=61807");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53455");
   script_xref(name:"URL", value:"http://www.php.net/ChangeLog-5.php#5.4.3");
   script_xref(name:"URL", value:"http://www.php.net/archive/2012.php#id2012-05-08-1");
   script_xref(name:"URL", value:"https://bugzilla.redhat.com/show_bug.cgi?id=820000");

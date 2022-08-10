@@ -44,7 +44,6 @@ if(description)
   script_dependencies("mozilloCMS_detect.nasl");
   script_mandatory_keys("mozillocms/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34474");
 
   script_tag(name:"summary", value:"MoziloCMS is prone to a local file-include vulnerability and a
   cross-site scripting vulnerability because it fails to properly sanitize user-supplied input.");

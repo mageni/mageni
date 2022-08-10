@@ -39,7 +39,6 @@ if(description)
   script_name("Joomla! Time Returns Component 'id' Parameter SQL Injection Vulnerability");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/46267");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50026");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/17944");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/105619/joomlatimereturns-sql.txt");
 

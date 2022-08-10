@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/33835/");
   script_xref(name:"URL", value:"http://php.a4desk.com/calendar/");
 
   script_tag(name:"summary", value:"A4Desk Event Calendar is prone to an SQL-injection vulnerability

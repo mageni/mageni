@@ -38,7 +38,6 @@ if(description)
 
   script_name("Lexmark MarkVision Enterprise Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/71623");
   script_xref(name:"URL", value:"http://support.lexmark.com/index?page=content&id=TE667&locale=EN&userlocale=EN_US");
 
   script_tag(name:"impact", value:"Successfully exploiting this issue may allow attackers to execute

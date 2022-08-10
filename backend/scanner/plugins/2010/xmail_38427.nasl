@@ -40,7 +40,6 @@ if(description)
   script_dependencies("smtpserver_detect.nasl");
   script_mandatory_keys("smtp/xmail/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/38427");
   script_xref(name:"URL", value:"http://www.xmailserver.org/ChangeLog.html#feb_25__2010_v_1_27");
   script_xref(name:"URL", value:"http://www.xmailserver.org/");
 

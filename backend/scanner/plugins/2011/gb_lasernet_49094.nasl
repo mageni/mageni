@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Lasernet CMS 'id' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49094");
   script_xref(name:"URL", value:"http://lasernet.gr/cms.php");
 
   script_tag(name:"qod_type", value:"remote_vul");

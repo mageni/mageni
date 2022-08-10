@@ -33,7 +33,6 @@ if (description)
 
   script_name("Play! Framework Directory Traversal Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42340");
   script_xref(name:"URL", value:"http://www.playframework.org/");
 
   script_tag(name:"cvss_base", value:"5.0");

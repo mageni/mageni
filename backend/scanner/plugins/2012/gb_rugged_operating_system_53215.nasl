@@ -45,9 +45,7 @@ if(description)
   script_require_ports("Services/telnet", 23);
   script_mandatory_keys("rugged_os/installed", "Tools/Present/perl");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/53215");
   script_xref(name:"URL", value:"http://www.ruggedcom.com/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/522467");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICS-ALERT-12-116-01.pdf");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICSA-12-146-01.pdf");
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/889195");

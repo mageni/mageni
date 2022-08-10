@@ -37,8 +37,6 @@ if(description)
 
   script_bugtraq_id(65445, 65461);
   script_cve_id("CVE-2014-1608", "CVE-2014-1609");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65445");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65461");
   script_xref(name:"URL", value:"http://www.mantisbt.org/bugs/view.php?id=16879");
   script_xref(name:"URL", value:"http://www.mantisbt.org/bugs/view.php?id=16880");
 

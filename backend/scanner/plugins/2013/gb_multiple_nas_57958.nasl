@@ -42,7 +42,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57958");
 
   script_tag(name:"impact", value:"The attacker may leverage these issues to bypass certain security
   restrictions and perform unauthorized actions or execute HTML and

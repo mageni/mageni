@@ -46,7 +46,6 @@ tag_solution = "Update your system with the appropriate patches or
 software upgrades.
 
 http://sunsolve.sun.com/search/document.do?assetkey=1-26-57591-1&searchclause=%22category:security%22%20%22availability,%20security%22
-http://www.securityfocus.com/archive/1/382072
 http://marc.theaimsgroup.com/?l=bugtraq&m=110125046627909
 http://www.vuxml.org/freebsd/ac619d06-3ef8-11d9-8741-c942c075aa41.html";
 tag_summary = "The remote host is missing an update to the system

@@ -36,7 +36,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("ccTiddly 'cct_base' Parameter Multiple Remote File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42265");
   script_xref(name:"URL", value:"http://tiddlywiki.org");
 
   script_tag(name:"qod_type", value:"remote_vul");

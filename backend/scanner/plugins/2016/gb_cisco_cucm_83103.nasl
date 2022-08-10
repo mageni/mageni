@@ -38,7 +38,6 @@ if (description)
 
   script_name("Multiple Cisco Unified Products Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/83103");
   script_xref(name:"URL", value:"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20160208-ucm");
 
   script_tag(name:"impact", value:"An attacker can exploit this issue to obtain sensitive information.");

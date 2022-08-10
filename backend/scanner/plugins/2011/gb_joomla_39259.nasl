@@ -35,7 +35,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:P/I:P/A:P");
   script_name("Joomla! 'com_xobbix' Component 'prodid' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39259");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-24 14:00:58 +0200 (Wed, 24 Oct 2018) $");
   script_tag(name:"creation_date", value:"2011-12-05 12:01:34 +0100 (Mon, 05 Dec 2011)");

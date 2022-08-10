@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"creation_date", value:"2011-12-22 12:11:40 +0530 (Thu, 22 Dec 2011)");
   script_name("Winamp AVI And IT Files Parsing Buffer Overflow Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/46882");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51015/info");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Dec/321");
   script_xref(name:"URL", value:"http://forums.winamp.com/showthread.php?t=332010");
 

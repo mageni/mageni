@@ -37,7 +37,6 @@ if(description)
   script_tag(name:"creation_date", value:"2012-09-20 13:36:31 +0530 (Thu, 20 Sep 2012)");
   script_name("HP iNode Management Center iNodeMngChecker.exe Multiple Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/50350/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/523984");
   script_xref(name:"URL", value:"http://zerodayinitiative.com/advisories/ZDI-12-163/");
   script_xref(name:"URL", value:"http://telussecuritylabs.com/threats/show/TSL20120822-08");
   script_xref(name:"URL", value:"http://h20565.www2.hp.com/portal/site/hpsc/public/kb/docDisplay/?docId=emr_na-c03473527");

@@ -36,7 +36,6 @@ if (description)
 
   script_name("Zeus Web Server 'SSL2_CLIENT_HELLO' Remote Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37829");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

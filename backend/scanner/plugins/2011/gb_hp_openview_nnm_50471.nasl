@@ -45,9 +45,7 @@ if(description)
   script_require_ports("Services/www", 7510);
   script_mandatory_keys("HP/OVNNM/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50471");
   script_xref(name:"URL", value:"http://www.openview.hp.com/products/nnm/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520349");
 
   script_tag(name:"summary", value:"HP OpenView Network Node Manager (NNM) is prone to multiple remote
   code-execution vulnerabilities because it fails to sanitize user-supplied data.");

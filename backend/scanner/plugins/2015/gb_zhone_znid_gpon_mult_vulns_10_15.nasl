@@ -42,8 +42,6 @@ if(description)
   script_dependencies("gb_zhone_znid_gpon_detect.nasl", "gb_zhone_znid_gpon_snmp_detect.nasl");
   script_mandatory_keys("zhone/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/536663/30/0/threaded");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/536666/30/0/threaded");
 
   script_tag(name:"vuldetect", value:"Checks if a vulnerable version is present on the target host.");
 

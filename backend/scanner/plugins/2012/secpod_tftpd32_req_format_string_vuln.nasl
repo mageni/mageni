@@ -40,7 +40,6 @@ if(description)
   script_xref(name:"URL", value:"http://www.kb.cert.org/vuls/id/632633");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/24250");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/1424");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/422405");
 
   script_category(ACT_DENIAL);
   script_copyright("Copyright (C) 2012 SecPod");

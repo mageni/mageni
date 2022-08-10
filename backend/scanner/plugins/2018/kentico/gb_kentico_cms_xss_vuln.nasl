@@ -57,7 +57,6 @@ if( description )
 
   script_tag(name:"solution", value:"No known solution was made available for at least one year since the disclosure of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer release, disable respective features, remove the product or replace the product by another one.");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/archive/1/541792");
   script_xref(name:"URL", value:"https://devnet.kentico.com/download/hotfixes");
 
   exit(0);

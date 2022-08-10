@@ -56,7 +56,6 @@ impacts via some known or unknown vectors.");
   script_tag(name:"solution_type", value:"VendorFix");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/55087");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/61885");
   script_xref(name:"URL", value:"http://googlechromereleases.blogspot.com/2011/10/stable-channel-update.html");
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2013 Greenbone Networks GmbH");

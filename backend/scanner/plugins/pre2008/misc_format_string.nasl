@@ -39,7 +39,6 @@ if(description)
   script_dependencies("find_service.nasl");
   script_require_ports("Services/unknown");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/81565");
 
   script_tag(name:"solution", value:"Upgrade your software or contact your vendor and inform it of this
   vulnerability.");

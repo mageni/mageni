@@ -54,7 +54,6 @@ multiple input validation vulnerabilities.");
 through 2.0.3");
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/17685");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/15537");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/34164");
   script_xref(name:"URL", value:"http://www.otrs.com/en/open-source/community-news/security-advisories/security-advisory-2005-01/");
   script_category(ACT_ATTACK);

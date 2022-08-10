@@ -52,7 +52,6 @@ if (description)
   script_tag(name:"affected", value:"Power Phlogger 2.2.5 is vulnerable, other versions may also be
   affected.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/37150");
   script_xref(name:"URL", value:"http://www.websecurity.com.ua/1845");
 
   script_tag(name:"solution_type", value:"WillNotFix");

@@ -43,9 +43,7 @@ if(description)
   script_dependencies("secpod_asterisk_detect.nasl");
   script_mandatory_keys("Asterisk-PBX/Ver", "Asterisk-PBX/Installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36924");
   script_xref(name:"URL", value:"http://www.asterisk.org/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/507688");
   script_xref(name:"URL", value:"http://downloads.asterisk.org/pub/security/AST-2009-008.html");
 
   script_tag(name:"solution", value:"The vendor has released an advisory and updates. Please see the

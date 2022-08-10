@@ -43,12 +43,9 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("ExponentCMS/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/44095");
   script_xref(name:"URL", value:"http://www.exponentcms.org");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/lfi_in_exponent_cms.html");
   script_xref(name:"URL", value:"http://www.htbridge.ch/advisory/lfi_in_exponent_cms_1.html");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/515075");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/515076");
 
   script_tag(name:"summary", value:"Exponent CMS is prone to multiple input-validation vulnerabilities
   because it fails to adequately sanitize user-supplied input. These vulnerabilities include local

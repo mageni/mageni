@@ -41,7 +41,6 @@ if(description)
   script_mandatory_keys("Aastra_6753i/banner", "telnet/vxworks/detected");
 
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Apr/42");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/526207");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/aastra-ip-telephone-hardcoded-password");
 
   script_tag(name:"insight", value:"Aastra 6753i IP Phone installs with default hardcoded

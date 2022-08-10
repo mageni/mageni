@@ -36,7 +36,6 @@ if (description)
 
   script_name("Multiple DVR Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57579");
   script_xref(name:"URL", value:"http://www.securitybydefault.com/2013/01/12000-grabadores-de-video-expuestos-en.html");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

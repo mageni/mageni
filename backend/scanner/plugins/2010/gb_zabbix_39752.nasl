@@ -35,7 +35,6 @@ if (description)
   script_bugtraq_id(39752);
   script_name("ZABBIX 'nav_time' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/39752");
   script_xref(name:"URL", value:"http://www.zabbix.com/index.php");
 
   script_tag(name:"cvss_base", value:"7.5");

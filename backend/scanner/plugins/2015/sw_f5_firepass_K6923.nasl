@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"solution", value:"The vendor has released updates listened in the referenced
   advisory.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/21957");
   script_xref(name:"URL", value:"https://support.f5.com/csp/article/K6923");
 
   script_tag(name:"solution_type", value:"VendorFix");

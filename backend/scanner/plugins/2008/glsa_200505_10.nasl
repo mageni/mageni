@@ -34,7 +34,6 @@ tag_solution = "All phpBB users should upgrade to the latest version:
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200505-10
 http://bugs.gentoo.org/show_bug.cgi?id=90213
-http://www.securityfocus.com/bid/13344/info/
 http://securitytracker.com/id?1013918";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200505-10.";

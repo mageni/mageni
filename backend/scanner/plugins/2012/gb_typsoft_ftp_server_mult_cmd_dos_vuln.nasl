@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"last_modification", value:"$Date: 2019-02-06 11:45:54 +0100 (Wed, 06 Feb 2019) $");
   script_tag(name:"creation_date", value:"2012-02-08 12:12:12 +0530 (Wed, 08 Feb 2012)");
   script_name("TYPSoft FTP Server Multiple Commands Remote Denial of Service Vulnerabilities");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51891");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/73016");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/18469");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/109508/typsoftcwnslt-dos.txt");

@@ -33,7 +33,6 @@ if(description)
 
   script_name("Traq 'authenticate()' Function Remote Code Execution Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50961");
   script_xref(name:"URL", value:"http://sourceforge.net/projects/qatraq/");
 
   script_tag(name:"cvss_base", value:"7.5");

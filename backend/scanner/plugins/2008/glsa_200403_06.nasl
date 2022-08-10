@@ -42,8 +42,7 @@ tag_solution = "All users should upgrade to current versions of the affected pac
     
 
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200403-06
-http://bugs.gentoo.org/show_bug.cgi?id=45584
-http://www.securityfocus.com/bid/9845";
+http://bugs.gentoo.org/show_bug.cgi?id=45584";
 tag_summary = "The remote host is missing updates announced in
 advisory GLSA 200403-06.";
 

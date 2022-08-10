@@ -43,10 +43,8 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50372");
   script_xref(name:"URL", value:"http://www.cisco.com");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20111026-cucm");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520414");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20111026-uccx");
 
   script_tag(name:"summary", value:"Multiple Cisco products are prone to a directory-traversal

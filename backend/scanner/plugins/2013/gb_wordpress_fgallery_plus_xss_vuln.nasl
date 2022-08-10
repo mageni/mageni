@@ -52,7 +52,6 @@ script code in a user's browser session in the context of an affected site.");
   script_tag(name:"solution_type", value:"WillNotFix");
   script_xref(name:"URL", value:"http://www.iedb.ir/exploits-584.html");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2013/Sep/108");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/528803");
   script_category(ACT_ATTACK);
   script_tag(name:"qod_type", value:"remote_vul");
   script_copyright("Copyright (c) 2013 Greenbone Networks GmbH");

@@ -40,7 +40,6 @@ if(description)
 
   script_name("Joomla! JoomTouch Component 'controller' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/49180");
   script_xref(name:"URL", value:"http://www.joomtouch.com/");
 
   script_tag(name:"qod_type", value:"remote_vul");

@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=77153");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=77160");
   script_xref(name:"URL", value:"https://bugs.php.net/bug.php?id=77143");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/106018");
   script_xref(name:"URL", value:"https://github.com/Bo0oM/PHP_imap_open_exploit/blob/master/exploit.php");
   script_xref(name:"URL", value:"https://www.exploit-db.com/exploits/45914/");
   script_xref(name:"URL", value:"https://www.openwall.com/lists/oss-security/2018/11/22/3");

@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/35115");
 
   script_tag(name:"affected", value:"Versions prior to Apache 2.2.9 are vulnerable.");
 

@@ -33,7 +33,6 @@ if(description)
   script_cve_id("CVE-2007-1670");
   script_bugtraq_id(23823);
   script_name("Panda AntiVirus Zoo Denial of Service Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/467646/100/0/threaded");
   script_xref(name:"URL", value:"http://secunia.com/advisories/25152");
   script_tag(name:"qod_type", value:"registry");
   script_tag(name:"cvss_base", value:"7.8");

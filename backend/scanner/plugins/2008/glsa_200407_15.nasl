@@ -38,7 +38,6 @@ tag_solution = "All Opera users should upgrade to the latest stable version:
 http://www.securityspace.com/smysecure/catid.html?in=GLSA%20200407-15
 http://bugs.gentoo.org/show_bug.cgi?id=56311
 http://bugs.gentoo.org/show_bug.cgi?id=56109
-http://www.securityfocus.com/bid/10517
 http://secunia.com/advisories/11978/
 http://secunia.com/advisories/12028/
 http://www.opera.com/linux/changelogs/753/";

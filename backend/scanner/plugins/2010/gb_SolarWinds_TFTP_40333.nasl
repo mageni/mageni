@@ -37,7 +37,6 @@ if(description)
 
   script_name("SolarWinds TFTP Server 'Read' Request (Opcode 0x01) Denial Of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/40333");
   script_xref(name:"URL", value:"http://solarwinds.net/Tools/Free_tools/TFTP_Server/index.htm");
 
   script_category(ACT_DENIAL);

@@ -36,10 +36,8 @@ if(description)
 
   script_name("Contao CMS Cross-Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50061");
   script_xref(name:"URL", value:"http://www.contao.org/");
   script_xref(name:"URL", value:"http://dev.contao.org/projects/typolight/repository/revisions/1041");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/520046");
   script_xref(name:"URL", value:"http://www.rul3z.de/advisories/SSCHADV2011-025.txt");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-22 15:31:29 +0200 (Mon, 22 Oct 2018) $");

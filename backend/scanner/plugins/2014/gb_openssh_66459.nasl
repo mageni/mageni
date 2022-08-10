@@ -43,7 +43,6 @@ if(description)
   script_dependencies("gb_openssh_consolidation.nasl");
   script_mandatory_keys("openssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/66459");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to bypass certain security
   restrictions and perform unauthorized actions. This may aid in further attacks.");

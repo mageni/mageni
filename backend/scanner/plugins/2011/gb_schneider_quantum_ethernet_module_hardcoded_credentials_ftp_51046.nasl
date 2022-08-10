@@ -43,7 +43,6 @@ if(description)
   script_require_ports("Services/ftp", 21);
   script_mandatory_keys("ftp/ftp_ready_banner/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/51046");
   script_xref(name:"URL", value:"http://www.schneider-electric.com/site/home/index.cfm/ww/?selectCountry=true");
   script_xref(name:"URL", value:"http://www.us-cert.gov/control_systems/pdf/ICS-ALERT-11-346-01.pdf");
   script_xref(name:"URL", value:"http://reversemode.com/index.php?option=com_content&task=view&id=80&Itemid=1");

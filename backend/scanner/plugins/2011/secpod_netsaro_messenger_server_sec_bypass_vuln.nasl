@@ -35,7 +35,6 @@ if(description)
   script_tag(name:"cvss_base_vector", value:"AV:L/AC:M/Au:N/C:P/I:N/A:N");
   script_name("NetSaro Enterprise Messenger Server Plaintext Password Storage Vulnerability");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2011/Aug/94");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/519284");
   script_xref(name:"URL", value:"http://www.solutionary.com/index/SERT/Vuln-Disclosures/NetSaro-Enterprise-Messenger-Vuln-Password.html");
 
   script_category(ACT_GATHER_INFO);

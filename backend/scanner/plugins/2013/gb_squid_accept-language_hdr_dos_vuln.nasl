@@ -47,7 +47,6 @@ if(description)
   script_xref(name:"URL", value:"http://secunia.com/advisories/52588");
   script_xref(name:"URL", value:"http://www.squid-cache.org/Advisories/SQUID-2013_1.txt");
   script_xref(name:"URL", value:"http://www.openwall.com/lists/oss-security/2013/03/11/7");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/525932/30/30/threaded");
   script_xref(name:"URL", value:"http://www.squid-cache.org/Download");
 
   script_tag(name:"summary", value:"This host is running Squid Proxy Server and is prone to denial of service

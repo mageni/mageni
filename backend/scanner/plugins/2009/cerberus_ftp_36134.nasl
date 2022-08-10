@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"cvss_base", value:"5.0");
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:P");
   script_name("Cerberus FTP Server 'ALLO' Command Buffer Overflow Vulnerability");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36134");
   script_xref(name:"URL", value:"http://www.cerberusftp.com/index.html");
   script_tag(name:"qod_type", value:"remote_vul");
   script_category(ACT_DENIAL);

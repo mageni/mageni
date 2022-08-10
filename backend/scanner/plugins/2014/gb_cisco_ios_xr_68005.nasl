@@ -38,7 +38,6 @@ if (description)
 
   script_name("Cisco IOS XR Software IPv6 Packet Handling Denial of Service Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/68005");
   script_xref(name:"URL", value:"http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140611-ipv6");
 
   script_tag(name:"impact", value:"Attackers can exploit this issue to cause NP chip and a line card on

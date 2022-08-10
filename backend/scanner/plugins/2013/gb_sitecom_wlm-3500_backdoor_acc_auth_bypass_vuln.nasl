@@ -34,7 +34,6 @@ if(description)
   script_tag(name:"creation_date", value:"2013-04-18 15:27:50 +0530 (Thu, 18 Apr 2013)");
   script_name("Sitecom WLM-3500 Backdoor Accounts Authentication Bypass vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/526372");
   script_xref(name:"URL", value:"http://comments.gmane.org/gmane.comp.security.bugtraq/51700");
   script_xref(name:"URL", value:"http://exploitsdownload.com/exploit/na/sitecom-wlm-3500-backdoor-accounts");
 

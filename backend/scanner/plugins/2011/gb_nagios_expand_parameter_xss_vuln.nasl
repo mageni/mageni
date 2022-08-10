@@ -39,7 +39,6 @@ if(description)
   script_name("Nagios 'expand' Parameter Cross-Site Scripting Vulnerability");
 
   script_xref(name:"URL", value:"http://tracker.nagios.org/view.php?id=224");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/518221");
   script_xref(name:"URL", value:"http://seclists.org/fulldisclosure/2011/Jun/22");
   script_xref(name:"URL", value:"http://packetstormsecurity.org/files/view/101899/SSCHADV2011-006.txt");
 

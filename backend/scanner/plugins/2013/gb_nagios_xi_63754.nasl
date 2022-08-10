@@ -38,7 +38,6 @@ if(description)
 
   script_name("Nagios XI 'tfPassword' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/63754");
   script_xref(name:"URL", value:"http://www.nagios.com/products/nagiosxi");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");

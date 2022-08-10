@@ -46,7 +46,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/3325");
   script_xref(name:"URL", value:"https://www.kb.cert.org/vuls/id/177243");
 
   script_tag(name:"solution", value:"Block access to hidden files (starting with a dot) within your webservers

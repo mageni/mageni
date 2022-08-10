@@ -45,7 +45,6 @@ if(description)
   script_dependencies("smb_nativelanman.nasl", "gb_samba_detect.nasl");
   script_mandatory_keys("samba/smb_or_ssh/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/23972");
   script_xref(name:"URL", value:"https://www.samba.org/samba/security/CVE-2007-2447.html");
 
   script_tag(name:"summary", value:"Samba is prone to a vulnerability that allows attackers to execute arbitrary shell

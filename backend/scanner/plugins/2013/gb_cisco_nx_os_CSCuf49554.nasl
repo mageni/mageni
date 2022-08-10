@@ -39,7 +39,6 @@ if (description)
   script_name("Cisco NX-OS Denial of Service Vulnerability");
 
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62446");
   script_xref(name:"URL", value:"http://tools.cisco.com/Support/BugToolKit/search/getBugDetails.do?method=fetchBugDetails&bugId=CSCuf49554");
 
   script_tag(name:"last_modification", value:"$Date: 2018-10-12 12:03:43 +0200 (Fri, 12 Oct 2018) $");

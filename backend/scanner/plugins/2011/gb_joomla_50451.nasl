@@ -38,7 +38,6 @@ if (description)
 
   script_name("Joomla! Alameda Component 'storeid' Parameter SQL Injection Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50451");
   script_xref(name:"URL", value:"http://www.blueflyingfish.com/alameda/");
   script_xref(name:"URL", value:"http://www.joomla.org");
 

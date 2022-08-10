@@ -38,7 +38,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/35131");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/50574");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/503605");
 
   script_category(ACT_GATHER_INFO);
   script_copyright("Copyright (C) 2009 SecPod");

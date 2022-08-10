@@ -44,7 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("mediawiki/installed");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46108");
   script_xref(name:"URL", value:"http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html");
   script_xref(name:"URL", value:"http://wikipedia.sourceforge.net/");
   script_xref(name:"URL", value:"https://bugzilla.wikimedia.org/show_bug.cgi?id=27093");

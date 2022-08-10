@@ -41,7 +41,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_exclude_keys("Settings/disable_cgi_scanning");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/36656");
   script_xref(name:"URL", value:"http://www.acritum.com/fem/index.htm");
 
   script_tag(name:"summary", value:"Acritum Femitter Server is prone to a remote file-disclosure

@@ -43,7 +43,6 @@ if(description)
   script_mandatory_keys("ssh/login/slackware_linux", "ssh/login/slackpack", re:"ssh/login/release=SLK9\.0");
 
   script_xref(name:"URL", value:"https://secure1.securityspace.com/smysecure/catid.html?in=SSA:2003-237-01");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/7550");
   script_xref(name:"URL", value:"http://lwn.net/Articles/38540/");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/12004");
 

@@ -40,7 +40,6 @@ if (description)
 
   script_name("Joomla YJ Contact us Component 'view' Parameter Local File Include Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/50362");
   script_xref(name:"URL", value:"http://joomla1.5.youjoomla.info/yjcontact/index.php");
 
   script_tag(name:"qod_type", value:"remote_vul");

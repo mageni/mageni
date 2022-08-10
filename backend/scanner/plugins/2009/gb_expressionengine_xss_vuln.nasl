@@ -36,7 +36,6 @@ if(description)
   script_name("ExpressionEngine CMS Cross Site Scripting Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/34379");
   script_xref(name:"URL", value:"http://xforce.iss.net/xforce/xfdb/49359");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/502045/100/0/threaded");
 
   script_tag(name:"qod_type", value:"remote_banner");
   script_category(ACT_GATHER_INFO);

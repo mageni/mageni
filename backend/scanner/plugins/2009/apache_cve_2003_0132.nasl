@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("apache/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/7254");
   script_xref(name:"URL", value:"http://httpd.apache.org/");
 
   script_tag(name:"insight", value:"This issue occurs because of the way that Apache handles

@@ -59,7 +59,6 @@ if(description)
   script_tag(name:"affected", value:"Vaadin Framework versions from 6.0.0 up to 6.8.7");
   script_tag(name:"solution", value:"Upgrade to Vaadin Framework version 6.8.8 or later.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57667");
   script_xref(name:"URL", value:"http://www.vaadin.com/download/release/6.8/6.8.8/release-notes.html");
 
   script_tag(name:"solution_type", value:"VendorFix");

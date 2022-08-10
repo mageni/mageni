@@ -36,7 +36,6 @@ if (description)
 
   script_name("WordPress Paid Memberships Pro Plugin 'memberslist-csv.php' Information Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54443");
   script_xref(name:"URL", value:"http://www.paidmembershipspro.com/2012/07/important-security-update-1-5/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-09-11 12:15:07 +0200 (Tue, 11 Sep 2018) $");

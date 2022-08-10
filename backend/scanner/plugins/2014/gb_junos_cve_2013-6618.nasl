@@ -71,7 +71,6 @@ administrative access. The vulnerability is limited to only users with valid, au
 workaround disable J-Web.");
 
   script_xref(name:"URL", value:"http://kb.juniper.net/JSA10560");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/62305");
 
   exit(0);
 }

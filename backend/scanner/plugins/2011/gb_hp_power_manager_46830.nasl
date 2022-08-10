@@ -42,7 +42,6 @@ if (description)
 
   script_name("HP Power Manager Unspecified Cross Site Scripting Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/46830");
   script_xref(name:"URL", value:"https://exchange.xforce.ibmcloud.com/vulnerabilities/66035");
 
   script_tag(name:"qod_type", value:"remote_banner_unreliable");

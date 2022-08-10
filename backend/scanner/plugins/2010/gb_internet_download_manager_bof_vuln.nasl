@@ -37,7 +37,6 @@ if(description)
   script_name("Internet Download Manager FTP Buffer Overflow Vulnerability");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39446");
   script_xref(name:"URL", value:"http://secunia.com/secunia_research/2010-62/");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/511060/100/0/threaded");
 
   script_tag(name:"qod_type", value:"executable_version");
   script_category(ACT_GATHER_INFO);

@@ -47,7 +47,6 @@ if(description)
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/49592");
   script_xref(name:"URL", value:"http://securitytracker.com/id/1027209");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/54218");
   script_xref(name:"URL", value:"http://h20000.www2.hp.com/bizsupport/TechSupport/Document.jsp?objectID=c03360041");
 
   script_tag(name:"insight", value:"- An unspecified local security vulnerability

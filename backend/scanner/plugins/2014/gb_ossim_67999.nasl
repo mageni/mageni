@@ -38,7 +38,6 @@ if(description)
 
   script_name("AlienVault OSSIM  Multiple Remote Code Execution Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/67999");
   script_xref(name:"URL", value:"http://www.alienvault.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2019-02-14 09:34:21 +0100 (Thu, 14 Feb 2019) $");

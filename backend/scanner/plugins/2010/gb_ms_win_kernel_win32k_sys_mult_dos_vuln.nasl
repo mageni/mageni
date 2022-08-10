@@ -37,7 +37,6 @@ if(description)
   script_name("Microsoft Windows Kernel 'win32k.sys' Multiple DOS Vulnerabilities");
   script_xref(name:"URL", value:"http://secunia.com/advisories/39456");
   script_xref(name:"URL", value:"http://seclists.org/bugtraq/2010/Apr/207");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/archive/1/510886/100/0/threaded");
   script_xref(name:"URL", value:"http://vigilance.fr/vulnerability/Windows-denials-of-service-of-win32k-sys-9607");
 
   script_tag(name:"qod_type", value:"executable_version");

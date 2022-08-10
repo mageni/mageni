@@ -44,8 +44,6 @@ if(description)
   script_require_ports("Services/www", 80);
   script_mandatory_keys("phpMyAdmin/installed");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34236");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34251");
 
   script_tag(name:"summary", value:"phpMyAdmin is prone to a remote PHP code-injection vulnerability and
   to a cross-site scripting vulnerability.");

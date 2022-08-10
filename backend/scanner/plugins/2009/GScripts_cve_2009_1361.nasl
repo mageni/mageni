@@ -49,7 +49,6 @@ if(description)
   script_tag(name:"impact", value:"Successful attacks can compromise the affected software and possibly
   the computer.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/34559");
 
   script_tag(name:"qod_type", value:"remote_vul");
 

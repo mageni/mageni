@@ -36,7 +36,6 @@ if(description)
 
   script_name("Dolphin SQL Injection and Information Disclosure Vulnerabilities");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/44620");
   script_xref(name:"URL", value:"http://www.boonex.com");
 
   script_tag(name:"qod_type", value:"remote_vul");

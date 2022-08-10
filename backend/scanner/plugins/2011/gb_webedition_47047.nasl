@@ -36,7 +36,6 @@ if(description)
 
   script_name("webEdition CMS HTML Injection and Local File Include Vulnerabilities");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/47047");
   script_xref(name:"URL", value:"http://www.webedition.org/de/index.php");
 
   script_tag(name:"qod_type", value:"remote_vul");

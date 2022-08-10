@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 8080);
   script_mandatory_keys("apache/tomcat/http/detected");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/4876");
 
   script_tag(name:"solution", value:"Remove default files from the web server.");
 

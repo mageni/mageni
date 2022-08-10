@@ -36,7 +36,6 @@ if(description)
 
   script_name("MiniUPnP Multiple Denial of Service Vulnerabilities (TCP)");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/57607");
 
   script_tag(name:"last_modification", value:"$Date: 2017-05-08 11:03:33 +0200 (Mon, 08 May 2017) $");
   script_tag(name:"creation_date", value:"2013-02-06 14:48:10 +0100 (Wed, 06 Feb 2013)");

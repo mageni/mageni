@@ -45,7 +45,6 @@ if(description)
   script_require_ports("Services/www", 2301, 2381);
 
   script_xref(name:"URL", value:"http://secunia.com/advisories/43012");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/52974");
 
   script_tag(name:"insight", value:"The flaw is due to certain actions via HTTP requests without
   performing any validity checks to verify the requests.");

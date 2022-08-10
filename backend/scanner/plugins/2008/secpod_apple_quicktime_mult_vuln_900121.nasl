@@ -45,8 +45,6 @@ if(description)
   script_mandatory_keys("QuickTime/Win/Ver");
 
   script_xref(name:"URL", value:"http://support.apple.com/kb/HT3027");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496161");
-  script_xref(name:"URL", value:"http://www.securityfocus.com/archive/1/496163");
   script_xref(name:"URL", value:"http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=744");
 
   script_tag(name:"summary", value:"This host has Apple QuickTime installed, which prone to multiple

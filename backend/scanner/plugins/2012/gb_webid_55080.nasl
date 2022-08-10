@@ -36,7 +36,6 @@ if (description)
 
   script_name("WeBid 'getthumb.php' Remote File Disclosure Vulnerability");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/55080");
   script_xref(name:"URL", value:"http://www.webidsupport.com/");
 
   script_tag(name:"last_modification", value:"$Date: 2018-08-21 12:57:20 +0200 (Tue, 21 Aug 2018) $");

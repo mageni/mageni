@@ -34,7 +34,6 @@ if (description)
   script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:P/A:N");
   script_name("Brother HL-5370DW Printer 'post/panel.html' Security Bypass Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/48050");
   script_xref(name:"URL", value:"http://www.brother.com");
 
   script_tag(name:"qod_type", value:"remote_vul");

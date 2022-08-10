@@ -57,7 +57,6 @@ if(description)
   script_tag(name:"affected", value:"Tableau Server prior to 8.0.7 and 8.1.2 are vulnerable.");
   script_tag(name:"solution", value:"The vendor has released updates.");
 
-  script_xref(name:"URL", value:"http://www.securityfocus.com/bid/65171");
   script_xref(name:"URL", value:"http://www.exploit-db.com/exploits/31578");
 
   script_tag(name:"solution_type", value:"VendorFix");

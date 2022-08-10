@@ -39,7 +39,6 @@ if (description)
 
   script_name("UnrealIRCd User Authentication Buffer Overflow Vulnerability");
 
-  script_xref(name:"URL", value:"https://www.securityfocus.com/bid/42077");
   script_xref(name:"URL", value:"http://www.unrealircd.com/txt/unrealsecadvisory.20090413.txt");
   script_xref(name:"URL", value:"http://unrealircd.com/");
 
