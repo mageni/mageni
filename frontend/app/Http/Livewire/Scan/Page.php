@@ -688,7 +688,7 @@ class Page extends Component
         $scan->start($taskID);
 
         if($scan->get_start_result == 0) {
-            $this->notify('Scan restarted successfully', 'Success', 'success');
+            $this->notify('Scan started successfully', 'Success', 'success');
         } elseif ($scan->get_start_result == 2) {
             $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
         } elseif ($scan->get_start_result == 3) {
