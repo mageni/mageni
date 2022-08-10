@@ -1600,16 +1600,16 @@
         },
         {
             "name": "laravel/fortify",
-            "version": "v1.13.1",
+            "version": "v1.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/fortify.git",
-                "reference": "9dee9cf87c6469af1c3ab001e5a83c080efa306c"
+                "reference": "fc248d32b43cef160788e1b62fa3f4c227c26161"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/fortify/zipball/9dee9cf87c6469af1c3ab001e5a83c080efa306c",
-                "reference": "9dee9cf87c6469af1c3ab001e5a83c080efa306c",
+                "url": "https://api.github.com/repos/laravel/fortify/zipball/fc248d32b43cef160788e1b62fa3f4c227c26161",
+                "reference": "fc248d32b43cef160788e1b62fa3f4c227c26161",
                 "shasum": ""
             },
             "require": {
@@ -1659,20 +1659,20 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "time": "2022-07-05T19:55:35+00:00"
+            "time": "2022-08-09T13:39:55+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v9.23.0",
+            "version": "v9.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c4eea9060d847b5c93957b203caa8f57544a76ab"
+                "reference": "053840f579cf01d353d81333802afced79b1c0af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c4eea9060d847b5c93957b203caa8f57544a76ab",
-                "reference": "c4eea9060d847b5c93957b203caa8f57544a76ab",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/053840f579cf01d353d81333802afced79b1c0af",
+                "reference": "053840f579cf01d353d81333802afced79b1c0af",
                 "shasum": ""
             },
             "require": {
@@ -1839,20 +1839,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-02T14:24:44+00:00"
+            "time": "2022-08-09T13:43:22+00:00"
         },
         {
             "name": "laravel/jetstream",
-            "version": "v2.10.3",
+            "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "3eb0052a6415189885b79ec5401efe6bbd368755"
+                "reference": "80641e2b490bf442033be45b5e9b2d1e3635b3a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/3eb0052a6415189885b79ec5401efe6bbd368755",
-                "reference": "3eb0052a6415189885b79ec5401efe6bbd368755",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/80641e2b490bf442033be45b5e9b2d1e3635b3a9",
+                "reference": "80641e2b490bf442033be45b5e9b2d1e3635b3a9",
                 "shasum": ""
             },
             "require": {
@@ -1909,7 +1909,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2022-08-01T15:42:13+00:00"
+            "time": "2022-08-08T13:25:08+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -7319,16 +7319,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.15.1",
+            "version": "v1.15.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "2fe64c0b45a3af56cac0af638c8020a8adc860d7"
+                "reference": "8eb6d7116deda5b0e26153c1993f3e326d67768c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/2fe64c0b45a3af56cac0af638c8020a8adc860d7",
-                "reference": "2fe64c0b45a3af56cac0af638c8020a8adc860d7",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/8eb6d7116deda5b0e26153c1993f3e326d67768c",
+                "reference": "8eb6d7116deda5b0e26153c1993f3e326d67768c",
                 "shasum": ""
             },
             "require": {
@@ -7375,7 +7375,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-07-21T14:33:56+00:00"
+            "time": "2022-08-08T20:02:04+00:00"
         },
         {
             "name": "league/container",
@@ -8362,16 +8362,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.6.4",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "135607f9ccc297d6923d49c2bcf309f509413215"
+                "reference": "367a8d9d5f7da2a0136422d27ce8840583926955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/135607f9ccc297d6923d49c2bcf309f509413215",
-                "reference": "135607f9ccc297d6923d49c2bcf309f509413215",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/367a8d9d5f7da2a0136422d27ce8840583926955",
+                "reference": "367a8d9d5f7da2a0136422d27ce8840583926955",
                 "shasum": ""
             },
             "require": {
@@ -8401,9 +8401,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.6.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.7.0"
             },
-            "time": "2022-06-26T13:09:08+00:00"
+            "time": "2022-08-09T12:23:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
