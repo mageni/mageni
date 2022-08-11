@@ -78,7 +78,7 @@ if( ! smbversion() )
         if( version_is_less(version: v, test_version: test_version) ) {
           report = string("SMB File successfully loaded ") + string("\n");
           # security_message(port:0, proto:"SMB");
-          register_and_report_os( os:"Microsoft Windows Server 2022", cpe:"cpe:2.3:o:microsoft:windows_server:2022:*:*:*:*:*:*:*", banner_type:"SMB", port:port, desc:"SMB", runs_key:"windows" );
+          register_and_report_os( os:"Microsoft Windows Server 2022", cpe:"cpe:/o:microsoft:windows", banner_type:"SMB", port:port, banner:"SMB", desc:"SMB", runs_key:"windows" );
           report = report + "Fileversion : C$ "+orig_filename + " "+v+string("\n");
           security_message(port:0, proto:"SMB", data:report);
         }
