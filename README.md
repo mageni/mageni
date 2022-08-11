@@ -36,6 +36,7 @@
 - [About Mageni](#about-mageni)
 - [What is Mageni?](#what-is-mageni)
 - [Real life problems that Mageni solves for you](#real-life-problems-that-mageni-solves-for-you)
+- [Industries that Mageni serves](#industries-that-mageni-serves)
 - [How Mageni can help you](#how-mageni-can-help-you)
 - [Benefits of Mageni](#benefits-of-mageni)
 - [Mission](#mission)
@@ -75,6 +76,22 @@ Mageni is an open source vulnerability and attack surface management platform th
 - Security Audits
 - IoT, OT, and SCADA Security Testing
 - Hardening Testing
+
+## Industries that Mageni serves
+- IT and Telecom
+- Healthcare & Life Sciences
+- Government
+- Automobile
+- FMCG (Fast-moving consumer goods) 
+- Chemicals & Petroleum
+- Electronics
+- Energy & Power
+- Media & Entertainment
+- Mining 
+- Retail
+- BFSI (Banking, financial services and insurance)
+- Travel & Transportation 
+- Education
 
 ## How Mageni can help you?
 Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
