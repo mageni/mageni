@@ -17,6 +17,24 @@
     "Architecture": "all",
     "Description": "transitional package for https support"
   },
+  "autoconf": {
+    "State": "ii",
+    "Version": "2.69-11.1",
+    "Architecture": "all",
+    "Description": "automatic configure script builder"
+  },
+  "automake": {
+    "State": "ii",
+    "Version": "1:1.16.1-4ubuntu6",
+    "Architecture": "all",
+    "Description": "Tool for generating GNU Standards-compliant Makefiles"
+  },
+  "autotools-dev": {
+    "State": "ii",
+    "Version": "20180224.1",
+    "Architecture": "all",
+    "Description": "Update infrastructure for config.{guess,sub} files"
+  },
   "awscli": {
     "State": "ii",
     "Version": "1.18.69-1ubuntu0.20.04.1",
@@ -106,6 +124,12 @@
     "Version": "1:10.0.0-4ubuntu1",
     "Architecture": "amd64",
     "Description": "C, C++ and Objective-C compiler"
+  },
+  "cloc": {
+    "State": "ii",
+    "Version": "1.82-1",
+    "Architecture": "all",
+    "Description": "statistics utility to count lines of code"
   },
   "cmake": {
     "State": "ii",
@@ -617,6 +641,12 @@
     "Architecture": "amd64",
     "Description": "access control list - shared library"
   },
+  "libalgorithm-diff-perl": {
+    "State": "ii",
+    "Version": "1.19.03-2",
+    "Architecture": "all",
+    "Description": "module to find differences between files"
+  },
   "libapparmor1:amd64": {
     "State": "ii",
     "Version": "2.13.3-7ubuntu5.1",
@@ -706,6 +736,12 @@
     "Version": "0.7-4ubuntu7.1",
     "Architecture": "amd64",
     "Description": "Avahi common library"
+  },
+  "libb-hooks-op-check-perl": {
+    "State": "ii",
+    "Version": "0.22-1build2",
+    "Architecture": "amd64",
+    "Description": "Perl wrapper for OP check callbacks"
   },
   "libbabeltrace1:amd64": {
     "State": "ii",
@@ -839,6 +875,12 @@
     "Architecture": "amd64",
     "Description": "C interface to the Clang library"
   },
+  "libclass-method-modifiers-perl": {
+    "State": "ii",
+    "Version": "2.13-1",
+    "Architecture": "all",
+    "Description": "Perl module providing method modifiers"
+  },
   "libcmocka-dev:amd64": {
     "State": "ii",
     "Version": "1.1.5-2",
@@ -947,6 +989,12 @@
     "Architecture": "amd64",
     "Description": "Debian Configuration Management System (C-implementation library)"
   },
+  "libdevel-callchecker-perl": {
+    "State": "ii",
+    "Version": "0.008-1ubuntu1",
+    "Architecture": "amd64",
+    "Description": "custom op checking attached to subroutines"
+  },
   "libdevmapper1.02.1:amd64": {
     "State": "ii",
     "Version": "2:1.02.167-1ubuntu1",
@@ -976,6 +1024,12 @@
     "Version": "0.176-1.1build1",
     "Architecture": "amd64",
     "Description": "library that provides access to the DWARF debug information"
+  },
+  "libdynaloader-functions-perl": {
+    "State": "ii",
+    "Version": "0.003-1",
+    "Architecture": "all",
+    "Description": "deconstructed dynamic C library loading"
   },
   "libedit2:amd64": {
     "State": "ii",
@@ -1379,6 +1433,12 @@
     "Architecture": "amd64",
     "Description": "palette quantization library"
   },
+  "libimport-into-perl": {
+    "State": "ii",
+    "Version": "1.002005-1",
+    "Architecture": "all",
+    "Description": "module for importing packages into other packages"
+  },
   "libip4tc2:amd64": {
     "State": "ii",
     "Version": "1.8.4-3ubuntu2",
@@ -1667,6 +1727,18 @@
     "Architecture": "amd64",
     "Description": "minimalistic Netlink communication library"
   },
+  "libmodule-runtime-perl": {
+    "State": "ii",
+    "Version": "0.016-1",
+    "Architecture": "all",
+    "Description": "Perl module for runtime module handling"
+  },
+  "libmoo-perl": {
+    "State": "ii",
+    "Version": "2.003006-1",
+    "Architecture": "all",
+    "Description": "Minimalist Object Orientation library (with Moose compatibility)"
+  },
   "libmount-dev:amd64": {
     "State": "ii",
     "Version": "2.34-0.1ubuntu9.3",
@@ -1901,6 +1973,18 @@
     "Architecture": "amd64",
     "Description": "library for handling paper characteristics"
   },
+  "libparallel-forkmanager-perl": {
+    "State": "ii",
+    "Version": "2.02-1",
+    "Architecture": "all",
+    "Description": "simple parallel processing fork manager for Perl"
+  },
+  "libparams-classify-perl": {
+    "State": "ii",
+    "Version": "0.015-1build2",
+    "Architecture": "amd64",
+    "Description": "Perl module for argument type classification"
+  },
   "libpcap-dev:amd64": {
     "State": "ii",
     "Version": "1.9.1-3",
@@ -2081,6 +2165,12 @@
     "Architecture": "amd64",
     "Description": "GNU readline and history libraries, run-time libraries"
   },
+  "libregexp-common-perl": {
+    "State": "ii",
+    "Version": "2017060201-1",
+    "Architecture": "all",
+    "Description": "module with common regular expressions"
+  },
   "librhash0:amd64": {
     "State": "ii",
     "Version": "1.3.9-1",
@@ -2092,6 +2182,12 @@
     "Version": "7.7.0+dfsg-1ubuntu1",
     "Architecture": "amd64",
     "Description": "Heimdal Kerberos - roken support library"
+  },
+  "librole-tiny-perl": {
+    "State": "ii",
+    "Version": "2.001004-1",
+    "Architecture": "all",
+    "Description": "Perl module for minimalist role composition"
   },
   "librtmp1:amd64": {
     "State": "ii",
@@ -2290,6 +2386,18 @@
     "Version": "0+svn585-2",
     "Architecture": "amd64",
     "Description": "Snowball stemming algorithms for use in Information Retrieval"
+  },
+  "libstrictures-perl": {
+    "State": "ii",
+    "Version": "2.000006-1",
+    "Architecture": "all",
+    "Description": "Perl module to turn on strict and make all warnings fatal"
+  },
+  "libsub-quote-perl": {
+    "State": "ii",
+    "Version": "2.006006-1",
+    "Architecture": "all",
+    "Description": "helper modules for subroutines"
   },
   "libsystemd0:amd64": {
     "State": "ii",
@@ -3490,6 +3598,12 @@
     "Version": "1.30+dfsg-7ubuntu0.20.04.2",
     "Architecture": "amd64",
     "Description": "GNU version of the tar archiving utility"
+  },
+  "telnet": {
+    "State": "ii",
+    "Version": "0.17-41.2build1",
+    "Architecture": "amd64",
+    "Description": "basic telnet client"
   },
   "tmux": {
     "State": "ii",

@@ -1,8 +1,146 @@
 {
     "installed": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.7.0",
+            "description": "PHP Debugbar integration for Laravel",
+            "requires": [
+                {
+                    "name": "illuminate/routing",
+                    "version": "^7|^8|^9"
+                },
+                {
+                    "name": "illuminate/session",
+                    "version": "^7|^8|^9"
+                },
+                {
+                    "name": "illuminate/support",
+                    "version": "^7|^8|^9"
+                },
+                {
+                    "name": "maximebf/debugbar",
+                    "version": "^1.17.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.1|^8"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-dumper",
+                            "version": "^2.6|^3|^4|^5|^6",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": ">=7.2.5"
+                },
+                {
+                    "name": "symfony/finder",
+                    "version": "^5|^6",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "3.4.0",
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "requires": [
+                {
+                    "name": "composer-runtime-api",
+                    "version": "^2"
+                },
+                {
+                    "name": "doctrine/cache",
+                    "version": "^1.11|^2.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "~7.1 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "doctrine/deprecations",
+                    "version": "^0.5.3|^1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.1|^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "doctrine/event-manager",
+                    "version": "^1.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.1 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^7.4 || ^8.0"
+                },
+                {
+                    "name": "psr/cache",
+                    "version": "^1|^2|^3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "psr/log",
+                    "version": "^1|^2|^3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "fakerphp/faker",
-            "version": "v1.19.0",
+            "version": "v1.20.0",
             "description": "Faker is a PHP library that generates fake data for you.",
             "requires": [
                 {
@@ -21,7 +159,13 @@
                 },
                 {
                     "name": "symfony/deprecation-contracts",
-                    "version": "^2.2 || ^3.0"
+                    "version": "^2.2 || ^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
                 }
             ]
         },
@@ -40,11 +184,163 @@
                         },
                         {
                             "name": "symfony/http-foundation",
-                            "version": "^4|^5|^6"
+                            "version": "^4|^5|^6",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "symfony/http-kernel",
-                            "version": "^4|^5|^6"
+                            "version": "^4|^5|^6",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/log",
+                                    "version": "^1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/error-handler",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/log",
+                                            "version": "^1|^2|^3",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=8.0.0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/var-dumper",
+                                            "version": "^5.4|^6.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=8.0.2"
+                                                },
+                                                {
+                                                    "name": "symfony/polyfill-mbstring",
+                                                    "version": "~1.0",
+                                                    "requires": [
+                                                        {
+                                                            "name": "php",
+                                                            "version": ">=7.1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/event-dispatcher",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/event-dispatcher-contracts",
+                                            "version": "^2|^3",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=8.0.2"
+                                                },
+                                                {
+                                                    "name": "psr/event-dispatcher",
+                                                    "version": "^1",
+                                                    "requires": [
+                                                        {
+                                                            "name": "php",
+                                                            "version": ">=7.2.0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/http-foundation",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/deprecation-contracts",
+                                            "version": "^2.1|^3",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=8.0.2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "^1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -59,6 +355,1486 @@
                 {
                     "name": "php",
                     "version": ">=7.2"
+                }
+            ]
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "7.4.5",
+            "description": "Guzzle is a PHP HTTP client library",
+            "requires": [
+                {
+                    "name": "ext-json",
+                    "version": "*"
+                },
+                {
+                    "name": "guzzlehttp/promises",
+                    "version": "^1.5",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=5.5"
+                        }
+                    ]
+                },
+                {
+                    "name": "guzzlehttp/psr7",
+                    "version": "^1.9 || ^2.4",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.2.5 || ^8.0"
+                        },
+                        {
+                            "name": "psr/http-factory",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.0.0"
+                                },
+                                {
+                                    "name": "psr/http-message",
+                                    "version": "^1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=5.3.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "psr/http-message",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=5.3.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ralouphie/getallheaders",
+                            "version": "^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=5.6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^7.2.5 || ^8.0"
+                },
+                {
+                    "name": "psr/http-client",
+                    "version": "^1.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.0 || ^8.0"
+                        },
+                        {
+                            "name": "psr/http-message",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=5.3.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/deprecation-contracts",
+                    "version": "^2.2 || ^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v9.24.0",
+            "description": "The Laravel Framework.",
+            "requires": [
+                {
+                    "name": "doctrine/inflector",
+                    "version": "^2.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "dragonmantank/cron-expression",
+                    "version": "^3.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.2|^8.0"
+                        },
+                        {
+                            "name": "webmozart/assert",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "ext-ctype",
+                                    "version": "*",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "egulias/email-validator",
+                    "version": "^3.1",
+                    "requires": [
+                        {
+                            "name": "doctrine/lexer",
+                            "version": "^1.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.1 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=7.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-intl-idn",
+                            "version": "^1.15",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-php72",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-mbstring",
+                    "version": "*",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-openssl",
+                    "version": "*"
+                },
+                {
+                    "name": "fruitcake/php-cors",
+                    "version": "^1.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.4|^8.0"
+                        },
+                        {
+                            "name": "symfony/http-foundation",
+                            "version": "^4.4|^5.4|^6",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "laravel/serializable-closure",
+                    "version": "^1.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.3|^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "league/commonmark",
+                    "version": "^2.2",
+                    "requires": [
+                        {
+                            "name": "ext-mbstring",
+                            "version": "*",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "league/config",
+                            "version": "^1.1.1",
+                            "requires": [
+                                {
+                                    "name": "dflydev/dot-access-data",
+                                    "version": "^3.0.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.1 || ^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "nette/schema",
+                                    "version": "^1.2",
+                                    "requires": [
+                                        {
+                                            "name": "nette/utils",
+                                            "version": "^2.5.7 || ^3.1.5 ||  ^4.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.2 <8.2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1 <8.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.4 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.4 || ^8.0"
+                        },
+                        {
+                            "name": "psr/event-dispatcher",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.2.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/deprecation-contracts",
+                            "version": "^2.1 || ^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-php80",
+                            "version": "^1.16",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "league/flysystem",
+                    "version": "^3.0.16",
+                    "requires": [
+                        {
+                            "name": "league/mime-type-detection",
+                            "version": "^1.0.0",
+                            "requires": [
+                                {
+                                    "name": "ext-fileinfo",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0.2"
+                        }
+                    ]
+                },
+                {
+                    "name": "monolog/monolog",
+                    "version": "^2.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1.0.1 || ^2.0 || ^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "nesbot/carbon",
+                    "version": "^2.53.1",
+                    "requires": [
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.1.8 || ^8.0"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-php80",
+                            "version": "^1.16",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/translation",
+                            "version": "^3.4 || ^4.0 || ^5.0 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/translation-contracts",
+                                    "version": "^2.3|^3.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "nunomaduro/termwind",
+                    "version": "^1.13",
+                    "requires": [
+                        {
+                            "name": "ext-mbstring",
+                            "version": "*",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0"
+                        },
+                        {
+                            "name": "symfony/console",
+                            "version": "^5.3.0|^6.0.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/service-contracts",
+                                    "version": "^1.1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/container",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.4.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/string",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-ctype",
+                                            "version": "~1.8",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-grapheme",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^8.0.2"
+                },
+                {
+                    "name": "psr/container",
+                    "version": "^1.1.1|^2.0.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.4.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "psr/log",
+                    "version": "^1.0|^2.0|^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "psr/simple-cache",
+                    "version": "^1.0|^2.0|^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "ramsey/uuid",
+                    "version": "^4.2.2",
+                    "requires": [
+                        {
+                            "name": "brick/math",
+                            "version": "^0.8 || ^0.9 || ^0.10",
+                            "requires": [
+                                {
+                                    "name": "ext-json",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.4 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ext-ctype",
+                            "version": "*",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0"
+                        },
+                        {
+                            "name": "ramsey/collection",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.3 || ^8"
+                                },
+                                {
+                                    "name": "symfony/polyfill-php81",
+                                    "version": "^1.23",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/console",
+                    "version": "^6.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/string",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-grapheme",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/error-handler",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-dumper",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/finder",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/http-foundation",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/deprecation-contracts",
+                            "version": "^2.1|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/http-kernel",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/error-handler",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/log",
+                                    "version": "^1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/var-dumper",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/event-dispatcher",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/event-dispatcher-contracts",
+                                    "version": "^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/event-dispatcher",
+                                            "version": "^1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.2.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/http-foundation",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-ctype",
+                            "version": "^1.8",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/mailer",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "egulias/email-validator",
+                            "version": "^2.1.10|^3",
+                            "requires": [
+                                {
+                                    "name": "doctrine/lexer",
+                                    "version": "^1.2",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.1 || ^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=7.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-idn",
+                                    "version": "^1.15",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-php72",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/event-dispatcher",
+                            "version": "^1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.2.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/event-dispatcher",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/event-dispatcher-contracts",
+                                    "version": "^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/event-dispatcher",
+                                            "version": "^1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.2.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/mime",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-idn",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-php72",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "^1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/mime",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-intl-idn",
+                            "version": "^1.10",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-php72",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/process",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/routing",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/var-dumper",
+                    "version": "^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "tijsverkoyen/css-to-inline-styles",
+                    "version": "^2.2.2",
+                    "requires": [
+                        {
+                            "name": "ext-dom",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-libxml",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^5.5 || ^7.0 || ^8.0"
+                        },
+                        {
+                            "name": "symfony/css-selector",
+                            "version": "^2.7 || ^3.0 || ^4.0 || ^5.0 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "vlucas/phpdotenv",
+                    "version": "^5.4.1",
+                    "requires": [
+                        {
+                            "name": "ext-pcre",
+                            "version": "*"
+                        },
+                        {
+                            "name": "graham-campbell/result-type",
+                            "version": "^1.0.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.2.5 || ^8.0"
+                                },
+                                {
+                                    "name": "phpoption/phpoption",
+                                    "version": "^1.9",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.2.5 || ^8.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.1.3 || ^8.0"
+                        },
+                        {
+                            "name": "phpoption/phpoption",
+                            "version": "^1.8",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.2.5 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-ctype",
+                            "version": "^1.23",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "^1.23.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-php80",
+                            "version": "^1.23.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "voku/portable-ascii",
+                    "version": "^2.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.0.0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "laravel/jetstream",
+            "version": "v2.11.0",
+            "description": "Tailwind scaffolding for the Laravel framework.",
+            "requires": [
+                {
+                    "name": "ext-json",
+                    "version": "*"
+                },
+                {
+                    "name": "illuminate/console",
+                    "version": "^9.21"
+                },
+                {
+                    "name": "illuminate/support",
+                    "version": "^9.21"
+                },
+                {
+                    "name": "jenssegers/agent",
+                    "version": "^2.6",
+                    "requires": [
+                        {
+                            "name": "jaybizzle/crawler-detect",
+                            "version": "^1.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=5.3.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "mobiledetect/mobiledetectlib",
+                            "version": "^2.7.6",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=5.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=5.6"
+                        }
+                    ]
+                },
+                {
+                    "name": "laravel/fortify",
+                    "version": "^1.12",
+                    "requires": [
+                        {
+                            "name": "bacon/bacon-qr-code",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "dasprid/enum",
+                                    "version": "^1.0.3"
+                                },
+                                {
+                                    "name": "ext-iconv",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.1 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "illuminate/support",
+                            "version": "^8.82|^9.0"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.3|^8.0"
+                        },
+                        {
+                            "name": "pragmarx/google2fa",
+                            "version": "^7.0|^8.0",
+                            "requires": [
+                                {
+                                    "name": "paragonie/constant_time_encoding",
+                                    "version": "^1.0|^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7|^8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.1|^8.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^8.0.2"
+                }
+            ]
+        },
+        {
+            "name": "laravel/sail",
+            "version": "v1.15.2",
+            "description": "Docker files for running a basic Laravel application.",
+            "requires": [
+                {
+                    "name": "illuminate/console",
+                    "version": "^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/contracts",
+                    "version": "^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/support",
+                    "version": "^8.0|^9.0"
+                },
+                {
+                    "name": "php",
+                    "version": "^7.3|^8.0"
                 }
             ]
         },
@@ -116,11 +1892,332 @@
                 },
                 {
                     "name": "psy/psysh",
-                    "version": "^0.10.4|^0.11.1"
+                    "version": "^0.10.4|^0.11.1",
+                    "requires": [
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-tokenizer",
+                            "version": "*"
+                        },
+                        {
+                            "name": "nikic/php-parser",
+                            "version": "^4.0 || ^3.1",
+                            "requires": [
+                                {
+                                    "name": "ext-tokenizer",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=7.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0 || ^7.0.8"
+                        },
+                        {
+                            "name": "symfony/console",
+                            "version": "^6.0 || ^5.0 || ^4.0 || ^3.4",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/service-contracts",
+                                    "version": "^1.1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/container",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.4.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/string",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-ctype",
+                                            "version": "~1.8",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-grapheme",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-dumper",
+                            "version": "^6.0 || ^5.0 || ^4.0 || ^3.4",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "symfony/var-dumper",
-                    "version": "^4.3.4|^5.0|^6.0"
+                    "version": "^4.3.4|^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v2.10.7",
+            "description": "A front-end framework for Laravel.",
+            "requires": [
+                {
+                    "name": "illuminate/database",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/support",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/validation",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "league/mime-type-detection",
+                    "version": "^1.9",
+                    "requires": [
+                        {
+                            "name": "ext-fileinfo",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^7.2.5|^8.0"
+                },
+                {
+                    "name": "symfony/http-kernel",
+                    "version": "^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/error-handler",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/log",
+                                    "version": "^1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/var-dumper",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/event-dispatcher",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/event-dispatcher-contracts",
+                                    "version": "^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/event-dispatcher",
+                                            "version": "^1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.2.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/http-foundation",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-ctype",
+                            "version": "^1.8",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -146,6 +2243,2209 @@
                 {
                     "name": "php",
                     "version": "^7.3 || ^8.0"
+                }
+            ]
+        },
+        {
+            "name": "nunomaduro/collision",
+            "version": "v6.2.1",
+            "description": "Cli error handling for console/command-line PHP applications.",
+            "requires": [
+                {
+                    "name": "facade/ignition-contracts",
+                    "version": "^1.0.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.3|^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "filp/whoops",
+                    "version": "^2.14.5",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^5.5.9 || ^7.0 || ^8.0"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1.0.1 || ^2.0 || ^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^8.0.0"
+                },
+                {
+                    "name": "symfony/console",
+                    "version": "^6.0.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/string",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-grapheme",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "nunomaduro/phpinsights",
+            "version": "v2.4.0",
+            "description": "Instant PHP quality checks from your console.",
+            "requires": [
+                {
+                    "name": "composer/semver",
+                    "version": "^3.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^5.3.2 || ^7.0 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-iconv",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-json",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-mbstring",
+                    "version": "*",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-tokenizer",
+                    "version": "*"
+                },
+                {
+                    "name": "friendsofphp/php-cs-fixer",
+                    "version": "^3.0.0",
+                    "requires": [
+                        {
+                            "name": "composer/semver",
+                            "version": "^3.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^5.3.2 || ^7.0 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "composer/xdebug-handler",
+                            "version": "^3.0.3",
+                            "requires": [
+                                {
+                                    "name": "composer/pcre",
+                                    "version": "^1 || ^2 || ^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.4 || ^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.2.5 || ^8.0"
+                                },
+                                {
+                                    "name": "psr/log",
+                                    "version": "^1 || ^2 || ^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "doctrine/annotations",
+                            "version": "^1.13",
+                            "requires": [
+                                {
+                                    "name": "doctrine/lexer",
+                                    "version": "1.*",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.1 || ^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "ext-tokenizer",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.1 || ^8.0"
+                                },
+                                {
+                                    "name": "psr/cache",
+                                    "version": "^1 || ^2 || ^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-tokenizer",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.4 || ^8.0"
+                        },
+                        {
+                            "name": "php-cs-fixer/diff",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^5.6 || ^7.0 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/console",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/service-contracts",
+                                    "version": "^1.1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/container",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.4.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/string",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-ctype",
+                                            "version": "~1.8",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-grapheme",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/event-dispatcher",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/event-dispatcher-contracts",
+                                    "version": "^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/event-dispatcher",
+                                            "version": "^1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.2.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/filesystem",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/finder",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/options-resolver",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "^1.23",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-php80",
+                            "version": "^1.25",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/polyfill-php81",
+                            "version": "^1.25",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/process",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/stopwatch",
+                            "version": "^5.4 || ^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/service-contracts",
+                                    "version": "^1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/container",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.4.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "justinrainbow/json-schema",
+                    "version": "^5.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=5.3.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "league/container",
+                    "version": "^3.2|^4.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        },
+                        {
+                            "name": "psr/container",
+                            "version": "^1.1 || ^2.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.4.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^7.4 || ^8.0"
+                },
+                {
+                    "name": "php-parallel-lint/php-parallel-lint",
+                    "version": "^1.3",
+                    "requires": [
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=5.3.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "phploc/phploc",
+                    "version": "^5.0|^6.0|^7.0",
+                    "requires": [
+                        {
+                            "name": "ext-dom",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "phpunit/php-file-iterator",
+                            "version": "^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/cli-parser",
+                            "version": "^1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/version",
+                            "version": "^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "psr/container",
+                    "version": "^1.0|^2.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.4.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "psr/simple-cache",
+                    "version": "^1.0|^2.0|^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "slevomat/coding-standard",
+                    "version": "^7.0.8",
+                    "requires": [
+                        {
+                            "name": "dealerdirect/phpcodesniffer-composer-installer",
+                            "version": "^0.6.2 || ^0.7",
+                            "requires": [
+                                {
+                                    "name": "composer-plugin-api",
+                                    "version": "^1.0 || ^2.0"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=5.3"
+                                },
+                                {
+                                    "name": "squizlabs/php_codesniffer",
+                                    "version": "^2.0 || ^3.1.0 || ^4.0",
+                                    "requires": [
+                                        {
+                                            "name": "ext-simplexml",
+                                            "version": "*"
+                                        },
+                                        {
+                                            "name": "ext-tokenizer",
+                                            "version": "*"
+                                        },
+                                        {
+                                            "name": "ext-xmlwriter",
+                                            "version": "*"
+                                        },
+                                        {
+                                            "name": "php",
+                                            "version": ">=5.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        },
+                        {
+                            "name": "phpstan/phpdoc-parser",
+                            "version": "^1.5.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "squizlabs/php_codesniffer",
+                            "version": "^3.6.2",
+                            "requires": [
+                                {
+                                    "name": "ext-simplexml",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "ext-tokenizer",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "ext-xmlwriter",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=5.4.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "squizlabs/php_codesniffer",
+                    "version": "^3.5",
+                    "requires": [
+                        {
+                            "name": "ext-simplexml",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-tokenizer",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-xmlwriter",
+                            "version": "*"
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=5.4.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/cache",
+                    "version": "^4.4|^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/cache",
+                            "version": "^2.0|^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/cache-contracts",
+                            "version": "^1.1.7|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/cache",
+                                    "version": "^3.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-exporter",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/console",
+                    "version": "^4.2|^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/string",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-grapheme",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/finder",
+                    "version": "^4.2|^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/http-client",
+                    "version": "^4.3|^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/http-client-contracts",
+                            "version": "^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.0|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "phpunit/phpunit",
+            "version": "9.5.21",
+            "description": "The PHP Unit Testing framework.",
+            "requires": [
+                {
+                    "name": "doctrine/instantiator",
+                    "version": "^1.3.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.1 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-dom",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-json",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-libxml",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-mbstring",
+                    "version": "*",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "ext-xml",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-xmlwriter",
+                    "version": "*"
+                },
+                {
+                    "name": "myclabs/deep-copy",
+                    "version": "^1.10.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.1 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "phar-io/manifest",
+                    "version": "^2.0.3",
+                    "requires": [
+                        {
+                            "name": "ext-dom",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-phar",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-xmlwriter",
+                            "version": "*"
+                        },
+                        {
+                            "name": "phar-io/version",
+                            "version": "^3.0.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "phar-io/version",
+                    "version": "^3.0.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ^8.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": ">=7.3"
+                },
+                {
+                    "name": "phpspec/prophecy",
+                    "version": "^1.12.1",
+                    "requires": [
+                        {
+                            "name": "doctrine/instantiator",
+                            "version": "^1.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.1 || ^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^7.2 || ~8.0, <8.2"
+                        },
+                        {
+                            "name": "phpdocumentor/reflection-docblock",
+                            "version": "^5.2",
+                            "requires": [
+                                {
+                                    "name": "ext-filter",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                },
+                                {
+                                    "name": "phpdocumentor/reflection-common",
+                                    "version": "^2.2",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.2 || ^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "phpdocumentor/type-resolver",
+                                    "version": "^1.3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.2 || ^8.0"
+                                        },
+                                        {
+                                            "name": "phpdocumentor/reflection-common",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": "^7.2 || ^8.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "webmozart/assert",
+                                    "version": "^1.9.1",
+                                    "requires": [
+                                        {
+                                            "name": "ext-ctype",
+                                            "version": "*",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "php",
+                                            "version": "^7.2 || ^8.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/comparator",
+                            "version": "^3.0 || ^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                },
+                                {
+                                    "name": "sebastian/diff",
+                                    "version": "^4.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "sebastian/exporter",
+                                    "version": "^4.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.3"
+                                        },
+                                        {
+                                            "name": "sebastian/recursion-context",
+                                            "version": "^4.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/recursion-context",
+                            "version": "^3.0 || ^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "phpunit/php-code-coverage",
+                    "version": "^9.2.13",
+                    "requires": [
+                        {
+                            "name": "ext-dom",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-libxml",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-xmlwriter",
+                            "version": "*"
+                        },
+                        {
+                            "name": "nikic/php-parser",
+                            "version": "^4.13.0",
+                            "requires": [
+                                {
+                                    "name": "ext-tokenizer",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=7.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "phpunit/php-file-iterator",
+                            "version": "^3.0.3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "phpunit/php-text-template",
+                            "version": "^2.0.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/code-unit-reverse-lookup",
+                            "version": "^2.0.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/complexity",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "nikic/php-parser",
+                                    "version": "^4.7",
+                                    "requires": [
+                                        {
+                                            "name": "ext-tokenizer",
+                                            "version": "*"
+                                        },
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/environment",
+                            "version": "^5.1.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/lines-of-code",
+                            "version": "^1.0.3",
+                            "requires": [
+                                {
+                                    "name": "nikic/php-parser",
+                                    "version": "^4.6",
+                                    "requires": [
+                                        {
+                                            "name": "ext-tokenizer",
+                                            "version": "*"
+                                        },
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/version",
+                            "version": "^3.0.1",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "theseer/tokenizer",
+                            "version": "^1.2.0",
+                            "requires": [
+                                {
+                                    "name": "ext-dom",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "ext-tokenizer",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "ext-xmlwriter",
+                                    "version": "*"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^7.2 || ^8.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "phpunit/php-file-iterator",
+                    "version": "^3.0.5",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "phpunit/php-invoker",
+                    "version": "^3.1.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "phpunit/php-text-template",
+                    "version": "^2.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "phpunit/php-timer",
+                    "version": "^5.0.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/cli-parser",
+                    "version": "^1.0.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/code-unit",
+                    "version": "^1.0.6",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/comparator",
+                    "version": "^4.0.5",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "sebastian/diff",
+                            "version": "^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/exporter",
+                            "version": "^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                },
+                                {
+                                    "name": "sebastian/recursion-context",
+                                    "version": "^4.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/diff",
+                    "version": "^4.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/environment",
+                    "version": "^5.1.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/exporter",
+                    "version": "^4.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "sebastian/recursion-context",
+                            "version": "^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/global-state",
+                    "version": "^5.0.1",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "sebastian/object-reflector",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/recursion-context",
+                            "version": "^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/object-enumerator",
+                    "version": "^4.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        },
+                        {
+                            "name": "sebastian/object-reflector",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sebastian/recursion-context",
+                            "version": "^4.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/resource-operations",
+                    "version": "^3.0.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/type",
+                    "version": "^3.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                },
+                {
+                    "name": "sebastian/version",
+                    "version": "^3.0.2",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "spatie/laravel-ignition",
+            "version": "1.3.1",
+            "description": "A beautiful error page for Laravel applications.",
+            "requires": [
+                {
+                    "name": "ext-curl",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-json",
+                    "version": "*"
+                },
+                {
+                    "name": "ext-mbstring",
+                    "version": "*",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.1"
+                        }
+                    ]
+                },
+                {
+                    "name": "illuminate/support",
+                    "version": "^8.77|^9.0"
+                },
+                {
+                    "name": "monolog/monolog",
+                    "version": "^2.3",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=7.2"
+                        },
+                        {
+                            "name": "psr/log",
+                            "version": "^1.0.1 || ^2.0 || ^3.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "php",
+                    "version": "^8.0"
+                },
+                {
+                    "name": "spatie/flare-client-php",
+                    "version": "^1.0.1",
+                    "requires": [
+                        {
+                            "name": "illuminate/pipeline",
+                            "version": "^8.0|^9.0"
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0"
+                        },
+                        {
+                            "name": "spatie/backtrace",
+                            "version": "^1.2",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": "^7.3|^8.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/http-foundation",
+                            "version": "^5.0|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/deprecation-contracts",
+                                    "version": "^2.1|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.1",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/mime",
+                            "version": "^5.2|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-idn",
+                                    "version": "^1.10",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-php72",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "^1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/process",
+                            "version": "^5.2|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-dumper",
+                            "version": "^5.2|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "spatie/ignition",
+                    "version": "^1.2.4",
+                    "requires": [
+                        {
+                            "name": "ext-json",
+                            "version": "*"
+                        },
+                        {
+                            "name": "ext-mbstring",
+                            "version": "*",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "monolog/monolog",
+                            "version": "^2.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.2"
+                                },
+                                {
+                                    "name": "psr/log",
+                                    "version": "^1.0.1 || ^2.0 || ^3.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "php",
+                            "version": "^8.0"
+                        },
+                        {
+                            "name": "spatie/flare-client-php",
+                            "version": "^1.1",
+                            "requires": [
+                                {
+                                    "name": "illuminate/pipeline",
+                                    "version": "^8.0|^9.0"
+                                },
+                                {
+                                    "name": "php",
+                                    "version": "^8.0"
+                                },
+                                {
+                                    "name": "spatie/backtrace",
+                                    "version": "^1.2",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": "^7.3|^8.0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/http-foundation",
+                                    "version": "^5.0|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/deprecation-contracts",
+                                            "version": "^2.1|^3",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=8.0.2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.1",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/mime",
+                                    "version": "^5.2|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-idn",
+                                            "version": "^1.10",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                },
+                                                {
+                                                    "name": "symfony/polyfill-intl-normalizer",
+                                                    "version": "^1.10",
+                                                    "requires": [
+                                                        {
+                                                            "name": "php",
+                                                            "version": ">=7.1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "symfony/polyfill-php72",
+                                                    "version": "^1.10",
+                                                    "requires": [
+                                                        {
+                                                            "name": "php",
+                                                            "version": ">=7.1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "^1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/process",
+                                    "version": "^5.2|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/var-dumper",
+                                    "version": "^5.2|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/console",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/service-contracts",
+                                    "version": "^1.1|^2|^3",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "psr/container",
+                                            "version": "^2.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.4.0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/string",
+                                    "version": "^5.4|^6.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=8.0.2"
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-ctype",
+                                            "version": "~1.8",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-grapheme",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-intl-normalizer",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "symfony/polyfill-mbstring",
+                                            "version": "~1.0",
+                                            "requires": [
+                                                {
+                                                    "name": "php",
+                                                    "version": ">=7.1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/var-dumper",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/console",
+                    "version": "^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/service-contracts",
+                            "version": "^1.1|^2|^3",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "psr/container",
+                                    "version": "^2.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.4.0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "symfony/string",
+                            "version": "^5.4|^6.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=8.0.2"
+                                },
+                                {
+                                    "name": "symfony/polyfill-ctype",
+                                    "version": "~1.8",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-grapheme",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-intl-normalizer",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "symfony/polyfill-mbstring",
+                                    "version": "~1.0",
+                                    "requires": [
+                                        {
+                                            "name": "php",
+                                            "version": ">=7.1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "symfony/var-dumper",
+                    "version": "^5.0|^6.0",
+                    "requires": [
+                        {
+                            "name": "php",
+                            "version": ">=8.0.2"
+                        },
+                        {
+                            "name": "symfony/polyfill-mbstring",
+                            "version": "~1.0",
+                            "requires": [
+                                {
+                                    "name": "php",
+                                    "version": ">=7.1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "5.5.5",
+            "description": "Permission handling for Laravel 6.0 and up",
+            "requires": [
+                {
+                    "name": "illuminate/auth",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/container",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/contracts",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "illuminate/database",
+                    "version": "^7.0|^8.0|^9.0"
+                },
+                {
+                    "name": "php",
+                    "version": "^7.3|^8.0|^8.1"
                 }
             ]
         }
