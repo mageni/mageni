@@ -54,7 +54,7 @@ Defenders are facing the most sophisticated threat landscape ever and damages ha
 Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Infinity") is passionate about solving the world's toughest and most complex problems using open source. Where others see problems, we see solutions. In order to counter these threats, Mageni provides the modern and open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss.
 
 ## What is Mageni?
-Mageni is an open source vulnerability and attack surface management platform that aims to provide a faster, enjoyable, and leaner vulnerability management experience for modern cybersecurity programs.
+Mageni is an open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss. Mageni aims to provide a faster, enjoyable, and leaner vulnerability management experience for modern cybersecurity programs.
 
 ## Real life problems that Mageni solves for you
 - Assets Discovery
