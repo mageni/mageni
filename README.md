@@ -78,20 +78,29 @@ Mageni is an open source vulnerability and attack surface management platform th
 - Hardening Testing
 
 ## Industries that Mageni serves
+- Utilities
 - IT and Telecom
-- Healthcare & Life Sciences
+- Healthcare and Social Assistance
+- Life Sciences
 - Government
 - Automobile
 - FMCG (Fast-moving consumer goods) 
-- Chemicals & Petroleum
+- Chemicals
 - Electronics
 - Energy & Power
 - Media & Entertainment
 - Mining 
-- Retail
+- Retail Trade
 - BFSI (Banking, financial services and insurance)
 - Travel & Transportation 
-- Education
+- Educational Services
+- Critical Infrastructure
+- Construction 
+- Manufacturing
+- Specialist Engineering, Infrastructure and Contractors
+- Information
+- Arts, Entertainment and Recreation
+- Accommodation and Food Services
 
 ## How Mageni can help you?
 Mageni can help you to identify, prioritize, and respond to vulnerabilities, risky services and misconfigurations before they are exploited by hackers. Mageni is accessible, powerful, and provides tools required for large, robust cybersecurity programs and organizations.
