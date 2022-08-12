@@ -1,5 +1,5 @@
-# Most new code since 2020 by Mageni Security LLC
 # Copyright (C) 2011-2019 Greenbone Networks GmbH
+# Most new code since 2020 by Mageni Security LLC
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
 #

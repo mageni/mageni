@@ -7,13 +7,13 @@
   },
   "apt": {
     "State": "ii",
-    "Version": "2.0.8",
+    "Version": "2.0.9",
     "Architecture": "amd64",
     "Description": "commandline package manager"
   },
   "apt-transport-https": {
     "State": "ii",
-    "Version": "2.0.8",
+    "Version": "2.0.9",
     "Architecture": "all",
     "Description": "transitional package for https support"
   },
@@ -109,7 +109,7 @@
   },
   "ca-certificates": {
     "State": "ii",
-    "Version": "20210119~20.04.2",
+    "Version": "20211016~20.04.1",
     "Architecture": "all",
     "Description": "Common CA certificates"
   },
@@ -181,7 +181,7 @@
   },
   "curl": {
     "State": "ii",
-    "Version": "7.68.0-1ubuntu2.11",
+    "Version": "7.68.0-1ubuntu2.12",
     "Architecture": "amd64",
     "Description": "command line tool for transferring data with URL syntax"
   },
@@ -235,7 +235,7 @@
   },
   "dirmngr": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - network certificate management service"
   },
@@ -259,19 +259,19 @@
   },
   "dpkg": {
     "State": "ii",
-    "Version": "1.19.7ubuntu3",
+    "Version": "1.19.7ubuntu3.2",
     "Architecture": "amd64",
     "Description": "Debian package management system"
   },
   "dpkg-dev": {
     "State": "ii",
-    "Version": "1.19.7ubuntu3",
+    "Version": "1.19.7ubuntu3.2",
     "Architecture": "all",
     "Description": "Debian package development tools"
   },
   "e2fsprogs": {
     "State": "ii",
-    "Version": "1.45.5-2ubuntu1",
+    "Version": "1.45.5-2ubuntu1.1",
     "Architecture": "amd64",
     "Description": "ext2/ext3/ext4 file system utilities"
   },
@@ -403,13 +403,13 @@
   },
   "git": {
     "State": "ii",
-    "Version": "1:2.25.1-1ubuntu3.4",
+    "Version": "1:2.25.1-1ubuntu3.5",
     "Architecture": "amd64",
     "Description": "fast, scalable, distributed revision control system"
   },
   "git-man": {
     "State": "ii",
-    "Version": "1:2.25.1-1ubuntu3.4",
+    "Version": "1:2.25.1-1ubuntu3.5",
     "Architecture": "all",
     "Description": "fast, scalable, distributed revision control system (manual pages)"
   },
@@ -433,67 +433,67 @@
   },
   "gnupg": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "all",
     "Description": "GNU privacy guard - a free PGP replacement"
   },
   "gnupg-l10n": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "all",
     "Description": "GNU privacy guard - localization files"
   },
   "gnupg-utils": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - utility programs"
   },
   "gnutls-bin": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - commandline utilities"
   },
   "gpg": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU Privacy Guard -- minimalist public key operations"
   },
   "gpg-agent": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - cryptographic agent"
   },
   "gpg-wks-client": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - Web Key Service client"
   },
   "gpg-wks-server": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - Web Key Service server"
   },
   "gpgconf": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - core configuration utilities"
   },
   "gpgsm": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - S/MIME version"
   },
   "gpgv": {
     "State": "ii",
-    "Version": "2.2.19-3ubuntu2.1",
+    "Version": "2.2.19-3ubuntu2.2",
     "Architecture": "amd64",
     "Description": "GNU privacy guard - signature verification tool"
   },
@@ -661,7 +661,7 @@
   },
   "libapt-pkg6.0:amd64": {
     "State": "ii",
-    "Version": "2.0.8",
+    "Version": "2.0.9",
     "Architecture": "amd64",
     "Description": "package management runtime library"
   },
@@ -895,7 +895,7 @@
   },
   "libcom-err2:amd64": {
     "State": "ii",
-    "Version": "1.45.5-2ubuntu1",
+    "Version": "1.45.5-2ubuntu1.1",
     "Architecture": "amd64",
     "Description": "common error description library"
   },
@@ -931,19 +931,19 @@
   },
   "libcups2:amd64": {
     "State": "ii",
-    "Version": "2.3.1-9ubuntu1.1",
+    "Version": "2.3.1-9ubuntu1.2",
     "Architecture": "amd64",
     "Description": "Common UNIX Printing System(tm) - Core library"
   },
   "libcurl3-gnutls:amd64": {
     "State": "ii",
-    "Version": "7.68.0-1ubuntu2.11",
+    "Version": "7.68.0-1ubuntu2.12",
     "Architecture": "amd64",
     "Description": "easy-to-use client-side URL transfer library (GnuTLS flavour)"
   },
   "libcurl4:amd64": {
     "State": "ii",
-    "Version": "7.68.0-1ubuntu2.11",
+    "Version": "7.68.0-1ubuntu2.12",
     "Architecture": "amd64",
     "Description": "easy-to-use client-side URL transfer library (OpenSSL flavour)"
   },
@@ -1015,7 +1015,7 @@
   },
   "libdpkg-perl": {
     "State": "ii",
-    "Version": "1.19.7ubuntu3",
+    "Version": "1.19.7ubuntu3.2",
     "Architecture": "all",
     "Description": "Dpkg perl modules"
   },
@@ -1063,7 +1063,7 @@
   },
   "libext2fs2:amd64": {
     "State": "ii",
-    "Version": "1.45.5-2ubuntu1",
+    "Version": "1.45.5-2ubuntu1.1",
     "Architecture": "amd64",
     "Description": "ext2/ext3/ext4 file system libraries"
   },
@@ -1105,7 +1105,7 @@
   },
   "libfreetype6:amd64": {
     "State": "ii",
-    "Version": "2.10.1-2ubuntu0.1",
+    "Version": "2.10.1-2ubuntu0.2",
     "Architecture": "amd64",
     "Description": "FreeType 2 font engine, shared library files"
   },
@@ -1147,7 +1147,7 @@
   },
   "libgd3:amd64": {
     "State": "ii",
-    "Version": "2.3.0-2+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "2.3.3-5+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "GD Graphics Library"
   },
@@ -1219,31 +1219,31 @@
   },
   "libgnutls-dane0:amd64": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - DANE security support"
   },
   "libgnutls-openssl27:amd64": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - OpenSSL wrapper"
   },
   "libgnutls28-dev:amd64": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - development files"
   },
   "libgnutls30:amd64": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - main runtime library"
   },
   "libgnutlsxx28:amd64": {
     "State": "ii",
-    "Version": "3.6.13-2ubuntu1.6",
+    "Version": "3.6.13-2ubuntu1.7",
     "Architecture": "amd64",
     "Description": "GNU TLS library - C++ runtime library"
   },
@@ -1315,13 +1315,13 @@
   },
   "libgstreamer1.0-0:amd64": {
     "State": "ii",
-    "Version": "1.16.2-2",
+    "Version": "1.16.3-0ubuntu1.1",
     "Architecture": "amd64",
     "Description": "Core GStreamer libraries and elements"
   },
   "libharfbuzz0b:amd64": {
     "State": "ii",
-    "Version": "2.6.4-1ubuntu4",
+    "Version": "2.6.4-1ubuntu4.2",
     "Architecture": "amd64",
     "Description": "OpenType text shaping engine (shared library)"
   },
@@ -1525,13 +1525,13 @@
   },
   "libkeyutils1:amd64": {
     "State": "ii",
-    "Version": "1.6-6ubuntu1",
+    "Version": "1.6-6ubuntu1.1",
     "Architecture": "amd64",
     "Description": "Linux Key Management Utilities (library)"
   },
   "libkmod2:amd64": {
     "State": "ii",
-    "Version": "27-1ubuntu2",
+    "Version": "27-1ubuntu2.1",
     "Architecture": "amd64",
     "Description": "libkmod shared library"
   },
@@ -1597,7 +1597,7 @@
   },
   "libldb2:amd64": {
     "State": "ii",
-    "Version": "2:2.2.3-0ubuntu0.20.04.2",
+    "Version": "2:2.2.3-0ubuntu0.20.04.3",
     "Architecture": "amd64",
     "Description": "LDAP-like embedded database - shared library"
   },
@@ -1771,7 +1771,7 @@
   },
   "libmysqlclient21:amd64": {
     "State": "ii",
-    "Version": "8.0.29-0ubuntu0.20.04.3",
+    "Version": "8.0.30-0ubuntu0.20.04.2",
     "Architecture": "amd64",
     "Description": "MySQL database client library"
   },
@@ -2137,19 +2137,19 @@
   },
   "libpython3.8:amd64": {
     "State": "ii",
-    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Version": "3.8.10-0ubuntu1~20.04.5",
     "Architecture": "amd64",
     "Description": "Shared Python runtime library (version 3.8)"
   },
   "libpython3.8-minimal:amd64": {
     "State": "ii",
-    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Version": "3.8.10-0ubuntu1~20.04.5",
     "Architecture": "amd64",
     "Description": "Minimal subset of the Python language (version 3.8)"
   },
   "libpython3.8-stdlib:amd64": {
     "State": "ii",
-    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Version": "3.8.10-0ubuntu1~20.04.5",
     "Architecture": "amd64",
     "Description": "Interactive high-level object-oriented language (standard library, version 3.8)"
   },
@@ -2197,7 +2197,7 @@
   },
   "libruby2.7:amd64": {
     "State": "ii",
-    "Version": "2.7.0-5ubuntu1.6",
+    "Version": "2.7.0-5ubuntu1.7",
     "Architecture": "amd64",
     "Description": "Libraries necessary to run Ruby 2.7"
   },
@@ -2299,25 +2299,25 @@
   },
   "libsmbclient:amd64": {
     "State": "ii",
-    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Version": "2:4.13.17~dfsg-0ubuntu1.20.04.1",
     "Architecture": "amd64",
     "Description": "shared library for communication with SMB/CIFS servers"
   },
   "libsnmp-base": {
     "State": "ii",
-    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Version": "5.8+dfsg-2ubuntu2.4",
     "Architecture": "all",
     "Description": "SNMP configuration script, MIBs and documentation"
   },
   "libsnmp-dev": {
     "State": "ii",
-    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Version": "5.8+dfsg-2ubuntu2.4",
     "Architecture": "amd64",
     "Description": "SNMP (Simple Network Management Protocol) development files"
   },
   "libsnmp35:amd64": {
     "State": "ii",
-    "Version": "5.8+dfsg-2ubuntu2.3",
+    "Version": "5.8+dfsg-2ubuntu2.4",
     "Architecture": "amd64",
     "Description": "SNMP (Simple Network Management Protocol) library"
   },
@@ -2347,7 +2347,7 @@
   },
   "libss2:amd64": {
     "State": "ii",
-    "Version": "1.45.5-2ubuntu1",
+    "Version": "1.45.5-2ubuntu1.1",
     "Architecture": "amd64",
     "Description": "command-line interface parsing library"
   },
@@ -2359,13 +2359,13 @@
   },
   "libssl-dev:amd64": {
     "State": "ii",
-    "Version": "1.1.1f-1ubuntu2.13",
+    "Version": "1.1.1f-1ubuntu2.16",
     "Architecture": "amd64",
     "Description": "Secure Sockets Layer toolkit - development files"
   },
   "libssl1.1:amd64": {
     "State": "ii",
-    "Version": "1.1.1f-1ubuntu2.13",
+    "Version": "1.1.1f-1ubuntu2.16",
     "Architecture": "amd64",
     "Description": "Secure Sockets Layer toolkit - shared libraries"
   },
@@ -2521,7 +2521,7 @@
   },
   "libwbclient0:amd64": {
     "State": "ii",
-    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Version": "2:4.13.17~dfsg-0ubuntu1.20.04.1",
     "Architecture": "amd64",
     "Description": "Samba winbind client library"
   },
@@ -2623,13 +2623,13 @@
   },
   "libxml2:amd64": {
     "State": "ii",
-    "Version": "2.9.13+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "2.9.14+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "GNOME XML library"
   },
   "libxml2-dev:amd64": {
     "State": "ii",
-    "Version": "2.9.13+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "2.9.14+dfsg-0+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "Development files for the GNOME XML library"
   },
@@ -2695,7 +2695,7 @@
   },
   "linux-libc-dev:amd64": {
     "State": "ii",
-    "Version": "5.4.0-110.124",
+    "Version": "5.4.0-124.140",
     "Architecture": "amd64",
     "Description": "Linux Kernel Headers for development"
   },
@@ -2713,7 +2713,7 @@
   },
   "logsave": {
     "State": "ii",
-    "Version": "1.45.5-2ubuntu1",
+    "Version": "1.45.5-2ubuntu1.1",
     "Architecture": "amd64",
     "Description": "save the output of a command in a log file"
   },
@@ -2923,7 +2923,7 @@
   },
   "openssl": {
     "State": "ii",
-    "Version": "1.1.1f-1ubuntu2.13",
+    "Version": "1.1.1f-1ubuntu2.16",
     "Architecture": "amd64",
     "Description": "Secure Sockets Layer toolkit - cryptographic utility"
   },
@@ -2995,67 +2995,67 @@
   },
   "php8.0-bcmath": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "Bcmath module for PHP"
   },
   "php8.0-cli": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "command-line interpreter for the PHP scripting language"
   },
   "php8.0-common": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "documentation, examples and common module for PHP"
   },
   "php8.0-curl": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "CURL module for PHP"
   },
   "php8.0-fpm": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "server-side, HTML-embedded scripting language (FPM-CGI binary)"
   },
   "php8.0-mbstring": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "MBSTRING module for PHP"
   },
   "php8.0-mysql": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "MySQL module for PHP"
   },
   "php8.0-opcache": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "Zend OpCache module for PHP"
   },
   "php8.0-readline": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "readline module for PHP"
   },
   "php8.0-sqlite3": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "SQLite3 module for PHP"
   },
   "php8.0-xml": {
     "State": "ii",
-    "Version": "1:8.0.19-1+ubuntu20.04.1+deb.sury.org+1",
+    "Version": "1:8.0.21-2+ubuntu20.04.1+deb.sury.org+1",
     "Architecture": "amd64",
     "Description": "DOM, SimpleXML, XML, and XSL module for PHP"
   },
@@ -3217,7 +3217,7 @@
   },
   "python3-ldb": {
     "State": "ii",
-    "Version": "2:2.2.3-0ubuntu0.20.04.2",
+    "Version": "2:2.2.3-0ubuntu0.20.04.3",
     "Architecture": "amd64",
     "Description": "Python 3 bindings for LDB"
   },
@@ -3367,13 +3367,13 @@
   },
   "python3.8": {
     "State": "ii",
-    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Version": "3.8.10-0ubuntu1~20.04.5",
     "Architecture": "amd64",
     "Description": "Interactive high-level object-oriented language (version 3.8)"
   },
   "python3.8-minimal": {
     "State": "ii",
-    "Version": "3.8.10-0ubuntu1~20.04.4",
+    "Version": "3.8.10-0ubuntu1~20.04.5",
     "Architecture": "amd64",
     "Description": "Minimal subset of the Python language (version 3.8)"
   },
@@ -3451,13 +3451,13 @@
   },
   "ruby2.7": {
     "State": "ii",
-    "Version": "2.7.0-5ubuntu1.6",
+    "Version": "2.7.0-5ubuntu1.7",
     "Architecture": "amd64",
     "Description": "Interpreter of object-oriented scripting language Ruby"
   },
   "ruby2.7-dev:amd64": {
     "State": "ii",
-    "Version": "2.7.0-5ubuntu1.6",
+    "Version": "2.7.0-5ubuntu1.7",
     "Architecture": "amd64",
     "Description": "Header files for compiling extension modules for the Ruby 2.7"
   },
@@ -3469,13 +3469,13 @@
   },
   "samba-common": {
     "State": "ii",
-    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Version": "2:4.13.17~dfsg-0ubuntu1.20.04.1",
     "Architecture": "all",
     "Description": "common files used by both the Samba server and client"
   },
   "samba-libs:amd64": {
     "State": "ii",
-    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Version": "2:4.13.17~dfsg-0ubuntu1.20.04.1",
     "Architecture": "amd64",
     "Description": "Samba core libraries"
   },
@@ -3523,7 +3523,7 @@
   },
   "smbclient": {
     "State": "ii",
-    "Version": "2:4.13.17~dfsg-0ubuntu0.21.04.2",
+    "Version": "2:4.13.17~dfsg-0ubuntu1.20.04.1",
     "Architecture": "amd64",
     "Description": "command-line SMB/CIFS clients for Unix"
   },
@@ -3631,7 +3631,7 @@
   },
   "unattended-upgrades": {
     "State": "ii",
-    "Version": "2.3ubuntu0.1",
+    "Version": "2.3ubuntu0.3",
     "Architecture": "all",
     "Description": "automatic installation of security upgrades"
   },

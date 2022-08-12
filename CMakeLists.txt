@@ -1,7 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 #
-# CMakeList File for Mageni 
-#
 # Based on work Copyright (C) 2011-2019 Greenbone Networks GmbH
 # Most new code since 2020 by Mageni Security LLC
 
