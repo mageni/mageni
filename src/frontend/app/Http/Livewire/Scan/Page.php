@@ -690,9 +690,9 @@ class Page extends Component
         if($scan->get_start_result == 0) {
             $this->notify('Scan started successfully', 'Success', 'success');
         } elseif ($scan->get_start_result == 2) {
-            $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
+            $this->notify('Knowledge Base is refreshing. Please wait.', 'Information', 'info');
         } elseif ($scan->get_start_result == 3) {
-            $this->notify('Knowledge Base is refreshing. Please wait a few minutes.', 'Information', 'info');
+            $this->notify('Knowledge Base is refreshing. Please wait.', 'Information', 'info');
         } else {
             $this->notify('Error Starting Scan', 'Error', 'error');
         }
