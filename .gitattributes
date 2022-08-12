@@ -1,0 +1,9 @@
+*.c linguist-detectable
+*.h linguist-detectable
+*.php -linguist-detectable
+*.viper -linguist-detectable
+*.js -linguist-detectable
+*.viper linguist-language=Viper
+*.c linguist-language=C
+*.h linguist-language=C
+*.php linguist-language=PHP
