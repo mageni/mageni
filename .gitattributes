@@ -1,9 +1,11 @@
 *.c linguist-detectable=true
 *.h linguist-detectable=true
 *.php -linguist-detectable=true
+*.blade.php -linguist-detectable=true
 *.viper -linguist-detectable=true
 *.js -linguist-detectable=true
 *.viper linguist-language=Viper
+*.blade.php linguist-language=Blade
 *.c linguist-language=C
 *.h linguist-language=C
 *.php linguist-language=PHP
