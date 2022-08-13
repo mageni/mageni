@@ -1,34 +1,17 @@
-/* GVM
- * $Id$
- * Description: GVM GMP layer: Base facilities.
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: gmp_base.c
+ * Brief: Base facilities.
+ * 
+ * GMP base facilities used by all modules, but not exported for users of the
+ * GMP layer (i.e. gmpd.c).
  *
  * Authors:
  * Matthew Mundell <matthew.mundell@greenbone.net>
- *
+ * 
  * Copyright:
  * Copyright (C) 2018 Greenbone Networks GmbH
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file gmp_base.c
- * @brief GVM GMP layer: Base facilities.
- *
- * GMP base facilities used by all modules, but not exported for users of the
- * GMP layer (i.e. gmpd.c).
+ * Copyright (C) 2022, Mageni Security LLC
  */
 
 #include "gmp_base.h"
@@ -55,8 +38,7 @@
  *
  * @return 1 if found, else 0.
  */
-int
-find_attribute (const gchar **attribute_names,
+int find_attribute (const gchar **attribute_names,
                 const gchar **attribute_values,
                 const char *attribute_name,
                 const gchar **attribute_value)
@@ -313,8 +295,7 @@ log_event (const char *type,
  * @param[in]   id          Resource id.
  * @param[in]   action      Action done.
  */
-void
-log_event_fail (const char *type,
+void log_event_fail (const char *type,
                 const char *type_name,
                 const char *id,
                 const char *action)

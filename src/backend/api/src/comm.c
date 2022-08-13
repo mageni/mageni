@@ -1,28 +1,15 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file comm.c
- * @brief Generic communication utilities
- *
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: comm.c
+ * Brief: Generic communication utilities
+ * 
  * This file contains generic convenience utilities for handling a buffer that
  * is used to communicate with a server.
+ *
+ * Copyright:
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
+ * Copyright (C) 2022, Mageni Security LLC
+ *
  */
 
 #include "utils.h"
@@ -78,8 +65,7 @@ int to_server_start = 0;
  *
  * @return Number of characters free in server output buffer.  0 when full.
  */
-unsigned int
-to_server_buffer_space ()
+unsigned int to_server_buffer_space ()
 {
   if (to_server_end < to_server_start)
     abort ();
@@ -94,8 +80,7 @@ to_server_buffer_space ()
  *
  * @return 0 for success, any other value for failure.
  */
-int
-sendn_to_server (const void *msg, size_t n)
+int sendn_to_server (const void *msg, size_t n)
 {
   if (TO_SERVER_BUFFER_SIZE - to_server_end < n)
     {
@@ -120,8 +105,7 @@ sendn_to_server (const void *msg, size_t n)
  *
  * @return 0 for success, any other value for failure.
  */
-int
-send_to_server (const char *msg)
+int send_to_server (const char *msg)
 {
   return sendn_to_server (msg, strlen (msg));
 }
@@ -133,8 +117,7 @@ send_to_server (const char *msg)
  *
  * @return 0 for success, any other value for failure.
  */
-int
-sendf_to_server (const char *format, ...)
+int sendf_to_server (const char *format, ...)
 {
   va_list args;
   gchar *msg;

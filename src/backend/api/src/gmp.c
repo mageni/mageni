@@ -1,35 +1,14 @@
-/* 
- * Most new code since 2020 by Mageni Security LLC
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: gmp.c
+ * Brief: The Greenbone Vulnerability Manager GMP library.
+ * 
+ * This file defines the protocol for implementing managers
+ * 
+ * Copyright:
  * Copyright (C) 2009-2018 Greenbone Networks GmbH
+ * Copyright (C) 2022, Mageni Security LLC
  *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file  gmp.c
- * @brief The Greenbone Vulnerability Manager GMP library.
- *
- * This file defines a Greenbone Management Protocol (GMP) library, for
- * implementing managers such as the Greenbone Vulnerability Manager
- * daemon.
- *
- * The library provides \ref process_gmp_client_input.
- * This function parses a given string of GMP XML and tracks and manipulates
- * tasks in reaction to the GMP commands in the string.
  */
 
 /**
@@ -238,8 +217,7 @@ time_from_strings (const char *hour, const char *minute,
  * @return Interval described by arguments on success, -2 if value was NULL,
  *         -1 if value was NULL.
  */
-static time_t
-interval_from_strings (const char *value, const char *unit, time_t *months)
+static time_t interval_from_strings (const char *value, const char *unit, time_t *months)
 {
   if (value == NULL)
     return -1;

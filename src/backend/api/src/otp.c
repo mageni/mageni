@@ -1,39 +1,15 @@
-/* Copyright (C) 2009-2018 Greenbone Networks GmbH
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file  otp.c
- * @brief The Greenbone Vulnerability Manager OTP library.
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: otp.c
+ * Brief: OTP library.
  *
  * This file defines an OpenVAS Transfer Protocol (OTP) library, for
  * implementing managers such as the Greenbone Vulnerability Manager daemon.
+ * 
+ * Copyright:
+ * Copyright (C) 2009-2018 Greenbone Networks GmbH
+ * Copyright (C) 2022, Mageni Security LLC
  *
- * The library provides a single function, \ref process_otp_scanner_input.
- * This function parses a given string of OTP text and adjusts local
- * task records according to the OTP messages in the string.
- */
-
-/**
- * @todo
- * Ensure that the globals used to store information across the XML
- * parser callbacks (for example, current_scanner_preferences) are freed in
- * the failure cases.
  */
 
 #include "otp.h"

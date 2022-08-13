@@ -24,6 +24,7 @@
 </a>
 <a href="https://codeclimate.com/github/mageni/mageni/maintainability"><img src="https://api.codeclimate.com/v1/badges/6f48e5542ead5e70f9fe/maintainability" /></a>
 <a href="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml"><img src="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fmageni%2Fmageni?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmageni%2Fmageni.svg?type=shield"/></a>
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mageni/mageni/CodeQL">
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/mageni/mageni">
 <a href="https://github.com/mageni/mageni/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mageni/mageni"></a>
@@ -148,6 +149,8 @@ Mageni is an important open source contribution to the upstream projects as it p
 
 ## License
 <a href="https://github.com/mageni/mageni/blob/master/LICENSE.txt" target="_blank">GPLv2</a>
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmageni%2Fmageni.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmageni%2Fmageni?ref=badge_large)
 
 ## Legal
 If you have questions about the GPL license, copyrights law, DMCA, applicable laws, our DMCA designated agent, and other legal stuff. Please <a href="https://github.com/mageni#legal-copyrights-dmca-and-fair-use">go to our legal section on GitHub</a>

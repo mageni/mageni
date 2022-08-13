@@ -1,36 +1,12 @@
-/* 
- * Most new code since 2022 by Mageni Security LLC
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: gvmd.c
+ * Brief: The Greenbone Vulnerability Manager daemon.
+ *
+ * Copyright:
  * Copyright (C) 2009-2018 Greenbone Networks GmbH
+ * Copyright (C) 2022, Mageni Security LLC
  *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file  gvmd.c
- * @brief The Greenbone Vulnerability Manager daemon.
- *
- * This file defines the Greenbone Vulnerability Manager daemon.  The Manager
- * serves the Greenbone Management Protocol (GMP) to clients such as Greenbone
- * Security Assistant (the web interface).  The Manager and GMP give clients
- * full access to an OpenVAS Scanner.
- *
- * The entry point to the daemon is the \ref main function.  From there
- * the references in the function documentation describe the flow of
- * control in the program.
  */
 
 /**
@@ -67,11 +43,6 @@
  *
  * \section copying License Information
  * \verbinclude COPYING
- */
-
-/**
- * \page manpage gvmd
- * \htmlinclude doc/gvmd.html
  */
 
 #include "comm.h"
