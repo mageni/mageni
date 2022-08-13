@@ -2,7 +2,9 @@
 /*
  * Name: manage_acl.c
  * Brief: The Greenbone Vulnerability Manager management library (Access
- * Control Layer). This file isolates the access control portions of the GVM
+ * Control Layer). 
+ * 
+ * This file isolates the access control portions of the GVM
  * management library.
  * 
  * Copyright:

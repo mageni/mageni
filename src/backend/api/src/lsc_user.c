@@ -2,6 +2,7 @@
 /*
  * Name: lsc_user.c
  * Brief: Utilities for LSC credential package generation. 
+ * 
  * This file provides support for generating packages for LSC credentials.
  * 
  * Copyright:
