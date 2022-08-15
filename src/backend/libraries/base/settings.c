@@ -1,31 +1,19 @@
-/* Copyright (C) 2010-2019 Greenbone Networks GmbH
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * settings.c
  *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file settings.c
- * @brief Implementation of API to handle configuration file management
+ * Implementation of API to handle configuration file management
+ *  
+ * Copyright:
+ * Copyright (C) 2010-2019 Greenbone Networks GmbH
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
 #include "settings.h"
 
 #include <stdio.h>
-#include <string.h> /* for strlen */
+#include <string.h>
 
 /**
  * @brief Initialise a settings struct from a file.
@@ -36,9 +24,7 @@
  *
  * @return 0 success, -1 error.
  */
-int
-settings_init_from_file (settings_t *settings, const gchar *filename,
-                         const gchar *group)
+int settings_init_from_file (settings_t *settings, const gchar *filename, const gchar *group)
 {
   GError *error = NULL;
 
@@ -85,8 +71,7 @@ settings_init_from_file (settings_t *settings, const gchar *filename,
  *
  * @param[in]  settings  Settings structure.
  */
-void
-settings_cleanup (settings_t *settings)
+void settings_cleanup (settings_t *settings)
 {
   g_free (settings->group_name);
   g_free (settings->file_name);
@@ -102,9 +87,7 @@ settings_cleanup (settings_t *settings)
  *
  * @return 0 success, -1 error.
  */
-int
-init_settings_iterator_from_file (settings_iterator_t *iterator,
-                                  const gchar *filename, const gchar *group)
+int init_settings_iterator_from_file (settings_iterator_t *iterator, const gchar *filename, const gchar *group)
 {
   int ret;
   gsize keys_length;
@@ -140,8 +123,7 @@ init_settings_iterator_from_file (settings_iterator_t *iterator,
  *
  * @param[in]  iterator  Settings iterator.
  */
-void
-cleanup_settings_iterator (settings_iterator_t *iterator)
+void cleanup_settings_iterator (settings_iterator_t *iterator)
 {
   g_strfreev (iterator->keys);
   settings_cleanup (&iterator->settings);
@@ -154,8 +136,7 @@ cleanup_settings_iterator (settings_iterator_t *iterator)
  *
  * @return TRUE if there was a next item, else FALSE.
  */
-gboolean
-settings_iterator_next (settings_iterator_t *iterator)
+gboolean settings_iterator_next (settings_iterator_t *iterator)
 {
   if (iterator->current_key == iterator->last_key)
     return FALSE;
@@ -170,8 +151,7 @@ settings_iterator_next (settings_iterator_t *iterator)
  *
  * @return Name of current key.
  */
-const gchar *
-settings_iterator_name (settings_iterator_t *iterator)
+const gchar * settings_iterator_name (settings_iterator_t *iterator)
 {
   return *iterator->current_key;
 }
@@ -183,8 +163,7 @@ settings_iterator_name (settings_iterator_t *iterator)
  *
  * @return Value of current key.
  */
-const gchar *
-settings_iterator_value (settings_iterator_t *iterator)
+const gchar * settings_iterator_value (settings_iterator_t *iterator)
 {
   return g_key_file_get_value (iterator->settings.key_file,
                                iterator->settings.group_name,

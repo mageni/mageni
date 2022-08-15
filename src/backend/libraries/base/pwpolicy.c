@@ -1,22 +1,13 @@
-/* 
- * Most new code since 2020 by Mageni Security LLC
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * pwpolicy.c
+ *
+ * Check passwords against a list of pattern
+ *  
+ * Copyright:
  * Copyright (C) 2013-2019 Greenbone Networks GmbH
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
 /**
@@ -354,7 +345,7 @@ parse_pattern_line (char *line, const char *fname, int lineno, char **descp,
  *         description.
  */
 char *
-gvm_validate_password (const char *password, const char *username)
+mgn_validate_password (const char *password, const char *username)
 {
   const char *patternfile = PWPOLICY_FILE_NAME;
   char *ret;
@@ -410,7 +401,7 @@ gvm_validate_password (const char *password, const char *username)
  * @brief Disable all password policy checking
  */
 void
-gvm_disable_password_policy (void)
+mgn_disable_password_policy (void)
 {
   disable_password_policy = TRUE;
   g_warning ("Password policy checking has been disabled.");

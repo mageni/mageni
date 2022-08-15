@@ -56,7 +56,7 @@ int find_attribute (const gchar **attribute_names,
 
 /**
  * @brief Find an attribute in a parser callback list of attributes and append
- * @brief it to a string using gvm_append_string.
+ * @brief it to a string using mgn_append_string.
  *
  * @param[in]   attribute_names   List of names.
  * @param[in]   attribute_values  List of values.
@@ -76,7 +76,7 @@ append_attribute (const gchar **attribute_names,
   if (find_attribute (
         attribute_names, attribute_values, attribute_name, &attribute))
     {
-      gvm_append_string (string, attribute);
+      mgn_append_string (string, attribute);
       return 1;
     }
   return 0;

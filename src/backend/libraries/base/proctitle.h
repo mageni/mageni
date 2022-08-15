@@ -1,34 +1,20 @@
-/* Copyright (C) 2014-2019 Greenbone Networks GmbH
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * proctitle.h
  *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ * Implementation of an API to set process title.
+ *  
+ * Copyright:
+ * Copyright (C) 2014-2019 Greenbone Networks GmbH
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
-/**
- * @file
- * @brief API for process title setting.
- */
+#ifndef MAGENI_PROCTITLE_H
+#define MAGENI_PROCTITLE_H
 
-#ifndef _GVM_PROCTITLE_H
-#define _GVM_PROCTITLE_H
+void proctitle_init (int, char **);
 
-void
-proctitle_init (int, char **);
+void proctitle_set (const char *, ...);
 
-void
-proctitle_set (const char *, ...);
-
-#endif /* not _GVM_PROCTITLE_H */
+#endif /* not MAGENI_PROCTITLE_H */

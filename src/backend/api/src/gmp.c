@@ -5669,20 +5669,20 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("CREATE_AGENT", element_name) == 0)
           {
-            gvm_append_string (&create_agent_data->comment, "");
-            gvm_append_string (&create_agent_data->installer, "");
-            gvm_append_string (&create_agent_data->installer_filename, "");
-            gvm_append_string (&create_agent_data->installer_signature, "");
-            gvm_append_string (&create_agent_data->howto_install, "");
-            gvm_append_string (&create_agent_data->howto_use, "");
+            mgn_append_string (&create_agent_data->comment, "");
+            mgn_append_string (&create_agent_data->installer, "");
+            mgn_append_string (&create_agent_data->installer_filename, "");
+            mgn_append_string (&create_agent_data->installer_signature, "");
+            mgn_append_string (&create_agent_data->howto_install, "");
+            mgn_append_string (&create_agent_data->howto_use, "");
             set_client_state (CLIENT_CREATE_AGENT);
           }
         else if (strcasecmp ("CREATE_ASSET", element_name) == 0)
           set_client_state (CLIENT_CREATE_ASSET);
         else if (strcasecmp ("CREATE_CONFIG", element_name) == 0)
           {
-            gvm_append_string (&create_config_data->comment, "");
-            gvm_append_string (&create_config_data->name, "");
+            mgn_append_string (&create_config_data->comment, "");
+            mgn_append_string (&create_config_data->name, "");
             set_client_state (CLIENT_CREATE_CONFIG);
           }
         else if (strcasecmp ("CREATE_ALERT", element_name) == 0)
@@ -5691,36 +5691,36 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
             create_alert_data->event_data = make_array ();
             create_alert_data->method_data = make_array ();
 
-            gvm_append_string (&create_alert_data->part_data, "");
-            gvm_append_string (&create_alert_data->part_name, "");
-            gvm_append_string (&create_alert_data->comment, "");
-            gvm_append_string (&create_alert_data->name, "");
-            gvm_append_string (&create_alert_data->condition, "");
-            gvm_append_string (&create_alert_data->method, "");
-            gvm_append_string (&create_alert_data->event, "");
+            mgn_append_string (&create_alert_data->part_data, "");
+            mgn_append_string (&create_alert_data->part_name, "");
+            mgn_append_string (&create_alert_data->comment, "");
+            mgn_append_string (&create_alert_data->name, "");
+            mgn_append_string (&create_alert_data->condition, "");
+            mgn_append_string (&create_alert_data->method, "");
+            mgn_append_string (&create_alert_data->event, "");
 
             set_client_state (CLIENT_CREATE_ALERT);
           }
         else if (strcasecmp ("CREATE_CREDENTIAL", element_name) == 0)
           {
-            gvm_append_string (&create_credential_data->comment, "");
-            gvm_append_string (&create_credential_data->name, "");
+            mgn_append_string (&create_credential_data->comment, "");
+            mgn_append_string (&create_credential_data->name, "");
             set_client_state (CLIENT_CREATE_CREDENTIAL);
           }
         else if (strcasecmp ("CREATE_FILTER", element_name) == 0)
           {
-            gvm_append_string (&create_filter_data->comment, "");
-            gvm_append_string (&create_filter_data->term, "");
+            mgn_append_string (&create_filter_data->comment, "");
+            mgn_append_string (&create_filter_data->term, "");
             set_client_state (CLIENT_CREATE_FILTER);
           }
         else if (strcasecmp ("CREATE_GROUP", element_name) == 0)
           {
-            gvm_append_string (&create_group_data->users, "");
+            mgn_append_string (&create_group_data->users, "");
             set_client_state (CLIENT_CREATE_GROUP);
           }
         else if (strcasecmp ("CREATE_ROLE", element_name) == 0)
           {
-            gvm_append_string (&create_role_data->users, "");
+            mgn_append_string (&create_role_data->users, "");
             set_client_state (CLIENT_CREATE_ROLE);
           }
         else if (strcasecmp ("CREATE_NOTE", element_name) == 0)
@@ -5733,7 +5733,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_PORT_RANGE);
         else if (strcasecmp ("CREATE_PERMISSION", element_name) == 0)
           {
-            gvm_append_string (&create_permission_data->comment, "");
+            mgn_append_string (&create_permission_data->comment, "");
             set_client_state (CLIENT_CREATE_PERMISSION);
           }
         else if (strcasecmp ("CREATE_REPORT", element_name) == 0)
@@ -5751,7 +5751,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("CREATE_TARGET", element_name) == 0)
           {
-            gvm_append_string (&create_target_data->comment, "");
+            mgn_append_string (&create_target_data->comment, "");
             set_client_state (CLIENT_CREATE_TARGET);
           }
         else if (strcasecmp ("CREATE_TASK", element_name) == 0)
@@ -6460,7 +6460,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
 
             if (find_attribute (attribute_names, attribute_values,
                                 "type", &attribute))
-              gvm_append_string (&get_reports_data->type, attribute);
+              mgn_append_string (&get_reports_data->type, attribute);
             else
               get_reports_data->type = g_strdup ("scan");
 
@@ -6715,13 +6715,13 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           {
             modify_alert_data->event_data = make_array ();
 
-            gvm_append_string (&modify_alert_data->part_data, "");
-            gvm_append_string (&modify_alert_data->part_name, "");
-            gvm_append_string (&modify_alert_data->event, "");
+            mgn_append_string (&modify_alert_data->part_data, "");
+            mgn_append_string (&modify_alert_data->part_name, "");
+            mgn_append_string (&modify_alert_data->event, "");
             modify_alert_data->condition_data = make_array ();
-            gvm_append_string (&modify_alert_data->condition, "");
+            mgn_append_string (&modify_alert_data->condition, "");
             modify_alert_data->method_data = make_array ();
-            gvm_append_string (&modify_alert_data->method, "");
+            mgn_append_string (&modify_alert_data->method, "");
 
             append_attribute (attribute_names, attribute_values, "alert_id",
                               &modify_alert_data->alert_id);
@@ -7081,12 +7081,12 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_AGENT:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_agent_data->comment, "");
+            mgn_append_string (&modify_agent_data->comment, "");
             set_client_state (CLIENT_MODIFY_AGENT_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_agent_data->name, "");
+            mgn_append_string (&modify_agent_data->name, "");
             set_client_state (CLIENT_MODIFY_AGENT_NAME);
           }
         ELSE_ERROR ("modify_agent");
@@ -7094,12 +7094,12 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_ALERT:
         if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_alert_data->name, "");
+            mgn_append_string (&modify_alert_data->name, "");
             set_client_state (CLIENT_MODIFY_ALERT_NAME);
           }
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_alert_data->comment, "");
+            mgn_append_string (&modify_alert_data->comment, "");
             set_client_state (CLIENT_MODIFY_ALERT_COMMENT);
           }
         else if (strcasecmp ("EVENT", element_name) == 0)
@@ -7151,7 +7151,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_ASSET:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_asset_data->comment, "");
+            mgn_append_string (&modify_asset_data->comment, "");
             set_client_state (CLIENT_MODIFY_ASSET_COMMENT);
           }
         ELSE_ERROR ("modify_asset");
@@ -7187,14 +7187,14 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_CONFIG:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_free_string_var (&modify_config_data->comment);
-            gvm_append_string (&modify_config_data->comment, "");
+            mgn_free_string_var (&modify_config_data->comment);
+            mgn_append_string (&modify_config_data->comment, "");
             set_client_state (CLIENT_MODIFY_CONFIG_COMMENT);
           }
         else if (strcasecmp ("SCANNER", element_name) == 0)
           {
-            gvm_free_string_var (&modify_config_data->scanner_id);
-            gvm_append_string (&modify_config_data->scanner_id, "");
+            mgn_free_string_var (&modify_config_data->scanner_id);
+            mgn_append_string (&modify_config_data->scanner_id, "");
             set_client_state (CLIENT_MODIFY_CONFIG_SCANNER);
           }
         else if (strcasecmp ("FAMILY_SELECTION", element_name) == 0)
@@ -7215,9 +7215,9 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("PREFERENCE", element_name) == 0)
           {
-            gvm_free_string_var (&modify_config_data->preference_name);
-            gvm_free_string_var (&modify_config_data->preference_nvt_oid);
-            gvm_free_string_var (&modify_config_data->preference_value);
+            mgn_free_string_var (&modify_config_data->preference_name);
+            mgn_free_string_var (&modify_config_data->preference_nvt_oid);
+            mgn_free_string_var (&modify_config_data->preference_value);
             set_client_state (CLIENT_MODIFY_CONFIG_PREFERENCE);
           }
         ELSE_ERROR ("modify_config");
@@ -7281,8 +7281,8 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_CREDENTIAL_NAME);
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_free_string_var (&modify_credential_data->comment);
-            gvm_append_string (&modify_credential_data->comment, "");
+            mgn_free_string_var (&modify_credential_data->comment);
+            mgn_append_string (&modify_credential_data->comment, "");
             set_client_state (CLIENT_MODIFY_CREDENTIAL_COMMENT);
           }
         else if (strcasecmp ("CERTIFICATE", element_name) == 0)
@@ -7291,7 +7291,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("COMMUNITY", element_name) == 0)
           {
-            gvm_append_string (&modify_credential_data->community, "");
+            mgn_append_string (&modify_credential_data->community, "");
             set_client_state (CLIENT_MODIFY_CREDENTIAL_COMMUNITY);
           }
         else if (strcasecmp ("KEY", element_name) == 0)
@@ -7303,14 +7303,14 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_CREDENTIAL_LOGIN);
         else if (strcasecmp ("PASSWORD", element_name) == 0)
           {
-            gvm_free_string_var (&modify_credential_data->password);
-            gvm_append_string (&modify_credential_data->password, "");
+            mgn_free_string_var (&modify_credential_data->password);
+            mgn_append_string (&modify_credential_data->password, "");
             set_client_state (CLIENT_MODIFY_CREDENTIAL_PASSWORD);
           }
         else if (strcasecmp ("PRIVACY", element_name) == 0)
           {
             set_client_state (CLIENT_MODIFY_CREDENTIAL_PRIVACY);
-            gvm_append_string (&modify_credential_data->privacy_algorithm,
+            mgn_append_string (&modify_credential_data->privacy_algorithm,
                                    "");
           }
         ELSE_ERROR ("modify_credential");
@@ -7318,8 +7318,8 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_CREDENTIAL_KEY:
         if (strcasecmp ("PHRASE", element_name) == 0)
           {
-            gvm_free_string_var (&modify_credential_data->key_phrase);
-            gvm_append_string (&modify_credential_data->key_phrase, "");
+            mgn_free_string_var (&modify_credential_data->key_phrase);
+            mgn_append_string (&modify_credential_data->key_phrase, "");
             set_client_state (CLIENT_MODIFY_CREDENTIAL_KEY_PHRASE);
           }
         else if (strcasecmp ("PRIVATE", element_name) == 0)
@@ -7339,8 +7339,8 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("PASSWORD", element_name) == 0)
           {
-            gvm_free_string_var (&modify_credential_data->privacy_password);
-            gvm_append_string (&modify_credential_data->privacy_password, "");
+            mgn_free_string_var (&modify_credential_data->privacy_password);
+            mgn_append_string (&modify_credential_data->privacy_password, "");
             set_client_state (CLIENT_MODIFY_CREDENTIAL_PRIVACY_PASSWORD);
           }
         ELSE_ERROR ("modify_credential");
@@ -7348,22 +7348,22 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_FILTER:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_filter_data->comment, "");
+            mgn_append_string (&modify_filter_data->comment, "");
             set_client_state (CLIENT_MODIFY_FILTER_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_filter_data->name, "");
+            mgn_append_string (&modify_filter_data->name, "");
             set_client_state (CLIENT_MODIFY_FILTER_NAME);
           }
         else if (strcasecmp ("TERM", element_name) == 0)
           {
-            gvm_append_string (&modify_filter_data->term, "");
+            mgn_append_string (&modify_filter_data->term, "");
             set_client_state (CLIENT_MODIFY_FILTER_TERM);
           }
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&modify_filter_data->type, "");
+            mgn_append_string (&modify_filter_data->type, "");
             set_client_state (CLIENT_MODIFY_FILTER_TYPE);
           }
         ELSE_ERROR ("modify_filter");
@@ -7371,17 +7371,17 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_GROUP:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_group_data->comment, "");
+            mgn_append_string (&modify_group_data->comment, "");
             set_client_state (CLIENT_MODIFY_GROUP_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_group_data->name, "");
+            mgn_append_string (&modify_group_data->name, "");
             set_client_state (CLIENT_MODIFY_GROUP_NAME);
           }
         else if (strcasecmp ("USERS", element_name) == 0)
           {
-            gvm_append_string (&modify_group_data->users, "");
+            mgn_append_string (&modify_group_data->users, "");
             set_client_state (CLIENT_MODIFY_GROUP_USERS);
           }
         ELSE_ERROR ("modify_group");
@@ -7420,8 +7420,8 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_PORT_LIST_NAME);
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_free_string_var (&modify_port_list_data->comment);
-            gvm_append_string (&modify_port_list_data->comment, "");
+            mgn_free_string_var (&modify_port_list_data->comment);
+            mgn_append_string (&modify_port_list_data->comment, "");
             set_client_state (CLIENT_MODIFY_PORT_LIST_COMMENT);
           }
         ELSE_ERROR ("modify_port_list");
@@ -7452,17 +7452,17 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_ROLE:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_role_data->comment, "");
+            mgn_append_string (&modify_role_data->comment, "");
             set_client_state (CLIENT_MODIFY_ROLE_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_role_data->name, "");
+            mgn_append_string (&modify_role_data->name, "");
             set_client_state (CLIENT_MODIFY_ROLE_NAME);
           }
         else if (strcasecmp ("USERS", element_name) == 0)
           {
-            gvm_append_string (&modify_role_data->users, "");
+            mgn_append_string (&modify_role_data->users, "");
             set_client_state (CLIENT_MODIFY_ROLE_USERS);
           }
         ELSE_ERROR ("modify_role");
@@ -7470,32 +7470,32 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_SCANNER:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->comment, "");
+            mgn_append_string (&modify_scanner_data->comment, "");
             set_client_state (CLIENT_MODIFY_SCANNER_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->name, "");
+            mgn_append_string (&modify_scanner_data->name, "");
             set_client_state (CLIENT_MODIFY_SCANNER_NAME);
           }
         else if (strcasecmp ("HOST", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->host, "");
+            mgn_append_string (&modify_scanner_data->host, "");
             set_client_state (CLIENT_MODIFY_SCANNER_HOST);
           }
         else if (strcasecmp ("PORT", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->port, "");
+            mgn_append_string (&modify_scanner_data->port, "");
             set_client_state (CLIENT_MODIFY_SCANNER_PORT);
           }
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->type, "");
+            mgn_append_string (&modify_scanner_data->type, "");
             set_client_state (CLIENT_MODIFY_SCANNER_TYPE);
           }
         else if (strcasecmp ("CA_PUB", element_name) == 0)
           {
-            gvm_append_string (&modify_scanner_data->ca_pub, "");
+            mgn_append_string (&modify_scanner_data->ca_pub, "");
             set_client_state (CLIENT_MODIFY_SCANNER_CA_PUB);
           }
         else if (strcasecmp ("CREDENTIAL", element_name) == 0)
@@ -7509,17 +7509,17 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_SCHEDULE:
         if (strcasecmp ("BYDAY", element_name) == 0)
           {
-            gvm_append_string (&modify_schedule_data->byday, "");
+            mgn_append_string (&modify_schedule_data->byday, "");
             set_client_state (CLIENT_MODIFY_SCHEDULE_BYDAY);
           }
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_schedule_data->comment, "");
+            mgn_append_string (&modify_schedule_data->comment, "");
             set_client_state (CLIENT_MODIFY_SCHEDULE_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_schedule_data->name, "");
+            mgn_append_string (&modify_schedule_data->name, "");
             set_client_state (CLIENT_MODIFY_SCHEDULE_NAME);
           }
         else if (strcasecmp ("DURATION", element_name) == 0)
@@ -7564,7 +7564,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_SETTING_NAME);
         else if (strcasecmp ("VALUE", element_name) == 0)
           {
-            gvm_append_string (&modify_setting_data->value, "");
+            mgn_append_string (&modify_setting_data->value, "");
             set_client_state (CLIENT_MODIFY_SETTING_VALUE);
           }
         ELSE_ERROR ("modify_setting");
@@ -7572,7 +7572,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_TAG:
         if (strcasecmp ("ACTIVE", element_name) == 0)
           {
-            gvm_append_string (&modify_tag_data->active, "");
+            mgn_append_string (&modify_tag_data->active, "");
             set_client_state (CLIENT_MODIFY_TAG_ACTIVE);
           }
         else if (strcasecmp ("RESOURCES", element_name) == 0)
@@ -7586,17 +7586,17 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_tag_data->comment, "");
+            mgn_append_string (&modify_tag_data->comment, "");
             set_client_state (CLIENT_MODIFY_TAG_COMMENT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_tag_data->name, "");
+            mgn_append_string (&modify_tag_data->name, "");
             set_client_state (CLIENT_MODIFY_TAG_NAME);
           }
         else if (strcasecmp ("VALUE", element_name) == 0)
           {
-            gvm_append_string (&modify_tag_data->value, "");
+            mgn_append_string (&modify_tag_data->value, "");
             set_client_state (CLIENT_MODIFY_TAG_VALUE);
           }
         ELSE_ERROR ("modify_tag");
@@ -7612,7 +7612,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&modify_tag_data->resource_type, "");
+            mgn_append_string (&modify_tag_data->resource_type, "");
             set_client_state (CLIENT_MODIFY_TAG_RESOURCES_TYPE);
           }
         ELSE_ERROR ("modify_tag");
@@ -7620,7 +7620,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_MODIFY_TARGET:
         if (strcasecmp ("EXCLUDE_HOSTS", element_name) == 0)
           {
-            gvm_append_string (&modify_target_data->exclude_hosts, "");
+            mgn_append_string (&modify_target_data->exclude_hosts, "");
             set_client_state (CLIENT_MODIFY_TARGET_EXCLUDE_HOSTS);
           }
         else if (strcasecmp ("REVERSE_LOOKUP_ONLY", element_name) == 0)
@@ -7631,7 +7631,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_TARGET_ALIVE_TESTS);
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_target_data->comment, "");
+            mgn_append_string (&modify_target_data->comment, "");
             set_client_state (CLIENT_MODIFY_TARGET_COMMENT);
           }
         else if (strcasecmp ("ESXI_CREDENTIAL", element_name) == 0)
@@ -7648,7 +7648,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("HOSTS", element_name) == 0)
           {
-            gvm_append_string (&modify_target_data->hosts, "");
+            mgn_append_string (&modify_target_data->hosts, "");
             set_client_state (CLIENT_MODIFY_TARGET_HOSTS);
           }
         else if (strcasecmp ("PORT_LIST", element_name) == 0)
@@ -7689,7 +7689,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&modify_target_data->name, "");
+            mgn_append_string (&modify_target_data->name, "");
             set_client_state (CLIENT_MODIFY_TARGET_NAME);
           }
         ELSE_ERROR ("modify_target");
@@ -7709,7 +7709,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_TASK_ALTERABLE);
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&modify_task_data->comment, "");
+            mgn_append_string (&modify_task_data->comment, "");
             set_client_state (CLIENT_MODIFY_TASK_COMMENT);
           }
         else if (strcasecmp ("HOSTS_ORDERING", element_name) == 0)
@@ -7738,7 +7738,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_MODIFY_TASK_NAME);
         else if (strcasecmp ("OBSERVERS", element_name) == 0)
           {
-            gvm_append_string (&modify_task_data->observers, "");
+            mgn_append_string (&modify_task_data->observers, "");
             set_client_state (CLIENT_MODIFY_TASK_OBSERVERS);
           }
         else if (strcasecmp ("PREFERENCES", element_name) == 0)
@@ -7767,9 +7767,9 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
                               &modify_task_data->file_name);
             if (find_attribute (attribute_names, attribute_values,
                                 "action", &attribute))
-              gvm_append_string (&modify_task_data->action, attribute);
+              mgn_append_string (&modify_task_data->action, attribute);
             else
-              gvm_append_string (&modify_task_data->action, "update");
+              mgn_append_string (&modify_task_data->action, "update");
             set_client_state (CLIENT_MODIFY_TASK_FILE);
           }
         ELSE_ERROR ("modify_task");
@@ -7828,7 +7828,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
             else
               modify_user_data->hosts_allow = 1;
             /* Init, so that modify_user clears hosts if HOSTS is empty. */
-            gvm_append_string (&modify_user_data->hosts, "");
+            mgn_append_string (&modify_user_data->hosts, "");
             set_client_state (CLIENT_MODIFY_USER_HOSTS);
           }
         else if (strcasecmp ("IFACES", element_name) == 0)
@@ -7839,7 +7839,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
               modify_user_data->ifaces_allow = strcmp (attribute, "0");
             else
               modify_user_data->ifaces_allow = 1;
-            gvm_append_string (&modify_user_data->ifaces, "");
+            mgn_append_string (&modify_user_data->ifaces, "");
             set_client_state (CLIENT_MODIFY_USER_IFACES);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
@@ -7935,7 +7935,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_AGENT_INSTALLER);
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_agent_data->name, "");
+            mgn_append_string (&create_agent_data->name, "");
             set_client_state (CLIENT_CREATE_AGENT_NAME);
           }
         ELSE_ERROR ("create_agent");
@@ -8165,7 +8165,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_CREDENTIAL_NAME);
         else if (strcasecmp ("PASSWORD", element_name) == 0)
           {
-            gvm_append_string (&create_credential_data->password, "");
+            mgn_append_string (&create_credential_data->password, "");
             set_client_state (CLIENT_CREATE_CREDENTIAL_PASSWORD);
           }
         else if (strcasecmp ("PRIVACY", element_name) == 0)
@@ -8177,7 +8177,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_CREATE_CREDENTIAL_KEY:
         if (strcasecmp ("PHRASE", element_name) == 0)
           {
-            gvm_append_string (&create_credential_data->key_phrase, "");
+            mgn_append_string (&create_credential_data->key_phrase, "");
             set_client_state (CLIENT_CREATE_CREDENTIAL_KEY_PHRASE);
           }
         else if (strcasecmp ("PRIVATE", element_name) == 0)
@@ -8200,7 +8200,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_FILTER_COPY);
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_filter_data->name, "");
+            mgn_append_string (&create_filter_data->name, "");
             set_client_state (CLIENT_CREATE_FILTER_NAME);
           }
         else if (strcasecmp ("TERM", element_name) == 0)
@@ -8216,7 +8216,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_GROUP_COPY);
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_group_data->name, "");
+            mgn_append_string (&create_group_data->name, "");
             set_client_state (CLIENT_CREATE_GROUP_NAME);
           }
         else if (strcasecmp ("SPECIALS", element_name) == 0)
@@ -8287,7 +8287,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_PERMISSION_COPY);
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_permission_data->name, "");
+            mgn_append_string (&create_permission_data->name, "");
             set_client_state (CLIENT_CREATE_PERMISSION_NAME);
           }
         else if (strcasecmp ("RESOURCE", element_name) == 0)
@@ -8327,7 +8327,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("PORT_RANGE", element_name) == 0)
           {
-            gvm_append_string (&create_port_list_data->port_range, "");
+            mgn_append_string (&create_port_list_data->port_range, "");
             set_client_state (CLIENT_CREATE_PORT_LIST_PORT_RANGE);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
@@ -8379,22 +8379,22 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_CPL_GPLR_PORT_LIST_PORT_RANGES_PORT_RANGE:
         if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&create_port_list_data->range->comment, "");
+            mgn_append_string (&create_port_list_data->range->comment, "");
             set_client_state (CLIENT_CPL_GPLR_PORT_LIST_PORT_RANGES_PORT_RANGE_COMMENT);
           }
         else if (strcasecmp ("END", element_name) == 0)
           {
-            gvm_append_string (&create_port_list_data->range->end, "");
+            mgn_append_string (&create_port_list_data->range->end, "");
             set_client_state (CLIENT_CPL_GPLR_PORT_LIST_PORT_RANGES_PORT_RANGE_END);
           }
         else if (strcasecmp ("START", element_name) == 0)
           {
-            gvm_append_string (&create_port_list_data->range->start, "");
+            mgn_append_string (&create_port_list_data->range->start, "");
             set_client_state (CLIENT_CPL_GPLR_PORT_LIST_PORT_RANGES_PORT_RANGE_START);
           }
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&create_port_list_data->range->type, "");
+            mgn_append_string (&create_port_list_data->range->type, "");
             set_client_state (CLIENT_CPL_GPLR_PORT_LIST_PORT_RANGES_PORT_RANGE_TYPE);
           }
         ELSE_ERROR ("create_port_list");
@@ -8423,7 +8423,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CREATE_ROLE_COPY);
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_role_data->name, "");
+            mgn_append_string (&create_role_data->name, "");
             set_client_state (CLIENT_CREATE_ROLE_NAME);
           }
         else if (strcasecmp ("USERS", element_name) == 0)
@@ -8830,7 +8830,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           {
             assert (create_report_format_data->file == NULL);
             assert (create_report_format_data->file_name == NULL);
-            gvm_append_string (&create_report_format_data->file, "");
+            mgn_append_string (&create_report_format_data->file, "");
             append_attribute (attribute_names, attribute_values, "name",
                               &create_report_format_data->file_name);
             set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT_FILE);
@@ -8842,8 +8842,8 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
             assert (create_report_format_data->param_name == NULL);
             assert (create_report_format_data->param_type == NULL);
             assert (create_report_format_data->param_value == NULL);
-            gvm_append_string (&create_report_format_data->param_name, "");
-            gvm_append_string (&create_report_format_data->param_value, "");
+            mgn_append_string (&create_report_format_data->param_name, "");
+            mgn_append_string (&create_report_format_data->param_value, "");
             create_report_format_data->param_options = make_array ();
             set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM);
           }
@@ -8863,7 +8863,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM:
         if (strcasecmp ("DEFAULT", element_name) == 0)
           {
-            gvm_append_string (&create_report_format_data->param_default, "");
+            mgn_append_string (&create_report_format_data->param_default, "");
             set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM_DEFAULT);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
@@ -8872,7 +8872,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM_OPTIONS);
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&create_report_format_data->param_type, "");
+            mgn_append_string (&create_report_format_data->param_type, "");
             set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM_TYPE);
           }
         else if (strcasecmp ("VALUE", element_name) == 0)
@@ -8900,7 +8900,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM_OPTIONS:
         if (strcasecmp ("OPTION", element_name) == 0)
           {
-            gvm_append_string (&create_report_format_data->param_option, "");
+            mgn_append_string (&create_report_format_data->param_option, "");
             set_client_state
              (CLIENT_CRF_GRFR_REPORT_FORMAT_PARAM_OPTIONS_OPTION);
           }
@@ -8973,7 +8973,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
       case CLIENT_CREATE_TAG:
         if (strcasecmp ("ACTIVE", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->active, "");
+            mgn_append_string (&create_tag_data->active, "");
             set_client_state (CLIENT_CREATE_TAG_ACTIVE);
           }
         else if (strcasecmp ("RESOURCES", element_name) == 0)
@@ -8985,22 +8985,22 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("COMMENT", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->comment, "");
+            mgn_append_string (&create_tag_data->comment, "");
             set_client_state (CLIENT_CREATE_TAG_COMMENT);
           }
         else if (strcasecmp ("COPY", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->copy, "");
+            mgn_append_string (&create_tag_data->copy, "");
             set_client_state (CLIENT_CREATE_TAG_COPY);
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->name, "");
+            mgn_append_string (&create_tag_data->name, "");
             set_client_state (CLIENT_CREATE_TAG_NAME);
           }
         else if (strcasecmp ("VALUE", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->value, "");
+            mgn_append_string (&create_tag_data->value, "");
             set_client_state (CLIENT_CREATE_TAG_VALUE);
           }
         ELSE_ERROR ("create_tag");
@@ -9016,7 +9016,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("TYPE", element_name) == 0)
           {
-            gvm_append_string (&create_tag_data->resource_type, "");
+            mgn_append_string (&create_tag_data->resource_type, "");
             set_client_state (CLIENT_CREATE_TAG_RESOURCES_TYPE);
           }
         ELSE_ERROR ("create_tag");
@@ -9062,7 +9062,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("PORT_RANGE", element_name) == 0)
           {
-            gvm_append_string (&create_target_data->port_range, "");
+            mgn_append_string (&create_target_data->port_range, "");
             set_client_state (CLIENT_CREATE_TARGET_PORT_RANGE);
           }
         else if (strcasecmp ("SSH_CREDENTIAL", element_name) == 0)
@@ -9097,7 +9097,7 @@ gmp_xml_handle_start_element (/* unused */ GMarkupParseContext* context,
           }
         else if (strcasecmp ("NAME", element_name) == 0)
           {
-            gvm_append_string (&create_target_data->name, "");
+            mgn_append_string (&create_target_data->name, "");
             set_client_state (CLIENT_CREATE_TARGET_NAME);
           }
         ELSE_ERROR ("create_target");
@@ -20109,7 +20109,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
                 manage_session_set_timezone (zone);
 
                 severity = setting_severity ();
-                pw_warning = gvm_validate_password
+                pw_warning = mgn_validate_password
                               (current_credentials.password,
                                current_credentials.username);
 
@@ -21791,10 +21791,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (create_alert_data->part_name)] = '\0';
           array_add (create_alert_data->condition_data, string);
 
-          gvm_free_string_var (&create_alert_data->part_data);
-          gvm_free_string_var (&create_alert_data->part_name);
-          gvm_append_string (&create_alert_data->part_data, "");
-          gvm_append_string (&create_alert_data->part_name, "");
+          mgn_free_string_var (&create_alert_data->part_data);
+          mgn_free_string_var (&create_alert_data->part_name);
+          mgn_append_string (&create_alert_data->part_data, "");
+          mgn_append_string (&create_alert_data->part_name, "");
           set_client_state (CLIENT_CREATE_ALERT_CONDITION);
           break;
         }
@@ -21817,10 +21817,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (create_alert_data->part_name)] = '\0';
           array_add (create_alert_data->event_data, string);
 
-          gvm_free_string_var (&create_alert_data->part_data);
-          gvm_free_string_var (&create_alert_data->part_name);
-          gvm_append_string (&create_alert_data->part_data, "");
-          gvm_append_string (&create_alert_data->part_name, "");
+          mgn_free_string_var (&create_alert_data->part_data);
+          mgn_free_string_var (&create_alert_data->part_name);
+          mgn_append_string (&create_alert_data->part_data, "");
+          mgn_append_string (&create_alert_data->part_name, "");
           set_client_state (CLIENT_CREATE_ALERT_EVENT);
           break;
         }
@@ -21841,10 +21841,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (create_alert_data->part_name)] = '\0';
           array_add (create_alert_data->method_data, string);
 
-          gvm_free_string_var (&create_alert_data->part_data);
-          gvm_free_string_var (&create_alert_data->part_name);
-          gvm_append_string (&create_alert_data->part_data, "");
-          gvm_append_string (&create_alert_data->part_name, "");
+          mgn_free_string_var (&create_alert_data->part_data);
+          mgn_free_string_var (&create_alert_data->part_name);
+          mgn_append_string (&create_alert_data->part_data, "");
+          mgn_append_string (&create_alert_data->part_name, "");
           set_client_state (CLIENT_CREATE_ALERT_METHOD);
           break;
         }
@@ -23330,7 +23330,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
             create_report_data->host_end_host = NULL;
           }
         else
-          gvm_free_string_var (&create_report_data->host_end);
+          mgn_free_string_var (&create_report_data->host_end);
 
         set_client_state (CLIENT_CREATE_REPORT_RR);
         break;
@@ -23353,7 +23353,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
             create_report_data->host_start_host = NULL;
           }
         else
-          gvm_free_string_var (&create_report_data->host_start);
+          mgn_free_string_var (&create_report_data->host_start);
 
         set_client_state (CLIENT_CREATE_REPORT_RR);
         break;
@@ -23399,7 +23399,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
               create_report_data->host_end = NULL;
             }
 
-          gvm_free_string_var (&create_report_data->ip);
+          mgn_free_string_var (&create_report_data->ip);
           set_client_state (CLIENT_CREATE_REPORT_RR);
           break;
         }
@@ -23767,8 +23767,8 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
                                 NULL);
           string[strlen (create_report_format_data->file_name)] = '\0';
           array_add (create_report_format_data->files, string);
-          gvm_free_string_var (&create_report_format_data->file);
-          gvm_free_string_var (&create_report_format_data->file_name);
+          mgn_free_string_var (&create_report_format_data->file);
+          mgn_free_string_var (&create_report_format_data->file_name);
           set_client_state (CLIENT_CRF_GRFR_REPORT_FORMAT);
           break;
         }
@@ -23803,12 +23803,12 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           param->value = g_strdup (create_report_format_data->param_value);
 
           array_add (create_report_format_data->params, param);
-          gvm_free_string_var (&create_report_format_data->param_default);
-          gvm_free_string_var (&create_report_format_data->param_name);
-          gvm_free_string_var (&create_report_format_data->param_type);
-          gvm_free_string_var (&create_report_format_data->param_type_max);
-          gvm_free_string_var (&create_report_format_data->param_type_min);
-          gvm_free_string_var (&create_report_format_data->param_value);
+          mgn_free_string_var (&create_report_format_data->param_default);
+          mgn_free_string_var (&create_report_format_data->param_name);
+          mgn_free_string_var (&create_report_format_data->param_type);
+          mgn_free_string_var (&create_report_format_data->param_type_max);
+          mgn_free_string_var (&create_report_format_data->param_type_min);
+          mgn_free_string_var (&create_report_format_data->param_value);
 
           array_terminate (create_report_format_data->param_options);
           array_add (create_report_format_data->params_options,
@@ -25494,10 +25494,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (modify_alert_data->part_name)] = '\0';
           array_add (modify_alert_data->event_data, string);
 
-          gvm_free_string_var (&modify_alert_data->part_data);
-          gvm_free_string_var (&modify_alert_data->part_name);
-          gvm_append_string (&modify_alert_data->part_data, "");
-          gvm_append_string (&modify_alert_data->part_name, "");
+          mgn_free_string_var (&modify_alert_data->part_data);
+          mgn_free_string_var (&modify_alert_data->part_name);
+          mgn_append_string (&modify_alert_data->part_data, "");
+          mgn_append_string (&modify_alert_data->part_name, "");
           set_client_state (CLIENT_MODIFY_ALERT_EVENT);
           break;
         }
@@ -25518,10 +25518,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (modify_alert_data->part_name)] = '\0';
           array_add (modify_alert_data->condition_data, string);
 
-          gvm_free_string_var (&modify_alert_data->part_data);
-          gvm_free_string_var (&modify_alert_data->part_name);
-          gvm_append_string (&modify_alert_data->part_data, "");
-          gvm_append_string (&modify_alert_data->part_name, "");
+          mgn_free_string_var (&modify_alert_data->part_data);
+          mgn_free_string_var (&modify_alert_data->part_name);
+          mgn_append_string (&modify_alert_data->part_data, "");
+          mgn_append_string (&modify_alert_data->part_name, "");
           set_client_state (CLIENT_MODIFY_ALERT_CONDITION);
           break;
         }
@@ -25542,10 +25542,10 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           string[strlen (modify_alert_data->part_name)] = '\0';
           array_add (modify_alert_data->method_data, string);
 
-          gvm_free_string_var (&modify_alert_data->part_data);
-          gvm_free_string_var (&modify_alert_data->part_name);
-          gvm_append_string (&modify_alert_data->part_data, "");
-          gvm_append_string (&modify_alert_data->part_name, "");
+          mgn_free_string_var (&modify_alert_data->part_data);
+          mgn_free_string_var (&modify_alert_data->part_name);
+          mgn_append_string (&modify_alert_data->part_data, "");
+          mgn_append_string (&modify_alert_data->part_name, "");
           set_client_state (CLIENT_MODIFY_ALERT_METHOD);
           break;
         }
@@ -25801,7 +25801,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           {
             modify_config_data->family_selection_growing
              = atoi (modify_config_data->family_selection_growing_text);
-            gvm_free_string_var
+            mgn_free_string_var
              (&modify_config_data->family_selection_growing_text);
           }
         else
@@ -25814,7 +25814,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           {
             modify_config_data->family_selection_family_all
              = atoi (modify_config_data->family_selection_family_all_text);
-            gvm_free_string_var
+            mgn_free_string_var
              (&modify_config_data->family_selection_family_all_text);
           }
         else
@@ -25827,7 +25827,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
           {
             modify_config_data->family_selection_family_growing
              = atoi (modify_config_data->family_selection_family_growing_text);
-            gvm_free_string_var
+            mgn_free_string_var
              (&modify_config_data->family_selection_family_growing_text);
           }
         else
@@ -25848,7 +25848,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
       CLOSE (CLIENT_MODIFY_CONFIG_PREFERENCE, NVT);
       case CLIENT_MODIFY_CONFIG_PREFERENCE_VALUE:
         /* Init, so it's the empty string when the value is empty. */
-        gvm_append_string (&modify_config_data->preference_value, "");
+        mgn_append_string (&modify_config_data->preference_value, "");
         set_client_state (CLIENT_MODIFY_CONFIG_PREFERENCE);
         break;
 
@@ -28721,7 +28721,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
  */
 #define APPEND(state, dest)                      \
   case state:                                    \
-    gvm_append_text (dest, text, text_len);  \
+    mgn_append_text (dest, text, text_len);  \
     break;
 
 /**
@@ -28730,7 +28730,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
  * React to the addition of text to the value of an XML element.
  * React according to the current value of \ref client_state,
  * usually appending the text to some part of the current task
- * with functions like gvm_append_text and \ref append_to_task_comment.
+ * with functions like mgn_append_text and \ref append_to_task_comment.
  *
  * @param[in]  context           Parser context.
  * @param[in]  text              The text.
@@ -29567,7 +29567,7 @@ gmp_xml_handle_text (/* unused */ GMarkupParseContext* context,
         {
           GList *last = g_list_last (get_aggregates_data->data_columns);
           gchar *data_column = last->data;
-          gvm_append_text (&data_column, text, text_len);
+          mgn_append_text (&data_column, text, text_len);
           last->data = data_column;
           break;
         }
@@ -29576,7 +29576,7 @@ gmp_xml_handle_text (/* unused */ GMarkupParseContext* context,
         {
           GList *last = g_list_last (get_aggregates_data->text_columns);
           gchar *text_column = last->data;
-          gvm_append_text (&text_column, text, text_len);
+          mgn_append_text (&text_column, text, text_len);
           last->data = text_column;
           break;
         }

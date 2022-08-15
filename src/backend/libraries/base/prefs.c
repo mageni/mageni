@@ -1,49 +1,31 @@
-/* Copyright (C) 2014-2019 Greenbone Networks GmbH
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: prefs.c
+ * Brief: Implementation of API to handle globally stored preferences.
+ *  
+ * Copyright:
+ * Copyright (C) 2014-2019 Greenbone Networks GmbH
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
-/**
- * @file
- * @brief Implementation of API to handle globally stored preferences.
- *
- * A global store of preferences to scanner and NVTs is handled by this
- * module.
- */
 
-#include "settings.h" /* for init_settings_iterator_from_file */
-
-#include <glib.h>   /* for gchar */
-#include <stdio.h>  /* for printf() */
-#include <stdlib.h> /* for atoi() */
-#include <string.h> /* for strlen() */
+#include "settings.h"
+#include <glib.h>  
+#include <stdio.h> 
+#include <stdlib.h>
+#include <string.h>
 
 static GHashTable *global_prefs = NULL;
 
-void
-prefs_set (const gchar *, const gchar *);
+void prefs_set (const gchar *, const gchar *);
 
 /**
  * @brief Initializes the preferences structure. If it was
  *        already initialized, remove old settings and start
  *        from scratch.
  */
-static void
-prefs_init (void)
+static void prefs_init (void)
 {
   if (global_prefs)
     g_hash_table_destroy (global_prefs);
@@ -68,8 +50,7 @@ prefs_init (void)
  *
  * @return Pointer to the global preferences structure.
  */
-GHashTable *
-preferences_get (void)
+GHashTable * preferences_get (void)
 {
   if (!global_prefs)
     prefs_init ();
@@ -86,8 +67,7 @@ preferences_get (void)
  *         NULL in case for the key no preference was found or the
  *         preference is not of type string.
  */
-const gchar *
-prefs_get (const gchar *key)
+const gchar * prefs_get (const gchar *key)
 {
   if (!global_prefs)
     prefs_init ();
@@ -106,8 +86,7 @@ prefs_get (const gchar *key)
  *         anything else is false.
  *         Any other type or non-existing key is false.
  */
-int
-prefs_get_bool (const gchar *key)
+int prefs_get_bool (const gchar *key)
 {
   gchar *str;
 
@@ -129,8 +108,7 @@ prefs_get_bool (const gchar *key)
  *
  * @param value  The value to set. A copy of this will be created.
  */
-void
-prefs_set (const gchar *key, const gchar *value)
+void prefs_set (const gchar *key, const gchar *value)
 {
   if (!global_prefs)
     prefs_init ();
@@ -143,8 +121,7 @@ prefs_set (const gchar *key, const gchar *value)
  *
  * @param config    Filename of the configuration file.
  */
-void
-prefs_config (const char *config)
+void prefs_config (const char *config)
 {
   settings_iterator_t settings;
   char buffer[2048];
@@ -168,8 +145,7 @@ prefs_config (const char *config)
 /**
  * @brief Dump the preferences to stdout
  */
-void
-prefs_dump (void)
+void prefs_dump (void)
 {
   void *name, *value;
   GHashTableIter iter;
@@ -192,8 +168,7 @@ prefs_dump (void)
  * @return 0 if no timeout for the NVT oid was found, timeout in seconds
  *         otherwise.
  */
-int
-prefs_nvt_timeout (const char *oid)
+int prefs_nvt_timeout (const char *oid)
 {
   char *pref_name = g_strdup_printf ("timeout.%s", oid);
   const char *val = prefs_get (pref_name);

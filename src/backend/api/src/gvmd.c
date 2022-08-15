@@ -2358,7 +2358,7 @@ main (int argc, char **argv)
     }
 
   if (disable_password_policy)
-    gvm_disable_password_policy ();
+    mgn_disable_password_policy ();
   else
     {
       gchar *password_policy;

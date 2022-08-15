@@ -64744,7 +64744,7 @@ set_password (const gchar *name, const gchar *uuid, const gchar *password,
 
   assert (name && uuid);
 
-  if ((errstr = gvm_validate_password (password, name)))
+  if ((errstr = mgn_validate_password (password, name)))
     {
       g_warning ("new password for '%s' rejected: %s", name, errstr);
       if (r_errdesc)
@@ -64958,7 +64958,7 @@ create_user (const gchar * name, const gchar * password, const gchar *comment,
   else
     generated = NULL;
 
-  if ((errstr = gvm_validate_password (password, name)))
+  if ((errstr = mgn_validate_password (password, name)))
     {
       g_warning ("new password for '%s' rejected: %s", name, errstr);
       if (r_errdesc)
@@ -66021,7 +66021,7 @@ modify_user (const gchar * user_id, gchar **name, const gchar *new_name,
 
       user_name = sql_string ("SELECT name FROM users WHERE id = %llu",
                               user);
-      errstr = gvm_validate_password (password, user_name);
+      errstr = mgn_validate_password (password, user_name);
       g_free (user_name);
       if (errstr)
         {

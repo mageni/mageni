@@ -1,65 +1,12 @@
-/* Copyright (C) 2012-2019 Greenbone Networks GmbH
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file
- * @brief CVSS utility functions
- *
- * This file contains utility functions for handling CVSS.
- * Namels a calculator for the CVSS base score from a CVSS base
- * vector.
- *
- * The base equation is the foundation of CVSS scoring. The base equation is:
- * BaseScore6
- *   = round_to_1_decimal(((0.6*Impact)+(0.4*Exploitability)–1.5)*f(Impact))
- *
- * Impact
- *   = 10.41*(1-(1-ConfImpact)*(1-IntegImpact)*(1-AvailImpact))
- *
- * Exploitability
- *   = 20* AccessVector*AccessComplexity*Authentication
- *
- * f(impact)= 0 if Impact=0, 1.176 otherwise
- * AccessVector     = case AccessVector of
- *                       requires local access: 0.395
- *                       adjacent network accessible: 0.646
- *                       network accessible: 1.0
- * AccessComplexity = case AccessComplexity of
- *                       high: 0.35
- *                       medium: 0.61
- *                       low: 0.71
- * Authentication   = case Authentication of
- *                       requires multiple instances of authentication: 0.45
- *                       requires single instance of authentication: 0.56
- *                       requires no authentication: 0.704
- * ConfImpact       = case ConfidentialityImpact of
- *                       none:              0.0
- *                       partial:           0.275
- *                       complete:          0.660
- * IntegImpact      = case IntegrityImpact of
- *                       none:              0.0
- *                       partial:           0.275
- *                       complete:          0.660
- * AvailImpact      = case AvailabilityImpact of
- *                       none:              0.0
- *                       partial:           0.275
- *                       complete:          0.660
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Name: cvss.c
+ * Brief: CVSS utility functions
+ *  
+ * Copyright:
+ * Copyright (C) 2012-2019 Greenbone Networks GmbH
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
 #include <glib.h>

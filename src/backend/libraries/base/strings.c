@@ -1,31 +1,19 @@
-/* Copyright (C) 2009-2019 Greenbone Networks GmbH
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * strings.c
  *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/**
- * @file
- * @brief String utilities.
+ * String utilities.
+ *  
+ * Copyright:
+ * Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * Copyright (C) 2022 Mageni Security LLC
+ * 
  */
 
 #include "strings.h"
 
-#include <assert.h> /* for assert */
-#include <glib.h>   /* for g_free, g_strconcat, gchar, g_strdup, g_strndup */
+#include <assert.h>
+#include <glib.h>
 
 /**
  * @brief Append a string to a string variable.
@@ -40,8 +28,7 @@
  *                     a string.
  * @param[in]  string  The string to append to the string in the variable.
  */
-void
-gvm_append_string (gchar **var, const gchar *string)
+void mgn_append_string (gchar **var, const gchar *string)
 {
   if (*var)
     {
@@ -70,8 +57,7 @@ gvm_append_string (gchar **var, const gchar *string)
  * @param[in]  string  The string to append to the string in the variable.
  * @param[in]  length  The length of string.
  */
-void
-gvm_append_text (gchar **var, const gchar *string, gsize length)
+void mgn_append_text (gchar **var, const gchar *string, gsize length)
 {
   if (*var)
     {
@@ -91,8 +77,7 @@ gvm_append_text (gchar **var, const gchar *string, gsize length)
  * @param[in]  var  The address of a string variable, that is, a pointer to
  *                  a string.
  */
-void
-gvm_free_string_var (gchar **var)
+void mgn_free_string_var (gchar **var)
 {
   g_free (*var);
   *var = NULL;
@@ -112,8 +97,7 @@ gvm_free_string_var (gchar **var)
  *
  * @return A new pointer into the string.
  */
-char *
-gvm_strip_space (char *string, char *end)
+char * mgn_strip_space (char *string, char *end)
 {
   assert (string <= end);
   if (string >= end)

@@ -953,7 +953,7 @@ process_otp_scanner_input ()
           input = messages;
 
           /* Strip leading and trailing whitespace. */
-          field = gvm_strip_space (message, match);
+          field = mgn_strip_space (message, match);
           blank_control_chars (field);
 
           g_debug ("   scanner old state %i", scanner_state);
