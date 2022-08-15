@@ -1,0 +1,7 @@
+*.c linguist-detectable=true
+*.c linguist-language=C
+*.h linguist-detectable=true
+*.h linguist-language=C
+*.php linguist-detectable=true
+*.php linguist-language=PHP
+

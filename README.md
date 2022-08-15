@@ -1,10 +1,3 @@
-<!-- <p align="center">
-    <img src="https://www.mageni.net/assets/img/githublogo.jpeg" width="100">
-</p>
-<p align="center">
-    <img src="https://www.mageni.net/assets/img/macbook.jpeg" width="600" style="padding-top:10px;">
-</p> -->
-
 <div align="center">
   <br>
   <h1 align="center">Mageni - The modern vulnerability and attack surface management platform</h1>
