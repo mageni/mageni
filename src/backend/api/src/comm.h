@@ -1,13 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: comm.h
- * Brief: This file contains the protos for comm.c
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Generic communication utilities
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Protos for communication between the API and the scanner.
- *
- * Copyright: 
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
  */
 
 #ifndef _GVMD_COMM_H

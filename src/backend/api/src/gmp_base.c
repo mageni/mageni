@@ -1,17 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp_base.c
- * Brief: Base facilities.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Base facilities.
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * GMP base facilities used by all modules, but not exported for users of the
- * GMP layer (i.e. gmpd.c).
- *
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
- * 
- * Copyright:
- * Copyright (C) 2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
  */
 
 #include "gmp_base.h"

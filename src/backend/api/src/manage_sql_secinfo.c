@@ -1,18 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_sql_secinfo.c
- * Brief: The SecInfo parts of the GVM management layer.
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
- */
-
-
 /**
- * @brief Enable extra GNU functions.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: The SecInfo parts of the GVM management layer.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
+
 #define _GNU_SOURCE
 
 #include "manage_sql_secinfo.h"

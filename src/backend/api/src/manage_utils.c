@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_utils.c
- * Brief: Module for Greenbone Vulnerability Manager: Manage library utilities.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Library utilities.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2014-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "manage_utils.h"

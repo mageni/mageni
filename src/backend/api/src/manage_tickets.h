@@ -1,17 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_tickets.h
- * Brief: Ticket headers exported from layer
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Ticket headers exported from layer
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
- * 
- * Copyright:
- * Copyright (C) 2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
-
 
 #ifndef _GVMD_MANAGE_TICKETS_H
 #define _GVMD_MANAGE_TICKETS_H

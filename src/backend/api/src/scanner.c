@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: scanner.c
- * Brief: Scanner connection handling
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file provides facilities for working with scanner connections.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file provides facilities for working with scanner connections.
- * 
- * Copyright:
- * Copyright (C) 2014-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "scanner.h"

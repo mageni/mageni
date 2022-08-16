@@ -1,15 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: otp.c
- * Brief: OTP library.
- *
- * This file defines an OpenVAS Transfer Protocol (OTP) library, for
- * implementing managers such as the Greenbone Vulnerability Manager daemon.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines an OpenVAS Transfer Protocol (OTP) library
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "otp.h"

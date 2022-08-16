@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: sql.c
- * Brief: Generic SQL interface
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This is a small generic interface for SQL database access.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This is a small generic interface for SQL database access.
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "sql.h"

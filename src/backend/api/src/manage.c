@@ -1,25 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage.c
- * Brief: This file defines a management library, for implementing
- * Managers such as the Greenbone Vulnerability Manager daemon.
- *
- * This library provides facilities for storing and manipulating credential
- * and task information, and manipulating reports. Task manipulation
- * includes sending task commands to the OTP server (the "scanner") that is
- * running the tasks.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines a management library for implementing managers
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
-/**
- * @brief Enable extra functions.
- *
- * time.h in glibc2 needs this for strptime.
- */
 #define _XOPEN_SOURCE
 
 /**

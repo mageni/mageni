@@ -1,18 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_sql.c
- * Brief: This file defines the SQLite specific portions of the Greenbone Vulnerability Manager
- * management library.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines the SQLite specific portions of the management library.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
-/**
- * @brief Enable extra GNU functions.
- */
 #define _GNU_SOURCE
 
 #include "manage_sql.h"

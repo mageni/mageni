@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmpd.c
- * Brief: The Greenbone Vulnerability Manager GMP daemon.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines the API daemon.  
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file defines the Greenbone Vulnerability Manager daemon.  
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "gmpd.h"

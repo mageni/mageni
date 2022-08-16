@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_acl.h
- * Brief: Headers for Greenbone Vulnerability Manager: the Manage library.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file isolates the access control portions of the management library.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #ifndef _GVMD_MANAGE_ACL_H

@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_ranges_all_tcp_nmap_5_51_top_100.c
- * Brief: GVM management layer: Predefined port range
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines the ranges for a predefined port list.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file defines the ranges for a predefined port list.
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "manage_sql.h"

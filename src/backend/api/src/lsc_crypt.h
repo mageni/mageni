@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: lsc_crypt.h
- * Brief: LSC credentials encryption support
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file provides support for encrypting LSC credentials.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #ifndef _GVMD_LSC_CRYPT_H

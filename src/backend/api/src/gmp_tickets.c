@@ -1,15 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp_tickets.c
- * Brief: GVM GMP layer: Tickets
- *
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Base facilities.
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "gmp_tickets.h"

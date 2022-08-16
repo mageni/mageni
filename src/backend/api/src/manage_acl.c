@@ -1,15 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_acl.c
- * Brief: The Greenbone Vulnerability Manager management library (Access
- * Control Layer). 
- * 
- * This file isolates the access control portions of the GVM
- * management library.
- * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file isolates the access control portions of the management library.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

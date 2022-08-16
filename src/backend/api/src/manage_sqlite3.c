@@ -1,19 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_sqlite3.c
- * Brief: SQLite Backend
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: SQLite Backend
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2014-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
-/**
- * @brief Enable extra functions.
- *
- * Glibc2 needs this for strptime.
- */
 #define _XOPEN_SOURCE
 
 #include "manage.h"

@@ -1,18 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: utils.c
- * Brief: Generic helper utilities.
- * 
- * Copyright:
- * Copyright (C) 2016-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
- */
-
 /**
- * @brief Enable extra functions.
- *
- * time.h in glibc2 needs this for strptime.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2016-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Generic helper utilities.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #define _XOPEN_SOURCE

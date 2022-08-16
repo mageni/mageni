@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: sql_sqlite3.c
- * Brief: SQLite3 backend
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: SQLite3 backend of the SQL interface.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * SQLite3 backend of the SQL interface.
- * 
- * Copyright:
- * Copyright (C) 2014-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "sql.h"

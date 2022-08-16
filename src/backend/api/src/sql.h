@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: sql.c
- * Brief: Headers for Greenbone Vulnerability Manager: the SQL library.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2012-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This is a small generic interface for SQL database access.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2012-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #ifndef _GVMD_SQL_H

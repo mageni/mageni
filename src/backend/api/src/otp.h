@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: otp.h
- * Brief: OTP library headers
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines an OpenVAS Transfer Protocol (OTP) library
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #ifndef _GVMD_OTP_H
@@ -16,11 +13,9 @@
 
 #include <glib.h>
 
-void
-init_otp_data ();
+void init_otp_data ();
 
-int
-process_otp_scanner_input ();
+int process_otp_scanner_input ();
 
 /** @todo Exported for following functions. */
 /**
@@ -47,12 +42,10 @@ extern int scanner_current_loading;
 extern int scanner_total_loading;
 
 /** @todo Exported for gmpd.c and scanner.c. */
-void
-set_scanner_init_state (scanner_init_state_t state);
+void set_scanner_init_state (scanner_init_state_t state);
 
 /** @todo Exported for scanner.c. */
-void
-reset_scanner_states ();
+void reset_scanner_states ();
 
 /** @todo Exported for gmpd.c. */
 extern int scanner_init_offset;

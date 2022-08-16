@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: lsc_user.h
- * Brief: Utilities for LSC credential package generation. 
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file provides support for generating packages for LSC credentials.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file provides support for generating packages for LSC credentials.
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #ifndef _GVMD_LSC_USER_H

@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp_base.h
- * Brief: GVM GMP layer: Headers used internally.
- *
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
- * 
- * Copyright:
- * Copyright (C) 2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Base facilities.
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

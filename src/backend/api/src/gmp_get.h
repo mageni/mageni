@@ -1,16 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp_get.h
- * Brief: Common GET command headers.
- * 
- * Common GET headers code for the GVM GMP layer.
- *
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
- * 
- * Copyright:
- * Copyright (C) 2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LL
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Base facilities.
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

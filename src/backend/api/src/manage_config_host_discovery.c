@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_config_host_discovery.c
- * Brief: GVM management layer: Predefined config: Host Discovery
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file contains the creation of the predefined config Host Discovery.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file contains the creation of the predefined config Host Discovery.
- * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "manage.h"

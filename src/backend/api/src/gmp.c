@@ -1,68 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp.c
- * Brief: The Greenbone Vulnerability Manager GMP library.
- * 
- * This file defines the protocol for implementing managers
- * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
- */
-
 /**
- * @internal
- * The GMP-"Processor" is always in a state (\ref client_state_t
- * \ref client_state ) and currently looking at the opening of a GMP element
- * (\ref gmp_xml_handle_start_element ), at the text of a GMP element
- * (\ref gmp_xml_handle_text ) or at the closing of a GMP element
- * (\ref gmp_xml_handle_end_element ).
- *
- * The state usually represents the current location of the parser within the
- * XML (GMP) tree.  There has to be one state for every GMP element.
- *
- * State transitions occur in the start and end element handler callbacks.
- *
- * Generally, the strategy is to wait until the closing of an element before
- * doing any action or sending a response.  Also, error cases are to be detected
- * in the end element handler.
- *
- * If data has to be stored, it goes to \ref command_data (_t) , which is a
- * union.
- * More specific incarnations of this union are e.g. \ref create_user_data (_t)
- * , where the data to create a new user is stored (until the end element of
- * that command is reached).
- *
- * For implementing new commands that have to store data (e.g. not
- * "\<help_extended/\>"), \ref command_data has to be freed and NULL'ed in case
- * of errors and the \ref current_state has to be reset.
- * It can then be assumed that it is NULL'ed at the start of every new
- * command element.  To implement a new start element handler, be sure to just
- * copy an existing case and keep its structure.
- *
- * Attributes are easier to implement than elements.
- * E.g.
- * @code
- * <key_value_pair key="k" value="v"/>
- * @endcode
- * is obviously easier to handle than
- * @code
- * <key><attribute name="k"/><value>v</value></key>
- * @endcode
- * .
- * For this reason the GET commands like GET_TASKS all use attributes only.
- *
- * However, for the other commands it is preferred to avoid attributes and use
- * the text of elements
- * instead, like in
- * @code
- * <key_value_pair><key>k</key><value>v</value></key_value_pair>
- * @endcode
- * .
- *
- * If new elements are built of multiple words, separate the words with an
- * underscore.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines the protocol for implementing managers
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "gmp.h"

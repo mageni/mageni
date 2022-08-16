@@ -1,15 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_migrators.c
- * Brief: The Greenbone Vulnerability Manager DB Migrators file.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file defines the functions used by the manager to migrate the DB to the newest version.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file defines the functions used by the manager to migrate the DB to the
- * newest version.
- * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 /**

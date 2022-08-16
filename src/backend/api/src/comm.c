@@ -1,15 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: comm.c
- * Brief: Generic communication utilities
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: Generic communication utilities
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file contains generic convenience utilities for handling a buffer that
- * is used to communicate with a server.
- *
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "utils.h"

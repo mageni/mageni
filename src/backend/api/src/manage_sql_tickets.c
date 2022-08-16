@@ -1,15 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_sql_tickets.c
- * Brief: The Ticket SQL for the GVM management layer.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2018 Greenbone Networks GmbH
+ * SPDX-FileComment: The Ticket SQL for the management layer.
+ * SPDX-FileContributor: Matthew Mundell <matthew.mundell@greenbone.net>
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Authors:
- * Matthew Mundell <matthew.mundell@greenbone.net>
- * 
- * Copyright:
- * Copyright (C) 2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "manage_sql_tickets.h"

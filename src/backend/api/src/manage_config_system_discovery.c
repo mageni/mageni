@@ -1,14 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_config_system_discovery.c
- * Brief: GVM management layer: Predefined config: System Discovery
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: This file contains the creation of the predefined config System Discovery.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * This file contains the creation of the predefined config System Discovery.
- * 
- * Copyright:
- * Copyright (C) 2013-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
 #include "manage.h"

@@ -1,17 +1,12 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: manage_sql_nvts.c
- * Brief: The NVT parts of the GVM management layer.
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2018 Greenbone Networks GmbH
+ * SPDX-FileComment: The NVT parts of the management layer.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
- * Copyright:
- * Copyright (C) 2009-2018 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- *
  */
 
-/**
- * @brief Enable extra GNU functions.
- */
+
 #define _GNU_SOURCE
 
 #include "manage_sql_nvts.h"
