@@ -1,6 +1,6 @@
 /**
  * SPDX-License-Identifier: GPL-2.0-or-later
- * SPDX-FileCopyrightText: Copyright 2012-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Copyright 2010-2019 Greenbone Networks GmbH
  * SPDX-FileComment: Basic support to drop privileges.
  * SPDX-FileContributor: Mageni Security LLC
  * 
