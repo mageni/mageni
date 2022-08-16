@@ -22,7 +22,6 @@
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/mageni/mageni">
 <a href="https://github.com/mageni/mageni/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mageni/mageni"></a>
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/mageni/mageni">
-<a href="https://api.securityscorecards.dev/projects/github.com/mageni/mageni"><img src="https://api.securityscorecards.dev/projects/github.com/mageni/mageni/badge"></a>
 <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"><img src="https://img.shields.io/badge/License-GPL_v2-blue.svg" /></a>
 <a href="https://twitter.com/magenisecurity" target="_blank"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/magenisecurity?style=social"></a>
 </p>
