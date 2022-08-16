@@ -44,7 +44,7 @@
 - [Legal](#legal)
 
 ## The Problem
-Defenders are facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
+The world is facing the most sophisticated threat landscape ever and damages have soared—the Federal Bureau of Investigation’s 2021 IC3 report found that the cost of cybercrime now totals more than USD6.9 billion. If it were measured as a country, then cybercrime — which is predicted to inflict damages totaling $10.5 trillion USD globally in 2025 — would be the world’s third-largest economy after the U.S. and China (Cybersecurity Ventures).
 
 - Unpatched and exposed services account for 82% of successful attack (Tetra Defense)
 - 60% of breach victims were breached due to an unpatched known vulnerability (Ponemom Institute)
@@ -52,7 +52,7 @@ Defenders are facing the most sophisticated threat landscape ever and damages ha
 - $4.24 million cost per data breach on average; highest in 17-year report history (IBM)
 
 ## The Solution
-Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Infinity") is passionate about solving the world's toughest and most complex problems using open source. Where others see problems, we see solutions. In order to solve the problem, Mageni provides the modern and open source vulnerability and attack surface management platform that helps defenders outpace adversaries and catch vulnerabilities and threats that others miss.
+Mageni (From the Hebrew word for "My Defender" and from the Japanese word for "Infinity") is passionate about solving the world's toughest and most complex problems using open source. Where others see problems, we see solutions. In order to solve the problem, Mageni provides the modern and open source vulnerability and attack surface management platform that helps you outpace adversaries and catch vulnerabilities and threats that others miss.
 
 ## What is Mageni?
 Mageni is an open source vulnerability and attack surface management platform. Mageni provides a faster, enjoyable, and leaner vulnerability management experience for modern cybersecurity programs.
