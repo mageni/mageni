@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: hosts.c
- * Brief: Implementation of an API to handle Hosts objects
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of an API to handle Hosts objects
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

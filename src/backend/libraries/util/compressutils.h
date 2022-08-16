@@ -1,24 +1,18 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: compressutils.h
- * Brief: Functions related to data compression (gzip format.)
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Functions related to data compression (gzip format.)
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-#ifndef _GVM_COMPRESSUTILS_H
-#define _GVM_COMPRESSUTILS_H
+#ifndef MAGENI_COMPRESSUTILS_H
+#define MAGENI_COMPRESSUTILS_H
 
-void *
-gvm_compress (const void *, unsigned long, unsigned long *);
+void * mgn_compress (const void *, unsigned long, unsigned long *);
 
-void *
-gvm_compress_gzipheader (const void *, unsigned long, unsigned long *);
+void * mgn_compress_gzipheader (const void *, unsigned long, unsigned long *);
 
-void *
-gvm_uncompress (const void *, unsigned long, unsigned long *);
+void * mgn_uncompress (const void *, unsigned long, unsigned long *);
 
-#endif /* not _GVM_COMPRESSUTILS_H */
+#endif /* not MAGENI_COMPRESSUTILS_H */

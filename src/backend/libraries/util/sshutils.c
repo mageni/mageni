@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: sshutils.c
- * Brief: Implementation of SSH related API.
- *  
- * Copyright:
- * Copyright (C) 2015-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2015-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of SSH related API.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
@@ -26,7 +23,7 @@
  * @return Decrypted private key if success, NULL otherwise.
  */
 char *
-gvm_ssh_pkcs8_decrypt (const char *pkcs8_key, const char *passphrase)
+mgn_ssh_pkcs8_decrypt (const char *pkcs8_key, const char *passphrase)
 {
   gnutls_datum_t data;
   gnutls_x509_privkey_t key;
@@ -64,14 +61,14 @@ gvm_ssh_pkcs8_decrypt (const char *pkcs8_key, const char *passphrase)
  * @return Allocated base64 encoded public key if success, NULL otherwise.
  */
 char *
-gvm_ssh_public_from_private (const char *private_key, const char *passphrase)
+mgn_ssh_public_from_private (const char *private_key, const char *passphrase)
 {
   ssh_key priv;
   char *pub_key, *decrypted_priv, *pub_str = NULL;
   const char *type;
   int ret;
 
-  decrypted_priv = gvm_ssh_pkcs8_decrypt (private_key, passphrase);
+  decrypted_priv = mgn_ssh_pkcs8_decrypt (private_key, passphrase);
   ret = ssh_pki_import_privkey_base64 (decrypted_priv ? decrypted_priv
                                                       : private_key,
                                        passphrase, NULL, NULL, &priv);

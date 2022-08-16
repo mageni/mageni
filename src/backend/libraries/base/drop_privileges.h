@@ -1,16 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: drop_privileges.h
- * Brief: Basic support to drop privileges.
- *  
- * Copyright:
- * Copyright (C) 2010-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2012-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Basic support to drop privileges.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-#ifndef _GVM_DROP_PRIVILEGES_H
-#define _GVM_DROP_PRIVILEGES_H
+#ifndef MAGENI_DROP_PRIVILEGES_H
+#define MAGENI_DROP_PRIVILEGES_H
 
 #include <glib.h>
 

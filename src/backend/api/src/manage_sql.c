@@ -1278,7 +1278,7 @@ manage_option_setup (GSList *log_config, const gchar *database)
   const gchar *db;
   int ret;
 
-  if (gvm_auth_init ())
+  if (mgn_auth_init ())
     {
       fprintf (stderr, "Authentication init failed\n");
       return -1;
@@ -9141,7 +9141,7 @@ email_encrypt_gpg (FILE *plain_file, FILE *encrypted_file,
     }
 
   // Encrypted message
-  if (gvm_pgp_pubkey_encrypt_stream (plain_file, encrypted_file, to_address,
+  if (mgn_pgp_pubkey_encrypt_stream (plain_file, encrypted_file, to_address,
                                      public_key, -1))
     {
       return -1;
@@ -9206,7 +9206,7 @@ email_encrypt_smime (FILE *plain_file, FILE *encrypted_file,
     }
 
   // Encrypted message
-  if (gvm_smime_encrypt_stream (plain_file, encrypted_file, to_address,
+  if (mgn_smime_encrypt_stream (plain_file, encrypted_file, to_address,
                                 certificate, -1))
     {
       g_warning ("%s: encryption failed", __FUNCTION__);
@@ -18254,7 +18254,7 @@ user_uuid_method (const gchar *username, auth_method_t method)
 static int
 ldap_auth_enabled ()
 {
-  if (gvm_auth_ldap_enabled ())
+  if (mgn_auth_ldap_enabled ())
     return sql_int ("SELECT coalesce ((SELECT CAST (value AS INTEGER) FROM meta"
                     "                  WHERE name = 'ldap_enable'),"
                     "                 0);");
@@ -18269,7 +18269,7 @@ ldap_auth_enabled ()
 static int
 radius_auth_enabled ()
 {
-  if (gvm_auth_radius_enabled ())
+  if (mgn_auth_radius_enabled ())
     return sql_int ("SELECT coalesce ((SELECT CAST (value AS INTEGER) FROM meta"
                     "                  WHERE name = 'radius_enable'),"
                     "                 0);");
@@ -18557,7 +18557,7 @@ auth_cache_find (const char *username, const char *password, int method)
   if (!hash)
     return -1;
 
-  ret = gvm_authenticate_classic (username, password, hash);
+  ret = mgn_authenticate_classic (username, password, hash);
   g_free (hash);
   return ret;
 }
@@ -18602,7 +18602,7 @@ authenticate_any_method (const gchar *username, const gchar *password,
 
   *auth_method = AUTHENTICATION_METHOD_FILE;
   hash = manage_user_hash (username);
-  ret = gvm_authenticate_classic (username, password, hash);
+  ret = mgn_authenticate_classic (username, password, hash);
   g_free (hash);
   return ret;
 }
@@ -41823,7 +41823,7 @@ create_credential (const char* name, const char* comment, const char* login,
       else
         return 3;
 
-      generated_key_public = gvm_ssh_public_from_private
+      generated_key_public = mgn_ssh_public_from_private
                                 (key_private_truncated
                                     ? key_private_truncated
                                     : key_private,
@@ -42260,14 +42260,14 @@ modify_credential (const char *credential_id,
           if (strcmp (type, "cc") == 0)
             {
               generated_key_public
-                  = gvm_ssh_public_from_private
+                  = mgn_ssh_public_from_private
                               (key_private_to_use,
                                NULL);
             }
           else if (strcmp (type, "usk") == 0)
             {
               generated_key_public
-                  = gvm_ssh_public_from_private
+                  = mgn_ssh_public_from_private
                               (key_private_to_use,
                                password
                                 ? password
@@ -43315,7 +43315,7 @@ credential_iterator_rpm (iterator_t *iterator)
 
   private_key = credential_iterator_private_key (iterator);
   pass = credential_iterator_password (iterator);
-  public_key = gvm_ssh_public_from_private (private_key, pass);
+  public_key = mgn_ssh_public_from_private (private_key, pass);
   if (!public_key)
     return NULL;
   login = credential_iterator_login (iterator);
@@ -43361,7 +43361,7 @@ credential_iterator_deb (iterator_t *iterator)
   setting_value (SETTING_UUID_LSC_DEB_MAINTAINER, &maintainer);
   private_key = credential_iterator_private_key (iterator);
   pass = credential_iterator_password (iterator);
-  public_key = gvm_ssh_public_from_private (private_key, pass);
+  public_key = mgn_ssh_public_from_private (private_key, pass);
   if (!public_key)
     return NULL;
   login = credential_iterator_login (iterator);

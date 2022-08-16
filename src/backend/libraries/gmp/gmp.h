@@ -1,17 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gmp.h
- * Brief: API communication.
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
- * 
- */
-
 /**
- * @file
- * @brief API for Greenbone Management Protocol communication.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: This file provides higher level facilities for working with with the API.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #ifndef MAGENI_API_COMM_H

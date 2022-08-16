@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: nvticache.c
- * Brief: Implementation of API to handle NVT Info Cache
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of API to handle NVT Info Cache
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: gpgmeutils.c
- * Brief: GPGME Utils
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: GPGME Utils
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
@@ -164,7 +161,7 @@ gvm_init_gpgme_ctx_from_dir (const gchar *dir)
  *  3 error importing key/certificate, -1 error.
  */
 int
-gvm_gpg_import_from_string (gpgme_ctx_t ctx, const char *key_str,
+mgn_gpg_import_from_string (gpgme_ctx_t ctx, const char *key_str,
                             ssize_t key_len, gpgme_data_type_t key_type)
 {
   gpgme_data_t key_data;
@@ -352,7 +349,7 @@ encrypt_stream_internal (FILE *plain_file, FILE *encrypted_file,
   encrypt_flags = GPGME_ENCRYPT_ALWAYS_TRUST | GPGME_ENCRYPT_NO_COMPRESS;
 
   // Import public key into context
-  if (gvm_gpg_import_from_string (ctx, key_str, key_len, data_type))
+  if (mgn_gpg_import_from_string (ctx, key_str, key_len, data_type))
     {
       g_warning ("%s: Import of %s failed", __FUNCTION__, key_type_str);
       gpgme_release (ctx);
@@ -415,7 +412,7 @@ encrypt_stream_internal (FILE *plain_file, FILE *encrypted_file,
  * @return 0 success, -1 error.
  */
 int
-gvm_pgp_pubkey_encrypt_stream (FILE *plain_file, FILE *encrypted_file,
+mgn_pgp_pubkey_encrypt_stream (FILE *plain_file, FILE *encrypted_file,
                                const char *uid_email,
                                const char *public_key_str,
                                ssize_t public_key_len)
@@ -439,7 +436,7 @@ gvm_pgp_pubkey_encrypt_stream (FILE *plain_file, FILE *encrypted_file,
  * @return 0 success, -1 error.
  */
 int
-gvm_smime_encrypt_stream (FILE *plain_file, FILE *encrypted_file,
+mgn_smime_encrypt_stream (FILE *plain_file, FILE *encrypted_file,
                           const char *uid_email, const char *certificate_str,
                           ssize_t certificate_len)
 {

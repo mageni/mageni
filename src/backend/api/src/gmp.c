@@ -376,7 +376,7 @@ try_gpgme_import (const char *key_str, gpgme_data_type_t key_type,
   gpgme_ctx_set_engine_info (ctx, protocol, NULL, gpg_temp_dir);
   gpgme_set_protocol (ctx, protocol);
 
-  ret = gvm_gpg_import_from_string (ctx, key_str, -1, key_type);
+  ret = mgn_gpg_import_from_string (ctx, key_str, -1, key_type);
 
   gpgme_release (ctx);
   gvm_file_remove_recurse (gpg_temp_dir);
@@ -13659,7 +13659,7 @@ handle_get_credentials (gmp_parser_t *gmp_parser, GError **error)
                   const char *pass;
 
                   pass = credential_iterator_password (&credentials);
-                  pub = gvm_ssh_public_from_private (private_key, pass);
+                  pub = mgn_ssh_public_from_private (private_key, pass);
                   SENDF_TO_CLIENT_OR_FAIL
                     ("<public_key>%s</public_key>", pub ?: "");
                   g_free (pub);
@@ -20479,7 +20479,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
                                   "</auth_conf_setting>"
                                   "</group>");
 
-          if (gvm_auth_ldap_enabled ())
+          if (mgn_auth_ldap_enabled ())
             {
               gchar *ldap_host, *ldap_authdn, *ldap_cacert;
               int ldap_enabled, ldap_allow_plaintext;
@@ -20558,7 +20558,7 @@ gmp_xml_handle_end_element (/* unused */ GMarkupParseContext* context,
               SEND_TO_CLIENT_OR_FAIL ("</group>");
             }
 
-          if (gvm_auth_radius_enabled ())
+          if (mgn_auth_radius_enabled ())
             {
               char *radius_host, *radius_key;
               int radius_enabled;

@@ -1,15 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: fileutils.c
- * Brief: File utils
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: File utils
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-/* time.h in glibc2 needs this for strptime. */
 #define _GNU_SOURCE
 
 #include "fileutils.h"

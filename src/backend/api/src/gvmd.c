@@ -2857,7 +2857,7 @@ main (int argc, char **argv)
   /* Initialize the authentication system. */
 
   // TODO Should be part of manage init.
-  if (gvm_auth_init ())
+  if (mgn_auth_init ())
     exit (EXIT_FAILURE);
 
   /* Enter the main forever-loop. */

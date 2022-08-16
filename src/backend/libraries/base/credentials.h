@@ -1,13 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: credentials.h
- * Brief: Credential pairs and triples.
- *  
- * Copyright:
- * Copyright (C) 2010-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2010-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Credential pairs and triples.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
+
 
 #ifndef _GVM_CREDENTIALS_H
 #define _GVM_CREDENTIALS_H

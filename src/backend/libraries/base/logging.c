@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: logging.c
- * Brief: Implementation of logging methods.
- *  
- * Copyright:
- * Copyright (C) 2017-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2017-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of logging methods.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: xmlutils.h
- * Brief: Simple XML reader.
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Simple XML reader.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

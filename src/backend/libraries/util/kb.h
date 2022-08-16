@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: kb.h
- * Brief: Knowledge base management API - Redis backend.
- *  
- * Copyright:
- * Copyright (C) 2014-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Knowledge base management API - Redis backend.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

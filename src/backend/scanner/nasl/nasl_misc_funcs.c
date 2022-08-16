@@ -38,7 +38,7 @@
 
 #include <errno.h> /* for errno */
 #include <glib.h>
-#include "../../libraries/util/compressutils.h" /* for gvm_uncompress */
+#include "../../libraries/util/compressutils.h" /* for mgn_uncompress */
 #include "../../libraries/util/kb.h"            /* for KB_TYPE_STR */
 #include <stdlib.h>                 /* for lrand48 */
 #include <string.h>                 /* for bzero */
@@ -819,7 +819,7 @@ nasl_gunzip (lex_ctxt *lexic)
   if (datalen <= 0)
     return NULL;
 
-  uncompressed = gvm_uncompress (data, datalen, &uncomplen);
+  uncompressed = mgn_uncompress (data, datalen, &uncomplen);
   if (uncompressed == NULL)
     return NULL;
 
@@ -848,13 +848,13 @@ nasl_gzip (lex_ctxt *lexic)
   headerformat = get_str_var_by_name (lexic, "headformat");
   if (!g_strcmp0 (headerformat, "gzip"))
     {
-      compressed = gvm_compress_gzipheader (data, datalen, &complen);
+      compressed = mgn_compress_gzipheader (data, datalen, &complen);
       if (compressed == NULL)
         return NULL;
     }
   else
     {
-      compressed = gvm_compress (data, datalen, &complen);
+      compressed = mgn_compress (data, datalen, &complen);
       if (compressed == NULL)
         return NULL;
     }

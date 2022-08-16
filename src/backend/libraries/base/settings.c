@@ -1,12 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * settings.c
- *
- * Implementation of API to handle configuration file management
- *  
- * Copyright:
- * Copyright (C) 2010-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2010-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of API to handle configuration file management
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

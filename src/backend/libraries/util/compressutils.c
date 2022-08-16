@@ -1,17 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: compressutils.c
- * Brief: Functions related to data compression (gzip format.)
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Functions related to data compression (gzip format.)
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-/**
- * @brief For z_const to be defined as const.
- */
 #if !defined(ZLIB_CONST)
 #define ZLIB_CONST
 #endif
@@ -31,7 +25,7 @@
  * @return Pointer to compressed data if success, NULL otherwise.
  */
 void *
-gvm_compress (const void *src, unsigned long srclen, unsigned long *dstlen)
+mgn_compress (const void *src, unsigned long srclen, unsigned long *dstlen)
 {
   unsigned long buflen = srclen * 2;
 
@@ -99,7 +93,7 @@ gvm_compress (const void *src, unsigned long srclen, unsigned long *dstlen)
  * @return Pointer to uncompressed data if success, NULL otherwise.
  */
 void *
-gvm_uncompress (const void *src, unsigned long srclen, unsigned long *dstlen)
+mgn_uncompress (const void *src, unsigned long srclen, unsigned long *dstlen)
 {
   unsigned long buflen = srclen * 2;
 
@@ -169,7 +163,7 @@ gvm_uncompress (const void *src, unsigned long srclen, unsigned long *dstlen)
  * @return Pointer to compressed data if success, NULL otherwise.
  */
 void *
-gvm_compress_gzipheader (const void *src, unsigned long srclen,
+mgn_compress_gzipheader (const void *src, unsigned long srclen,
                          unsigned long *dstlen)
 {
   unsigned long buflen = srclen * 2;

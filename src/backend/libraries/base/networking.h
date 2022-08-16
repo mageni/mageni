@@ -1,16 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: networking.h
- * Brief: Networking related API.
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of networking related API.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-#ifndef _GVM_NETWORKING_H
-#define _GVM_NETWORKING_H
+#ifndef MAGENI_NETWORKING_H
+#define MAGENI_NETWORKING_H
 
 #include "array.h" /* for array_t */
 
@@ -100,4 +97,4 @@ port_in_port_ranges (int, port_protocol_t, array_t *);
 int
 ipv6_is_enabled ();
 
-#endif /* not _GVM_NETWORKING_H */
+#endif /* not MAGENI_NETWORKING_H */

@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: networking.c
- * Brief: Implementation of GVM Networking related API.
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of networking related API.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

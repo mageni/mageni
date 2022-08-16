@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: authutils.c
- * Brief: Authentication mechanism(s).
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Authentication mechanism(s).
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
@@ -39,7 +36,7 @@ static gboolean initialized = FALSE;
  * @return 1 if enabled, else 0.
  */
 int
-gvm_auth_ldap_enabled ()
+mgn_auth_ldap_enabled ()
 {
 #ifdef ENABLE_LDAP_AUTH
   return 1;
@@ -54,7 +51,7 @@ gvm_auth_ldap_enabled ()
  * @return 1 if enabled, else 0.
  */
 int
-gvm_auth_radius_enabled ()
+mgn_auth_radius_enabled ()
 {
 #ifdef ENABLE_RADIUS_AUTH
   return 1;
@@ -87,11 +84,11 @@ auth_method_name (auth_method_t method)
  * @return 0 success, -1 error.
  */
 int
-gvm_auth_init ()
+mgn_auth_init ()
 {
   if (initialized == TRUE)
     {
-      g_warning ("gvm_auth_init called a second time.");
+      g_warning ("mgn_auth_init called a second time.");
       return -1;
     }
 
@@ -227,7 +224,7 @@ get_password_hashes (const gchar *password)
  * @return 0 authentication success, 1 authentication failure, -1 error.
  */
 int
-gvm_authenticate_classic (const gchar *username, const gchar *password,
+mgn_authenticate_classic (const gchar *username, const gchar *password,
                           const gchar *hash_arg)
 {
   int gcrypt_algorithm = GCRY_MD_MD5; // FIX whatever configure used

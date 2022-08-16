@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: osp.c
- * Brief: API for Open Scanner Protocol communication.
- *  
- * Copyright:
- * Copyright (C) 2014-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: API for Open Scanner Protocol communication.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

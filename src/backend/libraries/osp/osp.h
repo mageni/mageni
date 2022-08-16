@@ -1,16 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: osp.h
- * Brief: API for Open Scanner Protocol communication.
- *  
- * Copyright:
- * Copyright (C) 2014-2019 Greenbone Networks GmbH
- * Copyright (C) 2022, Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: API for Open Scanner Protocol communication.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 
-#ifndef _GVM_OSP_H
-#define _GVM_OSP_H
+#ifndef MAGENI_OSP_H
+#define MAGENI_OSP_H
 
 #include <glib.h> /* for GHashTable, GSList */
 

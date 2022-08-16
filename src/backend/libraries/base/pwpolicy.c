@@ -1,21 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * pwpolicy.c
- *
- * Check passwords against a list of pattern
- *  
- * Copyright:
- * Copyright (C) 2013-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
- * 
- */
-
 /**
- * @file
- * @brief Check passwords against a list of pattern
- *
- * See \ref PWPOLICY_FILE_NAME for a syntax description of the pattern
- * file.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2013-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Check passwords against a list of pattern
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "pwpolicy.h"

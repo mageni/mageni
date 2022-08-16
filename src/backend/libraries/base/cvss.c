@@ -1,13 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: cvss.c
- * Brief: CVSS utility functions
- *  
- * Copyright:
- * Copyright (C) 2012-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2012-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: CVSS utility functions
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
+
 
 #include <glib.h>
 #include <string.h>

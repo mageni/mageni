@@ -1,11 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: nvti.c
- * Brief: Implementation of API to handle VIPER (Vulnerability Information Programming Electronc Routine) datasets
- *  
- * Copyright:
- * Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of API to handle VIPER (Vulnerability Information Programming Electronc Routine) datasets
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
 

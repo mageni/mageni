@@ -1,14 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
-/*
- * Name: prefs.c
- * Brief: Implementation of API to handle globally stored preferences.
- *  
- * Copyright:
- * Copyright (C) 2014-2019 Greenbone Networks GmbH
- * Copyright (C) 2022 Mageni Security LLC
+/**
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright 2014-2019 Greenbone Networks GmbH
+ * SPDX-FileComment: Implementation of API to handle globally stored preferences.
+ * SPDX-FileContributor: Mageni Security LLC
  * 
  */
-
 
 #include "settings.h"
 #include <glib.h>  
