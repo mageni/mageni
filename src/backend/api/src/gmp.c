@@ -7,10 +7,10 @@
  */
 
 #include "gmp.h"
-#include "gmp_base.h"
-#include "gmp_delete.h"
-#include "gmp_get.h"
-#include "gmp_tickets.h"
+#include "api_base.h"
+#include "api_delete.h"
+#include "api_get.h"
+#include "api_tickets.h"
 #include "manage.h"
 #include "manage_acl.h"
 #include "utils.h"

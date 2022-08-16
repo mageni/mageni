@@ -57,10 +57,10 @@ add_executable (
     comm.c
     otp.c
     gmp.c
-    gmp_base.c
-    gmp_delete.c
-    gmp_get.c
-    gmp_tickets.c
+    api_base.c
+    api_delete.c
+    api_get.c
+    api_tickets.c
 )
 
 target_link_libraries (

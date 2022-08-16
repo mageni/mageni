@@ -20,7 +20,7 @@
 #include "utils.h"
 /* TODO This is for buffer_get_filter_xml, for print_report_xml_start.  We
  *      should not be generating XML in here, that should be done in gmp_*.c. */
-#include "gmp_get.h"
+#include "api_get.h"
 
 #include <arpa/inet.h>
 #include <assert.h>
