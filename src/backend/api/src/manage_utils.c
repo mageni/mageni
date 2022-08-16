@@ -8,12 +8,12 @@
 
 #include "manage_utils.h"
 
-#include <assert.h> /* for assert */
+#include <assert.h>
 #include "../../libraries/base/hosts.h"
 #include "../../libraries/util/uuidutils.h"
-#include <stdio.h>  /* for sscanf */
-#include <stdlib.h> /* for getenv */
-#include <string.h> /* for strcmp */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #undef G_LOG_DOMAIN
 /**

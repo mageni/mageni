@@ -12,9 +12,7 @@
 #include "manage.h"
 #include "manage_utils.h"
 
-#include "../../libraries/util/xmlutils.h" /* for entity_t */
-
-/* Internal types and preprocessor definitions. */
+#include "../../libraries/util/xmlutils.h"
 
 /**
  * @brief UUID of 'Full and fast' config.

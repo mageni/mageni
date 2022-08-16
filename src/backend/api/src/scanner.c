@@ -15,7 +15,7 @@
 
 #include <assert.h>
 #include <dirent.h>
-#include <errno.h> /* for errno */
+#include <errno.h>
 #include <fcntl.h>
 #include "../../libraries/util/serverutils.h"
 #include <sys/stat.h>

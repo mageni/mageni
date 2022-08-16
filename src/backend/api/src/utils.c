@@ -7,9 +7,7 @@
  */
 
 #define _XOPEN_SOURCE
-/**
- * @brief Needed for nanosleep.
- */
+
 #define _POSIX_C_SOURCE 199309L
 
 #include "utils.h"

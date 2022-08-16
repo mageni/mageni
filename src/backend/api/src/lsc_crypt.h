@@ -11,7 +11,6 @@
 
 #include <glib.h>
 
-/* (Defined in gvmd.c) */
 extern int disable_encrypted_credentials;
 
 struct lsc_crypt_ctx_s;

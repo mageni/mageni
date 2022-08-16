@@ -13,13 +13,13 @@
 
 #include <glib.h>
 #include <gnutls/gnutls.h>
-#include "../../libraries/base/array.h"       /* for array_t */
-#include "../../libraries/base/credentials.h" /* for credentials_t */
-#include "../../libraries/base/networking.h"  /* for port_protocol_t */
-#include "../../libraries/base/nvti.h"        /* for nvti_t */
-#include "../../libraries/osp/osp.h"          /* for osp_connection_t */
-#include "../../libraries/util/authutils.h"   /* for auth_method_t */
-#include "../../libraries/util/serverutils.h" /* for gvm_connection_t */
+#include "../../libraries/base/array.h"
+#include "../../libraries/base/credentials.h"
+#include "../../libraries/base/networking.h"
+#include "../../libraries/base/nvti.h"
+#include "../../libraries/osp/osp.h"
+#include "../../libraries/util/authutils.h"
+#include "../../libraries/util/serverutils.h"
 #include <stdio.h>
 
 /**

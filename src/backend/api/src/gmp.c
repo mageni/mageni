@@ -14,7 +14,6 @@
 #include "manage.h"
 #include "manage_acl.h"
 #include "utils.h"
-/** @todo For access to scanner_t scanner. */
 #include "otp.h"
 
 #include <arpa/inet.h>
