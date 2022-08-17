@@ -16,9 +16,7 @@
 #include <string.h>
 
 #undef G_LOG_DOMAIN
-/**
- * @brief GLib log domain.
- */
+
 #define G_LOG_DOMAIN "md    gmp"
 
 /**
@@ -31,10 +29,7 @@
  *
  * @return 1 if found, else 0.
  */
-int find_attribute (const gchar **attribute_names,
-                const gchar **attribute_values,
-                const char *attribute_name,
-                const gchar **attribute_value)
+int find_attribute (const gchar **attribute_names, const gchar **attribute_values, const char *attribute_name, const gchar **attribute_value)
 {
   while (*attribute_names && *attribute_values)
     if (strcmp (*attribute_names, attribute_name))
@@ -59,11 +54,7 @@ int find_attribute (const gchar **attribute_names,
  *
  * @return 1 if found and appended, else 0.
  */
-int
-append_attribute (const gchar **attribute_names,
-                  const gchar **attribute_values,
-                  const char *attribute_name,
-                  gchar **string)
+int append_attribute (const gchar **attribute_names, const gchar **attribute_values, const char *attribute_name, gchar **string)
 {
   const gchar *attribute;
   if (find_attribute (
@@ -82,8 +73,7 @@ append_attribute (const gchar **attribute_names,
  * @param[in]  format  Format string for XML.
  * @param[in]  ...     Arguments for format string.
  */
-void
-buffer_xml_append_printf (GString *buffer, const char *format, ...)
+void buffer_xml_append_printf (GString *buffer, const char *format, ...)
 {
   va_list args;
   gchar *msg;
@@ -105,8 +95,7 @@ buffer_xml_append_printf (GString *buffer, const char *format, ...)
  *
  * @return TRUE if send to client failed, else FALSE.
  */
-gboolean
-send_to_client (const char *msg,
+gboolean send_to_client (const char *msg,
                 int (*user_send_to_client) (const char *, void *),
                 void *user_send_to_client_data)
 {
@@ -125,11 +114,7 @@ send_to_client (const char *msg,
  *
  * @return TRUE if out of space in to_client, else FALSE.
  */
-gboolean
-send_element_error_to_client (const char *command,
-                              const char *element,
-                              int (*write_to_client) (const char *, void *),
-                              void *write_to_client_data)
+gboolean send_element_error_to_client (const char *command, const char *element, int (*write_to_client) (const char *, void *), void *write_to_client_data)
 {
   gchar *msg;
   gboolean ret;
@@ -154,11 +139,7 @@ send_element_error_to_client (const char *command,
  *
  * @return TRUE if out of space in to_client, else FALSE.
  */
-gboolean
-send_find_error_to_client (const char *command,
-                           const char *type,
-                           const char *id,
-                           gmp_parser_t *gmp_parser)
+gboolean send_find_error_to_client (const char *command, const char *type, const char *id, gmp_parser_t *gmp_parser)
 {
   gchar *msg;
   gboolean ret;
@@ -179,8 +160,7 @@ send_find_error_to_client (const char *command,
  *
  * @param [out]  error  The error.
  */
-void
-error_send_to_client (GError **error)
+void error_send_to_client (GError **error)
 {
   g_debug ("   send_to_client out of space in to_client");
   g_set_error (error,
@@ -194,8 +174,7 @@ error_send_to_client (GError **error)
  *
  * @param [out]  error  The error.
  */
-void
-internal_error_send_to_client (GError **error)
+void internal_error_send_to_client (GError **error)
 {
   g_set_error (error, G_MARKUP_ERROR, G_MARKUP_ERROR_PARSE, "Internal Error.");
 }
@@ -209,8 +188,7 @@ internal_error_send_to_client (GError **error)
  * @param[in]   action      Action done.
  * @param[in]   fail        Whether it is a fail event.
  */
-static void
-log_event_internal (const char *type,
+static void log_event_internal (const char *type,
                     const char *type_name,
                     const char *id,
                     const char *action,
@@ -271,8 +249,7 @@ log_event_internal (const char *type,
  * @param[in]   id          Resource id.
  * @param[in]   action      Action done.
  */
-void
-log_event (const char *type,
+void log_event (const char *type,
            const char *type_name,
            const char *id,
            const char *action)
