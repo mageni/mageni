@@ -37,6 +37,9 @@ jobs:
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
     steps:
+    - name: SLSA Build Provenance Action
+      uses: philips-labs/slsa-provenance-action@v0.7.2
+
     - name: Checkout repository
       uses: actions/checkout@v3
 
