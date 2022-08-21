@@ -1,48 +1,32 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
- * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
- *
- * SPDX-License-Identifier: GPL-2.0-only
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file comm.c
- * @brief Communication manager; it manages the NTP Protocol version 1.0
- * and 1.1.
+ * SPDX-License-Identifier: GPL-2.0-only
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2006 Software in the Public Interest, Inc.
+ * SPDX-FileCopyrightText: Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
+ * SPDX-FileComment: Communication manager that manages the NTP Protocol version 1.0 and 1.1.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "comm.h"
 
-#include "../misc/network.h"        /* for recv_line */
-#include "../misc/nvt_categories.h" /* for ACT_INIT */
+#include "../misc/network.h"
+#include "../misc/nvt_categories.h"
 #include "../misc/plugutils.h"
 #include "../nasl/nasl.h"
 #include "ntp.h"
-#include "pluginload.h" /* for current_loading_plugins */
+#include "pluginload.h"
 #include "pluginscheduler.h"
 #include "sighand.h"
 #include "utils.h"
 
-#include <errno.h> /* for errno */
+#include <errno.h>
 #include <glib.h>
-#include "../../libraries/base/prefs.h"     /* for preferences_get() */
-#include "../../libraries/util/nvticache.h" /* for nvticache_t */
-#include <stdio.h>              /* for FILE */
-#include <stdlib.h>             /* for atoi() */
-#include <string.h>             /* for strchr() */
+#include "../../libraries/base/prefs.h"
+#include "../../libraries/util/nvticache.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #undef G_LOG_DOMAIN
 /**

@@ -1,72 +1,45 @@
-/* 
- * Most new code since 2020 by Mageni Security LLC
- * Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
- * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
- *
+/**
  * SPDX-License-Identifier: GPL-2.0-only
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2006 Software in the Public Interest, Inc.
+ * SPDX-FileCopyrightText: Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
+ * SPDX-FileComment: Scanner main module, runs the scanner.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
-/**
- * @mainpage
- *
- * @section Introduction
- * @verbinclude README.md
- *
- * @section license License Information
- * @verbinclude COPYING
- */
+#include "../misc/plugutils.h"
+#include "../misc/vendorversion.h"
+#include "attack.h"
+#include "comm.h"
+#include "ntp.h"
+#include "pluginlaunch.h"
+#include "processes.h"
+#include "sighand.h"
+#include "utils.h"
 
-/**
- * @file
- * OpenVAS Scanner main module, runs the scanner.
- */
-
-#include "../misc/plugutils.h"     /* nvticache_free */
-#include "../misc/vendorversion.h" /* for vendor_version_set */
-#include "attack.h"                /* for attack_network */
-#include "comm.h"                  /* for comm_loading */
-#include "ntp.h"                   /* for ntp_timestamp_scan_starts */
-#include "pluginlaunch.h"          /* for init_loading_shm */
-#include "processes.h"             /* for create_process */
-#include "sighand.h"               /* for openvas_signal */
-#include "utils.h"                 /* for wait_for_children1 */
-
-#include <errno.h>  /* for errno() */
-#include <fcntl.h>  /* for open() */
-#include <gcrypt.h> /* for gcry_control */
+#include <errno.h>
+#include <fcntl.h>
+#include <gcrypt.h>
 #include <glib.h>
 #include <grp.h>
-#include "../../libraries/base/logging.h" /* for setup_log_handler, load_log_configuration, free_log_configuration*/
-#include "../../libraries/base/nvti.h"      /* for prefs_get() */
-#include "../../libraries/base/pidfile.h"   /* for pidfile_create */
-#include "../../libraries/base/prefs.h"     /* for prefs_get() */
-#include "../../libraries/base/proctitle.h" /* for proctitle_set */
-#include "../../libraries/util/kb.h"        /* for KB_PATH_DEFAULT */
-#include "../../libraries/util/nvticache.h" /* nvticache_free */
-#include "../../libraries/util/uuidutils.h" /* gvm_uuid_make */
-#include <netdb.h>              /* for addrinfo */
+#include "../../libraries/base/logging.h"
+#include "../../libraries/base/nvti.h"
+#include "../../libraries/base/pidfile.h"
+#include "../../libraries/base/prefs.h"
+#include "../../libraries/base/proctitle.h"
+#include "../../libraries/util/kb.h"
+#include "../../libraries/util/nvticache.h"
+#include "../../libraries/util/uuidutils.h"
+#include <netdb.h>
 #include <pwd.h>
-#include <signal.h> /* for SIGTERM */
-#include <stdio.h>  /* for fflush() */
-#include <stdlib.h> /* for atoi() */
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/un.h>
-#include <sys/wait.h> /* for waitpid */
-#include <unistd.h>   /* for close() */
+#include <sys/wait.h>
+#include <unistd.h>
 
 #ifdef GIT_REV_AVAILABLE
 #include "gitrevision.h"

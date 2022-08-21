@@ -1,32 +1,17 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
- * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
- *
- * SPDX-License-Identifier: GPL-2.0-only
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file pluginlaunch.c
- * @brief Manages the launching of plugins within processes.
+ * SPDX-License-Identifier: GPL-2.0-only
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2006 Software in the Public Interest, Inc.
+ * SPDX-FileCopyrightText: Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
+ * SPDX-FileComment: Manages the launching of plugins within processes.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "pluginlaunch.h"
 
 #include "../misc/network.h"
-#include "../misc/nvt_categories.h" /* for ACT_SCANNER */
+#include "../misc/nvt_categories.h"
 #include "pluginload.h"
 #include "pluginscheduler.h"
 #include "plugs_req.h"
@@ -34,16 +19,16 @@
 #include "sighand.h"
 #include "utils.h"
 
-#include <errno.h>          /* for errno() */
-#include "../../libraries/base/prefs.h" /* for prefs_get_bool() */
+#include <errno.h>
+#include "../../libraries/base/prefs.h"
 #include "../../libraries/util/nvticache.h"
-#include <stdio.h>  /* for perror() */
-#include <stdlib.h> /* for atoi() */
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <strings.h>  /* for bzero() */
-#include <sys/time.h> /* for gettimeofday() */
-#include <sys/wait.h> /* for waitpid() */
-#include <unistd.h>   /* for close() */
+#include <strings.h>
+#include <sys/time.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
 #undef G_LOG_DOMAIN
 /**

@@ -1,39 +1,24 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Portions Copyright (C) 2006 Software in the Public Interest, Inc.
- * Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
- *
- * SPDX-License-Identifier: GPL-2.0-only
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * version 2 as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file hosts.c
- * @brief Basically creates a new process for each tested host.
+ * SPDX-License-Identifier: GPL-2.0-only
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2006 Software in the Public Interest, Inc.
+ * SPDX-FileCopyrightText: Based on work Copyright (C) 1998 - 2006 Tenable Network Security, Inc.
+ * SPDX-FileComment: Basically creates a new process for each tested host.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
-#include "hosts.h" /* for hosts_new() */
+#include "hosts.h"
 
-#include "../misc/network.h" /* for internal_recv */
-#include "ntp.h"             /* for ntp_parse_input() */
-#include "utils.h"           /* for data_left() */
+#include "../misc/network.h"
+#include "ntp.h"
+#include "utils.h"
 
-#include <errno.h>    /* for errno() */
-#include <glib.h>     /* for g_free() */
-#include <string.h>   /* for strlen() */
-#include <sys/wait.h> /* for waitpid() */
-#include <unistd.h>   /* for close() */
+#include <errno.h>
+#include <glib.h>
+#include <string.h>
+#include <sys/wait.h>
+#include <unistd.h>
 
 #undef G_LOG_DOMAIN
 /**
