@@ -1,6 +1,6 @@
 /**
  * SPDX-License-Identifier: GPL-2.0-or-later
- * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Copyright (C) 2009-2019 Greenbone Networks GmbH
  * SPDX-FileComment: Implements Mageni Transfer Protocol.
  * SPDX-FileContributor: Mageni Security LLC
  * 
