@@ -12,16 +12,12 @@
 #define NUM_CLIENTS 128
 
 #undef G_LOG_DOMAIN
-/**
- * @brief GLib logging domain.
- */
+
 #define G_LOG_DOMAIN "lib  misc"
 
-/** Shared pcap_t's. */
 static pcap_t *pcaps[NUM_CLIENTS];
 
-void
-print_pcap_error (pcap_t *p, char *prefix)
+void print_pcap_error (pcap_t *p, char *prefix)
 {
   char *msg = pcap_geterr (p);
   g_message ("%s : %s", prefix, msg);
@@ -32,8 +28,7 @@ print_pcap_error (pcap_t *p, char *prefix)
  * @return -1 in case of error, index of the opened pcap_t in pcaps
  *         otherwise.
  */
-int
-bpf_open_live (char *iface, char *filter)
+int bpf_open_live (char *iface, char *filter)
 {
   char errbuf[PCAP_ERRBUF_SIZE];
   pcap_t *ret;
@@ -100,8 +95,7 @@ bpf_open_live (char *iface, char *filter)
   return i;
 }
 
-u_char *
-bpf_next_tv (int bpf, int *caplen, struct timeval *tv)
+u_char * bpf_next_tv (int bpf, int *caplen, struct timeval *tv)
 {
   u_char *p = NULL;
   struct pcap_pkthdr head;
@@ -131,22 +125,19 @@ bpf_next_tv (int bpf, int *caplen, struct timeval *tv)
   return p;
 }
 
-u_char *
-bpf_next (int bpf, int *caplen)
+u_char * bpf_next (int bpf, int *caplen)
 {
   struct timeval tv = {0, 100000};
 
   return bpf_next_tv (bpf, caplen, &tv);
 }
 
-int
-bpf_datalink (int bpf)
+int bpf_datalink (int bpf)
 {
   return pcap_datalink (pcaps[bpf]);
 }
 
-void
-bpf_close (int bpf)
+void bpf_close (int bpf)
 {
   pcap_close (pcaps[bpf]);
   pcaps[bpf] = NULL;

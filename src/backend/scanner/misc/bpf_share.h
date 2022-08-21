@@ -7,24 +7,19 @@
  * 
  */
 
-#ifndef OPENVAS_BPF_SHARE_H
-#define OPENVAS_BPF_SHARE_H
+#ifndef MAGENI_BPF_SHARE_H
+#define MAGENI_BPF_SHARE_H
 
 #include <sys/types.h>
 
-int
-bpf_open_live (char *, char *);
+int bpf_open_live (char *, char *);
 
-u_char *
-bpf_next (int, int *);
+u_char * bpf_next (int, int *);
 
-u_char *
-bpf_next_tv (int, int *, struct timeval *);
+u_char * bpf_next_tv (int, int *, struct timeval *);
 
-void
-bpf_close (int);
+void bpf_close (int);
 
-int
-bpf_datalink (int);
+int bpf_datalink (int);
 
 #endif
