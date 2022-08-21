@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Dependency Review
         uses: actions/dependency-review-action@v2
+        if: ${{ github.base_ref == 'master' }}
         with:
           # Possible values: "critical", "high", "moderate", "low" 
           fail-on-severity: critical
