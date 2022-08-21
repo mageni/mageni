@@ -1,32 +1,16 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Based on work Copyright (C) 1998 - 2002 Renaud Deraison
- *               SSL Support Copyright (C) 2001 Michel Arboi
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file network.c
- * @brief Network Functions.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Based on work Copyright (C) 1998 - 2002 Renaud Deraison
+ * SPDX-FileCopyrightText: SSL Support Copyright (C) 2001 Michel Arboi
+ * SPDX-FileComment: Network Functions.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
-#include "../nasl/nasl_debug.h" /* for nasl_*_filename */
+#include "../nasl/nasl_debug.h"
 
-#include <arpa/inet.h> /* for inet_pton */
+#include <arpa/inet.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <glib.h>
@@ -35,15 +19,15 @@
 #include "../../libraries/base/logging.h"
 #include "../../libraries/base/networking.h"
 #include "../../libraries/base/prefs.h"
-#include "../../libraries/util/kb.h"          /* for kb_item_get_str() */
-#include "../../libraries/util/serverutils.h" /* for load_gnutls_file */
+#include "../../libraries/util/kb.h"         
+#include "../../libraries/util/serverutils.h"
 #include <signal.h>
 #include <stdarg.h>
-#include <stdio.h> /* for FILE */
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include </usr/include/strings.h>
-#include <sys/time.h> /* for gettimeofday */
+#include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
 
