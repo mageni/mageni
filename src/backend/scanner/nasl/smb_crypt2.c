@@ -1,29 +1,13 @@
-/* Copyright (C) Andrew Tridgell 1992-1998
- * Modified by Jeremy Allison 1995.
- * Copyright (C) Jeremy Allison 1995-2000.
- * Copyright (C) Luke Kennethc Casson Leighton 1996-2000.
- * Copyright (C) Andrew Bartlett <abartlet@samba.org> 2002-2003
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file smb_crypt2.c
- * @brief Unix SMB/CIFS implementation. SMB parameters and setup
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright (C) Andrew Tridgell 1992-1998
+ * SPDX-FileCopyrightText: Modified by Jeremy Allison 1995.
+ * SPDX-FileCopyrightText: Copyright (C) Jeremy Allison 1995-2000.
+ * SPDX-FileCopyrightText: Copyright (C) Luke Kennethc Casson Leighton 1996-2000.
+ * SPDX-FileCopyrightText: Copyright (C) Andrew Bartlett <abartlet@samba.org> 2002-2003
+ * SPDX-FileComment: This file will be deleted as SMBClient/RPCClient will take this function.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "hmacmd5.h"
