@@ -41,7 +41,7 @@ set (FILES
   genrand.c
   hmacmd5.c
   iconv.c
-  lint.c
+  nasl_lint.c
   md4.c
   md5.c
   nasl.c
@@ -147,10 +147,3 @@ install (
   LIBRARY DESTINATION ${LIBDIR}
   ARCHIVE DESTINATION ${LIBDIR}
 )
-
-#install (FILES ${CMAKE_SOURCE_DIR}/doc/openvas-nasl.1
-#         DESTINATION ${DATADIR}/man/man1 )
-#
-#install (FILES ${CMAKE_SOURCE_DIR}/doc/openvas-nasl-lint.1
-#         DESTINATION ${DATADIR}/man/man1 )
-## End

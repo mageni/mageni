@@ -1,27 +1,9 @@
-/* Copyright (C) Andrew Tridgell 1997-1998
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file md4.c
- * @brief Unix SMB/CIFS implementation.
- *
- * A implementation of MD4 designed for use in the SMB authentication protocol
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Copyright (C) Andrew Tridgell 1997-1998
+ * SPDX-FileComment: Unix SMB/CIFS implementation. A implementation of MD4 designed for use in the SMB authentication protocol
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
 #include "md4.h"
@@ -32,11 +14,6 @@
 #ifndef uint32
 #define uint32 uint32_t
 #endif
-
-/* NOTE: This code makes no attempt to be fast!
-
-   It assumes that a int is at least 32 bits long
-*/
 
 static uint32 A, B, C, D;
 

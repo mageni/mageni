@@ -1,40 +1,12 @@
-/* Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
- * Based on work Copyright (C) Jeremy Allison 2001
- *
- * SPDX-License-Identifier: GPL-2.0-or-later
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 /**
- * @file genrand.c
- * @brief Unix SMB/CIFS implementation.
- *        Functions to create reasonable random numbers for crypto use.
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: Portions Copyright (C) 2009-2019 Greenbone Networks GmbH
+ * SPDX-FileCopyrightText: Based on work Copyright (C) Jeremy Allison 2001
+ * SPDX-FileComment: Unix SMB/CIFS implementation: Functions to create reasonable random numbers for crypto use.
+ * SPDX-FileContributor: Mageni Security LLC
+ * 
  */
 
-/*
-   Modified for OpenVAS by Preeti Subramanian <spreeti@secpod.com>
-   MODIFICATION: This file has only those functions that cater to the
-   requirements of OpenVAS, remaining functions are removed
-                  * BOOL is changed to bool
-                  * sys_open is changed to open
-                  * sys_getpid is changed to getpid
-                  * In do_reseed function, adding secret file contents of smb
-                    passwd file not required(removed) and add in the root
-                    encrypted password note required(removed)
-*/
 #include "byteorder.h"
 #include "md4.h"
 #include "proto.h"
