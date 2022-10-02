@@ -117,14 +117,11 @@
                         <div class="flex justify-between space-x-2">
                             <div>
                                 @if($selectPage || $selected)
-                                    <x-dropdown label="Bulk Actions">
-                                        <x-dropdown.item wire:click="exportSelected" type="button" class="flex items-center space-x-2">
-                                            <x-icon.download class="text-gray-400" /><span>Export</span>
-                                        </x-dropdown.item>
-                                        <x-dropdown.item wire:click="$toggle('showDeleteModal')" type="button" class="flex items-center space-x-2">
-                                            <x-icon.trash class="text-gray-400"/><span>Delete</span>
-                                        </x-dropdown.item>
-                                    </x-dropdown>
+                                    <div>
+                                        <x-jet-button wire:click="$toggle('showDeleteModal')" class="hover:shadow">
+                                            Delete Scans
+                                        </x-jet-button>
+                                    </div>
                                 @endif
                             </div>
                             
