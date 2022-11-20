@@ -26,7 +26,7 @@
         </script>
 
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        @vite('resources/js/app.js')
     </head>
     <body>
     @if(env('APP_ENV') === 'demo')
