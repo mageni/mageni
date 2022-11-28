@@ -172,7 +172,7 @@
                             <div class="flex-col space-y-4">
                         @endif
                     </div>
-                    @json($selected)
+                    {{-- @json($selected) --}}
                     <x-table class="table-auto">
                         <x-slot name="head">
                             <x-table.heading class="w-6 pr-0">

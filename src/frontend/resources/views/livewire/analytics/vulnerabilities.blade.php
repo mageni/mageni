@@ -46,7 +46,7 @@
                 </dl>
             </div>
 
-            @json($selected)
+            {{-- @json($selected) --}}
 
             <div class="overflow-hidden sm:rounded-lg">
                 <div class="py-4 space-y-4">
