@@ -18,7 +18,6 @@
 <a href="https://codeclimate.com/github/mageni/mageni/maintainability"><img src="https://api.codeclimate.com/v1/badges/6f48e5542ead5e70f9fe/maintainability" /></a>
 <a href="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml"><img src="https://github.com/mageni/mageni/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
 <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fmageni%2Fmageni?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmageni%2Fmageni.svg?type=shield"/></a>
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/mageni/mageni/CodeQL">
 <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/mageni/mageni">
 <a href="https://github.com/mageni/mageni/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/mageni/mageni"></a>
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/mageni/mageni">
