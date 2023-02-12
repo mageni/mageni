@@ -2,26 +2,7 @@
     <x-headers.reports :data="$taskName->name"/>
     <div x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'vulnerabilities' }" id="tab_wrapper">
         <main class="py-10" wire:poll.keep-alive>
-        @if(env('APP_ENV') === 'demo')
-        <div class="max-w-full mx-auto mb-4 -mt-4 sm:px-6 lg:px-6">
-            <div class="p-4 bg-indigo-600 rounded-md">
-                <div class="flex">
-                <div class="flex-shrink-0">
-                    <!-- Heroicon name: solid/information-circle -->
-                    <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="flex-1 ml-3 md:flex md:justify-between">
-                    <p class="text-sm text-white">Thanks for using the Live Demo. Some features are disabled on purpose to prevent accidental scans.</p>
-                    <p class="mt-3 text-sm md:mt-0 md:ml-6">
-                    <a href="{{ env("STRIPE_URL") }}" target="_blank" class="font-medium text-white whitespace-nowrap hover:text-indigo-50">Get Started For Free <span aria-hidden="true">&rarr;</span></a>
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
-        @endif
+        
         <!-- Page header -->
         <div class="max-w-full pr-4 mx-auto sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-full lg:px-6">
             <div class="flex items-center space-x-5">

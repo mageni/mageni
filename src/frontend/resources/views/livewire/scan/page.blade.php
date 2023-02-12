@@ -1,57 +1,10 @@
 <div>
     <x-headers.scan />
     <main class="py-10">
-        @if(env('APP_ENV') === 'demo')
-            <div class="max-w-full mx-auto mb-4 -mt-4 sm:px-6 lg:px-6">
-                <div class="p-4 bg-indigo-600 rounded-md">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <!-- Heroicon name: solid/information-circle -->
-                            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div class="flex-1 ml-3 md:flex md:justify-between">
-                            <p class="text-sm text-white">
-                                Thanks for using the Live Demo. Some features are disabled on purpose to prevent accidental scans.
-                            </p>
-                            <p class="mt-3 text-sm md:mt-0 md:ml-6">
-                                <a href="{{ env("STRIPE_URL") }}" target="_blank" class="font-medium text-white whitespace-nowrap hover:text-indigo-50">Get Started For Free <span aria-hidden="true">&rarr;</span></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endif
 
         <x-notification />
 
         <div class="max-w-full mx-auto sm:px-6 lg:px-6">
-            
-            @if($plan === 'Free')
-            <div class="bg-yellow-50 border-l-4 mb-5 border-yellow-400 p-4">
-                <div class="flex">
-                <div class="flex-shrink-0">
-                    <!-- Heroicon name: solid/exclamation -->
-                    <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="ml-3">
-                    <p class="text-sm text-yellow-700">
-                        You are in the Community plan.
-                        <a 
-                            href="https://buy.stripe.com/7sI7sQ0gs5MK8dq288" 
-                            target="_blank"
-                            class="font-medium underline text-yellow-700 hover:text-yellow-600"
-                        > 
-                            Subscribe to unlock more features like notifications, schedules, migrations, manage users, and support
-                        </a>
-                    </p>
-                </div>
-                </div>
-            </div>
-            @endif
             
             <div>
                 <h3 class="text-lg font-medium leading-6 text-gray-900">Scans</h3>
@@ -1595,32 +1548,6 @@
 
                         @elseif($currentPage === 4)
 
-                        {{-- Page 4 Starts --}}
-
-                        @if($plan === 'Free')
-                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                            <div class="flex">
-                            <div class="flex-shrink-0">
-                                <!-- Heroicon name: solid/exclamation -->
-                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm text-yellow-700">
-                                    You are in the Community plan.
-                                    <a 
-                                        href="https://buy.stripe.com/7sI7sQ0gs5MK8dq288" 
-                                        target="_blank"
-                                        class="font-medium underline text-yellow-700 hover:text-yellow-600"
-                                    > 
-                                        Subscribe to unlock schedules.
-                                    </a>
-                                </p>
-                            </div>
-                            </div>
-                        </div>
-                        @endif
                         
                         <dl class="grid grid-cols-1 py-4 gap-x-4 gap-y-8 sm:grid-cols-2">
                             <div class="sm:col-span-1">
@@ -1650,7 +1577,7 @@
                                 @endif
                             </div>
                             <div class="sm:col-span-1">
-                                <select @if($plan === 'Free') {{ 'disabled'}} @endif  wire:key="toggleSchedule-0" wire:model="toggleSchedule" id="toggleSchedule" name="toggleSchedule" class="block py-2 pl-3 pr-10 mt-1 text-base border-gray-300 rounded-md w-80 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                <select wire:key="toggleSchedule-0" wire:model="toggleSchedule" id="toggleSchedule" name="toggleSchedule" class="block py-2 pl-3 pr-10 mt-1 text-base border-gray-300 rounded-md w-80 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                     <option value="No">No</option>
                                     <option value="Yes">Yes</option>
                                 </select>
@@ -1765,31 +1692,6 @@
 
                         {{-- Page 4 Ends --}}
                         @elseif($currentPage === 5)
-                        
-                        @if($plan === 'Free')
-                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                            <div class="flex">
-                            <div class="flex-shrink-0">
-                                <!-- Heroicon name: solid/exclamation -->
-                                <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm text-yellow-700">
-                                    You are in the Community plan.
-                                    <a 
-                                        href="https://buy.stripe.com/7sI7sQ0gs5MK8dq288" 
-                                        target="_blank"
-                                        class="font-medium underline text-yellow-700 hover:text-yellow-600"
-                                    > 
-                                        Subscribe to unlock email notifications.
-                                    </a>
-                                </p>
-                            </div>
-                            </div>
-                        </div>
-                        @endif
 
                         <div class="mt-1 overflow-hidden bg-white sm:rounded-lg">
                             <div class="py-5">
@@ -1804,7 +1706,6 @@
                                     </div>
                                     <div class="sm:col-span-1">
                                         <select 
-                                            @if($plan === 'Free') {{ 'disabled'}} @endif
                                             wire:key="emailNotification-01" 
                                             wire:model="emailNotification" 
                                             id="emailNotification" 
@@ -3164,30 +3065,7 @@
     
                                 @elseif($currentPage === 4)
 
-                                @if($plan === 'Free')
-                                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                                    <div class="flex">
-                                    <div class="flex-shrink-0">
-                                        <!-- Heroicon name: solid/exclamation -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm text-yellow-700">
-                                            You are in the Community plan.
-                                            <a 
-                                                href="https://buy.stripe.com/7sI7sQ0gs5MK8dq288" 
-                                                target="_blank"
-                                                class="font-medium underline text-yellow-700 hover:text-yellow-600"
-                                            > 
-                                                Subscribe to unlock schedules.
-                                            </a>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                @endif
+        
                                 
                                     <dl class="grid grid-cols-1 py-4 gap-x-4 gap-y-8 sm:grid-cols-2">
                                         <div class="sm:col-span-1">
@@ -3252,7 +3130,6 @@
                                         </div>
                                         <div class="sm:col-span-1">
                                             <select 
-                                                @if($plan === 'Free') {{ 'disabled' }} @endif
                                                 wire:key="toggleSchedule-edit" 
                                                 wire:model="toggleSchedule" 
                                                 id="toggleSchedule" 
@@ -3348,31 +3225,7 @@
                                         
                                 @elseif($currentPage === 5)
 
-                                @if($plan === 'Free')
-                                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                                    <div class="flex">
-                                    <div class="flex-shrink-0">
-                                        <!-- Heroicon name: solid/exclamation -->
-                                        <svg class="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm text-yellow-700">
-                                            You are in the Community plan.
-                                            <a 
-                                                href="https://buy.stripe.com/7sI7sQ0gs5MK8dq288" 
-                                                target="_blank"
-                                                class="font-medium underline text-yellow-700 hover:text-yellow-600"
-                                            > 
-                                                Subscribe to unlock schedules.
-                                            </a>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                @endif
-
+         
                                 <div class="mt-1 overflow-hidden bg-white sm:rounded-lg">
                                     <div class="py-5">
                                         <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
@@ -3411,7 +3264,6 @@
                                             <div class="sm:col-span-1">
                                                 @if($hasNotification === 'Yes')
                                                     <select 
-                                                        @if($plan === 'Free') {{ 'disabled' }} @endif
                                                         wire:key="toggleNotification-0" 
                                                         wire:model="toggleNotification" 
                                                         id="toggleNotification" 

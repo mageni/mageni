@@ -8,16 +8,6 @@
 
       <div class="shadow sm:rounded-md sm:overflow-hidden">
         <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
-          <div>
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Plan</h3>
-            <p class="mt-1 text-sm text-gray-500">
-              @if($plan === 'Free')
-                You are on the <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"> Community </span> plan.
-              @else
-                You are on the <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800"> Paid </span> plan.
-              @endif
-            </p>
-          </div>
 
           <div class="grid grid-cols-3 gap-6">
             <div class="col-span-3 sm:col-span-2">

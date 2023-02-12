@@ -1,0 +1,180 @@
+# Copyright (C) 2023 Greenbone Networks GmbH
+# Some text descriptions might be excerpted from (a) referenced
+# source(s), and are Copyright (C) by the respective right holder(s).
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+
+if(description)
+{
+  script_oid("1.3.6.1.4.1.25623.1.1.12.2023.5824.1");
+  script_cve_id("CVE-2022-45403", "CVE-2022-45404", "CVE-2022-45405", "CVE-2022-45406", "CVE-2022-45408", "CVE-2022-45409", "CVE-2022-45410", "CVE-2022-45411", "CVE-2022-45412", "CVE-2022-45414", "CVE-2022-45416", "CVE-2022-45418", "CVE-2022-45420", "CVE-2022-45421", "CVE-2022-46871", "CVE-2022-46872", "CVE-2022-46874", "CVE-2022-46877", "CVE-2022-46878", "CVE-2022-46880", "CVE-2022-46881", "CVE-2022-46882", "CVE-2023-0430", "CVE-2023-23598", "CVE-2023-23599", "CVE-2023-23601", "CVE-2023-23602", "CVE-2023-23603", "CVE-2023-23605");
+  script_tag(name:"creation_date", value:"2023-02-06 15:16:43 +0000 (Mon, 06 Feb 2023)");
+  script_version("2023-02-07T10:08:48+0000");
+  script_tag(name:"last_modification", value:"2023-02-07 10:08:48 +0000 (Tue, 07 Feb 2023)");
+  script_tag(name:"cvss_base", value:"10.0");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:C/I:C/A:C");
+  script_tag(name:"severity_vector", value:"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H");
+  script_tag(name:"severity_origin", value:"NVD");
+  script_tag(name:"severity_date", value:"2023-01-04 21:07:00 +0000 (Wed, 04 Jan 2023)");
+
+  script_name("Ubuntu: Security Advisory (USN-5824-1)");
+  script_category(ACT_GATHER_INFO);
+  script_copyright("Copyright (C) 2023 Greenbone Networks GmbH");
+  script_family("Ubuntu Local Security Checks");
+  script_dependencies("gather-package-list.nasl");
+  script_mandatory_keys("ssh/login/ubuntu_linux", "ssh/login/packages", re:"ssh/login/release=UBUNTU(18\.04\ LTS|20\.04\ LTS|22\.04\ LTS|22\.10)");
+
+  script_xref(name:"Advisory-ID", value:"USN-5824-1");
+  script_xref(name:"URL", value:"https://ubuntu.com/security/notices/USN-5824-1");
+
+  script_tag(name:"summary", value:"The remote host is missing an update for the 'thunderbird' package(s) announced via the USN-5824-1 advisory.");
+
+  script_tag(name:"vuldetect", value:"Checks if a vulnerable package version is present on the target host.");
+
+  script_tag(name:"insight", value:"Multiple security issues were discovered in Thunderbird. If a user were
+tricked into opening a specially crafted website in a browsing context, an
+attacker could potentially exploit these to cause a denial of service,
+obtain sensitive information, bypass security restrictions, cross-site
+tracing, or execute arbitrary code. (CVE-2022-45403, CVE-2022-45404,
+CVE-2022-45405, CVE-2022-45406, CVE-2022-45408, CVE-2022-45409,
+CVE-2022-45410, CVE-2022-45411, CVE-2022-45418, CVE-2022-45420,
+CVE-2022-45421, CVE-2022-46878, CVE-2022-46880, CVE-2022-46881,
+CVE-2022-46882, CVE-2023-23605)
+
+Armin Ebert discovered that Thunderbird did not properly manage memory
+while resolving file symlink. If a user were tricked into opening a
+specially crafted weblink, an attacker could potentially exploit these to
+cause a denial of service. (CVE-2022-45412)
+
+Sarah Jamie Lewis discovered that Thunderbird did not properly manage
+network request while handling HTML emails with certain tags. If a user
+were tricked into opening a specially HTML email, an attacker could
+potentially exploit these issue and load remote content regardless of a
+configuration to block remote content. (CVE-2022-45414)
+
+Erik Kraft, Martin Schwarzl, and Andrew McCreight discovered that
+Thunderbird incorrectly handled keyboard events. An attacker could possibly
+use this issue to perform a timing side-channel attack and possibly figure
+out which keys are being pressed. (CVE-2022-45416)
+
+It was discovered that Thunderbird was using an out-of-date libusrsctp
+library. An attacker could possibly use this library to perform a
+reentrancy issue on Thunderbird. (CVE-2022-46871)
+
+Nika Layzell discovered that Thunderbird was not performing a check on
+paste received from cross-processes. An attacker could potentially
+exploit this to obtain sensitive information. (CVE-2022-46872)
+
+Matthias Zoellner discovered that Thunderbird was not keeping the filename
+ending intact when using the drag-and-drop event. An attacker could
+possibly use this issue to add a file with a malicious extension, leading
+to execute arbitrary code. (CVE-2022-46874)
+
+Hafiizh discovered that Thunderbird was not properly handling fullscreen
+notifications when the window goes into fullscreen mode. An attacker could
+possibly use this issue to spoof the user and obtain sensitive information.
+(CVE-2022-46877)
+
+Tom Schuster discovered that Thunderbird was not performing a validation
+check on GTK drag data. An attacker could potentially exploits this to
+obtain sensitive information. (CVE-2023-23598)
+
+Vadim discovered that Thunderbird was not properly sanitizing a curl
+command output when copying a network request from the developer tools
+panel. An attacker could potentially exploits this to hide and execute
+arbitrary commands. (CVE-2023-23599)
+
+Luan Herrera discovered that Thunderbird was not stopping navigation when
+dragging a URL from a cross-origin iframe into the same tab. An ... [Please see the references for more information on the vulnerabilities]");
+
+  script_tag(name:"affected", value:"'thunderbird' package(s) on Ubuntu 18.04, Ubuntu 20.04, Ubuntu 22.04, Ubuntu 22.10.");
+
+  script_tag(name:"solution", value:"Please install the updated package(s).");
+
+  script_tag(name:"solution_type", value:"VendorFix");
+  script_tag(name:"qod_type", value:"package");
+
+  exit(0);
+}
+
+include("revisions-lib.inc");
+include("pkg-lib-deb.inc");
+
+release = dpkg_get_ssh_release();
+if(!release)
+  exit(0);
+
+res = "";
+report = "";
+
+if(release == "UBUNTU18.04 LTS") {
+
+  if(!isnull(res = isdpkgvuln(pkg:"thunderbird", ver:"1:102.7.1+build2-0ubuntu0.18.04.1", rls:"UBUNTU18.04 LTS"))) {
+    report += res;
+  }
+
+  if(report != "") {
+    security_message(data:report);
+  } else if(__pkg_match) {
+    exit(99);
+  }
+  exit(0);
+}
+
+if(release == "UBUNTU20.04 LTS") {
+
+  if(!isnull(res = isdpkgvuln(pkg:"thunderbird", ver:"1:102.7.1+build2-0ubuntu0.20.04.1", rls:"UBUNTU20.04 LTS"))) {
+    report += res;
+  }
+
+  if(report != "") {
+    security_message(data:report);
+  } else if(__pkg_match) {
+    exit(99);
+  }
+  exit(0);
+}
+
+if(release == "UBUNTU22.04 LTS") {
+
+  if(!isnull(res = isdpkgvuln(pkg:"thunderbird", ver:"1:102.7.1+build2-0ubuntu0.22.04.1", rls:"UBUNTU22.04 LTS"))) {
+    report += res;
+  }
+
+  if(report != "") {
+    security_message(data:report);
+  } else if(__pkg_match) {
+    exit(99);
+  }
+  exit(0);
+}
+
+if(release == "UBUNTU22.10") {
+
+  if(!isnull(res = isdpkgvuln(pkg:"thunderbird", ver:"1:102.7.1+build2-0ubuntu0.22.10.1", rls:"UBUNTU22.10"))) {
+    report += res;
+  }
+
+  if(report != "") {
+    security_message(data:report);
+  } else if(__pkg_match) {
+    exit(99);
+  }
+  exit(0);
+}
+
+exit(0);
