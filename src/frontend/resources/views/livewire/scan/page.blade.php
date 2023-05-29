@@ -128,9 +128,7 @@
                     {{-- @json($selected) --}}
                     <x-table class="table-auto">
                         <x-slot name="head">
-                            <x-table.heading class="w-6 pr-0">
-                                <x-input.checkbox wire:model="selectPage" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
-                            </x-table.heading>
+            
                             <x-table.heading sortable wire:click="sortBy('name')" :direction="$sortField === 'name' ? $sortDirection : null">Name</x-table.heading>
                             <x-table.heading sortable wire:click="sortBy('run_status')" :direction="$sortField === 'run_status' ? $sortDirection : null">Status</x-table.heading>
                             <x-table.heading sortable wire:click="sortBy('schedule')" :direction="$sortField === 'schedule' ? $sortDirection : null">Automatic Run  </x-table.heading>
@@ -140,36 +138,9 @@
                         </x-slot>
                         <x-slot name="body">
                             <div>
-                                @if($selectPage || $selected)
-                                    <x-table.row class="bg-gray-200" wire:key="row-message">
-                                        <x-table.cell colspan="100%">
-                                            @unless($selectAll)
-                                                <div>
-                                                    <span>You have selected <strong>{{ count($selected) }}</strong> tasks, do you want select all <strong>{{ $scans->total() }}</strong>?</span>
-                                                    <x-button.link wire:click="selectAll" class="ml-1 text-blue-500">Select All</x-button.link>
-                                                </div>
-                                            @else
-                                                <div>
-                                                    <span>You have selected all <strong>{{ $scans->total() }}</strong> tasks. <x-button.link wire:click="unSelectAll" class="ml-1 text-blue-500">UnSelect All</x-button.link></span>
-                                                </div>
-                                            @endif
-                                        </x-table.cell>
-                                    </x-table.row>
-                                @endif
-                            </div>
-                            <div>
                                 @if($scans->count() > 0)
                                     @foreach($scans as $scan)
                                         <x-table.row wire:loading.delay.class="opacity-50" wire:target="search">
-                                            <x-table.cell class="pr-0">
-                                                <div wire:key="{{ $loop->index }}">
-                                                    @if($scan->run_status == 4 || $scan->run_status == 3)
-                                                        <input wire:key="{{ $loop->index }}" id="tasks" aria-describedby="checkbox" name="checkbox" type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded cursor-not-allowed focus:ring-blue-500" disabled>
-                                                    @else
-                                                        <input wire:key="{{ $loop->index }}" wire:model="selected" value="{{ $scan->id }}" id="tasks" aria-describedby="tasks-id" name="tasks" type="checkbox" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                                                    @endif
-                                                </div>
-                                            </x-table.cell>
                                             <x-table.cell>
                                                 <div class="flex items-center space-x-3" wire:key="{{ $loop->index }}">
                                                     <div wire:key="{{ $loop->index }}">
