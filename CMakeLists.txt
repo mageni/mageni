@@ -32,8 +32,6 @@ elseif (NOT CMAKE_BUILD_TYPE)
     set (CMAKE_BUILD_TYPE Release)
 endif ()
 
-execute_process (COMMAND sudo chown yeshua:yeshua -R ${PROJECT_SOURCE_DIR}/)
-
 if (CMAKE_SIZEOF_VOID_P EQUAL 8)
     message (STATUS "64-bit is supported.")
 else ()
