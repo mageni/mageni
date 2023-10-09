@@ -90,11 +90,11 @@
                                 Scans
                             </a>
 
-                            <a href="{{ route('reports') }}" class="@if(Request::is('reports') OR Request::is('reports/*')) {{ 'bg-indigo-800' }} @endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            <a href="{{ route('vulnerabilities') }}" class="@if(Request::is('reports') OR Request::is('reports/*')) {{ 'bg-indigo-800' }} @endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                 </svg>
-                                Reports
+                                Vulnerabilities
                             </a>
 
                             {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
@@ -148,7 +148,7 @@
                                         Help
                                     </a>
                         
-                                    <a 
+                                    {{-- <a 
                                         href="https://www.mageni.net/login" 
                                         class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                                         target="_blank"
@@ -157,7 +157,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                                         </svg>
                                         Support
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </nav>
@@ -195,11 +195,11 @@
                                 Scans
                             </a>
 
-                            <a href="{{ route('reports') }}" class="@if(Request::is('reports') OR Request::is('reports/*')) {{ 'bg-indigo-800' }} @endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                            <a href="{{ route('vulnerabilities') }}" class="@if(Request::is('reports') OR Request::is('reports/*')) OR Request::is('vulnerabilities/*'))  {{ 'bg-indigo-800' }} @endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 mr-3 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                 </svg>
-                                Reports
+                                Vulnerabilities
                             </a>
 
                             {{-- <a href="{{ route('kb') }}" class="@if(Request::is('knowledgebase') OR Request::is('knowledgebase/*')){{ 'bg-indigo-800' }}@endif text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md">
@@ -253,7 +253,7 @@
                                         Help
                                     </a>
                         
-                                    <a 
+                                    {{-- <a 
                                         href="https://www.mageni.net/login" 
                                         class="text-indigo-100 hover:bg-indigo-600 group flex items-center px-2 py-2 text-sm font-medium rounded-md"
                                         target="_blank"
@@ -262,7 +262,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                                         </svg>
                                         Support
-                                    </a>
+                                    </a> --}}
 
                                     <a 
                                     href="{{ route('about') }}" 
