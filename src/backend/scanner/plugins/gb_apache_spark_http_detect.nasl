@@ -1,0 +1,72 @@
+# SPDX-FileCopyrightText: 2018 Greenbone AG
+# Some text descriptions might be excerpted from (a) referenced
+# source(s), and are Copyright (C) by the respective right holder(s).
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+if(description)
+{
+  script_oid("1.3.6.1.4.1.25623.1.0.141675");
+  script_version("2023-08-25T16:09:51+0000");
+  script_tag(name:"last_modification", value:"2023-08-25 16:09:51 +0000 (Fri, 25 Aug 2023)");
+  script_tag(name:"creation_date", value:"2018-11-13 10:25:12 +0700 (Tue, 13 Nov 2018)");
+  script_tag(name:"cvss_base", value:"0.0");
+  script_tag(name:"cvss_base_vector", value:"AV:N/AC:L/Au:N/C:N/I:N/A:N");
+
+  script_tag(name:"qod_type", value:"remote_banner");
+
+  script_name("Apache Spark Detection (HTTP)");
+
+  script_category(ACT_GATHER_INFO);
+
+  script_copyright("Copyright (C) 2018 Greenbone AG");
+  script_family("Product detection");
+  script_dependencies("find_service.nasl", "httpver.nasl", "global_settings.nasl");
+  script_require_ports("Services/www", 7077);
+  script_exclude_keys("Settings/disable_cgi_scanning");
+
+  script_tag(name:"summary", value:"HTTP based detection of Apache Spark.");
+
+  script_xref(name:"URL", value:"https://spark.apache.org/");
+
+  exit(0);
+}
+
+include("cpe.inc");
+include("host_details.inc");
+include("http_func.inc");
+include("http_keepalive.inc");
+include("port_service_func.inc");
+
+port = http_get_port(default: 7077);
+
+res = http_get_cache(port: port, item: "/");
+
+if (("serverSparkVersion" >< res && "Missing protocol version" >< res) || "<title>Spark Master" >< res) {
+  version = "unknown";
+
+  vers = eregmatch(pattern: '"serverSparkVersion" : "([0-9.]+)"', string: res);
+  if (isnull(vers[1])) {
+    # <span class="version" style="margin-right: 15px;">2.3.0</span>
+    vers = eregmatch(pattern: 'class="version"[^>]+>([0-9.]+)<', string: res);
+  }
+
+  if (!isnull(vers[1]))
+    version = vers[1];
+
+  set_kb_item(name: "apache/spark/detected", value: TRUE);
+  set_kb_item(name: "apache/spark/http/detected", value: TRUE);
+
+  cpe = build_cpe(value: version, exp: "^([0-9.]+)", base: "cpe:/a:apache:spark:");
+  if (!cpe)
+    cpe = "cpe:/a:apache:spark";
+
+  register_product(cpe: cpe, location: "/", port: port, service: "www");
+
+  log_message(data: build_detection_report(app: "Apache Spark", version: version, install: "/", cpe: cpe,
+                                           concluded: vers[0]),
+              port: port);
+  exit(0);
+}
+
+exit(0);
