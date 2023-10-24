@@ -1,4 +1,4 @@
-PLUGIN_SET = "202310192133";
+PLUGIN_SET = "202310240011";
 PLUGIN_FEED = "Vulnerability Scanning";
 FEED_VENDOR = "Mageni Security, LLC";
 FEED_HOME = "https://www.mageni.net";
